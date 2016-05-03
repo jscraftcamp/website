@@ -1,0 +1,19 @@
+{
+  "name": "js-craftcamp-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "harp": "^0.20.3"
+  },
+  "scripts": {
+    "prebuild": "mkdir -p ./dist",
+    "build": "harp compile ./dist ./src",
+    "server": "harp server ./src",
+    "test": "WTF?"
+  },
+  "author": "",
+  "license": "ISC"
+}
