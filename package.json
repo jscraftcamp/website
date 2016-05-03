@@ -10,7 +10,7 @@
   },
   "scripts": {
     "prebuild": "mkdir -p ./dist",
-    "build": "harp compile ./dist ./src",
+    "build": "harp compile ./src ./dist",
     "server": "harp server ./src",
     "test": "WTF?"
   },
