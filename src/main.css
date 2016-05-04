@@ -16,3 +16,14 @@ h1{
 h3{
   font-weight: 300;
 }
+
+h1 .loading {
+  position: absolute;
+  animation: ANIMATE_THE_DOTS 2s ease infinite;
+}
+
+@keyframes ANIMATE_THE_DOTS {
+  0% { clip: rect(0, 0, 999px, 0); }
+  50% { clip: rect(0, 1em, 999px, 0); }
+  100% { clip: rect(0, 1em, 999px, 1em); }
+}
