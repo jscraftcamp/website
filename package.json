@@ -11,7 +11,7 @@
     "prebuild": "mkdir -p ./dist",
     "build": "harp compile ./src ./dist",
     "start": "harp server ./src",
-    "test": "WTF?"
+    "test": ""
   },
   "author": "",
   "license": "ISC"
