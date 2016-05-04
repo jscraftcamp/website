@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "6"
+
+after_success:
+  - chmod +x ./scripts/*.sh
+  - chmod +x ./scripts/for-travis/*.sh
+  - ./scripts/for-travis/build-and-deploy.sh
+
+env:
+ global:
+ - GH_REF: github.com/jscraftcamp/website.git
+ - secure: kLowqKwm0A0hNdoZLv//tZf21J9h9TSxAlEiOY7oHf/f1VUXbviw+eOx8af7+8NzM8l0zbizmsJG/TGB5mOFUBulv/IWU/T26NR80BMgFNyI1ZiW2Oin09ylApucsN/VRMYFusF6swiQVrlY67sS/RcDBpg4m6s2Ffc40wwGeDDEcXSuG+ojd1J0VUa92/GPJonkOLXxkyyyuxxma50VmQtkZAu+OtjmLAmGtEnXp32ZpzXkeQcqfiWDi18/zEoWI41Z1sluSxFTYTZTepDIyE9Sn1FOYkzxipOWX3ymE5doUhSWhO3QJQpRIvr1qm7VOK9MfNkI5CV/Tk+fsmdiCtJ+Oh8zLNPe0MKRWKZYDOnCwZAGBPNG9l1fBPkPeibjT49IKVwRkE1TwAN0PxnesIGUKlbmKBZgO+JzFa5A14ZXiFvPEVYG6eedB2rz2ZT8rPcHcddXZXe6bJMpY4KHEXA9PJdjg04o8cHYyNn3MH4m4oO2eSqMq/jXI/aT10s2/qT4jw2ra5VxfhEynhRE3jfDC2evJac8RGvT0zovz7gsDH1138x7p1x9W/D6jh56sgbb/VD8/Qq1qMRKoE5fCOIGQqEliquVKHWWi/oAZm3b/ELofZ2iUk9pD4CZAmmn/75e6SjsJaMNr1op5k2v8/Ci1DokWBhTDvT3RqvioyU=
