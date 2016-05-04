@@ -9,7 +9,7 @@
   },
   "scripts": {
     "prebuild": "mkdir -p ./dist",
-    "build": "harp compile ./src ./dist",
+    "build": "harp compile ./src ./dist; cp CNAME dist/",
     "start": "harp server ./src",
     "test": ""
   },
