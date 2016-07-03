@@ -2,3 +2,11 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
+
+.block {
+    text-align: justify;
+}
+
+code {
+    background-color: #f3f3f3;
+}
