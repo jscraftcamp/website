@@ -1,3 +1,9 @@
+$( document ).ready(function(){
+     $(".button-collapse").sideNav();
+});
+
+
+
 // handle Google Maps stuff
 function initialize() {
     var mapCanvas = document.getElementById('map');
