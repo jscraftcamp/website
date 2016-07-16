@@ -1,6 +1,6 @@
 # JS Craft Camp
 
-This project contains the [jscraftcamp.org](jscraftcamp.org) site.
+This project contains the http://jscraftcamp.org site.
 
 # Usage
 
