@@ -9,7 +9,7 @@
   },
   "scripts": {
     "prebuild": "mkdir -p ./dist",
-    "build": "harp compile ./src ./dist; cp CNAME dist/",
+    "build": "harp compile ./src ./dist; cp CNAME dist/; node scripts/concat-json.js ./participants dist/participants.json",
     "start": "harp server ./src",
     "test": ""
   },
