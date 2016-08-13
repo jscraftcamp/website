@@ -30,60 +30,55 @@
     <div class="col s12 m12">
       <h1 class="header center blue-text">Munich, October 8+9 2016</h1>
       <h3 class="header center light">A BarCamp about JavaScript and Software Craftsmanship</h3>
-      <h4 class="header center blue-text">Attendees</h4>
+      <h4 class="header center blue-text">Participants</h4>
     </div>
   </div>
 </div>
 
 
-<div id="data" class="container">
+<div class="container">
+  <div id="participants" class="row">
+  </div>
 </div>
 
 
-<script type="text/babel">
+<script type="text/javascript">
 
-var Data = React.createClass({
-  getInitialState: function() {
-    return {data:[{name:''}]}; 
-  },
-
-  componentDidMount: function() {
-    this.serverRequest = $.get(this.props.source, function (result) {
-      this.setState({data:result});
-    }.bind(this));
-  },
-
-  componentWillUnmount: function() {
-    this.serverRequest.abort();
-  },
-
-  render: function() {
-    let rows = this.state.data.map(item =>{
-      return (
-        <div key={item.name} className="row">
-          <div key={item.name} className="col s12 m12">
-            {item.name}
-          </div>
-        </div>
-      );
+window.onload = function() {
+  $.getJSON("/participants.json", function(data) {
+    var items = [];
+    $.each(data, function(key, val) {
+      var card = ' \
+        <div class="col s12 m6 l3"> \
+          <div class="card medium"> \
+            <div class="card-image"> \
+              <img class="activator" src="'+val.photo_url+'"> \
+            </div> \
+            <div class="card-content"> \
+              <span class="card-title activator">'+val.name+'<i class="material-icons right">more_vert</i></span> \
+            </div> \
+            <div class="card-reveal"> \
+              <span class="card-title activator">'+val.name+'<i class="material-icons right">close</i></span> \
+              <p>'+val.what_is_my_connection_to_javascript+'</p> \
+              <p>'+val.what_can_i_contribute_to_js_craftcamp+'</p> \
+            </div> \
+            <div class="card-action"> \
+              <a href="'+val.urls.homepage+'#"><i class="fa fa-home fa-fw"/></a> \
+              <a href="'+val.urls.github+'#"><i class="fa fa-github fa-fw"/></a> \
+              <a href="'+val.urls.twitter+'#"><i class="fa fa-twitter fa-fw"/></a> \
+            </div> \
+          </div> \
+        </div> \
+      ';
+      items.push(card);
+      //items.push("<li>" + val.name + "</li>");
     });
-    return (
-      <div className="container">{rows}</div>
-    );
-  }
-});
-
-ReactDOM.render(
-  <Data source="/attendees.json" />,
-  document.getElementById('data')
-);
+  
+    $("#participants").append(items.join(""));
+  });
+};
 
 </script>
-
-
-<script src="https://npmcdn.com/react@15.3.0/dist/react.js"></script>
-<script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.js"></script>
-<script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type='text/javascript' src='js/index.js'></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
