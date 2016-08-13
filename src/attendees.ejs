@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row">
+    <div class="col s12 m12">
+      <h1 class="header center blue-text">Munich, October 8+9 2016</h1>
+      <h3 class="header center light">A BarCamp about JavaScript and Software Craftsmanship</h3>
+      <h4 class="header center blue-text">Attendees</h4>
+    </div>
+  </div>
+</div>
+
+
+<div id="data" class="container">
+</div>
+
+
+<script type="text/babel">
+
+var Data = React.createClass({
+  getInitialState: function() {
+    return {data:[{name:''}]}; 
+  },
+
+  componentDidMount: function() {
+    this.serverRequest = $.get(this.props.source, function (result) {
+      this.setState({data:result});
+    }.bind(this));
+  },
+
+  componentWillUnmount: function() {
+    this.serverRequest.abort();
+  },
+
+  render: function() {
+    let rows = this.state.data.map(item =>{
+      return (
+        <div key={item.name} className="row">
+          <div key={item.name} className="col s12 m12">
+            {item.name}
+          </div>
+        </div>
+      );
+    });
+    return (
+      <div className="container">{rows}</div>
+    );
+  }
+});
+
+ReactDOM.render(
+  <Data source="/attendees.json" />,
+  document.getElementById('data')
+);
+
+</script>
+
+
+<script src="https://npmcdn.com/react@15.3.0/dist/react.js"></script>
+<script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.js"></script>
+<script src="https://npmcdn.com/babel-core@5.8.38/browser.min.js"></script>
+
