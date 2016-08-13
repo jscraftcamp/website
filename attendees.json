@@ -1,0 +1,14 @@
+[
+
+{
+  "name": "Christine Koppelt",
+  "saturday": true,
+  "sunday": true 
+},
+{
+  "name": "Stefan Seelmann",
+  "saturday": true,
+  "sunday": false
+}
+
+]
