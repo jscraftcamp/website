@@ -10,7 +10,8 @@ after_success:
 
 deploy:
   provider: script
-  script: ./scripts/for-travis/deploy-master-branch-only.sh 
+  script: ./scripts/deploy-to-ghpages.sh
+  skip_cleanup: true
   branch: master
 
 env:
