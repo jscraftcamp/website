@@ -5,13 +5,14 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "harp": "^0.20.3"
+    "harp": "^0.20.3",
+    "mocha": "^3.0.2"
   },
   "scripts": {
     "prebuild": "mkdir -p ./dist",
     "build": "harp compile ./src ./dist; cp CNAME dist/; node scripts/concat-json.js ./participants dist/participants.json",
     "start": "harp server ./src",
-    "test": ""
+    "test": "mocha test"
   },
   "author": "",
   "license": "ISC"
