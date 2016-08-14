@@ -5,7 +5,13 @@ node_js:
 after_success:
   - chmod +x ./scripts/*.sh
   - chmod +x ./scripts/for-travis/*.sh
-  - ./scripts/for-travis/build-and-deploy.sh
+  - ./scripts/for-travis/build.sh
+
+
+deploy:
+  provider: script
+  script: ./scripts/for-travis/deploy-master-branch-only.sh 
+  branch: master
 
 env:
  global:
