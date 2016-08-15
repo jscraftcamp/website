@@ -62,6 +62,11 @@
       </div>
       <div class="card-content">
         <span class="card-title activator">{{name}}<i class="material-icons right">more_vert</i></span>
+        {{#list tags}}
+          <div>
+             <div class="chip">{{ this }}</div>
+          </div>
+        {{/list}}
       </div>
       <div class="card-reveal">
         <span class="card-title activator">{{name}}<i class="material-icons right">close</i></span>
@@ -109,6 +114,14 @@ window.onload = function() {
     $("#sum_saturday").append(sum_saturday+" participants on Saturday");
     $("#sum_sunday").append(sum_sunday+" participants on Sunday");
   });
+
+Handlebars.registerHelper('list', function(context, options) {
+  var ret = "";
+  for(var i=0, j=context.length; i<j; i++) {
+    ret = ret + options.fn(context[i]);
+  }
+  return ret;
+});
 };
 
 </script>
