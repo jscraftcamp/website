@@ -1,6 +1,7 @@
 {
   "name": "Christine Koppelt",
   "photo_url": "https://pbs.twimg.com/profile_images/378800000816719815/a87b079764332497d597fd86a04afd23_400x400.png",
+  "tags": [ "node.js", "elm" ],
   "when": {
     "saturday": true,
     "sunday": true 

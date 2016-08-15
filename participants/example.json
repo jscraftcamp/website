@@ -1,6 +1,7 @@
 {
   "name": "Foo Bar",
   "photo_url": "http://materializecss.com/images/sample-1.jpg",
+  "tags": [ "angular" ],
   "when": {
     "saturday": true,
     "sunday": true 
