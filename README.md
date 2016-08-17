@@ -1,4 +1,4 @@
-# JS Craft Camp
+## JS Craft Camp
 
 This project contains the http://jscraftcamp.org site.
 
