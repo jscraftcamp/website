@@ -1,8 +1,10 @@
-.row {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+.row:last-child {
+    margin-bottom:0;
 }
-
+.section {
+    padding-top:1.5rem;
+    padding-bottom:1.5rem;
+}
 .block {
     text-align: justify;
 }
@@ -29,3 +31,88 @@ code {
     padding: 30px 60px 10px 30px;
 }
 
+.row .col.col--sponsor {
+    padding:0 2rem;
+}
+
+.row--sponsor {
+    padding:0 0 1rem;
+}
+@media(max-width:767px) {
+    .row--sponsor {
+        display:block !important;
+    }
+    .row .col.col--sponsor {
+        padding:1rem 2rem;
+    }
+    .row .col.col--sponsor img {
+        max-width:250px;
+        display:block;
+        margin: 0 auto;
+    }
+
+}
+
+h5 {
+    font-size: 1.44rem;
+    line-height:125%;
+}
+
+table td h5 {
+    margin:0;
+}
+
+.no-margin-bottom {
+    margin-bottom:0;
+}
+
+.card .card-content .card-title {
+    line-height:28px;
+}
+
+.card-tags {
+    margin-top:0.7rem;
+    margin-left:-4px;
+    margin-right:-4px;
+}
+
+.chip {
+    display: inline-block;
+    height: auto;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.6);
+    line-height: 20px;
+    padding: 0 6px;
+    margin-bottom:5px;
+    border-radius: 10px;
+    background-color: #e4e4e4;
+    text-decoration: none;
+}
+
+.card .card-reveal .card-title {
+    line-height:28px;
+}
+
+.card-title.activator {
+    position: relative;
+    display:block;
+    padding-right:20px;
+}
+.card-content .card-title.activator {
+
+}
+.card-reveal .card-title.activator i {
+    position: absolute;
+    top:2px;
+    right:0;
+}
+.card-content .card-title.activator i {
+    position: absolute;
+    top:2px;
+    right:-10px;
+}
+
+.card .card-action {
+    padding:12px 20px;
+}

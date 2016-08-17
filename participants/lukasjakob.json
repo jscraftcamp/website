@@ -1,0 +1,16 @@
+{
+  "name": "Lukas Jakob",
+  "photo_url": "",
+  "tags": ["Angular", "React", "Node", "Ionic" ],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "Freelance fullstack developer focusing on modern javascript. Always experimenting and learning.",
+  "what_can_i_contribute_to_js_craftcamp": "I will contribute good spirit and motivation to teach and learn.",
+  "urls": {
+    "homepage": "http://www.lukasjakob.com",
+    "github": "https://github.com/lujakob",
+    "twitter": ""
+  }
+}
