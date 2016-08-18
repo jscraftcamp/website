@@ -24,6 +24,12 @@ describe("Participants JSON file", () => {
           assert.ok(object.photo_url.startsWith("http"));
         }
       });
+      it("may contain a company name", () => {
+        if(object.company) {
+          assert.equal(typeof object.company, "string");
+          assert.ok(object.company.length > 0);
+        }
+      });
       it('must contain participation time', () => {
         assert.equal(typeof object.when, "object");
         assert.equal(typeof object.when.saturday, "boolean");
