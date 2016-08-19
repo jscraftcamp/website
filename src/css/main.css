@@ -29,3 +29,10 @@ code {
     padding: 30px 60px 10px 30px;
 }
 
+span.badge {
+    position: static;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+    margin-right: 10px;
+}
