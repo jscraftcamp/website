@@ -36,3 +36,11 @@ span.badge {
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
     margin-right: 10px;
 }
+
+.card.small .card-image, .card.medium .card-image, .card.large .card-image {
+    max-height: 55%;
+}
+
+.card .card-image img {
+    top: -10px;
+}
