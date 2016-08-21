@@ -86,8 +86,8 @@ window.onload = function() {
     });
     $("#participants").append(items.join(""));
     $("#sum").append(sum+" participants");
-    $("#sum_saturday").append(sum_saturday+" participants on Saturday");
-    $("#sum_sunday").append(sum_sunday+" participants on Sunday");
+    $("#sum_saturday").append(sum_saturday+" participants on Saturday (max. 100)");
+    $("#sum_sunday").append(sum_sunday+" participants on Sunday (max. 100)");
   });
 
 Handlebars.registerHelper('list', function(context, options) {
