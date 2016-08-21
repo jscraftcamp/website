@@ -13,6 +13,7 @@ pre[class*="language-"] {
 	background: none;
 	text-shadow: 0 1px white;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+        font-weight: bold;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
@@ -94,7 +95,7 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-	color: #690;
+	color: #ffab40;
 }
 
 .token.operator,
