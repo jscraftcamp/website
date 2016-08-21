@@ -19,9 +19,9 @@ describe("Participants JSON file", () => {
         assert.ok(object.name.trim().length > 1);
       });
       it("may contain a photo URL", () => {
-        if(object.photo_url) {
-          assert.equal(typeof object.photo_url, "string");
-          assert.ok(object.photo_url.startsWith("http"));
+        if(object.urls.photo) {
+          assert.equal(typeof object.urls.photo, "string");
+          assert.ok(object.urls.photo.startsWith("http"));
         }
       });
       it("may contain a company name", () => {
@@ -46,7 +46,7 @@ describe("Participants JSON file", () => {
       it("must contain tags", () => {
         assert.equal(typeof object.tags, "object");
         assert.ok(object.tags.length > 0);
-	assert.ok(object.tags.length < 6);
+        assert.ok(object.tags.length < 6);
       });
       it("may contain additional URLs", () => {
         if(object.urls) {
