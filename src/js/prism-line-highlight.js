@@ -1,3 +1,4 @@
+/* based on: https://raw.githubusercontent.com/PrismJS/prism/gh-pages/plugins/line-highlight/prism-line-highlight.js */
 (function(){
 
 if (typeof self === 'undefined' || !self.Prism || !self.document || !document.querySelector) {
@@ -53,15 +54,6 @@ function highlightLines(pre, lines, classes) {
 		line.textContent = Array(end - start + 2).join(' \n');
 		line.setAttribute('aria-hidden', 'true');
 		line.className = (classes || '') + ' line-highlight';
-
-		//if the line-numbers plugin is enabled, then there is no reason for this plugin to display the line numbers
-		if(!hasClass(pre, 'line-numbers')) {
-			line.setAttribute('data-start', start);
-
-			if(end > start) {
-				line.setAttribute('data-end', end);
-			}
-		}
 
 		line.style.top = (start - offset - 1) * lineHeight + 'px';
 
