@@ -1,57 +1,11 @@
 $( document ).ready(function(){
-    $(".button-collapse").sideNav();
-
-    if($('#map').length > 0) {
-      initializeMap();
-    }
-
-    if($('#participants').length > 0) {
-      initializeParticipants();
-    }
-
+     $(".button-collapse").sideNav();
 });
 
-/**
- * register handlebars list helper
- */
-Handlebars.registerHelper('list', function(context, options) {
-  var ret = "";
-  for(var i=0, j=context.length; i<j; i++) {
-    ret = ret + options.fn(context[i]);
-  }
-  return ret;
-});
 
-/**
- * init participants list
- */
-function initializeParticipants() {
-  $.getJSON("/participants.json", function(data) {
-    var items = [];
-    var sum = 0;
-    var sum_saturday = 0;
-    var sum_sunday = 0;
 
-    $.each(data, function(index, participant) {
-      var source = $("#participant-template").html();
-      var template = Handlebars.compile(source);
-      var card = template(participant);
-      items.push(card);
-      sum++;
-      if(participant.when.saturday) sum_saturday++;
-      if(participant.when.sunday) sum_sunday++;
-    });
-    $("#participants").append(items.join(""));
-    $("#sum").append(sum+" participants");
-    $("#sum_saturday").append(sum_saturday+" participants on Saturday (max. 100)");
-    $("#sum_sunday").append(sum_sunday+" participants on Sunday (max. 100)");
-  });
-}
-
-/**
- * init google map
- */
-function initializeMap() {
+// handle Google Maps stuff
+function initialize() {
     var mapCanvas = document.getElementById('map');
     var mapOptions = {
         center: new google.maps.LatLng(48.1, 11.546),
@@ -87,4 +41,4 @@ function initializeMap() {
     });
 }
 
-//google.maps.event.addDomListener(window, 'load', initializeMap);
+google.maps.event.addDomListener(window, 'load', initialize);
