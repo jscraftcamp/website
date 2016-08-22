@@ -115,3 +115,17 @@ table td h5 {
 .card .card-action {
     padding:12px 20px;
 }
+
+/* materialize cards customization */
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+    margin-right: 10px;
+}
+
+.card.small .card-image, .card.medium .card-image, .card.large .card-image {
+    max-height: 55%;
+}
+
+.card .card-image img {
+    top: -10px;
+}
+

@@ -1,6 +1,6 @@
 {
   "name": "Wolfram Kriesing",
-  "photo_url": "https://pbs.twimg.com/profile_images/652835237098094592/_7ipdcfZ_400x400.png",
+  "company": "crewmeister.com",
   "tags": [ "es6", "react" ],
   "when": {
     "saturday": true,
@@ -9,6 +9,7 @@
   "what_is_my_connection_to_javascript": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "what_can_i_contribute_to_js_craftcamp": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   "urls": {
+    "photo": "https://pbs.twimg.com/profile_images/652835237098094592/_7ipdcfZ_400x400.png",
     "homepage": "http://wolfram.kriesing.de/",
     "github": "https://github.com/wolframkriesing",
     "twitter": "https://twitter.com/wolframkriesing"

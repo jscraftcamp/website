@@ -1,6 +1,6 @@
 {
   "name": "",
-  "photo_url": "",
+  "company": "",
   "tags": [ ],
   "when": {
     "saturday": false,
@@ -9,6 +9,7 @@
   "what_is_my_connection_to_javascript": "",
   "what_can_i_contribute_to_js_craftcamp": "",
   "urls": {
+    "photo": "",
     "homepage": "",
     "github": "",
     "twitter": ""

@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row">
+    <div class="col s12 m12">
+      <h1 class="header center blue-text">Registration</h1>
+      <h3 class="header center light">Create a JSON File and submit it via a GitHub Pull Request</h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m12">
+      <p>To register for JS CrafCamp you have to add a json file with your name and some other information to our <a href="https://github.com/jscraftcamp/website">GitHub Repository</a> via a 
+         <a href="http://stackoverflow.com/questions/14680711/how-to-do-a-github-pull-request">Pull Request</a>. 
+         Your json file should follow the naming scheme <code>$firstname_$lastname.json</code> and must be placed in the folder <code>participants</code>.</p>
+      <p>Out of these files a page with information about <a href="/participants.html">all participants</a> is generated.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 m12">
+      <h4 class="header center blue-text">The JSON Format</h4>
+      <pre data-line="2,4,5,6-9" class="language-json">
+<code class="language-json">{
+    "name": "Foo Bar",
+    "company": "A company name",
+    "tags": [ "angular" ],
+    "when": {
+      "saturday": true,
+      "sunday": true
+    },
+    "what_is_my_connection_to_javascript": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+    "urls": {
+      "photo": "http://materializecss.com/images/sample-1.jpg",
+      "homepage": "http://www.example.com/",
+      "github": "https://github.com/",
+      "twitter": "https://twitter.com/"
+    }
+}</code>
+      </pre>
+    </div>
+    <div class="col s12 m10">
+      <table class="bordered">
+        <tr><td><code>name</code>*</td>		<td>first name and last name or a nick name</td></tr>
+        <tr><td><code>company</code></td>	<td>A company name</td></tr>
+        <tr><td><code>tags</code>*</td>		<td>1-3 JavaScript related topics you would like to show, speak or discuss about</td></tr>
+        <tr><td><code>when.saturday</code>*</td><td>If you are attending on Saturday (Boolean value)</td></tr>
+        <tr><td><code>when.sunday</code>*</td>	<td>If you are attending on Sunday (Boolean value)</td></tr>
+        <tr><td><code>what_is_my_connection_to_javascript</code>*</td><td> 2-5 sentences about your experience with JavaScript or related technologies.</td></tr>
+        <tr><td><code>urls.photo</code></td>	<td>URL of a photo of you</td></tr>
+        <tr><td><code>urls.homepage</code></td>	<td>URL to a homepage</td></tr>
+        <tr><td><code>urls.github</code></td>	<td>URL of your GitHub Account</td></tr>
+        <tr><td><code>urls.twitter</code></td>	<td>URL of your Twitter Account</td></tr>
+      </table>
+     <p>*: mandatory field</p>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="js/prism.js"></script>
+<script type="text/javascript" src="js/prism-line-highlight.js"></script>
+

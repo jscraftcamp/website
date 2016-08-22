@@ -1,7 +1,7 @@
 {
   "name": "Lukas Jakob",
   "photo_url": "",
-  "tags": ["Angular", "React", "Node", "Ionic" ],
+  "tags": ["Angular", "React", "Ionic"],
   "when": {
     "saturday": true,
     "sunday": true
