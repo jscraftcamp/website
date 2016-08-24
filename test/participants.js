@@ -43,10 +43,10 @@ describe("Participants JSON file", () => {
         assert.equal(typeof object.what_can_i_contribute_to_js_craftcamp, "string");
         assert.ok(object.what_can_i_contribute_to_js_craftcamp.trim().length > 1);
       });
-      it("must contain tags", () => {
+      it("must contain tags 1-3", () => {
         assert.equal(typeof object.tags, "object");
         assert.ok(object.tags.length > 0);
-        assert.ok(object.tags.length < 6);
+        assert.ok(object.tags.length < 6, "maximum 5 tags");
       });
       it("may contain additional URLs", () => {
         if(object.urls) {
