@@ -32,6 +32,12 @@ describe("Participants JSON file", () => {
           assert.ok(object.company.trim().length > 0, "'company' must not be empty");
         }
       });
+      it("may contain tshirt information", () => {
+        if(typeof object.tshirt !== "undefined") {
+          assert.equal(typeof object.tshirt, "string", "'tshirt' must be of type string");
+          assert.ok(object.tshirt.match(/^(f|m)-(S|M|L|XL)$/), "'tshirt' must match pattern ^(f|m)-(S|M|L|XL)$/");
+        }
+      });
       it('must contain participation time', () => {
         assert.ok(typeof object.when !== "undefined", "'when' is mandatory");
         assert.equal(typeof object.when, "object");
