@@ -1,7 +1,7 @@
 {
   "name": "Stefan Seelmann",
   "company": "SimScale GmbH",
-  "tags": [ "node.js", "security", "tooling" ],
+  "tags": [ "node.js", "tooling" ],
   "when": {
     "saturday": true,
     "sunday": true 

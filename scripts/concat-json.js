@@ -1,6 +1,7 @@
 var fs = require("fs");
 var path = require("path");
-var recursiveReaddirSync = require('recursive-readdir-sync')
+var recursiveReaddirSync = require("recursive-readdir-sync");
+var hashcode = require("hashcode").hashCode;
 
 var args = process.argv.slice(2);
 var srcdir = args[0];
@@ -10,6 +11,7 @@ var array = [];
 recursiveReaddirSync(srcdir)
   .filter(file => file.endsWith(".json"))
   .filter(file => file != "_template.json")
+  .sort((a,b) => hashcode().value(a)%1000 - hashcode().value(b)%1000)
   .forEach(file => {
     var content = fs.readFileSync(file, "utf8");
     var object = JSON.parse(content);
