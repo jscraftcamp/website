@@ -6,7 +6,8 @@
   "dependencies": {},
   "devDependencies": {
     "harp": "^0.20.3",
-    "mocha": "^3.0.2"
+    "mocha": "^3.0.2",
+    "recursive-readdir-sync": "^1.0.6"
   },
   "scripts": {
     "prebuild": "mkdir -p ./dist",

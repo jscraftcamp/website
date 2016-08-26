@@ -1,17 +1,18 @@
 var assert = require("assert");
 var fs = require("fs");
 var path = require("path");
+var recursiveReaddirSync = require('recursive-readdir-sync')
 
 describe("Participants JSON file", () => {
   var srcdir = "./participants";
-  fs.readdirSync(srcdir)
+  recursiveReaddirSync(srcdir)
   .filter(file => file.endsWith(".json"))
   .filter(file => file != "_template.json")
   .forEach(file => {
     describe(file, () => {
       var object;
       before(() => {
-        var content = fs.readFileSync(path.join(srcdir, file), "utf8");
+        var content = fs.readFileSync(file, "utf8");
         object = JSON.parse(content);
       });
       it("must contain a name", () => {
