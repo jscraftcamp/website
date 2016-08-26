@@ -1,0 +1,13 @@
+{
+  "name": "Stefan Seelmann",
+  "company": "SimScale GmbH",
+  "tags": [ "node.js", "security", "tooling" ],
+  "when": {
+    "saturday": true,
+    "sunday": true 
+  },
+  "what_is_my_connection_to_javascript": "I'm not a professional JavaScript developer. But every now and then I get my hands dirty with it like reading and debugging code or help with build and tooling.",
+  "urls": {
+    "github": "https://github.com/seelmann"
+  }
+}
