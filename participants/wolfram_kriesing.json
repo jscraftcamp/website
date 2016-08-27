@@ -1,7 +1,7 @@
 {
   "name": "Wolfram Kriesing",
   "company": "crewmeister.com",
-  "tags": [ "es6", "react" ],
+  "tags": [ "ES6", "React", "jsCodeRetreat", "react-native", "Craftsmanship", "clean code", "TDD", "tddbin", "es6katas.org" ],
   "when": {
     "saturday": true,
     "sunday": true 
