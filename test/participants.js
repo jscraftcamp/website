@@ -35,7 +35,7 @@ describe("Participants JSON file", () => {
       it("may contain tshirt information", () => {
         if(typeof object.tshirt !== "undefined") {
           assert.equal(typeof object.tshirt, "string", "'tshirt' must be of type string");
-          assert.ok(object.tshirt.match(/^(f|m)-(S|M|L|XL)$/), "'tshirt' must match pattern ^(f|m)-(S|M|L|XL)$/");
+          assert.ok(object.tshirt.match(/^(W|M)-(S|M|L|XL)$/), "'tshirt' must match pattern ^(W|M)-(S|M|L|XL)$/");
         }
       });
       it('must contain participation time', () => {
@@ -50,6 +50,12 @@ describe("Participants JSON file", () => {
         assert.ok(typeof object.what_is_my_connection_to_javascript !== "undefined", "'what_is_my_connection_to_javascript' is mandatory");
         assert.equal(typeof object.what_is_my_connection_to_javascript, "string", "'what_is_my_connection_to_javascript' must be of type string");
         assert.ok(object.what_is_my_connection_to_javascript.trim().length > 0, "'what_is_my_connection_to_javascript' must not be empty");
+      });
+      it("may contain a what_can_i_contribute statement", () => {
+        if(typeof object.what_can_i_contribute !== "undefined"){
+          assert.equal(typeof object.what_can_i_contribute, "string", "'what_can_i_contribute' must be of type string");
+          assert.ok(object.what_can_i_contribute.trim().length > 0, "'what_can_i_contribute' must not be empty");
+        }
       });
       it("must contain tags 1-3", () => {
         assert.ok(typeof object.tags !== "undefined", "'tags' is mandatory");
