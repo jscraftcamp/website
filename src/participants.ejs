@@ -52,9 +52,10 @@
         {{#if urls.twitter}}
         <a class="blue-text" href="{{urls.twitter}}"><i class="fa fa-twitter fa-fw"/></a>
         {{/if}}
-        {{#list tags}}
-           <span style="margin-right:10px;text-transform:uppercase">{{ this }}</span>
-        {{/list}}
+        <div class="card-tags-container">
+          {{#list tags}}
+             <span class="card-tag">#{{ this }}</span>
+          {{/list}}
         </div>
       </div>
     </div>
