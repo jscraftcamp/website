@@ -7,7 +7,7 @@ describe("Participants JSON file", () => {
   var srcdir = "./participants";
   recursiveReaddirSync(srcdir)
   .filter(file => file.endsWith(".json"))
-  .filter(file => file != "_template.json")
+  .filter(file => !file.endsWith("/_template.json"))
   .forEach(file => {
     describe(file, () => {
       var object;
