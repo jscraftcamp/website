@@ -57,7 +57,7 @@ describe("Participants JSON file", () => {
           assert.ok(object.what_can_i_contribute.trim().length > 0, "'what_can_i_contribute' must not be empty");
         }
       });
-      it("must contain tags 1-3", () => {
+      it("must contain at least one tag", () => {
         assert.ok(typeof object.tags !== "undefined", "'tags' is mandatory");
         assert.ok(Array.isArray(object.tags), "'tags' must be an array");
         assert.ok(object.tags.length >= 1, 'minumum 1 tag');
