@@ -1,0 +1,17 @@
+{
+  "name": "My Name",
+  "company": "my company",
+  "tags": [ "things I care", "about", "or want to learn" ],
+  "when": {
+    "saturday": true,
+    "sunday": false
+  },
+  "what_is_my_connection_to_javascript": "...",
+  "what_can_i_contribute": "???",
+  "urls": {
+    "photo": "http://place-hoff.com/300/400",
+    "homepage": "",
+    "github": "https://github.com/???",
+    "twitter": "https://twitter.com/???"
+  }
+}
