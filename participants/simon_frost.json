@@ -1,0 +1,18 @@
+{
+  "name": "Simon Frost",
+  "company": "N26",
+  "tags": [ "three.js", "Freelancing", "CSS" ],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "Code Monkey in Berlin",
+  "what_can_i_contribute": "I will bring good vibes :)",
+  "tshirt": "M-M",
+  "urls": {
+    "photo": "https://gravatar.com/avatar/fcd41c9920cb8ae36337623956002d48?s=400",
+    "homepage": "https://simonhfrost.com/",
+    "github": "https://github.com/simonhfrost",
+    "twitter": "https://twitter.com/simonhfrost"
+  }
+}
