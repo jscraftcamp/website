@@ -1,0 +1,15 @@
+{
+  "name": "Joern Bernhardt",
+  "company": "Campudus GmbH",
+  "tags": [ "node", "gulp" ],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": ".",
+  "what_can_i_contribute": ".",
+  "urls": {
+    "photo" : "https://pbs.twimg.com/profile_images/2987119513/30b2efa0fba22db1fc3bad35dbf98af7.jpeg",
+    "twitter": "https://twitter.com/NarigoDF"
+  }
+}
