@@ -30,6 +30,14 @@ code {
 }
 
 /* materialize cards customization */
+.card .card-action {
+    padding: 10px 20px 10px 20px;
+}
+
+.card .card-content .card-title {
+    line-height: inherit;
+}
+
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
     margin-right: 10px;
 }
