@@ -10,8 +10,8 @@
 	"what_can_i_contribute": "Session about nix package manager, and how to use it with nodejs projects",
 	"tshirt": "M-XL",
 	"urls": {
-		"photo": "https://lh6.googleusercontent.com/wZD5EAC23i1vXev7ojTZrPWXZab2RUSUzcUTaPBMpHMlfErCY1zjK-YffnzIArR5xU_GFdQrsnJNNSM=w629-h953",
-		"homepage": "http://dejanr.github.io",
+		"photo": "https://dejanr.github.io/images/avatar.png",
+		"homepage": "https://dejanr.github.io",
 		"github": "https://github.com/dejanr",
 		"twitter": "https://twitter.com/dejanr"
 	}
