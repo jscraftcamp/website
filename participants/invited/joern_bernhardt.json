@@ -1,15 +1,18 @@
 {
   "name": "Joern Bernhardt",
   "company": "Campudus GmbH",
-  "tags": [ "node", "gulp" ],
+  "tags": [ "electron", "es6", "gulp", "node", "react", "scala", "tooling", "web" ],
   "when": {
     "saturday": true,
     "sunday": true
   },
-  "what_is_my_connection_to_javascript": ".",
-  "what_can_i_contribute": ".",
+  "what_is_my_connection_to_javascript": "I use JavaScript around 8 hours every day. I like it. Sometimes.",
+  "what_can_i_contribute": "I'm prepared to absorb excessive knowledge like to build prototypes.",
+  "tshirt" : "M-L",
   "urls": {
     "photo" : "https://pbs.twimg.com/profile_images/2987119513/30b2efa0fba22db1fc3bad35dbf98af7.jpeg",
+    "homepage" : "http://campudus.com/",
+    "github" : "https://github.com/Narigo",
     "twitter": "https://twitter.com/NarigoDF"
   }
 }
