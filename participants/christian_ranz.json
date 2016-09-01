@@ -1,18 +1,18 @@
 {
-  "name": "Foo Bar",
-  "company": "A company name",
-  "tags": [ "angular" ],
+  "name": "Chrsitian Ranz",
+  "company": "codastic",
+  "tags": [ "ES6", "React", "node", "flux" ],
   "when": {
     "saturday": true,
     "sunday": true
   },
-  "what_is_my_connection_to_javascript": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  "what_can_i_contribute": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-  "tshirt": "W-S",
+  "what_is_my_connection_to_javascript": "I am developing in javascript for more than 6 years. And I have seen loads of trends and patterns coming and going.",
+  "what_can_i_contribute": "My knowledge about combining flux or `fluxish` patterns with other frameworks than react.",
+  "tshirt": "M-XL",
   "urls": {
-    "photo": "http://materializecss.com/images/sample-1.jpg",
-    "homepage": "http://www.example.com/",
-    "github": "https://github.com/",
-    "twitter": "https://twitter.com/"
+    "photo": "http://codastic.com/assets/images/team_cr.jpg",
+    "homepage": "http://www.codastic.com/",
+    "github": "https://github.com/ranzwertig",
+    "twitter": "https://twitter.com/ranzwertig"
   }
 }
