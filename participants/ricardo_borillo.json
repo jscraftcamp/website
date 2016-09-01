@@ -1,0 +1,16 @@
+{
+  "name": "Ricardo Borillo",
+  "company": "4tic.com",
+  "tags": [ "es6", "react", "craftsmanship", "refactoring" ],
+  "when": {
+    "saturday": true,
+    "sunday": true 
+  },
+  "what_is_my_connection_to_javascript": "Trainer and developer offering professional services with JavaScript",
+  "urls": {
+    "photo": "http://agileatwork.es/ricardo.png",
+    "homepage": "http://programmeratwork.com/",
+    "github": "https://github.com/borillo",
+    "twitter": "https://twitter.com/borillo"
+  }
+}
