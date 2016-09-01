@@ -1,0 +1,17 @@
+{
+  "name": "Robert Prediger",
+  "company": "web4biz Consulting",
+  "tags": [ "node.js", "es6", "angular" ],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "I am doing node.js development since 5, web devlopment since 16 years now. Started developing a CMS, way before AJAX came up. Meanwhile I am only doing Node.js projects.",
+  "what_can_i_contribute": "My Node.js know-how. ;)",
+  "tshirt": "M-XL",
+  "urls": {
+    "photo": "http://www.web4biz.de./web4archiv/objects/team/rp.jpg",
+    "homepage": "http://www.web4biz.de",
+    "github": "https://github.com/RobertPrediger"
+  }
+}
