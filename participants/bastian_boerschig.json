@@ -1,0 +1,11 @@
+{
+  "name": "Bastian Börschig",
+  "company": "Team Internet AG",
+  "tags": ["node", "angular", "ionic"],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "Professional Node.js and hybrid app developer",
+  "urls": {}
+}
