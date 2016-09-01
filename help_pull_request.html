@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <head>
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/prism-customized.css" />
+      <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+  </head>
+  <body>
+    <nav class="blue">
+      <div class="nav-wrapper container">
+        <a href="/" class="brand-logo">JS CraftCamp</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="/registration">Registration</a></li>
+          <li><a href="/participants">Participants</a></li>
+          <li><a href="/#schedule">Schedule</a></li>
+          <li><a href="/#location">Location</a></li>
+          <li><a href="/#sponsors">Sponsors</a></li>
+          <li><a href="/imprint.html">Impressum</a></li>
+          <li><a href="https://twitter.com/jscraftcamp"><i class="fa fa-twitter fa-fw"></i></a></li>
+        </ul>
+        <ul id="mobile-demo" class="side-nav">
+          <li><a href="/registration">Registration</a></li>
+          <li><a href="/participants">Participants</a></li>
+          <li><a href="/#schedule">Schedule</a></li>
+          <li><a href="/#location">Location</a></li>
+          <li><a href="/#sponsors">Sponsors</a></li>
+          <li><a href="/imprint.html">Impressum</a></li>
+          <li><a href="https://twitter.com/jscraftcamp"><i class="fa fa-twitter fa-fw"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+  <div class="row">
+    <div class="col s12 m12">
+      <h1 class="header center blue-text">How to do the Pull Request</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <h5 class="col s12 m3 header">1. Go to <a href="https://github.com/jscraftcamp/website">our Github-Repo</a> and fork it.</h5>
+    <img class="col s12 m9" src="/img/pr_screenshots/fork.png">
+  </div>
+  <div class="row">
+    <h5 class="col s12 m3 header">2. Clone <b>your fork</b>.</h5>
+    <img class="col s12 m9" src="/img/pr_screenshots/clone.png">
+  </div>
+  <div class="row">
+    <h5 class="col s12 m12 header">3. Add your JSON-file, commit and push.</h5>
+  </div>
+  <div class="row">
+    <h5 class="col s12 m3 header">4. Go to <a href="https://github.com/jscraftcamp/website">our Github-Repo</a> and create a <b>New pull request</b>. Click on <b>compare across forks</b>.</h5>
+    <img class="col s12 m9" src="/img/pr_screenshots/compare_forks.png">
+  </div>
+  <div class="row">
+    <h5 class="col s12 m3 header">5. Compare <b>jscraftcamp/master</b> to <b><you>/master</you></b>.</h5>
+    <img class="col s12 m9" src="/img/pr_screenshots/compare.png">
+  </div>
+  <div class="row">
+    <div class="col s12 m3">
+      <h5 class="header">6. Fill comment section, while waiting for travis to complete.</h5>
+      <p class="block">Make shure, you read the comment section carefully. Accept the paragraphs and insert an [X] as sign of your acceptance.</p>
+      <p class="block">Travis (our CI-Server) will check, if your pull request, is valid JSON and your PR fullfills all requirements.</p>
+    </div>
+    <img class="col s12 m9" src="/img/pr_screenshots/fill_out_comment.png">
+  </div>
+
+  <div class="row">
+    <div class="col s12 m3">
+      <h5 class="header">7a1. If something goes wrong&hellip;</h5>
+      <p class="block">If Travis detects an error, click on <b>Details</b>, to get a detailed error log.</p>
+    </div>
+    <img class="col s12 m9" src="/img/pr_screenshots/travis_fail.png">
+  </div>
+
+  <div class="row">
+    <div class="col s12 m3">
+      <h5 class="header">7a2. See the Details</h5>
+      <p class="block">Here you will find the cause of the error. In the example screenshot on the right, the JSON was invalid therefore you get the somewhat strange "<i>before all hook</i>"-message. In other cases, you get more helpful messages, like "<i>must contain a name</i>".</p>
+    </div>
+    <img class="col s12 m9" src="/img/pr_screenshots/travis_details.png">
+  </div>
+
+  <div class="row">
+    <div class="col s12 m3">
+      <h5 class="header">7b. Everything 's green&hellip;</h5>
+      <p class="block">If Travis doesnt report an error, your JSON is most likely ok! &mdash; <b>Welcome to #JSCC16</b>.</p>
+    </div>
+    <img class="col s12 m9" src="/img/pr_screenshots/travis_success.png">
+  </div>
+
+
+</div>
+
+<script type="text/javascript" src="js/prism.js"></script>
+<script type="text/javascript" src="js/prism-line-highlight.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/handlebars.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+</html>
