@@ -10,7 +10,7 @@
   "what_can_i_contribute": "I could talk about my experiences with optimizing JS performance for the browser, some of our testing strategies we came up for a growing karma-mocha-webpack setup, and/or prepare some presentation/katas about pixi.js",
   "tshirt": "M-L",
   "urls": {
-    "photo": "avatars3.githubusercontent.com/u/12949268",
-    "github": "github.com/lukastaegert"
+    "photo": "https://avatars3.githubusercontent.com/u/12949268",
+    "github": "https://github.com/lukastaegert"
   }
 }
