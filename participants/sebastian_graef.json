@@ -1,0 +1,17 @@
+{
+  "name": "Sebastian Gräf",
+  "company": "Polynorm Software AG",
+  "tags": ["ES6", "React"],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "Frontend Developer working mostly with JS (95%).",
+  "what_can_i_contribute": "Experience with React and ES6.",
+  "tshirt": "M-L",
+  "urls": {
+    "photo": "https://pbs.twimg.com/profile_images/738056410206965760/sl5rZJuL.jpg",
+    "homepage": "https://sebastiangraef.com/",
+    "twitter": "https://twitter.com/sebastian_g"
+  }
+}
