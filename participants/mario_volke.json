@@ -1,0 +1,17 @@
+{
+    "name": "Mario Volke",
+    "company": "Codastic",
+    "tags": [ "React", "Node", "ES6", "Architecture", "Functional", "Testing" ],
+    "when": {
+      "saturday": true,
+      "sunday": true
+    },
+    "what_is_my_connection_to_javascript": "JavaScript is the foundation of my daily work as web application developer. Btw use less magic in your code!",
+    "what_can_i_contribute": "I want to discuss our experience in structuring JavaScript applications.",
+    "tshirt": "M-M",
+    "urls": {
+      "photo": "http://codastic.com/assets/images/team_mv.jpg",
+      "homepage": "http://www.codastic.com/",
+      "github": "https://github.com/webholics"
+    }
+}
