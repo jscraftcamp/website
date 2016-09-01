@@ -1,0 +1,16 @@
+{
+  "name": "Lukas Taegert",
+  "company": "TNG Technology GmbH",
+  "tags": ["testing", "performance", "pixijs", "tooling", "react", "tdd", "code retreat", "rxjs", "elm"],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "I have been working professionally in a modern react-redux-babel-webpack setup for about a year and I am passionate about anything JS in my private projects as well",
+  "what_can_i_contribute": "I could talk about my experiences with optimizing JS performance for the browser, some of our testing strategies we came up for a growing karma-mocha-webpack setup, and/or prepare some presentation/katas about pixi.js",
+  "tshirt": "M-L",
+  "urls": {
+    "photo": "avatars3.githubusercontent.com/u/12949268",
+    "github": "github.com/lukastaegert"
+  }
+}
