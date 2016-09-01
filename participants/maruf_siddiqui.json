@@ -1,0 +1,20 @@
+{
+  "name": "Maruf Siddiqui",
+  "tags": [
+    "node",
+    "es6",
+    "react",
+    "redux"
+  ],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "Fullstack Javascript Engineer focusing on front-end engineering. jQuery -> Backbone -> Angular -> React -> ?",
+  "tshirt": "M-M",
+  "urls": {
+    "photo": "https://www.xing.com/image/0_9_c_19c990d99_24588777_1/maruf-siddiqui-foto.256x256.jpg",
+    "github": "https://github.com/marufsiddiqui",
+    "twitter": "https://twitter.com/marufsiddiqui"
+  }
+}
