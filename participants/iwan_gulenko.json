@@ -1,0 +1,18 @@
+{
+  "name": "Iwan Gulenko",
+  "tags": ["javascript", "react"],
+  "company": "Gulenko IT Consulting"
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "Coding in React.js and Reflux",
+  "what_can_i_contribute": "I can find you cool tech jobs in Zurich",
+  "tshirt": "M-M",
+  "urls": {
+    "photo": "http://i.imgur.com/9uh8dYP.png",
+    "homepage": "www.gulenko.ch",
+    "github": "",
+    "twitter": "@iwangulenko"
+  }
+}
