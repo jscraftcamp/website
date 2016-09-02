@@ -1,7 +1,6 @@
 {
   "name": "Iwan Gulenko",
-  "tags": ["javascript", "react"],
-  "company": "Gulenko IT Consulting"
+  "tags": ["javascript", "react"], 
   "when": {
     "saturday": true,
     "sunday": true
