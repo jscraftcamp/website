@@ -1,0 +1,18 @@
+{
+  "name": "Tristan Read",
+  "company": "Code Club Aotearoa",
+  "tags": [ "nonprofit", "es6", "react", "redux", "functional", "craftsmanship" ],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "Traveller, dabbler, former front-end dev at a large enterprise healthcare org. Interested in education and social enterprise.",
+  "what_can_i_contribute": "I will bring an open mind and a desire to learn",
+  "tshirt": "M-M",
+  "urls": {
+    "photo": "https://gravatar.com/avatar/30c3d739239b49d994a19eaa45643df8?s=400",
+    "homepage": "https://phazor.github.io/about-me",
+    "github": "https://github.com/phazor",
+    "twitter": "https://twitter.com/tristanrread"
+  }
+}
