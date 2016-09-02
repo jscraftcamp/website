@@ -1,0 +1,17 @@
+{
+  "name": "robert",
+  
+  "tags": [ "DevOps" ],
+  "when": {
+    "saturday": false,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "I am learning javascript and node",
+  
+  "tshirt": "M-L",
+  "urls": {
+    
+    
+   
+  }
+}
