@@ -1,0 +1,17 @@
+{
+  "name": "Stefan Siegl",
+  "tags": [ "craftsmanship", "serverless", "php_v8js", "functional programming", "elm" ],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "PHP developer by day.  maintainer of PHP's v8js extension embedding V8 with PHP.  interested in functional programming and hence javascript & elm",
+  "what_can_i_contribute": "I could talk about php <-> js (server side) integration & AWS services, ... and generally an open mind and eager to learn",
+  "tshirt": "M-XL",
+  "urls": {
+    "photo": "https://pbs.twimg.com/profile_images/2182670421/stesie-fink-auf-auge-640px_400x400.jpg",
+    "homepage": "https://stesie.github.io/",
+    "github": "https://github.com/stesie",
+    "twitter": "https://twitter.com/stesie23"
+  }
+}
