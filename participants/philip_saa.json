@@ -1,0 +1,18 @@
+{
+  "name": "Philip Saa",
+  "company": "Raytheon",
+  "tags": [ "GruntJS", "AngularJS"],
+  "when": {
+    "saturday": true,
+    "sunday": true 
+  },
+  "what_is_my_connection_to_javascript": "I'm an American Filmmaker and Web Developer living and working in Bavaria, Germany",
+  "what_can_i_contribute": "A good vibe and open discussion. I can talk about Project Management",
+  "tshirt": "M-XL",
+  "urls": {
+    "photo": "https://pbs.twimg.com/profile_images/771308776188157953/LFdiyHLR.jpg",
+    "homepage": "http://about.me/philipsaa",
+    "github": "https://github.com/cowglow",
+    "twitter": "https://twitter.com/cowglow"
+  }
+}
