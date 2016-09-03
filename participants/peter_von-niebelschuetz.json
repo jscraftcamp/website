@@ -1,7 +1,7 @@
 {
   "name": "Peter von Niebelschütz",
   "company": "Visible Bytes",
-  "tags": ["jQuery, angular, node, sails, gulp"],
+  "tags": ["jQuery", "angular", "node", "sails", "gulp"],
   "when": {
     "saturday": true,
     "sunday": true
