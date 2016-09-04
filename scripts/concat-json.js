@@ -11,13 +11,13 @@ var array = [];
 recursiveReaddirSync(srcdir)
   .filter(file => file.endsWith(".json"))
   .filter(file => file != "participants/_template.json")
-  .sort((a,b) => hashcode().value(a)%1000 - hashcode().value(b)%1000)
   .forEach(file => {
     var content = fs.readFileSync(file, "utf8");
     var object = JSON.parse(content);
     array.push(object);
   });
 
+array.sort((a,b) => a.name.localeCompare(b.name))
 
 fs.writeFileSync(destfile, JSON.stringify(array), "utf8")
 
