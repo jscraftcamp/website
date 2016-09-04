@@ -64,6 +64,7 @@ describe("Participants JSON file", () => {
         object.tags.forEach(item => {
             assert.equal(typeof item, "string", "Each item in 'tags' must be of type string");
             assert.ok(item.trim().length > 0, "Each item in 'tags' must not be empty");
+            assert.ok(item.indexOf(',') === -1, "Tags can not contain commas - each tag must be an own element within the array");
         });
       });
       it("may contain additional URLs", () => {
