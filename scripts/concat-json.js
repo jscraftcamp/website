@@ -1,7 +1,6 @@
 var fs = require("fs");
 var path = require("path");
 var recursiveReaddirSync = require("recursive-readdir-sync");
-var hashcode = require("hashcode").hashCode;
 
 var args = process.argv.slice(2);
 var srcdir = args[0];
