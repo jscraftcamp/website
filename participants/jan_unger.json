@@ -1,0 +1,17 @@
+{
+  "name": "Jan Unger",
+  "tags": [ "AngularJS", "jQuery", "PHP", "Craftsmanship", "clean code", "TDD" ],
+  "when": {
+    "saturday": true,
+    "sunday": true 
+  },
+  "what_is_my_connection_to_javascript": "Wrote my first JS UI component in 2008 when stuff like that was called 'DHTML'. I've been using JS in my daily business since then.",
+  "what_can_i_contribute": "The more I learn about JS, the more I realize how little I know about it. I'm happy to share what I've learned about using JS in a web browser and I'm eager to learn more about ES6, node.js and React.",
+  "tshirt": "M-L",
+  "urls": {
+    "photo": "https://www.gravatar.com/avatar/445210b24ce9ee073ba086e3236bd2c0?s=400",
+    "homepage": "http://www.juit.de/",
+    "github": "https://github.com/janunger",
+    "twitter": "https://twitter.com/juitde"
+  }
+}
