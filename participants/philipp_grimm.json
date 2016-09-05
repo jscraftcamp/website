@@ -1,7 +1,7 @@
 {
     "name": "Philipp Grimm",
     "company": "bitExpert AG",
-    "tags": [ "angular2", "node", "extjs" ],
+    "tags": [ "angular2", "node" ],
     "when": {
       "saturday": true,
       "sunday": true
