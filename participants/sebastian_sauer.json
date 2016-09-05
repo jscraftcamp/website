@@ -1,0 +1,27 @@
+{
+  "name": "Sebastian Sauer",
+  "company": "freeelancer",
+  "tags": [
+    "angular",
+    "angular 2",
+    "typescript",
+    "ngrx",
+    "node",
+    "express",
+    "meteor",
+    "webpack"
+  ],
+  "when": {
+    "saturday": true,
+    "sunday": false
+  },
+  "what_is_my_connection_to_javascript": "it's all I need ;) fav programming language",
+  "what_can_i_contribute": "I'm currently working on angular2 applications and could share my experiences. I'd love to get some more background on GraphQL or just talk (e.g. ionic2, React, node..)",
+  "tshirt": "M-M",
+  "urls": {
+    "photo": "https://avatars2.githubusercontent.com/u/280252?v=3&s=460",
+    "homepage": "http://dynpages.de",
+    "github": "https://github.com/basti1253",
+    "twitter": "https://twitter.com/rudygotya"
+  }
+}
