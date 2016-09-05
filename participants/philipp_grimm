@@ -1,0 +1,14 @@
+{
+    "name": "Philipp Grimm",
+    "company": "bitExpert AG",
+    "tags": [ "angular2", "node", "extjs" ],
+    "when": {
+      "saturday": true,
+      "sunday": true
+    },
+    "what_is_my_connection_to_javascript": "I use it dayli and I like most of the time.",
+    "tshirt": "M-XL",
+    "urls": {
+      "photo": "https://avatars2.githubusercontent.com/u/9745579?v=3&s=460"
+    }
+}
