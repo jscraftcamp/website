@@ -1,6 +1,6 @@
 {
     "name": "Dominik Heller",
-    "tags": [ "angular, react, node, hapi" ],
+    "tags": [ "angular", "react", "node", "hapi" ],
     "when": {
       "saturday": true,
       "sunday": true
