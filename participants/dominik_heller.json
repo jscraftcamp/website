@@ -1,0 +1,14 @@
+{
+    "name": "Dominik Heller",
+    "tags": [ "angular, react, node, hapi" ],
+    "when": {
+      "saturday": true,
+      "sunday": true
+    },
+    "what_is_my_connection_to_javascript": "Experience with client side Javascript applications, hacking on node.js",
+    "what_can_i_contribute": "I'm always eager to learn, so I will probably ask a lot of questions.",
+    "urls": {
+      "photo": "https://avatars1.githubusercontent.com/u/4761568?v=3",
+      "github": "https://github.com/hellersson",
+    }
+}
