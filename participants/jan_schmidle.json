@@ -1,0 +1,17 @@
+{
+    "name": "Jan Schmidle",
+    "company": "Cospired",
+    "tags": [ "nodejs", "backend", "ES6" ],
+    "when": {
+      "saturday": true,
+      "sunday": true
+    },
+    "what_is_my_connection_to_javascript": "Started with JavaScript in node as a small server side tool quite a while ago. Now we do most of our projects in JavaScript.",
+    "what_can_i_contribute": "Thinking about attack vectors and how to use the different API's to secure your traffic.",
+    "tshirt": "M-L",
+    "urls": {
+      "photo": "http://make-munich.de/wp-content/uploads/2015/10/jschmidle-2.jpg",
+      "homepage": "http://www.cospired.com/",
+      "github": "https://github.com/bitcloud"
+    }
+}
