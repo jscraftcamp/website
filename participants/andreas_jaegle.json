@@ -1,0 +1,26 @@
+{
+  "name": "Andreas Jägle",
+  "company": "cluetec GmbH",
+  "tags": [
+    "typescript",
+    "angular",
+    "webpack",
+    "spring",
+    "security",
+    "elasticsearch",
+    "docker",
+    "gitlab-ci"
+  ],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "Daily work building TypeScript-based angular frontends accessing secured spring backends. Continuously built and deployed via docker.",
+  "what_can_i_contribute": "Experience in Angular, TypeScript, tooling, infrastructure and deploying apps.",
+  "tshirt": "M-XL",
+  "urls": {
+    "photo": "http://ajaegle.de/profile.jpg",
+    "github": "https://github.com/ajaegle",
+    "twitter": "https://twitter.com/ajaegle"
+  }
+}
