@@ -1,0 +1,18 @@
+{
+    "name": "Dy Raffy",
+    "company": "Coca Cola",
+    "tags": [ "angular", "Ember JS", "JavaScript", "Node JS", "React" ],
+    "when": {
+      "saturday": true,
+      "sunday": true
+    },
+    "what_is_my_connection_to_javascript": "I am a JEE Backend developer and I am intresting in JavaScript",
+    "what_can_i_contribute": "No idea",
+    "tshirt": "W-L",
+    "urls": {
+      "photo": "NO",
+      "homepage": "NO",
+      "github": "NO",
+      "twitter": "NO"
+    }
+}
