@@ -13,7 +13,8 @@
         "saturday": true,
         "sunday": true
     },
-    "what_is_my_connection_to_javascript": "Backend developer and novice JavaScript programmer looking forward to close a knowledge gap.",
+    "what_is_my_connection_to_javascript": "Backend developer and novice JavaScript programmer looking forward to close a knowledge gap. Not a lot of professional experience with JS, only during my spare time.",
+    "what_can_i_contribute": "I am a good listener and capable of grasping a topic quickly and look at it from different (sometimes unique) angles. I also like to go down into the rabbit hole: Currently, I am looking into the PPC port of V8.",
     "tshirt": "M-L",
     "urls": {
         "github": "https://github.com/aharter",
