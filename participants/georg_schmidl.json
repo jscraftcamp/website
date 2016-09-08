@@ -1,0 +1,18 @@
+{
+    "name": "Georg Schmidl",
+    "company": "Scandio GmbH",
+    "tags": [ "angular", "react", "node" ],
+    "when": {
+      "saturday": true,
+      "sunday": true
+    },
+    "what_is_my_connection_to_javascript": "I'm a software developer that recently dived into things like Angular2, React and Redux.",
+    "what_can_i_contribute": "I don't have a ton of experience but I'm happy to share whatever there is ;)",
+    "tshirt": "M-M",
+    "urls": {
+      "photo": "http://www.gravatar.com/avatar/5243f09a2c9e929d46187f10aed81a48?s=500",
+      "homepage": "http://vicox.net/",
+      "github": "https://github.com/vicox",
+      "twitter": "https://twitter.com/vicox"
+    }
+}
