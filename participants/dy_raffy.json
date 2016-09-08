@@ -9,4 +9,10 @@
     "what_is_my_connection_to_javascript": "I am a JEE Backend developer and I am intresting in JavaScript",
     "what_can_i_contribute": "No idea",
     "tshirt": "W-L",
+    ""urls": {
+      "photo": "http://materializecss.com/images/sample-1.jpg",
+      "homepage": "http://www.example.com/",
+      "github": "https://github.com/",
+      "twitter": "https://twitter.com/"
+    }
 }
