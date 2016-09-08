@@ -1,7 +1,7 @@
 {
   "name": "robert",
   
-  "tags": [ "DevOps" ],
+  "tags": [ "craftsmanship", "tdd", "DevOps" ],
   "when": {
     "saturday": false,
     "sunday": true
