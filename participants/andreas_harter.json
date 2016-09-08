@@ -1,0 +1,22 @@
+{
+    "name": "Andreas Harter",
+    "company": "Zebware AB",
+    "tags": [
+        "angular",
+        "rxjs",
+        "webpack",
+        "typescript",
+        "ci",
+        "cd"
+    ],
+    "when": {
+        "saturday": true,
+        "sunday": true
+    },
+    "what_is_my_connection_to_javascript": "Backend developer and novice JavaScript programmer looking forward to close a knowledge gap.",
+    "tshirt": "M-L",
+    "urls": {
+        "github": "https://github.com/aharter",
+        "twitter": "https://twitter.com/skills404"
+    }
+}
