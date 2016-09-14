@@ -1,0 +1,14 @@
+{
+  "name": "Dimitry Polivaev",
+  "company": "Mercateo",
+  "tags": ["react"],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "Sometimes Javascript developer.",
+  "tshirt": "M-XL",
+  "urls": {
+    "photo": "http://photos2.meetupstatic.com/photos/member/5/7/1/4/highres_256762292.jpeg"
+  }
+}
