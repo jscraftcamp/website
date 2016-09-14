@@ -1,0 +1,14 @@
+{
+  "name": "Chris Mair",
+  "company": "freelance developer, consultant and trainer",
+  "tags": [ "Node.js", "Express", "AngularJS" ],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "JS is one of the technologies I use for my freelance work.",
+  "tshirt": "M-XL",
+  "urls": {
+    "homepage": "http://www.1006.org"
+  }
+}
