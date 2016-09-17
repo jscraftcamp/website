@@ -1,6 +1,6 @@
 (function() {
 
-function statsForParticipants(tagLists) {
+function tagStatsForParticipants(tagLists) {
   function sumUp(tags1, tags2) {
     var sum = {};
     // copy all tags1 content
@@ -20,7 +20,7 @@ function statsForParticipants(tagLists) {
   if (tagLists.length === 1) {
     return statsForOneParticipant(tagLists[0]);
   }
-  return sumUp(statsForOneParticipant(tagLists[0]), statsForParticipants(tagLists.slice(1)));
+  return sumUp(statsForOneParticipant(tagLists[0]), tagStatsForParticipants(tagLists.slice(1)));
 }
 
 function statsForOneParticipant(tags) {
@@ -32,9 +32,9 @@ function statsForOneParticipant(tags) {
 }
 
 if ('undefined'!=typeof module && module.exports) {
-  module.exports = statsForParticipants;
+  module.exports = tagStatsForParticipants;
 } else {
   // when loaded in the browser
-  window.statsForParticipants = statsForParticipants;
+  window.tagStatsForParticipants = tagStatsForParticipants;
 }
 })();
