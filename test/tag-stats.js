@@ -19,7 +19,10 @@ function statsForParticipants(tagLists) {
     }
     return sum;
   }
-  return sumUp(statsForOneParticipant(tagLists[0]), statsForOneParticipant(tagLists[1]));
+  if (tagLists.length === 1) {
+    return statsForOneParticipant(tagLists[0]);
+  }
+  return sumUp(statsForOneParticipant(tagLists[0]), statsForParticipants(tagLists.slice(1)));
 }
 
 function statsForOneParticipant(tags) {
@@ -39,5 +42,9 @@ describe('Tag stats (get collected for each participant)', () => {
   it('unique tags for two users, report the same as stats', () => {
     const stats = statsForParticipants([['one', 'two'], ['three']]);
     assertThat(stats, equalTo({ one: 1, two: 1, three: 1 }));
+  });
+  it('overlapping tags for many users', () => {
+    const stats = statsForParticipants([['one', 'two'], ['three'], ['one', 'three']]);
+    assertThat(stats, equalTo({ one: 2, two: 1, three: 2 }));
   });
 });
