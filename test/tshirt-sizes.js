@@ -2,22 +2,7 @@ const hamjest = require("hamjest");
 const assertThat = hamjest.assertThat;
 const hasProperty = hamjest.hasProperty;
 const equalTo = hamjest.equalTo;
-
-function sortShirtSizes(shirts) {
-  function buildSizesObject(sizesObj, cur) {
-    var split = cur.split('-');
-    var shape = split[0]; // M or W
-    var size = split[1]; // L, XL, ...
-    if (!sizesObj[shape]) sizesObj[shape] = {};
-    if (!sizesObj[shape][size]) {
-      sizesObj[shape][size] = 1;
-    } else {
-      sizesObj[shape][size]++;
-    }
-    return sizesObj;
-  }
-  return shirts.reduce(buildSizesObject, {});
-}
+const sortShirtSizes = require('../src/js/tshirt-sizes');
 
 describe("T-Shirt sizes", () => {
   const shirts = ["M-L","M-M","W-M","W-M","M-L","M-XL","M-L","M-L","W-XL","M-XL","M-M"];
