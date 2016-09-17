@@ -94,7 +94,6 @@ window.onload = function() {
     var source = $("#tag-template").html();
     var template = Handlebars.compile(source);
     var renderedTags = tagStatsForParticipants(tagLists).map(function(tag) { return template(tag); });
-console.log("tagStatsForParticipants(tagLists)= ", tagStatsForParticipants(tagLists));
     $("#tags").append(renderedTags.join(""));
 
   });
