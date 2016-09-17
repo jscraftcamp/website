@@ -3,7 +3,11 @@ const assertThat = hamjest.assertThat;
 const equalTo = hamjest.equalTo;
 
 function statsForOneParticipant(tags) {
-  return { one: 1, two: 2 };
+  function collect(stats, tag) {
+    stats[tag] = 1;
+    return stats;
+  }
+  return tags.reduce(collect, {});
 }
 
 describe('Tag stats', () => {
@@ -11,7 +15,7 @@ describe('Tag stats', () => {
     it('only unique tags for one user, report the same as stats', () => {
       const tags = ['one', 'two'];
       const stats = statsForOneParticipant(tags);
-      assertThat(stats, equalTo({ one: 1, two: 2 }));
+      assertThat(stats, equalTo({ one: 1, two: 1 }));
     });
   });
 });
