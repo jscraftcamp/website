@@ -4,7 +4,9 @@ function tagStatsForParticipants(tagLists) {
   function toHandlebarsCompatibleList(sumObj) {
     var handlebarsCompatible = [];
     for (var tagName in sumObj) {
-      handlebarsCompatible.push({name: tagName, count: sumObj[tagName]});
+      var count = sumObj[tagName];
+      var fontSize = count < 8 ? 8 : ( count > 30 ? 30 : count );
+      handlebarsCompatible.push({name: tagName, count: count, fontSize: fontSize});
     }
     return handlebarsCompatible;
   }
