@@ -12,10 +12,14 @@
     </div>
   </div>
 
-  <div id="participants" class="row">
-  </div>
+  <div id="tags" class="row"></div>
+  <div id="participants" class="row"></div>
 </div>
 
+
+<script id="tag-template" type="text/x-handlebars-template">
+  <span title="{{count}}" style="font-size: {{fontSize}}px">#{{name}}</span>
+</script>
 
 <script id="participant-template" type="text/x-handlebars-template">
   <div class="col s12 m6 l3">
@@ -62,6 +66,7 @@
   </div>
 </script>
 
+<script type="text/javascript" src="./js/tag-stats.js"></script>
 <script type="text/javascript">
 
 window.onload = function() {
@@ -70,6 +75,7 @@ window.onload = function() {
     var sum = 0;
     var sum_saturday = 0;
     var sum_sunday = 0;
+    var tagLists = [];
     $.each(data, function(index, participant) {
       var source = $("#participant-template").html();
       var template = Handlebars.compile(source);
@@ -78,11 +84,18 @@ window.onload = function() {
       sum++;
       if(participant.when.saturday) sum_saturday++;
       if(participant.when.sunday) sum_sunday++;
+      tagLists.push(participant.tags);
     });
     $("#participants").append(items.join(""));
     $("#sum").append(sum+" participants");
     $("#sum_saturday").append(sum_saturday+" participants on Saturday (max. 80)");
     $("#sum_sunday").append(sum_sunday+" participants on Sunday (max. 80)");
+
+    var source = $("#tag-template").html();
+    var template = Handlebars.compile(source);
+    var renderedTags = tagStatsForParticipants(tagLists).map(function(tag) { return template(tag); });
+    $("#tags").append(renderedTags.join(""));
+
   });
 
 Handlebars.registerHelper('list', function(context, options) {

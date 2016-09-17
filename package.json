@@ -5,10 +5,11 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "hamjest": "^2.13.0",
     "harp": "^0.20.3",
+    "hashcode": "^1.0.3",
     "mocha": "^3.0.2",
-    "recursive-readdir-sync": "^1.0.6",
-    "hashcode": "^1.0.3"
+    "recursive-readdir-sync": "^1.0.6"
   },
   "scripts": {
     "prebuild": "mkdir -p ./dist",
