@@ -9,9 +9,10 @@ function sortShirtSizes(shirts) {
     } else {
       sizesObj[shape][size]++;
     }
+    sizesObj.total++;
     return sizesObj;
   }
-  return shirts.reduce(buildSizesObject, {});
+  return shirts.reduce(buildSizesObject, { total: 0 });
 }
 if ('undefined'!=typeof module && module.exports) {
   module.exports = sortShirtSizes;

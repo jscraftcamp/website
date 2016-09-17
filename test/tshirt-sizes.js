@@ -22,4 +22,9 @@ describe("T-Shirt sizes", () => {
     assertThat(sizes.W.M, equalTo(2));
     assertThat(sizes.W.XL, equalTo(1));
   });
+  describe('lists the total', () => {
+    it('overall', () => {
+      assertThat(sortShirtSizes(shirts).total, equalTo(11));
+    });
+  });
 });
