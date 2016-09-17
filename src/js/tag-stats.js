@@ -1,6 +1,17 @@
 (function() {
 
 function tagStatsForParticipants(tagLists) {
+  function toHandlebarsCompatibleList(sumObj) {
+    var handlebarsCompatible = [];
+    for (var tagName in sumObj) {
+      handlebarsCompatible.push({name: tagName, count: sumObj[tagName]});
+    }
+    return handlebarsCompatible;
+  }
+  return toHandlebarsCompatibleList(innerTagStatsForParticipants(tagLists));
+}
+
+function innerTagStatsForParticipants(tagLists) {
   function sumUp(tags1, tags2) {
     var sum = {};
     // copy all tags1 content
@@ -20,7 +31,7 @@ function tagStatsForParticipants(tagLists) {
   if (tagLists.length === 1) {
     return statsForOneParticipant(tagLists[0]);
   }
-  return sumUp(statsForOneParticipant(tagLists[0]), tagStatsForParticipants(tagLists.slice(1)));
+  return sumUp(statsForOneParticipant(tagLists[0]), innerTagStatsForParticipants(tagLists.slice(1)));
 }
 
 function statsForOneParticipant(tags) {
