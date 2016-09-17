@@ -17,4 +17,8 @@ describe('Tag stats (get collected for each participant)', () => {
     const stats = tagStatsForParticipants([['one', 'two'], ['three'], ['one', 'three']]);
     assertThat(stats, equalTo([{name: 'one', count: 2}, {name: 'two', count: 1}, {name: 'three', count: 2}]));
   });
+  it('case-insensitive', () => {
+    const stats = tagStatsForParticipants([['one', 'Two'], ['THREE'], ['one', 'three']]);
+    assertThat(stats, equalTo([{name: 'one', count: 2}, {name: 'two', count: 1}, {name: 'three', count: 2}]));
+  });
 });

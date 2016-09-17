@@ -40,7 +40,7 @@ function tagStatsForParticipantsAsObject(tagLists) {
 
 function statsForOneParticipant(tags) {
   function collect(stats, tag) {
-    stats[tag] = 1;
+    stats[tag.toLowerCase()] = 1;
     return stats;
   }
   return tags.reduce(collect, {});
