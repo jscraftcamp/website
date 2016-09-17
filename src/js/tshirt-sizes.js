@@ -7,7 +7,8 @@
   }
 
   function updateForShape(sizesObj, shape) {
-    if (!sizesObj[shape]) {
+    var shapeNotInSizesObj = !(shape in sizesObj);
+    if (shapeNotInSizesObj) {
       sizesObj[shape] = { total: 0 };
     }
     sizesObj[shape].total++;
