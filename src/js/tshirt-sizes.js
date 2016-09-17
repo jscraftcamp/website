@@ -1,11 +1,9 @@
 (function (){
 
-  function updateForSize(curShape, size) {
-    if (!curShape[size]) {
-      curShape[size] = 1;
-    } else {
-      curShape[size]++;
-    }
+  function increaseForSize(curShape, size) {
+    var shapeHasSizeAlready = size in curShape;
+    var count = shapeHasSizeAlready ? curShape[size] : 0;
+    curShape[size] = count + 1;
   }
 
   function updateForShape(sizesObj, shape) {
@@ -21,11 +19,13 @@
     var shape = split[0]; // M or W
     var size = split[1]; // L, XL, ...
     updateForShape(sizesObj, shape);
-    updateForSize(sizesObj[shape], size);
+    increaseForSize(sizesObj[shape], size);
     sizesObj.total++;
     return sizesObj;
   }
-  return shirts.reduce(buildSizesObject, { total: 0 });
+
+  var initialSizesObject = { total: 0 };
+  return shirts.reduce(buildSizesObject, initialSizesObject);
 }
 
 if ('undefined'!=typeof module && module.exports) {
