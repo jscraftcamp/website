@@ -6,5 +6,7 @@
     "saturday": true,
     "sunday": true
   },
-  "what_is_my_connection_to_javascript": "..."
+  "what_is_my_connection_to_javascript": "...",
+  "urls" : {
+  }
 }
