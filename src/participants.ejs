@@ -85,10 +85,13 @@ window.onload = function() {
     $("#sum_saturday").append(sum_saturday+" participants on Saturday (max. 110)");
     $("#sum_sunday").append(sum_sunday+" participants on Sunday (max. 110)");
 
+    function tshirtData(participant) { return participant.tshirt; }
+    function notEmpty(tshirt) { return !!tshirt; }
+    var tShirtSizesStructuredInfo = JSON.stringify(sortShirtSizes(data.map(tshirtData).filter(notEmpty)), null, 4);
+    console.log("T-Shirt sizes:", tShirtSizesStructuredInfo);
+
     if (window.location.hash === '#list-tshirt-sizes') {
-      function tshirtData(participant) { return participant.tshirt; }
-      function notEmpty(tshirt) { return !!tshirt; }
-      alert(JSON.stringify(sortShirtSizes(data.map(tshirtData).filter(notEmpty)), null, 4));
+      alert(tShirtSizesStructuredInfo);
     }
   });
 
