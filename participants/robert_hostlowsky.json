@@ -1,0 +1,20 @@
+{
+    "name": "Robert Hostlowsky",
+    "company": "codecentric",
+    "tags": [
+        "ES6", "React", "rxjs", "GraphQL", "Relay", "Clean Code", "TDD"
+    ],
+    "when": {
+        "saturday": true,
+        "sunday": true
+    },
+    "what_is_my_connection_to_javascript": "Got in love with JS while a TDD session years ago. JS and its community work is still inspiring me every day.",
+    "what_can_i_contribute": "Happy to talk about Craftsmanship; let's build a GraphQL server/client. Love to do more reactive and functional stuff.",
+    "tshirt": "M-M",
+    "urls": {
+        "photo": "https://avatars0.githubusercontent.com/u/217931?v=3&u=1b511633d1d6a911150d495ca401032f250a4994&s=140",
+        "homepage": "https://www.codecentric.de/team/profil/?profil=robert-hostlowsky",
+        "github": "https://github.com/lowsky",
+        "twitter": "https://twitter.com/rhosts"
+    }
+}
