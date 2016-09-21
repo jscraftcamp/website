@@ -1,0 +1,18 @@
+{
+  "name": "Walter Kammergruber",
+  "company": "Agenturmatching",
+  "tags": [ "clean code", "full stack", "polyglot", "software architecture" ],
+  "when": {
+    "saturday": true,
+    "sunday": true 
+  },
+  "what_is_my_connection_to_javascript": "Wrote my first blog post about crawling a webpage with nodejs and jQuery in 2010. My first web page was best viewed with Netscape 4.5.",
+  "what_can_i_contribute": "Happy to talk about software architecture in general, but especially about web based ones. If you want to argue about whether JavaScript, Java, Ruby or Python is better, I will most likely argue against you.",
+  "tshirt": "M-XL",
+  "urls": {
+    "photo": "https://pbs.twimg.com/profile_images/2677395960/4b1f8bfac3fe7839c882908c1c82869a.png",
+    "homepage": "http://wkammergruber.de",
+    "github": "https://github.com/woidda",
+    "twitter": "https://twitter.com/woidda"
+  }
+}

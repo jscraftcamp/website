@@ -1,13 +1,12 @@
 {
   "name": "Wolfram Kriesing",
   "company": "crewmeister.com",
-  "tags": [ "es6", "react" ],
+  "tags": [ "ES6", "React", "jsCodeRetreat", "react-native", "Craftsmanship", "clean code", "TDD", "tddbin", "es6katas.org" ],
   "when": {
     "saturday": true,
     "sunday": true 
   },
-  "what_is_my_connection_to_javascript": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  "what_can_i_contribute_to_js_craftcamp": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "what_is_my_connection_to_javascript": "document.layers && document.all",
   "urls": {
     "photo": "https://pbs.twimg.com/profile_images/652835237098094592/_7ipdcfZ_400x400.png",
     "homepage": "http://wolfram.kriesing.de/",

@@ -1,0 +1,14 @@
+{
+    "name": "Alexander Schmidt",
+    "tags": [ "cleancode", "tdd", "es6", "node", "react", "redux" ],
+    "when": {
+        "saturday": true,
+        "sunday": true
+    },
+    "what_is_my_connection_to_javascript": "Passionate software developer working with JavaScript on the server- and client-side to produce enjoyable web experiences.",
+    "tshirt": "M-M",
+    "urls": {
+        "github": "https://github.com/lxanders",
+        "twitter": "https://twitter.com/lxanders"
+    }
+}

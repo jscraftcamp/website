@@ -1,0 +1,17 @@
+{
+  "name": "Jan Rembold",
+  "company": "virtual-identity.com",
+  "tags": [ "Frontend", "TypeScript", "Modular" ],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "I started as full stack web developer 11 years ago and specialized on frontend development 2 years ago.",
+  "what_can_i_contribute": "Ideas about frontend plugin development around ES6, TypeScript and HTTP2",
+  "tshirt": "M-M",
+  "urls": {
+    "photo": "https://janrembold.github.io/avatar_thumb.jpg",
+    "homepage": "http://virtual-identity.com",
+    "github": "https://github.com/janrembold"
+  }
+}

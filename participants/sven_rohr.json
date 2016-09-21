@@ -1,0 +1,12 @@
+{
+  "name": "Sven Rohr",
+  "company": "TNG Technology Consulting",
+  "tags": [ "javascript" ],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "...",
+  "urls" : {
+  }
+}

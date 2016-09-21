@@ -38,29 +38,31 @@
         {{#if what_is_my_connection_to_javascript}}
         <p>{{what_is_my_connection_to_javascript}}</p>
         {{/if}}
-        {{#if what_can_i_contribute_to_js_craftcamp}}
-        <p>{{what_can_i_contribute_to_js_craftcamp}}</p>
+        {{#if what_can_i_contribute}}
+        <p>{{what_can_i_contribute}}</p>
         {{/if}}
       </div>
       <div class="card-action">
         {{#if urls.homepage}}
-        <a href="{{urls.homepage}}"><i class="fa fa-home fa-fw"/></a>
+        <a class="blue-text" href="{{urls.homepage}}"><i class="fa fa-home fa-fw"/></a>
         {{/if}}
         {{#if urls.github}}
-        <a href="{{urls.github}}"><i class="fa fa-github fa-fw"/></a>
+        <a class="blue-text" href="{{urls.github}}"><i class="fa fa-github fa-fw"/></a>
         {{/if}}
         {{#if urls.twitter}}
-        <a href="{{urls.twitter}}"><i class="fa fa-twitter fa-fw"/></a>
+        <a class="blue-text" href="{{urls.twitter}}"><i class="fa fa-twitter fa-fw"/></a>
         {{/if}}
-        {{#list tags}}
-           <a class="orange-text" href="">{{ this }}</a>
-        {{/list}}
+        <div class="card-tags-container">
+          {{#list tags}}
+             <span class="card-tag">#{{ this }}</span>
+          {{/list}}
         </div>
       </div>
     </div>
   </div>
 </script>
 
+<script type="text/javascript" src="./js/tshirt-sizes.js"></script>
 <script type="text/javascript">
 
 window.onload = function() {
@@ -80,8 +82,17 @@ window.onload = function() {
     });
     $("#participants").append(items.join(""));
     $("#sum").append(sum+" participants");
-    $("#sum_saturday").append(sum_saturday+" participants on Saturday (max. 100)");
-    $("#sum_sunday").append(sum_sunday+" participants on Sunday (max. 100)");
+    $("#sum_saturday").append(sum_saturday+" participants on Saturday (max. 110)");
+    $("#sum_sunday").append(sum_sunday+" participants on Sunday (max. 110)");
+
+    function tshirtData(participant) { return participant.tshirt; }
+    function notEmpty(tshirt) { return !!tshirt; }
+    var tShirtSizesStructuredInfo = JSON.stringify(sortShirtSizes(data.map(tshirtData).filter(notEmpty)), null, 4);
+    console.log("T-Shirt sizes:", tShirtSizesStructuredInfo);
+
+    if (window.location.hash === '#list-tshirt-sizes') {
+      alert(tShirtSizesStructuredInfo);
+    }
   });
 
 Handlebars.registerHelper('list', function(context, options) {

@@ -30,6 +30,14 @@ code {
 }
 
 /* materialize cards customization */
+.card .card-action {
+    padding: 10px 20px 10px 20px;
+}
+
+.card .card-content .card-title {
+    line-height: inherit;
+}
+
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
     margin-right: 10px;
 }
@@ -39,5 +47,25 @@ code {
 }
 
 .card .card-image img {
-    top: -10px;
+    top: -25px;
+}
+
+.card .card-tags-container {
+  display: block;
+  height: 1.5em;
+  overflow: hidden;
+}
+.card .card-tags-container:hover {
+  height: auto;
+}
+.card .card-tags-container .card-tag {
+  transition: color 2s;
+}
+.card .card-tags-container:hover .card-tag {
+  color: black;
+}
+
+.card .card-tag {
+  margin-right:10px;
+  color: #757575;
 }

@@ -1,0 +1,18 @@
+{
+  "name": "Max Kleucker",
+  "company": "Scandio GmbH",
+  "tags": ["es6", "node", "react", "angular", "express", "fullstack"],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "I build node-based microservices and still try to decide between Angular and React.",
+  "what_can_i_contribute": "Using the various AWS services in node-projects. Also I like to discuss code-structures.",
+  "tshirt": "M-M",
+  "urls": {
+    "photo": "https://pbs.twimg.com/profile_images/468331986570862592/AHBysCT-_400x400.jpeg",
+    "homepage": "https://justcurious.is",
+    "github": "https://github.com/mkleucker",
+    "twitter": "https://twitter.com/maxlmator"
+  }
+}

@@ -5,12 +5,16 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "hamjest": "^2.13.0",
     "harp": "^0.20.3",
-    "mocha": "^3.0.2"
+    "hashcode": "^1.0.3",
+    "mocha": "^3.0.2",
+    "recursive-readdir-sync": "^1.0.6"
   },
   "scripts": {
     "prebuild": "mkdir -p ./dist",
-    "build": "harp compile ./src ./dist; cp CNAME dist/; node scripts/concat-json.js ./participants dist/participants.json; cp ./dist/participants.json ./src/",
+    "build": "harp compile ./src ./dist; cp CNAME dist/; npm run 'build:participants.json'",
+    "build:participants.json": "node scripts/concat-json.js ./participants dist/participants.json; cp ./dist/participants.json ./src/",
     "start": "harp server ./src",
     "test": "mocha test"
   },

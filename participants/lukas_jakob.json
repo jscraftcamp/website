@@ -1,0 +1,17 @@
+{
+  "name": "Lukas Jakob",
+  "company": "valtech",
+  "tags": ["Angular", "React", "Ionic"],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "Freelance fullstack developer focusing on modern javascript. Always experimenting and learning.",
+  "what_can_i_contribute_to_js_craftcamp": "I will contribute good spirit and motivation to teach and learn.",
+  "tshirt": "M-L",
+  "urls": {
+    "photo": "https://avatars2.githubusercontent.com/u/886152?v=3&s=460",
+    "homepage": "http://www.lukasjakob.com",
+    "github": "https://github.com/lujakob"
+  }
+}

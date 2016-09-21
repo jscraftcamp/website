@@ -1,0 +1,27 @@
+{
+    "name": "Simon Wicki",
+    "company": "JustWatch",
+    "tags": [ 
+      "angular",
+      "ionic",
+      "rxjs",
+      "redux",
+      "webpack",
+      "cordova",
+      "es6",
+      "typescript",
+      "SEO"
+    ],
+    "when": {
+      "saturday": true,
+      "sunday": true
+    },
+    "what_is_my_connection_to_javascript": "I create web and mobile apps using web technologies.",
+    "what_can_i_contribute": "I'm pretty confident in anything related to Ionic, Cordova and SEO optimized web apps",
+    "tshirt": "M-L",
+    "urls": {
+      "photo": "https://avatars3.githubusercontent.com/u/1093032?v=3&s=200",
+      "github": "https://github.com/zwacky",
+      "twitter": "https://twitter.com/zwacky"
+    }
+}

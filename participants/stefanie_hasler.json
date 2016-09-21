@@ -1,0 +1,20 @@
+{
+    "name": "Stefanie Hasler",
+    "company": "codecentric",
+    "tags": [
+        "node",
+        "es6",
+        "react",
+        "express"
+    ],
+    "when": {
+        "saturday": true,
+        "sunday": true
+    },
+    "what_is_my_connection_to_javascript": "I'm using javascript on a daily basis in my project. I try to keep it pure and functional if I can, and have been using ES6 wherever possible.",
+    "what_can_i_contribute": "Functional programming, war stories about using ES6 in a business application.",
+    "tshirt": "W-L",
+    "urls": {
+        "homepage": "https://www.codecentric.de/team/profil/?profil=stefanie-hasler"
+    }
+}

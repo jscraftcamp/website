@@ -1,0 +1,17 @@
+{
+  "name": "Christian Waldmann",
+  "company": "Yatego GmbH",
+  "tags": ["cleancode", "tdd", "es6", "Angular", "e2e"],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "Fulltime frontend dev with focus on JavaScript and Angular",
+  "what_can_i_contribute": "Clean and well tested JavaScript coding. Setting up an robust and working e2e setup, ... ",
+  "tshirt": "M-L",
+  "urls": {
+    "photo": "https://avatars0.githubusercontent.com/u/851611?v=3&s=460",
+    "github": "https://github.com/wachri",
+    "twitter": "https://twitter.com/wachri"
+  }
+}

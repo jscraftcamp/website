@@ -1,0 +1,18 @@
+{
+    "name": "Brigitte Jellinek",
+    "company": "Fachhochschule Salzburg",
+    "tags": [ "ES6", "craftsmanship", "ruby", "jQuery" ],
+    "when": {
+      "saturday": true,
+      "sunday": true
+    },
+    "what_is_my_connection_to_javascript": "I teach Javascript at University.",
+    "what_can_i_contribute": "Concentrated work and a keen understanding of the importance of breaks, food, coffee, chocolate.",
+    "tshirt": "W-XL", 
+    "urls": {
+      "photo": "https://avatars2.githubusercontent.com/u/36773?v=3&s=460",
+      "homepage": "https://brigitte-jellinek.at/",
+      "github": "https://github.com/bjelline/",
+      "twitter": "https://twitter.com/bjelline/"
+    }
+}

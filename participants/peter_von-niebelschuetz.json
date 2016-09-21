@@ -1,0 +1,16 @@
+{
+  "name": "Peter von Niebelschütz",
+  "company": "Visible Bytes",
+  "tags": ["jQuery", "angular", "node", "sails", "gulp"],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "I am a full stack web developer, have to use javascript regularly on the frontend and would like to be able to better use it in the backend as well.",
+  "tshirt": "M-L",
+  "urls": {
+    "photo": "https://pbs.twimg.com/profile_images/668796543248519168/rwVGKXwh_400x400.jpg",
+    "github": "https://github.com/fogshot",
+    "twitter": "https://twitter.com/pniebelschuetz"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Christoph Wiechert",
+  "company": "psitrax",
+  "tags": [ "node", "docker", "angular", "webpack", "rethinkdb", "graphql", "apollostack", "featherjs", "typescript" ],
+  "when": {
+    "saturday": true,
+    "sunday": true 
+  },
+  "what_is_my_connection_to_javascript": "Javascript for everything! We need it for the browser so why not use it everywhere. I used Angular1 a lot and different wrote various smaller Microservices",
+  "what_can_i_contribute": "Probably i could speak about Hosting a scalable Node-Env using Docker",
+  "tshirt": "M-L",
+  "urls": {
+    "photo": "http://temp.4show.de/psi.jpg",
+    "github": "https://github.com/psi-4ward/",
+    "twitter": "https://twitter.com/PsiTrax"
+  }
+}
+

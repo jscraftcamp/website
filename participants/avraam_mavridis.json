@@ -1,0 +1,18 @@
+{
+    "name": "Avraam Mavridis",
+    "company": "mycs",
+    "tags": [ "angular", "react", "rx", "node" ],
+    "when": {
+      "saturday": true,
+      "sunday": true
+    },
+    "what_is_my_connection_to_javascript": "Μy everyday work :)",
+    "what_can_i_contribute": "My positive energy and maybe a talk about RX",
+    "tshirt": "M-L",
+    "urls": {
+      "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAASUAAAAJDFlOTgzYjA0LWI2NGYtNGE2Yi05ZjhmLTkyOGZiMWZmMWJiNQ.jpg",
+      "homepage": "https://github.com/AvraamMavridis",
+      "github": "https://github.com/AvraamMavridis",
+      "twitter": "https://twitter.com/avraamakis"
+    }
+}

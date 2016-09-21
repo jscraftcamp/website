@@ -1,0 +1,17 @@
+{
+  "name": "Iwan Gulenko",
+  "tags": ["javascript", "react"], 
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "Coding in React.js and Reflux",
+  "what_can_i_contribute": "I am a programmer and I can help you to find a cool Javascript challenge in Zurich",
+  "tshirt": "M-M",
+  "urls": {
+    "photo": "https://pbs.twimg.com/profile_images/772731636060479488/mohYg3gA_400x400.jpg",
+    "homepage": "http://www.gulenko.ch",
+    "github": "https://github.com/iwangu",
+    "twitter": "https://twitter.com/iwangulenko"
+  }
+}
