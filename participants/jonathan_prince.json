@@ -1,0 +1,28 @@
+{
+  "name": "Jonathan Prince",
+  "company": "Mediasuite",
+  "tags": [
+    "nodejs",
+    "backend frameworks",
+    "electron",
+    "nodebots",
+    "node native addons",
+    "testing",
+    "productivity/workflow",
+    "security",
+    "es6",
+    "clean coding practices"
+  ],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "Full stack js dev, the love grows deeper when the browser doesn't get in the way...",
+  "what_can_i_contribute": "An attentive ear ready to be inspired?",
+  "urls": {
+    "photo": "https://avatars3.githubusercontent.com/u/2764625?v=3&s=466",
+    "homepage": "http://www.edgeofconfusion.com/",
+    "github": "https://github.com/JonathanPrince",
+    "twitter": "https://twitter.com/greatsage"
+  }
+}
