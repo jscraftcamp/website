@@ -1,0 +1,14 @@
+{
+    "name": "Amit Sama",
+    "tags": [ "JavaScript" ],
+    "when": {
+      "saturday": true,
+      "sunday": true
+    },
+    "what_is_my_connection_to_javascript": "beginner",
+    "what_can_i_contribute": "active listener",
+    "tshirt": "M-XL",
+    "urls": {
+      "github": "https://github.com/AmitSama"
+    }
+}
