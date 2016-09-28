@@ -1,0 +1,15 @@
+{
+  "name": "Gaganjot Singh",
+  "tags": [ "clean code", "TDD", "node.js", "best practices" ],
+  "when": {
+    "saturday": true,
+    "sunday": true 
+  },
+  "what_is_my_connection_to_javascript": "some experience with node.js and TDD",
+  "what_can_i_contribute": "Contribution in discussions and ask questions. Interested in learning about angular, react, and craftsmanship.",
+  "tshirt": "M-S",
+  "urls": {
+    "github": "https://github.com/GaganJotSingh",
+    "twitter": "https://twitter.com/GaganTheroyal"
+  }
+}
