@@ -1,0 +1,16 @@
+{
+  "name": "Stephan Stamm",
+  "company": "freelance software developer",
+  "tags": ["cleancode", "es6", "node", "react"],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "Started to look into nodejs a year ago",
+  "what_can_i_contribute": "Passion for craftmenship",
+  "urls": {
+    "photo": "http://stammx.com/Me_smiling.JPG",
+    "github": "https://github.com/einsichten,
+    "twitter": "https://twitter.com/stammx_com"
+  }
+}
