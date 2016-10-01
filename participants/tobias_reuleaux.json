@@ -1,0 +1,17 @@
+{
+    "name": "Tobias Reuleaux",
+    "company": "ars navigandi",
+    "tags": [ "angular", "react", "phaser", "d3", "three.js" ],
+    "when": {
+      "saturday": true,
+      "sunday": true
+    },
+    "what_is_my_connection_to_javascript": "Using Javascript mostly frontend on websites for 5-6 years. Libraries that i frequently use are jQuery and jQueryUI. Otherwise i used angular and nodejs in different projects.",
+    "what_can_i_contribute": "I have experience in dealing with large undocumented codebases. The difficulties that come with testing a real world web application. The advantages and disadvantages using scrum in our team for one year.",
+    "tshirt": "M-L",
+    "urls": {
+      "photo": "https://avatars3.githubusercontent.com/u/3932095?v=3&u=0a9a1b52233bfc17c46604696479ca8cb02d2c29",
+      "homepage": "https://www.arsnavigandi.de/",
+      "github": "https://github.com/tobiasrx"
+    }
+}
