@@ -5,8 +5,8 @@
       "saturday": true,
       "sunday": true
     },
-    "what_is_my_connection_to_javascript": "beginner",
-    "what_can_i_contribute": "active listener",
+    "what_is_my_connection_to_javascript": "beginner, know some TDD, used basic js in the past.",
+    "what_can_i_contribute": "Would like to learn and talk about maven and docker. Interested in regular expressions, distributed systems, algorithms and data structures. Active listener.",
     "tshirt": "M-XL",
     "urls": {
       "github": "https://github.com/AmitSama"
