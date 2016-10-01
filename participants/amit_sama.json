@@ -1,6 +1,6 @@
 {
     "name": "Amit Sama",
-    "tags": [ "JavaScript" ],
+    "tags": [ "JavaScript", "AJAX", "jQuery", "AngularJS"],
     "when": {
       "saturday": true,
       "sunday": true
