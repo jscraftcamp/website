@@ -1,7 +1,7 @@
 {
   "name": "Hans-Georg Gruber",
   "company": "self",
-  "tags": [Marketing_Automation, FormValidation, ],
+  "tags": ["Marketing_Automation", "FormValidation", ],
   "when": {
     "saturday": true,
     "sunday": true,
