@@ -1,0 +1,17 @@
+{
+  "name": "Jonathan Häberle",
+  "company": "Codastic",
+  "tags": ["es6", "react", "redux", "node", "TDD", "typescript", "rxjs", "elm"],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "what_is_my_connection_to_javascript": "It's daily business. I'm a full stack developer. I love pure code.",
+  "tshirt": "M-XL",
+  "urls": {
+    "photo": "https://avatars0.githubusercontent.com/u/307704",
+    "homepage": "http://codastic.de",
+    "github": "https://github.com/dreampulse",
+    "twitter": "https://twitter.com/dreampulse"
+  }
+}
