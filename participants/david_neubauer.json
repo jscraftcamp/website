@@ -4,7 +4,7 @@
   "tags": ["testing", "react", "node", "redux"],
   "when": {
     "saturday": true,
-    "sunday": true
+    "sunday": false
   },
   "what_is_my_connection_to_javascript": "Open minded in using all kinds of technologies and a passionate JavaScript Developer.",
   "what_can_i_contribute_to_js_craftcamp": "I'm happy to talk/learn about testing. I'd like to learn how to improve workflows like Code Reviews. Happy to share my Podcast subscription.",
