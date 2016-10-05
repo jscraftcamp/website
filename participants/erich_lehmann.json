@@ -1,0 +1,17 @@
+{
+  "name": "Erich Lehmann",
+  "company": "Academy",
+  "tags": ["cleancode", "designer", "angular", "ionic", "typescript"],
+  "when": {
+    "saturday": true,
+    "sunday": false
+  },
+  "what_is_my_connection_to_javascript": "Pretty much just getting into it.",
+  "what_can_i_contribute": "The user's point of view.",
+  "urls": {
+    "photo": "https://pbs.twimg.com/profile_images/2489223895/d77w03cbuelvl8jpn9nh.png",
+    "homepage": "http://lehrplan.org/",
+    "github": "https://github.com/lehmannerich",
+    "twitter": "https://twitter.com/lehmannerich"
+  }
+}
