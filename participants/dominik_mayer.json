@@ -1,7 +1,7 @@
 {
   "name": "Dominik Mayer",
   "company": "str84wd Products",
-  "tags": ["products", "productivity", "elm"],
+  "tags": ["elm", "products", "productivity"],
   "when": {
     "saturday": true,
     "sunday": true
