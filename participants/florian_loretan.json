@@ -3,7 +3,7 @@
   "company": "Wunder",
   "tags": ["node", "angular", "d3"],
   "when": {
-    "saturday": true,
+    "saturday": false,
     "sunday": true
   },
   "what_is_my_connection_to_javascript": "As a professional web developer, there's just no way to avoid javascript nowadays, even if my primary language in day to day work is another one. Javascript is fun though, and that's why I'm here.",
