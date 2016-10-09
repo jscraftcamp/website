@@ -4,7 +4,7 @@
   "tags": [ "node", "js", "craftsmanship", "tdd", "DevOps" ],
   "when": {
     "saturday": false,
-    "sunday": true
+    "sunday": false
   },
   "what_is_my_connection_to_javascript": "I am using javascript in the backend",
   "what_can_i_contribute": "using plain javascript vs. framework",
