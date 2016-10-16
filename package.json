@@ -6,7 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "hamjest": "^2.13.0",
-    "harp": "^0.20.3",
+    "harp": "^0.21.0",
     "hashcode": "^1.0.3",
     "mocha": "^3.0.2",
     "recursive-readdir-sync": "^1.0.6"
