@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Website for the JSCC (jscraftcamp.org)",
   "main": "index.js",
+  "engines": {
+    "node": ">= 6.6.0"
+  },
   "dependencies": {
   },
   "devDependencies": {
