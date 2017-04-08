@@ -17,12 +17,10 @@
   <div style="flex: 1.5">
     <h3>Archive</h3>
     <ul>
-      <li>
-        <a href="/info2016">2016 Info</a>
-      </li>
-      <li>
-        <a href="/participants2016">2016 Participants</a>
-      </li>
+      <% for(var i in public._data.navigationItems.archive) { %>
+          <% var item = public._data.navigationItems.archive[i] %>
+          <li><a href="<%= item.url %>"><%= item.title %></a></li>
+      <% } %>
     </ul>
   </div>
 </footer>

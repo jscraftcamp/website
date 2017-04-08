@@ -6,6 +6,9 @@
       {"url": "/#location", "title": "Location"},
       {"url": "/imprint.html", "title": "Imprint"}
     ],
-    "archive": []
+    "archive": [
+      {"url": "/info2016", "title": "2016 - Home"},
+      {"url": "/participants2016", "title": "2016 - Participants"}
+    ]
   }
 }
