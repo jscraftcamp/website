@@ -13,48 +13,8 @@
     </head>
 </head>
 <body>
-<ul id="dropdown2016" class="dropdown-content">
-    <li>
-        <a href="/info2016">Info</a>
-        <a href="/participants2016">Participants</a>
-    </li>
-</ul>
-<ul id="dropdown2016-mobile" class="dropdown-content">
-    <li>
-        <a href="/info2016">Info</a>
-        <a href="/participants2016">Participants</a>
-    </li>
-</ul>
-<nav class="blue">
-    <div class="nav-wrapper container">
-        <a href="/" class="brand-logo">JS CraftCamp</a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="/">Info</a></li>
-            <li><a href="/#location">Location</a></li>
-            <li><a href="/imprint.html">Impressum</a></li>
-            <li>
-                <a class="dropdown-button" href="#!" data-activates="dropdown2016">Archive 2016<i
-                            class="material-icons right">arrow_drop_down</i></a>
-            </li>
-            <li><a href="https://twitter.com/jscraftcamp"><i class="fa fa-twitter fa-fw"></i></a></li>
-        </ul>
-
-        <ul id="mobile-demo" class="side-nav">
-            <li><a href="/">Info</a></li>
-            <li><a href="/#location">Location</a></li>
-            <li><a href="/imprint.html">Impressum</a></li>
-            <li>
-                <a class="dropdown-button-mobile" href="#!" data-activates="dropdown2016-mobile">Archive 2016<i
-                            class="material-icons right">arrow_drop_down</i></a>
-            </li>
-            <li><a href="https://twitter.com/jscraftcamp"><i class="fa fa-twitter fa-fw"></i></a></li>
-        </ul>
-    </div>
-</nav>
+<%- partial("_navigation") %>
 <%- yield %>
-
 <%- partial("_footer") %>
 
 <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
