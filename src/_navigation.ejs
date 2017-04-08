@@ -33,11 +33,12 @@
         </ul>
 
         <ul id="mobile-demo" class="side-nav">
-            <li><a href="/">Info</a></li>
-            <li><a href="/#location">Location</a></li>
-            <li><a href="/imprint.html">Impressum</a></li>
+            <% for(var i in public._data.navigationItems.main) { %>
+                <% var item = public._data.navigationItems.main[i] %>
+                <li><a href="<%= item.url %>"><%= item.title %></a></li>
+            <% } %>
             <li>
-                <a class="dropdown-button-mobile" href="#!" data-activates="dropdown2016-mobile">Archive 2016<i
+                <a class="dropdown-button-mobile" href="#!" data-activates="dropdown2016-mobile">Archive<i
                             class="material-icons right">arrow_drop_down</i></a>
             </li>
             <li><a href="https://twitter.com/jscraftcamp"><i class="fa fa-twitter fa-fw"></i></a></li>
