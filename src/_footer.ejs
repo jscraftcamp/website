@@ -1,5 +1,14 @@
 <footer>
   <div>
+    <h3>Sitemap</h3>
+    <ul>
+    <% for(var i in public._data.navigationItems.main) { %>
+        <% var item = public._data.navigationItems.main[i] %>
+        <li><a href="<%= item.url %>"><%= item.title %></a></li>
+    <% } %>
+    </ul>
+  </div>
+  <div>
     <h3>Get in touch</h3>
     <ul>
       <li><a href="https://twitter.com/jscraftcamp">Twitter</a></li>

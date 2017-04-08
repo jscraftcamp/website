@@ -16,9 +16,11 @@
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="/">Info</a></li>
-            <li><a href="/#location">Location</a></li>
-            <li><a href="/imprint.html">Impressum</a></li>
+            <% for(var i in public._data.navigationItems.main) { %>
+                <% var item = public._data.navigationItems.main[i] %>
+                <li><a href="<%= item.url %>"><%= item.title %></a></li>
+            <% } %>
+
             <li>
                 <a class="dropdown-button" href="#!" data-activates="dropdown2016">Archive 2016<i
                             class="material-icons right">arrow_drop_down</i></a>
