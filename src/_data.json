@@ -1,0 +1,14 @@
+{
+  "pageTitle": "JSCraftCamp - 21+22 July 2017 in Munich",
+  "navigationItems": {
+    "main": [
+      {"url": "/", "title": "Home"},
+      {"url": "/#location", "title": "Location"},
+      {"url": "/imprint.html", "title": "Imprint"}
+    ],
+    "archive": [
+      {"url": "/info2016", "title": "2016 - Home"},
+      {"url": "/participants2016", "title": "2016 - Participants"}
+    ]
+  }
+}

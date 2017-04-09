@@ -5,7 +5,7 @@ This project contains the http://jscraftcamp.org site.
 # Development
 
 ## Prerequisite
-node.js 5.x
+node.js 6.6
 
 ## Build
 - run `yarn` to install all dependencies

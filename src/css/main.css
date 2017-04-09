@@ -69,3 +69,30 @@ code {
   margin-right:10px;
   color: #757575;
 }
+
+
+footer {
+  margin: 2rem 0 0 0;
+  padding: 2rem;
+  background-color: #2e2e2c;
+  display: flex;
+}
+  footer h3 {
+    color: #2196f3;
+  }
+  footer ul {
+    padding: 0;
+    color: white;
+  }
+  footer li {
+    list-style: none;
+    margin: 0.5rem 0;
+  }
+  footer div {
+    flex: 1;
+  }
+  @media only screen and (max-device-width: 680px) {
+    footer {
+      display: block;
+    }
+  }

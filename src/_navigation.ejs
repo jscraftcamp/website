@@ -1,0 +1,47 @@
+<ul id="dropdown2016" class="dropdown-content" style="width: 15em;">
+    <li>
+      <% for(var i in public._data.navigationItems.archive) { %>
+          <% var item = public._data.navigationItems.archive[i] %>
+          <a href="<%= item.url %>"><%= item.title %></a>
+      <% } %>
+    </li>
+</ul>
+<ul id="dropdown2016-mobile" class="dropdown-content">
+    <li>
+      <% for(var i in public._data.navigationItems.archive) { %>
+          <% var item = public._data.navigationItems.archive[i] %>
+          <a href="<%= item.url %>"><%= item.title %></a>
+      <% } %>
+    </li>
+</ul>
+<nav class="blue">
+    <div class="nav-wrapper container">
+        <a href="/" class="brand-logo">JS CraftCamp</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <% for(var i in public._data.navigationItems.main) { %>
+                <% var item = public._data.navigationItems.main[i] %>
+                <li><a href="<%= item.url %>"><%= item.title %></a></li>
+            <% } %>
+
+            <li>
+                <a class="dropdown-button" href="#!" data-activates="dropdown2016">Archive<i
+                            class="material-icons right">arrow_drop_down</i></a>
+            </li>
+            <li><a href="https://twitter.com/jscraftcamp"><i class="fa fa-twitter fa-fw"></i></a></li>
+        </ul>
+
+        <ul id="mobile-demo" class="side-nav">
+            <% for(var i in public._data.navigationItems.main) { %>
+                <% var item = public._data.navigationItems.main[i] %>
+                <li><a href="<%= item.url %>"><%= item.title %></a></li>
+            <% } %>
+            <li>
+                <a class="dropdown-button-mobile" href="#!" data-activates="dropdown2016-mobile">Archive<i
+                            class="material-icons right">arrow_drop_down</i></a>
+            </li>
+            <li><a href="https://twitter.com/jscraftcamp"><i class="fa fa-twitter fa-fw"></i></a></li>
+        </ul>
+    </div>
+</nav>
