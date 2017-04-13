@@ -102,5 +102,15 @@ footer {
   background:#fff; 
   clear:left; 
   font:14px 
-  Helvetica,Arial,sans-serif; 
+}
+
+#mc_embed_signup input.email  {
+  width: 95%;
+}
+
+#mc_embed_signup_container_row {
+  margin-top: -40px;
+  margin-bottom: -20px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
