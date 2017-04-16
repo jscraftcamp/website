@@ -1,22 +1,34 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/bonsai/0.4/bonsai.min.js"></script>
 <style>
-#staticLogo {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  margin-top: 4em;
-}
-@media only screen and (max-device-width: 680px) {
-  #staticLogo {
-    width: 50px;
-    height: 50px;
-    margin-top: 1em;
+  .container.logo {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
   }
-}
+  #staticLogo {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-top: 4em;
+  }
+  @media only screen and (max-device-width: 680px) {
+    .container.logo {
+      width: 50px;
+      position: fixed;
+      right: 10px;
+      top: 50px;
+    }
+    #staticLogo {
+      width: 50px;
+      height: 50px;
+      margin-top: 1em;
+    }
+  }
 </style>
 
-<div class="container" style="display: flex; margin-left: auto; margin-right: auto; width: 300px;">
-  <div id="staticLogo" style="flex: 1;"></div>
+<div class="container logo">
+  <div id="staticLogo"></div>
   <script>
     var el = document.getElementById('staticLogo');
     bonsai.run(el, 'https://jscraftcamp.github.io/logo/src/static-logo.js', {
