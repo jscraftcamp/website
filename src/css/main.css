@@ -77,9 +77,6 @@ footer {
   background-color: #2e2e2c;
   display: flex;
 }
-  footer h3 {
-    color: #2196f3;
-  }
   footer ul {
     padding: 0;
     color: white;
