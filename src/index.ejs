@@ -6,14 +6,22 @@
   height: 300px;
   margin-top: 4em;
 }
+@media only screen and (max-device-width: 680px) {
+  #staticLogo {
+    width: 50px;
+    height: 50px;
+    margin-top: 1em;
+  }
+}
 </style>
 
 <div class="container" style="text-align: center; margin-left: auto; margin-right: auto; width: 300px;">
   <div id="staticLogo"></div>
   <script>
-    bonsai.run(document.getElementById('staticLogo'), 'https://jscraftcamp.github.io/logo/src/static-logo.js', {
-      height: window.innerHeight,
-      width: window.innerWidth,
+    var el = document.getElementById('staticLogo');
+    bonsai.run(el, 'https://jscraftcamp.github.io/logo/src/static-logo.js', {
+      height: el.style.height,
+      width: el.style.width,
       framerate: 50
     });
   </script>
