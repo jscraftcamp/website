@@ -1,11 +1,28 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/bonsai/0.4/bonsai.min.js"></script>
+<style>
+#staticLogo {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-top: 4em;
+}
+</style>
+
 <div class="container" style="text-align: center; margin-left: auto; margin-right: auto; width: 300px;">
-    <img src="/img/jscc-logo-without-text.svg" width="300" style="margin-top: 4em; margin-bottom: -4em;"/>
+  <div id="staticLogo"></div>
+  <script>
+    bonsai.run(document.getElementById('staticLogo'), 'https://jscraftcamp.github.io/logo/src/static-logo.js', {
+      height: window.innerHeight,
+      width: window.innerWidth,
+      framerate: 50
+    });
+  </script>
 </div>
 
 <div class="container">
   <div class="row">
     <div class="col s12 m12">
-      <h1 class="header center blue-text">JSCraftCamp 2017</h1>
+      <h1 class="header center <%=public._data.baseColor %>-text">JSCraftCamp 2017</h1>
       <h3 class="header center light">Munich, July 21 &amp; 22</h3>
       <h3 class="header center light">A BarCamp about JavaScript and Software Craftsmanship</h3>
     </div>
@@ -41,7 +58,7 @@
                 This means that all the participants meet in the morning and decide about the schedule for the day.
                 Everyone can offer a session - from a short hands-on workshop to moderating a discussion. The goal is to
                 make everything as participative as possible. You can read more about unconferences at <a
-                        href="https://en.wikipedia.org/wiki/Unconference">Wikipedia</a>.</p>
+                class="<%=public._data.baseColor %>-text" href="https://en.wikipedia.org/wiki/Unconference">Wikipedia</a>.</p>
         </div>
         <div class="col s12 m4">
             <h5 class="header center">JavaScript</h5>
@@ -60,7 +77,7 @@
     </div>
 
     <a name="location"></a>
-    <h4 class="header center blue-text">Location</h4>
+    <h4 class="header center <%=public._data.baseColor %>>-text">Location</h4>
     <div id="map_wrapper">
         <div id="map"></div>
         <div id="map_overlay">
@@ -69,7 +86,7 @@
             <p class="lead">
                 Isarwinkel 16<br/>
                 81379 München<br/>
-                <a href="http://virtual-identity.com/">http://virtual-identity.com</a>
+                <a class="<%=public._data.baseColor %>-text" href="http://virtual-identity.com/">http://virtual-identity.com</a>
             </p>
             <p class="lead">
                 by U-Bahn: Thalkirchen (U3), 5 minute walk<br/>
