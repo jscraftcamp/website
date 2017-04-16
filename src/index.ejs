@@ -17,8 +17,13 @@
       width: 50px;
       position: fixed;
       right: 10px;
-      top: 50px;
+      top: 0;
       z-index: 100;
+      transition: right 0.4s, top 0.7s ease-in;
+    }
+    .container.logo.centered {
+      top: 50px;
+      right: 40%;
     }
     #staticLogo {
       width: 50px;
@@ -28,7 +33,7 @@
   }
 </style>
 
-<div class="container logo">
+<div id="logoContainer" class="container logo centered">
   <div id="staticLogo"></div>
   <script>
     var el = document.getElementById('staticLogo');
@@ -37,6 +42,12 @@
       width: el.style.width,
       framerate: 50
     });
+    var onFirstScroll = function() {
+      document.getElementById('logoContainer').classList.remove('centered');
+      listener && document.removeEventListener(listener);
+      listener = null;
+    }
+    var listener = document.addEventListener('scroll', onFirstScroll);
   </script>
 </div>
 
