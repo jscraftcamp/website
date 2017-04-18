@@ -42,12 +42,15 @@
       width: el.style.width,
       framerate: 50
     });
+    var logoClassList = document.getElementById('logoContainer').classList;
     var onFirstScroll = function() {
-      document.getElementById('logoContainer').classList.remove('centered');
-      listener && document.removeEventListener(listener);
-      listener = null;
+      if (window.scrollY === 0) {
+        logoClassList.add('centered');
+      } else {
+        logoClassList.remove('centered');
+      }
     }
-    var listener = document.addEventListener('scroll', onFirstScroll);
+    document.addEventListener('scroll', onFirstScroll);
   </script>
 </div>
 
