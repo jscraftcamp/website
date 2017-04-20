@@ -17,7 +17,13 @@
       width: 50px;
       position: fixed;
       right: 10px;
+      top: 0;
+      z-index: 100;
+      transition: right 0.4s, top 0.7s ease-in;
+    }
+    .container.logo.centered {
       top: 50px;
+      right: 40%;
     }
     #staticLogo {
       width: 50px;
@@ -27,7 +33,7 @@
   }
 </style>
 
-<div class="container logo">
+<div id="logoContainer" class="container logo centered">
   <div id="staticLogo"></div>
   <script>
     var el = document.getElementById('staticLogo');
@@ -36,6 +42,15 @@
       width: el.style.width,
       framerate: 50
     });
+    var logoClassList = document.getElementById('logoContainer').classList;
+    var onFirstScroll = function() {
+      if (window.scrollY === 0) {
+        logoClassList.add('centered');
+      } else {
+        logoClassList.remove('centered');
+      }
+    }
+    document.addEventListener('scroll', onFirstScroll);
   </script>
 </div>
 
@@ -57,11 +72,11 @@
       <div id="mc_embed_signup">
         <form action="//jscraftcamp.us15.list-manage.com/subscribe/post?u=cef2367b248c0b9beca2c3d74&amp;id=b15528acf6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <div id="mc_embed_signup_scroll">
-          <label for="mce-EMAIL">Don't miss when the registration opens - subscribe and be the first to know!</label>
-          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cef2367b248c0b9beca2c3d74_b15528acf6" tabindex="-1" value=""></div>
-          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            <label for="mce-EMAIL" style="text-align: center">Don't miss when the registration opens - subscribe and be the first to know!</label>
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cef2367b248c0b9beca2c3d74_b15528acf6" tabindex="-1" value=""></div>
+            <div class="clear" style="display: flex"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="flex: 1"></div>
           </div>
         </form>
       </div>

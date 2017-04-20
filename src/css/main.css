@@ -1,3 +1,15 @@
+@media only screen and (max-device-width: 680px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+}
+
 .row {
     padding-top: 3rem;
     padding-bottom: 3rem;
