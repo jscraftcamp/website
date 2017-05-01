@@ -1,88 +1,106 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/bonsai/0.4/bonsai.min.js"></script>
 <style>
-  .container.logo {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-  }
-  #staticLogo {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin-top: 4em;
-  }
-  @media only screen and (max-device-width: 680px) {
     .container.logo {
-      width: 50px;
-      position: fixed;
-      right: 10px;
-      top: 0;
-      z-index: 100;
-      transition: right 0.4s, top 0.7s ease-in;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
     }
-    .container.logo.centered {
-      top: 50px;
-      right: 40%;
-    }
+
     #staticLogo {
-      width: 50px;
-      height: 50px;
-      margin-top: 1em;
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin-top: 4em;
     }
-  }
+
+    @media only screen and (max-device-width: 680px) {
+        .container.logo {
+            width: 50px;
+            position: fixed;
+            right: 10px;
+            top: 0;
+            z-index: 100;
+            transition: right 0.4s, top 0.7s ease-in;
+        }
+
+        .container.logo.centered {
+            top: 50px;
+            right: 40%;
+        }
+
+        #staticLogo {
+            width: 50px;
+            height: 50px;
+            margin-top: 1em;
+        }
+
+        #outerContainer {
+            background-image: url("img/event_photos/CuOyZ_kWYAARNY0.jpg");
+        }
+    }
 </style>
 
-<div id="logoContainer" class="container logo centered">
-  <div id="staticLogo"></div>
-  <script>
-    var el = document.getElementById('staticLogo');
-    bonsai.run(el, 'https://jscraftcamp.github.io/logo/src/static-logo.js', {
-      height: el.style.height,
-      width: el.style.width,
-      framerate: 50
-    });
-    var logoClassList = document.getElementById('logoContainer').classList;
-    var onFirstScroll = function() {
-      if (window.scrollY === 0) {
-        logoClassList.add('centered');
-      } else {
-        logoClassList.remove('centered');
-      }
-    }
-    document.addEventListener('scroll', onFirstScroll);
-  </script>
+<div id="outerContainer" class="container">
+    <div class="row">
+        <div id="logoContainer" class="container logo centered">
+            <div id="staticLogo"></div>
+            <script>
+							var el = document.getElementById('staticLogo');
+							bonsai.run(el, 'https://jscraftcamp.github.io/logo/src/static-logo.js', {
+								height: el.style.height,
+								width: el.style.width,
+								framerate: 50
+							});
+							var logoClassList = document.getElementById('logoContainer').classList;
+							var onFirstScroll = function () {
+								if (window.scrollY === 0) {
+									logoClassList.add('centered');
+								} else {
+									logoClassList.remove('centered');
+								}
+							}
+							document.addEventListener('scroll', onFirstScroll);
+            </script>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m12">
+            <h1 class="header center <%= public._data.baseColor %>-text">JSCraftCamp 2017</h1>
+            <h3 class="header center light">Munich, July 21 &amp; 22</h3>
+            <h3 class="header center light">A BarCamp about JavaScript and Software Craftsmanship</h3>
+        </div>
+    </div>
 </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col s12 m12">
-      <h1 class="header center <%=public._data.baseColor %>-text">JSCraftCamp 2017</h1>
-      <h3 class="header center light">Munich, July 21 &amp; 22</h3>
-      <h3 class="header center light">A BarCamp about JavaScript and Software Craftsmanship</h3>
-    </div>
-  </div>
-</div>
-
 
 <div class="container">
-  <div class="row" id="mc_embed_signup_container_row">
-    <div class="col s12 m4 offset-m4">
-      <!-- Begin MailChimp Signup Form -->
-      <div id="mc_embed_signup">
-        <form action="//jscraftcamp.us15.list-manage.com/subscribe/post?u=cef2367b248c0b9beca2c3d74&amp;id=b15528acf6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div id="mc_embed_signup_scroll">
-            <label for="mce-EMAIL" style="text-align: center">Don't miss when the registration opens - subscribe and be the first to know!</label>
-            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cef2367b248c0b9beca2c3d74_b15528acf6" tabindex="-1" value=""></div>
-            <div class="clear" style="display: flex"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="flex: 1"></div>
-          </div>
-        </form>
-      </div>
-    <!--End mc_embed_signup-->
+    <div class="row" id="mc_embed_signup_container_row">
+        <div class="col s12 m4 offset-m4">
+            <!-- Begin MailChimp Signup Form -->
+            <div id="mc_embed_signup">
+                <form action="//jscraftcamp.us15.list-manage.com/subscribe/post?u=cef2367b248c0b9beca2c3d74&amp;id=b15528acf6"
+                      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                      target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <label for="mce-EMAIL" style="text-align: center">Don't miss when the registration opens -
+                            subscribe and be the first to know!</label>
+                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+                               placeholder="email address" required>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                                                                                  name="b_cef2367b248c0b9beca2c3d74_b15528acf6"
+                                                                                                  tabindex="-1"
+                                                                                                  value=""></div>
+                        <div class="clear" style="display: flex"><input type="submit" value="Subscribe" name="subscribe"
+                                                                        id="mc-embedded-subscribe" class="button"
+                                                                        style="flex: 1"></div>
+                    </div>
+                </form>
+            </div>
+            <!--End mc_embed_signup-->
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="container">
@@ -93,7 +111,8 @@
                 This means that all the participants meet in the morning and decide about the schedule for the day.
                 Everyone can offer a session - from a short hands-on workshop to moderating a discussion. The goal is to
                 make everything as participative as possible. You can read more about unconferences at <a
-                class="<%=public._data.baseColor %>-text" href="https://en.wikipedia.org/wiki/Unconference">Wikipedia</a>.</p>
+                        class="<%= public._data.baseColor %>-text" href="https://en.wikipedia.org/wiki/Unconference">Wikipedia</a>.
+            </p>
         </div>
         <div class="col s12 m4">
             <h5 class="header center">JavaScript</h5>
@@ -112,7 +131,7 @@
     </div>
 
     <a name="location"></a>
-    <h4 class="header center <%=public._data.baseColor %>>-text">Location</h4>
+    <h4 class="header center <%= public._data.baseColor %>>-text">Location</h4>
     <div id="map_wrapper">
         <div id="map"></div>
         <div id="map_overlay">
@@ -121,7 +140,7 @@
             <p class="lead">
                 Isarwinkel 16<br/>
                 81379 München<br/>
-                <a class="<%=public._data.baseColor %>-text" href="http://virtual-identity.com/">http://virtual-identity.com</a>
+                <a class="<%= public._data.baseColor %>-text" href="http://virtual-identity.com/">http://virtual-identity.com</a>
             </p>
             <p class="lead">
                 by U-Bahn: Thalkirchen (U3), 5 minute walk<br/>

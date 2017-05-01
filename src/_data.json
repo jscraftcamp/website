@@ -1,15 +1,36 @@
 {
-  "baseColor": "orange",
-  "pageTitle": "JSCraftCamp - 21+22 July 2017 in Munich",
-  "navigationItems": {
-    "main": [
-      {"url": "/", "title": "Home"},
-      {"url": "/#location", "title": "Location"},
-      {"url": "/imprint.html", "title": "Imprint"}
+  "baseColor" : "orange",
+  "pageTitle" : "JSCraftCamp - 21+22 July 2017 in Munich",
+  "navigationItems" : {
+    "main" : [
+      { "url" : "/", "title" : "Home" },
+      { "url" : "/#location", "title" : "Location" },
+      { "url" : "/imprint.html", "title" : "Imprint" }
     ],
-    "archive": [
-      {"url": "/info2016", "title": "2016 - Home"},
-      {"url": "/participants2016", "title": "2016 - Participants"}
+    "archive" : [
+      { "url" : "/info2016", "title" : "2016 - Home" },
+      { "url" : "/participants2016", "title" : "2016 - Participants" },
+      { "url" : "/photos2016", "title" : "2016 - Photos" }
     ]
-  }
+  },
+  "photos2016" : [
+    { "url" : "img/event_photos/CuaYSc3WYAAdRRV.jpg" },
+    { "url" : "img/event_photos/CuaYwEuXgAEEkzT.jpg" },
+    { "url" : "img/event_photos/CuaZHUSW8AAOLs3.jpg" },
+    { "url" : "img/event_photos/CuOyZ_kWYAARNY0.jpg" },
+    { "url" : "img/event_photos/CuPNlg6XEAA8HtJ.jpg" },
+    { "url" : "img/event_photos/IMG_5352.jpg" },
+    { "url" : "img/event_photos/IMG_5374.jpg" },
+    { "url" : "img/event_photos/IMG_5375.jpg" },
+    { "url" : "img/event_photos/IMG_5377.jpg" },
+    { "url" : "img/event_photos/IMG_5381.jpg" },
+    { "url" : "img/event_photos/IMG_5394.jpg" },
+    { "url" : "img/event_photos/IMG_5395.jpg" },
+    { "url" : "img/event_photos/IMG_5404.jpg" },
+    { "url" : "img/event_photos/IMG_5412.jpg" },
+    { "url" : "img/event_photos/IMG_5413.jpg" },
+    { "url" : "img/event_photos/IMG_5418.jpg" },
+    { "url" : "img/event_photos/IMG_5419.jpg" },
+    { "url" : "img/event_photos/IMG_5422.jpg" }
+  ]
 }
