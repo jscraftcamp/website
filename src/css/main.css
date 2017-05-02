@@ -123,3 +123,19 @@ footer {
   padding-top: 0;
   padding-bottom: 0;
 }
+
+/* Overwrites for Material Design */
+
+@media only screen and (min-width: 600px) {.flow-text {font-size: 1.114rem;}}
+@media only screen and (min-width: 630px) {.flow-text {font-size: 1.133rem;}}
+@media only screen and (min-width: 660px) {.flow-text {font-size: 1.152rem;}}
+@media only screen and (min-width: 690px) {.flow-text {font-size: 1.171rem;}}
+@media only screen and (min-width: 720px) {.flow-text {font-size: 1.190rem;}}
+@media only screen and (min-width: 750px) {.flow-text {font-size: 1.210rem;}}
+@media only screen and (min-width: 780px) {.flow-text {font-size: 1.229rem;}}
+@media only screen and (min-width: 810px) {.flow-text {font-size: 1.248rem;}}
+@media only screen and (min-width: 840px) {.flow-text {font-size: 1.267rem;}}
+@media only screen and (min-width: 870px) {.flow-text {font-size: 1.286rem;}}
+@media only screen and (min-width: 900px) {.flow-text {font-size: 1.305rem;}}
+@media only screen and (min-width: 930px) {.flow-text {font-size: 1.324rem;}}
+@media only screen and (min-width: 960px) {.flow-text {font-size: 1.344rem;}}
