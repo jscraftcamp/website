@@ -78,10 +78,11 @@
         <span class="card-title activator">zeig an<i class="material-icons right">close</i></span>
       </div>
       <div class="card-action">
-        <div class="card-tags-container">
-          {{#list tags}}
-             <span class="card-tag">#{{ this }}</span>
-          {{/list}}
+        <div class="card-tags-container center">
+          {{#if issueClosed}}
+            <a href="https://github.com/jscraftcamp/website/issues/{{issueId}}">Sponsor this!</a>
+          {{else}}
+          {{/if}}
         </div>
       </div>
     </div>
@@ -111,15 +112,15 @@ window.onload = function() {
   };
 
   var data = [
-    { name: 'Lunch Friday', priceRange: '~500 € (5 € / person)', icon: 'home', tags: [], issueId: 188},
-    { name: 'Snacks Friday', priceRange: '~100 €', icon: 'leaf', tags: ['cake', 'fruit'], sponsor: 'COMPANY'},
-    { name: 'Lunch Saturday', priceRange: '~500 € (5 € / person)', icon: 'home', tags: [], sponsor: 'COMPANY'},
-    { name: 'Snacks Saturday', priceRange: '~200 €', icon: 'leaf', tags: [], sponsor: 'COMPANY'},
-    { name: 'Drinks', priceRange: '~200 €', icon: 'backward', tags: ['water'], sponsor: 'COMPANY'},
-    { name: 'Renting Chairs', priceRange: '~200 €', icon: 'film', tags: [], sponsor: 'COMPANY'},
-    { name: 'Coffee', priceRange: '~100 € (this could be way more expensive)', icon: 'plus-circle', tags: [], sponsor: 'COMPANY'},
-    { name: 'T-Shirts', priceRange: '~1200 €', icon: 'plus-circle', tags: [], sponsor: 'COMPANY'},
-    { name: 'Stickers', priceRange: '~100 €', icon: 'plus-circle', tags: [], sponsor: 'COMPANY'},
+    { name: 'Lunch Friday', priceRange: '~500 € (5 € / person)', icon: 'home', issueId: 188},
+    { name: 'Snacks Friday', priceRange: '~100 €', icon: 'leaf', sponsor: 'COMPANY'},
+    { name: 'Lunch Saturday', priceRange: '~500 € (5 € / person)', icon: 'home', sponsor: 'COMPANY'},
+    { name: 'Snacks Saturday', priceRange: '~200 €', icon: 'leaf', sponsor: 'COMPANY'},
+    { name: 'Drinks', priceRange: '~200 €', icon: 'backward', sponsor: 'COMPANY'},
+    { name: 'Renting Chairs', priceRange: '~200 €', icon: 'film', sponsor: 'COMPANY'},
+    { name: 'Coffee', priceRange: '~100 € (this could be way more expensive)', icon: 'plus-circle', sponsor: 'COMPANY'},
+    { name: 'T-Shirts', priceRange: '~1200 €', icon: 'plus-circle', sponsor: 'COMPANY'},
+    { name: 'Stickers', priceRange: '~100 €', icon: 'plus-circle', sponsor: 'COMPANY'},
   ];
   function renderTemplate() {
     var items = [];
