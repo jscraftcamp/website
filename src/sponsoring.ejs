@@ -2,6 +2,9 @@
     ul.real_list li {
         list-style-type: disc;
     }
+    i.sponsor_image {
+      font-size: 10em;
+    }
 </style>
 
 <div class="container">
@@ -49,41 +52,31 @@
         the JS-Community!</h3>
 </div>
 
-<div id="participants" class="row">
+<div class="container">
+  <h2 class="header center">What to Sponsor?</h2>
+  <p class="flow-text block">
+    All expense will serve the attendees of the JSCraftCamp, all the expenses serve for food, drinks, chairs,
+    and all alike things that are needed for spending a couple of days together thinking and hacking for the
+    modern world.
+  </p>
+  <div id="participants" class="row">
+  </div>
 </div>
-
 
 <script id="participant-template" type="text/x-handlebars-template">
   <div class="col s12 m6 l3">
-    <div class="card medium">
-      <div class="card-image">
-        <img class="activator" src="/img/nophoto.png">
+    <div class="card small">
+      <div class="card-image center">
+        <i class="sponsor_image fa fa-{{icon}} fa-fw"></i>
       </div>
       <div class="card-content">
         <span class="card-title activator">{{name}}<i class="material-icons right">more_vert</i></span>
-        {{#if company}}
-           <p>{{company}}</p>
-        {{/if}}
+        <p>{{priceRange}}</p>
       </div>
       <div class="card-reveal">
-        <span class="card-title activator">{{name}}<i class="material-icons right">close</i></span>
-        {{#if what_is_my_connection_to_javascript}}
-        <p>{{what_is_my_connection_to_javascript}}</p>
-        {{/if}}
-        {{#if what_can_i_contribute}}
-        <p>{{what_can_i_contribute}}</p>
-        {{/if}}
+        <span class="card-title activator">zeig an<i class="material-icons right">close</i></span>
       </div>
       <div class="card-action">
-        {{#if urls.homepage}}
-        <a class="blue-text" href="{{urls.homepage}}"><i class="fa fa-home fa-fw"/></a>
-        {{/if}}
-        {{#if urls.github}}
-        <a class="blue-text" href="{{urls.github}}"><i class="fa fa-github fa-fw"/></a>
-        {{/if}}
-        {{#if urls.twitter}}
-        <a class="blue-text" href="{{urls.twitter}}"><i class="fa fa-twitter fa-fw"/></a>
-        {{/if}}
         <div class="card-tags-container">
           {{#list tags}}
              <span class="card-tag">#{{ this }}</span>
@@ -106,7 +99,15 @@ window.onload = function() {
   });
 
   var data = [
-    { company: 'no company', urls: [], tags: [], what_is_my_connection_to_javascript: 'nix' }
+    { name: 'Lunch Friday', priceRange: '~500 € (5 € / person)', icon: 'home', tags: []},
+    { name: 'Snacks Friday', priceRange: '~100 €', icon: 'leaf', tags: ['cake', 'fruit']},
+    { name: 'Lunch Saturday', priceRange: '~500 € (5 € / person)', icon: 'home', tags: [] },
+    { name: 'Snacks Saturday', priceRange: '~200 €', icon: 'leaf', tags: [] },
+    { name: 'Drinks', priceRange: '~200 €', icon: 'backward', tags: ['water'] },
+    { name: 'Renting Chairs', priceRange: '~200 €', icon: 'film', tags: [] },
+    { name: 'Coffee', priceRange: '~100 € (this could be way more expensive)', icon: 'plus-circle', tags: [] },
+    { name: 'T-Shirts', priceRange: '~1200 €', icon: 'plus-circle', tags: [] },
+    { name: 'Stickers', priceRange: '~100 €', icon: 'plus-circle', tags: [] },
   ];
   var items = [];
   $.each(data, function(index, participant) {
