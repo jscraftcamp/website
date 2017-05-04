@@ -106,6 +106,7 @@ window.onload = function() {
       .then(function(issues) {
         issues.forEach(function(issue) { openIssues[issue.number] = issue.state === 'open' });
       })
+      .catch(function() { /* ignore errors, this just means we show a wrong state for the sponsoring issue, maybe use a lambda+s3 to cache it */ })
     ;
   };
 
