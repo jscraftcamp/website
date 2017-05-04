@@ -3,7 +3,7 @@
         list-style-type: disc;
     }
     i.sponsor_image {
-      font-size: 10em;
+      font-size: 8em;
     }
 </style>
 
@@ -66,8 +66,9 @@
 <script id="participant-template" type="text/x-handlebars-template">
   <div class="col s12 m6 l3">
     <div class="card small">
-      <div class="card-image center">
+      <div class="card-image center {{#if issueClosed}}grey-text{{else}}orange-text{{/if}}">
         <i class="sponsor_image fa fa-{{icon}} fa-fw"></i>
+        <div>{{#if issueClosed}}Sponsored by {{sponsor}}{{/if}}</div>
       </div>
       <div class="card-content">
         <span class="card-title activator">{{name}}<i class="material-icons right">more_vert</i></span>
@@ -97,26 +98,40 @@ window.onload = function() {
     }
     return ret;
   });
+  var openIssues = {};
+  var loadIssues = function() {
+    var url = 'https://api.github.com/repos/jscraftcamp/website/issues';
+    return fetch(url)
+      .then(function(response) { return response.json(); })
+      .then(function(issues) {
+        issues.forEach(function(issue) { openIssues[issue.number] = issue.state === 'open' });
+      })
+    ;
+  };
 
   var data = [
-    { name: 'Lunch Friday', priceRange: '~500 € (5 € / person)', icon: 'home', tags: []},
-    { name: 'Snacks Friday', priceRange: '~100 €', icon: 'leaf', tags: ['cake', 'fruit']},
-    { name: 'Lunch Saturday', priceRange: '~500 € (5 € / person)', icon: 'home', tags: [] },
-    { name: 'Snacks Saturday', priceRange: '~200 €', icon: 'leaf', tags: [] },
-    { name: 'Drinks', priceRange: '~200 €', icon: 'backward', tags: ['water'] },
-    { name: 'Renting Chairs', priceRange: '~200 €', icon: 'film', tags: [] },
-    { name: 'Coffee', priceRange: '~100 € (this could be way more expensive)', icon: 'plus-circle', tags: [] },
-    { name: 'T-Shirts', priceRange: '~1200 €', icon: 'plus-circle', tags: [] },
-    { name: 'Stickers', priceRange: '~100 €', icon: 'plus-circle', tags: [] },
+    { name: 'Lunch Friday', priceRange: '~500 € (5 € / person)', icon: 'home', tags: [], issueId: 188},
+    { name: 'Snacks Friday', priceRange: '~100 €', icon: 'leaf', tags: ['cake', 'fruit'], sponsor: 'COMPANY'},
+    { name: 'Lunch Saturday', priceRange: '~500 € (5 € / person)', icon: 'home', tags: [], sponsor: 'COMPANY'},
+    { name: 'Snacks Saturday', priceRange: '~200 €', icon: 'leaf', tags: [], sponsor: 'COMPANY'},
+    { name: 'Drinks', priceRange: '~200 €', icon: 'backward', tags: ['water'], sponsor: 'COMPANY'},
+    { name: 'Renting Chairs', priceRange: '~200 €', icon: 'film', tags: [], sponsor: 'COMPANY'},
+    { name: 'Coffee', priceRange: '~100 € (this could be way more expensive)', icon: 'plus-circle', tags: [], sponsor: 'COMPANY'},
+    { name: 'T-Shirts', priceRange: '~1200 €', icon: 'plus-circle', tags: [], sponsor: 'COMPANY'},
+    { name: 'Stickers', priceRange: '~100 €', icon: 'plus-circle', tags: [], sponsor: 'COMPANY'},
   ];
-  var items = [];
-  $.each(data, function(index, participant) {
-    var source = $("#participant-template").html();
-    var template = Handlebars.compile(source);
-    var card = template(participant);
-    items.push(card);
-  });
-  $("#participants").append(items.join(""));
+  function renderTemplate() {
+    var items = [];
+    $.each(data, function(index, participant) {
+      var source = $("#participant-template").html();
+      var template = Handlebars.compile(source);
+      participant.issueClosed = !openIssues[participant.issueId];
+      var card = template(participant);
+      items.push(card);
+    });
+    $("#participants").append(items.join(""));
+  }
+  loadIssues().then(renderTemplate);
 };
 
 </script>
