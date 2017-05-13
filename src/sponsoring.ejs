@@ -69,7 +69,6 @@
       <a name="{{name}}" />
       <div class="card-image center {{#unless needsSponsor}}grey-text{{else}}orange-text{{/unless}}">
         <i class="sponsor_image material-icons">{{icon}}</i>
-        <div>{{#if issueClosed}}Sponsored by {{sponsor}}{{/if}}</div>
       </div>
       <div class="card-content">
         <span class="card-title activator">{{name}}<!-- do not yet exist
@@ -87,6 +86,7 @@
           {{#if needsSponsor}}
             <a href="https://github.com/jscraftcamp/website/issues/{{issueId}}">Sponsor this!</a>
           {{else}}
+            Sponsored by {{sponsor}}
           {{/if}}
         </div>
       </div>
