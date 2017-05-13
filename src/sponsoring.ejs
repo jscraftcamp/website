@@ -4,6 +4,7 @@
     }
     i.sponsor_image {
       font-size: 8em;
+        color: darkslategrey;
     }
 </style>
 
@@ -67,7 +68,7 @@
   <div class="col s12 m6 l3">
     <div class="card small">
       <div class="card-image center {{#if issueClosed}}grey-text{{else}}orange-text{{/if}}">
-        <i class="sponsor_image fa fa-{{icon}} fa-fw"></i>
+        <i class="sponsor_image material-icons">{{icon}}</i>
         <div>{{#if issueClosed}}Sponsored by {{sponsor}}{{/if}}</div>
       </div>
       <div class="card-content">
@@ -75,7 +76,7 @@
         <p>{{priceRange}}</p>
       </div>
       <div class="card-reveal">
-        <span class="card-title activator">zeig an<i class="material-icons right">close</i></span>
+        <span class="card-title activator">Details<i class="material-icons right">close</i></span>
       </div>
       <div class="card-action">
         <div class="card-tags-container center">
@@ -112,15 +113,15 @@ window.onload = function() {
   };
 
   var data = [
-    { name: 'Lunch Friday', priceRange: '~500 € (5 € / person)', icon: 'home', issueId: 188},
-    { name: 'Snacks Friday', priceRange: '~100 €', icon: 'leaf', sponsor: 'COMPANY'},
-    { name: 'Lunch Saturday', priceRange: '~500 € (5 € / person)', icon: 'home', sponsor: 'COMPANY'},
-    { name: 'Snacks Saturday', priceRange: '~200 €', icon: 'leaf', sponsor: 'COMPANY'},
-    { name: 'Drinks', priceRange: '~200 €', icon: 'backward', sponsor: 'COMPANY'},
-    { name: 'Renting Chairs', priceRange: '~200 €', icon: 'film', sponsor: 'COMPANY'},
-    { name: 'Coffee', priceRange: '~100 € (this could be way more expensive)', icon: 'plus-circle', sponsor: 'COMPANY'},
-    { name: 'T-Shirts', priceRange: '~1200 €', icon: 'plus-circle', sponsor: 'COMPANY'},
-    { name: 'Stickers', priceRange: '~100 €', icon: 'plus-circle', sponsor: 'COMPANY'},
+    { name: 'Lunch Friday', priceRange: '~500 € (5 € / person)', icon: 'local_restaurant', issueId: 188},
+    { name: 'Snacks Friday', priceRange: '~100 €', icon: 'restaurant', sponsor: 'COMPANY'},
+    { name: 'Lunch Saturday', priceRange: '~500 € (5 € / person)', icon: 'local_restaurant', sponsor: 'COMPANY'},
+    { name: 'Snacks Saturday', priceRange: '~200 €', icon: 'restaurant', sponsor: 'COMPANY'},
+    { name: 'Drinks', priceRange: '~200 €', icon: 'local_bar', sponsor: 'COMPANY'},
+    { name: 'Renting Chairs', priceRange: '~200 €', icon: 'event_seat', sponsor: 'COMPANY'},
+    { name: 'Coffee', priceRange: '~100 € (this could be way more expensive)', icon: 'local_cafe', sponsor: 'COMPANY'},
+    { name: 'T-Shirts', priceRange: '~1200 €', icon: 'accessibility', sponsor: 'COMPANY'},
+    { name: 'Stickers', priceRange: '~100 €', icon: 'note', sponsor: 'COMPANY'},
   ];
   function renderTemplate() {
     var items = [];
