@@ -104,17 +104,6 @@ window.onload = function() {
     }
     return ret;
   });
-  var openIssues = {};
-  var loadIssues = function() {
-    var url = 'https://api.github.com/repos/jscraftcamp/website/issues';
-    return fetch(url)
-      .then(function(response) { return response.json(); })
-      .then(function(issues) {
-        issues.forEach(function(issue) { openIssues[issue.number] = issue.state === 'open' });
-      })
-      .catch(function() { /* ignore errors, this just means we show a wrong state for the sponsoring issue, maybe use a lambda+s3 to cache it */ })
-    ;
-  };
 
   var data = [
     { name: 'Venue', priceRange: 'room for ~100 people', icon: 'home', sponsor: 'Virtual Identity AG'},
@@ -139,7 +128,8 @@ window.onload = function() {
     });
     $("#participants").append(items.join(""));
   }
-  loadIssues().then(renderTemplate);
+
+  renderTemplate();
 };
 
 </script>
