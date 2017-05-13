@@ -67,17 +67,22 @@
 <script id="participant-template" type="text/x-handlebars-template">
   <div class="col s12 m6 l3">
     <div class="card small">
+      <a name="{{name}}" />
       <div class="card-image center {{#if issueClosed}}grey-text{{else}}orange-text{{/if}}">
         <i class="sponsor_image material-icons">{{icon}}</i>
         <div>{{#if issueClosed}}Sponsored by {{sponsor}}{{/if}}</div>
       </div>
       <div class="card-content">
+        <!-- do not yet exist
         <span class="card-title activator">{{name}}<i class="material-icons right">more_vert</i></span>
+        -->
         <p>{{priceRange}}</p>
       </div>
+      <!-- do not yet exist
       <div class="card-reveal">
         <span class="card-title activator">Details<i class="material-icons right">close</i></span>
       </div>
+      -->
       <div class="card-action">
         <div class="card-tags-container center">
           {{#if issueClosed}}
