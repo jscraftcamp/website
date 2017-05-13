@@ -67,7 +67,7 @@
   <div class="col s12 m6 l3">
     <div class="card small">
       <a name="{{name}}" />
-      <div class="card-image center {{#if issueClosed}}grey-text{{else}}orange-text{{/if}}">
+      <div class="card-image center {{#unless needsSponsor}}grey-text{{else}}orange-text{{/unless}}">
         <i class="sponsor_image material-icons">{{icon}}</i>
         <div>{{#if issueClosed}}Sponsored by {{sponsor}}{{/if}}</div>
       </div>
@@ -84,7 +84,7 @@
       -->
       <div class="card-action">
         <div class="card-tags-container center">
-          {{#if issueClosed}}
+          {{#if needsSponsor}}
             <a href="https://github.com/jscraftcamp/website/issues/{{issueId}}">Sponsor this!</a>
           {{else}}
           {{/if}}
@@ -122,7 +122,7 @@ window.onload = function() {
     $.each(data, function(index, participant) {
       var source = $("#participant-template").html();
       var template = Handlebars.compile(source);
-      participant.issueClosed = !openIssues[participant.issueId];
+      participant.needsSponsor = !participant.sponsor;
       var card = template(participant);
       items.push(card);
     });
