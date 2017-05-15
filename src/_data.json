@@ -6,6 +6,7 @@
       {"url": "/", "title": "Home"},
       {"url": "/#location", "title": "Location"},
       {"url": "/sponsoring.html", "title": "Sponsoring"},
+      {"url": "/values.html", "title": "Values"},
       {"url": "/imprint.html", "title": "Imprint"}
     ],
     "archive" : [
