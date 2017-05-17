@@ -1,0 +1,15 @@
+{
+  "name": "Holger Schulz",
+  "company": "Programmiercoach",
+  "tags": [ "Java", "Grails", "JavaScript", "Angular.io", "Coaching" ],
+  "when": {
+    "saturday": true,
+    "sunday": true 
+  },
+  "what_is_my_connection_to_javascript": "I'm a backend and frontend developer",
+  "tshirt": "M",
+  "urls": {
+    "photo": "http://programmiercoach.de/images/holger.jpg",
+    "homepage": "http://www.programmiercoach.de/"
+  }
+}
