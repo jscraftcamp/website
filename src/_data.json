@@ -4,6 +4,7 @@
   "navigationItems": {
     "main": [
       {"url": "/", "title": "Home"},
+      {"url": "/#register", "title": "Register", "cssClasses": "highlight"},
       {"url": "/#location", "title": "Location"},
       {"url": "/sponsoring.html", "title": "Sponsoring"},
       {"url": "/imprint.html", "title": "Imprint"}

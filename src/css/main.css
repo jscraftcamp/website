@@ -10,6 +10,20 @@
   }
 }
 
+nav .highlight {
+  background-color: red;
+  animation: fadein-nav-highlight 5s;
+}
+@keyframes fadein-nav-highlight {
+  0% { background-color: transparent; }
+  50%  { background-color: darkgoldenrod; }
+  80%  { transform: scale(1); }
+  83%  { transform: scale(2); }
+  86%  { transform: scale(0.5); }
+  90%  { transform: scale(1); }
+  100% { background-color: red; }
+}
+
 .row {
   padding-top: 3rem;
   padding-bottom: 3rem;
