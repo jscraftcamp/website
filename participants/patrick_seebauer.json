@@ -1,0 +1,14 @@
+{
+  "name": "Patrick Seebauer",
+  "company": "Inradius",
+  "tags": ["nodejs", "angular", "compilation models"],
+  "when": {
+    "saturday": true,
+    "sunday": true
+  },
+  "tshirt": "M-M",
+  "what_is_my_connection_to_javascript": "I am working in a company that has most of it's code written in Javascript. For the most part, I write nodejs services there. First ‘real’ javascript experience with GWT back in the day. Beginning to like the language.",
+  "urls": {
+    "github": "https://github.com/P-Seebauer/"
+  }
+}
