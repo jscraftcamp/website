@@ -1,0 +1,16 @@
+{
+  "name": "Bernhard Leitzke",
+  "company": "intraFind Software AG",
+  "tags": [ "javascript", "Extjs", "React", "Grunt", "SASS"],
+  "when": {
+    "saturday": true,
+    "sunday": false
+  },
+  "what_is_my_connection_to_javascript": "Daily Work, Frontend development",
+  "what_can_i_contribute": "always interested in new technologies, Experience with Extjs",
+  "tshirt": "M-XL",
+  "urls": {
+    "homepage": "http://www.intrafind.com/",
+    "github": "https://github.com/berhardleitzke"
+  }
+}
