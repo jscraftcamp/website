@@ -2,7 +2,7 @@
   <li>
     <% for(var i in public._data.navigationItems.archive) { %>
       <% var item = public._data.navigationItems.archive[i] %>
-      <a href="<%= item.url %>"><%= item.title %></a>
+      <a href="<%= item.url %>" class="<%= item.cssClasses %>"><%= item.title %></a>
     <% } %>
   </li>
 </ul>
@@ -10,7 +10,7 @@
   <li>
     <% for(var i in public._data.navigationItems.archive) { %>
       <% var item = public._data.navigationItems.archive[i] %>
-      <a href="<%= item.url %>"><%= item.title %></a>
+      <a href="<%= item.url %>" class="<%= item.cssClasses %>"><%= item.title %></a>
     <% } %>
   </li>
 </ul>
@@ -22,7 +22,7 @@
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <% for(var i in public._data.navigationItems.main) { %>
         <% var item = public._data.navigationItems.main[i] %>
-        <li><a href="<%= item.url %>"><%= item.title %></a></li>
+        <li><a href="<%= item.url %>" class="<%= item.cssClasses %>"><%= item.title %></a></li>
       <% } %>
 
       <li>
@@ -35,7 +35,7 @@
     <ul id="mobile-demo" class="side-nav">
       <% for(var i in public._data.navigationItems.main) { %>
       <% var item = public._data.navigationItems.main[i] %>
-        <li><a href="<%= item.url %>"><%= item.title %></a></li>
+        <li><a href="<%= item.url %>" class="<%= item.cssClasses %>"><%= item.title %></a></li>
       <% } %>
       <li>
         <a class="dropdown-button-mobile" href="#!" data-activates="dropdown2016-mobile">Archive<i
