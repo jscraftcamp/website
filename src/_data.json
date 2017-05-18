@@ -1,14 +1,14 @@
 {
-  "baseColor": "orange",
-  "pageTitle": "JSCraftCamp - 21+22 July 2017 in Munich",
-  "navigationItems": {
-    "main": [
-      {"url": "/", "title": "Home"},
-      {"url": "/#registration", "title": "Registration", "cssClasses": "highlight"},
-      {"url": "/#location", "title": "Location"},
-      {"url": "/sponsoring.html", "title": "Sponsoring"},
-      {"url": "/values.html", "title": "Values"},
-      {"url": "/imprint.html", "title": "Imprint"}
+  "baseColor" : "orange",
+  "pageTitle" : "JSCraftCamp - 21+22 July 2017 in Munich",
+  "navigationItems" : {
+    "main" : [
+      { "url" : "/", "title" : "Home" },
+      { "url" : "/#registration", "title" : "Registration", "cssClasses" : "highlight" },
+      { "url" : "/#location", "title" : "Location" },
+      { "url" : "/sponsoring.html", "title" : "Sponsoring" },
+      { "url" : "/values.html", "title" : "Values" },
+      { "url" : "/imprint.html", "title" : "Imprint" }
     ],
     "archive" : [
       { "url" : "/info2016", "title" : "2016 - Home" },
@@ -34,5 +34,37 @@
     { "url" : "img/event_photos/IMG_5418.jpg" },
     { "url" : "img/event_photos/IMG_5419.jpg" },
     { "url" : "img/event_photos/IMG_5422.jpg" }
+  ],
+  "theteam" : [
+    {
+      "name" : "Wolfram Kriesing",
+      "photo" : "wolfram.png",
+      "email" : ""
+    },
+    {
+      "name" : "Robert Hostlowsky",
+      "photo" : "robert.png",
+      "email" : ""
+    },
+    {
+      "name" : "Marco Emrich",
+      "photo" : "marco.jpg",
+      "email" : ""
+    },
+    {
+      "name" : "Megan Christian",
+      "photo" : "",
+      "email" : ""
+    },
+    {
+      "name" : "Stefanie Hasler",
+      "photo" : "stefanie.png",
+      "email" : ""
+    },
+    {
+      "name" : "David Losert",
+      "photo" : "david.jpg",
+      "email" : "david.losert@virtual-identity.com"
+    }
   ]
 }
