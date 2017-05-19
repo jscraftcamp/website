@@ -67,7 +67,7 @@
   <div class="col s12 m6 l3">
     <div class="card small">
       <a name="{{name}}" />
-      <div class="card-image center {{#unless needsSponsor}}grey-text{{else}}orange-text{{/unless}}">
+      <div class="card-image center {{#unless needsSponsor}}orange-text{{else}}grey-text{{/unless}}">
         <i class="sponsor_image material-icons">{{icon}}</i>
       </div>
       <div class="card-content">
@@ -89,7 +89,7 @@
               Click for details<br /> and to contact us.
             </a>
           {{else}}
-            Sponsored by {{sponsor}}
+            ✅ Sponsored by {{sponsor}}
           {{/if}}
         </div>
       </div>
@@ -110,7 +110,7 @@ window.onload = function() {
 
   var data = [
     { name: 'Venue', priceRange: 'room for ~100 people', icon: 'home', sponsor: 'Virtual Identity AG'},
-    { name: 'Lunch Friday', priceRange: '~500 € (5 € / person)', icon: 'local_restaurant', issueId: 192},
+    { name: 'Lunch Friday', priceRange: '~500 € (5 € / person)', icon: 'local_restaurant', issueId: 192, sponsor: 'TrustYou GmbH'},
     { name: 'Snacks Friday', priceRange: '~100 €', icon: 'restaurant', issueId: 194},
     { name: 'Lunch Saturday', priceRange: '~500 € (5 € / person)', icon: 'local_restaurant', issueId: 193},
     { name: 'Snacks Saturday', priceRange: '~200 €', icon: 'restaurant', issueId: 195},
