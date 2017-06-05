@@ -3,42 +3,40 @@
     <div class="col s12 m12">
       <h1 class="header center <%=public._data.baseColor %>-text">Registration</h1>
       <h3 class="header center light">Create a JSON File and submit it via a GitHub Pull Request</h3>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s12 m12">
+    <div class="center">
       <p>To register for JS CrafCamp you have to add a json file with your name and some other information to our <a href="https://github.com/jscraftcamp/website">GitHub Repository</a> via a
         <a href="http://stackoverflow.com/questions/14680711/how-to-do-a-github-pull-request">Pull Request</a>. Registration is free of charge.
         Your json file should follow the naming scheme <code>$firstname_$lastname.json</code> and must be placed in the folder <code>participants</code>. The structure of the file is described below.</p>
       <p>To test if your json file is a valid registration you can run <code>npm test</code> (more details about this are in the <a href="https://github.com/jscraftcamp/website/blob/master/README.md">README</a>). Invalid registrations will be rejected.</p>
       <p>Out of these files a page with information about <a href="/participants.html">all participants</a> is generated.</p>
-      <p>To unregister please write another pull request.</p>
+      <p>To unregister please write another pull request or <a href="mailto:team@jscraftcamp.org">let us know</a>.</p>
     </div>
   </div>
   <div class="row">
     <div class="col s12 m12">
       <h4 class="header center blue-text">The JSON Format</h4>
       <pre data-line="2,4,5,6-9" class="language-json">
-<code class="language-json">{
-    "name": "Foo Bar",
-    "company": "A company name",
-    "tags": [ "angular" ],
-    "when": {
-      "friday": true,
-      "friday_party": true,
-      "saturday": true
-    },
-    "what_is_my_connection_to_javascript": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "what_can_i_contribute": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-    "tshirt": "W-S",
-    "urls": {
-      "photo": "http://materializecss.com/images/sample-1.jpg",
-      "homepage": "http://www.example.com/",
-      "github": "https://github.com/",
-      "twitter": "https://twitter.com/"
-    }
-}</code>
+      <code class="language-json">
+        {
+          "name": "Foo Bar",
+          "company": "A company name",
+          "tags": [ "angular" ],
+          "when": {
+            "friday": true,
+            "friday_party": true,
+            "saturday": true
+          },
+          "what_is_my_connection_to_javascript": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "what_can_i_contribute": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+          "tshirt": "W-S",
+          "urls": {
+            "photo": "http://materializecss.com/images/sample-1.jpg",
+            "homepage": "http://www.example.com/",
+            "github": "https://github.com/",
+            "twitter": "https://twitter.com/"
+          }
+        }
+      </code>
       </pre>
     </div>
     <div class="col s12 m10">

@@ -4,9 +4,10 @@
   "navigationItems" : {
     "main" : [
       { "url" : "/", "title" : "Home" },
-      { "url" : "/#registration", "title" : "Registration", "cssClasses" : "highlight" },
+      { "url" : "/registration", "title" : "Registration", "cssClasses" : "highlight" },
       { "url" : "/#location", "title" : "Location" },
       { "url" : "/sponsoring.html", "title" : "Sponsoring" },
+      { "url" : "/participants.html", "title": "Participants"},
       { "url" : "/values.html", "title" : "Values" }
     ],
     "archive" : [
