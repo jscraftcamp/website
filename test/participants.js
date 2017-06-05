@@ -47,8 +47,10 @@ describe("Participants JSON file", () => {
       it('must contain participation time', () => {
         assert.ok(typeof object.when !== "undefined", "'when' is mandatory");
         assert.equal(typeof object.when, "object");
-        assert.ok(typeof object.when.friday !== "undefined", "'when.sunday' is mandatory");
-        assert.equal(typeof object.when.friday, "boolean", "'when.sunday' must be of type boolean");
+        assert.ok(typeof object.when.friday !== "undefined", "'when.friday' is mandatory");
+        assert.equal(typeof object.when.friday, "boolean", "'when.friday' must be of type boolean");
+        assert.ok(typeof object.when.friday_party !== "undefined", "'when.friday_party' is mandatory. We need this information to better plan the party.");
+        assert.equal(typeof object.when.friday_party, "boolean", "'when.friday_party' must be of type boolean");
         assert.ok(typeof object.when.saturday !== "undefined", "'when.saturday' is mandatory");
         assert.equal(typeof object.when.saturday, "boolean", "'when.saturday' must be of type boolean");
       });
