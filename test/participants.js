@@ -93,6 +93,18 @@ describe("Participants JSON file", () => {
           assert.ok(object.urls.twitter.startsWith("http"), "'urls.twitter' must be an URL");
         }
       });
+
+      it("may contain the E-Mail", () => {
+          if(typeof object.email !== "undefined") {
+              assert.equal(typeof object.email, "string", "'email must be a string'");
+          }
+      });
+
+      it("may contain dietary requirements", () => {
+          if(typeof object.dietary_requirements !== "undefined") {
+              assert.equal(typeof object.dietary_requirements, "string", "'dietary_requirements must be a string'");
+          }
+      });
     });
   });
 });

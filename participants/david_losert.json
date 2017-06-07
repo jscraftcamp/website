@@ -1,6 +1,7 @@
 {
   "name" : "David Losert",
   "company" : "virtual-identity.com",
+  "email": "david.losert@virtual-identity.com",
   "tags" : [ "Craftsmanship", "TDD", "Angular2", "TypeScript", "OOD", "Clean Code" ],
   "when" :
   {
