@@ -111,15 +111,18 @@ window.onload = function() {
   var data = [
     { name: 'Venue', priceRange: 'room for ~100 people', icon: 'home', sponsor: 'Virtual Identity AG'},
     { name: 'Lunch Friday', priceRange: '~500 € (5 € / person)', icon: 'local_restaurant', issueId: 192, sponsor: 'TrustYou GmbH'},
-    { name: 'Snacks Friday', priceRange: '~100 €', icon: 'restaurant', issueId: 194},
+    { name: 'Snacks Friday', priceRange: '~100 €', icon: 'restaurant', issueId: 194, sponsor: 'wunder.io'},
     { name: 'Lunch Saturday', priceRange: '~500 € (5 € / person)', icon: 'local_restaurant', issueId: 193, sponsor: 'Mercateo AG'},
-    { name: 'Snacks Saturday', priceRange: '~200 €', icon: 'restaurant', issueId: 195},
+    { name: 'Snacks Saturday', priceRange: '~200 €', icon: 'restaurant', issueId: 195, sponsor: 'wunder.io'},
     { name: 'Drinks', priceRange: '~200 €', icon: 'local_drink', issueId: 198},
-    { name: 'Renting Chairs', priceRange: '(for community space) ~200 €', icon: 'event_seat', issueId: 196},
-    { name: 'Coffee', priceRange: '~100 € (you can spend more for better quality)', icon: 'local_cafe', issueId: 197},
-    { name: 'T-Shirts', priceRange: '~1200 €', icon: 'accessibility', issueId: 199},
+    { name: 'Renting Chairs', priceRange: '(for community space) ~200 €', icon: 'event_seat', issueId: 196, sponsor: 'HolidayCheck'},
+    { name: 'Coffee', priceRange: '~100 € (you can spend more for better quality)', icon: 'local_cafe', issueId: 197, sponsor: 'Peerigon GmbH'},
+    { name: 'T-Shirts', priceRange: '~1200 €', icon: 'accessibility', issueId: 199, sponsor: 'Codecentric GmbH'},
     { name: 'Stickers', priceRange: '~100 €', icon: 'note', issueId: 200},
     { name: 'Party', priceRange: '~1000 €', icon: 'local_bar', issueId: 201, sponsor: 'SinnerSchrader AG'},
+    { name: 'Money: 100 €', priceRange: '', icon: 'euro_symbol', issueId: 215},
+    { name: 'Money: 200 €', priceRange: '', icon: 'euro_symbol', issueId: 216},
+    { name: 'Money: 500 €', priceRange: '', icon: 'euro_symbol', issueId: 217},
   ];
   function renderTemplate() {
     var items = [];
