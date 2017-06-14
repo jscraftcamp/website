@@ -43,4 +43,5 @@ function initialize() {
   });
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
+typeof google != 'undefined' 
+  && google.maps.event.addDomListener(window, 'load', initialize);
