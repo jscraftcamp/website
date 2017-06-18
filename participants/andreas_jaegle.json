@@ -1,0 +1,29 @@
+{
+  "name" : "Andreas Jägle",
+  "company" : "AXOOM GmbH",
+  "tags" : [
+    "TypeScript",
+    "Angular",
+    "Webpack",
+    "IoT",
+    "RxJS",
+    "Stream Processing",
+    "Docker",
+    "traefik"
+  ],
+  "when" :
+  {
+    "friday" : true,
+    "friday_party": true,
+    "saturday" : true
+  },
+  "what_is_my_connection_to_javascript" : "Full stack developer. Really started into JavaScript with AngularJS, got into TypeScript in its early days and loving it since then. Great interest in build automation and deployment with Docker.",
+  "what_can_i_contribute" : "My experience with TypeScript and Webpack and how to use Docker to build and run your web apps.",
+  "tshirt" : "M-XL",
+  "urls" : {
+    "photo" : "https://ajaegle.de/assets/ajaegle.png",
+    "homepage" : "https://ajaegle.de",
+    "github" : "https://github.com/ajaegle",
+    "twitter" : "https://twitter.com/ajaegle"
+  }
+}
