@@ -3,12 +3,15 @@
   "company": "my company",
   "tags": [],
   "when": {
-    "saturday": true,
-    "sunday": false
+    "friday": true,
+    "friday_party": true,
+    "saturday": false
   },
+  "email": "",
+  "dietary_requirements": "vegan",
   "what_is_my_connection_to_javascript": "...",
   "what_can_i_contribute": "???",
-  "tshirt": "Sorry, no shirt available. T-shirts have already been ordered.",
+  "tshirt": "/^(W|M)-(S|M|L|XL)$/",
   "urls": {
     "photo": "",
     "homepage": "",

@@ -48,11 +48,13 @@
     #sponsors .sponsor-logos {
       flex-direction: column;
     }
+
     #sponsors .sponsor {
       margin: 2rem 0;
       width: 50%;
       text-align: center;
     }
+
     #sponsors .sponsor img {
       max-height: 75px;
     }
@@ -64,6 +66,7 @@
       margin: 2rem;
       text-align: center;
     }
+
     #sponsors .sponsor img {
       max-height: 100px;
     }
@@ -108,14 +111,21 @@
     <div class="col s12 m4 offset-m4">
       <!-- Begin MailChimp Signup Form -->
       <div id="mc_embed_signup">
-        <h4 class="header center <%= public._data.baseColor %>-text" id="registration">Registration</h4>
-        <form action="//jscraftcamp.us15.list-manage.com/subscribe/post?u=cef2367b248c0b9beca2c3d74&amp;id=b15528acf6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <h4 class="header center <%= public._data.baseColor %>-text" id="registration">Register to our Newsletter</h4>
+        <form action="//jscraftcamp.us15.list-manage.com/subscribe/post?u=cef2367b248c0b9beca2c3d74&amp;id=b15528acf6"
+              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+              target="_blank" novalidate>
           <div id="mc_embed_signup_scroll">
-            <label for="mce-EMAIL" style="text-align: center">Don't miss when the registration opens - subscribe and be the first to know!</label>
+            <label for="mce-EMAIL" style="text-align: center">Get viable informations about JSCraftCamp before and after
+              the event.</label>
             <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cef2367b248c0b9beca2c3d74_b15528acf6" tabindex="-1" value=""></div>
-            <div class="clear" style="display: flex"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="orange button" style="flex: 1"></div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                                                                      name="b_cef2367b248c0b9beca2c3d74_b15528acf6"
+                                                                                      tabindex="-1" value=""></div>
+            <div class="clear" style="display: flex"><input type="submit" value="Subscribe" name="subscribe"
+                                                            id="mc-embedded-subscribe" class="orange button"
+                                                            style="flex: 1"></div>
           </div>
         </form>
       </div>
@@ -147,20 +157,18 @@
       <p class="block">A barcamp – also called an unconference – is an event without any previously fixed agenda.
         All the participants meet in the morning and decide about the schedule for the day.
         Everyone can offer a session - from a short hands-on workshop to moderating a discussion. The goal is to
-        make everything as participative as possible. Read more 
-        <a class="<%=public._data.baseColor %>-text" href="https://en.wikipedia.org/wiki/Unconference">about 
-        BarCamp on Wikipedia</a>.
+        make everything as participative as possible. Read more
+        <a class="<%= public._data.baseColor %>-text" target="_blank" href="https://en.wikipedia.org/wiki/Unconference">about
+          BarCamp on Wikipedia</a>.
       </p>
     </div>
     <div class="col s12 m6">
       <h5 class="header center">How to register?</h5>
       <p class="block">Attendance is <strong>free of charge</strong> and we encourage to sign up in advance.
-        Registration will open some time before the event takes place, so keep watching this space, subscribe to the 
-        <a href="#mc_embed_signup_container_row">registration newsletter</a> above, or keep your ear on the 
-        <a href="https://twitter.com/search?q=%23jscc17">twitter stream</a>. Registration happens by submitting your 
-        name and some other information via 
-        <a href="http://stackoverflow.com/questions/14680711/how-to-do-a-github-pull-request">Pull Request</a>.
-        We'll explain all the details, as soon as registration opens.
+        Registration happens by submitting your name and some other information via
+        <a href="http://stackoverflow.com/questions/14680711/how-to-do-a-github-pull-request" target="_blank">Pull
+          Request</a>.
+        More infos and explanations can be found on the <a href="./registration.html">Registration Page.</a>
       </p>
     </div>
   </div>
@@ -186,7 +194,8 @@
           </tr>
           <tr>
             <td>13:00-14:00</td>
-            <td>Lunch <a class="<%=public._data.baseColor %>-text" href="https://github.com/jscraftcamp/website/issues/192"><i>sponsored</i></a></td>
+            <td>Lunch <a class="<%= public._data.baseColor %>-text"
+                         href="https://github.com/jscraftcamp/website/issues/192"><i>sponsored</i></a></td>
           </tr>
           <tr>
             <td>14:00-17:00</td>
@@ -198,7 +207,8 @@
           </tr>
           <tr>
             <td>18:00-24:00</td>
-            <td>Party <a class="<%=public._data.baseColor %>-text" href="https://github.com/jscraftcamp/website/issues/201"><i>sponsored</i></a></td>
+            <td>Party <a class="<%= public._data.baseColor %>-text"
+                         href="https://github.com/jscraftcamp/website/issues/201"><i>sponsored</i></a></td>
           </tr>
         </table>
       </div>
@@ -219,7 +229,8 @@
           </tr>
           <tr>
             <td>13:00-14:00</td>
-            <td>Lunch <a class="<%=public._data.baseColor %>-text" href="https://github.com/jscraftcamp/website/issues/193"><i>sponsored</i></a></td>
+            <td>Lunch <a class="<%= public._data.baseColor %>-text"
+                         href="https://github.com/jscraftcamp/website/issues/193"><i>sponsored</i></a></td>
           </tr>
           <tr>
             <td>14:00-17:00</td>
@@ -233,7 +244,7 @@
       </div>
     </div>
   </div>
-  
+
   <h4 class="header center <%= public._data.baseColor %>-text">Facilitation by</h4>
   <h5 class="header center">Tobias Goeschel (<a href="https://twitter.com/w3ltraumpirat">@w3ltraumpirat</a>)</h5>
 
@@ -242,28 +253,28 @@
       <h4 class="header center <%= public._data.baseColor %>-text">Sponsors</h4>
     </div>
     <div class="col s12 sponsor-logos">
-      <a href="http://virtual-identity.com/" class="sponsor">
+      <a href="http://virtual-identity.com/" class="sponsor" target="_blank">
         <img class="responsive-img" src="img/vi_logo.jpeg" alt="Virtual Identity AG">
       </a>
-      <a href="https://sinnerschrader.com/" class="sponsor">
+      <a href="https://sinnerschrader.com/" class="sponsor" target="_blank">
         <img class="responsive-img" src="img/sponsor-2017/sinnerschrader.png">
       </a>
-      <a href="https://www.trustyou.com/" class="sponsor">
+      <a href="https://www.trustyou.com/" class="sponsor" target="_blank">
         <img class="responsive-img" src="img/sponsor-2017/trustyou-logo.png" alt="TrustYou GmbH">
       </a>
-      <a href="https://www.codecentric.de/" class="sponsor">
+      <a href="https://www.codecentric.de/" class="sponsor" target="_blank">
         <img class="responsive-img" src="img/sponsor-2017/codecentric.png">
       </a>
-      <a href="http://www.mercateo.com/corporate/" class="sponsor">
+      <a href="http://www.mercateo.com/corporate/" class="sponsor" target="_blank">
         <img class="responsive-img" src="img/sponsor-2017/mercateo.jpg">
       </a>
-      <a href="https://holidaycheck.de" class="sponsor">
+      <a href="https://holidaycheck.de" class="sponsor" target="_blank">
         <img class="responsive-img" src="img/sponsor-2017/holidaycheck.jpg">
       </a>
-      <a href="https://peerigon.com/" class="sponsor">
+      <a href="https://peerigon.com/" class="sponsor" target="_blank">
         <img class="responsive-img" src="img/sponsor-2017/peerigon.png">
       </a>
-      <a href="https://wunder.io" class="sponsor">
+      <a href="https://wunder.io" class="sponsor" target="_blank">
         <img class="responsive-img" src="img/sponsor-2017/wunder.png">
       </a>
     </div>
