@@ -1,14 +1,17 @@
 {
   "name": "Hans-Georg Gruber",
-  "company": "self",
-  "tags": ["Marketing_Automation", "FormValidation", ],
+  "company": "Demand Systems GmbH",
+  "tags": ["Marketing_Automation", "FormValidation"],
   "when": {
+    "friday": true,
+    "friday_party": true,
     "saturday": true,
-    "sunday": true,
   },
+  "email": "",
+  "dietary_requirements": "",
   "what_is_my_connection_to_javascript": "user",
   "what_can_i_contribute": "javascript on forms, javascript for Marketing Automation, Form validation",
-  "tshirt": "",
+  "tshirt": "/^(M)-(M)$/",
   "urls": {
     "photo": "",
     "homepage": "",
