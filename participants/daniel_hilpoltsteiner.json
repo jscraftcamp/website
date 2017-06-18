@@ -1,7 +1,7 @@
   {
           "name": "Daniel Hilpoltsteiner",
           "company": "Hochschule Landshut",
-          "email": "daniel.hilpoltsteiner@gmail.com"
+          "email": "daniel.hilpoltsteiner@gmail.com",
           "tags": [ "angular", "react" ],
           "when": {
             "friday": true,
@@ -13,9 +13,9 @@
           "what_can_i_contribute": "Some good portion of humor and my willingness to learn.",
           "tshirt": "M-L",
           "urls": {
-            "photo": "",
-            "homepage": "",
-            "github": "",
-            "twitter": ""
+            "photo": "http://materializecss.com/images/sample-1.jpg",
+            "homepage": "http://www.example.com/",
+            "github": "https://github.com/",
+            "twitter": "https://twitter.com/"
           }
         }
