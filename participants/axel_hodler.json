@@ -1,0 +1,21 @@
+{
+  "name" : "Axel Hodler",
+  "company" : "YOPITER GmbH",
+  "email": "axel@hodler.co",
+  "tags" : [ "Craftsmanship", "TDD", "Angular", "Java", "Node.js", "Automation", "Clean Code", "Blockchain Tech" ],
+  "when" :
+  {
+    "friday" : true,
+    "friday_party": true,
+    "saturday" : true
+  },
+  "what_is_my_connection_to_javascript" : "As an IT-Consultant, aside from backends using the Java ecosystem, I'm working on frontends which are using Angular (AngularJS to Angular4) or are migrating to Angular. I focus on testautomation and use Node.js on the backend in my spare time",
+  "what_can_i_contribute" : "Introduction and improvement of testautomation (Especially on the usage of mocks). Necessity of short feedback loops. Dealing with exceptions. Continuous Integration (The practice, not the tooling). Moving from JavaServer Pages (JSP) to Angular. The technical side and JS ecosystem of blockchain technology (Bitcoin & Ethereum)",
+  "tshirt" : "M-L",
+  "urls" : {
+    "photo" : "https://avatars2.githubusercontent.com/u/1504952?v=3&s=460",
+    "homepage" : "http://hodler.co",
+    "github" : "https://github.com/axelhodler",
+    "twitter" : "https://twitter.com/axelhodler"
+  }
+}
