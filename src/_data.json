@@ -1,0 +1,70 @@
+{
+  "baseColor" : "orange",
+  "pageTitle" : "JSCraftCamp - 21+22 July 2017 in Munich",
+  "navigationItems" : {
+    "main" : [
+      { "url" : "/", "title" : "Home" },
+      { "url" : "/registration", "title" : "Registration", "cssClasses" : "highlight" },
+      { "url" : "/#location", "title" : "Location" },
+      { "url" : "/sponsoring.html", "title" : "Sponsoring" },
+      { "url" : "/participants.html", "title": "Participants"},
+      { "url" : "/values.html", "title" : "Values" }
+    ],
+    "archive" : [
+      { "url" : "/info2016", "title" : "2016 - Home" },
+      { "url" : "/participants2016", "title" : "2016 - Participants" },
+      { "url" : "/photos2016", "title" : "2016 - Photos" }
+    ]
+  },
+  "photos2016" : [
+    { "url" : "img/event_photos/CuaYSc3WYAAdRRV.jpg" },
+    { "url" : "img/event_photos/CuaYwEuXgAEEkzT.jpg" },
+    { "url" : "img/event_photos/CuaZHUSW8AAOLs3.jpg" },
+    { "url" : "img/event_photos/CuOyZ_kWYAARNY0.jpg" },
+    { "url" : "img/event_photos/CuPNlg6XEAA8HtJ.jpg" },
+    { "url" : "img/event_photos/IMG_5352.jpg" },
+    { "url" : "img/event_photos/IMG_5374.jpg" },
+    { "url" : "img/event_photos/IMG_5375.jpg" },
+    { "url" : "img/event_photos/IMG_5377.jpg" },
+    { "url" : "img/event_photos/IMG_5381.jpg" },
+    { "url" : "img/event_photos/IMG_5394.jpg" },
+    { "url" : "img/event_photos/IMG_5395.jpg" },
+    { "url" : "img/event_photos/IMG_5404.jpg" },
+    { "url" : "img/event_photos/IMG_5413.jpg" },
+    { "url" : "img/event_photos/IMG_5418.jpg" },
+    { "url" : "img/event_photos/IMG_5419.jpg" },
+    { "url" : "img/event_photos/IMG_5422.jpg" }
+  ],
+  "theteam" : [
+    {
+      "name" : "Wolfram Kriesing",
+      "photo" : "wolfram.png",
+      "email" : "w@kriesing.de"
+    },
+    {
+      "name" : "Robert Hostlowsky",
+      "photo" : "robert.png",
+      "email" : "robert.hostlowsky@codecentric.de"
+    },
+    {
+      "name" : "Marco Emrich",
+      "photo" : "marco.jpg",
+      "email" : "m.emrich@webmasters.de"
+    },
+    {
+      "name" : "Megan Christian",
+      "photo" : "megan.jpg",
+      "email" : "mwilgenbush@gmail.com"
+    },
+    {
+      "name" : "Stefanie Hasler",
+      "photo" : "stefanie.png",
+      "email" : "stefanie.hasler@codecentric.de"
+    },
+    {
+      "name" : "David Losert",
+      "photo" : "david.jpg",
+      "email" : "david.losert@virtual-identity.com"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Martin Lechner",
+  "company": "Jambit GmbH",
+  "email": "martin.lechner.ml@gmail.com",
+  "tags": [
+    "Functional Programming",
+    "Craftsmanship",
+    "React",
+    "Elm",
+    "GraphQL",
+    "ReasonML",
+    "Jest",
+    "Node",
+    "Serverless"
+  ],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "what_is_my_connection_to_javascript": "I've been working as a web developer for quite some years. React since last year, Elm since this year.",
+  "what_can_i_contribute": "A React Quickstart talk. Maybe a tiny getting started workshop on either Elm, Reason or Jest. Discussions on various topics.",
+  "tshirt": "M-L",
+  "urls": {
+    "photo": "https://pbs.twimg.com/profile_images/740795334868279296/gQeVZs-a_400x400.jpg",
+    "homepage": "http://www.jambit.com",
+    "github": "https://github.com/martinlechner1",
+    "twitter": "https://twitter.com/martinlechner_"
+  }
+}

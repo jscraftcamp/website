@@ -1,4 +1,8 @@
 node_modules
 dist
 tmp
+.idea
+
 src/participants.json
+
+*.iml
