@@ -1,0 +1,21 @@
+  {
+          "name": "Daniel Hilpoltsteiner",
+          "company": "Hochschule Landshut",
+          "email": "daniel.hilpoltsteiner@gmail.com"
+          "tags": [ "angular", "react" ],
+          "when": {
+            "friday": true,
+            "friday_party": true,
+            "saturday": true
+          },
+          "dietary_requirements": "meat",
+          "what_is_my_connection_to_javascript": "I'm a developer.",
+          "what_can_i_contribute": "Some good portion of humor and my willingness to learn.",
+          "tshirt": "M-L",
+          "urls": {
+            "photo": "",
+            "homepage": "",
+            "github": "",
+            "twitter": ""
+          }
+        }
