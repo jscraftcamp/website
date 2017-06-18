@@ -1,0 +1,21 @@
+{
+  "name": "Michael Jaser",
+  "company": "Peerigon GmbH",
+  "email": "michael.jaser@peerigon.com",
+  "tags": [ "node", "rest", "http2", "pwa", "react", "tdd", "webpack"],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "dietary_requirements": "flexitarian",
+  "what_is_my_connection_to_javascript": "I started with MooTools and adopted Node.js quite early. Nowadays I'm running a JavaScript company with my friends. I'm also happy to teach Node.js at the University of Applied Sciences Augsburg",
+  "what_can_i_contribute": "I'd like discuss HTTP/2, WebSockets and the future of data communication in browsers. I'm also very interested in software projects and how to run them successfully as a working team and how to communicate with non techies aka customers.",
+  "tshirt": "M",
+  "urls": {
+    "photo": "https://www.dropbox.com/s/ok3hmgid1032jc3/me.jpg",
+    "homepage": "https://peerigon.com",
+    "github": "https://github.com/meaku",
+    "twitter": "https://twitter.com/mmeaku"
+  }
+}
