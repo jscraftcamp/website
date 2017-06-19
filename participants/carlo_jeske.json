@@ -1,0 +1,20 @@
+{
+  "name": "Carlo Jeske",
+  "company": "SC-Networks",
+  "tags": ["react", "TypeScript", "tdd", "es6"],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "email": "jscraftcamp@webentwickler2-0.de",
+  "what_is_my_connection_to_javascript": "I'm a js guy for half of my lifetime",
+  "what_can_i_contribute": "Building frameworks/libraries with beautiful apis",
+  "tshirt": "M-M",
+  "urls": {
+    "photo": "https://snew.io/me.jpg",
+    "homepage": "https://snew.io",
+    "github": "https://github.com/plusgut",
+    "twitter": "https://twitter.com/plusgut"
+  }
+}
