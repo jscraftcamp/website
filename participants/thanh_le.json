@@ -1,0 +1,20 @@
+{
+  "name": "Thanh Le",
+  "company": "SinnerSchrader",
+  "tags": ["javascript","java","angularjs","tdd"],
+  "when": {
+    "friday": false,
+    "friday_party": false,
+    "saturday": true
+  },
+  "email": "thanh.le@sinnerschrader.com",
+  "what_is_my_connection_to_javascript": "I'm an aspiring fullstack developer and want to keep in touch with the latest news about JS",
+  "what_can_i_contribute": "Since I studied something non-Coputer science related, yet still could make it in the Software industry, I can offer a different view on life as a developer. ;)",
+  "tshirt": "M-S",
+  "urls": {
+    "photo": "https://avatars1.githubusercontent.com/u/6240670?v=3&s=400",
+    "homepage": "https://about.me/thanh-le",
+    "github": "https://github.com/thadeuszlay",
+    "twitter": "https://twitter.com/thadeuszlay"
+  }
+}
