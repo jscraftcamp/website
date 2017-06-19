@@ -1,0 +1,20 @@
+{
+  "name": "Jonathan Häberle",
+  "company": "Codastic",
+  "email": "jh@codastic.com",
+  "tags": [ "react", "redux", "testing", "es6" ],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "what_is_my_connection_to_javascript": "It's daily business. I'm a full stack developer. I love pure code.",
+  "what_can_i_contribute": "Development experience with react",
+  "tshirt": "M-L",
+  "urls": {
+    "photo": "https://avatars0.githubusercontent.com/u/307704?v=3&s=460",
+    "homepage": "http://www.codastic.com",
+    "github": "https://github.com/dreampulse",
+    "twitter": "https://twitter.com/dreampulse"
+  }
+}
