@@ -1,7 +1,7 @@
 {
   "name": "Thanh Le",
   "company": "SinnerSchrader",
-  "tags": [javascript,java,angularjs,tdd],
+  "tags": ["javascript","java","angularjs","tdd"],
   "when": {
     "friday": false,
     "friday_party": false,
