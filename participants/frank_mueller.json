@@ -1,6 +1,6 @@
 {
   "name": "Frank Müller",
-  "company": "SC-Networks",
+  "company": "SC-Networks GmbH",
   "tags": ["react"],
   "when": {
     "friday": true,
@@ -8,7 +8,7 @@
     "saturday": true
   },
   "email": "frankalternative@gmx.de",
-  "what_is_my_connection_to_javascript": "I just startet learning js half a year ago.",
+  "what_is_my_connection_to_javascript": "I just startet learning js half year ago.",
   "what_can_i_contribute": "Not much coding skills yet. I know some react basics.",
   "tshirt": "M-L",
   "urls": {
