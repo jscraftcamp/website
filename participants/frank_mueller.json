@@ -1,7 +1,7 @@
 {
   "name": "Frank Müller",
   "company": "SC-Networks",
-  "tags": ["react", "es6"],
+  "tags": ["react"],
   "when": {
     "friday": true,
     "friday_party": true,
