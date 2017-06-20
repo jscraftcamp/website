@@ -1,0 +1,21 @@
+{
+          "name": "Dimitry Leonov",
+          "company": "TrustYou",
+          "email": "dimitry.leonov@trustyou.net",
+          "tags": [ "angular", "react", "redux", "function programming", "patterns" ],
+          "when": {
+            "friday": true,
+            "friday_party": true,
+            "saturday": true
+          },
+          "dietary_requirements": "no sugar and no dough-based stuff",
+          "what_is_my_connection_to_javascript": "5 years of experience from vanilla JS to React+Redux with everything in between including node.js.",
+          "what_can_i_contribute": "Would be glad to discuss new trends in front-end and solutions to architectural problems in complex apps",
+          "tshirt": "M-S",
+          "urls": {
+            "photo": "https://avatars3.githubusercontent.com/u/2914397?v=3&u=5e69aaebc85613966582b1f151ec2acd800c15f1&s=400",
+            "homepage": "http://leonov.tech/",
+            "github": "https://github.com/dudv",
+            "twitter": ""
+          }
+        }
