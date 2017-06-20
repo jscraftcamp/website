@@ -1,7 +1,7 @@
         {
           "name": "Brigitte Jellinek",
           "company": "Fachhochschule Salzburg",
-          "email": "brigitte.jellinek@fh-salzburg.ac.at"
+          "email": "brigitte.jellinek@fh-salzburg.ac.at",
           "tags": [ "teaching" ],
           "when": {
             "friday": true,
