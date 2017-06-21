@@ -1,0 +1,24 @@
+{
+  "name": "Andreas Scharf",
+  "company": "Jambit GmbH",
+  "tags": [
+    "React",
+    "Angular",
+    "Elm",
+    "Testing",
+    "Clean Code",
+    "Functional Programming"
+  ],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "what_is_my_connection_to_javascript": "Frontend Development",
+  "tshirt": "M-S",
+  "urls": {
+    "homepage": "http://99n.de",
+    "github": "https://github.com/andys8",
+    "twitter": "https://twitter.com/_andys8"
+  }
+}
