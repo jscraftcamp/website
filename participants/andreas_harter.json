@@ -1,0 +1,22 @@
+{
+  "name": "Andreas Harter",
+  "company": "Futurice",
+  "tags": [
+    "TypeScript",
+    "Corodva",
+    "React"
+  ],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "email": "",
+  "what_is_my_connection_to_javascript": "Different customer projects. Just started a new project with React/Redux and TypeScript",
+  "what_can_i_contribute": "Arguing with an engineer is a lot like wrestling in the mud with a pig. After a few hours, you realize that he likes it.",
+  "tshirt": "M-L",
+  "urls": {
+    "github": "https://github.com/aharter",
+    "twitter": "https://twitter.com/skills404"
+  }
+}

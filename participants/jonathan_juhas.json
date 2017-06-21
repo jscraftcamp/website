@@ -1,0 +1,24 @@
+{
+  "name": "Jonathan Juhas",
+  "company": "kontextR GmbH",
+  "email": "jonatan.juhas@tum.de",
+  "tags": [
+    "inferno",
+    "webpack",
+    "angular"
+  ],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "dietary_requirements": "no restriction",
+  "what_is_my_connection_to_javascript": "The first language I used when I started UNI. Did more work in JS than in Java in our introductory course.",
+  "what_can_i_contribute": "Anything webpack & lots of enthusiasm",
+  "tshirt": "M-S",
+  "urls": {
+    "photo": "https://avatars1.githubusercontent.com/u/6438760?s=400",
+    "homepage": "https://jjuhas.keybase.pub/",
+    "github": "https://github.com/IgnusG"
+  }
+}

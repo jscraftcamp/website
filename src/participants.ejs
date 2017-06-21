@@ -5,10 +5,10 @@
     </div>
 
     <div class="col s12 m6">
-      <h5 class="header center" id="sum_saturday"/>
+      <h5 class="header center" id="sum_friday"/>
     </div>
     <div class="col s12 m6">
-      <h5 class="header center" id="sum_sunday"/>
+      <h5 class="header center" id="sum_saturday"/>
     </div>
   </div>
 
@@ -62,27 +62,37 @@
   </div>
 </script>
 
+<script type="text/javascript" src="./js/tshirt-sizes.js"></script>
 <script type="text/javascript">
 
 window.onload = function() {
   $.getJSON("/participants.json", function(data) {
     var items = [];
     var sum = 0;
+    var sum_friday = 0;
     var sum_saturday = 0;
-    var sum_sunday = 0;
     $.each(data, function(index, participant) {
       var source = $("#participant-template").html();
       var template = Handlebars.compile(source);
       var card = template(participant);
       items.push(card);
       sum++;
+      if(participant.when.friday) sum_friday++;
       if(participant.when.saturday) sum_saturday++;
-      if(participant.when.sunday) sum_sunday++;
     });
     $("#participants").append(items.join(""));
     $("#sum").append(sum+" participants");
-    $("#sum_saturday").append(sum_saturday+" participants on Saturday (max. 80)");
-    $("#sum_sunday").append(sum_sunday+" participants on Sunday (max. 80)");
+    $("#sum_friday").append(sum_friday+" participants on Friday (max. 100)");
+    $("#sum_saturday").append(sum_saturday+" participants on Saturday (max. 100)");
+
+    function tshirtData(participant) { return participant.tshirt; }
+    function notEmpty(tshirt) { return !!tshirt; }
+    var tShirtSizesStructuredInfo = JSON.stringify(sortShirtSizes(data.map(tshirtData).filter(notEmpty)), null, 4);
+    console.log("T-Shirt sizes:", tShirtSizesStructuredInfo);
+
+    if (window.location.hash === '#list-tshirt-sizes') {
+      alert(tShirtSizesStructuredInfo);
+    }
   });
 
 Handlebars.registerHelper('list', function(context, options) {

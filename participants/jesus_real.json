@@ -1,14 +1,14 @@
 {
     "name": "Jesús Real",
     "company": "SCHOENE NEUE KINDER GmbH",
-    "tags": [ "node", "es6", "react", "functional programming", "clean code", "TDD", "tests", "escalability", "modularity", "teams-organization" ],
-    "when": {
-      "saturday": true,
-      "sunday": true
+    "tags": [ "node", "es6", "angular", "react", "pair programming", "code reviews", "functional programming", "reactive programming", "clean code", "TDD", "tests", "escalability", "modularity", "teams-organization" ],
+    "when": { 
+      "friday": true,
+      "friday_party": true,
+      "saturday": true
     },
     "what_is_my_connection_to_javascript": "I work as a Frontend developer with focus on JS",
     "what_can_i_contribute": "I love well structured, simple, clean and well tested code",
-    "tshirt": "M-M",
     "urls": {
       "github": "https://github.com/jesusreal",
       "twitter": "https://twitter.com/jesus_r_s"
