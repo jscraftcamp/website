@@ -1,5 +1,5 @@
 {
-  "me" : "Marc Wißler",
+  "name" : "Marc Wißler",
   "company" : "virtual-identity.com",
   "email": "marc.wissler@virtual-identity.com",
   "tags" : [ "TDD", "React", "TypeScript", "Clean Code" ],
