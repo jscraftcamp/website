@@ -1,0 +1,28 @@
+{
+  "name": "Christian Stangier",
+  "company": "codecentric AG",
+  "tags": [
+    "node",
+    "typescript",
+    "es6",
+    "react",
+    "redux",
+    "graph-ql",
+    "elm",
+    "craftmanship",
+    "fp"
+  ],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "email": "chris@stangier.email",
+  "what_is_my_connection_to_javascript": "Working with JS in frontend and backend. Either directly with ES6 or with languages that transpile to it (like Typescript, Elm, ...).",
+  "what_can_i_contribute": "I love exchanging experiences regarding FP/Elm/React/Redux/Typescript/GraphQL/whatever!",
+  "tshirt": "M-XL",
+  "urls": {
+    "photo": "https://secure.gravatar.com/avatar/2181b4079231129a9a42485c2f050a6a?s=500",
+    "twitter": "https://twitter.com/chris_st"
+  }
+}
