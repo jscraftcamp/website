@@ -1,0 +1,13 @@
+{
+  "name": "Torsten Görner",
+  "company": "TNG Technology Consulting",
+  "email": "torsten.goerner@tngtech.com",
+  "tags": [ "react", "redux", "TDD"],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "what_is_my_connection_to_javascript": "As a software consultant I have to deal with different technologies and the actual focus can change quickly. In recent times, I was involved in the development of React/Redux applications with Node, where I gained various experiences in the world of JavaScript.",
+  "urls": {}
+}
