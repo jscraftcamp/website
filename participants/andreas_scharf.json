@@ -5,18 +5,20 @@
     "React",
     "Angular",
     "Elm",
-    "Testing",
+    "Functional Programming",
     "Clean Code",
-    "Functional Programming"
+    "Testing"
   ],
   "when": {
     "friday": true,
     "friday_party": true,
     "saturday": true
   },
-  "what_is_my_connection_to_javascript": "Frontend Development",
+  "what_is_my_connection_to_javascript": "I'm a fullstack developer and I like the fast evolving javascript and frontend world. I have experience in using React, Angular and Elm.",
+  "what_can_i_contribute": "Thinking about an Elm introduction or workshop",
   "tshirt": "M-S",
   "urls": {
+    "photo": "https://secure.meetupstatic.com/photos/member/2/d/c/2/highres_265691714.jpeg",
     "homepage": "http://99n.de",
     "github": "https://github.com/andys8",
     "twitter": "https://twitter.com/_andys8"
