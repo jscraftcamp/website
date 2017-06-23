@@ -1,0 +1,20 @@
+{
+  "name": "Thomas Mayrhofer",
+  "company": "Crewmeister",
+  "tags": ["Architecture", "Testing", "Node", "Functional Programming", "React"],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "dietary_requirements": "nothing special",
+  "what_is_my_connection_to_javascript": "Javascript is part of my daily business. As a fullstack developer I'm working with JS and Ruby.",
+  "what_can_i_contribute": "I'm happy to talk/learn about functional programming. I'm still working on zeitgeist.js a JS date library which isn't using the JS date object.",
+  "tshirt": "M-M",
+  "urls": {
+    "photo": "https://pbs.twimg.com/profile_images/3361495833/ac9c5eb98c5b129ebd1b89e783a549ee_400x400.jpeg",
+    "homepage": "http://thomas.mayrhofer.at",
+    "github": "https://github.com/webpapaya",
+    "twitter": "https://twitter.com/webpapaya"
+  }
+}

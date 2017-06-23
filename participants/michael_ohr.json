@@ -1,0 +1,19 @@
+{
+    "name": "Michael Ohr",
+    "company": "Michael Ohr Unternehmensberatung (MOUB)",
+    "tags": [ "node.js", "react", "leaflet", "jquery" ],
+    "when": {
+      "friday": false,
+      "friday_party": false,
+      "saturday": true
+    },
+    "dietary_requirements": "No wheat for me, please (i.e. no pasta, no bread)",
+    "what_is_my_connection_to_javascript": "Been actively developing in Javascript since 2009. Built https://carsharing.mvg-mobil.de and https://www.zebramobil.de/i/",
+    "what_can_i_contribute": "Share experience building map based Javascript apps using leaflet.js; and share experience building mobility apps, i.e. carsharing, bikesharing, public transit",
+    "tshirt": "M-XL",
+    "urls": {
+      "photo": "https://moub.de/moub/pics/mo2.jpg",
+      "homepage": "https://moub.de/",
+      "twitter": "https://twitter.com/auris"
+    }
+}

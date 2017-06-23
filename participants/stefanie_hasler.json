@@ -1,0 +1,19 @@
+{
+  "name" : "Stefanie Hasler",
+  "company" : "codecentric.de",
+  "email": "stefanie.hasler@codecentric.de",
+  "tags" : [ "Craftsmanship", "TDD", "TypeScript", "Clean Code", "Cordova" ],
+  "when" :
+  {
+    "friday" : true,
+    "friday_party": true,
+    "saturday" : true
+  },
+  "what_is_my_connection_to_javascript" : "I've been working in a ES6, then Typescript, occasionally Cordova project for a year at codecentric now.",
+  "what_can_i_contribute" : "discussion in general. A lot of curiosity about everything. Some experience in TDD, as well as cordova development.",
+  "tshirt" : "W-L",
+  "urls" : {
+    "homepage" : "http://www.codecentric.de",
+    "twitter" : "https://twitter.com/availle"
+  }
+}
