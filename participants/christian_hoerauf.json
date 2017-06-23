@@ -1,6 +1,6 @@
 {
-  "name": "Christian Hörauf",
-  "company": "Consorsbank - BNP Pariabas S.A. Deutschland",
+  "name": "Christian Hoerauf",
+  "company": "Consorsbank",
   "tags": [
   	"Angular2",
 	"Typescript",
@@ -21,8 +21,9 @@
   "what_can_i_contribute": "I have a lot experiance with Angular1 and am currently introducing Angular2 to my company. I also know jasmine very well and developed mocking.js to simplify the generation and usage of mockdata.",
   "tshirt": "M-XL",
   "urls": {
-    "photo": "https://drive.google.com/open?id=0B3-B1iwb9igGWFFsa1RFTGstUzQ",
+    "photo": "http://gdurl.com/SZdLs",
     "github": "https://github.com/fonzerelly",
+    "homepage": "https//www.consorsbank.de",
     "twitter": "https://twitter.com/fonzygruen"
   }
 }
