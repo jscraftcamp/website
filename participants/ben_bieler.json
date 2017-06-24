@@ -1,0 +1,20 @@
+{
+  "name": "Ben Bieler",
+  "company": "Scandio GmbH",
+  "tags": ["react", "redux", "angular", "Node.js", "Clean Code"],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "email": "ben@benbieler.com",
+  "what_is_my_connection_to_javascript": "Full stack software Engineer. Daily work",
+  "what_can_i_contribute": "A lot of experience in developing React / React Native apps using Redux and the Flux architecture. Also experience in Angular and Node.js",
+  "tshirt": "M-M",
+  "urls": {
+    "photo": "https://pbs.twimg.com/profile_images/869058951027077120/uEE-8M40_400x400.jpg",
+    "homepage": "http://benbieler.com",
+    "github": "https://github.com/benbieler",
+    "twitter": "https://twitter.com/BenBieler"
+  }
+}
