@@ -1,7 +1,7 @@
 {
           "name": "Andreas Sahle",
           "company": "Wunder Germany",
-          "email": "andreas.sahle@wunder.io"
+          "email": "andreas.sahle@wunder.io",
           "tags": [ "vanillaJS", "elasticsearch", "react" ],
           "when": {
             "friday": true,
