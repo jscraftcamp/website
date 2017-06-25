@@ -1,0 +1,17 @@
+
+{
+  "name": "Antonia Schmalstieg",
+  "company": "Technical University of Munich",
+  "tags": [ "functional", "typescript", "typing", "testing" ],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "dietary_requirements": "vegan",
+  "what_is_my_connection_to_javascript": "Checked out the language, tried a few projects and wanting to know how to do a proper and clean JS project",
+  "tshirt": "W-XL",
+  "urls": {
+    "github": "https://github.com/accxev"
+  }
+}
