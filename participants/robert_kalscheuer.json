@@ -1,0 +1,16 @@
+{
+  "name": "Oliver Kalscheuer",
+  "company": "sqmok",
+  "tags": ["Ember", "TDD"],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "email": "",
+  "dietary_requirements": "no",
+  "what_is_my_connection_to_javascript": "using js",
+  "what_can_i_contribute": "experience",
+  "tshirt": "M-L",
+  "urls": {}
+}
