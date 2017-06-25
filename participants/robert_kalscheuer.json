@@ -1,7 +1,7 @@
 {
   "name": "Oliver Kalscheuer",
   "company": "sqmok",
-  "tags": ["Ember", "TDD"],
+  "tags": ["Ember", "TDD", "Craftsmanship", "architecture", "cleancode"],
   "when": {
     "friday": true,
     "friday_party": true,
@@ -10,7 +10,7 @@
   "email": "",
   "dietary_requirements": "no",
   "what_is_my_connection_to_javascript": "using js",
-  "what_can_i_contribute": "experience",
+  "what_can_i_contribute": "experience and sharing knowledge of architecture and other methods",
   "tshirt": "M-L",
   "urls": {}
 }
