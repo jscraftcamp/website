@@ -1,0 +1,20 @@
+{
+  "name": "Sebastian Sellmeier",
+  "company": "Mayflower GmbH",
+  "tags": ["Node.js", "React", "Redux"],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": false
+  },
+  "email": "sebastian.sellmeier@mayflower.de",
+  "dietary_requirements": "no requirements",
+  "what_is_my_connection_to_javascript": "Initially PHP-Developer, currently working full time in a project with React.",
+  "what_can_i_contribute": "Interesting discussions, expirience in web-development (PHP/JS), humor, love for code, willingness to learn new things.",
+  "tshirt": "M-XL",
+  "urls": {
+    "photo": "https://avatars1.githubusercontent.com/u/17243347?v=3&s=460",
+    "github": "https://github.com/sebtm",
+    "twitter": "https://twitter.com/isebtm"
+  }
+}
