@@ -1,0 +1,15 @@
+{
+	"name": "Sandra Zollner",
+	"company": "SinnerSchrader GmbH",
+	"email": "sandra_zollner@msn.com",
+	"tags": [ "angular", "javascript", "es6" ],
+	"when": {
+		"friday": true,
+		"friday_party": true,
+	    "saturday": false
+	},
+	"dietary_requirements": "vegetarian",
+	"what_is_my_connection_to_javascript": "I'm working as a frontend developer crafting customized web solutions and user experiences.",
+	"what_can_i_contribute": "Open-mindedness and friendly techie vibes.",
+	"tshirt": "W-XL"
+}		
