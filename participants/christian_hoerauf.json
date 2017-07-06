@@ -1,0 +1,29 @@
+{
+  "name": "Christian Hoerauf",
+  "company": "Consorsbank",
+  "tags": [
+  	"Angular2",
+	"Typescript",
+	"Webpack",
+	"Elm",
+	"Functional Programming",
+	"lodash",
+	"rx.js",
+	"mockinjay.js"
+  ],
+  "when": {
+    "friday": false,
+    "friday_party": false,
+    "saturday": true
+  },
+  "email": "christian.hoerauf@consorsbank.de",
+  "what_is_my_connection_to_javascript": "After being frustrated with C++, I got started into JavaScript and Functional Programming. I love TDD and looking forward for the next technology to turn my head around for 180 degrees.",
+  "what_can_i_contribute": "I have a lot experiance with Angular1 and am currently introducing Angular2 to my company. I also know jasmine very well and developed mocking.js to simplify the generation and usage of mockdata.",
+  "tshirt": "M-XL",
+  "urls": {
+    "photo": "http://gdurl.com/SZdLs",
+    "github": "https://github.com/fonzerelly",
+    "homepage": "https//www.consorsbank.de",
+    "twitter": "https://twitter.com/fonzygruen"
+  }
+}

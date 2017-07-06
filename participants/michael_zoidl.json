@@ -1,0 +1,21 @@
+{
+  "name": "Michael J. Zoidl",
+  "company": "Entwicklerstube",
+  "tags": ["React", "CLI", "OSS", "npm", "node", "es6", "babel"],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "email": "michael@entwicklerstube.com",
+  "dietary_requirements": "everything",
+  "what_is_my_connection_to_javascript": "Fulltime JS developer, working with react all-day and focusing on OSS at night",
+  "what_can_i_contribute": "Experience in writing OSS node modules, also doing fulltime react things",
+  "tshirt": "M-XL",
+  "urls": {
+    "photo": "https://avatars2.githubusercontent.com/u/528550?v=3&s=460",
+    "homepage": "https://entwicklerstube.com",
+    "github": "https://github.com/michaelzoidl",
+    "twitter": "https://twitter.com/michaelzoidl"
+  }
+}

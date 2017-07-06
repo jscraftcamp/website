@@ -5,7 +5,7 @@
   "when": {
     "friday": true,
     "friday_party": true,
-    "saturday": true
+    "saturday": false
   },
   "email": "",
   "dietary_requirements": "nothing special",

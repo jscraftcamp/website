@@ -1,0 +1,17 @@
+{
+    "name": "Igor Likhomanov",
+    "company": "Timify",
+    "tags": [ "node.js", "hapi.js", "microservices", "serverless" ],
+    "when": {
+        "friday": false,
+        "friday_party": false,
+        "saturday": true
+    },
+    "what_is_my_connection_to_javascript": "My name is Igor and I'm a big fan of JS! I am a Head of Back-end Development at Timify. Our tech stack: Node.js, mongoDB, AWS infrastructure.",
+    "what_can_i_contribute": "I can tell about multi-region (based on AWS) and service-oriented architectures. Also, I can make awesome jokes ;)",
+    "tshirt": "M-S",
+    "urls": {
+        "photo" : "https://avatars2.githubusercontent.com/u/6287367?v=3&s=400",
+        "github": "https://github.com/igor-lkm"
+    }
+}
