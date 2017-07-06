@@ -3,8 +3,8 @@
   "company": "SinnerSchrader",
   "tags": ["javascript","java","angularjs","tdd"],
   "when": {
-    "friday": false,
-    "friday_party": false,
+    "friday": true,
+    "friday_party": true,
     "saturday": true
   },
   "email": "thanh.le@sinnerschrader.com",
