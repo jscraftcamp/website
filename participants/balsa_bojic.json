@@ -1,0 +1,20 @@
+{
+    "name": "Balsa Bojic",
+    "company": "SimScale GmbH",
+    "email": "balsha.bojic@gmail.com",
+    "tags": [ "node", "meteor", "react", "tdd" ],
+    "when": {
+        "friday": true,
+        "friday_party": true,
+        "saturday": true
+    },
+    "what_is_my_connection_to_javascript": "Working as Web Developer for quite some time. Using Javascript for both frontend and backend dev.",
+    "what_can_i_contribute": "Would like to get more knowledge about full stack Javascript dev and will share my experiences so far.",
+    "tshirt": "M-L",
+    "urls": {
+        "photo": "http://www.balsabojic.com/img/Balsa%20Bojic%20-%20Software%20Engineer.jpg",
+        "homepage": "http://www.balsabojic.com/",
+        "github": "https://github.com/balsabojic",
+        "twitter": "https://twitter.com/BalsaBojic"
+    }
+}

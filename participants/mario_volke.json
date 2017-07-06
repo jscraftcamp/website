@@ -1,0 +1,19 @@
+{
+  "name": "Mario Volke",
+  "company": "codastic",
+  "tags": ["react", "ux", "es6+", "testing", "styleguide-driven development"],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "email": "mv@codastic.com",
+  "dietary_requirements": "",
+  "what_is_my_connection_to_javascript": "Working with it on a daily basis. And yeah ES6+ is great!",
+  "what_can_i_contribute": "Want to talk about maintainable CSS because actually CSS is much harder to master than JS. And I can bring boardgames, yay!",
+  "tshirt": "M-M",
+  "urls": {
+    "homepage": "http://codastic.com",
+    "github": "https://github.com/webholics"
+  }
+}

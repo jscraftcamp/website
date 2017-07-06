@@ -1,0 +1,21 @@
+{
+  "name" : "Marc Wißler",
+  "company" : "virtual-identity.com",
+  "email": "marc.wissler@virtual-identity.com",
+  "tags" : [ "TDD", "React", "TypeScript", "Clean Code" ],
+  "when" :
+  {
+    "friday" : true,
+    "friday_party": true,
+    "saturday" : true
+  },
+  "what_is_my_connection_to_javascript" : "I'm working at VI since 1 Years as Web Developer with JS. React FTW!",
+  "what_can_i_contribute" : "Talk about 3D in the Web, Creative Development and Rapid Prototyping",
+  "tshirt" : "M-L",
+  "urls" : {
+    "photo" : "https://avatars2.githubusercontent.com/u/8701422?v=3&u=25b6c2b3aee82da1ea8d69592b2514d34a469538",
+    "homepage" : "http://virtual-identity.com",
+    "github" : "https://github.com/SheepFromHeaven",
+    "twitter" : "https://twitter.com/sheepfromheaven"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Michael Gerhäuser",
+  "company": "Method Park",
+  "tags": ["es8", "typescript", "fp", "react", "node", "math", "computer graphics"],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "email": "michael.gerhaeuser@gmail.com",
+  "dietary_requirements": "none",
+  "what_is_my_connection_to_javascript": "js dev for 10+ years",
+  "what_can_i_contribute": "I'm interested in discussing new JS/web features like generators, async/await and wasm; exchange experiences with end2end tests.",
+  "tshirt": "M-XL",
+  "urls": {
+    "homepage": "http://methodpark.de",
+    "github": "https://github.com/migerh"
+  }
+}
