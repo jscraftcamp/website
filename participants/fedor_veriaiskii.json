@@ -1,5 +1,6 @@
 {
     "name": "Fedor Veriaiskii",
+    "company": "1&1",
     "email": "fedor.veriaiskiy@gmail.com",
     "tags": [ "angular", "ECMASCRIPT6", "nodejs", "npm" ],
     "when": {
@@ -7,6 +8,14 @@
       "friday_party": true,
       "saturday": false
     },
-    "what_is_my_connection_to_javascript": "Angular / ECMAScript6 developer",
-    "tshirt": "L"
+    "dietary_requirements": "none",
+    "what_is_my_connection_to_javascript": "Angular / ECMAScript6 developer.",
+    "what_can_i_contribute": "...",
+    "tshirt": "L",
+    "urls": {
+      "photo": "http://materializecss.com/images/sample-1.jpg",
+      "homepage": "",
+      "github": "https://github.com/pilotTedStriker",
+      "twitter": ""
+    }
   }
