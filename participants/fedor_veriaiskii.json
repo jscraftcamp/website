@@ -1,0 +1,12 @@
+{
+    "name": "Fedor Veriaiskii",
+    "email": "fedor.veriaiskiy@gmail.com",
+    "tags": [ "angular", "ECMASCRIPT6", "nodejs", "npm" ],
+    "when": {
+      "friday": true,
+      "friday_party": true,
+      "saturday": false
+    },
+    "what_is_my_connection_to_javascript": "Angular / ECMAScript6 developer",
+    "tshirt": "L"
+  }
