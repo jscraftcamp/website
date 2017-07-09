@@ -5,7 +5,7 @@
 	"tags": [ "angular", "javascript", "es6" ],
 	"when": {
 		"friday": true,
-		"friday_party": true,
+		"friday_party": false,
 	    "saturday": false
 	},
 	"dietary_requirements": "vegetarian",
