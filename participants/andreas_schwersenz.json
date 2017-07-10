@@ -1,0 +1,13 @@
+{
+  "name": "Andreas Schwersenz",
+  "tags": ["nodejs", "angular", "machine learning"],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": false
+  },
+  "email": "andreas@schwersenz.de",
+  "what_is_my_connection_to_javascript": "I have worked as a developer for the last couple of years with JS in the backend and frontend area and I like to stick with it",
+  "what_can_i_contribute": "curiosity for everything that I dont know",
+  "tshirt": "M-L"
+}
