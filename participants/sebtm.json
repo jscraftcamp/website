@@ -3,9 +3,9 @@
   "company": "Mayflower GmbH",
   "tags": ["Node.js", "React", "Redux"],
   "when": {
-    "friday": true,
-    "friday_party": true,
-    "saturday": false
+    "friday": false,
+    "friday_party": false,
+    "saturday": true
   },
   "email": "sebastian.sellmeier@mayflower.de",
   "dietary_requirements": "no requirements",
