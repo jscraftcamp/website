@@ -17,7 +17,7 @@
     "recursive-readdir-sync": "^1.0.6"
   },
   "scripts": {
-    "prebuild": "mkdir -p ./dist",
+    "prebuild": "mkdir ./dist",
     "build": "harp compile ./src ./dist; cp CNAME dist/; npm run 'build:participants.json'",
     "build:participants.json": "node scripts/concat-json.js ./participants dist/participants.json; cp ./dist/participants.json ./src/",
     "start": "harp server ./src & browser-sync start --proxy 'localhost:9000' --files 'src/**/*.ejs, src/**/*.css', src/**/*.js",
