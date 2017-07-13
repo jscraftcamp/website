@@ -1,0 +1,21 @@
+{
+  "name": "Tobias Wichtrey",
+  "company": "Mercateo",
+  "tags": [ "react", "TypeScript", "java"],
+  "when": {
+    "friday": true,
+    "friday_party": false,
+    "saturday": true
+  },
+  "email": "tobias.wichtrey@mercateo.com",
+  "dietary_requirements": "",
+  "what_is_my_connection_to_javascript": "Developing React UIs. (Not at the moment, but probably again sooner or later.)",
+  "what_can_i_contribute": "Curiosity.",
+  "tshirt": "M-M",
+  "urls": {
+    "photo": "https://scontent.fmuc2-1.fna.fbcdn.net/v/t1.0-9/16299508_10154331534192151_2965755588917606518_n.jpg?oh=9d749a9a3b16521c80e42830f6a38b65&oe=59FCD2A8",
+    "homepage": "https://www.tobias-wichtrey.de/",
+    "github": "https://github.com/wtobi",
+    "twitter": "https://twitter.com/wtobi"
+  }
+}
