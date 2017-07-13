@@ -1,0 +1,18 @@
+{
+  "name": "Jewgenij Steinhart",
+  "company": "DriveNow - freelance",
+  "tags": ["react", "flow", "product management", "entrepreneurship", "startup"],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "dietary_requirements": "organic, unprocessed, low carb, high fat",
+  "what_is_my_connection_to_javascript": "I work as a js developer - ES6, react.js",
+  "what_can_i_contribute": "talk to people about topics I'm interested in. Share resources. Maybe organize a session with discussion business/startup related",
+  "tshirt": "M-L",
+  "urls": {
+    "photo": "https://secure.meetupstatic.com/photos/member/1/c/3/9/highres_266767225.jpeg",
+    "twitter": "https://twitter.com/jeffstei"
+  }
+}
