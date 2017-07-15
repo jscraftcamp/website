@@ -1,0 +1,21 @@
+ {
+          "name": "Fabio Vedovelli",
+          "company": "octimine technologies GmbH",
+          "email": "vedovelli@octimine.com",
+          "tags": [ "vuejs", "vuex" ],
+          "when": {
+            "friday": false,
+            "friday_party": true,
+            "saturday": true
+          },
+          "dietary_requirements": "none",
+          "what_is_my_connection_to_javascript": "I adapted my first form validation JS in the year 2000.",
+          "what_can_i_contribute": "I can do a talk if there is room for that.",
+          "tshirt": "M-L",
+          "urls": {
+            "photo": "https://en.gravatar.com/userimage/787800/3a2e1598a61f0d7f810242d5d9c8c039.jpg?size=500",
+            "homepage": "http://www.vedovelli.com.br/",
+            "github": "https://github.com/vedovelli",
+            "twitter": "https://twitter.com/vedovelli"
+          }
+        }
