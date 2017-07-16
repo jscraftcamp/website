@@ -1,0 +1,28 @@
+{
+    "name": "Wolfram Kriesing",
+    "company": "HolidayCheck",
+    "email": "",
+    "tags": [
+        "react",
+        "PureScript",
+        "TDD",
+        "good tests",
+        "katas",
+        "clean code"
+    ],
+    "when": {
+        "friday": true,
+        "friday_party": true,
+        "saturday": true
+    },
+    "dietary_requirements": "none",
+    "what_is_my_connection_to_javascript": "When I started I thought it was magic, until I learned to understand closure many years later ... that's when it stopped to be magic and I started to read the spec too.",
+    "what_can_i_contribute": "A morning kata for both days.",
+    "tshirt": "M-XL",
+    "urls": {
+        "photo": "https://avatars6.githubusercontent.com/u/113427?v=4&s=460",
+        "homepage": "http://www.picostitch.com/",
+        "github": "https://github.com/wolframkriesing",
+        "twitter": "https://twitter.com/wolframkriesing"
+    }
+}
