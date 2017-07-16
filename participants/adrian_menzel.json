@@ -3,7 +3,7 @@
   "company": "Munich Maker Lab e.V.",
   "tags": ["react", "jQuery"],
   "when": {
-    "friday": false,
+    "friday": true,
     "friday_party": true,
     "saturday": true
   },
