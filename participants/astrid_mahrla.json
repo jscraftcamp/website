@@ -1,0 +1,21 @@
+{
+  "name": "Astrid Mahrla",
+  "company": "adesso AG",
+  "tags": ["ecmascript"],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": false
+  },
+  "email": "astrid.mahrla@googlemail.com",
+  "dietary_requirements": "none",
+  "what_is_my_connection_to_javascript": "At some point I got somehow addicted to JS - JavaScript for frontend and for very special somehow 'embedded' applications",
+  "what_can_i_contribute": "Enthusiasm - always trying to code better",
+  "tshirt": "W-S",
+  "urls": {
+    "photo": "https://avatars0.githubusercontent.com/u/8655584?v=4&s=460",
+    "homepage": "https://www.linkedin.com/in/astrid-mahrla-62a0484b/",
+    "github": "https://github.com/Paulinchen",
+    "twitter": "https://twitter.com/astridmahrla"
+  }
+}
