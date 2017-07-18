@@ -1,7 +1,7 @@
 {
   "name": "Astrid Mahrla",
   "company": "adesso AG",
-  "tags": [],
+  "tags": ["ecmascript"],
   "when": {
     "friday": true,
     "friday_party": true,
