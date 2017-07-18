@@ -1,0 +1,21 @@
+{
+  "name": "Emin Bugra Saral",
+  "company": "3megawatt GmbH",
+  "email": "eminbugrasaral@me.com",
+  "tags": [ "angular", "react" ],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "dietary_requirements": "",
+  "what_is_my_connection_to_javascript": "I am a backend developer. I just know the basics of JS and some of React",
+  "what_can_i_contribute": "I would like to bring my attention to the speakers",
+  "tshirt": "M-L",
+  "urls": {
+    "photo": "https://image.ibb.co/ehOk3Q/2864828.jpg",
+    "homepage": "http://stackoverflow.com/story/ebsaral",
+    "github": "https://github.com/ebsaral",
+    "twitter": "https://twitter.com/ebsaral"
+  }
+}

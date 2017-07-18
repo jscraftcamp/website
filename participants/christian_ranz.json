@@ -1,0 +1,20 @@
+{
+  "name": "Christian Ranz",
+  "company": "codastic",
+  "tags": ["react", "es6", "testing", "styleguides", "release process"],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": false
+  },
+  "email": "cr@codastic.com",
+  "dietary_requirements": "",
+  "what_is_my_connection_to_javascript": "I'm a full stack js developer. So it is daily business.",
+  "what_can_i_contribute": "A very clean js stack up to the release script.",
+  "tshirt": "M-L",
+  "urls": {
+    "homepage": "http://codastic.com/",
+    "github": "https://github.com/ranzwertig",
+    "twitter": "https://twitter.com/ranzwertig"
+  }
+}

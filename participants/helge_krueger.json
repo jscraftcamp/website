@@ -1,0 +1,21 @@
+{
+  "name" : "Helge Krueger",
+  "company" : "TNG Technology Consulting GMBH",
+  "email": "helge.krueger@tngtech.com",
+  "tags" : [ "IoT", "TDD", "Node.js", "Clean Code" ],
+  "when" :
+  {
+    "friday" : true,
+    "friday_party": true,
+    "saturday" : true
+  },
+  "what_is_my_connection_to_javascript" : "I work with it",
+  "what_can_i_contribute" : "Awesomeness",
+  "tshirt" : "M-M",
+  "urls" : {
+    "photo" : "https://avatars2.githubusercontent.com/u/6403725?v=3&s=400",
+    "homepage" : "https://www.tngtech.com/",
+    "github" : "https://github.com/HelgeKrueger",
+    "twitter" : "https://twitter.com/HelgeKrueger"
+  }
+}

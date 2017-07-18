@@ -1,0 +1,20 @@
+{
+  "name": "Dimitry Polivaev",
+  "company": "mercateo",
+  "tags": ["craftsmanship", "aws", "react", "hiring"],
+  "when": {
+    "friday": true,
+    "friday_party": false,
+    "saturday": true
+  },
+  "email": "dimitry.polivaev@mercateo.com",
+  "dietary_requirements": "",
+  "what_is_my_connection_to_javascript": "I am growing from backend to the full stack developer",
+  "what_can_i_contribute": "I am happy to be a part of this great community",
+  "tshirt": "M-L",
+  "urls": {
+    "photo": "https://picload.org/image/rppaidol/dp.jpg",
+    "homepage": "http://www.mercateo.com/corporate/",
+    "github": "https://github.com/dpolivaev"
+  }
+}
