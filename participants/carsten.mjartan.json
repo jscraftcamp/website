@@ -1,0 +1,23 @@
+{
+  "name": "Carsten Mjartan",
+  "company": "codecentric AG",
+  "tags": [
+    "node",
+    "typescript",
+    "es6",
+    "react",
+    "redux",
+    "mobx",
+    "craftmanship",
+    "devops"
+  ],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": false
+  },
+  "email": "carsten.mjartan@codecentric.de",
+  "what_is_my_connection_to_javascript": "Working with JS in frontend and backend (Kubernetes). Either directly with ES5/6 or with languages that transpile to it (like Typescript, ...).",
+  "what_can_i_contribute": "I love exchanging experiences regarding React/Redux/Typescript/whatever!",
+  "tshirt": "M-XL"
+}
