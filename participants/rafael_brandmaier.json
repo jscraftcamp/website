@@ -1,0 +1,18 @@
+{
+  "name": "Rafael Brandmaier",
+  "company": "CEO of codecentric",
+  "tags": ["games"],
+  "when": {
+    "friday": true,
+    "friday_party": false,
+    "saturday": false
+  },
+  "email": "",
+  "dietary_requirements": "",
+  "what_is_my_connection_to_javascript": "I made a few projects with Javascript, HTML and Node.js",
+  "what_can_i_contribute": "I can significantly reduce the average age of participants.",
+  "tshirt": "M-S",
+  "urls": {
+    "github": "https://github.com/TrickyRicky26"
+  }
+}
