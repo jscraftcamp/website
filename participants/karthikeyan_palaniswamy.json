@@ -1,0 +1,20 @@
+{
+          "name": "Karthikeyan Palaniswamy",
+          "company": "DigitalSpital GmbH",
+          "email": "karthikeyan.forethought@gmail.com",
+          "tags": [ "jQuery", "Vanilla JS", "testing" ],
+          "when": {
+            "friday": false,
+            "friday_party": true,
+            "saturday": true
+          },
+          "dietary_requirements": "vegetarian",
+          "what_is_my_connection_to_javascript": "I use JavaScript for web development and iDetails tasks. I use JavaScript for relatively small animation for iDetails tasks.",
+          "what_can_i_contribute": "I can contribute how to keep jQuery and VelocityJS code small and clean.  ",
+          "tshirt": "M-M",
+          "urls": {
+            "photo": "https://pbs.twimg.com/profile_images/813783353925206017/crWoDXkf_400x400.jpg",
+            "github": "https://github.com/forethoughtde",
+            "twitter": "https://twitter.com/forethought_de"
+          }
+        }
