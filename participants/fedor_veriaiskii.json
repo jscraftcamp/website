@@ -1,0 +1,21 @@
+{
+    "name": "Fedor Veriaiskii",
+    "company": "1&1",
+    "email": "fedor.veriaiskiy@gmail.com",
+    "tags": [ "angular", "ECMASCRIPT6", "nodejs", "npm" ],
+    "when": {
+      "friday": true,
+      "friday_party": true,
+      "saturday": false
+    },
+    "dietary_requirements": "none",
+    "what_is_my_connection_to_javascript": "Angular / ECMAScript6 developer.",
+    "what_can_i_contribute": "...",
+    "tshirt": "M-L",
+    "urls": {
+      "photo": "http://materializecss.com/images/sample-1.jpg",
+      "homepage": "http://yandex.ru",
+      "github": "https://github.com/pilotTedStriker",
+      "twitter": "https://twitter.com/"
+    }
+  }
