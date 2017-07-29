@@ -4,7 +4,7 @@
   "navigationItems" : {
     "main" : [
       { "url" : "/", "title" : "Home" },
-      { "url" : "/registration", "title" : "Registration", "cssClasses" : "highlight" },
+      { "url" : "/photos2017", "title" : "Photos 2017"},
       { "url" : "/#location", "title" : "Location" },
       { "url" : "/sponsoring.html", "title" : "Sponsoring" },
       { "url" : "/participants.html", "title": "Participants"},
