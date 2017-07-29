@@ -1,0 +1,17 @@
+{
+  "name": "Anja Kaiser",
+  "company": "TNG Technology Consulting",
+  "tags": [ "React", "Node.js", "ES6", "FP" ],
+  "when": {
+    "friday": true,
+    "friday_party": false,
+    "saturday": true
+  },
+  "email": "anja.kaiser@tngtech.com",
+  "dietary_requirements": "none",
+  "what_is_my_connection_to_javascript": "I'm using it everyday for mostly frontend and recently some backend dev.",
+  "what_can_i_contribute": "I would love to learn, ask questions and participate in discussions about Clean Code, React, FP in JS and more.",
+  "tshirt": "W-S",
+  "urls": {
+  }
+}

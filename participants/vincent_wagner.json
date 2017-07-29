@@ -1,0 +1,18 @@
+{
+  "name": "Vincent Wagner",
+  "company": "codecentric AG",
+  "email": "vew-dev@posteo.de",
+  "tags": [ "angular", "typescript", "nodejs", "Java", ".NET" ],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": false
+  },
+  "what_is_my_connection_to_javascript": "I used JS in a lot projects with different libraries but I love to learn more. So here I am.",
+  "what_can_i_contribute": "Experience, new approaches and somebody to discuss with",
+  "tshirt": "M-S",
+  "urls": {
+    "photo": "https://avatars.githubusercontent.com/u/1998185",
+    "github": "https://github.com/serofax"
+  }
+}

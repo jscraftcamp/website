@@ -1,0 +1,19 @@
+{
+  "name" : "Oleksandr Fedotov",
+  "company" : "fleetster",
+  "email": "fedotov4815162342@gmail.com",
+  "tags" : [ "functional programming", "native script", "react native", "react vr", "vue.js", "angular", "typescript", "es6", "TDD" ],
+  "when" :
+  {
+    "friday" : true,
+    "friday_party": true,
+    "saturday" : true
+  },
+  "what_is_my_connection_to_javascript" : "Started as a full-stack web developer using C#, afterwards was working more and more with JS, started hating C# :) have experience with such frameworks and libraries as knockoutjs, angularjs, ember(1,2), react, react native",
+  "what_can_i_contribute" : "join the group related to functional programming using js(if such exists) to open some interesting topics and discussions.",
+  "tshirt" : "M-L",
+  "urls" : {
+    "photo" : "https://avatars2.githubusercontent.com/u/7214954?v=3&s=400",
+    "github" : "https://github.com/ukrainian256"
+  }
+}

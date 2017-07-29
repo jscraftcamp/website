@@ -7,7 +7,7 @@
      {
        "friday" : true,
        "friday_party": false,
-       "saturday" : true
+       "saturday" : false
      },
    "what_is_my_connection_to_javascript" : "I am working mainly as a frontend developer at a small startup in Frankfurt. I learned JavaScript during the last 16 months and am looking forward to learn more about TDD and Software Craftsmanship.",
    "what_can_i_contribute": "As I consider myself a beginner I can at least contribute critical questions. As I never attended an Unconf I hope it is not required to deliver a presentation the first time?",

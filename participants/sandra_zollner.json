@@ -1,0 +1,19 @@
+{
+	"name": "Sandra Zollner",
+	"company": "SinnerSchrader GmbH",
+	"email": "sandra_zollner@msn.com",
+	"tags": [ "angular", "javascript", "es6" ],
+	"when": {
+		"friday": true,
+		"friday_party": false,
+	    "saturday": false
+	},
+	"dietary_requirements": "vegetarian",
+	"what_is_my_connection_to_javascript": "I'm working as a frontend developer crafting customized web solutions and user experiences.",
+	"what_can_i_contribute": "Open-mindedness and friendly techie vibes.",
+	"tshirt": "W-XL",
+  "urls": {
+     "photo": "https://avatars0.githubusercontent.com/u/2573547?v=3&u=026050c988026bbc3507944303f07a3cec4bcdf3&s=400",
+     "homepage": "https://www.facebook.com/sandra.zollner"
+   }
+}		
