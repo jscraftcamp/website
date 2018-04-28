@@ -1,6 +1,6 @@
 {
   "baseColor" : "orange",
-  "pageTitle" : "JSCraftCamp - 21+22 July 2017 in Munich",
+  "pageTitle" : "JSCraftCamp - 20+21 July 2018 in Munich",
   "navigationItems" : {
     "main" : [
       { "url" : "/", "title" : "Home" },
@@ -143,11 +143,6 @@
       "name" : "Marco Emrich",
       "photo" : "marco.jpg",
       "email" : "m.emrich@webmasters.de"
-    },
-    {
-      "name" : "Megan Christian",
-      "photo" : "megan.jpg",
-      "email" : "mwilgenbush@gmail.com"
     },
     {
       "name" : "Stefanie Hasler",
