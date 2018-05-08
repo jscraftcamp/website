@@ -7,11 +7,11 @@
     "node": ">= 6.6.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.18.7",
-    "hamjest": "^2.13.0",
+    "browser-sync": "^2.24.4",
+    "hamjest": "^3.2.0",
     "harp": "^0.25.0",
     "hashcode": "^1.0.3",
-    "mocha": "^3.0.2",
+    "mocha": "^5.1.1",
     "recursive-readdir-sync": "^1.0.6"
   },
   "scripts": {
