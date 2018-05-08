@@ -1,3 +1,6 @@
+a {
+  color: #ff9800;
+}
 @media only screen and (max-device-width: 680px) {
   h1 {
     font-size: 2.5rem;
@@ -159,3 +162,234 @@ footer div {
 @media only screen and (min-width: 900px) {.flow-text {font-size: 1.305rem;}}
 @media only screen and (min-width: 930px) {.flow-text {font-size: 1.324rem;}}
 @media only screen and (min-width: 960px) {.flow-text {font-size: 1.344rem;}}
+
+/* the special colors */
+
+:root {
+  --main-color: #33aa98;
+}
+
+
+.colorOfTheYear {
+  background-color: var(--main-color) !important
+}
+
+.colorOfTheYear-text {
+  color: var(--main-color) !important
+}
+
+.colorOfTheYear.lighten-5 {
+  background-color: #fff3e0 !important
+}
+
+.colorOfTheYear-text.text-lighten-5 {
+  color: #fff3e0 !important
+}
+
+.colorOfTheYear.lighten-4 {
+  background-color: #ffe0b2 !important
+}
+
+.colorOfTheYear-text.text-lighten-4 {
+  color: #ffe0b2 !important
+}
+
+.colorOfTheYear.lighten-3 {
+  background-color: #ffcc80 !important
+}
+
+.colorOfTheYear-text.text-lighten-3 {
+  color: #ffcc80 !important
+}
+
+.colorOfTheYear.lighten-2 {
+  background-color: #ffb74d !important
+}
+
+.colorOfTheYear-text.text-lighten-2 {
+  color: #ffb74d !important
+}
+
+.colorOfTheYear.lighten-1 {
+  background-color: #ffa726 !important
+}
+
+.colorOfTheYear-text.text-lighten-1 {
+  color: #ffa726 !important
+}
+
+.colorOfTheYear.darken-1 {
+  background-color: #fb8c00 !important
+}
+
+.colorOfTheYear-text.text-darken-1 {
+  color: #fb8c00 !important
+}
+
+.colorOfTheYear.darken-2 {
+  background-color: #f57c00 !important
+}
+
+.colorOfTheYear-text.text-darken-2 {
+  color: #f57c00 !important
+}
+
+.colorOfTheYear.darken-3 {
+  background-color: #ef6c00 !important
+}
+
+.colorOfTheYear-text.text-darken-3 {
+  color: #ef6c00 !important
+}
+
+.colorOfTheYear.darken-4 {
+  background-color: #e65100 !important
+}
+
+.colorOfTheYear-text.text-darken-4 {
+  color: #e65100 !important
+}
+
+.colorOfTheYear.accent-1 {
+  background-color: #ffd180 !important
+}
+
+.colorOfTheYear-text.text-accent-1 {
+  color: #ffd180 !important
+}
+
+.colorOfTheYear.accent-2 {
+  background-color: #ffab40 !important
+}
+
+.colorOfTheYear-text.text-accent-2 {
+  color: #ffab40 !important
+}
+
+.colorOfTheYear.accent-3 {
+  background-color: #ff9100 !important
+}
+
+.colorOfTheYear-text.text-accent-3 {
+  color: #ff9100 !important
+}
+
+.colorOfTheYear.accent-4 {
+  background-color: #ff6d00 !important
+}
+
+.colorOfTheYear-text.text-accent-4 {
+  color: #ff6d00 !important
+}
+
+.deep-orange {
+  background-color: #ff5722 !important
+}
+
+.deep-orange-text {
+  color: #ff5722 !important
+}
+
+.deep-orange.lighten-5 {
+  background-color: #fbe9e7 !important
+}
+
+.deep-orange-text.text-lighten-5 {
+  color: #fbe9e7 !important
+}
+
+.deep-orange.lighten-4 {
+  background-color: #ffccbc !important
+}
+
+.deep-orange-text.text-lighten-4 {
+  color: #ffccbc !important
+}
+
+.deep-orange.lighten-3 {
+  background-color: #ffab91 !important
+}
+
+.deep-orange-text.text-lighten-3 {
+  color: #ffab91 !important
+}
+
+.deep-orange.lighten-2 {
+  background-color: #ff8a65 !important
+}
+
+.deep-orange-text.text-lighten-2 {
+  color: #ff8a65 !important
+}
+
+.deep-orange.lighten-1 {
+  background-color: #ff7043 !important
+}
+
+.deep-orange-text.text-lighten-1 {
+  color: #ff7043 !important
+}
+
+.deep-orange.darken-1 {
+  background-color: #f4511e !important
+}
+
+.deep-orange-text.text-darken-1 {
+  color: #f4511e !important
+}
+
+.deep-orange.darken-2 {
+  background-color: #e64a19 !important
+}
+
+.deep-orange-text.text-darken-2 {
+  color: #e64a19 !important
+}
+
+.deep-orange.darken-3 {
+  background-color: #d84315 !important
+}
+
+.deep-orange-text.text-darken-3 {
+  color: #d84315 !important
+}
+
+.deep-orange.darken-4 {
+  background-color: #bf360c !important
+}
+
+.deep-orange-text.text-darken-4 {
+  color: #bf360c !important
+}
+
+.deep-orange.accent-1 {
+  background-color: #ff9e80 !important
+}
+
+.deep-orange-text.text-accent-1 {
+  color: #ff9e80 !important
+}
+
+.deep-orange.accent-2 {
+  background-color: #ff6e40 !important
+}
+
+.deep-orange-text.text-accent-2 {
+  color: #ff6e40 !important
+}
+
+.deep-orange.accent-3 {
+  background-color: #ff3d00 !important
+}
+
+.deep-orange-text.text-accent-3 {
+  color: #ff3d00 !important
+}
+
+.deep-orange.accent-4 {
+  background-color: #dd2c00 !important
+}
+
+.deep-orange-text.text-accent-4 {
+  color: #dd2c00 !important
+}
