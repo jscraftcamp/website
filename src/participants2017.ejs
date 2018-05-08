@@ -1,0 +1,117 @@
+<div class="container">
+  <div class="row">
+    <div class="col s12 m12">
+      <h1 class="header center blue-text">Participants</h1>
+    </div>
+
+    <div class="col s12 m6">
+      <h5 class="header center" id="sum_friday" />
+    </div>
+    <div class="col s12 m6">
+      <h5 class="header center" id="sum_saturday" />
+    </div>
+  </div>
+
+  <div id="participants" class="row">
+  </div>
+</div>
+
+
+<script id="participant-template" type="text/x-handlebars-template">
+  <div class="col s12 m6 l3">
+    <div class="card medium">
+      <div class="card-image">
+        {{#if urls.photo}}
+           <img class="activator" src="{{urls.photo}}">
+        {{else}}
+           <img class="activator" src="/img/nophoto.png">
+        {{/if}}
+      </div>
+      <div class="card-content">
+        <span class="card-title activator">{{name}}<i class="material-icons right">more_vert</i></span>
+        {{#if company}}
+           <p>{{company}}</p>
+        {{/if}}
+      </div>
+      <div class="card-reveal">
+        <span class="card-title activator">{{name}}<i class="material-icons right">close</i></span>
+        {{#if what_is_my_connection_to_javascript}}
+        <p>{{what_is_my_connection_to_javascript}}</p>
+        {{/if}}
+        {{#if what_can_i_contribute}}
+        <p>{{what_can_i_contribute}}</p>
+        {{/if}}
+      </div>
+      <div class="card-action">
+        {{#if urls.homepage}}
+        <a class="blue-text" href="{{urls.homepage}}"><i class="fa fa-home fa-fw"/></a>
+        {{/if}}
+        {{#if urls.github}}
+        <a class="blue-text" href="{{urls.github}}"><i class="fa fa-github fa-fw"/></a>
+        {{/if}}
+        {{#if urls.twitter}}
+        <a class="blue-text" href="{{urls.twitter}}"><i class="fa fa-twitter fa-fw"/></a>
+        {{/if}}
+        <div class="card-tags-container">
+          {{#list tags}}
+             <span class="card-tag">#{{ this }}</span>
+          {{/list}}
+        </div>
+      </div>
+    </div>
+  </div>
+</script>
+
+<script type="text/javascript" src="./js/tshirt-sizes.js"></script>
+<script type="text/javascript" src="./js/dietary-requirements.js"></script>
+<script type="text/javascript">
+
+  window.onload = function () {
+    $.getJSON("/participants2017.json", function (data) {
+      var items = [];
+      var sum = 0;
+      var sum_friday = 0;
+      var sum_saturday = 0;
+      $.each(data, function (index, participant) {
+        var source = $("#participant-template").html();
+        var template = Handlebars.compile(source);
+        var card = template(participant);
+        items.push(card);
+        sum++;
+        if (participant.when.friday) sum_friday++;
+        if (participant.when.saturday) sum_saturday++;
+      });
+      $("#participants").append(items.join(""));
+      $("#sum").append(sum + " participants");
+      $("#sum_friday").append(sum_friday + " participants on Friday (max. 100)");
+      $("#sum_saturday").append(sum_saturday + " participants on Saturday (max. 100)");
+
+      function notEmpty(field) { return !!field; }
+
+      function tshirtData(participant) { return participant.tshirt; }
+
+      var tShirtSizesStructuredInfo = JSON.stringify(sortShirtSizes(data.map(tshirtData).filter(notEmpty)), null, 4);
+      console.log("T-Shirt sizes:", tShirtSizesStructuredInfo);
+
+      function foodData(participant) { return participant.dietary_requirements; }
+      if (window.location.hash === '#list-tshirt-sizes') {
+        alert(tShirtSizesStructuredInfo);
+      }
+      var dietaryRequirementsStructuredInfo = JSON.stringify(sortDietaryRequirements(data.map(foodData).filter(notEmpty)), null, 4);
+      console.log("Dietary requirements:", dietaryRequirementsStructuredInfo);
+      if (window.location.hash === '#list-dietary-requirements') {
+        alert(dietaryRequirementsStructuredInfo);
+      }
+
+    });
+
+    Handlebars.registerHelper('list', function (context, options) {
+      var ret = "";
+      for (var i = 0, j = context.length; i < j; i++) {
+        ret = ret + options.fn(context[i]);
+      }
+      return ret;
+    });
+  };
+
+</script>
