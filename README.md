@@ -37,9 +37,9 @@ you can use [nix] as described here.
 
 ## How to develop?
 
-- run `npm i` or `yarn` to install all dependencies
-- run `npm start` or `yarn start` which will run the local webserver, for developing
-- run `npm test` or `yarn test` to run the tests
-- run `npm run build` or `yarn build` to generate all static files and to concatenate all participants files into the `dist` directory
+- run `npm i` to install all dependencies
+- run `npm start` which will run the local webserver, for developing
+- run `npm test`  to run the tests
+- run `npm run build` to generate all static files and to concatenate all participants files into the `dist` directory
 
 
