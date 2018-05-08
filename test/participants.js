@@ -61,11 +61,10 @@ describe("Participants JSON file", () => {
         assert.ok(object.what_is_my_connection_to_javascript.trim().length > 0, "'what_is_my_connection_to_javascript' must not be empty");
       });
 
-      it("may contain a what_can_i_contribute statement", () => {
-        if(typeof object.what_can_i_contribute !== "undefined"){
-          assert.equal(typeof object.what_can_i_contribute, "string", "'what_can_i_contribute' must be of type string");
-          assert.ok(object.what_can_i_contribute.trim().length > 0, "'what_can_i_contribute' must not be empty");
-        }
+      it("must contain a what can I contribute statement", () => {
+        assert.ok(typeof object.what_can_i_contribute !== "undefined", "'what_can_i_contribute' is mandatory");
+        assert.equal(typeof object.what_can_i_contribute, "string", "'what_can_i_contribute' must be of type string");
+        assert.ok(object.what_can_i_contribute.trim().length > 0, "'what_can_i_contribute' must not be empty");
       });
 
       it("must contain at least one tag", () => {
