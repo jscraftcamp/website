@@ -1,0 +1,21 @@
+ {
+          "name": "Lilia Kraft",
+          "company": "Extedo",
+          "email": "liliamail@hotmail.com",
+          "tags": [ "angular", "node" ],
+          "when": {
+            "friday": true,
+            "friday_party": false,
+            "saturday": true
+          },
+          "dietary_requirements": " ",
+          "what_is_my_connection_to_javascript": "I have been using JS in ASP.NET MVC applications and also have some experience using Angular and Backbone. I find the dev community and tools/technologies around JS very exciting.",
+          "what_can_i_contribute": "Willingness to learn more about angular, react, craftsmanship and JS ecosystem",
+          "tshirt": "W-L",
+          "urls": {
+            "photo": " ",
+            "homepage": " ",
+            "github": " ",
+            "twitter": " "
+          }
+        }
