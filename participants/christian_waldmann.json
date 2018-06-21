@@ -1,0 +1,18 @@
+{
+  "name": "Christian Waldmann",
+  "company": "Hetzner Cloud GmbH",
+  "tags": ["Craftsmanship", "cleancode", "TDD", "TypeScript", "Angular", "e2e", "Webpack"],
+  "when": {
+	  "friday": true,
+	  "friday_party": true,
+	  "saturday": true
+  },
+  "dietary_requirements": "vegetarian",
+  "what_is_my_connection_to_javascript": "Frontend lead developer and architect with focus on JavaScript and Angular",
+  "what_can_i_contribute": "Clean and well tested JavaScript coding. Setting up an robust and working e2e setup, ... ",
+  "tshirt": "M-L",
+  "urls": {
+    "github": "https://github.com/wachri",
+    "twitter": "https://twitter.com/wachri"
+  }
+}
