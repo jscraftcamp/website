@@ -129,24 +129,6 @@ footer div {
   }
 }
 
-/* MailChimp Newsletter Signup */
-#mc_embed_signup {
-  background: #fff;
-  clear: left;
-  font: 14px;
-}
-
-#mc_embed_signup input.email {
-  width: 95%;
-}
-
-#mc_embed_signup_container_row {
-  margin-top: -40px;
-  margin-bottom: -20px;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 /* Overwrites for Material Design */
 
 @media only screen and (min-width: 600px) {.flow-text {font-size: 1.114rem;}}
