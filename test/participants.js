@@ -22,14 +22,7 @@ describe("Participants JSON file", () => {
         assert.equal(typeof object.name, "string", "'name' must be of type string");
         assert.ok(object.name.trim().length > 0, "'name' must not be empty");
       });
-
-      it("may contain a photo URL", () => {
-        if(typeof object.urls.photo !== "undefined") {
-          assert.equal(typeof object.urls.photo, "string", "'urls.photo' must be of type string");
-          assert.ok(object.urls.photo.startsWith("http"), "'urls.photo' must be an URL");
-        }
-      });
-
+    
       it("may contain a company name", () => {
         if(typeof object.company !== "undefined") {
           assert.equal(typeof object.company, "string", "'company' must be of type string");
@@ -66,38 +59,6 @@ describe("Participants JSON file", () => {
           assert.equal(typeof object.what_can_i_contribute, "string", "'what_can_i_contribute' must be of type string");
           assert.ok(object.what_can_i_contribute.trim().length > 0, "'what_can_i_contribute' must not be empty");
         }
-      });
-
-      it("must contain at least one tag", () => {
-        assert.ok(typeof object.tags !== "undefined", "'tags' is mandatory");
-        assert.ok(Array.isArray(object.tags), "'tags' must be an array");
-        assert.ok(object.tags.length >= 1, 'minumum 1 tag');
-        object.tags.forEach(item => {
-            assert.equal(typeof item, "string", "Each item in 'tags' must be of type string");
-            assert.ok(item.trim().length > 0, "Each item in 'tags' must not be empty");
-            assert.ok(item.indexOf(',') === -1, "Tags can not contain commas - each tag must be an own element within the array");
-        });
-      });
-
-      it("may contain additional URLs", () => {
-        if(typeof object.urls.homepage !== "undefined") {
-          assert.equal(typeof object.urls.homepage, "string", "'urls.homepage' must be of type string");
-          assert.ok(object.urls.homepage.startsWith("http"), "'urls.homepage' must be an URL");
-        }
-        if(typeof object.urls.github !== "undefined") {
-          assert.equal(typeof object.urls.github, "string", "'urls.github' must be of type string");
-          assert.ok(object.urls.github.startsWith("http"), "'urls.github' must be an URL");
-        }
-        if(typeof object.urls.twitter !== "undefined") {
-          assert.equal(typeof object.urls.twitter, "string", "'urls.twitter' must be of type string");
-          assert.ok(object.urls.twitter.startsWith("http"), "'urls.twitter' must be an URL");
-        }
-      });
-
-      it("may contain the E-Mail", () => {
-          if(typeof object.email !== "undefined") {
-              assert.equal(typeof object.email, "string", "'email must be a string'");
-          }
       });
 
       it("may contain dietary requirements", () => {

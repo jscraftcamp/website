@@ -1,70 +1,405 @@
 {
-  "baseColor" : "orange",
-  "pageTitle" : "JSCraftCamp - 21+22 July 2017 in Munich",
-  "navigationItems" : {
-    "main" : [
-      { "url" : "/", "title" : "Home" },
-      { "url" : "/registration", "title" : "Registration", "cssClasses" : "highlight" },
-      { "url" : "/#location", "title" : "Location" },
-      { "url" : "/sponsoring.html", "title" : "Sponsoring" },
-      { "url" : "/participants.html", "title": "Participants"},
-      { "url" : "/values.html", "title" : "Values" }
+  "baseColor": "colorOfTheYear",
+  "pageTitle": "JSCraftCamp - 10+11 August 2018 in Munich",
+  "navigationItems": {
+    "main": [
+      {
+        "url": "/",
+        "title": "Home"
+      },
+      {
+        "url": "/photos2017",
+        "title": "Photos 2017"
+      },
+      {
+        "url": "/#location",
+        "title": "Location"
+      },
+      {
+        "url": "/sponsoring.html",
+        "title": "Sponsoring"
+      },
+      {
+        "url": "/participants.html",
+        "title": "Participants"
+      },
+      {
+        "url": "/values.html",
+        "title": "Values"
+      }
     ],
-    "archive" : [
-      { "url" : "/info2016", "title" : "2016 - Home" },
-      { "url" : "/participants2016", "title" : "2016 - Participants" },
-      { "url" : "/photos2016", "title" : "2016 - Photos" }
+    "archive": [
+      {
+        "url": "/info2017",
+        "title": "2017 - Home"
+      },
+      {
+        "url": "/photos2017",
+        "title": "2017 - Photos"
+      },
+      {
+        "url": "/info2016",
+        "title": "2016 - Home"
+      },
+      {
+        "url": "/photos2016",
+        "title": "2016 - Photos"
+      }
     ]
   },
-  "photos2016" : [
-    { "url" : "img/event_photos/CuaYSc3WYAAdRRV.jpg" },
-    { "url" : "img/event_photos/CuaYwEuXgAEEkzT.jpg" },
-    { "url" : "img/event_photos/CuaZHUSW8AAOLs3.jpg" },
-    { "url" : "img/event_photos/CuOyZ_kWYAARNY0.jpg" },
-    { "url" : "img/event_photos/CuPNlg6XEAA8HtJ.jpg" },
-    { "url" : "img/event_photos/IMG_5352.jpg" },
-    { "url" : "img/event_photos/IMG_5374.jpg" },
-    { "url" : "img/event_photos/IMG_5375.jpg" },
-    { "url" : "img/event_photos/IMG_5377.jpg" },
-    { "url" : "img/event_photos/IMG_5381.jpg" },
-    { "url" : "img/event_photos/IMG_5394.jpg" },
-    { "url" : "img/event_photos/IMG_5395.jpg" },
-    { "url" : "img/event_photos/IMG_5404.jpg" },
-    { "url" : "img/event_photos/IMG_5413.jpg" },
-    { "url" : "img/event_photos/IMG_5418.jpg" },
-    { "url" : "img/event_photos/IMG_5419.jpg" },
-    { "url" : "img/event_photos/IMG_5422.jpg" }
+  "photos2016": [
+    {
+      "url": "img/event_photos/2016/CuaYSc3WYAAdRRV.jpg"
+    },
+    {
+      "url": "img/event_photos/2016/CuaYwEuXgAEEkzT.jpg"
+    },
+    {
+      "url": "img/event_photos/2016/CuaZHUSW8AAOLs3.jpg"
+    },
+    {
+      "url": "img/event_photos/2016/CuOyZ_kWYAARNY0.jpg"
+    },
+    {
+      "url": "img/event_photos/2016/CuPNlg6XEAA8HtJ.jpg"
+    },
+    {
+      "url": "img/event_photos/2016/IMG_5352.jpg"
+    },
+    {
+      "url": "img/event_photos/2016/IMG_5374.jpg"
+    },
+    {
+      "url": "img/event_photos/2016/IMG_5375.jpg"
+    },
+    {
+      "url": "img/event_photos/2016/IMG_5377.jpg"
+    },
+    {
+      "url": "img/event_photos/2016/IMG_5381.jpg"
+    },
+    {
+      "url": "img/event_photos/2016/IMG_5394.jpg"
+    },
+    {
+      "url": "img/event_photos/2016/IMG_5395.jpg"
+    },
+    {
+      "url": "img/event_photos/2016/IMG_5404.jpg"
+    },
+    {
+      "url": "img/event_photos/2016/IMG_5413.jpg"
+    },
+    {
+      "url": "img/event_photos/2016/IMG_5418.jpg"
+    },
+    {
+      "url": "img/event_photos/2016/IMG_5419.jpg"
+    },
+    {
+      "url": "img/event_photos/2016/IMG_5422.jpg"
+    }
   ],
-  "theteam" : [
+  "photos2017": [
     {
-      "name" : "Wolfram Kriesing",
-      "photo" : "wolfram.png",
-      "email" : "w@kriesing.de"
+      "url": "img/event_photos/2017/DFNIs6wXsAArmZA.jpg"
     },
     {
-      "name" : "Robert Hostlowsky",
-      "photo" : "robert.png",
-      "email" : "robert.hostlowsky@codecentric.de"
+      "url": "img/event_photos/2017/DFNIttoXoAAGMWa.jpg"
     },
     {
-      "name" : "Marco Emrich",
-      "photo" : "marco.jpg",
-      "email" : "m.emrich@webmasters.de"
+      "url": "img/event_photos/2017/DFP0DwzXgAA9tPl.jpg"
     },
     {
-      "name" : "Megan Christian",
-      "photo" : "megan.jpg",
-      "email" : "mwilgenbush@gmail.com"
+      "url": "img/event_photos/2017/DFP2GxLWAAAK0Q9.jpg"
     },
     {
-      "name" : "Stefanie Hasler",
-      "photo" : "stefanie.png",
-      "email" : "stefanie.hasler@codecentric.de"
+      "url": "img/event_photos/2017/DFP4whTXoAEzqSa.jpg"
     },
     {
-      "name" : "David Losert",
-      "photo" : "david.jpg",
-      "email" : "david.losert@virtual-identity.com"
+      "url": "img/event_photos/2017/DFP5_qaXcAAK5hl.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFP_lMlXsAAAKx2 (1).jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFP_nsvXgAAJLvQ.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPao0CXUAEu0xg.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPasJWUwAIh9Dj.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPe_GCW0AAgSxW.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPerJUWAAEoLVU.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPfFi_XUAA5EY8.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPfNZFWsAAK3PM.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPfVEYWsAABn_D.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPgyCaXUAEtWbx.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPhhUiU0AEJu-c.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPiSBJXoAABBrC.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPkHf8XgAA_yDz.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPlvc_WAAEXIid.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPlZZwXYAAPETh.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPnITCXcAAd0oo.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPoaNlWAAAVpaS.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPom2EXgAIwkQO.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPoMWNWsAAweMQ.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPP0NiU0AA_tHP.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPP3y8VoAILEM2.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPP8KNUMAEH-aL.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPpbBsXcAEY3jt.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPpE8iXcAAdEOp.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPpN-GXgAAo3lc.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPpoCSWAAAjNaK.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPPvP1VoAEfSen.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPq0h6WsAAj62i.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPqAb3WAAAFaOs.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPqc2EWAAA-8hr.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPqcD8XYAA4njK.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPqCwbXoAA_vcV.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPqeGnXUAA3KED.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPqG4RXgAE97no.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPqgtDXkAAaDig.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPqOm8XgAA5o3K.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPr8wZXYAATfMB.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPrRRNXkAAWr_B.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPs53cXYAAWDM4.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPtWrsXgAA-hN6.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPvsh6XYAAc6q0.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPXL90VwAABzBR.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPXNF8UQAApMLA.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPyN2yXsAAHI8h.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFPzYesXkAAuNFR.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFQ0iIJXsAE4UPS.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFQ1nfHXUAAzl38.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFQ8gs8WAAAO_Na.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFQ74AIXcAACIwa.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFQHKW_W0AATZrD.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFQLfp6XsAAQmsA.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFQLLOCXgAAfv3I.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFQlYJ1XgAEATrY.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFQMX3iW0AAzCPf.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFR-98XXoAAcC2d.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFR_aTNXsAAOsnk.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFRD2bWWsAEmNNH.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFRDti1W0AYGGB1.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFRHvGaXcAAFpZt.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFRIZhVXoAAIeFd.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFRJ8-YWAAIPgPT.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFRjXSMXoAAsX39.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFU0bG6XoAEcqId.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFU365jXsAAZQt5.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFUjSoQXoAAjFbj.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFUmgQxXgAAQSPv.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFUnp3cXkAAYsL-.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFVaT3oXcAAc56w.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFVOWDLXoAAkW84.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFVPoqZW0AAGKo-.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFVtkX-W0AAMzCv.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFWGdEsW0AAkXHD.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFWLvWqWsAAQOdD.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DFWSvtxXkAEZeSL.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/IMG_20170721_075323870.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/IMG_20170721_075610095.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/IMG_20170721_075621403.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/IMG_20170721_075642736.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/IMG_20170721_075730361.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/IMG_20170721_075744809.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/IMG_20170722_120709594.jpg "
+    },
+    {
+      "url": "img/event_photos/2017/DSCF1758.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DSCF1763.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DSCF1788.jpg"
+    },
+    {
+      "url": "img/event_photos/2017/DSCF1802.jpg"
+    }
+  ],
+  "theteam": [
+    {
+      "name": "Wolfram Kriesing",
+      "photo": "wolfram.png",
+      "email": "w@kriesing.de"
+    },
+    {
+      "name": "Robert Hostlowsky",
+      "photo": "robert.png",
+      "email": "robert.hostlowsky@codecentric.de"
+    },
+    {
+      "name": "Marco Emrich",
+      "photo": "marco.jpg",
+      "email": "m.emrich@webmasters.de"
+    },
+    {
+      "name": "Stefanie Hasler",
+      "photo": "stefanie.png",
+      "email": "stefanie.hasler@codecentric.de"
+    },
+    {
+      "name": "David Losert",
+      "photo": "david.jpg",
+      "email": "david.losert@virtual-identity.com"
     }
   ]
 }
