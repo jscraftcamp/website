@@ -1,0 +1,12 @@
+{
+  "name": "Lukas Taegert",
+  "company": "TNG Technology Consulting GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "what_is_my_connection_to_javascript": "Professionally I have been working on frontend applications both with React and AngularJS for three years. Privately I do a lot of open source work and since the end of last year I am acting co-maintainer of Rollup.js.",
+  "what_can_i_contribute": "Hands on sessions about Rollup.js, e.g. about the new runtime-free code-splitting features. A look behind the scenes if anyone is interested.",
+  "tshirt": "M-M"
+}
