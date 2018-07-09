@@ -1,21 +1,14 @@
 {
   "name" : "David Völkel",
   "company" : "codecentric.de",
-  "email": "david.voelkel@codecentric.de",
-  "tags" : [ "Craftsmanship", "TDD" ],
   "when" :
   {
     "friday" : true,
     "friday_party": true,
     "saturday" : true
   },
-  "what_is_my_connection_to_javascript" : "I am a JS Goofy but want to learn more about it",
-  "what_can_i_contribute" : "Critical thinking and playing sparring partner for your bold ideas. Some stupid puns. A lot of Craftsmanship Experience",
-  "tshirt" : "M-M",
-  "urls" : {
-    "photo": "http://www.davidvoelkel.de/images/davidvoelkel.jpg",
-    "homepage" : "http://www.davidvoelkel.de/",
-    "github" : "https://github.com/davidvoelkel",
-    "twitter" : "https://twitter.com/davidvoelkel"
-  }
+  "dietary_requirements": "omnivore",
+  "what_is_my_connection_to_javascript" : "Coming from Java back-ends and dev ops I have basic JS skills, but want to learn more.",
+  "what_can_i_contribute" : "Critical thinking and playing sparring partner for your bold ideas. Some stupid puns. A lot of software craft experience",
+  "tshirt" : "M-M"
 }
