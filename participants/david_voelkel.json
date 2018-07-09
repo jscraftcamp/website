@@ -1,6 +1,7 @@
 {
   "name" : "David Völkel",
   "company" : "codecentric.de",
+  "tags" : [ "Software Crafting", "TDD" ],
   "when" :
   {
     "friday" : true,
