@@ -5,7 +5,7 @@
     "when": {
       "friday": false,
       "friday_party": true,
-      "saturday": false
+      "saturday": true
     },
     "dietary_requirements": "vegetarian",
     "what_is_my_connection_to_javascript": "Javascript developer for the last couple years, front and backend.",
