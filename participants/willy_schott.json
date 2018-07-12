@@ -7,12 +7,7 @@
     "friday_party": false,
     "saturday": true
   },
-  "email": "willy.schott@gmail.com",
   "what_is_my_connection_to_javascript": "Developing front ends and applications using JavaScript for almost 20 years",
   "what_can_i_contribute": "Participate in discussions (I am not much of a stage talker or mediator)",
-  "tshirt": "M-XL",
-  "urls": {
-    "photo": "https://www.gravatar.com/avatar/92771e78d929832dc8059c0bfd9df41f?s=128",
-    "github": "https://github.com/willydee"
-  }
+  "tshirt": "M-XL"
 }
