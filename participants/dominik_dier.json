@@ -1,0 +1,12 @@
+{
+  "name": "Dominik Dier",
+  "company": "TNG Technology Consulting GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "what_is_my_connection_to_javascript": "I'm transforming requirements into a web app using mainly react, react-redux and redux-saga. Sometimes I also have to talk to IE 11 (without using Babel, etc.), but we won't get friends.",
+  "what_can_i_contribute": "Using react and svg to create a brush-chart from scratch. How to make this chart fancier using d3-shape.",
+  "tshirt": "M-M"
+}
