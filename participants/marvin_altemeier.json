@@ -1,0 +1,12 @@
+{
+  "name": "Marvin Altemeier",
+  "company": "Hetzner Cloud GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "dietary_requirements": "vegetarian",
+  "what_is_my_connection_to_javascript": "Developing Angular Frontend and Node backend applications with javascript",
+  "tshirt": "M-L"
+}
