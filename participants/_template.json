@@ -1,7 +1,6 @@
 {
   "name": "My Name",
   "company": "my company",
-  "tags": [],
   "when": {
     "friday": true,
     "friday_party": true,
