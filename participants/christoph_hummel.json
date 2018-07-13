@@ -1,0 +1,14 @@
+{
+  "name": "Christoph Hummel",
+  "company": "Virtual Identity AG",
+  "tags": [],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "dietary_requirements": "none",
+  "what_is_my_connection_to_javascript": "Mostly I use JavaScript in the projects for my company but also in the applications I build at home.",
+  "what_can_i_contribute": "Discuss current and upcoming features. Share my learnings building a fullscreen JS game for mobile browsers.",
+  "tshirt": "M-L"
+}
