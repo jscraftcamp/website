@@ -400,6 +400,11 @@
       "name": "David Losert",
       "photo": "david.jpg",
       "email": "david.losert@virtual-identity.com"
+    },
+    {
+      "name": "Oleksandr Fedotov",
+      "photo": "oleksandr.jpg",
+      "email": "oleksandr.fedotov@netlight.com"
     }
   ]
 }
