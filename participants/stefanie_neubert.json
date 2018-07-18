@@ -1,0 +1,14 @@
+{
+	"name": "Stefanie Neubert",
+	"company": "Virtual Identity AG",
+	"when": {
+	  "friday": true,
+	  "friday_party": true,
+	  "saturday": true
+	},
+	"dietary_requirements": "vegetarian or vegan",
+	"what_is_my_connection_to_javascript": "Used it in frameworks (AngularJS, VueJS) for 3.5 years (I'm a full-time web/cordova-based-app developer). I did not learn how to use it, just googled what I needed.",
+	"what_can_i_contribute": "Participate in discussions and learn about clean and easy-to-read code, best practices",
+	"tshirt": "W-M"
+  }
+    
