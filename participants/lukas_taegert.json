@@ -1,27 +1,12 @@
 {
   "name": "Lukas Taegert",
-  "company": "TNG Technology Consulting",
-  "email": "lukas.taegert@tngtech.com",
-  "tags": [
-    "tdd",
-    "tooling",
-    "react",
-    "rollup",
-    "webpack",
-    "web assembly",
-    "anything cool"
-  ],
+  "company": "TNG Technology Consulting GmbH",
   "when": {
     "friday": true,
-    "friday_party": false,
-    "saturday": false
+    "friday_party": true,
+    "saturday": true
   },
-  "dietary_requirements": "none",
-  "what_is_my_connection_to_javascript": "I have been working professionally with react and angularJS for nearly two years and I am passionate about anything JS in my private projects as well. Lately, I have concerned myself with rollup and webpack and have made some forays into node server territory.",
-  "what_can_i_contribute": "I could talk about my experience with webpack and rollup and how to make tree-shaking work :), also, testing is always a nice topic.",
-  "tshirt": "M-M",
-  "urls": {
-    "photo": "https://avatars3.githubusercontent.com/u/12949268",
-    "github": "https://github.com/lukastaegert"
-  }
+  "what_is_my_connection_to_javascript": "Professionally I have been working on frontend applications both with React and AngularJS for three years. Privately I do a lot of open source work and since the end of last year I am acting co-maintainer of Rollup.js.",
+  "what_can_i_contribute": "Hands on sessions about Rollup.js, e.g. about the new runtime-free code-splitting features. A look behind the scenes if anyone is interested.",
+  "tshirt": "M-M"
 }

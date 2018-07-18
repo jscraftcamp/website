@@ -1,0 +1,18 @@
+{
+  "name": "Jan Rembold",
+  "company": "Virtual Identity AG",
+  "tags": [
+    "ES6",
+    "TypeScript",
+    "Web Components",
+    "Biotope"
+  ],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "what_is_my_connection_to_javascript": "Developing modular Frontend Plugins at work, for fun and of course for the community",
+  "what_can_i_contribute": "Thougts about Web Components and possible Template Engines. Visual Regression Testing with Gemini and Docker",
+  "tshirt": "M-L"  
+}

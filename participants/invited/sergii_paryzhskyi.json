@@ -1,0 +1,14 @@
+{
+    "name": "Sergii Paryzhskyi",
+    "company": "HolidayCheck",
+    "tags": ["FP", "TDD", "ReactJS", "TypeScript", "NodeJS"],
+    "when": {
+      "friday": true,
+      "friday_party": true,
+      "saturday": true
+    },
+    "dietary_requirements": "none",
+    "what_is_my_connection_to_javascript": "Using JS on client and server side.",
+    "what_can_i_contribute": "Share my knowledge on topics mentioned in tags",
+    "tshirt": "M-L"  
+  }

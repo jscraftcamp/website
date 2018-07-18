@@ -1,0 +1,14 @@
+{
+  "name": "Ugurcan Sengit",
+  "company": "HolidayCheck",
+  "tags": ["Javascript", "TDD", "SoftwareCraftsmanship"],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "dietary_requirements": "none",
+  "what_is_my_connection_to_javascript": "I use Javascript to build applications for myself and for the companies.",
+  "what_can_i_contribute": "Insights about apprenticeship culture, my knowledge about the techniques I've applied so far",
+  "tshirt": "M-L"  
+}

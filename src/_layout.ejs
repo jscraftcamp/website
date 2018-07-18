@@ -1,7 +1,6 @@
-<html xmlns:fb="http://ogp.me/ns/fb">
+<html>
 <head>
   <title><%= public._data.pageTitle %></title>
-  <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
   <link type="text/css" rel="stylesheet" href="css/prism-customized.css"/>
   <link type="text/css" rel="stylesheet" href="css/main.css" media="screen,projection"/>
@@ -11,8 +10,31 @@
         content="https://raw.githubusercontent.com/jscraftcamp/website/master/src/img/logo.png"/>
 
   <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+  <style>
+  @font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/material-design-icons/materialicons38.woff2) format('woff2');
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }
+  </style>
 </head>
 <body>
 <%- partial("_navigation") %>
