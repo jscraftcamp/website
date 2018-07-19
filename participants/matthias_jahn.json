@@ -1,0 +1,12 @@
+{
+  "name": "Matthias Jahn",
+  "company": "Peerigon",
+  "tags": ["javascript", "node", "react"],
+  "when": {
+    "friday": false,
+    "friday_party": false,
+    "saturday": true
+  },
+  "dietary_requirements": "Vegetarian please",
+  "what_is_my_connection_to_javascript": "Working with JavaScript for years and always happy to do that."
+}
