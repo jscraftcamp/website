@@ -8,6 +8,7 @@
     "friday_party": false,
     "saturday" : true
   },
+  "dietary_requirements": "vegetarian"
   "what_is_my_connection_to_javascript" : "I'm a Frontend developer.",
   "what_can_i_contribute" : "A talk about making accessible charts with d3 library.",
   "tshirt" : "M-XL",
