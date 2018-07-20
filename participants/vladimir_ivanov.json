@@ -1,0 +1,13 @@
+{
+  "name": "Vladimir Ivanov",
+  "company": "Social Sweethearts GmbH",
+  "tags": ["ReactJS", "AngularJS", "Django", "Docker"],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "what_is_my_connection_to_javascript": "Developing web applications using JavaScript for about 11 years. I am a big fan of ReactJS",
+  "what_can_i_contribute": "Share my experience and participate in discussions",
+  "tshirt": "M-M"
+}
