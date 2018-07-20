@@ -1,0 +1,13 @@
+{
+  "name": "Andrei Bechet",
+  "company": "Holidu",
+  "when": {
+    "friday": false,
+    "friday_party": true,
+    "saturday": true
+  },
+  "dietary_requirements": "vegetarian",
+  "what_is_my_connection_to_javascript": "intrigued about the capabilities and about the functional style of it, but I am very much in the beginning of everything with js",
+  "what_can_i_contribute": "I can help facilitate a mob programming, talk about my short experience with testing and I would love to have discussions about how teams work in general and as well as hiring",
+  "tshirt": "M-L"  
+}
