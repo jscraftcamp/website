@@ -1,26 +1,26 @@
-## JS Craft Camp
+# JS CraftCamp - Website
 
 This project contains the http://jscraftcamp.org site.
 
-# Development
+## Development
 
-## Prerequisite
+### Prerequisite
 
 The node version required is the one noted in [./.travis.yml].
 How to get the environment up and running, see the section [#local-development-environment-setup] below.
 
-## Local development environment setup
+### Local development environment setup
 
 We offer at least two ways to install this project, you choose the one you like:
 - use you own [global nodejs version](#global-nodejs-version) if installed on your system, or
 - setup everything from scratch [using nix](#setup-via-nix)
 
-### Global nodejs version
+#### Global nodejs version
 
 If you have a global nodejs version (at least the version as noted in the [#prerequisite])
 You don't have to do anythin
 
-### Setup via nix
+#### Setup via nix
 
 If you don't want to rely on a global nodejs version, but want a reproducible environment,
 you can use [nix] as described here.
