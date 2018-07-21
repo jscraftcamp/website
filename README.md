@@ -1,6 +1,6 @@
 # JS CraftCamp - Website
 
-This project contains the http://jscraftcamp.org site.
+This project contains the [jscraftcamp.org](http://jscraftcamp.org) website and all the setup for the deployment.
 
 ## Development
 
