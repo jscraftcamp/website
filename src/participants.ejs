@@ -33,7 +33,7 @@
            <p style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">({{company}})</p>
         {{/if}}
         <div class="card-tags-container blue-text">
-          {{#list tags}}
+          {{#taglist tags}}
             <span class="card-tag">#{{ this }}</span>
           {{/list}}
         </div>
@@ -68,7 +68,7 @@ window.onload = function() {
 
   });
   
-  Handlebars.registerHelper('list', function(listItems) {
+  Handlebars.registerHelper('taglist', function(listItems) {
     return listItems ? listItems.map(tag => `#${tag}`).join(' ') : '';
   });
 
