@@ -1,0 +1,11 @@
+{
+  "name": "Anna Gruber",
+  "company": "Scalable Capital",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "what_is_my_connection_to_javascript": "I have been doing Javascript for the last 5-ish years. Stack of choice those days is react.",
+  "tshirt": "W-M"
+}
