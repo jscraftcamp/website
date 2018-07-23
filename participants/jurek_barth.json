@@ -1,0 +1,14 @@
+{
+  "name": "Jurek Barth",
+  "company": "Virtual Identity",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["awesome", "🔥", "fun", "🤓"],
+  "dietary_requirements": "none",
+  "what_is_my_connection_to_javascript": "Hi i'm Jurek 👋. I work with JS on a daily basis and it's all around me.",
+  "what_can_i_contribute": "Happy to help if needed 🙃",
+  "tshirt": "M-M"
+}
