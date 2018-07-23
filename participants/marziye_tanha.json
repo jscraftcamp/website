@@ -1,0 +1,14 @@
+{
+  "name": "Roya",
+  "company": "Student",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["Reactjs", "typescript", "Redux"],
+  "dietary_requirements": null,
+  "what_is_my_connection_to_javascript": "I'm a passionate Frontend developer , also very interested in UX and android Material Design,Want to learn more",
+  "what_can_i_contribute": "Maybe I could talk about UX design",
+  "tshirt": "W-S"
+}
