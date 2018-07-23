@@ -4,7 +4,7 @@
   "when": {
     "friday": false,
     "friday_party": true,
-    "saturday": false
+    "saturday": true
   },
   "tags": ["JavaScript", "TypeScript", "TDD", "Node.JS"],
   "dietary_requirements": "none",
