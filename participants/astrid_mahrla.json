@@ -1,0 +1,14 @@
+{
+  "name": "Astrid Mahrla",
+  "company": "adesso AG",
+  "when": {
+    "friday": false,
+    "friday_party": true,
+    "saturday": false
+  },
+  "tags": ["JavaScript", "TypeScript", "TDD", "Node.JS"],
+  "dietary_requirements": "none",
+  "what_is_my_connection_to_javascript": "I <3 JavaScript, doing almost everything in this language",
+  "what_can_i_contribute": "Node.JS performance in quasi embedded systems, some full-stack JS / TS experience - and a lot of enthusiasm :-)",
+  "tshirt": "W-S"  
+}
