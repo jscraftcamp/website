@@ -1,0 +1,14 @@
+{
+  "name": "Jonathan Prince",
+  "company": "Jonathan Prince",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["JavaScript", "NodeJS", "Ember"],
+  "dietary_requirements": "none",
+  "what_is_my_connection_to_javascript": "Javascript and I have been hanging out together for a while now, we get on pretty well since we are both a bit quirky...",
+  "what_can_i_contribute": "Discussions around coding style and practices, security, hacking, hardware...",
+  "tshirt": "M-L"  
+}
