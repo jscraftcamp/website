@@ -1,0 +1,14 @@
+{
+  "name": "Akos Polgar",
+  "company": "Freelancer",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": false
+  },
+  "tags": ["node.js", "GIS", "mongoDB", "linux"],
+  "dietary_requirements": "omnivore",
+  "what_is_my_connection_to_javascript": "In the last 2 years I'm working mainly with node.js and mongoDB. Formerly I worked a lot as a full stack dev, back then I used vanilla js, jQuery, ajax, coffeescript, node.js next to other non-related technologies. My master thesis was a research where I compared the performance of 2 Node.js apps which used different DBs. I have a hobby project where I'm using backbone.js",
+  "what_can_i_contribute": "I can make a presentation for the event about my experiences. For example, one of the following topics could work for me: 'Build Node.js apps to compare the performance of different DBs' or 'Rewrite Java code to Node.js' or 'use Node.js for CPU-heavy jobs'",
+  "tshirt": "I'm not sure (M-L or M-M 178cm 75kg)"
+}
