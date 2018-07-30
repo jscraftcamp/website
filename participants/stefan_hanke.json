@@ -1,0 +1,10 @@
+{
+  "name": "Stefan Hanke",
+  "when": {
+    "friday": false,
+    "friday_party": false,
+    "saturday": true
+  },
+  "what_is_my_connection_to_javascript": "Hate Love. Module Nightmares. Drowning in Details.",
+  "tshirt": "M-M"
+}
