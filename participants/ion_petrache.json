@@ -1,0 +1,13 @@
+{
+  "name": "Ion Petrache",
+  "company": "--",
+  "tags": ["Selenium", "NightwatchJS", "Puppeteer", "Docker"],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "what_is_my_connection_to_javascript": "End to end testing using Javascript",
+  "what_can_i_contribute": "Share experience on end to end testing using Javascript tools",
+  "tshirt": "M-L"
+}
