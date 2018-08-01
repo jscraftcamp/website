@@ -7,10 +7,10 @@
 	  "friday_party": false,
 	  "saturday": false
   },
-  "dietary_requirements": null,
+  "dietary_requirements": "none",
   "what_is_my_connection_to_javascript": "I have been working professionally with node.js since v0.6 aka early 2012. I now am the engineering manager for several software engineering teams at ProSiebenSat1 Digital, running 50+ /(micro|nano)?services/gi on Amazon Web Services",
   "what_can_i_contribute": "I have extensive experience in developing node.js services (and related technologies) that serve well beyond 100k concurrent users. I have worked with node.js as a developer and as an engineering manager and can share lessons learned and experiences gathered in the past six years of running node.js based microservices in a production environment (mostly on AWS). I have strong opinions on topics related to JavaScript and like to share and discuss those opinions with like- and different-minded persons.",
-  "tshirt": "L",
+  "tshirt": "M-L",
   "urls": {
     "github": "https://github.com/markusz"
   }
