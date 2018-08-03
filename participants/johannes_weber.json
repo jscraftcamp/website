@@ -1,0 +1,19 @@
+{
+  "name": "Johannes Weber",
+  "company": "Mayflower GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": false
+  },
+  "tags": ["JavaScript", "ES6", "Performance", "CRP", "ESNext", "React", "Angular"],
+  "dietary_requirements": "none",
+  "what_is_my_connection_to_javascript": "It ensures that I effort the living here in Munich",
+  "what_can_i_contribute": "Pratical experience, proactive input",
+  "tshirt": "M-XL",
+  "urls": {
+    "photo": "https://pbs.twimg.com/profile_images/877989442828587008/BoIJN1DU_400x400.jpg",
+    "homepage": "http://esnextnews.com",
+    "twitter": "https://twitter.com/jowe"
+  }
+}
