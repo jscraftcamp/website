@@ -1,0 +1,11 @@
+{
+  "name": "Shady Botros",
+  "company": "Scalable Capital",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "what_is_my_connection_to_javascript": "I work as a full-stack developer. Currently using React and have used NodeJS for smaller projects.",
+  "tshirt": "M-M"
+}
