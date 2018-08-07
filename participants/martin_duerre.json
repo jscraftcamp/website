@@ -1,0 +1,13 @@
+{
+  "name": "Martin Duerre",
+  "company": "DellEMC",
+  "tags": ["js_bambies"],
+  "when": {
+    "friday": true,
+    "friday_party": false,
+    "saturday": true
+  },
+  "what_is_my_connection_to_javascript": "Mostly fascinated bystander seeing the js hype train go by :) Done some web, alexa, automation stuff with js.",
+  "what_can_i_contribute": "Good listener, decent at asking questions (specially the ones that are really stupid)!",
+  "tshirt": "M-XL"
+}
