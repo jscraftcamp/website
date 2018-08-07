@@ -1,0 +1,17 @@
+{
+  "name": "Ines Akrap",
+  "company": "Netcentric",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["ES6", "Webpack", "HTTP2", "Angular", "Performance"],
+  "dietary_requirements": "none",
+  "what_is_my_connection_to_javascript": "In an open relationship for 3 years",
+  "what_can_i_contribute": "Discuss, learn and have some fun",
+  "tshirt": "W-M",
+  "urls": {
+    "twitter": "https://twitter.com/InesAkrap"
+  }
+}

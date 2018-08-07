@@ -1,18 +1,14 @@
 {
   "name": "Michael J. Zoidl",
   "company": "entwicklerstube",
-  "tags": [ "ES6", "React", "Redux", "Node", "TDD", "RethinkDB", "Babel", "pm2" ],
+  "tags": ["javascript", "node", "react", "react-native", "electron", "cli", "open source", "firebase", "netlify", "nextjs"],
   "when": {
-    "saturday": true,
-    "sunday": false
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
   },
-  "what_is_my_connection_to_javascript": "It's my daily business since more than three years, from pure node projects to big interface projects with react and redux under the hood. JS is life, JS is love.",
-  "what_can_i_contribute": "Wanna talk about deploying a node project with zero-downtime on digital-ocean or working with rethinkdb hosted on compose.io? 'Come to me my friend.",
-  "tshirt": "M-XL",
-  "urls": {
-    "photo": "https://avatars2.githubusercontent.com/u/528550?v=3&s=130",
-    "homepage": "https://entwicklerstube.com/",
-    "github": "https://github.com/michaelzoidl",
-    "twitter": "https://twitter.com/michaelzoidl"
-  }
+  "dietary_requirements": "Everything except parsnips :)",
+  "what_is_my_connection_to_javascript": "Live it, Love it",
+  "what_can_i_contribute": "Knowlege about nodejs on every platform with react(-native), open source things, command-line and experience with a ton of SaaS's",
+  "tshirt": "M-XL"  
 }

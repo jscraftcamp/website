@@ -1,23 +1,26 @@
 {
   "name": "js-craftcamp-website",
   "version": "1.0.0",
-  "description": "",
+  "description": "Website for the JSCC (jscraftcamp.org)",
   "main": "index.js",
-  "dependencies": {},
+  "engines": {
+    "node": ">= 6.6.0"
+  },
   "devDependencies": {
-    "hamjest": "^2.13.0",
-    "harp": "^0.20.3",
+    "hamjest": "^3.2.0",
+    "harp": "^0.25.0",
     "hashcode": "^1.0.3",
-    "mocha": "^3.0.2",
+    "mocha": "^5.1.1",
     "recursive-readdir-sync": "^1.0.6"
   },
   "scripts": {
-    "prebuild": "mkdir -p ./dist",
+    "prebuild": "mkdir ./dist",
     "build": "harp compile ./src ./dist; cp CNAME dist/; npm run 'build:participants.json'",
     "build:participants.json": "node scripts/concat-json.js ./participants dist/participants.json; cp ./dist/participants.json ./src/",
     "start": "harp server ./src",
     "test": "mocha test"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "David Losert <david.losert@virtual-identity.com>",
+  "license": "MIT",
+  "repository": "https://github.com/jscraftcamp/website.git"
 }

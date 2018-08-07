@@ -1,0 +1,14 @@
+{
+  "name": "Karthikeyan Palaniswamy",
+  "company": "DigitalSpital GmbH",
+  "when": {
+    "friday": false,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["passion", "fun", "dope"],
+  "dietary_requirements": "organic, vegetarian",
+  "what_is_my_connection_to_javascript": "I use JavaScript regularly for adding interactive to multi page websites but would like to gain more in depth understanding of JavaScript.",
+  "what_can_i_contribute": "Happy to help if needed",
+  "tshirt": "M-M"
+}

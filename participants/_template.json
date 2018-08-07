@@ -1,18 +1,14 @@
 {
   "name": "My Name",
   "company": "my company",
-  "tags": [],
   "when": {
-    "saturday": true,
-    "sunday": false
+    "friday": true,
+    "friday_party": true,
+    "saturday": false
   },
+  "tags": ["Java", "Script"],
+  "dietary_requirements": "vegan",
   "what_is_my_connection_to_javascript": "...",
   "what_can_i_contribute": "???",
-  "tshirt": "Sorry, no shirt available. T-shirts have already been ordered.",
-  "urls": {
-    "photo": "",
-    "homepage": "",
-    "github": "",
-    "twitter": ""
-  }
+  "tshirt": "/^(W|M)-(S|M|L|XL)$/"  
 }

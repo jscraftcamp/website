@@ -1,0 +1,27 @@
+<nav class="<%=public._data.baseColor %>">
+  <div class="nav-wrapper container">
+    <a href="/" class="brand-logo">JS CraftCamp</a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <% for(var i in public._data.navigationItems.main) { %>
+        <% var item = public._data.navigationItems.main[i] %>
+        <li><a href="<%= item.url %>" class="<%= item.cssClasses %>"><%= item.title %></a></li>
+      <% } %>
+      <li><a href="https://twitter.com/jscraftcamp"><i class="fa fa-twitter fa-fw"></i></a></li>
+      <li><a href="https://github.com/jscraftcamp/website"><i class="fa fa-github fa-fw"></i></a></li>
+    </ul>
+
+    <ul id="mobile-demo" class="side-nav">
+      <% for(var i in public._data.navigationItems.main) { %>
+      <% var item = public._data.navigationItems.main[i] %>
+        <li><a href="<%= item.url %>" class="<%= item.cssClasses %>"><%= item.title %></a></li>
+      <% } %>
+      <li>
+        <a class="dropdown-button-mobile" href="#!" data-activates="dropdown2016-mobile">Archive<i
+            class="material-icons right">arrow_drop_down</i></a>
+      </li>
+      <li><a href="https://twitter.com/jscraftcamp"><i class="fa fa-twitter fa-fw"></i></a></li>
+    </ul>
+  </div>
+</nav>

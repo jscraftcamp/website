@@ -1,16 +1,12 @@
 {
   "name": "Lukas Taegert",
-  "company": "TNG Technology GmbH",
-  "tags": ["testing", "performance", "pixijs", "tooling", "react", "tdd", "code retreat", "rxjs", "elm"],
+  "company": "TNG Technology Consulting GmbH",
   "when": {
-    "saturday": true,
-    "sunday": true
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
   },
-  "what_is_my_connection_to_javascript": "I have been working professionally in a modern react-redux-babel-webpack setup for about a year and I am passionate about anything JS in my private projects as well",
-  "what_can_i_contribute": "I could talk about my experiences with optimizing JS performance for the browser, some of our testing strategies we came up for a growing karma-mocha-webpack setup, and/or prepare some presentation/katas about pixi.js",
-  "tshirt": "M-L",
-  "urls": {
-    "photo": "https://avatars3.githubusercontent.com/u/12949268",
-    "github": "https://github.com/lukastaegert"
-  }
+  "what_is_my_connection_to_javascript": "Professionally I have been working on frontend applications both with React and AngularJS for three years. Privately I do a lot of open source work and since the end of last year I am acting co-maintainer of Rollup.js.",
+  "what_can_i_contribute": "Hands on sessions about Rollup.js, e.g. about the new runtime-free code-splitting features. A look behind the scenes if anyone is interested.",
+  "tshirt": "M-M"
 }

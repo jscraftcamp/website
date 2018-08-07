@@ -1,28 +1,14 @@
 {
   "name": "Jonathan Prince",
-  "company": "Mediasuite",
-  "tags": [
-    "nodejs",
-    "backend frameworks",
-    "electron",
-    "nodebots",
-    "node native addons",
-    "testing",
-    "productivity/workflow",
-    "security",
-    "es6",
-    "clean coding practices"
-  ],
+  "company": "Jonathan Prince",
   "when": {
-    "saturday": true,
-    "sunday": true
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
   },
-  "what_is_my_connection_to_javascript": "Full stack js dev, the love grows deeper when the browser doesn't get in the way...",
-  "what_can_i_contribute": "An attentive ear ready to be inspired?",
-  "urls": {
-    "photo": "https://avatars3.githubusercontent.com/u/2764625?v=3&s=466",
-    "homepage": "http://www.edgeofconfusion.com/",
-    "github": "https://github.com/JonathanPrince",
-    "twitter": "https://twitter.com/greatsage"
-  }
+  "tags": ["JavaScript", "NodeJS", "Ember"],
+  "dietary_requirements": "none",
+  "what_is_my_connection_to_javascript": "Javascript and I have been hanging out together for a while now, we get on pretty well since we are both a bit quirky...",
+  "what_can_i_contribute": "Discussions around coding style and practices, security, hacking, hardware...",
+  "tshirt": "M-L"  
 }

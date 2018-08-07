@@ -1,0 +1,13 @@
+{
+  "name": "Petar Milutinovic",
+  "company": "Netcentric",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "dietary_requirements": "",
+  "what_is_my_connection_to_javascript": "Working with javascript fulltime for more than 8 years now, and have love / hate weird relationship with it. Worked with most of the frameworks / libraries etc out there (even dojo long time ago, god forbid), rode hype trains multiple times, now settled down on being basic (ES6 and up) and getting stuff done without getting focused on CV development. Simple code, simple solutions, easy to read is my moto.",
+  "what_can_i_contribute": "I'm here for the free beer. And maybe talk about code, architecture, design, user experience, and scary topics like management and business",
+  "tshirt": "M-S"
+}

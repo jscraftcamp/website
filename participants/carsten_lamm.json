@@ -1,0 +1,13 @@
+{
+  "name": "Carsten Lamm",
+  "company": "kontextR",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "dietary_requirements": "Allergy: Soy / Nuts / Carrots",
+  "what_is_my_connection_to_javascript": "I started with javascript 8 years ago, use it mostly in the frontend. Sometimes even VanillaJS.",
+  "what_can_i_contribute": "component based UI (React/Inferno) - expertise in TDD, which I like to discuss - How I get started with NeoVim. - I could talk about Iframes and PostMessages - We could play with Bookmarklets and/or Chrome Extensions.",
+  "tshirt": "M-M"
+}

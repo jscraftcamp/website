@@ -1,14 +1,18 @@
 {
-  "name": "Jeff (Jewgenij) Steinhart",
-  "company": "self employed contractor",
-  "tags": [ "React.JS", "React Native", "Redux", "Mobile Apps" ],
+  "name": "Jewgenij Steinhart",
+  "company": "crypto*",
   "when": {
-    "saturday": true,
-    "sunday": true
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
   },
-  "what_is_my_connection_to_javascript": "My last project was with React.JS at Maxdome where I learned a lot of ES2015 and other JS stuff. I'm interested in React Native to whrite my own apps.",
-  "what_can_i_contribute": "I have some knowledge about React.JS and ES2015. I can be an entertaining person sometimes :)",
+  "tags": ["Typescript", "React", "Blockchain", "Ethereum", "Web3", "Solidity", "Crypto", "Bitcoin"],
+  "dietary_requirements": "organic, unprocessed, vegetables + meat, high fat + good coffee :)",
+  "what_is_my_connection_to_javascript": "I work as a JS developer",
+  "what_can_i_contribute": "discussing about blockchain + crypto",
+  "tshirt": "M-L",
   "urls": {
-    "homepage": "http://www.no-rep.de"
+    "photo": "https://secure.meetupstatic.com/photos/member/1/c/3/9/highres_266767225.jpeg",
+    "twitter": "https://twitter.com/jeffstei"
   }
 }

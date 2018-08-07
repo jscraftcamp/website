@@ -1,0 +1,15 @@
+{
+  "name": "Alessandro Vizin",
+  "company": "Valtech",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": [
+    "VueJS"
+  ],
+  "what_is_my_connection_to_javascript": "I have been frontend developer for 3 years but I intensively work with JS since last year. In the last months we discovered a fantastic framework called VueJS, but I would like to improve my comprehension of other patterns to develop more solid code.",
+  "what_can_i_contribute": "Maybe in sharing my experience as part of an agile team.",
+  "tshirt": "M-M"
+}

@@ -1,17 +1,13 @@
 {
   "name": "Vladimir Ivanov",
-  "company": "Infopunks GmbH",
-  "tags": ["angular", "react", "redux", "typescript"],
+  "company": "Social Sweethearts GmbH",
+  "tags": ["ReactJS", "AngularJS", "Django", "Docker"],
   "when": {
-    "saturday": true,
-    "sunday": true
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
   },
-  "what_is_my_connection_to_javascript": "full stack development",
-  "what_can_i_contribute": "passion for people and building software",
-  "tshirt": "M-M",
-  "urls": {
-    "photo": "https://secure.gravatar.com/avatar/1eda8d18284670adc0fe9085f769606b?size=400",
-    "github": "https://github.com/icu0755",
-    "twitter": "https://twitter.com/icu0755"
-  }
+  "what_is_my_connection_to_javascript": "Developing web applications using JavaScript for about 11 years. I am a big fan of ReactJS",
+  "what_can_i_contribute": "Share my experience and participate in discussions",
+  "tshirt": "M-M"
 }

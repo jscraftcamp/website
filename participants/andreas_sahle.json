@@ -1,0 +1,14 @@
+{
+  "name": "Andreas Sahle",
+  "company": "Wunder.io",
+  "tags": [],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "dietary_requirements": "none",
+  "what_is_my_connection_to_javascript": "I love javascript, it is the language I know best and would use to brush my teeth if that would make sense",
+  "what_can_i_contribute": "An open mind, a good amout of curiosity and may be some laughter",
+  "tshirt": "M-XL"  
+}

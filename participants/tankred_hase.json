@@ -1,16 +1,14 @@
 {
   "name": "Tankred Hase",
-  "company": "Freelancer",
-  "tags": [ "Security", "Crypto", "ES6", "React", "Angular", "Node" ],
+  "company": "Lightning Labs, Inc.",
+  "tags": [],
   "when": {
-    "saturday": true,
-    "sunday": true 
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
   },
-  "what_is_my_connection_to_javascript": "Interested in security and UX. Love building stuff using modern web tech.",
-  "urls": {
-    "photo": "https://pbs.twimg.com/profile_images/722002675630522368/-9YKi0OS.jpg",
-    "homepage": "https://tankredhase.com/",
-    "github": "https://github.com/tanx",
-    "twitter": "https://twitter.com/tankredhase"
-  }
+  "dietary_requirements": "vegetarian",
+  "what_is_my_connection_to_javascript": "Security, Privacy, Testing",
+  "what_can_i_contribute": "Security, React Native, Cross Platform",
+  "tshirt": "M-L"  
 }
