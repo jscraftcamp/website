@@ -1,0 +1,14 @@
+{
+  "name": "Axel Hodler",
+  "company": "YOPITER GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": [ "TDD", "Angular", "Testautomation" ],
+  "dietary_requirements": "none",
+  "what_is_my_connection_to_javascript": "Aside from backends using the Java ecosystem, I'm working on frontends which are using Angular. I focus on testautomation and use Node.js on the backend in my spare time",
+  "what_can_i_contribute": "Session on consumer driven contract testing, API evolution and continuous integration",
+  "tshirt": "M-L"
+}
