@@ -1,0 +1,11 @@
+{
+  "name": "Robert Müller",
+  "company": "Hetzner Online GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": false,
+    "saturday": false
+  },
+  "what_is_my_connection_to_javascript": "Mostly developing old fashioned Rails applications I'd like to dive more into JS",
+  "tshirt": "M-S"
+}
