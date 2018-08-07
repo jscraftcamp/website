@@ -1,0 +1,14 @@
+{
+  "name": "Ann-Kristin Krappe",
+  "company": "Virtual Identity AG",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": [],
+  "dietary_requirements": "vegan",
+  "what_is_my_connection_to_javascript": "I'm a frontend developer since about 6 and a half years at VI where I use javascript in my daily work. I'm curious to learn about new hot javascript stuff.",
+  "what_can_i_contribute": "Learn and discuss.",
+  "tshirt": "W-M"  
+}
