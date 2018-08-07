@@ -1,0 +1,14 @@
+{
+  "name": "Irena Reitz",
+  "company": "Peerigon GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": false,
+    "saturday": false
+  },
+  "tags": ["Java", "Script"],
+  "dietary_requirements": "vegetarian",
+  "what_is_my_connection_to_javascript": "I'm a working student @ Peerigon for almost 2 years now and doing my masters in computer science atm.",
+  "what_can_i_contribute": "coffee, questions and a high interest in chats about inclusion in tech",
+  "tshirt": "W-M"  
+}
