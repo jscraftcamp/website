@@ -1,0 +1,17 @@
+{
+  "name": "Maruf Siddiqui",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": false
+  },
+  "tags": [
+    "nodejs",
+    "es6",
+    "react",
+    "redux"
+  ],
+  "dietary_requirements": "No pork",
+  "what_is_my_connection_to_javascript": "Fullstack Javascript Engineer focusing on front-end engineering. jQuery -> Backbone -> Angular -> React -> ?",
+  "tshirt": "M-M"
+}
