@@ -1,14 +1,14 @@
 {
-  "name": "Roya",
-  "company": "Student",
+  "name": "Roya Tanha",
+  "company": "Freelancer",
   "when": {
     "friday": true,
     "friday_party": true,
     "saturday": true
   },
-  "tags": ["Reactjs", "typescript", "Redux"],
-  "dietary_requirements": null,
-  "what_is_my_connection_to_javascript": "I'm a passionate Frontend developer , also very interested in UX and android Material Design,Want to learn more",
-  "what_can_i_contribute": "Maybe I could talk about UX design",
+  "tags": ["typescript", "react", "redux"],
+  "dietary_requirements": "none",
+  "what_is_my_connection_to_javascript": "I'm a passionate Frontend developer, Jquery, Sass , Reactjs with Typescript ",
+  "what_can_i_contribute": "UX and UI design",
   "tshirt": "W-S"
 }
