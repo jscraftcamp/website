@@ -1,7 +1,7 @@
 {
   "name": "Oleksandr Fedotov",
   "company": "Netlight Consulting",
-  "tags": ["react", "frontend architecture", "function programming", "UX", "TDD"],
+  "tags": ["react", "frontend architecture", "functional programming", "UX", "TDD"],
   "when": {
 	  "friday": true,
 	  "friday_party": true,
