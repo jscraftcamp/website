@@ -1,0 +1,12 @@
+{
+  "name": "Stefan Sauerleute",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["JavaScript", "Vue.js", "React"],
+  "dietary_requirements": "none",
+  "what_is_my_connection_to_javascript": "I'am a beginner in JavaScript. So for me all things are of interest to newbies. So far, I am working as a backend developer with Java, but in the future I also want to work as a frontend developer.",
+  "tshirt": "M-M"
+}
