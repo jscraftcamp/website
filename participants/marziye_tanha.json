@@ -1,0 +1,14 @@
+{
+  "name": "Roya Tanha",
+  "company": "Freelancer",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["typescript", "react", "redux"],
+  "dietary_requirements": "none",
+  "what_is_my_connection_to_javascript": "I'm a passionate Frontend developer, Jquery, Sass , Reactjs with Typescript ",
+  "what_can_i_contribute": "UX and UI design",
+  "tshirt": "W-S"
+}
