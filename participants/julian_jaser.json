@@ -1,0 +1,14 @@
+{
+    "name": "Julian Jaser",
+    "when": {
+      "friday": false,
+      "friday_party": true,
+      "saturday": true
+    },
+    "tags": ["Javascript", "IoT", "Node.js"],
+    "dietary_requirements": "",
+    "what_is_my_connection_to_javascript": "I am hobby developer and I am mostly writing small applications with node.js backend to make my life easier.",
+    "what_can_i_contribute": "I do not know yet, what a javascript-loving chemist can contribute but maybe I have another point of view on some things.",
+    "tshirt": "M-M"
+  }
+  
