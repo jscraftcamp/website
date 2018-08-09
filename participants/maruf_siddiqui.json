@@ -2,7 +2,7 @@
   "name": "Maruf Siddiqui",
   "when": {
     "friday": true,
-    "friday_party": true,
+    "friday_party": false,
     "saturday": false
   },
   "tags": [
