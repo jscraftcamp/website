@@ -2,8 +2,8 @@
   "name": "Markus Heer",
   "company": "byteleaf GmbH",
   "when": {
-    "friday": true,
-    "friday_party": true,
+    "friday": false,
+    "friday_party": false,
     "saturday": true
   },
   "tags": ["Vue.js", "React"],
