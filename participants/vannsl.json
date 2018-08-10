@@ -1,0 +1,15 @@
+{
+  "name": "Vanessa Böhner",
+  "company": "vannsl.io",
+  "tags": [
+    "Vue"
+  ],
+  "when": {
+    "friday": true,
+    "friday_party": false,
+    "saturday": false
+  },
+  "what_is_my_connection_to_javascript": "I've been a frontend/web/fullstack/whatever developer for about 4 years - currently focused on working with Vue",
+  "what_can_i_contribute": "Working with Vue.js (vue, vue-cli, vuex, jest, vue-test-utils, webpack)",
+  "tshirt": "W-S"
+}
