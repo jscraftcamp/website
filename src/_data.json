@@ -30,6 +30,10 @@
     ],
     "archive": [
       {
+        "url": "/info2018",
+        "title": "2018 - Home"
+      },
+      {
         "url": "/photos2018",
         "title": "2018 - Photos"
       },
@@ -378,7 +382,7 @@
     {
       "url": "img/event_photos/2017/DSCF1802.jpg"
     }
-  ],  
+  ],
   "photos2018": [
     {
       "url": "img/event_photos/2018/2.jpg"
