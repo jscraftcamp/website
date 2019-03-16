@@ -5,13 +5,13 @@
     margin-left: auto;
     margin-right: auto;
     width: 300px;
+    margin-top: 4em;
   }
 
   #staticLogo {
     position: relative;
     width: 300px;
     height: 300px;
-    margin-top: 4em;
   }
 
   @media only screen and (max-device-width: 680px) {
@@ -75,12 +75,15 @@
 </style>
 
 <div id="logoContainer" class="container logo centered">
-  <div id="staticLogo"></div>
+  <div style="display: flex; align-items: left;">
+    <div id="staticLogo"></div>
+    <div>*</div>
+  </div>
   <script>
     var el = document.getElementById('staticLogo');
     bonsai.run(el, 'https://jscraftcamp.github.io/logo/src/static-logo.js', {
-      height: el.style.height,
-      width: el.style.width,
+      height: 300,
+      width: 300,
       framerate: 50
     });
     var logoClassList = document.getElementById('logoContainer').classList;
@@ -95,11 +98,17 @@
   </script>
 </div>
 
+<style type="text/css">
+  .vote a {
+    text-decoration: underline;
+  }
+</style>
 <div class="container">
   <div class="row">
     <div class="col s12 m12">
+      <div class="vote center">* <a href="https://twitter.com/JSCraftCamp/status/1106878975589138434">Please vote for the color!</a></div>
       <h1 class="header center <%= public._data.baseColor %>-text">JSCraftCamp 2019</h1>
-      <h3 class="header center">Will return to Munich in July 19-20!</h3>
+      <h3 class="header center">Will return to Munich, July 19th - 20th 2019!</h3>
       <h3 class="header center light">A BarCamp about JavaScript and Crafting Software</h3>
       <h3 class="header center light"><a href="/photos2018">Impressions from 2018</a></h3>
     </div>
