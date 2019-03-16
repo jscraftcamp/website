@@ -1,5 +1,5 @@
 a {
-  color: #ff9800;
+  color: var(--main-color);
 }
 @media only screen and (max-device-width: 680px) {
   h1 {
