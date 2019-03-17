@@ -1,6 +1,10 @@
 {
   "baseColor": "colorOfTheYear",
   "pageTitle": "JSCraftCamp - 19+20 July 2019 in Munich",
+  "colorVoting": {
+    "active": true,
+    "url": "https://twitter.com/JSCraftCamp/status/1106878975589138434"
+  },
   "navigationItems": {
     "main": [
       {
