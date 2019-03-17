@@ -1,11 +1,8 @@
 body {
-  background-color: #789;
+  background-color: #cea0a1;
 }
 a {
   color: var(--main-color);
-}
-nav a, nav ul a {
-  text-shadow: 1px 1px 4px black;
 }
 @media only screen and (max-device-width: 680px) {
   h1 {
@@ -155,7 +152,7 @@ footer div {
 /* the special colors */
 
 :root {
-  --main-color: #ececec;
+  --main-color: #393d42;
 }
 
 
@@ -164,7 +161,7 @@ footer div {
 }
 
 .colorOfTheYear-text {
-  color: var(--main-color) !important
+  color: white !important
 }
 
 .colorOfTheYear.lighten-5 {
