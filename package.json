@@ -7,10 +7,9 @@
     "node": ">= 6.6.0"
   },
   "devDependencies": {
-    "hamjest": "^3.2.1",
-    "harp": "^0.29.0",
-    "hashcode": "^1.0.3",
-    "mocha": "^5.1.1",
+    "hamjest": "^3.2.3",
+    "harp": "git+https://github.com/marcoemrich/harp.git",
+    "mocha": "^6.0.2",
     "recursive-readdir-sync": "^1.0.6"
   },
   "scripts": {
