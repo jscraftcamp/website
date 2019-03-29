@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "hamjest": "^3.2.3",
-    "harp": "git+https://github.com/marcoemrich/harp.git",
+    "harp": "^0.30.0",
     "mocha": "^6.0.2",
     "recursive-readdir-sync": "^1.0.6"
   },
