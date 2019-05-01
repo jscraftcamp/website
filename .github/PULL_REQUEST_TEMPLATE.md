@@ -5,4 +5,4 @@ I would like to register for JS CraftCamp.
 - [ ] I agree that the data I enter in the registration can be used for running the event, e.g. make a name tag, count me as participant. I acknowledge that my data are public on github.
 
 Are you from a sponsoring company?
-- [ ] I am from company ?????
+- [ ] Yes, I am from company ?????
