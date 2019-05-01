@@ -4,7 +4,7 @@
   "description": "Website for the JSCC (jscraftcamp.org)",
   "main": "index.js",
   "engines": {
-    "node": ">= 6.6.0"
+    "node": ">= 10.0.0"
   },
   "devDependencies": {
     "hamjest": "^3.2.3",
