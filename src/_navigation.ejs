@@ -3,7 +3,7 @@
     <a href="/" class="brand-logo">JS CraftCamp</a>
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
+    <ul id="nav-desktop" class="right hide-on-med-and-down">
       <% for(var i in public._data.navigationItems.main) { %>
         <% var item = public._data.navigationItems.main[i] %>
         <li><a href="<%= item.url %>" class="<%= item.cssClasses %>"><%= item.title %></a></li>
