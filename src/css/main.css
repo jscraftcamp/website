@@ -4,7 +4,7 @@ body {
 a {
   color: var(--main-color);
 }
-nav a, nav ul a {
+nav #nav-desktop a, nav #nav-desktop ul a {
   text-shadow: 1px 1px 4px black;
 }
 @media only screen and (max-device-width: 680px) {

@@ -4,12 +4,12 @@
   "description": "Website for the JSCC (jscraftcamp.org)",
   "main": "index.js",
   "engines": {
-    "node": ">= 6.6.0"
+    "node": ">= 10.0.0"
   },
   "devDependencies": {
     "hamjest": "^3.2.3",
     "harp": "^0.30.0",
-    "mocha": "^6.0.2",
+    "mocha": "^6.1.4",
     "recursive-readdir-sync": "^1.0.6"
   },
   "scripts": {
