@@ -82,7 +82,7 @@ code {
 }
 
 .card .card-image img {
-  top: -25px;
+  top: 0;
 }
 
 .card .card-tags-container {
