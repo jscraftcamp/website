@@ -74,6 +74,13 @@ describe("Participants JSON file", () => {
       it("vegetarian must be boolean", () => {
           assert.equal(typeof object.vegetarian, "boolean", "'vegetarian' must be a boolean");
       });
+
+      it("may contain a twitter handle", () => {
+        if(typeof object.twitter !== "undefined") {
+            assert.equal(typeof object.twitter, "string", "'twitter' must be of type string");
+            assert.ok(/^[a-z_]{1}[a-z0-9_]{0,14}$/i.test(object.twitter), "'twitter' must be a valid twitter handle");
+        }
+      });
     });
   });
 });
