@@ -1,0 +1,16 @@
+{
+  "name": "Philip Saa",
+  "company": "compose.us GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["JavaScript", "React", "Storybook"],
+  "vegan": false,
+  "vegetarian": true,
+  "allergies": "none",
+  "what_is_my_connection_to_javascript": "ActionScript",
+  "what_can_i_contribute": "Anything within my capacity",
+  "tshirt": "M-XL"
+}
