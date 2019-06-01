@@ -61,10 +61,18 @@ describe("Participants JSON file", () => {
         }
       });
 
-      it("may contain dietary requirements", () => {
-          if(typeof object.dietary_requirements !== "undefined") {
-              assert.equal(typeof object.dietary_requirements, "string", "'dietary_requirements must be a string'");
+      it("may contain `allergies`", () => {
+          if(typeof object.allergies !== "undefined") {
+              assert.equal(typeof object.allergies, "string", "'allergies' must be a string");
           }
+      });
+
+      it("vegan must be boolean", () => {
+          assert.equal(typeof object.vegan, "boolean", "'vegan' must be a boolean");
+      });
+
+      it("vegetarian must be boolean", () => {
+          assert.equal(typeof object.vegetarian, "boolean", "'vegetarian' must be a boolean");
       });
     });
   });
