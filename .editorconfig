@@ -9,7 +9,7 @@ indent_size=4
 indent_style=space
 indent_size=2
 
-[{*.html,*.htm,*.ejs}]
+[{*.html,*.htm,*.ejs,*.js}]
 indent_style=space
 indent_size=2
 
