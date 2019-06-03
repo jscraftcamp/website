@@ -1,0 +1,16 @@
+{
+  "name": "Oren Aksakal",
+  "company": "Oracle",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["js", "html", "css", "reactjs"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I'm front-end developer with nice js skills and a bit of reactjs. Who is looking forward to learn more",
+  "what_can_i_contribute": "I would like to attend as a guest only this time, but promise I will be speaking next year :) ",
+  "tshirt": "M-M"
+}
