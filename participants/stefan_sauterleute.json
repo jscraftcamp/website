@@ -1,0 +1,16 @@
+{
+  "name": "Stefan Sauterleute",
+  "company": "byteleaf GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["any", "tag", "you like"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I'm using JS/TS for Angular and node.js",
+  "what_can_i_contribute": "Not so much, but a little bit of Angular",
+  "tshirt": "M-L"
+}
