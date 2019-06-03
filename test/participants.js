@@ -61,6 +61,12 @@ describe("Participants JSON file", () => {
         }
       });
 
+      it('must contain tags', () => {
+        assert.ok('tags' in object);
+        assert.ok(Array.isArray(object.tags));
+        assert.ok(object.tags.length > 0);
+      });
+
       it("may contain `allergies`", () => {
           if(typeof object.allergies !== "undefined") {
               assert.equal(typeof object.allergies, "string", "'allergies' must be a string");
