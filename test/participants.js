@@ -1,7 +1,7 @@
 var assert = require("assert");
 var fs = require("fs");
 var path = require("path");
-var recursiveReaddirSync = require('recursive-readdir-sync')
+var recursiveReaddirSync = require('recursive-readdir-sync');
 
 describe("Participants JSON file", () => {
   var srcdir = "./participants";
