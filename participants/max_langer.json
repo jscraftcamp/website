@@ -1,0 +1,16 @@
+{
+  "name": "Max Langer",
+  "company": "byteleaf GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["Vue", "React", "GraphQL", "CSS"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "none",
+  "what_is_my_connection_to_javascript": "Daily work and favourite technology",
+  "what_can_i_contribute": "I would like to learn something about modern frontend architecture with modern JavaScript libraries",
+  "tshirt": "M-M"
+}
