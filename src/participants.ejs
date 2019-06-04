@@ -69,7 +69,7 @@ window.onload = function() {
   });
   
   Handlebars.registerHelper('taglist', function(listItems) {
-    return listItems ? listItems.map(tag => `#${tag}`).join(' ') : '';
+    return listItems ? listItems.map(tag => `#${ Handlebars.Utils.escapeExpression(tag) }`).join(' ') : '';
   });
 
 };
