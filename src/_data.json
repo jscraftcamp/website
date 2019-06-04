@@ -519,14 +519,14 @@
       "email": "m.emrich@webmasters.de"
     },
     {
-      "name": "Oleksandr Fedotov",
-      "photo": "oleksandr.jpg",
-      "email": "oleksandr.fedotov@netlight.com"
-    },
-    {
       "name": "Marc Emmanuel",
       "photo": "marc.jpg",
       "email": "marc.emmanuel@virtual-identity.com"
+    },
+    {
+      "name": "Sebastian Frerichs",
+      "photo": "",
+      "email": "sebastian.frerichs@codecentric.de"
     }
   ]
 }

@@ -1,7 +1,7 @@
 var assert = require("assert");
 var fs = require("fs");
 var path = require("path");
-var recursiveReaddirSync = require('recursive-readdir-sync')
+var recursiveReaddirSync = require('recursive-readdir-sync');
 
 describe("Participants JSON file", () => {
   var srcdir = "./participants";
@@ -61,6 +61,12 @@ describe("Participants JSON file", () => {
         }
       });
 
+      it('must contain tags', () => {
+        assert.ok('tags' in object);
+        assert.ok(Array.isArray(object.tags));
+        assert.ok(object.tags.length > 0);
+      });
+
       it("may contain `allergies`", () => {
           if(typeof object.allergies !== "undefined") {
               assert.equal(typeof object.allergies, "string", "'allergies' must be a string");
@@ -73,6 +79,13 @@ describe("Participants JSON file", () => {
 
       it("vegetarian must be boolean", () => {
           assert.equal(typeof object.vegetarian, "boolean", "'vegetarian' must be a boolean");
+      });
+
+      it("may contain a twitter handle", () => {
+        if(typeof object.twitter !== "undefined") {
+            assert.equal(typeof object.twitter, "string", "'twitter' must be of type string");
+            assert.ok(/^[a-z_]{1}[a-z0-9_]{0,14}$/i.test(object.twitter), "'twitter' must be a valid twitter handle");
+        }
       });
     });
   });
