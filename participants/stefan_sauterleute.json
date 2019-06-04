@@ -6,11 +6,11 @@
     "friday_party": true,
     "saturday": true
   },
-  "tags": ["any", "tag", "you like"],
+  "tags": ["GraphQL", "node.js", "microservice", "Angular", "React", "Vue"],
   "vegan": false,
   "vegetarian": false,
   "allergies": "",
   "what_is_my_connection_to_javascript": "I'm using JS/TS for Angular and node.js",
-  "what_can_i_contribute": "Not so much, but a little bit of Angular",
+  "what_can_i_contribute": "Functional programming, Angular (Authentification etc), node.js with GraphQL, a lot about Docker, RachnerOS, OpenShift",
   "tshirt": "M-L"
 }
