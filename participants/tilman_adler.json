@@ -6,7 +6,7 @@
     "friday_party": true,
     "saturday": true
   },
-  "tags": ["javascript", "typescript", "angular", "<script>alert('hello world')</script>"],
+  "tags": ["javascript", "typescript", "angular"],
   "vegan": false,
   "vegetarian": false,
   "allergies": "",
