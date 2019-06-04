@@ -6,7 +6,7 @@
     "friday_party": true,
     "saturday": true
   },
-  "tags": ["TypeScript", "Cypress", "Serverless"],
+  "tags": ["typescript", "cypress", "serverless", "angular", "nestjs"],
   "vegan": false,
   "vegetarian": false,
   "allergies": "null",
