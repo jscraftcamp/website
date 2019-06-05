@@ -1,0 +1,17 @@
+{
+  "name": "Göker Acar",
+  "company": "Sixt",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["i", "dont", "like", "tags", "sorry"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "lactose",
+  "what_is_my_connection_to_javascript": "Using ExtJs on daily basis, user of different JS frameworks as JQuery",
+  "what_can_i_contribute": "I can bring you some good mood",
+  "tshirt": "M-M",
+  "twitter": "handle"
+}
