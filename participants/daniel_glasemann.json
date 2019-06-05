@@ -1,0 +1,15 @@
+{
+  "name": "Daniel Glasemann",
+  "company": "correct.",
+  "when": {
+    "friday": false,
+    "friday_party": false,
+    "saturday": true
+  },
+  "tags": ["agile startup"],
+  "vegan": false,
+  "vegetarian": false,
+  "what_is_my_connection_to_javascript": "My startup is looking to hire amazing JS craftspeople",
+  "what_can_i_contribute": "A fun job opportunity for JS developers",
+  "twitter": "correct_app"
+}
