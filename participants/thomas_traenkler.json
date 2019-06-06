@@ -1,31 +1,25 @@
 {
-    "name": "Thomas Tränkler",
-    "company": "Interfacers",
-    "email": "jscraftcamp@thomas.traenkler.com",
-    "tags": [
-        "react",
-        "react-native",
-        "node",
-        "typescript",
-        "flow",
-        "react-native-web",
-        "Web Assembly",
-        "Next.js",
-        "GraphQL"
-    ],
-    "when": {
-        "friday": true,
-        "friday_party": true,
-        "saturday": true
-    },
-    "dietary_requirements": "Pizza only :)",
-    "what_is_my_connection_to_javascript": "Fullstack Javascript & React/Native developer for the last 2 years, interested in universal rendering for web, desktop, and mobile.",
-    "what_can_i_contribute": "Positive spirit towards and experience with progressive ideas and frameworks.",
-    "tshirt": "M-M",
-    "urls": {
-        "photo": "https://avatars3.githubusercontent.com/u/347722?v=3&s=460",
-        "homepage": "http://interfacers.de",
-        "github": "https://github.com/ttraenkler",
-        "twitter": "https://twitter.com/ttraenkler"
-    }
+  "name": "Thomas Tränkler",
+  "company": "Interfacers",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": [
+    "webassembly",
+    "typescript",
+    "react",
+    "node",
+    "graphql",
+    "entropic",
+    "serverless"
+  ],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Disliked its shortcomings since '96, changed my mind when transpilers changed the game about 5 years ago. Now developing full time with JS / Typescript as a freelancer for about 5 years. Fan of Assemblyscript.",
+  "what_can_i_contribute": "Share JSConf EU impressions, talk about the future of React or Webassembly ",
+  "tshirt": "M-M",
+  "twitter": "ttraenkler"
 }
