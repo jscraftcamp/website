@@ -1,0 +1,27 @@
+{
+  "name": "Dejan Ranisavljevic",
+  "company": "HolidayCheck AG",
+  "when": {
+    "friday": true,
+    "friday_party": false,
+    "saturday": true
+  },
+  "tags": [
+    "javascript",
+    "react",
+    "functional programming",
+    "ocaml",
+    "tdd",
+    "fontend architecture",
+    "design systems",
+    "micro frontends",
+    "nixos",
+    "immutable dotfiles"
+  ],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "none",
+  "what_is_my_connection_to_javascript": "I have been doing web development for decade now, and Javascript is my daily driver.",
+   "what_can_i_contribute": "I have few interests i would like to talk and share about like state of css in js and animations, evolving frontend architecture, functional programming and different languages, development environments and reproducible OS, lets see where we go this year...",
+  "tshirt": "M-XL"
+}
