@@ -1,20 +1,16 @@
 {
   "name": "Carlo Jeske",
   "company": "SC-Networks",
-  "tags": ["react", "TypeScript", "tdd", "es6"],
   "when": {
     "friday": true,
     "friday_party": true,
     "saturday": true
   },
-  "email": "jscraftcamp@webentwickler2-0.de",
-  "what_is_my_connection_to_javascript": "I'm a js guy for half of my lifetime",
-  "what_can_i_contribute": "Building frameworks/libraries with beautiful apis",
-  "tshirt": "M-M",
-  "urls": {
-    "photo": "https://snew.io/me.jpg",
-    "homepage": "https://snew.io",
-    "github": "https://github.com/plusgut",
-    "twitter": "https://twitter.com/plusgut"
-  }
+  "tags": ["JavaScript", "TypeScript", "immutability", "TDD"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I love and hate js at the same time.",
+  "what_can_i_contribute": "I want to do a session on how to simulate chains of DOM-Events, and how they are depending on each other.",
+  "tshirt": "M-L"  
 }

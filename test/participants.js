@@ -1,7 +1,7 @@
 var assert = require("assert");
 var fs = require("fs");
 var path = require("path");
-var recursiveReaddirSync = require('recursive-readdir-sync')
+var recursiveReaddirSync = require('recursive-readdir-sync');
 
 describe("Participants JSON file", () => {
   var srcdir = "./participants";
@@ -22,14 +22,7 @@ describe("Participants JSON file", () => {
         assert.equal(typeof object.name, "string", "'name' must be of type string");
         assert.ok(object.name.trim().length > 0, "'name' must not be empty");
       });
-
-      it("may contain a photo URL", () => {
-        if(typeof object.urls.photo !== "undefined") {
-          assert.equal(typeof object.urls.photo, "string", "'urls.photo' must be of type string");
-          assert.ok(object.urls.photo.startsWith("http"), "'urls.photo' must be an URL");
-        }
-      });
-
+    
       it("may contain a company name", () => {
         if(typeof object.company !== "undefined") {
           assert.equal(typeof object.company, "string", "'company' must be of type string");
@@ -68,42 +61,31 @@ describe("Participants JSON file", () => {
         }
       });
 
-      it("must contain at least one tag", () => {
-        assert.ok(typeof object.tags !== "undefined", "'tags' is mandatory");
-        assert.ok(Array.isArray(object.tags), "'tags' must be an array");
-        assert.ok(object.tags.length >= 1, 'minumum 1 tag');
-        object.tags.forEach(item => {
-            assert.equal(typeof item, "string", "Each item in 'tags' must be of type string");
-            assert.ok(item.trim().length > 0, "Each item in 'tags' must not be empty");
-            assert.ok(item.indexOf(',') === -1, "Tags can not contain commas - each tag must be an own element within the array");
-        });
+      it('must contain tags', () => {
+        assert.ok('tags' in object);
+        assert.ok(Array.isArray(object.tags));
+        assert.ok(object.tags.length > 0);
       });
 
-      it("may contain additional URLs", () => {
-        if(typeof object.urls.homepage !== "undefined") {
-          assert.equal(typeof object.urls.homepage, "string", "'urls.homepage' must be of type string");
-          assert.ok(object.urls.homepage.startsWith("http"), "'urls.homepage' must be an URL");
-        }
-        if(typeof object.urls.github !== "undefined") {
-          assert.equal(typeof object.urls.github, "string", "'urls.github' must be of type string");
-          assert.ok(object.urls.github.startsWith("http"), "'urls.github' must be an URL");
-        }
-        if(typeof object.urls.twitter !== "undefined") {
-          assert.equal(typeof object.urls.twitter, "string", "'urls.twitter' must be of type string");
-          assert.ok(object.urls.twitter.startsWith("http"), "'urls.twitter' must be an URL");
-        }
-      });
-
-      it("may contain the E-Mail", () => {
-          if(typeof object.email !== "undefined") {
-              assert.equal(typeof object.email, "string", "'email must be a string'");
+      it("may contain `allergies`", () => {
+          if(typeof object.allergies !== "undefined") {
+              assert.equal(typeof object.allergies, "string", "'allergies' must be a string");
           }
       });
 
-      it("may contain dietary requirements", () => {
-          if(typeof object.dietary_requirements !== "undefined") {
-              assert.equal(typeof object.dietary_requirements, "string", "'dietary_requirements must be a string'");
-          }
+      it("vegan must be boolean", () => {
+          assert.equal(typeof object.vegan, "boolean", "'vegan' must be a boolean");
+      });
+
+      it("vegetarian must be boolean", () => {
+          assert.equal(typeof object.vegetarian, "boolean", "'vegetarian' must be a boolean");
+      });
+
+      it("may contain a twitter handle", () => {
+        if(typeof object.twitter !== "undefined") {
+            assert.equal(typeof object.twitter, "string", "'twitter' must be of type string");
+            assert.ok(/^[a-z_]{1}[a-z0-9_]{0,14}$/i.test(object.twitter), "'twitter' must be a valid twitter handle");
+        }
       });
     });
   });

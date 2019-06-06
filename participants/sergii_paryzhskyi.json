@@ -1,18 +1,16 @@
 {
-  "name": "Sergii Paryzhskyi",
-  "company": "HolidayCheck",
-  "tags": ["functional programming", "tdd", "software craftsmanship"],
-  "when": {
-    "friday": true,
-    "friday_party": true,
-    "saturday": false
-  },
-  "email": "parizhskiy@gmail.com",
-  "dietary_requirements": "none",
-  "what_is_my_connection_to_javascript": "Using it daily @ work",
-  "what_can_i_contribute": "idk yet",
-  "tshirt": "M-L",
-  "urls": {
-    "github": "https://github.com/HeeL"
+    "name": "Sergii Paryzhskyi",
+    "company": "HolidayCheck",
+    "when": {
+      "friday": true,
+      "friday_party": true,
+      "saturday": true
+    },
+    "tags": ["JavaScript", "NodeJS", "ReactJS", "TypeScript", "Functional Programming"],
+    "vegan": false,
+    "vegetarian": false,
+    "allergies": "",
+    "what_is_my_connection_to_javascript": "Working on Front- and Backend on a daily basis",
+    "what_can_i_contribute": "Give a talk on a topic listed in tags",
+    "tshirt": "M-L"
   }
-}

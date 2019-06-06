@@ -1,21 +1,17 @@
 {
-          "name": "Andreas Sahle",
-          "company": "Wunder Germany",
-          "email": "andreas.sahle@wunder.io",
-          "tags": [ "vanillaJS", "elasticsearch", "react" ],
-          "when": {
-            "friday": true,
-            "friday_party": true,
-            "saturday": true
-          },
-          "dietary_requirements": "none",
-          "what_is_my_connection_to_javascript": "I work as a lead developer in a big variety of projects from website to web application, a lot of them have Drupal as a backend.",
-          "what_can_i_contribute": "I am eager to learn new things and to share my knowledge. I am friendly, open minded and like to tinker, hack and discuss",
-          "tshirt": "M-XL",
-          "urls": {
-            "photo": "https://wunder.io/de/sites/default/files/Profilfoto%20Sahle.jpg",
-            "homepage": "https://wunder.io",
-            "github": "https://github.com/pixelmord",
-            "twitter": "https://twitter.com/pixelmord"
-          }
-        }
+  "name": "Andreas Sahle",
+  "company": "Publicis Sapient",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["functional", "webcomponents", "without bloat", "Typescript", "MicroFrontends", "AMA"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "NULL, except maybe jQueryUI",
+  "what_is_my_connection_to_javascript": "I will name my first doughter 'Javascript', however to not completely ruin her life before it even began, I might obfuscate that and go with 'Jess' or just call her 'Elm' or 'Reason' to show her love and let her know that she is a wonderful snowflake.",
+  "what_can_i_contribute": "I will talk and I will listen. And if that fails, I can always shut up and help carry the heavy stuff from front to back. 💪",
+  "tshirt": "M-XL",
+  "twitter": "pixelmord"
+}

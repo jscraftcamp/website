@@ -1,27 +1,16 @@
 {
   "name": "Ahmed Farahat",
-  "company": "3Megawatt GmbH",
-  "email": "farahat80@gmail.com",
-  "tags": [
-    "React",
-    "Redux",
-    "TDD",
-    "ES6",
-    "Webpack"
-  ],
+  "company": "3Megawatt",
   "when": {
     "friday": true,
     "friday_party": true,
     "saturday": true
   },
-  "dietary_requirements": "none",
-  "what_is_my_connection_to_javascript": "I started developing with Javascript since the early days of Jquery, lately focusing on React and very interested in Redux.",
-  "what_can_i_contribute": "Interested in discussions and workshops about React/Redux",
-  "tshirt": "M-S",
-  "urls": {
-    "photo": "http://tutorialshub.net/wp-content/uploads/2015/10/me.jpg",
-    "homepage": "http://tutorialshub.net/",
-    "github": "https://github.com/farahat80",
-    "twitter": "https://twitter.com/farahat80"
-  }
+  "tags": ["JavaScript", "React", "TDD", "Software Design"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I've been using javascript on daily basis for the last 5 years.",
+  "what_can_i_contribute": "Not sure yet, but definitly asking many questions.",
+  "tshirt": "M-S"
 }

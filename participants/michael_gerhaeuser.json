@@ -1,19 +1,23 @@
 {
-  "name": "Michael Gerhäuser",
+  "name": "Michael Gerhaeuser",
   "company": "Method Park",
-  "tags": ["es8", "typescript", "fp", "react", "node", "math", "computer graphics"],
   "when": {
     "friday": true,
     "friday_party": true,
     "saturday": true
   },
-  "email": "michael.gerhaeuser@gmail.com",
-  "dietary_requirements": "none",
-  "what_is_my_connection_to_javascript": "js dev for 10+ years",
-  "what_can_i_contribute": "I'm interested in discussing new JS/web features like generators, async/await and wasm; exchange experiences with end2end tests.",
-  "tshirt": "M-XL",
-  "urls": {
-    "homepage": "http://methodpark.de",
-    "github": "https://github.com/migerh"
-  }
+  "tags": [
+    "es2019",
+    "typescript",
+    "react",
+    "node",
+    "rust",
+    "webassembly"
+  ],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "none",
+  "what_is_my_connection_to_javascript": "js & web dev for 10+ years",
+  "what_can_i_contribute": "Share my experience with WebAssembly and Rust. Discuss JS in general, especially the recently added and upcoming features.",
+  "tshirt": "M-XL"
 }

@@ -1,20 +1,15 @@
 {
   "name": "Agnes Köhler",
-  "company": "codecentric AG",
-  "tags": ["games", "education"],
+  "company": "codecentric",
   "when": {
     "friday": true,
-    "friday_party": true,
+    "friday_party": false,
     "saturday": true
   },
-  "email": "koehler.agnes@gmail.com",
-  "dietary_requirements": "none",
-  "what_is_my_connection_to_javascript": "I'm curious to learn more about it",
-  "what_can_i_contribute": "curiosity",
-  "tshirt": "W-M",
-  "urls": {
-    "homepage": "http://experimentation.rocks/",
-    "github": "https://github.com/AgnesK",
-    "twitter": "https://twitter.com/spielplatzmnstr"
-  }
+  "tags": ["React", "Cloud"],
+  "vegan": false,
+  "vegetarian": true,
+  "what_is_my_connection_to_javascript": "JS is my goto language for rapid prototypes, small simulations with some visualisation and what I work with in my job.",
+  "what_can_i_contribute": "Asking a lot of questions",
+  "tshirt": "W-M"
 }

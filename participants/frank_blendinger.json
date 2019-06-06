@@ -1,21 +1,16 @@
 {
-    "name": "Frank Blendinger",
-    "company": "Method Park",
-    "tags": ["react", "redux", "vim"],
-    "when": {
-        "friday": true,
-        "friday_party": true,
-        "saturday": true
-    },
-    "email": "jscraftcamp@zogan.de",
-    "dietary_requirements": "none",
-    "what_is_my_connection_to_javascript": "Still pretty fresh with JS (doing it full-time for about 8 months now). Before that I developed in C# for 6 years; which is the reason I'm really interested in approaches to bring type-safety to JS (like with TypeScript or Flow).",
-    "what_can_i_contribute": "Having experience in developing software for medical systems, I can talk about the challenges that come when working in a regulated environment. I'm also a seasoned Vim user, so I can share a trick or two. ;-)",
-    "tshirt": "M-M",
-    "urls": {
-        "photo": "http://zogan.de/var/tmp/jscraftcamp-photo.jpg",
-        "homepage": "http://zogan.de",
-        "github": "https://github.com/yogan",
-        "twitter": "https://twitter.com/yooogan"
-    }
+  "name": "Frank Blendinger",
+  "company": "Method Park",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["TypeScript", "React", "Angular", "Node.js", "Clean Code", "Software Crafting", "Vim"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I am currently using JS/TS in both my day job as a software engineer, and for private projects. Professionally I mainly support medical companies with their imaging software. This is usually a slow-paced terrain, with lots of legacy applications. But in the recent years customers are asking for mobile / web solutions as well, which leads to many interesting projects.",
+  "what_can_i_contribute": "Let's see! I love barcamps/unconferences, I'm sure there will be things to talk about. :-)",
+  "tshirt": "M-M"
 }

@@ -1,15 +1,16 @@
 {
   "name": "Anian Ziegler",
-  "company": "Sicony GmbH",
-  "email": "ziegler@sicony.de",
-  "tags": [ "angular", "ngrx", "typescript", "hapijs", "knex", "objection.js", "node" ],
+  "company": "cioplenu",
   "when": {
     "friday": true,
     "friday_party": true,
     "saturday": true
   },
-  "what_is_my_connection_to_javascript": "I work as a full stack developer for a young startup in Augsburg. We develop a suit of webapps for the industry. I'm pretty new to the field of js development. I have been tinkering with it for some years but really started developing meaningful applications last year with Angular 2+ and NodeJS",
-  "what_can_i_contribute": "I can share my experience of developing apps with Angular2+ & ngrx/store and hapi & objection.js on the backend. Furthermore I can talk about our challenges developing modern web applications for the industry with a small team of newcomers and external agencies",
-  "tshirt": "M-L",
-  "urls": {}
+  "tags": ["JavaScript", "Node", "Angular", "Typescript", "HapiJS", "ObjectionJS", "Linux", "Container", "Concourse CI", "Automation"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I've been building a startup on JS and Typescript for three years now and am mostly actively developing on node in Typescript or doing a lot of DevOps and Automation for our team.",
+  "what_can_i_contribute": "I'd love to talk about ObjectionJS, Node and Typescript and maybe also about automation with Concourse CI if there is interest for that.",
+  "tshirt": "M-L"  
 }
