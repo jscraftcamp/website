@@ -1,0 +1,17 @@
+{
+  "name": "Karsten Gohm",
+  "company": "schalk&friends",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": false
+  },
+  "tags": ["JavaScript", "TypeScript", "GraphQL", "React", "svelte", "nextjs"],
+  "vegan": false,
+  "vegetarian": true,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "JS was my first language, learned it 20 years ago by modifying Dreamweaver generated code. Walked astray into the lands of PHP and now back home again",
+  "what_can_i_contribute": "I can carry heavy stuff",
+  "tshirt": "M-L",
+  "twitter": "kasn"
+}
