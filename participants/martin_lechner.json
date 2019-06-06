@@ -1,0 +1,25 @@
+{
+  "name": "Martin Lechner",
+  "company": "Autoscout24",
+  "when": {
+    "friday": true,
+    "friday_party": false,
+    "saturday": false
+  },
+  "tags": [
+    "React",
+    "Typescript",
+    "Serverless",
+    "AWS",
+    "GraphQL",
+    "Node",
+    "ELM"
+  ],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "none",
+  "what_is_my_connection_to_javascript": "Fullstack Scala/Typescript engineer. React / Serverless",
+  "what_can_i_contribute": "Will happily participate in discussions surrounding Serverless, React, GraphQL, Functional Programming, Typescript and Software engineering. Will most likely do a talk on React Hooks.",
+  "tshirt": "M-XL",
+  "twitter": "m4nl5r"
+}
