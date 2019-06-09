@@ -77,8 +77,8 @@ code {
   margin-right: 10px;
 }
 
-.card.small .card-image, .card.medium .card-image, .card.large .card-image {
-  max-height: 55%;
+#participants .card.medium .card-content {
+  height: 8em;
 }
 
 .card .card-image img {
