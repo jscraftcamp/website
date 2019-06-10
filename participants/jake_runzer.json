@@ -1,0 +1,25 @@
+{
+  "name": "Jake Runzer",
+  "company": "Prodo.AI",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": [
+    "javascript",
+    "typescript",
+    "react",
+    "fp",
+    "babel",
+    "transpilers",
+    "web assembly"
+  ],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "none",
+  "what_is_my_connection_to_javascript": "I have been working with JavaScript recreationally and professionally for 5 years. I use TypeScript and React daily at work.",
+  "what_can_i_contribute": "A lot of my work is with babel and writing custom transpilers. I hope to have conversations with others who do the same. I would also like to contribute to discussions about css-in-js, typed languages that compile to JavaScript, FP with JS, the state of frameworks like React, and the future and applications of web assembly.",
+  "tshirt": "M-M",
+  "twitter": "jakerunzer"
+}
