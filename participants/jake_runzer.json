@@ -20,5 +20,6 @@
   "allergies": "none",
   "what_is_my_connection_to_javascript": "I have been working with JavaScript recreationally and professionally for 5 years. I use TypeScript and React daily at work.",
   "what_can_i_contribute": "A lot of my work is with babel and writing custom transpilers. I hope to have conversations with others who do the same. I would also like to contribute to discussions about css-in-js, typed languages that compiler to JavaScript, FP with JS, the state of frameworks like React, and the future and applications of web assembly.",
-  "tshirt": "M-M"
+  "tshirt": "M-M",
+  "twitter": "jakerunzer"
 }
