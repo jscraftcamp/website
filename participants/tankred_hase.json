@@ -1,0 +1,16 @@
+{
+  "name": "Tankred Hase",
+  "company": "Lightning Labs Inc.",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["JavaScript", "Security", "Bitcoin"],
+  "vegan": true,
+  "vegetarian": true,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I've been building JS app since 8 years and always love learning new things.",
+  "what_can_i_contribute": "Share knowledge, give a session on JS security",
+  "tshirt": "M-M"  
+}
