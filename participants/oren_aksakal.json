@@ -2,15 +2,15 @@
   "name": "Oren Aksakal",
   "company": "Oracle",
   "when": {
-    "friday": true,
-    "friday_party": true,
+    "friday": false,
+    "friday_party": false,
     "saturday": true
   },
-  "tags": ["js", "html", "css", "reactjs"],
+  "tags": ["JavaScript", "html", "css", "reactjs"],
   "vegan": false,
   "vegetarian": false,
   "allergies": "",
-  "what_is_my_connection_to_javascript": "I'm front-end developer with nice js skills and a bit of reactjs. Who is looking forward to learn more",
-  "what_can_i_contribute": "I would like to attend as a guest only this time, but promise I will be speaking next year :) ",
+  "what_is_my_connection_to_javascript": "I'm Front-End developer, currently working on implementations of A/B tests. Looking forward to learn more on framework world.",
+  "what_can_i_contribute": "JavaScript, HTML, CSS, A/B Testing, Questions, Physical Help",
   "tshirt": "M-M"
 }
