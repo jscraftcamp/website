@@ -6,7 +6,7 @@
     "friday_party": true,
     "saturday": true
   },
-  "tags": ["JavaScript","Typescript""Angular", "Web Components", "PWA"],
+  "tags": ["JavaScript","Typescript","Angular", "Web Components", "PWA"],
   "vegan": false,
   "vegetarian": false,
   "allergies": "",
