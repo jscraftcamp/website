@@ -1,0 +1,33 @@
+{
+    "name": "Sebastian Londono",
+    "company": "LIV-T GmbH",
+    "when": {
+        "friday": true,
+        "friday_party": true,
+        "saturday": true
+    },
+    "tags": [
+        "python",
+        "typescript",
+        "javascript",
+        "data_science",
+        "jupyter",
+        "redux",
+        "spanish",
+        "english",
+        "salsa",
+        "bachata",
+        "react"
+    ],
+    "vegan": true,
+    "vegetarian": false,
+    "allergies": "none",
+    "what_is_my_connection_to_javascript": "I am a Frontend developer. I spend most of my days writing JS or Typescript.",
+    "what_can_i_contribute": "I have been described as a creative, entusiastic person. I can find the good in any situation and I like working hard to achieve my and the team goals.",
+    "tshirt": "M-L",
+    "twitter": "seb_londono",
+    "urls": {
+        "photo": "https://drive.google.com/file/d/1GQiD2pd7g14kWbtOcP49O29GRGYa_84j/view?usp=sharing",
+        "homepage": "https://www.linkedin.com/in/sebastian-londono/"
+    }
+}
