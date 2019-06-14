@@ -1,0 +1,15 @@
+{
+    "name": "Deirdre Bringas",
+    "company": "HolidayCheck",
+    "when": {
+      "friday": true,
+      "friday_party": true,
+      "saturday": true
+    },
+    "tags": ["vanillajs", "typescript", "angular"],
+    "vegan": false,
+    "vegetarian": false,
+    "what_is_my_connection_to_javascript": "My day is incomplete without using console.log at least 15x in Chrome's dev tools.",
+    "what_can_i_contribute": "A curious mind and the occassional quip.",
+    "tshirt": "W-M"
+  }
