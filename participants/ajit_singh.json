@@ -1,0 +1,17 @@
+{
+  "name": "Ajit Singh",
+  "company": "Jambit",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["JavaScript","Typescript","Angular", "Web Components", "PWA"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Working with Javascript and Angular.",
+  "what_can_i_contribute": "Hmmm.. could talk a bit about web components, angular and service workers? If that is of any interest.",
+  "tshirt": "M-L",
+  "twitter": "ajitsonlion"
+}
