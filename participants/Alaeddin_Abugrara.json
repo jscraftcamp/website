@@ -1,0 +1,17 @@
+{
+  "name": "Aladin Abugrara",
+  "company": "none",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["networking", "MERN", "accessibility"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "none",
+  "what_is_my_connection_to_javascript": "I'm a noob eeer I mean a junior web-dev, I started my journey a little more than a year ago and altho I'm taking all the tutorials, courses and whatnot out there I believe the are many issues and doubts that you can learn about only by talking with real people and learn from their experiences",
+  "what_can_i_contribute": "I'm afraid that my lack of experience wont help that much, or at least programming wise, but I can help in every way possible ( picking and moving stuff around and/or helping with dunno food serving etc)",
+  "tshirt": "M-L",
+  "twitter": "Funk4teer"
+}

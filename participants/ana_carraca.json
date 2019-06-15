@@ -1,20 +1,16 @@
 {
   "name": "Ana Carraca",
-  "company": "fleetster",
-  "tags": [
-    "node",
-    "es6"
-  ],
+  "company": "Mecuris GmbH",
   "when": {
-    "saturday": true,
-    "sunday": true
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
   },
-  "what_is_my_connection_to_javascript": "Full time Javascript developer. Been playing around with some of the cool technologies and frameworks.",
-  "tshirt": "W-M",
-  "urls": {
-    "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/000/10e/353/123f45e.jpg",
-    "homepage": "http://carraca.me",
-    "github": "https://github.com/Carraca",
-    "twitter": "https://twitter.com/ACarraca"
-  }
+  "tags": ["angular", "react", "typescript", "node", "3D"],
+  "vegan": false,
+  "vegetarian": true,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Javascript developer for the last couple years, front and backend.",
+  "what_can_i_contribute": "Can share some of my experience with multiple frameworks and technologies",
+  "tshirt": "W-M"
 }

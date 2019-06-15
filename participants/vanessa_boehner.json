@@ -1,16 +1,21 @@
 {
   "name": "Vanessa Böhner",
-  "company": "Simplora GmbH",
-  "tags": ["javascript", "backbone", "ruby", "gulp"],
+  "company": "SinnerSchrader GmbH",
   "when": {
-    "saturday": true,
-    "sunday": true
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
   },
-  "what_is_my_connection_to_javascript": "1: Since I was 11 years old, I wanted to create websites (or 'homepages' ;) ). Therefore it was just necassary to learn a bit JavaScript, at least jQuery. As I got older, my interest in computer science in general, and especially my passion for web development, grew. For about 2 years I've been working on projects with Backbone (first CoffeeScript, now ES6). For some side-projects I use Middleman with pure JavaScript, for some others node.",
-  "tshirt": "W-S",
-  "urls": {
-    "photo": "https://vannsl.io/img/vanessaboehner.jpg",
-    "homepage": "https://vannsl.io",
-    "github": "https://github.com/RoseAsbenhe"
-  }
+  "tags": [
+    "JavaScript",
+    "Vue",
+    "TailwindCSS",
+    "WomenInTech"
+  ],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "none",
+  "what_is_my_connection_to_javascript": "Grew up with HTML/CSS/jQUery. Started working life with Backbonejs. Now working mostly with Vue but I am a JAVASCRIPT developer. No further wars between frameworks please!",
+  "what_can_i_contribute": "Vue, Nuxt, TailwindCSS",
+  "tshirt": "W-S"
 }

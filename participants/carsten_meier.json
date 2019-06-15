@@ -1,0 +1,16 @@
+{
+  "name": "Carsten Meier",
+  "company": "Peerigon GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": [ "WASM", "PWA", "React", "TypeScript", "UI", "UX", "interaction design", "Docker", "Container" ],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I started web development in the PHP days and I'm now working on large web apps built on JavaScript(-related) technologies.",
+  "what_can_i_contribute": "I'd like to contribute my weird mix of DevOps insights and UI/UX design knowledge when building large webapps.",
+  "tshirt": "M-S"
+}

@@ -1,17 +1,14 @@
 {
   "name": "Jonathan Häberle",
-  "company": "Codastic",
-  "tags": ["es6", "react", "redux", "node", "TDD", "typescript", "rxjs", "elm"],
   "when": {
-    "saturday": true,
-    "sunday": true
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
   },
-  "what_is_my_connection_to_javascript": "It's daily business. I'm a full stack developer. I love pure code.",
-  "tshirt": "M-XL",
-  "urls": {
-    "photo": "https://avatars0.githubusercontent.com/u/307704",
-    "homepage": "http://codastic.de",
-    "github": "https://github.com/dreampulse",
-    "twitter": "https://twitter.com/dreampulse"
-  }
+  "tags": ["nodejs", "react", "typescript"],
+  "vegan": false,
+  "vegetarian": false,
+  "what_is_my_connection_to_javascript": "I use JavaScript on a daily bases and would like to share and improve my experience",
+  "what_can_i_contribute": "Topics around react",
+  "tshirt": "M-M"
 }

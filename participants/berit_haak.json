@@ -1,0 +1,16 @@
+{
+  "name": "Berit Haak",
+  "company": "SinnerSchrader GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["JavaScript", "React", "Vue", "Typescript"],
+  "vegan": false,
+  "vegetarian": true,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I use javascript on a daily basis and love to learn more about it.",
+  "what_can_i_contribute": "I will definitely listen carefully to the talks that I will participate and I would love to chat to other attendees.",
+  "tshirt": "W-S"
+}
