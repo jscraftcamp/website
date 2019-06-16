@@ -1,0 +1,17 @@
+{
+  "name": "Markus Beckert",
+  "company": "LIV-T GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["Java", "Dart", "Flutter", "React", "Javascript", "English"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "Hazelnut",
+  "what_is_my_connection_to_javascript": "Started frontend developing just under a year before.",
+  "what_can_i_contribute": "I am open minded and can contribute something to dart, flutter and react.",
+  "tshirt": "M-M",
+  "twitter": "manti212"
+}
