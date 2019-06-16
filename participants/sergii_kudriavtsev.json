@@ -1,0 +1,16 @@
+{
+  "name": "Sergii Kudriavtsev (Seryogaberkut)",
+  "company": "Jambit GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["JavaScript", "NodeJS", "Angular", "VueJS", "TypeScript"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "FullStack Developer",
+  "what_can_i_contribute": "Share knowledge",
+  "tshirt": "M-L"
+}
