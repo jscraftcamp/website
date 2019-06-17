@@ -1,0 +1,17 @@
+{
+  "name": "Marvin Altemeier",
+  "company": "Hetzner Cloud GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["JavaScript", "RxJs", "Angular", "webpack", "testing", "Typescript"],
+  "vegan": false,
+  "vegetarian": true,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "It's complicated",
+  "what_can_i_contribute": "Tricky questions",
+  "tshirt": "M-L",
+  "twitter": "pre_fection"
+}
