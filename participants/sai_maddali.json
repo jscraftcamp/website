@@ -1,0 +1,17 @@
+{
+  "name": "Sai Sasidhar Maddali",
+  "company": "NanoTemper Technologies GmbH",
+  "when": {
+    "friday": false,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["react", "node.js", "python", "linux", "aws"],
+  "vegan": false,
+  "vegetarian": true,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Using JS to create handy tools",
+  "what_can_i_contribute": "I can contribute in discussions pertaining to hardware control and monitoring over the internet. Interested in software architectures and deployments",
+  "tshirt": "M-M",
+  "twitter": "_sasidhar"
+}
