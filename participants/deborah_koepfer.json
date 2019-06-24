@@ -1,0 +1,17 @@
+{
+  "name": "Deborah Köpfer",
+  "company": "Virtual Identity AG",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["JavaScript", "React"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "As a frontend dev I use JS every day. I am eager to learn more and share.",
+  "what_can_i_contribute": "I'd like to offer a talk about global state in React with hooks and context and participate in discussions.",
+  "tshirt": "W-M",
+  "twitter": "koepferd"
+}
