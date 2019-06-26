@@ -4,7 +4,7 @@
   "when": {
     "friday": true,
     "friday_party": false,
-    "saturday": false
+    "saturday": true
   },
   "tags": ["JavaScript", "React", "Redux", "Vue", "Vuex", "Node"],
   "vegan": false,
