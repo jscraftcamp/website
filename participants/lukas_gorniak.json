@@ -1,0 +1,16 @@
+{
+  "name": "Lukas Gorniak",
+  "company": "Virtual Identity",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["JS", "Web Animations", "Headless Frontend", "Scrum", "Agile"],
+  "vegan": false,
+  "vegetarian": true,
+  "allergies": "no",
+  "what_is_my_connection_to_javascript": "Creating Websites with Javascript since over 10 years",
+  "what_can_i_contribute": "I would like to add a project which focuses on playing videos inside canvas. Adding effects on played video",
+  "tshirt": "M-L"
+}
