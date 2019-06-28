@@ -1,0 +1,15 @@
+{
+  "name": "Djavan Arrigone",
+  "company": "Interfacers",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["javascript", "reactjs", "hooks", "firebase", "typescript", "nextjs", "node"],
+  "vegan": false,
+  "vegetarian": false,
+  "what_is_my_connection_to_javascript": "Computer science graduate recently embarking on the javascript web development adventure... Front and backend javascript.",
+  "what_can_i_contribute": "Delightful charisma and dumb jokes",
+  "tshirt": "M-XL"
+}
