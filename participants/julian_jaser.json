@@ -1,0 +1,16 @@
+{
+  "name": "Julian Jaser",
+  "when": {
+    "friday": false,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["react", "node.js", "python", "IoT"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I am using react to write small web apps with nodejs or python backends giving the sensors living at my place a ui to show their data",
+  "what_can_i_contribute": "I have some experience in developing web apps as well and data science and reading sensor data from micro controllers. Maybe there is something I can share about these experiences.",
+  "tshirt": "M-M",
+  "twitter": "juax335"
+}
