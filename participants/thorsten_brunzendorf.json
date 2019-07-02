@@ -1,0 +1,16 @@
+{
+  "name": "Thorsten Brunzendorf",
+  "company": "codecentric",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": false
+  },
+  "tags": ["tdd", "bdd", "ddd"],
+  "vegan": false,
+  "vegetarian": false,
+  "what_is_my_connection_to_javascript": "have to use it sometimes, mainly React nowadays, no expert by far",
+  "what_can_i_contribute": "curiosity, crafting experience with other languages",
+  "tshirt": "M-M",
+  "twitter": "thbrunzendorf"
+}
