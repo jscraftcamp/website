@@ -1,0 +1,17 @@
+{
+    "name": "Mounir Mannai",
+    "company": "Medisinn Platform GmbH",
+    "when": {
+      "friday": true,
+      "friday_party": true,
+      "saturday": true
+    },
+    "tags": ["NodeJs", "React JS", "Angular", "TDD", "CI/CD"],
+    "vegan": false,
+    "vegetarian": false,
+    "allergies": "",
+    "what_is_my_connection_to_javascript": "My daily routine... I almost have one year working with Javascript(NodeJS, ReactJS ...",
+    "what_can_i_contribute": "I would be happy to be a participant to this event so i great listener in first place and having talks with others...",
+    "tshirt": "W-S",
+    "twitter": ""
+  }
