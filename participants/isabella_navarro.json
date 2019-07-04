@@ -1,0 +1,20 @@
+{
+  "name": "Isabella Christina Capilla Navarro",
+  "company": "NanoTemper Technologies GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["science", "technology", "biology", "data"],
+  "vegan": false,
+  "vegetarian": true,
+  "allergies": "...",
+  "what_is_my_connection_to_javascript": "I created my first webpage when I was 6 years old using a Notepad and a little book about HTML for beginners. For years I've worked with HTML, CSS and CMS in my dad's company and I've always had interest in the field. However, I love science as well and, therefore, I've studied biology. I see the crossing point between biology and technology as an essential step for the future and innovation. Since I've completed my Master's degree, I've being working with web development in NanoTemper Technologies, a biotechnology company located in Munich. Using React and AWS I've developed a cloud based App for biological scientific data analysis.",
+  "what_can_i_contribute": "I'm a brazilian biologist in the field of technology and I believe that I can contribute with much of my intercultural and interdisciplinary knowledge with new inspiring people.",
+  "tshirt": "W-S",
+  "twitter": "bellacapilla"
+}
+    
+    
+

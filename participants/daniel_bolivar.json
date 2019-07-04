@@ -1,0 +1,16 @@
+{
+  "name": "Daniel Bolivar",
+  "company": "HolidayCheck",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["JavaScript", "React", "Typescript", "FP"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "none",
+  "what_is_my_connection_to_javascript": "Always bet on Javascript 🦄",
+  "what_can_i_contribute": "Web Perf experience, tiny bundled micro-frontends with Preact, Typescript and FP",
+  "tshirt": "M-L"
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Christoph Hummel",
+    "company": "Virtual Identity AG",
+    "when": {
+      "friday": true,
+      "friday_party": true,
+      "saturday": true
+    },
+    "tags": ["JavaScript", "TypeScript", "Web Components", "Vue", "Vuex"],
+    "vegan": false,
+    "vegetarian": false,
+    "allergies": "none",
+    "what_is_my_connection_to_javascript": "I develop web application in my daily work and love to learn every day something new!",
+    "what_can_i_contribute": "Something about Vue",
+    "tshirt": "M-L"
+  }

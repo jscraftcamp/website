@@ -1,0 +1,17 @@
+{
+  "name": "Michael Jaser",
+  "company": "Peerigon",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["JavaScript", "Node.js", "Community", "Teaching", "APIs", "WASM", "RUST", "IoT", "NodeSchool", "Deno"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "It's my main programming language.",
+  "what_can_i_contribute": "Discussions about the web, JavaScript, community events & teaching.",
+  "tshirt": "M-M",
+  "twitter": "mmeaku"
+}

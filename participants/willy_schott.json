@@ -1,0 +1,16 @@
+{
+  "name": "Willy Schott",
+  "company": "Hetzner Cloud GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["TypeScript", "Angular", "JavaScript", "ExtJS"],
+  "vegan": false,
+  "vegetarian": false,
+  "what_is_my_connection_to_javascript": "We're an old couple already past our silver wedding anniversary. I love her, but am not so sure if she loves me back the same :-D",
+  "what_can_i_contribute": "Ask, and it shall be given you ... For every one that asketh receiveth",
+  "tshirt": "M-XL",
+  "twitter": "willydee68"
+}

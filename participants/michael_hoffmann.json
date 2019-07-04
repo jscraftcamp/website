@@ -1,0 +1,24 @@
+{
+  "name": "Michael Hoffmann",
+  "company": "Freelancer",
+  "when": {
+    "friday": false,
+    "friday_party": false,
+    "saturday": true
+  },
+  "tags": [
+    "React",
+    "Angular",
+    "React Native",
+    "TypeScript",
+    "JavaScript",
+    "Gatsby"
+  ],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "none",
+  "what_is_my_connection_to_javascript": "I started with VanillaJS in 2015 and since then I am working with JS",
+  "what_can_i_contribute": "I can help in Angular related topics. Maybe I give a talk how to create a fullstack Typescript application using Angular and Nest.js",
+  "tshirt": "M-M",
+  "twitter": "mokkapps"
+}

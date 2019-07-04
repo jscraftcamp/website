@@ -1,0 +1,17 @@
+{
+  "name": "Jonathan Juhas",
+  "company": "kontextR",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["code artisan", "trivia", "specification", "always learning", "chilicorn"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Language of my choice when I want to spend 3 hours looking up why NaN is not equal to NaN",
+  "what_can_i_contribute": "I know bits and pieces about the language. Some trivia and years of experience googling specifications :)",
+  "tshirt": "M-S",
+  "twitter": "ignsg"
+}

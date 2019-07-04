@@ -1,0 +1,16 @@
+{
+  "name": "Rasid Redzic",
+  "company": "Mercatis Gmbh",
+  "when": {
+    "friday": true,
+    "friday_party": false,
+    "saturday": true
+  },
+  "tags": ["JavaScript", "React", "Redux", "Vue", "Vuex", "Node"],
+  "vegan": false,
+  "vegetarian": true,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Basic experience in JS - want to grow in React or Vue.",
+  "what_can_i_contribute": "Not sure yet - trying to focus on React or Vue.",
+  "tshirt": "M-XL"
+}

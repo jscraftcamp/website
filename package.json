@@ -4,23 +4,19 @@
   "description": "Website for the JSCC (jscraftcamp.org)",
   "main": "index.js",
   "engines": {
-    "node": ">= 6.6.0"
-  },
-  "dependencies": {
+    "node": ">= 10.0.0"
   },
   "devDependencies": {
-    "browser-sync": "^2.18.7",
-    "hamjest": "^2.13.0",
-    "harp": "^0.23.0",
-    "hashcode": "^1.0.3",
-    "mocha": "^3.0.2",
+    "hamjest": "^3.2.3",
+    "harp": "^0.30.0",
+    "mocha": "^6.1.4",
     "recursive-readdir-sync": "^1.0.6"
   },
   "scripts": {
-    "prebuild": "mkdir -p ./dist",
+    "prebuild": "mkdir ./dist",
     "build": "harp compile ./src ./dist; cp CNAME dist/; npm run 'build:participants.json'",
     "build:participants.json": "node scripts/concat-json.js ./participants dist/participants.json; cp ./dist/participants.json ./src/",
-    "start": "harp server ./src & browser-sync start --proxy 'localhost:9000' --files 'src/**/*.ejs, src/**/*.css', src/**/*.js",
+    "start": "harp server ./src",
     "test": "mocha test"
   },
   "author": "David Losert <david.losert@virtual-identity.com>",

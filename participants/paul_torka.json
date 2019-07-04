@@ -1,0 +1,15 @@
+{
+  "name": "Paul Torka",
+  "company": "Peerigon GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": false,
+    "saturday": true
+  },
+  "tags": ["javascript", "typescript", "react", "coffee"],
+  "vegan": false,
+  "vegetarian": false,
+  "what_is_my_connection_to_javascript": "I'm working on huge apps build with TypeScript and React.",
+  "what_can_i_contribute": "I'll bring you coffee :)",
+  "twitter": "topaspook"
+}
