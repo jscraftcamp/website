@@ -1,21 +1,18 @@
 {
   "name" : "Lars Gregori",
-  "company" : "SAP Hybris",
-  "email": "lars.gregori@sap.com",
-  "tags" : [ "IoT", "TDD", "Node.js", "Clean Code" ],
+  "company" : "SAP CX",
   "when" :
   {
     "friday" : true,
     "friday_party": true,
     "saturday" : true
   },
-  "what_is_my_connection_to_javascript" : "Creating (electronic) prototypes with a Node.js backend which connects micro services.",
-  "what_can_i_contribute" : "Craftsmanship in JS World in combination of prototype 'hacking'.",
+  "tags" : [ "ML", "Node.js", "web assembly", "typescript", "SAPUI5" ],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "ouzo",
+  "what_is_my_connection_to_javascript" : "choas/sap-leonardo",
+  "what_can_i_contribute" : "something about machine learning e.g. tensorflow.js",
   "tshirt" : "M-XL",
-  "urls" : {
-    "photo" : "https://iotcon.de/wp-content/uploads/2016/11/1476884997572_gregori_lars_wp.jpg",
-    "homepage" : "https://labs.hybris.com",
-    "github" : "https://github.com/choas",
-    "twitter" : "https://twitter.com/choas"
-  }
+  "twitter" : "choas"
 }
