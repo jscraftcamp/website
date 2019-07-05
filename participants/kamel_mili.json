@@ -1,0 +1,18 @@
+{
+  "name": "Kamel Mili",
+  "company": "MEDISINN Plattform GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["AngulaJS", "NodeJs", "ExpressJs"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "none",
+  "what_is_my_connection_to_javascript": "A love story that it started from high school even though we didn't had the chance to work a lot together ,i've been able to work with AngulaJS and NodeJs and its pretty fun to work with such frameworks which made me intrested in JS",
+  "what_can_i_contribute": "Ask a lot of questions , and learn a lot ",
+  "tshirt": "M-S",
+  "twitter": "handle"
+}
+  
