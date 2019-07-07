@@ -3,7 +3,7 @@
   "company" : "SAP CX",
   "when" :
   {
-    "friday" : true,
+    "friday" : false,
     "friday_party": true,
     "saturday" : true
   },
@@ -11,7 +11,7 @@
   "vegan": false,
   "vegetarian": false,
   "allergies": "ouzo",
-  "what_is_my_connection_to_javascript" : "choas/sap-leonardo",
+  "what_is_my_connection_to_javascript" : "https://github.com/choas/sap-leonardo",
   "what_can_i_contribute" : "something about machine learning e.g. tensorflow.js",
   "tshirt" : "M-XL",
   "twitter" : "choas"
