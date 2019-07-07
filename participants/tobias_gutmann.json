@@ -1,0 +1,17 @@
+{
+  "name": "Tobias Gutmann",
+  "company": "Method Park",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["TypeScript", "React", "React Native", "VI/M", "Node.js", "Angular"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I use JS/TS professionally and for fun side projects.",
+  "what_can_i_contribute": "Some ideas about what I would like to share: Effective editing of code using VI/M or a plugin for your favorite code editor; My first contact with an SSG: Creating a blog using Gatbsy and adding interactivity with cloud functions; Helpful in-browser debugging tricks using Google Chrome Developer Tools; (...)",
+  "tshirt": "M-XL",
+  "twitter": "CodingCarl"
+}
