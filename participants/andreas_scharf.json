@@ -3,18 +3,24 @@
   "company": "jambit GmbH",
   "when": {
     "friday": true,
-    "friday_party": false,
-    "saturday": false
+    "friday_party": true,
+    "saturday": true
   },
   "tags": [
-    "JavaScript",
-    "TypeScript",
     "Elm",
-    "Haskell",
+    "TypeScript",
+    "Vim",
     "Functional Programming",
-    "Tests"
+    "Haskell",
+    "Ramda",
+    "fp-ts",
+    "Property Based Testing"
   ],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
   "what_is_my_connection_to_javascript": "I'm using JS, TS and Elm in projects and I like to learn.",
   "what_can_i_contribute": "Functional programming topics and help",
-  "tshirt": "M-S"
+  "tshirt": "M-S",
+  "twitter": "_andys8"
 }

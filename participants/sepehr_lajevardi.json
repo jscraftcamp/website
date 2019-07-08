@@ -1,0 +1,17 @@
+{
+  "name": "Sepehr Lajevardi",
+  "company": "Social Sweethearts",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": false
+  },
+  "tags": ["minimalism", "softarch", "js", "python", "php"],
+  "vegan": true,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I do it.",
+  "what_can_i_contribute": "I can ask moderately good questions :)",
+  "tshirt": "M-L",
+  "twitter": "SepehrLajevardi"
+}

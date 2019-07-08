@@ -1,0 +1,24 @@
+{
+  "name": "Manuel E.",
+  "company": "Method Park",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": [
+    "ES2019",
+    "Node.js",
+    "Typescript",
+    "React",
+    "React Native",
+    "Testing"
+  ],
+  "vegan": false,
+  "vegetarian": true,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Web development for >15y, focused on backend development with Node.js but also interested in all kinds of frontend frameworks",
+  "what_can_i_contribute": "frontend testing in React, backend development with Node.js",
+  "tshirt": "M-M",
+  "twitter": "seriousManual"
+}

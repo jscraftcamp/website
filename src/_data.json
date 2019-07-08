@@ -1,6 +1,10 @@
 {
   "baseColor": "colorOfTheYear",
-  "pageTitle": "JSCraftCamp - 10+11 August 2018 in Munich",
+  "pageTitle": "JSCraftCamp - 19+20 July 2019 in Munich",
+  "colorVoting": {
+    "active": false,
+    "url": "https://twitter.com/JSCraftCamp/status/1106878975589138434"
+  },
   "navigationItems": {
     "main": [
       {
@@ -29,6 +33,14 @@
       }
     ],
     "archive": [
+      {
+        "url": "/info2018",
+        "title": "2018 - Home"
+      },
+      {
+        "url": "/photos2018",
+        "title": "2018 - Photos"
+      },
       {
         "url": "/info2017",
         "title": "2017 - Home"
@@ -375,10 +387,125 @@
       "url": "img/event_photos/2017/DSCF1802.jpg"
     }
   ],
+  "photos2018": [
+    {
+      "url": "img/event_photos/2018/2.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/25.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/37.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/31.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/40.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/6.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/9.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/5.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/3.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/10.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/12.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/17.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/14.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/15.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/13.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/18.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/19.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/1.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/21.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/24.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/20.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/38.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/29.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/30.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/32.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/34.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/42.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/43.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/46.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/48.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/4.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/44.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/47.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/8.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/7.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/27.jpg"
+    },
+    {
+      "url": "img/event_photos/2018/49.jpg"
+    }
+
+
+  ],
   "theteam": [
     {
       "name": "Wolfram Kriesing",
-      "photo": "wolfram.png",
+      "photo": "wolfram.jpg",
       "email": "w@kriesing.de"
     },
     {
@@ -389,17 +516,17 @@
     {
       "name": "Marco Emrich",
       "photo": "marco.jpg",
-      "email": "m.emrich@webmasters.de"
-    },
-    {
-      "name": "Oleksandr Fedotov",
-      "photo": "oleksandr.jpg",
-      "email": "oleksandr.fedotov@netlight.com"
+      "email": "marco.emrich@codecentric.de"
     },
     {
       "name": "Marc Emmanuel",
       "photo": "marc.jpg",
       "email": "marc.emmanuel@virtual-identity.com"
+    },
+    {
+      "name": "Sebastian Frerichs",
+      "photo": "sebastian.jpg",
+      "email": "sebastian.frerichs@codecentric.de"
     }
   ]
 }

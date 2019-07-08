@@ -6,7 +6,12 @@
     "friday_party": true,
     "saturday": true
   },
-  "what_is_my_connection_to_javascript": "I am a frontend developer at Virtual Identity and work with javascript on a daily basis. I am interested in clean code and diving deeper into js every day.",
-  "what_can_i_contribute": "Basic knowledge about typescript, testing, state management. Not much of a speaker but eager to learn and contribute in discussions.",
-  "tshirt": "W-M"
+  "tags": ["JavaScript", "React"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "As a frontend dev I use JS every day. I am eager to learn more and share.",
+  "what_can_i_contribute": "I'd like to offer a talk about global state in React with hooks and context and participate in discussions.",
+  "tshirt": "W-M",
+  "twitter": "koepferd"
 }

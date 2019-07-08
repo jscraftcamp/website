@@ -1,17 +1,15 @@
 {
   "name": "Olaf Merkert",
   "company": "TNG Technology Consulting GmbH",
-  "tags": ["typescript", "react", "redux"],
   "when": {
     "friday": true,
-    "friday_party": true,
-    "saturday": true
+    "friday_party": false,
+    "saturday": false
   },
-  "what_is_my_connection_to_javascript": "My first contact with JavaScript goes back to my school years, when IE6 was the hot stuff. Nowadays, I am working as a full stack developer with a big focus on the React-Redux frontend written in TypeScript.",
-  "what_can_i_contribute": "Experiences with TypeScript, architecting larger Redux applications, and testing React applications. And how to set up Emacs to work on TypeScript code.",
-  "tshirt": "M-L",
-  "urls": {
-    "homepage": "https://www.sl2z.de/~olaf/",
-    "github": "https://github.com/OlafMerkert"
-  }
+  "tags": ["functional programming", "React", "Redux", "TypeScript", "ClojureScript", "webdriver.io"],
+  "vegan": false,
+  "vegetarian": false,
+  "what_is_my_connection_to_javascript": "In my day job, I work as a Software Consultant on a technology migration project, focusing on a growing React+Redux Frontend written in TypeScript. I have been programming and playing with JavaScript since my school days when IE6 was the state of the art.",
+  "what_can_i_contribute": "I would like to learn and discuss about continuous improvement in the React ecosystem and beyond. I would also be interesting in comparing experiences in teaching new developers about the intricacies and marvels of JavaScript and functional programming.",
+  "tshirt": "M-L"
 }

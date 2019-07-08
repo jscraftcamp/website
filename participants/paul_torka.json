@@ -6,6 +6,10 @@
     "friday_party": false,
     "saturday": true
   },
-  "what_is_my_connection_to_javascript": "I'm partner @ Peerigon - a JS or rather web technologies only company. So JS is somehow my daily bread.",
-  "what_can_i_contribute": "coffee, some years of experience in the industry, testing, TypeScript + React + inheritance (negative experience)"
+  "tags": ["javascript", "typescript", "react", "coffee"],
+  "vegan": false,
+  "vegetarian": false,
+  "what_is_my_connection_to_javascript": "I'm working on huge apps build with TypeScript and React.",
+  "what_can_i_contribute": "I'll bring you coffee :)",
+  "twitter": "topaspook"
 }

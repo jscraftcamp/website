@@ -1,13 +1,16 @@
 {
   "name": "Willy Schott",
   "company": "Hetzner Cloud GmbH",
-  "tags": ["Angular", "Ext JS", "NodeJS", "Kubernetes"],
   "when": {
     "friday": true,
-    "friday_party": false,
+    "friday_party": true,
     "saturday": true
   },
-  "what_is_my_connection_to_javascript": "Developing front ends and applications using JavaScript for almost 20 years",
-  "what_can_i_contribute": "Participate in discussions (I am not much of a stage talker or mediator)",
-  "tshirt": "M-XL"
+  "tags": ["TypeScript", "Angular", "JavaScript", "ExtJS"],
+  "vegan": false,
+  "vegetarian": false,
+  "what_is_my_connection_to_javascript": "We're an old couple already past our silver wedding anniversary. I love her, but am not so sure if she loves me back the same :-D",
+  "what_can_i_contribute": "Ask, and it shall be given you ... For every one that asketh receiveth",
+  "tshirt": "M-XL",
+  "twitter": "willydee68"
 }

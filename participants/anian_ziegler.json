@@ -1,12 +1,16 @@
 {
   "name": "Anian Ziegler",
-  "company": "Cioplenu",
+  "company": "cioplenu",
   "when": {
     "friday": true,
     "friday_party": true,
     "saturday": true
   },
-  "what_is_my_connection_to_javascript": "I am the lead developer at cioplenu and work across the full stack in javascript/typescript. Mostly in the backend these days. I really like working with tools like hapi, objection.js and typescript in node and exchanging ideas about that. Apart from that I'm a huge Linux fan and love building our infrastructure at cioplenu.",
-  "what_can_i_contribute": "I can share experiences from building up a startup for two years now with a product which is a web application but not the ususal SAAS. We deploy in the cloud and to individual customers as well. Apart from that I'd love to share some experiences with stuff I use in my day to day business like objection.js or database migrations and UNIX tools.",
+  "tags": ["JavaScript", "Node", "Angular", "Typescript", "HapiJS", "ObjectionJS", "Linux", "Container", "Concourse CI", "Automation"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I've been building a startup on JS and Typescript for three years now and am mostly actively developing on node in Typescript or doing a lot of DevOps and Automation for our team.",
+  "what_can_i_contribute": "I'd love to talk about ObjectionJS, Node and Typescript and maybe also about automation with Concourse CI if there is interest for that.",
   "tshirt": "M-L"  
 }

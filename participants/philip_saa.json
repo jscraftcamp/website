@@ -1,13 +1,17 @@
 {
   "name": "Philip Saa",
-  "company": "about.me/philipsaa",
+  "company": "compose.us GmbH",
   "when": {
     "friday": true,
     "friday_party": true,
     "saturday": true
   },
-  "dietary_requirements": "Ich bin Flexaterian dude!",
-  "what_is_my_connection_to_javascript": "experience w/ jQuery. AngularJS, and a little bit of ReachJS.",
-  "what_can_i_contribute": "What ever is at my ability.",
-  "tshirt": "M-XL"  
+  "tags": ["ReactJS", "LeafletJS", "Storybook"],
+  "vegan": false,
+  "vegetarian": true,
+  "allergies": "none",
+  "what_is_my_connection_to_javascript": "My experience with OOP, came from working with ActionScript.",
+  "what_can_i_contribute": "Any advice on audio/video production, YouTube Tutorials or Tech PodCast",
+  "tshirt": "M-XL",
+  "twitter": "cowglow"
 }

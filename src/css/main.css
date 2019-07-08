@@ -1,5 +1,11 @@
+body {
+  background-color: #789;
+}
 a {
-  color: #ff9800;
+  color: var(--main-color);
+}
+nav #nav-desktop a, nav #nav-desktop ul a {
+  text-shadow: 1px 1px 4px black;
 }
 @media only screen and (max-device-width: 680px) {
   h1 {
@@ -71,12 +77,12 @@ code {
   margin-right: 10px;
 }
 
-.card.small .card-image, .card.medium .card-image, .card.large .card-image {
-  max-height: 55%;
+#participants .card.medium .card-content {
+  height: 8em;
 }
 
 .card .card-image img {
-  top: -25px;
+  top: 0;
 }
 
 .card .card-tags-container {
@@ -149,7 +155,7 @@ footer div {
 /* the special colors */
 
 :root {
-  --main-color: #33aa98;
+  --main-color: #ececec;
 }
 
 

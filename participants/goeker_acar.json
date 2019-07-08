@@ -1,0 +1,16 @@
+{
+  "name": "Göker Acar",
+  "company": "Sixt SE",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["ExtJS", "JQuery", "PHP", "Scala"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "lactose",
+  "what_is_my_connection_to_javascript": "Using ExtJS on daily basis, was a JQuery user for some years",
+  "what_can_i_contribute": "Can share my experiences with our implementation using PHP, Scala and ExtJS together",
+  "tshirt": "M-M"
+}

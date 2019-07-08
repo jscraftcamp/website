@@ -6,8 +6,11 @@
     "friday_party": true,
     "saturday": true
   },
-  "dietary_requirements": "none",
-  "what_is_my_connection_to_javascript": "I love to ship code and update it constantly, to improve the user experience",
-  "what_can_i_contribute": "How to write non-breaking libraries, no breaking api changes and no bugs of things what worked before. Automated End-to-End Tests are key",
-  "tshirt": "M-L"
+  "tags": ["JavaScript", "TypeScript", "immutability", "TDD"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I love and hate js at the same time.",
+  "what_can_i_contribute": "I want to do a session on how to simulate chains of DOM-Events, and how they are depending on each other.",
+  "tshirt": "M-L"  
 }

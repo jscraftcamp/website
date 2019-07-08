@@ -6,7 +6,12 @@
     "friday_party": true,
     "saturday": true
   },
-  "dietary_requirements": "vegetarian",
-  "what_is_my_connection_to_javascript": "Developing Angular Frontend and Node backend applications with javascript",
-  "tshirt": "M-L"
+  "tags": ["JavaScript", "RxJs", "Angular", "webpack", "testing", "Typescript"],
+  "vegan": false,
+  "vegetarian": true,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "It's complicated",
+  "what_can_i_contribute": "Tricky questions",
+  "tshirt": "M-L",
+  "twitter": "pre_fection"
 }

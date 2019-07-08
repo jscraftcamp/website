@@ -11,7 +11,7 @@ code[class*="language-"],
 pre[class*="language-"] {
   color: black;
   background: none;
-  text-shadow: 0 1px white;
+  /* text-shadow: 0 1px white; better for your eyes */
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-weight: bold;
   text-align: left;

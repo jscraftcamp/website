@@ -7,8 +7,11 @@
     "saturday": false
   },
   "tags": ["Java", "Script"],
-  "dietary_requirements": "vegan",
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
   "what_is_my_connection_to_javascript": "...",
   "what_can_i_contribute": "???",
-  "tshirt": "/^(W|M)-(S|M|L|XL)$/"  
+  "tshirt": "/^(W|M)-(S|M|L|XL)$/",
+  "twitter": ""
 }

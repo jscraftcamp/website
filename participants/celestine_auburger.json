@@ -1,0 +1,16 @@
+{
+  "name": "Celestine Auburger",
+  "company": "Peerigon GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["JavaScript", "React", "Vue"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I've just been working in the webdevelopment area for one year, but I love it!",
+  "what_can_i_contribute": "Good coffee and discussions about being a newbie in the webdevelopment world",
+  "tshirt": "W-M"
+}

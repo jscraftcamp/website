@@ -1,14 +1,23 @@
 {
   "name": "Michael Gerhaeuser",
   "company": "Method Park",
-  "tags": ["es2019", "typescript", "react", "node", "rust", "webassembly"],
   "when": {
     "friday": true,
     "friday_party": true,
     "saturday": true
   },
-  "dietary_requirements": "none",
-  "what_is_my_connection_to_javascript": "js dev for 10+ years",
-  "what_can_i_contribute": "Share my experience with webassembly. Discuss js in general, especially new and upcoming features.",
+  "tags": [
+    "es2019",
+    "typescript",
+    "react",
+    "node",
+    "rust",
+    "webassembly"
+  ],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "none",
+  "what_is_my_connection_to_javascript": "js & web dev for 10+ years",
+  "what_can_i_contribute": "Share my experience with WebAssembly and Rust. Discuss JS in general, especially the recently added and upcoming features.",
   "tshirt": "M-XL"
 }
