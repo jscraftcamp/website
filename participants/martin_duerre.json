@@ -1,13 +1,15 @@
 {
   "name": "Martin Duerre",
-  "company": "DellEMC",
-  "tags": ["js_bambies"],
+  "company": "Dell",
   "when": {
     "friday": true,
     "friday_party": false,
     "saturday": true
   },
-  "what_is_my_connection_to_javascript": "Mostly fascinated bystander seeing the js hype train go by :) Done some web, alexa, automation stuff with js.",
-  "what_can_i_contribute": "Good listener, decent at asking questions (specially the ones that are really stupid)!",
-  "tshirt": "M-XL"
+  "tags": ["Typescript", "Automation", "Containers"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "none",
+  "what_is_my_connection_to_javascript": "Mostly Joern Bernhardt ;)",
+  "what_can_i_contribute": "I think we had an idead for a talk... Let's see"
 }
