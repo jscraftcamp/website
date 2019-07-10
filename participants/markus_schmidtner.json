@@ -1,0 +1,16 @@
+{
+    "name": "Markus Schmidtner)",
+    "company": "Hochschule Landshut",
+    "when": {
+      "friday": false,
+      "friday_party": false,
+      "saturday": true
+    },
+    "tags": ["angular", "typescript"],
+    "vegan": false,
+    "vegetarian": false,
+    "allergies": "none",
+    "what_is_my_connection_to_javascript": "trying to learn it",
+    "what_can_i_contribute": "A perspective on how javascript/typescript is used in an academic environment",
+    "tshirt": "M-XL"
+}
