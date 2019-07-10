@@ -65,6 +65,7 @@ describe("Participants JSON file", () => {
         assert.ok('tags' in object);
         assert.ok(Array.isArray(object.tags));
         assert.ok(object.tags.length > 0);
+        assert.ok(object.tags.every((tag) => !!tag));
       });
 
       it("may contain `allergies`", () => {
