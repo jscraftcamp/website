@@ -1,0 +1,17 @@
+{
+  "name": "Alexander Friedl",
+  "company": "All3DP GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": false
+  },
+  "tags": ["JavaScript", "TypeScript", "nodejs", "ramda"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Been using JS/TS in projects for 7 years, love node.js",
+  "what_can_i_contribute": "Share my experience from building node.js server applications of varying complexity",
+  "tshirt": "M-L",
+  "twitter": "lxfriedl"
+}

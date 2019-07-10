@@ -1,16 +1,16 @@
 {
   "name": "Robert Kalscheuer",
-  "company": "sqmok",
-  "tags": ["Ember", "TDD", "Software Crafting", "DevOps"],
+  "company": "Nop",
   "when": {
     "friday": true,
     "friday_party": true,
     "saturday": true
   },
-  "email": "",
-  "dietary_requirements": "nothing special",
-  "what_is_my_connection_to_javascript": "using and loving js",
-  "what_can_i_contribute": "experience and enthusiasm; Critical thinking",
-  "tshirt": "M-L",
-  "urls": {}
+  "tags": ["TypeScript", "node", "testing", "React", "TDD"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "none",
+  "what_is_my_connection_to_javascript": "Most Endless possibilities",
+  "what_can_i_contribute": "Tales from my work with JS",
+  "tshirt": "M-L"
 }

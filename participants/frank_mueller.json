@@ -7,12 +7,13 @@
     "saturday": true
   },
   "tags": [
-    "architecture",
-    "project-structure",
-    "typescript"
+    "JavaScript",
+    "TypeScript"
   ],
-  "dietary_requirements": "",
-  "what_is_my_connection_to_javascript": "I started learning javascript 1.5 years ago and work as a Junior in my company.",
-  "what_can_i_contribute": "As I am on a junior level, I dont feel like I can contribute a talk. But I like to participate in any discussion about frontend development.",
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I started learning javascript 2.5 years ago and work as a Junior in my company.",
+  "what_can_i_contribute": "Maybe I can discuss with more experienced developers and come up with some unusual or new ideas.",
   "tshirt": "M-L"
 }

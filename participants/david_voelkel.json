@@ -1,15 +1,16 @@
 {
-  "name" : "David Völkel",
-  "company" : "codecentric.de",
-  "tags" : [ "Software Crafting", "TDD" ],
-  "when" :
-  {
-    "friday" : true,
+  "name": "David Völkel",
+  "company": "codecentric",
+  "when": {
+    "friday": true,
     "friday_party": true,
-    "saturday" : true
+    "saturday": true
   },
-  "dietary_requirements": "omnivore",
-  "what_is_my_connection_to_javascript" : "Coming from Java back-ends and dev ops I have basic JS skills, but want to learn more.",
-  "what_can_i_contribute" : "Critical thinking and playing sparring partner for your bold ideas. Some stupid puns. A lot of software craft experience",
-  "tshirt" : "M-M"
+  "tags": ["TDD", "scriptkiddie"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Basic experience in JS, TS and Angular",
+  "what_can_i_contribute": "my gentle presence and dad jokes",
+  "tshirt": "M-M"  
 }

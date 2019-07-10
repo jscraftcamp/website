@@ -1,0 +1,17 @@
+{
+  "name": "Sebastian Eck",
+  "company": "LIV-T",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["JavaScript", "React", "Front-end Architecture", "Community"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "JS development since > 10 years. What's better for crafting great UX?",
+  "what_can_i_contribute": "I bring an open mind, a social streak, a big mouth, and maybe a session proposal ;-)",
+  "tshirt": "M-XL",
+  "twitter": "codeshambles"
+}

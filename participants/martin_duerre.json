@@ -6,10 +6,11 @@
     "friday_party": false,
     "saturday": true
   },
-  "tags": ["Typescript", "Automation", "Containers"],
+  "tags": ["Typescript", "Automation", "Container", "Cloud Foundry"],
   "vegan": false,
   "vegetarian": false,
   "allergies": "none",
-  "what_is_my_connection_to_javascript": "Mostly Joern Bernhardt ;)",
-  "what_can_i_contribute": "I think we had an idead for a talk... Let's see"
+  "what_is_my_connection_to_javascript": "Joern Bernhardt's persistent preaching",
+  "what_can_i_contribute": "We were thinking about a talk, but from thinking to doing",
+  "tshirt": ""
 }

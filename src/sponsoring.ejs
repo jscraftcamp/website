@@ -109,21 +109,22 @@ window.onload = function() {
   });
 
   var data = [
-    { name: 'Venue', priceRange: 'room for ~100 people', icon: 'home', sponsor: 'Virtual Identity', issueId: 388},
-    { name: 'Lunch Friday', priceRange: '~500 € (5 € / person)', icon: 'local_restaurant', sponsor: 'TNG', issueId: 360},
-    { name: 'Snacks Friday', priceRange: '~100 €', icon: 'restaurant', issueId: 362, sponsor: 'Jambit'},
-    { name: 'Lunch Saturday', priceRange: '~500 € (5 € / person)', icon: 'local_restaurant', issueId: 361, sponsor: 'Netcentric'},
-    { name: 'Snacks Saturday', priceRange: '~200 €', icon: 'restaurant', issueId: 363, sponsor: 'cioplenu'},
-    { name: 'Drinks', priceRange: '~500 €', icon: 'local_drink', issueId: 365, sponsor: 'futurice & Entwicklerstube'},
+    { name: 'Venue', priceRange: 'room for ~100 people', icon: 'home', sponsor: 'Virtual Identity', issueId: 548},
+    { name: 'Beverages', priceRange: '~500 €', icon: 'local_drink', sponsor: 'methodpark', issueId: 561},
+    { name: 'Lunch Friday', priceRange: '~1000 €', icon: 'local_restaurant', sponsor: 'Hetzner Cloud', issueId: 538},
+    { name: 'Lunch Saturday', priceRange: '~1000 €', icon: 'local_restaurant', sponsor: 'SinnerSchrader', issueId: 547},
+    { name: 'Snacks Friday', priceRange: '~100 €', icon: 'restaurant', sponsor: 'cioplenu', issueId: 559},
+    { name: 'Snacks Saturday', priceRange: '~200 €', icon: 'restaurant', sponsor: 'Jambit', issueId: 562},
     // { name: 'Renting Chairs', priceRange: '(for community space) ~200 €', icon: 'event_seat', issueId: },
-    { name: 'Coffee', priceRange: '~100 € (you can spend more for better quality)', icon: 'local_cafe', issueId: 364, sponsor: 'Peerigon'},
-    { name: 'Chairs', priceRange: '~300 €', icon: 'event_seat', issueId: 393, sponsor: 'Mayflower'},
-    { name: 'T-Shirts', priceRange: '~1200 €', icon: 'accessibility', issueId: 366, sponsor: 'codecentric AG'},
-    { name: 'Stickers', priceRange: '~100 €', icon: 'note', issueId: 368, sponsor: 'Method Park'},
-    { name: 'Party', priceRange: '~1000 €', icon: 'local_bar', issueId: 367, sponsor: 'ProSiebenSat1'},
-    { name: 'Money: 100 €', priceRange: '', icon: 'euro_symbol', issueId: 358},
-    { name: 'Money: 200 €', priceRange: '', icon: 'euro_symbol', issueId: 357},
-    { name: 'Money: 500 €', priceRange: '', icon: 'euro_symbol', issueId: 359},
+    { name: 'Coffee', priceRange: '~300 € (depends on quality)', icon: 'local_cafe', sponsor: 'Peerigon', issueId: 558},
+    { name: 'Chairs', priceRange: '~300 €', icon: 'event_seat', sponsor: 'ConSol', issueId: 537},
+    { name: 'T-Shirts', priceRange: '~1200 €', icon: 'accessibility', sponsor: 'codecentric AG', issueId: 555},
+    { name: 'Stickers', priceRange: '~100 €', icon: 'note', sponsor: 'Entwicklerstube', issueId: 556},
+    { name: 'Party', priceRange: '~1000 €', icon: 'local_bar', sponsor: 'TNG', issueId: 560},
+    { name: 'BBQ', priceRange: '~0 €', icon: 'restaurant', sponsor: '', issueId: 586},
+    { name: 'Money: 100 €', priceRange: '', icon: 'euro_symbol', issueId: 564},
+    { name: 'Money: 200 €', priceRange: '', icon: 'euro_symbol', issueId: 563},
+    { name: 'Money: 500 €', priceRange: '', icon: 'euro_symbol', sponsor: 'DATEV', issueId: 565},
   ];
   function renderTemplate() {
     var items = [];

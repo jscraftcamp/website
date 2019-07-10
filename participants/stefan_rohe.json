@@ -1,0 +1,16 @@
+{
+  "name": "Stefan Rohe",
+  "company": "valtech_",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["JavaScript", "D", "BDD"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "JS development, webassembly",
+  "what_can_i_contribute": "Session about testing / TDD ;-)",
+  "tshirt": "M-L"
+}

@@ -1,13 +1,20 @@
 {
   "name": "Vladimir Ivanov",
-  "company": "Social Sweethearts GmbH",
-  "tags": ["ReactJS", "AngularJS", "Django", "Docker"],
+  "company": "Social Sweethearts",
   "when": {
     "friday": true,
     "friday_party": true,
     "saturday": true
   },
-  "what_is_my_connection_to_javascript": "Developing web applications using JavaScript for about 11 years. I am a big fan of ReactJS",
-  "what_can_i_contribute": "Share my experience and participate in discussions",
+  "tags": [
+    "javascript",
+    "python",
+    "highload"
+  ],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I am a Fullstack developer, get used to build web applications with angularjs. Reactjs is my new passion now.",
+  "what_can_i_contribute": "I can share our experience of integration reactjs with Django framework, some thoughts about browser performance and http2 deployment.",
   "tshirt": "M-M"
 }

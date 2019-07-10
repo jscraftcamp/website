@@ -1,0 +1,17 @@
+{
+  "name": "Benny",
+  "company": "Virtual Identity",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["JS", "CSS-Grid", "❤️"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "no",
+  "what_is_my_connection_to_javascript": "Sometimes we hate each other but mostly it's love.",
+  "what_can_i_contribute": "How can you contribute to the event? If you don't know yet, feel free to give it some thought ...",
+  "tshirt": "M-L",
+  "twitter": "benschodie"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Alexander Hoffmann",
+  "company": "COOK and CODE",
+  "when": {
+    "friday": false,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["vue.js", "ionic", "laravel", "chatbots"],
+  "vegan": false,
+  "vegetarian": true,
+  "allergies": "...",
+  "what_is_my_connection_to_javascript": "Using vue.js in the frontend of my applications.",
+  "what_can_i_contribute": "Could try to give a talk / discussion about how beginners are overwhelmed in learning js and how to improve it?"
+}

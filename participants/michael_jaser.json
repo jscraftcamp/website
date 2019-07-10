@@ -1,13 +1,17 @@
 {
   "name": "Michael Jaser",
-  "company": "Peerigon GmbH",
+  "company": "Peerigon",
   "when": {
-    "friday": false,
-    "friday_party": false,
+    "friday": true,
+    "friday_party": true,
     "saturday": true
-   },
-   "dietary_requirements": "flexitarian",
-   "what_is_my_connection_to_javascript": "Co-founder of javascript.company (aka Peerigon). I'm teaching Node.js at the university of Applied Sciences Augsburg and we also run NodeSchool Augsburg / Munich and co-organize some other web related meetups.",
-   "what_can_i_contribute": "Node.js, HTTP(2), microservices, community, teaching js/node, company culture, remote working, WASM, Rust",
-   "tshirt": "W-M"
+  },
+  "tags": ["JavaScript", "Node.js", "Community", "Teaching", "APIs", "WASM", "RUST", "IoT", "NodeSchool", "Deno"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "It's my main programming language.",
+  "what_can_i_contribute": "Discussions about the web, JavaScript, community events & teaching.",
+  "tshirt": "M-M",
+  "twitter": "mmeaku"
 }

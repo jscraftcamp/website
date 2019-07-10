@@ -1,0 +1,17 @@
+{
+  "name": "Andreas Jadrin",
+  "company": "jambit GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["JavaScript", "Vue", "node.js"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Daily business.",
+  "what_can_i_contribute": "Newbie and eager to learn. Functional programming with JS.",
+  "tshirt": "M-M",
+  "twitter": "Andy82223280"
+}

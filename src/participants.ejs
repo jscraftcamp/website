@@ -32,6 +32,9 @@
         {{#if company}}
            <p style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">({{company}})</p>
         {{/if}}
+        {{#if twitter}}
+        <p style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;"><a href="https://twitter.com/{{twitter}}" class="blue-text" target="_blank" rel="noreferrer noopener">@{{twitter}}</a></p>
+        {{/if}}
         <div class="card-tags-container blue-text">
           {{#taglist tags}}
             <span class="card-tag">#{{ this }}</span>
@@ -41,6 +44,8 @@
     </div>
   </div>
 </script>
+
+<script type="text/javascript" src="js/tshirt-sizes.js"></script>
 
 <script type="text/javascript">
 
@@ -66,10 +71,13 @@ window.onload = function() {
 
     function notEmpty(field) { return !!field; }
 
+    var shirts = data.map(i => i.tshirt).filter(Boolean)
+
+    console.log('t-shirts', sortShirtSizes(shirts))
   });
-  
+
   Handlebars.registerHelper('taglist', function(listItems) {
-    return listItems ? listItems.map(tag => `#${tag}`).join(' ') : '';
+    return listItems ? listItems.map(tag => `#${ Handlebars.Utils.escapeExpression(tag) }`).join(' ') : '';
   });
 
 };
