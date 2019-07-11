@@ -1,10 +1,9 @@
-var assert = require("assert");
-var fs = require("fs");
-var path = require("path");
-var recursiveReaddirSync = require('recursive-readdir-sync');
+const assert = require("assert");
+const fs = require("fs");
+const recursiveReaddirSync = require('recursive-readdir-sync');
 
 describe("Participants JSON file", () => {
-  var srcdir = "./participants";
+  const srcdir = "./participants";
   recursiveReaddirSync(srcdir)
   .filter(file => file.endsWith(".json"))
   .filter(file => !file.endsWith("/_template.json"))
