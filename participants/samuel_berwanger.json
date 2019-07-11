@@ -1,6 +1,5 @@
 {
   "name": "Samuel Berwanger",
-  "company": "",
   "when": {
     "friday": false,
     "friday_party": true,
@@ -11,7 +10,5 @@
   "vegetarian": false,
   "allergies": "",
   "what_is_my_connection_to_javascript": "2 years working intesively with it",
-  "what_can_i_contribute": "",
-  "tshirt": "M-S",
-  "twitter": ""
+  "tshirt": "M-S"
 }
