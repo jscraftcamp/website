@@ -1,0 +1,26 @@
+{
+  "name": "Tobias Timm",
+  "company": "ProSiebenSat.1 Digital GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": [
+    "JavaScript",
+    "Node.js",
+    "Community",
+    "Meetup",
+    "Teaching",
+    "NodeSchool",
+    "React",
+    "GraphQL"
+  ],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Fullstack JavaScript Developer",
+  "what_can_i_contribute": "Discussions about Web, JavaScript, React, GraphQL, events, teaching",
+  "tshirt": "M-XL",
+  "twitter": "tbstimm"
+}
