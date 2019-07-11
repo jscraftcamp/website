@@ -4,6 +4,13 @@ const recursiveReaddirSync = require('recursive-readdir-sync');
 
 describe("Participants JSON file", () => {
   const srcdir = "./participants";
+
+  it('the participants directory only contains JSON files', () => {
+    const noJsonFiles = recursiveReaddirSync(srcdir)
+      .filter(file => !file.endsWith('.json'));
+    assert.deepEqual(noJsonFiles, []);
+  });
+
   recursiveReaddirSync(srcdir)
   .filter(file => file.endsWith(".json"))
   .filter(file => !file.endsWith("/_template.json"))
