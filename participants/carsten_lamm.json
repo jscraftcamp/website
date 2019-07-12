@@ -1,0 +1,17 @@
+{
+  "name": "Carsten Lamm",
+  "company": "kontextR GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": false
+  },
+  "tags": ["respectful", "TDD", "chrome extensions"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "soy, nuts, carrots",
+  "what_is_my_connection_to_javascript": "I do javascript for 10 years.",
+  "what_can_i_contribute": "ideas, critical thoughts, tdd",
+  "tshirt": "M-M",
+  "twitter": "FQ400"
+}
