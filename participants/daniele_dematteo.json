@@ -1,0 +1,16 @@
+{
+  "name": "Daniele De Matteo",
+  "company": "MX1",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": false
+  },
+  "tags": ["ECMAScript", "React", "Typescript", "NodeJS"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "-",
+  "what_is_my_connection_to_javascript": "Started with jQuery, in love with ES6 and React",
+  "what_can_i_contribute": "Sharing knoledges and having fun",
+  "tshirt": "M-M"
+}
