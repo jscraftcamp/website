@@ -1,9 +1,8 @@
 {
     "name": "Carine Hammes",
-    "company": "Xaasify",
     "when": {
       "friday": false,
-      "friday_party": true,
+      "friday_party": false,
       "saturday": false
     },
     "tags": ["Javascript", "React", "Script"],
