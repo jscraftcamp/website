@@ -1,0 +1,16 @@
+{
+  "name": "Florian Loretan",
+  "company": "Wunder.io",
+  "when": {
+    "friday": false,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["Serverless", "Learning", "Typescript", "Kubernetes"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Don't write much code in my professional life anymore, but javascript is my go-to language for automating tasks.",
+  "what_can_i_contribute": "I'd be happy to give an intro to serverless (the framework).",
+  "tshirt": "M-M"
+}
