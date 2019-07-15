@@ -1,0 +1,17 @@
+{
+          "name": "Brigitte Jellinek",
+          "company": "Fachhochschule Salzburg",
+          "when": {
+            "friday": true,
+            "friday_party": true,
+            "saturday": true
+          },
+          "tags": [ "javascript", "node", "teaching" ],
+          "vegan": false,
+          "vegetarian": false,
+          "allergies": "",
+          "what_is_my_connection_to_javascript": "When I used JavaScript for the first time in a commercial project in around '96 it was a total desaster. We've come a long way since then!  Today I'm glad to teach JavaScript to my students.",
+          "what_can_i_contribute": "Experience and enthusiasm. Maybe a few boardgames.",
+          "tshirt": "W-XL",
+          "twitter": "bjelline"
+}

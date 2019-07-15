@@ -2,9 +2,9 @@
   "name": "Michael Hoffmann",
   "company": "Freelancer",
   "when": {
-    "friday": true,
+    "friday": false,
     "friday_party": false,
-    "saturday": false
+    "saturday": true
   },
   "tags": [
     "React",

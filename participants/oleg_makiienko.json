@@ -1,0 +1,17 @@
+{
+    "name": "Oleg Makiienko",
+    "company": "Autoscout24",
+    "when": {
+      "friday": true,
+      "friday_party": false,
+      "saturday": false
+    },
+    "tags": ["javascript", "Node.js", "typescript", "React"],
+    "vegan": false,
+    "vegetarian": false,
+    "allergies": "bad code",
+    "what_is_my_connection_to_javascript": "I love js, hope it also loves me. Connected at work and hobby projects, javascript is my preferred choice for almost everything",
+    "what_can_i_contribute": "Give overview how js is used in Autoscout24 supporting Serverless architecture",
+    "tshirt": "M-M",
+    "twitter": "omakoleg"
+  }

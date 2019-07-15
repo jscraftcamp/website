@@ -1,0 +1,18 @@
+{
+  "name": "Michael Gural",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": [
+    "Javascript",
+    "Angular",
+    "Node.js"
+  ],
+  "vegan": false,
+  "vegetarian": false,
+  "what_is_my_connection_to_javascript": "I have been using JavaScript for 4 years both for frontend and backend.",
+  "what_can_i_contribute": "Angular, Node.js",
+  "tshirt": "M-M"
+}
