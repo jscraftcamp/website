@@ -2,13 +2,8 @@
     "name": "Bachir",
     "company": "MEDISinn Plattform GmbH",
     "when": {
-<<<<<<< HEAD
       "friday": false,
       "friday_party": false,
-=======
-      "friday": true,
-      "friday_party": true,
->>>>>>> 043228291396666236ebfe23aacfbffa4b3e64fe
       "saturday": true
     },
     "tags": ["JS", "Angular", "TypeScript", "TDD"],
