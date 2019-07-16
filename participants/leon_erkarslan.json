@@ -1,0 +1,16 @@
+{
+  "name": "Leon Erkarslan",
+  "company": "DATEV eG",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": false
+  },
+  "tags": ["Agile", "Scrum"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "nope",
+  "what_is_my_connection_to_javascript": "My dev team works with JavaScript.",
+  "what_can_i_contribute": "Ideas and experience on agile software engineering with JavaScript",
+  "tshirt": "M-M"
+}
