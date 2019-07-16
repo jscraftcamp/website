@@ -1,0 +1,17 @@
+{
+  "name": "Markus Knittig",
+  "company": "BRYTER",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["TypeScript", "Vue", "Kotlin", "CraftBeer"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Full-stack developer working on a bigger SPA with all whistles and bells",
+  "what_can_i_contribute": "Experience on how to structure a vue.js app. Kotlin know-how and general software design knowledge",
+  "tshirt": "M-L",
+  "twitter": "mknittig"
+}
