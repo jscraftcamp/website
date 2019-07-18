@@ -1,0 +1,17 @@
+{
+  "name": "Marvin Hiemann",
+  "company": "SC-Networks",
+  "when": {
+    "friday": true,
+    "friday_party": false,
+    "saturday": false
+  },
+  "tags": ["JavaScript"],
+  "vegan": false,
+  "vegetarian": true,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I'm very curious about JavaScript",
+  "what_can_i_contribute": "I try my best to contribute something",
+  "tshirt": "M-M",
+  "twitter": "Muffin2Go"
+}
