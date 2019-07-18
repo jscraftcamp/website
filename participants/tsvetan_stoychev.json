@@ -1,0 +1,17 @@
+{
+  "name": "Tsvetan Stoychev",
+  "company": "Tsvetan Stoychev",
+  "when": {
+    "friday": true,
+    "friday_party": false,
+    "saturday": true
+  },
+  "tags": ["web performance", "eval"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "...",
+  "what_is_my_connection_to_javascript": "Since 2 years I use a library called Boomerang JS in order to collect a lot of performance data from visitors browsers.",
+  "what_can_i_contribute": "I can share what I learned about web performance metrics. Also I have some interesting demos that demonstarte how busy is the browser main theread and what is a rage click.",
+  "tshirt": "M-XL",
+  "twitter": "ceckoslab"
+}
