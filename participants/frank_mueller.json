@@ -4,7 +4,7 @@
   "when": {
     "friday": true,
     "friday_party": false,
-    "saturday": true
+    "saturday": false
   },
   "tags": [
     "JavaScript",
