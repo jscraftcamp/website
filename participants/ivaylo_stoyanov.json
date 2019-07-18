@@ -1,0 +1,18 @@
+{
+    "name": "Ivaylo (Ivo)",
+    "company": "Virtual Identity",
+    "when": {
+      "friday": true,
+      "friday_party": true,
+      "saturday": true
+    },
+    "tags": ["Components", "ReusableCode", "sharing"],
+    "vegan": false,
+    "vegetarian": false,
+    "allergies": "...",
+    "what_is_my_connection_to_javascript": "Using JS to create component functionality. ",
+    "what_can_i_contribute": "I can discuss how Junior devs should constantly aim to improve for the better of all devs in the community.",
+    "tshirt": "M-XL",
+    "twitter": "Ivaylo_S"
+  }
+      
