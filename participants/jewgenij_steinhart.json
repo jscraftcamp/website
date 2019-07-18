@@ -1,0 +1,17 @@
+{
+  "name": "Jewgenij Steinhart",
+  "company": "FitDev.io//Freelance",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["Freelance", "React", "JavaScript", "Blockchain"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I am a JS Dev",
+  "what_can_i_contribute": "Discussions around Freelance, Fitness, Blockchain and Entrepreneurship",
+  "tshirt": "M-L",
+  "twitter": "jeffstei"
+}

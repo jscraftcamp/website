@@ -1,0 +1,16 @@
+{
+  "name": "Thomas Tasler",
+  "company": "makandra",
+  "when": {
+    "friday": false,
+    "friday_party": false,
+    "saturday": true
+  },
+  "tags": ["fun", "coding", "cold drinks"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "...",
+  "what_is_my_connection_to_javascript": "I am a working student as a full stack web developer. So I need to know the basics to do the daily JS magic. But I want to get deeper insights in JS Framworks, like react, oder other cool JS magic, but I am a nooby.",
+  "what_can_i_contribute": "As I am a starter in JS, I can not contribute a lot this year. But I can ask silly questions, to force the pros giving creative and revealing answers!",
+  "tshirt": "M-M"
+}

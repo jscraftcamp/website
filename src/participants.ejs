@@ -45,6 +45,8 @@
   </div>
 </script>
 
+<script type="text/javascript" src="js/tshirt-sizes.js"></script>
+
 <script type="text/javascript">
 
 window.onload = function() {
@@ -64,13 +66,16 @@ window.onload = function() {
     });
     $("#participants").append(items.join(""));
     $("#sum").append(sum+" participants");
-    $("#sum_friday").append(sum_friday+" participants on Friday (max. 100)");
-    $("#sum_saturday").append(sum_saturday+" participants on Saturday (max. 100)");
+    $("#sum_friday").append(sum_friday+" participants on Friday (max. 120)");
+    $("#sum_saturday").append(sum_saturday+" participants on Saturday (max. 120)");
 
     function notEmpty(field) { return !!field; }
 
+    var shirts = data.map(i => i.tshirt).filter(Boolean)
+
+    console.log('t-shirts', sortShirtSizes(shirts))
   });
-  
+
   Handlebars.registerHelper('taglist', function(listItems) {
     return listItems ? listItems.map(tag => `#${ Handlebars.Utils.escapeExpression(tag) }`).join(' ') : '';
   });

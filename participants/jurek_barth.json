@@ -1,0 +1,17 @@
+{
+  "name": "Jurek Barth",
+  "company": "Virtual Identity",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["es6", "webcomponents", "biotope"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "It's my job 👋",
+  "what_can_i_contribute": "Maybe i will give a talk about something javascript related 🙃",
+  "tshirt": "M-M",
+  "twitter": "jurekbarth"
+}

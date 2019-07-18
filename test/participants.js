@@ -1,10 +1,16 @@
-var assert = require("assert");
-var fs = require("fs");
-var path = require("path");
-var recursiveReaddirSync = require('recursive-readdir-sync');
+const assert = require("assert");
+const fs = require("fs");
+const recursiveReaddirSync = require('recursive-readdir-sync');
 
 describe("Participants JSON file", () => {
-  var srcdir = "./participants";
+  const srcdir = "./participants";
+
+  it('the participants directory only contains JSON files', () => {
+    const noJsonFiles = recursiveReaddirSync(srcdir)
+      .filter(file => !file.endsWith('.json'));
+    assert.deepEqual(noJsonFiles, []);
+  });
+
   recursiveReaddirSync(srcdir)
   .filter(file => file.endsWith(".json"))
   .filter(file => !file.endsWith("/_template.json"))
@@ -65,6 +71,7 @@ describe("Participants JSON file", () => {
         assert.ok('tags' in object);
         assert.ok(Array.isArray(object.tags));
         assert.ok(object.tags.length > 0);
+        assert.ok(object.tags.every((tag) => !!tag));
       });
 
       it("may contain `allergies`", () => {
