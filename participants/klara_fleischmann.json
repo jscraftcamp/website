@@ -1,0 +1,15 @@
+{
+  "name": "Klara Fleischmann",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": [
+    "JavaScript"
+  ],
+  "vegan": false,
+  "vegetarian": false,
+  "what_is_my_connection_to_javascript": "After teaching myself HTML & CSS in 2017, I quickly learned to love JavaScript. Since then I am working on becoming a JavaScript Wizard",
+  "twitter": "KlaraMiffili"
+}
