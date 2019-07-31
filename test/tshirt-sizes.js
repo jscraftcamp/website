@@ -2,7 +2,7 @@ const hamjest = require("hamjest");
 const assertThat = hamjest.assertThat;
 const hasProperty = hamjest.hasProperty;
 const equalTo = hamjest.equalTo;
-const sortShirtSizes = require('../src/js/tshirt-sizes');
+const sortShirtSizes = require('../static/js/tshirt-sizes');
 
 describe("T-Shirt sizes", () => {
   const shirts = ["M-L","M-M","W-M","W-M","M-L","M-XL","M-L","M-L","W-XL","M-XL","M-M"];

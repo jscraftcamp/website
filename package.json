@@ -1,25 +1,42 @@
 {
   "name": "js-craftcamp-website",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Website for the JSCC (jscraftcamp.org)",
-  "main": "index.js",
   "engines": {
     "node": ">= 10.0.0"
   },
+  "dependencies": {
+    "gatsby": "2.19.12",
+    "gatsby-image": "2.2.40",
+    "gatsby-plugin-manifest": "2.2.41",
+    "gatsby-plugin-offline": "3.0.34",
+    "gatsby-plugin-react-helmet": "3.1.22",
+    "gatsby-plugin-sharp": "2.4.5",
+    "gatsby-source-filesystem": "2.1.48",
+    "gatsby-transformer-json": "2.2.26",
+    "gatsby-transformer-sharp": "2.3.14",
+    "prop-types": "15.7.2",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-helmet": "5.2.1"
+  },
   "devDependencies": {
-    "hamjest": "^3.2.3",
-    "harp": "^0.30.0",
-    "mocha": "^6.1.4",
-    "recursive-readdir-sync": "^1.0.6"
+    "hamjest": "3.2.3",
+    "mocha": "6.1.4",
+    "recursive-readdir-sync": "1.0.6",
+    "prettier": "1.19.1"
   },
   "scripts": {
-    "prebuild": "mkdir ./dist",
-    "build": "harp compile ./src ./dist; cp CNAME dist/; npm run 'build:participants.json'",
-    "build:participants.json": "node scripts/concat-json.js ./participants dist/participants.json; cp ./dist/participants.json ./src/",
-    "start": "harp server ./src",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "prebuild": "rm -rfv dist ; mkdir -p ./public",
+    "build": "cp CNAME public/; npm run build:participants.json ; gatsby build;",
+    "build:participants.json": "node scripts/concat-json.js ./participants public/participants.json; cp ./public/participants.json ./src/",
     "test": "mocha test"
   },
-  "author": "David Losert <david.losert@virtual-identity.com>",
+  "author": "Robert Hostlowsky",
   "license": "MIT",
   "repository": "https://github.com/jscraftcamp/website.git"
 }
