@@ -1,0 +1,16 @@
+{
+  "name": "Henry",
+  "company": "All3DP GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["JavaScript", "nodejs"],
+  "vegan": true,
+  "vegetarian": true,
+  "allergies": "none",
+  "what_is_my_connection_to_javascript": "I have been coding node.js backends for 7 years",
+  "what_can_i_contribute": "My experience of planning & developing nodejs backends",
+  "tshirt": "M-M"
+}

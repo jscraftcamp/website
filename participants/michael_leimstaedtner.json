@@ -1,0 +1,16 @@
+{
+  "name": "Michael Leimstädtner",
+  "company": "makandra GmbH",
+  "when": {
+    "friday": false,
+    "friday_party": false,
+    "saturday": true
+  },
+  "tags": ["Vanilla JS", "Unpoly", "CoffeeScript"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "JS is where programming started to be fun. It's interesting to see how the language evolves lately.",
+  "what_can_i_contribute": "I'm currently not using any bleeding edge framework, but I can talk about Unpoly.",
+  "tshirt": "M-M"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Oleksandr Fedotov",
+  "company": "Netlight Consulting GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": [
+    "Javascript",
+    "React",
+    "Functional programming",
+    "Flow",
+    "ES6",
+    "Redux",
+    "NodeJS",
+    "Typescript",
+    "React"
+  ],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Using at work and hobby projects during last 5 years",
+  "what_can_i_contribute": "Optimizations applied in React-based project built for Smart TVs",
+  "tshirt": "M-M",
+  "twitter": "oleksfedotov"
+}

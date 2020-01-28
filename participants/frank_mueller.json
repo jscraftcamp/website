@@ -1,0 +1,19 @@
+{
+  "name": "Frank Müller",
+  "company": "SC-Networks GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": false,
+    "saturday": false
+  },
+  "tags": [
+    "JavaScript",
+    "TypeScript"
+  ],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I started learning javascript 2.5 years ago and work as a Junior in my company.",
+  "what_can_i_contribute": "Maybe I can discuss with more experienced developers and come up with some unusual or new ideas.",
+  "tshirt": "M-L"
+}

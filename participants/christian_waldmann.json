@@ -1,0 +1,16 @@
+{
+  "name": "Christian Waldmann",
+  "company": "Hetzner Cloud GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["TypeScript", "angular", "E2E", "TDD"],
+  "vegan": false,
+  "vegetarian": true,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Lead developer and architect from a large Angular project",
+  "what_can_i_contribute": "Lot of experience in building a maintainable, modular and well tested angular application",
+  "tshirt": "M-L"  
+}

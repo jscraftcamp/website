@@ -1,0 +1,14 @@
+{
+  "name": "Jonas Lorenz",
+  "company": "correct.",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["FP", "TDD","React", "Vue"],
+  "vegan": false,
+  "vegetarian": false,
+  "what_is_my_connection_to_javascript": "At our startup I am currently the one writing all the javascript for our frontend.",
+  "tshirt": "M-M"
+}

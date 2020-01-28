@@ -1,0 +1,23 @@
+{
+  "name": "Robert Hostlowsky",
+  "company": "codecentric AG",
+  "tags": [
+    "React",
+    "GraphQL",
+    "Apollo",
+    "Prisma",
+    "Cypress"
+  ],
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "vegetarian": true,
+  "vegan": true,
+  "dietary_requirements": "",
+  "what_is_my_connection_to_javascript": "Got in love with JS years ago. JS IS my production env every day. The creativity and innovations by its community is inspiring me every day.",
+  "what_can_i_contribute": "Ask me everything related to graphql! Let's build an entire GraphQL app server/client (e.g. Trello clone): See https://coolboard.netlify.com",
+  "tshirt": "M-M",
+  "twitter": "rhosts"
+}

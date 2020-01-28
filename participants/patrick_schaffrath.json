@@ -1,0 +1,15 @@
+{
+  "name": "Patrick Schaffrath",
+  "company": "Hetzner Cloud GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["TypeScript", "RxJs", "Angular"],
+  "vegan": false,
+  "vegetarian": true,
+  "what_is_my_connection_to_javascript": "work related",
+  "what_can_i_contribute": "functional programming topics",
+  "tshirt": "M-M"
+}

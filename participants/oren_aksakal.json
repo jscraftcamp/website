@@ -1,0 +1,16 @@
+{
+  "name": "Oren Aksakal",
+  "company": "Oracle",
+  "when": {
+    "friday": false,
+    "friday_party": false,
+    "saturday": true
+  },
+  "tags": ["A/B Testing", "JavaScript", "Html", "Css", "ReactJs"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I'm Front-End developer, currently working on implementations of A/B tests. Looking forward to learn more on framework world.",
+  "what_can_i_contribute": "JavaScript, HTML, CSS, A/B Testing, Questions, Physical Help",
+  "tshirt": "M-M"
+}

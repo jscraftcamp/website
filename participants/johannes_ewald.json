@@ -1,0 +1,15 @@
+{
+  "name": "Johannes Ewald",
+  "company": "Peerigon GmbH",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["javascript", "webpack", "typescript", "react", "vue"],
+  "vegan": false,
+  "vegetarian": true,
+  "what_is_my_connection_to_javascript": "I write it, I teach it, I love it!",
+  "what_can_i_contribute": "Give webpack config support, yay! :)",
+  "twitter": "jhnnns"
+}

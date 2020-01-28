@@ -505,7 +505,7 @@
   "theteam": [
     {
       "name": "Wolfram Kriesing",
-      "photo": "wolfram.png",
+      "photo": "wolfram.jpg",
       "email": "w@kriesing.de"
     },
     {
@@ -516,7 +516,7 @@
     {
       "name": "Marco Emrich",
       "photo": "marco.jpg",
-      "email": "m.emrich@webmasters.de"
+      "email": "marco.emrich@codecentric.de"
     },
     {
       "name": "Marc Emmanuel",
@@ -525,7 +525,7 @@
     },
     {
       "name": "Sebastian Frerichs",
-      "photo": "",
+      "photo": "sebastian.jpg",
       "email": "sebastian.frerichs@codecentric.de"
     }
   ]

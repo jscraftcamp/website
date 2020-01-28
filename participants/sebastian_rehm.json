@@ -1,0 +1,26 @@
+{
+  "name": "Sebastian Rehm",
+  "company": "Agrando",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": false
+  },
+  "tags": [
+    "JavaScript",
+    "Vue",
+    "TailwindCSS",
+    "Typescript",
+    "React",
+    "React Native",
+    "Expo",
+    "GraphQl"
+  ],
+  "vegan": false,
+  "vegetarian": true,
+  "allergies": "none",
+  "what_is_my_connection_to_javascript": "I started working with JS during my studies and the ease of just needing a text editor and a browser got me hooked. Since then I've worked with JS in a lot of projects, on the server and the client side.",
+  "what_can_i_contribute": "Vue/Nuxt, React, TailwindCSS, Storybook, Graphql in React/Vue, React Native with Expo",
+  "tshirt": "M-S",
+  "twitter": "_bastiRe"
+}

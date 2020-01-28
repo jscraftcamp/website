@@ -1,0 +1,16 @@
+{
+  "name": "Marco Emrich",
+  "company": "codecentric",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["ReasonML", "TDD", "SoftwareCrafting"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Feeling at home in the JS ecco system. Always find new interesting stuff, I can learn, write and talk about.",
+  "what_can_i_contribute": "I can offer sessions about ReasonML, FP, TDD and Testing in general",
+  "tshirt": "M-XL"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Andreas Kottre",
+  "company": "typedigital",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": [ "React", "JavaScript", "TypeScript", "Gatsby", "React Native", "networking"],
+  "vegan": false,
+  "vegetarian": true,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I've started in web dev a few years ago with HTML, CSS and Vanilla JS and now I'm Co-Founder of a small agency building Apps and Webapps with JavaScript.",
+  "what_can_i_contribute": "I can contribute my experience with multiple frameworks.",
+  "tshirt": "M-L"
+}

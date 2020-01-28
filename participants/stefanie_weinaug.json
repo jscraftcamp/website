@@ -1,0 +1,17 @@
+{
+  "name": "Stefanie Weinaug",
+  "company": "SinnerSchrader",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["WomeninTech", "TechRecruitment", "JavaScript", "Dogs"],
+  "vegan": false,
+  "vegetarian": true,
+  "allergies": "...",
+  "what_is_my_connection_to_javascript": "JavaScript Newbie. Learning privately.",
+  "what_can_i_contribute": "Any recruitment related subject, I can contribute.",
+  "tshirt": "W-S",
+  "twitter": "SteffiWeinaug"
+}

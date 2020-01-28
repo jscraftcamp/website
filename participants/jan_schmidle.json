@@ -1,0 +1,15 @@
+{
+  "name": "Jan Schmidle",
+  "company": "cospired",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["Cloud", "k8s", "microservice", "iot", "Node.js"],
+  "vegan": false,
+  "vegetarian": false,
+  "what_is_my_connection_to_javascript": "my tool of choice for quick hacks as well was some proper project for quite some time already",
+  "what_can_i_contribute": "Perhaps a session again. Something around security, microservices, k8s, ...",
+  "tshirt": "M-L"
+}

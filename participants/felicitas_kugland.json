@@ -1,0 +1,17 @@
+{
+  "name": "Felicitas Kugland",
+  "company": "SinnerSchrader",
+  "when": {
+    "friday": false,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["JavaScript", "CSS", "Storybook", "React", "DeveloperRelations", "Community"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "...",
+  "what_is_my_connection_to_javascript": "JavaScript is my daily work, on projects and community related",
+  "what_can_i_contribute": "A lot of stickers ;) power banks if you run out of batterie and everything around the javascript community",
+  "tshirt": "W-L",
+  "twitter": "kotzendekrabbe"
+}

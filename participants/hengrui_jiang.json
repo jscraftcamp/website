@@ -1,0 +1,13 @@
+{
+  "name": "Hengrui Jiang",
+  "when": {
+    "friday": false,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["Reagent", "TDD", "CSS"],
+  "vegan": false,
+  "vegetarian": true,
+  "what_is_my_connection_to_javascript": "Playing around in my free time",
+  "what_can_i_contribute": "visual notes, curious questions"
+}

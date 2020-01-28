@@ -1,0 +1,16 @@
+{
+  "name": "Thomas Lutzeyer",
+  "company": "Celonis",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["Angular", "Typescript", "RxJS"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "My last recruiter looked for a Java/JavaScript developer. They're the same thing, right?",
+  "what_can_i_contribute": "I could host a (very) small workshop on RxJs",
+  "tshirt": "M-M"  
+}

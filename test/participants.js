@@ -1,10 +1,16 @@
-var assert = require("assert");
-var fs = require("fs");
-var path = require("path");
-var recursiveReaddirSync = require('recursive-readdir-sync')
+const assert = require("assert");
+const fs = require("fs");
+const recursiveReaddirSync = require('recursive-readdir-sync');
 
 describe("Participants JSON file", () => {
-  var srcdir = "./participants";
+  const srcdir = "./participants";
+
+  it('the participants directory only contains JSON files', () => {
+    const noJsonFiles = recursiveReaddirSync(srcdir)
+      .filter(file => !file.endsWith('.json'));
+    assert.deepEqual(noJsonFiles, []);
+  });
+
   recursiveReaddirSync(srcdir)
   .filter(file => file.endsWith(".json"))
   .filter(file => !file.endsWith("/_template.json"))
@@ -61,6 +67,13 @@ describe("Participants JSON file", () => {
         }
       });
 
+      it('must contain tags', () => {
+        assert.ok('tags' in object);
+        assert.ok(Array.isArray(object.tags));
+        assert.ok(object.tags.length > 0);
+        assert.ok(object.tags.every((tag) => !!tag));
+      });
+
       it("may contain `allergies`", () => {
           if(typeof object.allergies !== "undefined") {
               assert.equal(typeof object.allergies, "string", "'allergies' must be a string");
@@ -73,6 +86,13 @@ describe("Participants JSON file", () => {
 
       it("vegetarian must be boolean", () => {
           assert.equal(typeof object.vegetarian, "boolean", "'vegetarian' must be a boolean");
+      });
+
+      it("may contain a twitter handle", () => {
+        if(typeof object.twitter !== "undefined") {
+            assert.equal(typeof object.twitter, "string", "'twitter' must be of type string");
+            assert.ok(/^[a-z_]{1}[a-z0-9_]{0,14}$/i.test(object.twitter), "'twitter' must be a valid twitter handle");
+        }
       });
     });
   });

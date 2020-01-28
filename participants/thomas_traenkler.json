@@ -1,0 +1,30 @@
+{
+  "name": "Thomas Tränkler",
+  "company": "Interfacers",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": [
+    "webassembly",
+    "typescript",
+    "react",
+    "node",
+    "graphql",
+    "entropic",
+    "serverless"
+  ],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Disliked its shortcomings since '96, changed my mind when transpilers changed the game about 5 years ago. Now developing full time with JS / Typescript as a freelancer for about 5 years. Fan of Assemblyscript.",
+  "what_can_i_contribute": "Share JSConf EU impressions, talk about the future of React or Webassembly ",
+  "tshirt": "M-M",
+  "twitter": "ttraenkler",
+  "urls": {
+    "photo": "https://avatars1.githubusercontent.com/u/347722?s=180&v=4&s=460",
+    "homepage": "https://www.linkedin.com/in/traenkler/",
+    "github": "https://github.com/ttraenkler"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Chris",
+  "company": "with humans technology collective",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["agile", "fp", "fp-ts", "typescript", "testing", "tdd"],
+  "vegan": true,
+  "vegetarian": true,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Love/Hate Relationship",
+  "what_can_i_contribute": "asking question",
+  "tshirt": "W-M",
+  "twitter": "c089"
+}
