@@ -12,20 +12,8 @@
         "title": "Home"
       },
       {
-        "url": "/registration",
-        "title": "Register"
-      },
-      {
-        "url": "/#location",
-        "title": "Location"
-      },
-      {
-        "url": "/sponsoring.html",
+        "url": "https://github.com/jscraftcamp/website/projects/10",
         "title": "Sponsoring"
-      },
-      {
-        "url": "/participants.html",
-        "title": "Participants"
       },
       {
         "url": "/values.html",
@@ -33,6 +21,10 @@
       }
     ],
     "archive": [
+      {
+        "url": "/info2019",
+        "title": "2019 - Home"
+      },
       {
         "url": "/info2018",
         "title": "2018 - Home"
