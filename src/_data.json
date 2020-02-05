@@ -54,9 +54,29 @@
   },
   "theteam": [
     {
-      "name": "Wolfram Kriesing",
-      "photo": "wolfram.jpg",
-      "email": "w@kriesing.de"
+      "name": "Agnes Köhler",
+      "photo": "agnes.png",
+      "email": "koehler.agnes@gmail.com"
+    },
+    {
+      "name": "Jörn Bernhardt",
+      "photo": "joern.jpg",
+      "email": "joern.bernhardt@googlemail.com"
+    },
+    {
+      "name": "David Losert",
+      "photo": "david.jpg",
+      "email": "david@david-losert.com"
+    },
+    {
+      "name": "Michael Zoidl",
+      "photo": "michael.png",
+      "email": "michael@entwicklerstube.com"
+    },
+    {
+      "name": "Patrick Müller",
+      "photo": "patrick.jpg",
+      "email": "mp@floatec.de"
     },
     {
       "name": "Robert Hostlowsky",
@@ -64,19 +84,14 @@
       "email": "robert.hostlowsky@codecentric.de"
     },
     {
-      "name": "Marco Emrich",
-      "photo": "marco.jpg",
-      "email": "marco.emrich@codecentric.de"
+      "name": "Simon Hofmann",
+      "photo": "simon.png",
+      "email": "simons@s1h.org"
     },
     {
-      "name": "Marc Emmanuel",
-      "photo": "marc.jpg",
-      "email": "marc.emmanuel@virtual-identity.com"
-    },
-    {
-      "name": "Sebastian Frerichs",
-      "photo": "sebastian.jpg",
-      "email": "sebastian.frerichs@codecentric.de"
+      "name": "Wolfram Kriesing",
+      "photo": "wolfram.jpg",
+      "email": "w@kriesing.de"
     }
   ]
 }
