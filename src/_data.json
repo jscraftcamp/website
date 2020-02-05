@@ -59,14 +59,14 @@
       "email": "koehler.agnes@gmail.com"
     },
     {
-      "name": "Jörn Bernhardt",
-      "photo": "joern.jpg",
-      "email": "joern.bernhardt@googlemail.com"
-    },
-    {
       "name": "David Losert",
       "photo": "david.jpg",
       "email": "david@david-losert.com"
+    },
+    {
+      "name": "Jörn Bernhardt",
+      "photo": "joern.jpg",
+      "email": "joern.bernhardt@googlemail.com"
     },
     {
       "name": "Michael Zoidl",
