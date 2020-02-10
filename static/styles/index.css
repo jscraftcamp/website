@@ -1,0 +1,47 @@
+.container.logo {
+  text-align: center;
+  width: 300px;
+  margin-top: 4em;
+}
+
+#staticLogo {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+#sponsors .sponsor-logos {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 600px) {
+  #sponsors .sponsor-logos {
+    flex-direction: column;
+  }
+
+  #sponsors .sponsor {
+    margin: 2rem 0;
+    width: 50%;
+    text-align: center;
+  }
+
+  #sponsors .sponsor img {
+    max-height: 75px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  #sponsors .sponsor {
+    width: 280px;
+    margin: 2rem;
+    text-align: center;
+  }
+
+  #sponsors .sponsor img {
+    max-height: 100px;
+  }
+}

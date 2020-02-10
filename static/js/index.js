@@ -16,7 +16,6 @@ function initialize() {
   };
   var map = new google.maps.Map(mapCanvas, mapOptions);
 
-
   var styles = [
     {
       stylers: [
@@ -43,5 +42,5 @@ function initialize() {
   });
 }
 
-typeof google != 'undefined' 
+typeof google != 'undefined'
   && google.maps.event.addDomListener(window, 'load', initialize);
