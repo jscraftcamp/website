@@ -37,7 +37,7 @@ const IndexPage = () => (
               Follow us on <a href="https://twitter.com/JSCraftCamp">Twitter&nbsp;<img src="img/twitter.png" alt="twitter logo"
                                                                                        style={{width: 25}}/></a>
             </h4>
-            <p style={{textAlign: 'center'}}>Be the first to know informations about JSCC19!</p>
+            <p style={{textAlign: 'center'}}>Be the first to know informations about JSCC20!</p>
           </div>
         </div>
       </div>
