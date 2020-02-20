@@ -39,4 +39,16 @@ If you don't want to rely on a global nodejs version, but want a reproducible en
 
 [nix]: http://nixos.org/nix/
 
+## :memo: License
 
+Licensed under the [MIT License](./LICENSE).
+
+## Deployment
+
+Currently we have a travis build for deploying the master branch onto gh-pages branch.
+
+For every PR we build and deploy previews on Netlify:
+
+<a href="https://www.netlify.com">
+  <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg"/>
+</a>
