@@ -54,8 +54,7 @@ const IndexPage = () => (
           <div className="col s12 m6">
             <h5 className="header center">Crafting Software</h5>
             <p className="block">Have you ever struggled with an huge old JavaScript codebase? Or rolled your eyes about
-              an
-              <code>'undefined' is not a function</code> error? We will discuss which tools, practices and
+              an <code>'undefined' is not a function</code> error? We will discuss which tools, practices and
               architecture patterns – from continuous integration to modular components – can help to create and
               maintain long-living, evolvable JavaScript applications.</p>
           </div>
@@ -67,16 +66,15 @@ const IndexPage = () => (
               agenda.
               All the participants meet in the morning and decide about the schedule for the day.
               Everyone can offer a session - from a short hands-on workshop to moderating a discussion. The goal is to
-              make everything as participative as possible. Read more
-              <a target="_blank" href="https://en.wikipedia.org/wiki/Unconference">about
-                BarCamp on Wikipedia</a>.
+              make everything as participative as possible. Read
+              more <a target="_blank" href="https://en.wikipedia.org/wiki/Unconference">about BarCamp on Wikipedia</a>.
             </p>
           </div>
           <div className="col s12 m6">
             <h5 className="header center">How to register?</h5>
             <p className="block">Attendance is <strong>free of charge</strong> and we encourage to sign up in advance.
-              Registration happens by submitting your name and some other information via
-              <a href="http://stackoverflow.com/questions/14680711/how-to-do-a-github-pull-request" target="_blank">Pull
+              Registration happens by submitting your name and some other information
+              via <a href="http://stackoverflow.com/questions/14680711/how-to-do-a-github-pull-request" target="_blank">Pull
                 Request</a>.
               More infos and explanations can be found on the <Link to="registration">Registration Page.</Link>
             </p>
