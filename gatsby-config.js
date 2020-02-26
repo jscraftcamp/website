@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `JSCraftCamp - July 2020 in Munich`,
-    description: `draft of new website for JSCraftCamp - July 2020 in Munich.`,
-    author: `@rhosts`,
+    title: `JSCraftCamp - 10+11 July 2020 in Munich`,
+    description: `Website for JSCraftCamp - 10+11 July 2020 in Munich.`,
+    author: `@davelosert, @rhosts, @michaelzoidl, @Narigo`,
   },
   pathPrefix: '/',
   plugins: [
@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `JSCraftCamp - July 2020 in Munich`,
+        name: `JSCraftCamp - 10+11 July 2020 in Munich`,
         short_name: `JSCraftCamp`,
         start_url: `/`,
         background_color: `#ececec`,
