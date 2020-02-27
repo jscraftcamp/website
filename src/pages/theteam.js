@@ -3,13 +3,12 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import _data from "../_data"
+import { theteam } from "../_data"
 
 const TeamPage = () => {
   return (
     <Layout>
       <SEO title="team"/>
-
       <div className="container">
         <div className="row">
           <div className="col s12 m12">
@@ -24,32 +23,30 @@ const TeamPage = () => {
         </div>
         <div className="row">
           {
-            _data.theteam.map((member, idx) =>
+            theteam.map((member, idx) =>
               <div className="col s12 m4 l3" key={member.name}>
-                  <div className="card">
-                    {member.photo && (
-                      <div className="card-image">
-                        <img className="responsive-img materialboxed"
-                             alt={"member image " + member.name} src={"/img/theteam/" + member.photo}/>
-                      </div>)
-                    }
-                    <div className="card-content">
+                <div className="card">
+                  {member.photo && (
+                    <div className="card-image">
+                      <img className="responsive-img materialboxed"
+                           alt={"member image " + member.name} src={"/img/theteam/" + member.photo}/>
+                    </div>)
+                  }
+                  <div className="card-content">
                       <span className="card-title grey-text text-darken-4">
                       {member.name}
                       </span>
-                      <br/>
-                      <a className="grey-text text-darken-6" href={"mailto:" + member.email}>
-                        {member.email}
-                      </a>
-                    </div>
-
+                    <br/>
+                    <a className="grey-text text-darken-6" href={"mailto:" + member.email}>
+                      {member.email}
+                    </a>
                   </div>
+                </div>
               </div>
             )
           }
         </div>
       </div>
-
     </Layout>
   );
 };
