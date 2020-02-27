@@ -23,7 +23,7 @@ const IndexPage = () => (
         <div className="row">
           <div className="col s12 m12">
             <h1 className={`header center ${_data.baseColor}-text`}>JSCraftCamp 2020</h1>
-            <h3 className="header center">Will return to Munich, July 2020!</h3>
+            <h3 className="header center">Will return to Munich, July 10th - 11th 2020!</h3>
             <h3 className="header center light">A BarCamp about JavaScript and Crafting Software</h3>
             <h3 className="header center light"><a href="/photos2018.html">Impressions from 2018</a></h3>
           </div>
