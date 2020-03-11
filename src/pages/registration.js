@@ -23,7 +23,7 @@ export default () => (
               Repository</a> via a <a href="http://stackoverflow.com/questions/14680711/how-to-do-a-github-pull-request"
                rel="noreferrer noopener" target="_blank">Pull Request</a>.
             Registration is free of charge.
-            Your json file should follow the naming scheme <code>$firstname_$lastname.json</code>and must be placed in
+            Your json file should follow the naming scheme <code>$firstname_$lastname.json</code> and must be placed in
             the folder <code>participants</code>.
             The structure of the file is described below.</p>
           <p>To test if your json file is a valid registration you can run <code>npm test</code> (more details about this are in the <a href="https://github.com/jscraftcamp/website/blob/master/README.md"
