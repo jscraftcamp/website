@@ -1,19 +1,24 @@
 import React from "react"
 import { Link } from "gatsby"
+import { Helmet } from "react-helmet";
 
 import { baseColor } from '../_data.json'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo";
-/*
-            <script type="text/javascript" src="js/prism.js"></script>
-            <script type="text/javascript" src="js/prism-line-highlight.js"></script>
 
- */
 export default () => (
   <Layout>
     <SEO title="registration"/>
 
+    <Helmet
+      script={
+        [
+          { "type": "text/javascript", "src": "js/prism.js" },
+          { "type": "text/javascript", "src": "js/prism-line-highlight.js" }
+        ]
+      }>
+    </Helmet>
     <div className="container">
       <div className="row">
         <div className="col s12 m12">
