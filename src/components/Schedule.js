@@ -24,7 +24,7 @@ const Schedule = () =>
             </tr>
             <tr>
               <td>12:00-13:00</td>
-              <td>Lunch <a href="https://github.com/jscraftcamp/website/issues/538">sponsored by Hetzner Cloud</a>
+              <td>Lunch <a href="https://github.com/jscraftcamp/website/issues/820">sponsored by Hetzner Cloud</a>
               </td>
             </tr>
             <tr>
@@ -37,7 +37,7 @@ const Schedule = () =>
             </tr>
             <tr>
               <td>18:00-24:00</td>
-              <td>Party / BBQ <a href="https://github.com/jscraftcamp/website/issues/560">sponsored by ???</a></td>
+              <td>Party / BBQ <a href="https://github.com/jscraftcamp/website/issues/821">sponsored by ???</a></td>
             </tr>
             <tr>
               <td>18:00-24:00</td>
@@ -62,7 +62,7 @@ const Schedule = () =>
             </tr>
             <tr>
               <td>12:00-13:00</td>
-              <td>Lunch <a href="https://github.com/jscraftcamp/website/issues/547">sponsored by ???</a>
+              <td>Lunch <a href="https://github.com/jscraftcamp/website/issues/827">sponsored by ???</a>
               </td>
             </tr>
             <tr>

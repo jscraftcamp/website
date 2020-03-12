@@ -115,8 +115,7 @@ const IndexPage = () => (
         <Facilitator />
 
         <a name="schedule"/>
-        {false && <Schedule /> }
-
+        <Schedule />
         <Sponsors/>
 
         <a name="location"/>
