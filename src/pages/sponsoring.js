@@ -1,6 +1,6 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import Layout from "../DEPRECATED_components/layout"
 
 import "../css/sponsoring.css"
 

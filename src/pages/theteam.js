@@ -1,7 +1,7 @@
 import React from "react"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../DEPRECATED_components/layout"
+import SEO from "../DEPRECATED_components/seo"
 
 import { theteam } from "../_data"
 
@@ -38,12 +38,12 @@ const TeamPage = () => {
                   </div>
                 )}
                 <div className="card-content">
-                  <span className="card-title grey-text">
+                  <span className="card-title grey-text text-darken-4">
                     {member.name}
                   </span>
                   <br />
                   <a
-                    className="grey-text"
+                    className="grey-text text-darken-6"
                     href={"mailto:" + member.email}
                   >
                     {member.email}
