@@ -55,7 +55,7 @@
     "build": "cp CNAME public/; npm run build:participants.json ; gatsby build;",
     "build:participants.json": "node scripts/concat-json.js ./participants public/participants.json; cp ./public/participants.json ./src/",
     "test": "mocha test",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "NODE_ENV=production start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "hygen": "hygen"
   },
