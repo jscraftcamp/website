@@ -117,7 +117,7 @@ const IndexPage = () => (
         <a name="schedule"/>
         {false && <Schedule /> }
 
-        {false && <Sponsors/> }
+        <Sponsors/>
 
         <a name="location"/>
         <Location/>
