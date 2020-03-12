@@ -15,16 +15,36 @@
     "gatsby-source-filesystem": "2.1.48",
     "gatsby-transformer-json": "2.2.26",
     "gatsby-transformer-sharp": "2.3.14",
+    "modern-normalize": "^0.6.0",
     "prop-types": "15.7.2",
     "react": "16.12.0",
     "react-dom": "16.12.0",
-    "react-helmet": "5.2.1"
+    "react-helmet": "5.2.1",
+    "sass-loader": "^8.0.2",
+    "sass-mq": "^5.0.1",
+    "sass-resources-loader": "^2.0.1",
+    "style-loader": "^1.1.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "@storybook/addon-actions": "^5.3.14",
+    "@storybook/addon-links": "^5.3.14",
+    "@storybook/addons": "^5.3.14",
+    "@storybook/react": "^5.3.14",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-remove-graphql-queries": "^2.7.24",
+    "gatsby-plugin-sass": "^2.1.30",
     "hamjest": "3.2.3",
+    "hygen": "^5.0.3",
+    "i": "^0.3.6",
     "mocha": "6.1.4",
-    "recursive-readdir-sync": "1.0.6",
-    "prettier": "1.19.1"
+    "node-sass": "^4.13.1",
+    "npm": "^6.14.2",
+    "prettier": "1.19.1",
+    "recursive-readdir-sync": "1.0.6"
   },
   "scripts": {
     "develop": "gatsby develop",
@@ -34,7 +54,10 @@
     "prebuild": "rm -rfv dist ; mkdir -p ./public",
     "build": "cp CNAME public/; npm run build:participants.json ; gatsby build;",
     "build:participants.json": "node scripts/concat-json.js ./participants public/participants.json; cp ./public/participants.json ./src/",
-    "test": "mocha test"
+    "test": "mocha test",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "hygen": "hygen"
   },
   "author": "Robert Hostlowsky",
   "license": "MIT",
