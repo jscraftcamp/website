@@ -120,7 +120,7 @@ const IndexPage = () => (
         {false && <Sponsors/> }
 
         <a name="location"/>
-        {false && <Location/> }
+        <Location/>
       </div>
 
     </>
