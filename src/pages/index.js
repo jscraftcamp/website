@@ -112,7 +112,7 @@ const IndexPage = () => (
           </div>
         </div>
 
-        {false && <Facilitator /> }
+        <Facilitator />
 
         <a name="schedule"/>
         {false && <Schedule /> }
