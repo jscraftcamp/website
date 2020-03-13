@@ -1,19 +1,24 @@
 import React from "react"
 import { Link } from "gatsby"
+import { Helmet } from "react-helmet";
 
 import { baseColor } from '../_data.json'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo";
-/*
-            <script type="text/javascript" src="js/prism.js"></script>
-            <script type="text/javascript" src="js/prism-line-highlight.js"></script>
 
- */
 export default () => (
   <Layout>
     <SEO title="registration"/>
 
+    <Helmet
+      script={
+        [
+          { "type": "text/javascript", "src": "js/prism.js" },
+          { "type": "text/javascript", "src": "js/prism-line-highlight.js" }
+        ]
+      }>
+    </Helmet>
     <div className="container">
       <div className="row">
         <div className="col s12 m12">
@@ -23,7 +28,7 @@ export default () => (
               Repository</a> via a <a href="http://stackoverflow.com/questions/14680711/how-to-do-a-github-pull-request"
                rel="noreferrer noopener" target="_blank">Pull Request</a>.
             Registration is free of charge.
-            Your json file should follow the naming scheme <code>$firstname_$lastname.json</code>and must be placed in
+            Your json file should follow the naming scheme <code>$firstname_$lastname.json</code> and must be placed in
             the folder <code>participants</code>.
             The structure of the file is described below.</p>
           <p>To test if your json file is a valid registration you can run <code>npm test</code> (more details about this are in the <a href="https://github.com/jscraftcamp/website/blob/master/README.md"

@@ -60,43 +60,6 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
-        {
-          /*
-        <script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="/js/handlebars.js"></script>
-        <script type="text/javascript" src="/js/index.js"></script>
-        <script type="text/javascript" src="/js/materialize.min.js"></script>
-           */
-        }
-      <script type="text/javascript"
-              dangerouslySetInnerHTML={{
-                __html: `
-        {
-        /*
-          var el = document.getElementById('staticLogo');
-          if (bonsai) {
-            bonsai.run(el, 'https://jscraftcamp.github.io/logo/src/static-logo.js', {
-              height: el.style.height,
-              width: el.style.width,
-              framerate: 50
-            });
-          }
-
-          var logoClassList = document.getElementById('logoContainer').classList;
-
-          var onFirstScroll = function () {
-          if (window.scrollY === 0) {
-          logoClassList.add('centered');
-        } else {
-          logoClassList.remove('centered');
-        }
-        }
-          document.addEventListener('scroll', onFirstScroll);
-        */
-        }
-        ` }}
-      />
-
       </body>
     </html>
   )
