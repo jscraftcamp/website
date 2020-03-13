@@ -1,19 +1,20 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../DEPRECATED_components/layout"
-import SEO from "../DEPRECATED_components/seo"
-
 import Sponsors from "../DEPRECATED_components/Sponsors"
 import Facilitator from "../DEPRECATED_components/Facilitator"
 import Schedule from "../DEPRECATED_components/Schedule"
 import Location from "../DEPRECATED_components/Location"
 import { JsccLogo } from "../DEPRECATED_components";
 
+import Page from "../components/page"
+import Section from "../components/section"
+import Intro from "../components/intro"
+
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <>
+
+  <Page title="Location">
+    <Section>
       <div className="container" style={{ marginTop: "4em" }}>
         <JsccLogo/>
       </div>
@@ -148,8 +149,10 @@ const IndexPage = () => (
         <a name="location" />
         <Location />
       </div>
-    </>
-  </Layout>
+
+      <Intro />
+    </Section>
+  </Page>
 )
 
 export default IndexPage
