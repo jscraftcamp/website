@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../../assets/font/source-sans-pro-regular.ttf") format("tff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 600;
+  src: url("../../assets/font/poppins-semi-bold.ttf") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 700;
+  src: url("../../assets/font/poppins-bold.ttf") format("woff");
+  font-display: swap;
+}
+
+.root {
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+  color: black;
+
+  // bounding box reset
+  margin: 0;
+}
+
+// Components
+
+.h1 {
+  font-size: 44px;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.p {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+// Variants
+
+.subline {
+  font-size: 22px;
+  line-height: 28px;
+  font-family: "Source Sans Pro";
+}
+
+.logo {
+  font-size: 26px;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.inverted {
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.noselect {
+  user-select: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.letter-spacing {
+  letter-spacing: 4.5px;
+}
