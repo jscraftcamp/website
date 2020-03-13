@@ -13,7 +13,7 @@ const IndexPage = () => (
     <>
       <div className="container logo centered">
         <div style={{ display: "flex", alignItems: "left" }}>
-          <Image src="/src/assets/logo.png" alt="logo" height={300} />
+          <Image src="/src/assets/images/logo.png" alt="logo" height={300} />
         </div>
       </div>
 
