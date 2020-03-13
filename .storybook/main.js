@@ -1,6 +1,10 @@
 module.exports = {
   stories: ["../src/components/**/*.story.js"],
-  addons: ["@storybook/addon-actions", "@storybook/addon-links"],
+  addons: [
+    "@storybook/addon-actions",
+    "@storybook/addon-links",
+    "@storybook/addon-viewport/register",
+  ],
   webpackFinal: config => {
     // Prepare storybook for Gatsby
     config.module.rules[0].exclude = [/node_modules\/(?!(gatsby)\/)/]
@@ -14,6 +18,19 @@ module.exports = {
       require.resolve("babel-plugin-remove-graphql-queries"),
     ]
     config.resolve.mainFields = ["browser", "module", "main"]
+
+    // storybook handles svg with the file-loader which overrides our custom loaders, so remove it
+    config.module.rules = config.module.rules.map(rule => {
+      if (rule.test.toString().includes("svg")) {
+        const test = rule.test
+          .toString()
+          .replace("svg|", "")
+          .replace(/\//g, "")
+        return { ...rule, test: new RegExp(test) }
+      } else {
+        return rule
+      }
+    })
 
     // Add new loaders we want to use
     config.module.rules.push(
@@ -34,33 +51,23 @@ module.exports = {
           {
             loader: "sass-resources-loader",
             options: {
-              resources: [
-                "node_modules/modern-normalize/modern-normalize.css",
-                "node_modules/sass-mq/_mq.scss",
-              ],
+              resources: ["node_modules/sass-mq/_mq.scss", "./src/config.scss"],
             },
           },
         ],
+      },
+      {
+        test: /\.svg$/,
+        issuer: /\.js$/, // Prevent usage of icon sprite outside of js
+        use: [
+          {
+            loader: "svg-sprite-loader",
+          },
+          {
+            loader: "svgo-loader",
+          },
+        ],
       }
-      // {
-      //   test: /\.svg$/,
-      //   issuer: /\.js$/, // Prevent usage of icon sprite outside of js
-      //   use: [
-      //     {
-      //       loader: 'svg-sprite-loader'
-      //     },
-      //     {
-      //       loader: 'svgo-loader'
-      //     }
-      //   ]
-      // },
-      // {
-      //   test: /\.mp4$/,
-      //   loader: 'file-loader',
-      //   options: {
-      //     esModule: false
-      //   }
-      // }
     )
 
     return config
