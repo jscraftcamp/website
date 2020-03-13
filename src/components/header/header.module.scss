@@ -1,3 +1,18 @@
 .root {
-  color: pink;
+  display: flex;
+
+  // Find a way to set the outer space in another component
+  margin: 60px 0;
+}
+
+.logo {
+  flex-grow: 1;
+}
+
+.navigation a {
+  margin: 0 40px;
+
+  &:first-child {
+    margin-left: 0;
+  }
 }
