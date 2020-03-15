@@ -9,10 +9,11 @@ import { Link, navigate } from "gatsby"
 
 export default () => (
   <Section className={style.root}>
-    <div className={style.logo}>
+    <div className={style.logoWrapper}>
       <Typography
+        className={style.logo}
         component={Link}
-        variants={["logo", "link", "noselect"]}
+        variants={["link", "noselect"]}
         to="/"
       >
         JSCraftCamp
