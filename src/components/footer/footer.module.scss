@@ -1,6 +1,9 @@
+.footer {
+  background: $basic-black;
+}
+
 .root {
   display: flex;
-  background: $basic-black;
   height: 240px;
   align-items: center;
 }
