@@ -19,6 +19,7 @@
 }
 
 .root {
+  font-family: $font-source-sans-pro;
   // bounding box reset
   margin: 0;
 }
@@ -72,4 +73,9 @@
   &:hover {
     text-decoration: none;
   }
+}
+
+.poppins {
+  font-family: $font-poppins;
+  font-weight: $font-weight-semibold;
 }
