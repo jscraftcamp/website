@@ -1,6 +1,7 @@
 import React from "react"
 import style from "./text-block.module.scss"
 import Typography from "../typography"
+import cn from "classnames"
 
 export default ({
   headline,
@@ -8,8 +9,9 @@ export default ({
   beforeNode,
   afterNode,
   headlineComponent = "h2",
+  className,
 }) => (
-  <div className={style.root}>
+  <div className={cn(style.root, className)}>
     {beforeNode && <div className={style.beforeNode}>{beforeNode}</div>}
     <Typography className={style.headline} component={headlineComponent}>
       {headline}
