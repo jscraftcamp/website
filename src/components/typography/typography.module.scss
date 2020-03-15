@@ -19,6 +19,7 @@
 }
 
 .root {
+  font-family: $font-source-sans-pro;
   // bounding box reset
   margin: 0;
 }
@@ -80,4 +81,9 @@
 
 .small {
   font-size: $font-size-small;
+}
+
+.poppins {
+  font-family: $font-poppins;
+  font-weight: $font-weight-semibold;
 }

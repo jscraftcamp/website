@@ -13,7 +13,7 @@ export default () => (
       <Typography
         className={style.logo}
         component={Link}
-        variants={["link", "noselect"]}
+        variants={["link", "noselect", "poppins"]}
         to="/"
       >
         JSCraftCamp
