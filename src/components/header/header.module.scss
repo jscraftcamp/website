@@ -1,12 +1,15 @@
 .root {
   display: flex;
+}
 
-  // Find a way to set the outer space in another component
-  margin: 60px 0;
+.logoWrapper {
+  flex-grow: 1;
 }
 
 .logo {
-  flex-grow: 1;
+  font-family: $font-poppins;
+  font-size: $font-size-h3;
+  font-weight: $font-weight-semibold;
 }
 
 .navigation a {
