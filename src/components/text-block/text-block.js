@@ -8,20 +8,10 @@ export default ({
   beforeNode,
   afterNode,
   headlineComponent = "h2",
-  headlineVariants,
 }) => (
   <div className={style.root}>
     {beforeNode && <div className={style.beforeNode}>{beforeNode}</div>}
-    <Typography
-      className={style.headline}
-      component={headlineComponent}
-      variants={
-        // TODO, make a <Headline /> component which makes the API a bit easier
-        headlineComponent === "h2"
-          ? ["uppercase", "letter-spacing"]
-          : headlineVariants
-      }
-    >
+    <Typography className={style.headline} component={headlineComponent}>
       {headline}
     </Typography>
     {children}

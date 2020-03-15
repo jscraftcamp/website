@@ -7,6 +7,16 @@ export default {
 }
 
 export const base = () => <TextBlock headline="Code of Conduct">Text</TextBlock>
+
+export const h1 = () => (
+  <TextBlock headline="The Team" headlineComponent="h1">
+    We are simple developers organizing this event in our spare time. If you
+    have any questions or problems before or during the conference, don't
+    hesitate to contact one of us! You can always reach us by E-Mail:
+    team@jscraftcamp.org
+  </TextBlock>
+)
+
 export const withBeforeNode = () => (
   <TextBlock
     headline="Code of Conduct"
