@@ -3,6 +3,7 @@ import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "../header"
 import Footer from "../footer"
+import Spacer from "../spacer"
 
 import style from "./page.module.scss"
 
@@ -65,8 +66,10 @@ export default ({ children, title }) => {
         ].concat()}
       />
       <div className={style.root}>
+        <Spacer size="s" />
         <Header />
         <div className={style.content}>{children}</div>
+        <Spacer size="xxl" />
         <Footer />
       </div>
     </>
