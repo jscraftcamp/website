@@ -8,6 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+import './layout.css'
+
 import Footer from "./Footer"
 import Navigation from "./Navigation"
 
