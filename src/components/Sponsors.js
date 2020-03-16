@@ -2,7 +2,7 @@ import React from "react";
 
 import { baseColor } from "../_data.json";
 
-import './sponsors.css'
+import './Sponsors.css'
 
 const Sponsors = () =>
   <div className="row" id="sponsors">
