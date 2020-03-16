@@ -36,7 +36,7 @@ const Footer = () => {
         <h3 className={baseColor + "-text"}>Archive</h3>
         <ul>
           {navigationItems.archive.map(item => <li key={item.title}><a
-            className={baseColor + "-text"} href={item.url + ".html"}>{item.title}</a></li>)
+            className={baseColor + "-text"} href={item.url}>{item.title}</a></li>)
           }
         </ul>
       </div>

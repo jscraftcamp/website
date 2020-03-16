@@ -32,7 +32,7 @@ const IndexPage = () => (
               A BarCamp about JavaScript and Crafting Software
             </h3>
             <h3 className="header center light">
-              <a href="/photos2018.html">Impressions from 2018</a>
+              <a href="https://web.archive.org/web/20190331082416/http://jscraftcamp.org/photos2018">Impressions from 2018</a>
             </h3>
           </div>
         </div>
