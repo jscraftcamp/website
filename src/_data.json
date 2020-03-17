@@ -22,31 +22,30 @@
     ],
     "archive": [
       {
-        "url": "/info2019",
+        "url": "https://web.archive.org/web/20190706093953/http://jscraftcamp.org/",
         "title": "2019 - Home"
       },
       {
-        "url": "/info2018",
+        "url": "https://web.archive.org/web/20180809182443/http://jscraftcamp.org/",
         "title": "2018 - Home"
       },
       {
-        "url": "/photos2018",
+        "url": "https://web.archive.org/web/20180809182443/http://jscraftcamp.org/photos2018",
         "title": "2018 - Photos"
       },
-      {
-        "url": "/info2017",
+      { "url": "https://web.archive.org/web/20170715150754/http://jscraftcamp.org/",
         "title": "2017 - Home"
       },
       {
-        "url": "/photos2017",
+        "url": "https://web.archive.org/web/20170715150754/http://jscraftcamp.org/photos2017",
         "title": "2017 - Photos"
       },
       {
-        "url": "/info2016",
+        "url": "https://web.archive.org/web/20161011211857/http://jscraftcamp.org/",
         "title": "2016 - Home"
       },
       {
-        "url": "/photos2016",
+        "url": "https://web.archive.org/web/20170827114658/http://jscraftcamp.org/photos2016",
         "title": "2016 - Photos"
       }
     ]
