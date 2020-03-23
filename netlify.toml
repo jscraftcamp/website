@@ -1,0 +1,10 @@
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+
+# default for all branches, overriding the UI setting on netlify.com
+[build]
+  command = "npm run build-storybook -- -o static/storybook ; npm run build"
+
+# Specific branch context: all deploys from this specific branch will inherit
+# these settings.
+[context."gh-pages"] # 'gh-pages' is a branch name
+  ignore = "true"
