@@ -4,7 +4,7 @@ module.exports = {
     description: `Website for JSCraftCamp - 10+11 July 2020 in Munich.`,
     author: `@davelosert, @rhosts, @michaelzoidl, @Narigo`,
   },
-  pathPrefix: '/',
+  pathPrefix: "/",
   plugins: [
     `gatsby-transformer-json`,
     `gatsby-plugin-react-helmet`,
@@ -13,6 +13,14 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        data: `
+          @import "${__dirname}/src/config.scss";
+        `,
       },
     },
     `gatsby-transformer-sharp`,
