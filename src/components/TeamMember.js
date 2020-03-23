@@ -8,13 +8,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const TeamMember = ({img}) => {
-  return <img src={img}></img>;
-};
+const TeamMember = ({ img }) => {
+  return <img src={img}></img>
+}
 
 TeamMember.propTypes = {
   img: PropTypes.string,
-};
+}
 
 export default TeamMember
-

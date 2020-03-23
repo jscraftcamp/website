@@ -1,8 +1,8 @@
-import React from "react";
+import React from "react"
 
-import { baseColor } from "../_data.json";
+import { baseColor } from "../_data.json"
 
-const Schedule = () =>
+const Schedule = () => (
   <>
     <h4 className={`header center ${baseColor}-text`}>Schedule</h4>
     <div className="row">
@@ -24,7 +24,11 @@ const Schedule = () =>
             </tr>
             <tr>
               <td>12:00-13:00</td>
-              <td>Lunch <a href="https://github.com/jscraftcamp/website/issues/820">sponsored by Hetzner Cloud</a>
+              <td>
+                Lunch{" "}
+                <a href="https://github.com/jscraftcamp/website/issues/820">
+                  sponsored by Hetzner Cloud
+                </a>
               </td>
             </tr>
             <tr>
@@ -37,7 +41,12 @@ const Schedule = () =>
             </tr>
             <tr>
               <td>18:00-24:00</td>
-              <td>Party / BBQ <a href="https://github.com/jscraftcamp/website/issues/821">sponsored by ???</a></td>
+              <td>
+                Party / BBQ{" "}
+                <a href="https://github.com/jscraftcamp/website/issues/821">
+                  sponsored by ???
+                </a>
+              </td>
             </tr>
             <tr>
               <td>18:00-24:00</td>
@@ -62,7 +71,11 @@ const Schedule = () =>
             </tr>
             <tr>
               <td>12:00-13:00</td>
-              <td>Lunch <a href="https://github.com/jscraftcamp/website/issues/827">sponsored by ???</a>
+              <td>
+                Lunch{" "}
+                <a href="https://github.com/jscraftcamp/website/issues/827">
+                  sponsored by ???
+                </a>
               </td>
             </tr>
             <tr>
@@ -80,14 +93,19 @@ const Schedule = () =>
         <h5 className={`header center ${baseColor}-text`}>Take notes!</h5>
         <p>
           If you participate in a session, it's always good to write down notes.
-          It helps you keep track of all the information you receive, you will remember the name of the
-          new tech that was mentioned and maybe the session owner shares some slides online. For
-          additional fame and bonus points from your peers, share your notes in the
-          <a href="https://github.com/jscraftcamp/jscc20-sessions">official repository for session notes</a>!
+          It helps you keep track of all the information you receive, you will
+          remember the name of the new tech that was mentioned and maybe the
+          session owner shares some slides online. For additional fame and bonus
+          points from your peers, share your notes in the
+          <a href="https://github.com/jscraftcamp/jscc20-sessions">
+            official repository for session notes
+          </a>
+          !
         </p>
       </div>
     </div>
   </>
+)
 
-Schedule.displayName = 'Schedule'
+Schedule.displayName = "Schedule"
 export default Schedule
