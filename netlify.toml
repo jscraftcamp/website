@@ -1,0 +1,4 @@
+# Specific branch context: all deploys from this specific branch will inherit
+# these settings.
+[context."gh-pages"] # 'gh-pages' is a branch name
+  ignore = "true"
