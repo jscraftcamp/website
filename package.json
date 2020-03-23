@@ -6,6 +6,11 @@
     "node": ">= 10.0.0"
   },
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.1",
+    "@storybook/addon-viewport": "^5.3.17",
+    "babel-plugin-remove-graphql-queries": "^2.8.0",
     "gatsby": "2.19.12",
     "gatsby-image": "2.2.40",
     "gatsby-plugin-manifest": "2.2.41",
@@ -21,10 +26,16 @@
     "react-helmet": "5.2.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@storybook/addon-actions": "^5.3.17",
+    "@storybook/addon-links": "^5.3.17",
+    "@storybook/addons": "^5.3.17",
+    "@storybook/react": "^5.3.17",
+    "babel-loader": "^8.1.0",
     "hamjest": "3.2.3",
     "mocha": "6.1.4",
-    "recursive-readdir-sync": "1.0.6",
-    "prettier": "1.19.1"
+    "prettier": "1.19.1",
+    "recursive-readdir-sync": "1.0.6"
   },
   "scripts": {
     "develop": "gatsby develop",
@@ -34,7 +45,9 @@
     "prebuild": "rm -rfv dist ; mkdir -p ./public",
     "build": "cp CNAME public/; npm run build:participants.json ; gatsby build;",
     "build:participants.json": "node scripts/concat-json.js ./participants public/participants.json; cp ./public/participants.json ./src/",
-    "test": "mocha test"
+    "test": "mocha test",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "Robert Hostlowsky",
   "license": "MIT",
