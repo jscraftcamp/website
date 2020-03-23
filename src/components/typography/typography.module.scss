@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../../assets/font/source-sans-pro-regular.ttf") format("tff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $font-family-poppins;
+  font-weight: $font-weight-semibold;
+  src: url("../../assets/font/poppins-semi-bold.ttf") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: $font-family-poppins;
+  font-weight: $font-weight-bold;
+  src: url("../../assets/font/poppins-bold.ttf") format("woff");
+  font-display: swap;
+}
+
+.root {
+  font-family: $font-family-source-sans-pro, "Helvetica Neue", "Helvetica",
+    "Arial";
+  color: $color-black;
+  font-size: $font-size-default;
+
+  // bounding box reset
+  margin: 0;
+}
+
+.h1 {
+  font-family: $font-family-poppins;
+  letter-spacing: 4.5px;
+  text-transform: uppercase;
+  font-size: $font-size-h1;
+  font-weight: $font-weight-bold;
+}
