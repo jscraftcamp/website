@@ -1,7 +1,10 @@
 import React from "react"
 
 import Layout from "../components/layout"
+
 import { baseColor } from "../_data"
+
+import "../css/sponsoring.css"
 
 const data = [
   { name: "Venue", priceRange: "room for ~100 people", icon: "home", sponsor: "Virtual Identity", issueId: 548 },

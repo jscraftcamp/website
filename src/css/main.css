@@ -1,0 +1,384 @@
+body {
+  background-color: #789;
+}
+a {
+  color: var(--main-color);
+}
+nav #nav-desktop a, nav #nav-desktop ul a {
+  text-shadow: 1px 1px 4px black;
+}
+@media only screen and (max-device-width: 680px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+nav .highlight {
+  background-color: red;
+  animation: fadein-nav-highlight 5s;
+}
+@keyframes fadein-nav-highlight {
+  0% { background-color: transparent; }
+  50%  { background-color: darkgoldenrod; }
+  80%  { transform: scale(1); }
+  83%  { transform: scale(2); }
+  86%  { transform: scale(0.5); }
+  90%  { transform: scale(1); }
+  100% { background-color: red; }
+}
+
+.row {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.block {
+  text-align: justify;
+}
+
+code {
+  background-color: #f3f3f3;
+}
+
+#map {
+  width: 100%;
+  height: 550px;
+}
+
+#map_wrapper {
+  position: relative;
+}
+
+#map_overlay {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 99;
+  background-color: #ffffff;
+  padding: 30px 60px 10px 30px;
+}
+
+/* materialize cards customization */
+.card .card-action {
+  padding: 10px 20px 10px 20px;
+}
+
+.card .card-content .card-title {
+  line-height: inherit;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+  margin-right: 10px;
+}
+
+#participants .card.medium .card-content {
+  height: 8em;
+}
+
+.card .card-image img {
+  top: 0;
+}
+
+.card .card-tags-container {
+  display: block;
+  min-height: 1.5em;
+  height: 1.5em;
+  overflow: hidden;
+}
+
+.card .card-tags-container:hover {
+  height: auto;
+}
+
+.card .card-tags-container .card-tag {
+  transition: color 2s;
+}
+
+.card .card-tags-container:hover .card-tag {
+  color: black;
+}
+
+.card .card-tag {
+  margin-right: 10px;
+  color: #757575;
+}
+
+footer {
+  margin: 2rem 0 0 0;
+  padding: 2rem;
+  background-color: #2e2e2c;
+  display: flex;
+}
+
+footer ul {
+  padding: 0;
+  color: white;
+}
+
+footer li {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+
+footer div {
+  flex: 1;
+}
+
+@media only screen and (max-device-width: 680px) {
+  footer {
+    display: block;
+  }
+}
+
+/* Overwrites for Material Design */
+
+@media only screen and (min-width: 600px) {.flow-text {font-size: 1.114rem;}}
+@media only screen and (min-width: 630px) {.flow-text {font-size: 1.133rem;}}
+@media only screen and (min-width: 660px) {.flow-text {font-size: 1.152rem;}}
+@media only screen and (min-width: 690px) {.flow-text {font-size: 1.171rem;}}
+@media only screen and (min-width: 720px) {.flow-text {font-size: 1.190rem;}}
+@media only screen and (min-width: 750px) {.flow-text {font-size: 1.210rem;}}
+@media only screen and (min-width: 780px) {.flow-text {font-size: 1.229rem;}}
+@media only screen and (min-width: 810px) {.flow-text {font-size: 1.248rem;}}
+@media only screen and (min-width: 840px) {.flow-text {font-size: 1.267rem;}}
+@media only screen and (min-width: 870px) {.flow-text {font-size: 1.286rem;}}
+@media only screen and (min-width: 900px) {.flow-text {font-size: 1.305rem;}}
+@media only screen and (min-width: 930px) {.flow-text {font-size: 1.324rem;}}
+@media only screen and (min-width: 960px) {.flow-text {font-size: 1.344rem;}}
+
+/* the special colors */
+
+:root {
+  --main-color: #ececec;
+}
+
+
+.colorOfTheYear {
+  background-color: var(--main-color) !important
+}
+
+.colorOfTheYear-text {
+  color: var(--main-color) !important
+}
+
+.colorOfTheYear.lighten-5 {
+  background-color: #fff3e0 !important
+}
+
+.colorOfTheYear-text.text-lighten-5 {
+  color: #fff3e0 !important
+}
+
+.colorOfTheYear.lighten-4 {
+  background-color: #ffe0b2 !important
+}
+
+.colorOfTheYear-text.text-lighten-4 {
+  color: #ffe0b2 !important
+}
+
+.colorOfTheYear.lighten-3 {
+  background-color: #ffcc80 !important
+}
+
+.colorOfTheYear-text.text-lighten-3 {
+  color: #ffcc80 !important
+}
+
+.colorOfTheYear.lighten-2 {
+  background-color: #ffb74d !important
+}
+
+.colorOfTheYear-text.text-lighten-2 {
+  color: #ffb74d !important
+}
+
+.colorOfTheYear.lighten-1 {
+  background-color: #ffa726 !important
+}
+
+.colorOfTheYear-text.text-lighten-1 {
+  color: #ffa726 !important
+}
+
+.colorOfTheYear.darken-1 {
+  background-color: #fb8c00 !important
+}
+
+.colorOfTheYear-text.text-darken-1 {
+  color: #fb8c00 !important
+}
+
+.colorOfTheYear.darken-2 {
+  background-color: #f57c00 !important
+}
+
+.colorOfTheYear-text.text-darken-2 {
+  color: #f57c00 !important
+}
+
+.colorOfTheYear.darken-3 {
+  background-color: #ef6c00 !important
+}
+
+.colorOfTheYear-text.text-darken-3 {
+  color: #ef6c00 !important
+}
+
+.colorOfTheYear.darken-4 {
+  background-color: #e65100 !important
+}
+
+.colorOfTheYear-text.text-darken-4 {
+  color: #e65100 !important
+}
+
+.colorOfTheYear.accent-1 {
+  background-color: #ffd180 !important
+}
+
+.colorOfTheYear-text.text-accent-1 {
+  color: #ffd180 !important
+}
+
+.colorOfTheYear.accent-2 {
+  background-color: #ffab40 !important
+}
+
+.colorOfTheYear-text.text-accent-2 {
+  color: #ffab40 !important
+}
+
+.colorOfTheYear.accent-3 {
+  background-color: #ff9100 !important
+}
+
+.colorOfTheYear-text.text-accent-3 {
+  color: #ff9100 !important
+}
+
+.colorOfTheYear.accent-4 {
+  background-color: #ff6d00 !important
+}
+
+.colorOfTheYear-text.text-accent-4 {
+  color: #ff6d00 !important
+}
+
+.deep-orange {
+  background-color: #ff5722 !important
+}
+
+.deep-orange-text {
+  color: #ff5722 !important
+}
+
+.deep-orange.lighten-5 {
+  background-color: #fbe9e7 !important
+}
+
+.deep-orange-text.text-lighten-5 {
+  color: #fbe9e7 !important
+}
+
+.deep-orange.lighten-4 {
+  background-color: #ffccbc !important
+}
+
+.deep-orange-text.text-lighten-4 {
+  color: #ffccbc !important
+}
+
+.deep-orange.lighten-3 {
+  background-color: #ffab91 !important
+}
+
+.deep-orange-text.text-lighten-3 {
+  color: #ffab91 !important
+}
+
+.deep-orange.lighten-2 {
+  background-color: #ff8a65 !important
+}
+
+.deep-orange-text.text-lighten-2 {
+  color: #ff8a65 !important
+}
+
+.deep-orange.lighten-1 {
+  background-color: #ff7043 !important
+}
+
+.deep-orange-text.text-lighten-1 {
+  color: #ff7043 !important
+}
+
+.deep-orange.darken-1 {
+  background-color: #f4511e !important
+}
+
+.deep-orange-text.text-darken-1 {
+  color: #f4511e !important
+}
+
+.deep-orange.darken-2 {
+  background-color: #e64a19 !important
+}
+
+.deep-orange-text.text-darken-2 {
+  color: #e64a19 !important
+}
+
+.deep-orange.darken-3 {
+  background-color: #d84315 !important
+}
+
+.deep-orange-text.text-darken-3 {
+  color: #d84315 !important
+}
+
+.deep-orange.darken-4 {
+  background-color: #bf360c !important
+}
+
+.deep-orange-text.text-darken-4 {
+  color: #bf360c !important
+}
+
+.deep-orange.accent-1 {
+  background-color: #ff9e80 !important
+}
+
+.deep-orange-text.text-accent-1 {
+  color: #ff9e80 !important
+}
+
+.deep-orange.accent-2 {
+  background-color: #ff6e40 !important
+}
+
+.deep-orange-text.text-accent-2 {
+  color: #ff6e40 !important
+}
+
+.deep-orange.accent-3 {
+  background-color: #ff3d00 !important
+}
+
+.deep-orange-text.text-accent-3 {
+  color: #ff3d00 !important
+}
+
+.deep-orange.accent-4 {
+  background-color: #dd2c00 !important
+}
+
+.deep-orange-text.text-accent-4 {
+  color: #dd2c00 !important
+}

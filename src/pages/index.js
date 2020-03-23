@@ -4,7 +4,7 @@ import {Link} from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import _data from '../_data';
+import { baseColor } from "../_data"
 import Image from "../components/image";
 import Sponsors from "../components/Sponsors";
 import Facilitator from "../components/Facilitator";
@@ -15,7 +15,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home"/>
     <>
-      <div className="container logo">
+      <div className="container" style={{ width: 300, marginTop: "4em" }}>
         <div style={{ display: "flex" }}>
           <Image src="/src/images/new_logo.png" alt="logo" height={300} />
         </div>
@@ -24,7 +24,7 @@ const IndexPage = () => (
       <div className="container">
         <div className="row">
           <div className="col s12 m12">
-            <h1 className={`header center ${_data.baseColor}-text`}>
+            <h1 className={`header center ${baseColor}-text`}>
               JSCraftCamp 2020
             </h1>
             <h3 className="header center">Will return to Munich, July 10th - 11th 2020!</h3>
@@ -41,7 +41,7 @@ const IndexPage = () => (
       <div className="container">
         <div className="row">
           <div className="col s12 m4 offset-m4">
-            <h4 className={`header center ${_data.baseColor}-text`}>
+            <h4 className={`header center ${baseColor}-text`}>
               Follow us on{" "}
               <a href="https://twitter.com/JSCraftCamp">
                 Twitter&nbsp;
