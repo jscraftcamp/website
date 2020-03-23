@@ -8,9 +8,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import './layout.css'
+import "./layout.css"
 
-import Footer from "./Footer"
+import { Footer } from "./"
 import Navigation from "./Navigation"
 
 const Layout = ({ children }) => {
