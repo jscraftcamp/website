@@ -1,16 +1,11 @@
-import PageLayout from '../components/layout'
+import PageLayout from '../components/MarkdownLayout'
 import SEO from '../components/seo'
 
 export default PageLayout
 
 <SEO title="Registration" />
 
-<div class="container">
-<div class="row">
-<div class="col s12 m12">
-
-Registration
-============
+# Registration
 
 ### Create a JSON File and submit it via a GitHub Pull Request
 
@@ -49,11 +44,11 @@ To unregister please write another pull request or [let us know](mailto:team@jsc
 }
 ```
 
-| field | description
-| --- | ---
-`name` [^mandatory] | first name and last name or a nick name
-`company` | A company name
-`when.friday` [^mandatory] | If you are attending on Friday (Boolean value)
+ field | description
+--- | ---
+ `name` [^mandatory] | first name and last name or a nick name
+ `company` | A company name 
+ `when.friday` [^mandatory] | If you are attending on Friday (Boolean value)
 `when.friday_party` [^mandatory] | If you want to join us on the free Party that will happen Friday after the event (same location). Drinks and food sponsored!
 `when.saturday` [^mandatory] | If you are attending on Saturday (Boolean value)
 `tags` [^mandatory] | Share what you think is important, use at least one tag. (Array of strings)
@@ -69,7 +64,3 @@ To unregister please write another pull request or [let us know](mailto:team@jsc
 
 [^diary]: This is a free and completely sponsored event. 
     Even though we want to try, we cannot guarantee to be able to respect every dietary requirement.
-
-</div>
-</div>
-</div>
