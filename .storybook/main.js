@@ -19,6 +19,30 @@ module.exports = {
     ]
     config.resolve.mainFields = ["browser", "module", "main"]
 
+    // Add new loaders we want to use
+    config.module.rules.push({
+      test: /\.scss$/i,
+      use: [
+        "style-loader",
+        {
+          loader: "css-loader",
+          options: {
+            importLoaders: 1,
+            modules: {
+              localIdentName: "[local]___[hash:base64:5]",
+            },
+          },
+        },
+        "sass-loader",
+        {
+          loader: "sass-resources-loader",
+          options: {
+            resources: ["./src/config.scss"],
+          },
+        },
+      ],
+    })
+
     return config
   },
 }
