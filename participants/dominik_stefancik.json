@@ -1,0 +1,17 @@
+{
+  "name": "Dominik Štefančik",
+  "company": "Vestr AG",
+  "when": {
+    "friday": true,
+    "friday_party": true,
+    "saturday": true
+  },
+  "tags": ["Javascript", "Typescript"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I use Javascript for web development. Use it mainly on frontend, but on backend as well. I really like Typescript as well.",
+  "what_can_i_contribute": "I can talk about new Javascript frameworks and share experience with them.",
+  "tshirt": "M-S",
+  "twitter": "none"
+}
