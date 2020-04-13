@@ -38,12 +38,12 @@ const TeamPage = () => {
                   </div>
                 )}
                 <div className="card-content">
-                  <span className="card-title grey-text text-darken-4">
+                  <span className="card-title grey-text">
                     {member.name}
                   </span>
                   <br />
                   <a
-                    className="grey-text text-darken-6"
+                    className="grey-text"
                     href={"mailto:" + member.email}
                   >
                     {member.email}
