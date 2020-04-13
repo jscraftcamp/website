@@ -11,13 +11,13 @@ import { navigationItems } from "../../_data.json"
 
 const Footer = () => {
   return (
-    <footer>
+    <footer style={{backgroundColor: "#000"}}>
       <div>
-        <h3 className="colorOfTheYear-text">Sitemap</h3>
+        <h3 className="colorOfTheYear-text text-lighten-5">Sitemap</h3>
         <ul>
           {navigationItems.main.map(item => (
             <li key={item.title}>
-              <a href={item.url} className="colorOfTheYear-text">
+              <a href={item.url} className="colorOfTheYear-text text-lighten-5">
                 {item.title}
               </a>
             </li>
@@ -25,39 +25,39 @@ const Footer = () => {
         </ul>
       </div>
       <div>
-        <h3 className="colorOfTheYear-text">Get in touch</h3>
+        <h3 className="colorOfTheYear-text text-lighten-5">Get in touch</h3>
         <ul>
           <li>
-            <a className="colorOfTheYear-text" href="/theteam">
+            <a className="colorOfTheYear-text text-lighten-5" href="/theteam">
               The Team
             </a>
           </li>
           <li>
             <a
-              className="colorOfTheYear-text"
+              className="colorOfTheYear-text text-lighten-5"
               href="https://twitter.com/jscraftcamp"
             >
               Twitter
             </a>
           </li>
           <li>
-            <a className="colorOfTheYear-text" href="/imprint">
+            <a className="colorOfTheYear-text text-lighten-5" href="/imprint">
               Imprint
             </a>
           </li>
           <li>
-            <a className="colorOfTheYear-text" href="/privacypolicy">
+            <a className="colorOfTheYear-text text-lighten-5" href="/privacypolicy">
               Privacy Policy
             </a>
           </li>
         </ul>
       </div>
       <div style={{ flex: 1.5 }}>
-        <h3 className="colorOfTheYear-text">Archive</h3>
+        <h3 className="colorOfTheYear-text text-lighten-5">Archive</h3>
         <ul>
           {navigationItems.archive.map(item => (
             <li key={item.title}>
-              <a className="colorOfTheYear-text" href={item.url}>
+              <a className="colorOfTheYear-text text-lighten-5" href={item.url}>
                 {item.title}
               </a>
             </li>
@@ -65,7 +65,7 @@ const Footer = () => {
         </ul>
       </div>
       <div style={{ flex: 1.5 }}>
-        <h3 className="colorOfTheYear-text">Built with</h3>
+        <h3 className="colorOfTheYear-text text-lighten-5">Built with</h3>
         <ul>
           <li>
             <a href="https://www.netlify.com">
