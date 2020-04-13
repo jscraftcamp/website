@@ -2,8 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
 
-import { baseColor } from "../_data.json"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -20,7 +18,7 @@ export default () => (
     <div className="container">
       <div className="row">
         <div className="col s12 m12">
-          <h1 className={`header center ${baseColor}-text`}>Registration</h1>
+          <h1 className="header center colorOfTheYear-text">Registration</h1>
           <h3 className="header center light">
             Create a JSON File and submit it via a GitHub Pull Request
           </h3>

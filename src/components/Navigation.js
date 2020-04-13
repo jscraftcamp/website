@@ -1,10 +1,10 @@
 import React from "react"
 
-import { baseColor, navigationItems } from "../_data"
+import { navigationItems } from "../_data"
 import "../fonts/font-awesome/css/font-awesome.css"
 
 export default () => (
-  <nav className={baseColor}>
+  <nav className="colorOfTheYear">
     <div className="nav-wrapper container">
       <a href="/" className="brand-logo left hide-on-small-and-down">
         JS CraftCamp

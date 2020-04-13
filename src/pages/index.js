@@ -4,12 +4,12 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { baseColor } from "../_data"
 import Sponsors from "../components/Sponsors"
 import Facilitator from "../components/Facilitator"
 import Schedule from "../components/Schedule"
 import Location from "../components/Location"
 import { JsccLogo } from "../components";
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -38,7 +38,7 @@ const IndexPage = () => (
         <div className="row">
           <div className="col s12 m12">
 
-            <h1 className={`header center ${baseColor}-text`}>
+            <h1 className="header center colorOfTheYear-text">
               JSCraftCamp 2020
             </h1>
             <h3 className="header center">
@@ -59,7 +59,7 @@ const IndexPage = () => (
       <div className="container">
         <div className="row">
           <div className="col s12 m4 offset-m4">
-            <h4 className={`header center ${baseColor}-text`}>
+            <h4 className="header center colorOfTheYear-text">
               Follow us on{" "}
               <a href="https://twitter.com/JSCraftCamp">
                 Twitter&nbsp;

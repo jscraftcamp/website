@@ -1,12 +1,10 @@
 import React from "react"
 
-import { baseColor } from "../_data.json"
-
 import "./Sponsors.css"
 
 const Sponsors = () => (
   <div className="row" id="sponsors">
-    <h4 className={`header center ${baseColor}-text`}>Sponsors</h4>
+    <h4 className="header center colorOfTheYear-text">Sponsors</h4>
     <div className="col s12 sponsor-logos">
       <>
         <a

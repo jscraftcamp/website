@@ -7,17 +7,17 @@
 
 import React from "react"
 
-import { baseColor, navigationItems } from "../../_data.json"
+import { navigationItems } from "../../_data.json"
 
 const Footer = () => {
   return (
     <footer>
       <div>
-        <h3 className={baseColor + "-text"}>Sitemap</h3>
+        <h3 className="colorOfTheYear-text">Sitemap</h3>
         <ul>
           {navigationItems.main.map(item => (
             <li key={item.title}>
-              <a href={item.url} className={baseColor + "-text"}>
+              <a href={item.url} className="colorOfTheYear-text">
                 {item.title}
               </a>
             </li>
@@ -25,39 +25,39 @@ const Footer = () => {
         </ul>
       </div>
       <div>
-        <h3 className={baseColor + "-text"}>Get in touch</h3>
+        <h3 className="colorOfTheYear-text">Get in touch</h3>
         <ul>
           <li>
-            <a className={baseColor + "-text"} href="/theteam">
+            <a className="colorOfTheYear-text" href="/theteam">
               The Team
             </a>
           </li>
           <li>
             <a
-              className={baseColor + "-text"}
+              className="colorOfTheYear-text"
               href="https://twitter.com/jscraftcamp"
             >
               Twitter
             </a>
           </li>
           <li>
-            <a className={baseColor + "-text"} href="/imprint.html">
+            <a className="colorOfTheYear-text" href="/imprint.html">
               Imprint
             </a>
           </li>
           <li>
-            <a className={baseColor + "-text"} href="/privacypolicy">
+            <a className="colorOfTheYear-text" href="/privacypolicy">
               Privacy Policy
             </a>
           </li>
         </ul>
       </div>
       <div style={{ flex: 1.5 }}>
-        <h3 className={baseColor + "-text"}>Archive</h3>
+        <h3 className="colorOfTheYear-text">Archive</h3>
         <ul>
           {navigationItems.archive.map(item => (
             <li key={item.title}>
-              <a className={baseColor + "-text"} href={item.url}>
+              <a className="colorOfTheYear-text" href={item.url}>
                 {item.title}
               </a>
             </li>
@@ -65,7 +65,7 @@ const Footer = () => {
         </ul>
       </div>
       <div style={{ flex: 1.5 }}>
-        <h3 className={baseColor + "-text"}>Built with</h3>
+        <h3 className="colorOfTheYear-text">Built with</h3>
         <ul>
           <li>
             <a href="https://www.netlify.com">

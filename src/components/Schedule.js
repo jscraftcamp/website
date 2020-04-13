@@ -1,10 +1,8 @@
 import React from "react"
 
-import { baseColor } from "../_data.json"
-
 const Schedule = () => (
   <>
-    <h4 className={`header center ${baseColor}-text`}>Schedule</h4>
+    <h4 className="header center colorOfTheYear-text">Schedule</h4>
     <div className="row">
       <div className="col s12 m12">
         <div className="col s12 m6">
@@ -90,7 +88,7 @@ const Schedule = () => (
         </div>
       </div>
       <div className="col s12 m12">
-        <h5 className={`header center ${baseColor}-text`}>Take notes!</h5>
+        <h5 className="header center colorOfTheYear-text">Take notes!</h5>
         <p>
           If you participate in a session, it's always good to write down notes.
           It helps you keep track of all the information you receive, you will
