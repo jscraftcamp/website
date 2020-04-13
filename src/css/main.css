@@ -1,5 +1,5 @@
 body {
-  background-color: #789;
+  background-color: #F2F2F2;
 }
 a {
   color: var(--main-color);
@@ -112,7 +112,6 @@ code {
 footer {
   margin: 2rem 0 0 0;
   padding: 2rem;
-  background-color: #2e2e2c;
   display: flex;
 }
 
@@ -155,12 +154,12 @@ footer div {
 /* the special colors */
 
 :root {
-  --main-color: #ececec;
+  --main-color: #000;
 }
 
 
 .colorOfTheYear {
-  background-color: var(--main-color) !important
+  background-color: #F2F2F2 !important
 }
 
 .colorOfTheYear-text {
