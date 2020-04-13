@@ -41,7 +41,7 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a className="colorOfTheYear-text" href="/imprint.html">
+            <a className="colorOfTheYear-text" href="/imprint">
               Imprint
             </a>
           </li>
