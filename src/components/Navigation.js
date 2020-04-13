@@ -9,10 +9,10 @@ export default () => (
       <a href="/" className="brand-logo left hide-on-small-and-down">
         JS CraftCamp
       </a>
-      <ul id="nav-desktop" className="right hide-on-med-and-downX">
+      <ul id="nav-desktop" className="right">
         {navigationItems.main.map(item => (
           <li key={item.title}>
-            <a href={item.url} className={item.cssClasses}>
+            <a href={item.url}>
               {item.title}
             </a>
           </li>
