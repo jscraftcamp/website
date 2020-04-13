@@ -5,6 +5,8 @@ import { Helmet } from "react-helmet"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import '../css/prism-customized.css';
+
 export default () => (
   <Layout>
     <SEO title="registration" />
