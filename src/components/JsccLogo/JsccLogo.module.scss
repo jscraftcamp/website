@@ -1,0 +1,12 @@
+.root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &.img {
+        flex-grow: 0;
+        width: 174px;
+        height: 193px;
+    }
+}
