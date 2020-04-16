@@ -21,11 +21,28 @@ const IndexPage = () => (
       <div className="container">
         <div className="row">
           <div className="col s12 m12">
+            <h3 className="header center">
+              Unfortunately and due to the current situation, we can not say if or how JSCC 2020 will actually take place.
+              <br/>
+              We from the Orga team are observing the situation and will try to make a decision as soon as possible.
+              <br/>
+              Until then, it is probably best for you to consider JSCC cancelled 😞
+              <br/>
+              We are terribly sorry.
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <div className="container">
+        <div className="row">
+          <div className="col s12 m12">
+
             <h1 className={`header center ${baseColor}-text`}>
               JSCraftCamp 2020
             </h1>
             <h3 className="header center">
-              Will return to Munich, July 10th - 11th 2020!
+              Will return to Munich
             </h3>
             <h3 className="header center light">
               A BarCamp about JavaScript and Crafting Software
