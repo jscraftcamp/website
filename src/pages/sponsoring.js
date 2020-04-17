@@ -2,8 +2,6 @@ import React from "react"
 
 import Layout from "../components/layout"
 
-import { baseColor } from "../_data"
-
 import "../css/sponsoring.css"
 
 const data = [
@@ -120,7 +118,7 @@ export default () => (
     <div className="container">
       <div className="row">
         <div className="col s12 m12">
-          <h1 className={`header center ${baseColor}-text`}>
+          <h1 className="header center colorOfTheYear-text">
             Want to become a Sponsor?
           </h1>
           <h3 className="header center light">

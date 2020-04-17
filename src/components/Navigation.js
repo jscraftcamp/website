@@ -1,18 +1,18 @@
 import React from "react"
 
-import { baseColor, navigationItems } from "../_data"
+import { navigationItems } from "../_data"
 import "../fonts/font-awesome/css/font-awesome.css"
 
 export default () => (
-  <nav className={baseColor}>
+  <nav className="colorOfTheYear">
     <div className="nav-wrapper container">
       <a href="/" className="brand-logo left hide-on-small-and-down">
         JS CraftCamp
       </a>
-      <ul id="nav-desktop" className="right hide-on-med-and-downX">
+      <ul id="nav-desktop" className="right">
         {navigationItems.main.map(item => (
           <li key={item.title}>
-            <a href={item.url} className={item.cssClasses}>
+            <a href={item.url}>
               {item.title}
             </a>
           </li>

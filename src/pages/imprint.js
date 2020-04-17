@@ -1,4 +1,20 @@
-<div class="container">
+import React from "react"
+import { Link } from "gatsby"
+
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+
+import Image from "../components/image"
+import Sponsors from "../components/Sponsors"
+import Facilitator from "../components/Facilitator"
+import Schedule from "../components/Schedule"
+import Location from "../components/Location"
+
+const ImprintPage = () => (
+  <Layout>
+    <SEO title="Home" />
+    <>
+      <div class="container">
 <div class="row">
 <div class="col s12 m12">
 
@@ -11,10 +27,10 @@
   <b>E-Mail:</b> wolfram+jscraftcamp@kriesing.de
 </p>
 <p  class="flow-text">
-_Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:_   
+_Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:_
 **Wolfram Kriesing**
-Richard-Strauss-Str. 21  
-81677 Muenchen   
+Richard-Strauss-Str. 21
+81677 Muenchen
 </p>
 
 <h3>Haftung für Inhalte</h3>
@@ -39,3 +55,8 @@ Richard-Strauss-Str. 21
 </div>
 </div>
 </div>
+    </>
+  </Layout>
+)
+
+export default ImprintPage
