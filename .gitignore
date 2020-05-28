@@ -36,4 +36,4 @@ yarn-error.log
 /static/storybook/
 
 # Local Netlify folder
-.netlify
+.netlifystorybook-static
