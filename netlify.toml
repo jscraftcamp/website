@@ -10,6 +10,5 @@
 [context."gh-pages"] # 'gh-pages' is a branch name
   ignore = "true"
 
-
 [[plugins]]
   package = "netlify-plugin-gatsby-cache"

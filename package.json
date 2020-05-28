@@ -41,6 +41,8 @@
     "babel-loader": "^8.1.0",
     "hamjest": "3.2.3",
     "mocha": "6.1.4",
+    "netlify-plugin-debug-cache": "1.0.3",
+    "netlify-plugin-gatsby-cache": "0.2.2",
     "prettier": "1.19.1",
     "recursive-readdir-sync": "1.0.6"
   },
