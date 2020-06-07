@@ -2,7 +2,11 @@
 
 # default for all branches, overriding the UI setting on netlify.com
 [build]
-  command = "npm run build-storybook -- -o static/storybook ; npm run build"
+  command = "yarn run build-storybook -o static/storybook ; yarn build"
+  publish = "public"
+
+[[plugins]]
+  package = "netlify-plugin-gatsby-cache"
 
 # Specific branch context: all deploys from this specific branch will inherit
 # these settings.

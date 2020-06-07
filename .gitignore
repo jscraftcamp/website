@@ -34,3 +34,6 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 /static/storybook/
+
+# Local Netlify folder
+.netlifystorybook-static
