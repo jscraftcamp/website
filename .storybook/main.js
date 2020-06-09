@@ -24,7 +24,7 @@ module.exports = {
 
     // storybook handles svg with the file-loader which overrides our custom loaders, so remove it
     config.module.rules = config.module.rules.map(rule => {
-      if (rule.test.toString().includes("svg")) {
+      if (false && rule.test.toString().includes("svg")) {
         const test = rule.test
           .toString()
           .replace("svg|", "")
@@ -59,6 +59,7 @@ module.exports = {
           },
         ],
       },
+      /*
       {
         test: /\.svg$/,
         issuer: /\.js$/, // Prevent usage of icon sprite outside of js
@@ -71,6 +72,8 @@ module.exports = {
           },
         ],
       }
+
+       */
     )
 
     return config

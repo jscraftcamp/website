@@ -9,6 +9,8 @@ import React from "react"
 
 import { navigationItems } from "../../_data.json"
 
+import '../../css/main.css';
+
 const Footer = () => {
   return (
     <footer style={{backgroundColor: "#000"}}>
