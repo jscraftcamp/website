@@ -1,7 +1,7 @@
 import React from "react"
 
 import { navigationItems } from "../_data"
-import "../fonts/font-awesome/css/font-awesome.css"
+// import "../fonts/font-awesome/css/font-awesome.css"
 
 export default () => (
   <nav className="colorOfTheYear">

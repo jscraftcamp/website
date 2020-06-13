@@ -1,44 +1,43 @@
 module.exports = {
   siteMetadata: {
-    title: `JSCraftCamp - 2020 in Munich`,
-    description: `Website for JSCraftCamp - 2020 in Munich`,
-    author: `@davelosert, @rhosts, @michaelzoidl, @Narigo`,
+    title: "JSCraftCamp - 2020 in Munich",
+    description: "Website for JSCraftCamp - 2020 in Munich",
+    author: "@davelosert, @rhosts, @michaelzoidl, @Narigo",
   },
   pathPrefix: "/",
   plugins: [
-    `gatsby-transformer-json`,
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
+    "gatsby-transformer-json",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-svg-sprite",
     {
       resolve: "gatsby-plugin-sass",
       options: {
         data: `
+          @import "node_modules/sass-mq/_mq.scss";
           @import "${__dirname}/src/config.scss";
         `,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `JSCraftCamp - 2020 in Munich`,
-        short_name: `JSCraftCamp`,
-        start_url: `/`,
-        background_color: `#ececec`,
-        theme_color: `#ececec`,
-        display: `minimal-ui`,
-        icon: `src/images/new_logo.png`, // This path is relative to the root of the site.
+        name: "images",
+        path: `${__dirname}/src/assets`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: "JSCraftCamp - 2020 in Munich",
+        short_name: "JSCraftCamp",
+        start_url: "/",
+        background_color: "#ececec",
+        theme_color: "#ececec",
+        display: "minimal-ui",
+        icon: "src/assets/images/logo.png",
+      },
+    },
   ],
 }

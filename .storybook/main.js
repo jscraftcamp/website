@@ -1,5 +1,8 @@
 module.exports = {
-  stories: ["../src/components/**/*.story.js"],
+  stories: [
+    "../src/components/**/*.story.js",
+    "../src/DEPRECATED_components/**/*.story.js"
+  ],
   addons: [
     "@storybook/addon-actions",
     "@storybook/addon-links",
@@ -19,29 +22,59 @@ module.exports = {
     ]
     config.resolve.mainFields = ["browser", "module", "main"]
 
+    // storybook handles svg with the file-loader which overrides our custom loaders, so remove it
+    config.module.rules = config.module.rules.map(rule => {
+      if (false && rule.test.toString().includes("svg")) {
+        const test = rule.test
+          .toString()
+          .replace("svg|", "")
+          .replace(/\//g, "")
+        return { ...rule, test: new RegExp(test) }
+      } else {
+        return rule
+      }
+    })
+
     // Add new loaders we want to use
-    config.module.rules.push({
-      test: /\.scss$/i,
-      use: [
-        "style-loader",
-        {
-          loader: "css-loader",
-          options: {
-            importLoaders: 1,
-            modules: {
-              localIdentName: "[local]___[hash:base64:5]",
+    config.module.rules.push(
+      {
+        test: /\.scss$/i,
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: {
+              importLoaders: 1,
+              modules: {
+                localIdentName: "[local]___[hash:base64:5]",
+              },
             },
           },
-        },
-        "sass-loader",
-        {
-          loader: "sass-resources-loader",
-          options: {
-            resources: ["./src/config.scss"],
+          "sass-loader",
+          {
+            loader: "sass-resources-loader",
+            options: {
+              resources: ["node_modules/sass-mq/_mq.scss", "./src/config.scss"],
+            },
           },
-        },
-      ],
-    })
+        ],
+      },
+      /*
+      {
+        test: /\.svg$/,
+        issuer: /\.js$/, // Prevent usage of icon sprite outside of js
+        use: [
+          {
+            loader: "svg-sprite-loader",
+          },
+          {
+            loader: "svgo-loader",
+          },
+        ],
+      }
+
+       */
+    )
 
     return config
   },

@@ -1,14 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../DEPRECATED_components/layout"
+import SEO from "../DEPRECATED_components/seo"
 
-import Sponsors from "../components/Sponsors"
-import Facilitator from "../components/Facilitator"
-import Schedule from "../components/Schedule"
-import Location from "../components/Location"
-import { JsccLogo } from "../components";
+import Sponsors from "../DEPRECATED_components/Sponsors"
+import Facilitator from "../DEPRECATED_components/Facilitator"
+import Schedule from "../DEPRECATED_components/Schedule"
+import Location from "../DEPRECATED_components/Location"
+import { JsccLogo } from "../DEPRECATED_components";
 
 const IndexPage = () => (
   <Layout>
