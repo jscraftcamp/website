@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../DEPRECATED_components/layout"
 import SEO from "../DEPRECATED_components/seo"
 
-import { theteam } from "../_data"
+import { theteam } from "../data"
 
 const TeamPage = () => {
   return (
