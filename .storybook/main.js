@@ -1,6 +1,7 @@
 module.exports = {
   stories: [
     "../src/components/**/*.story.js",
+    "../src/pages/**/*.story.js",
     "../src/DEPRECATED_components/**/*.story.js"
   ],
   addons: [
