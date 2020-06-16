@@ -1,10 +1,10 @@
 import React from "react"
 
-import Index from "."
-import Imprint from "./imprint"
-import TheTeam from "./theteam"
-import NotFound from "./404"
-import PrivacyPolicy from "./privacypolicy"
+import Index from "./pages"
+import Imprint from "./pages/imprint"
+import TheTeam from "./pages/theteam"
+import NotFound from "./pages/404"
+import PrivacyPolicy from "./pages/privacypolicy"
 
 export default {
   title: "Pages|main",
