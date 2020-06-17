@@ -17,7 +17,7 @@ jobs:
             ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
       - uses: actions/checkout@v1
       - run: |
-          npm i
+          yarn --frozen-lockfile
           npm run build
       - uses: chromaui/action@v1
         with:
