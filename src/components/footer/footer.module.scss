@@ -1,4 +1,57 @@
+.footer {
+  background: $basic-black;
+}
+
 .root {
-  background: black;
+  display: flex;
   height: 240px;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+  width: 90px;
+  margin-left: 70px;
+}
+
+.lists {
+  display: flex;
+}
+
+.list {
+  margin-left: 100px;
+
+  &Headline {
+    display: inline-block;
+    font-family: $font-poppins;
+    font-size: $font-size-h4;
+    font-weight: $font-weight-semibold;
+    margin: 10px 0;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  margin: 8px 0;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.netlify {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  text-decoration: none;
+
+  &Logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
 }
