@@ -1,3 +1,21 @@
 .root {
-  color: pink;
+  display: flex;
+}
+
+.logoWrapper {
+  flex-grow: 1;
+}
+
+.logo {
+  font-family: $font-poppins;
+  font-size: $font-size-h3;
+  font-weight: $font-weight-semibold;
+}
+
+.navigation a {
+  margin: 0 40px;
+
+  &:first-child {
+    margin-left: 0;
+  }
 }

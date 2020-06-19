@@ -14,19 +14,10 @@ export const customTitle = () => (
   </Page>
 )
 
-export const withHeader = () => (
-  <Page header={<div>Iam the header</div>}>Iam the content</Page>
-)
-
-export const withFooter = () => (
-  <Page footer={<div>Iam the footer</div>}>Iam the content</Page>
-)
-
-export const withHeaderAndFooter = () => (
-  <Page
-    header={<div>Hello iam the header</div>}
-    footer={<div>Iam the footer</div>}
-  >
-    Iam the content
+export const bigContent = () => (
+  <Page title="hello world">
+    <div style={{ height: 1000, display: "block", background: "#eee" }}>
+      a lot of content
+    </div>
   </Page>
 )

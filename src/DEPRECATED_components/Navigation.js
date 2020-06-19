@@ -1,6 +1,6 @@
 import React from "react"
 
-import { navigationItems } from "../_data"
+import { navigationItems } from "../data"
 // import "../fonts/font-awesome/css/font-awesome.css"
 
 export default () => (

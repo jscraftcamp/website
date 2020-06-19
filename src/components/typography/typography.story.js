@@ -1,5 +1,5 @@
 import React from "react"
-import Typography from "./"
+import Typography from "."
 
 export default {
   title: "components|Typography",
@@ -7,8 +7,4 @@ export default {
 }
 
 export const base = () => <Typography>Hello World</Typography>
-export const h1 = () => <Typography component="h1">JSCraftCamp</Typography>
-export const subline = () => (
-  <Typography variant="subline">JSCraftCamp</Typography>
-)
-export const logo = () => <Typography variant="logo">JSCraftCamp</Typography>
+export const h1 = () => <Typography component="h1">Hello World</Typography>
