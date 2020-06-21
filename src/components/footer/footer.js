@@ -48,7 +48,7 @@ export default () => (
               Sponsoring
             </ExternalLink>
             <InternalLink to="/values">Values</InternalLink>
-            <InternalLink to="/privacy">Privacy Policy</InternalLink>
+            <InternalLink to="/privacypolicy">Privacy Policy</InternalLink>
           </div>
         </div>
         <div className={style.list}>
@@ -56,7 +56,7 @@ export default () => (
             Get in touch
           </Typography>
           <div className={style.links}>
-            <InternalLink to="/team">Team</InternalLink>
+            <InternalLink to="/theteam">Team</InternalLink>
             <ExternalLink href="https://twitter.com/jscraftcamp">
               Twitter
             </ExternalLink>
