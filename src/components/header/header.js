@@ -33,7 +33,9 @@ export default () => (
       <Typography component={Link} variant="link" to="/values">
         Values
       </Typography>
+      {false &&
       <Button onClick={() => navigate("/register")}>Register</Button>
+      }
     </div>
   </Section>
 )
