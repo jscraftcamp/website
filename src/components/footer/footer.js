@@ -8,6 +8,7 @@ import Section from "../section"
 
 import logo from "../../assets/images/logo.svg"
 import netlify from "../../assets/images/netlify.svg"
+import gatsby from "../../assets/images/gatsby.svg"
 
 const InternalLink = ({ to, children }) => (
   <Typography
@@ -92,6 +93,10 @@ export default () => (
           <a className={style.netlify} href="https://www.netlify.com/">
             <Icon className={style.netlifyLogo} source={netlify} />
             <Typography variants={["inverted", "small"]}>Netlify</Typography>
+          </a>
+          <a className={style.netlify} href="https://gatsbyjs.org">
+            <Icon className={style.netlifyLogo} source={gatsby} />
+            <Typography variants={["inverted", "small"]}>Gatsby v2</Typography>
           </a>
         </div>
       </div>
