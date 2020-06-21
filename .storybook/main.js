@@ -60,7 +60,6 @@ module.exports = {
           },
         ],
       },
-      /*
       {
         test: /\.svg$/,
         issuer: /\.js$/, // Prevent usage of icon sprite outside of js
@@ -73,8 +72,6 @@ module.exports = {
           },
         ],
       }
-
-       */
     )
 
     return config
