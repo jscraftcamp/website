@@ -8,6 +8,7 @@ import Section from "../section"
 
 import logo from "../../assets/images/logo.svg"
 import netlify from "../../assets/images/netlify.svg"
+import gatsby from "../../assets/images/gatsby.svg"
 
 const InternalLink = ({ to, children }) => (
   <Typography
@@ -48,7 +49,7 @@ export default () => (
               Sponsoring
             </ExternalLink>
             <InternalLink to="/values">Values</InternalLink>
-            <InternalLink to="/privacy">Privacy Policy</InternalLink>
+            <InternalLink to="/privacypolicy">Privacy Policy</InternalLink>
           </div>
         </div>
         <div className={style.list}>
@@ -56,7 +57,7 @@ export default () => (
             Get in touch
           </Typography>
           <div className={style.links}>
-            <InternalLink to="/team">Team</InternalLink>
+            <InternalLink to="/theteam">Team</InternalLink>
             <ExternalLink href="https://twitter.com/jscraftcamp">
               Twitter
             </ExternalLink>
@@ -92,6 +93,10 @@ export default () => (
           <a className={style.netlify} href="https://www.netlify.com/">
             <Icon className={style.netlifyLogo} source={netlify} />
             <Typography variants={["inverted", "small"]}>Netlify</Typography>
+          </a>
+          <a className={style.netlify} href="https://gatsbyjs.org">
+            <Icon className={style.netlifyLogo} source={gatsby} />
+            <Typography variants={["inverted", "small"]}>Gatsby v2</Typography>
           </a>
         </div>
       </div>
