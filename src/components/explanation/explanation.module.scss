@@ -1,0 +1,17 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textblock {
+  max-width: 340px;
+
+  &:last-child,
+  &:first-child {
+    margin-top: 100px;
+  }
+}
+
+.icon {
+  height: 100px;
+}
