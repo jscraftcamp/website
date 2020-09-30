@@ -1,3 +1,4 @@
+#amazing project
 # JS CraftCamp - Website
 
 _New README is WIP_
