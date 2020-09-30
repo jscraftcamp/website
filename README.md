@@ -1,4 +1,4 @@
-# JS CraftCamp - Website
+# JS CraftCamp - An Amazing Idea implemented on a Website
 
 _New README is WIP_
 
