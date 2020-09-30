@@ -5,8 +5,7 @@ language:   node_js
 after_success:
   - chmod +x ./scripts/*.sh
   - chmod +x ./scripts/for-travis/*.sh
-  - ./scripts/for-travis/build.sh
-
+  - ./scripts/for-travis/build.
 
 deploy:
   provider: script
