@@ -1,6 +1,6 @@
 # JS CraftCamp - Website
 
-_New README is WIP_
+_New README is Work in prgress_
 
 ### Start developing:
 
