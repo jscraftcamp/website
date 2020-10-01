@@ -10,7 +10,7 @@ src/participants.json
 # new since gatsby:
 
 
-# Logs
+# code for Log
 logs
 *.log
 npm-debug.log*
