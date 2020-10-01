@@ -33,3 +33,7 @@ A section basically a part of a page, e.g. the "child care" is a section.
   > Change the viewport in the storybook preview
 - http://www.hygen.io/
   > Some generator to make it easier creating components with all depending files
+  
+  ##developer details to contribute in this project
+  github username 
+  about yourself
