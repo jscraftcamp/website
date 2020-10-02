@@ -4,7 +4,7 @@ _New README is WIP_
 
 ### Start developing:
 
-1. clone
+1. clone project
 2. install dependencies
 
 ### Scripts
