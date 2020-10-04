@@ -1,4 +1,5 @@
 # JS CraftCamp - Website
+#Learn something new
 
 _New README is WIP_
 
