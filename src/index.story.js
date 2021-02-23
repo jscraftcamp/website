@@ -9,7 +9,7 @@ import Values  from "./pages/values";
 
 
 export default {
-  title: "Pages|main",
+  title: 'Pages/main',
 }
 
 export const ImprintPage = () => <Imprint />
