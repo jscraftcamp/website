@@ -2,7 +2,7 @@ import React from 'react';
 import CodeOfConduct from './';
 
 export default {
-  title: 'sections|CodeOfConduct',
+  title: 'sections/CodeOfConduct',
   component: CodeOfConduct
 };
 

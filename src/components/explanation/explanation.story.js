@@ -2,7 +2,7 @@ import React from "react"
 import Explanation from "./"
 
 export default {
-  title: "sections|Explanation",
+  title: 'sections/Explanation',
   component: Explanation,
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from './';
 
 export default {
-  title: 'components|Footer',
+  title: 'components/Footer',
   component: Footer
 };
 

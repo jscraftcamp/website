@@ -2,7 +2,7 @@ import React from "react"
 import Spacer from "./"
 
 export default {
-  title: "components|Spacer",
+  title: 'components/Spacer',
   component: Spacer,
 }
 

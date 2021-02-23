@@ -3,7 +3,7 @@ import Icon from "./"
 import Logo from "../../assets/images/logo.svg"
 
 export default {
-  title: "Components|Icon",
+  title: 'Components/Icon',
   component: Icon,
 }
 
