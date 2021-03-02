@@ -29,7 +29,7 @@
     "sass-mq": "5.0.1",
     "style-loader": "2.0.0",
     "svg-sprite-loader": "5.2.1",
-    "svgo-loader": "2.2.1"
+    "svgo-loader": "2.2.2"
   },
   "devDependencies": {
     "@babel/core": "7.13.14",
