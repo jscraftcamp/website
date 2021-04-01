@@ -10706,10 +10706,10 @@ gzip-size@5.1.1:
     duplexer "^0.1.1"
     pify "^4.0.1"
 
-hamjest@3.7.1:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/hamjest/-/hamjest-3.7.1.tgz#e0041c81b0ab654510cac6dd5f751490db361205"
-  integrity sha512-NCbGAPNJaheANpyHRuMnlZoQk5MFvN91LJwO5RVZ34b5AA8Gg9p/b7iBfF2yABTLqNzQRn9GQvyqnZb4xyxKkg==
+hamjest@3.7.2:
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/hamjest/-/hamjest-3.7.2.tgz#7ac8c6fc9dd4844f926d5c509b042a178676a0a7"
+  integrity sha512-Y9bY4o9aVBkvPO8OumsxxJIR/Oa5LTKu0/Z1zPzbBZwB4mySTsriKxAVFCsMh9T+H3megUveLiF8gijiu6dU9Q==
   dependencies:
     assertion-error "^1.1.0"
     bluebird "^3.3.4"
