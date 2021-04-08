@@ -12,7 +12,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sass",
       options: {
-        data: `
+        additionalData: `
           @import "node_modules/sass-mq/_mq.scss";
           @import "${__dirname}/src/config.scss";
         `,
