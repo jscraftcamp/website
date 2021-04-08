@@ -1,16 +1,17 @@
 import React from "react"
-import style from "./intro.module.scss"
 
 import Icon from "../icon"
 import Typography from "../typography"
 import Spacer from "../spacer"
+
+import style from "./intro.module.scss"
 
 import logo from "../../assets/images/logo.svg"
 import twitter from "../../assets/images/twitter.svg"
 import github from "../../assets/images/github.svg"
 import skyline from "../../assets/images/skyline.svg"
 
-export default () => (
+const Intro = () => (
   <div className={style.root}>
     <div className={style.headline}>
       <Typography component="p" variant="subline">
@@ -22,7 +23,7 @@ export default () => (
         decision as soon as possible.
       </Typography>
       <Typography component="p" variant="subline">
-        Until then, it is probably best for you to consider JSCC cancelled 😞
+        Until then, it is probably best for you to consider JSCC cancelled <span role="img" aria-label="disappointed face">😞</span>
       </Typography>
       <Typography component="p" variant="subline">We are terribly sorry.</Typography>
     </div>
@@ -53,3 +54,4 @@ export default () => (
     </div>
   </div>
 )
+export default Intro

@@ -32,11 +32,11 @@ const ExternalLink = ({ href, children }) => (
   </Typography>
 )
 
-export default () => (
+const Footer = () => (
   <footer className={style.footer}>
     <Section className={style.root}>
       <div className={style.logo}>
-        <Icon source={logo} />
+        <Icon className={style.logo} source={logo} />
       </div>
       <div className={style.lists}>
         <div className={style.list}>
@@ -103,3 +103,5 @@ export default () => (
     </Section>
   </footer>
 )
+
+export default Footer

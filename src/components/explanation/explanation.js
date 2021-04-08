@@ -9,7 +9,7 @@ import code from "../../assets/images/code.svg"
 import rocket from "../../assets/images/rocket.svg"
 import camp from "../../assets/images/camp.svg"
 
-export default () => (
+const Explanation = () => (
   <div className={style.root}>
     <TextBlock
       className={style.textblock}
@@ -53,3 +53,5 @@ export default () => (
     </TextBlock>
   </div>
 )
+
+export default Explanation

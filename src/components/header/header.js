@@ -7,7 +7,7 @@ import Section from "../section"
 
 import { Link, navigate } from "gatsby"
 
-export default () => (
+const Header = () => (
   <Section className={style.root}>
     <div className={style.logoWrapper}>
       <Typography
@@ -39,3 +39,4 @@ export default () => (
     </div>
   </Section>
 )
+export default Header

@@ -3,6 +3,7 @@ import style from "./spacer.module.scss"
 
 import cn from "classnames"
 
-export default ({ size, className }) => (
+const Spacer = ({ size, className }) => (
   <div className={cn(style.root, className, style[size])} />
 )
+export default Spacer

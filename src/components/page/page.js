@@ -7,7 +7,7 @@ import Spacer from "../spacer"
 
 import style from "./page.module.scss"
 
-export default ({ children, title }) => {
+const Page = ({ children, title }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -75,3 +75,4 @@ export default ({ children, title }) => {
     </>
   )
 }
+export default Page

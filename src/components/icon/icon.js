@@ -1,16 +1,19 @@
 import React from "react"
-import cn from "classnames"
 
-import style from "./icon.module.scss"
-
-export default ({ className, source }) => (
+const Icon = ({ className, source : Source }) => {
+debugger
+  return (
   <svg
-    className={cn(style.root, className)}
+    className={className}
     version="1.1"
-    viewBox={source.viewBox}
+    viewBox={Source.defaultProps?.viewBox}
+    width={Source.defaultProps?.width}
+    height={Source.defaultProps?.height}
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
   >
-    <use xlinkHref={`#${source.id}`} />
-  </svg>
+    <Source />
+   </svg>
 )
+}
+export default Icon
