@@ -8,10 +8,23 @@ module.exports = {
   plugins: [
     "gatsby-transformer-json",
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-svg-sprite",
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/
+        }
+      }
+    },
     {
       resolve: "gatsby-plugin-sass",
       options: {
+        cssLoaderOptions: {
+          esModule: true,
+          modules: {
+             namedExport: false,
+          },
+        },
         additionalData: `
           @import "node_modules/sass-mq/_mq.scss";
           @import "${__dirname}/src/config.scss";
