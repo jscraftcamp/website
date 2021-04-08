@@ -3,5 +3,5 @@ with import (fetchTarball https://github.com/nixos/nixpkgs/tarball/f52505fac8c82
 stdenv.mkDerivation {
     name = "dev-shell";
     src = null;
-    buildInputs = [ nodejs-10_x ];
+    buildInputs = [ nodejs-14_x ];
 }
