@@ -2,7 +2,7 @@ import React from "react"
 import style from "./typography.module.scss"
 import cn from "classnames"
 
-export default ({
+const Typography = ({
                   className,
                   component,
                   variant,
@@ -28,3 +28,4 @@ export default ({
     </Component>
   )
 }
+export default Typography

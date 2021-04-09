@@ -6,8 +6,8 @@ import Typography from "../components/typography"
 import Spacer from "../components/spacer";
 import { Link } from "gatsby";
 
-// TODO, this is just a test, create for the content a new "Section" in the components
-export default () => (
+// TODO: create for the content a new "Section" in the components
+const Registration = () => (
   <Page title="Registration">
     <Spacer size="m" />
     <Section>
@@ -201,3 +201,5 @@ export default () => (
     </Section>
   </Page>
 )
+
+export default Registration

@@ -4,7 +4,7 @@ import Typography from "../typography"
 import Section from "../section"
 import TextBlock from "../text-block"
 
-export default () => (
+const CodeOfConduct = () => (
   <Section className={style.root}>
     <TextBlock headline="Code of Conduct">
       <Typography className={style.paragraph} paragraph>
@@ -29,3 +29,4 @@ export default () => (
     </TextBlock>
   </Section>
 )
+export default CodeOfConduct

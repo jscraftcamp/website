@@ -23,9 +23,10 @@ module.exports = {
     ]
     config.resolve.mainFields = ["browser", "module", "main"]
 
-    // storybook handles svg with the file-loader which overrides our custom loaders, so remove it
+    // Workaround:
+    // storybook handles svg with the file-loader which overrides our custom loaders, so adapt rule, to ignore svg extension:
     config.module.rules = config.module.rules.map(rule => {
-      if (false && rule.test.toString().includes("svg")) {
+      if (rule.test.toString().includes("svg")) {
         const test = rule.test
           .toString()
           .replace("svg|", "")

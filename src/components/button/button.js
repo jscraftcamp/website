@@ -3,7 +3,7 @@ import style from "./button.module.scss"
 import Typography from "../typography"
 import cn from "classnames"
 
-export default ({ children, className, ...props }) => {
+const Button = ({ children, className, ...props }) => {
   return (
     <Typography
       component="button"
@@ -15,3 +15,4 @@ export default ({ children, className, ...props }) => {
     </Typography>
   )
 }
+export default Button

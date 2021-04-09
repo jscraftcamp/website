@@ -3,7 +3,7 @@ import style from "./text-block.module.scss"
 import Typography from "../typography"
 import cn from "classnames"
 
-export default ({
+const TextBlock = ({
   headline,
   children,
   beforeNode,
@@ -20,3 +20,4 @@ export default ({
     {afterNode && <div className={style.afterNode}>{afterNode}</div>}
   </div>
 )
+export default TextBlock

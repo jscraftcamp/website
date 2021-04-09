@@ -32,11 +32,11 @@ const ExternalLink = ({ href, children }) => (
   </Typography>
 )
 
-export default () => (
+const Footer = () => (
   <footer className={style.footer}>
     <Section className={style.root}>
       <div className={style.logo}>
-        <Icon source={logo} />
+        <Icon className={style.logo} source={logo} />
       </div>
       <div className={style.lists}>
         <div className={style.list}>
@@ -96,10 +96,12 @@ export default () => (
           </a>
           <a className={style.netlify} href="https://gatsbyjs.org">
             <Icon className={style.netlifyLogo} source={gatsby} />
-            <Typography variants={["inverted", "small"]}>Gatsby v2</Typography>
+            <Typography variants={["inverted", "small"]}>Gatsby V3</Typography>
           </a>
         </div>
       </div>
     </Section>
   </footer>
 )
+
+export default Footer

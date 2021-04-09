@@ -14,18 +14,20 @@ import Img from "gatsby-image"
  */
 
 const Image = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "images/logo.png" }) {
-        childImageSharp {
-          fixed(height: 300) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `)
-  return <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+  // const data;
+  // = useStaticQuery(graphql`
+  //   query {
+  //     placeholderImage: file(relativePath: { eq: "images/logo.png" }) {
+  //       childImageSharp {
+  //         fixed(height: 300) {
+  //           ...GatsbyImageSharpFixed
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
+  // return <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+  return <span>IMG</span>
 }
 
 export default Image

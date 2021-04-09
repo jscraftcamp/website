@@ -6,7 +6,6 @@ import Typography from "../components/typography";
 import Spacer from "../components/spacer";
 
 const NotFoundPage = () => (
-
   <Page title="404: Not found">
     <Section>
       <Spacer size="m" />
