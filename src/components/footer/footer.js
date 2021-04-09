@@ -96,7 +96,7 @@ const Footer = () => (
           </a>
           <a className={style.netlify} href="https://gatsbyjs.org">
             <Icon className={style.netlifyLogo} source={gatsby} />
-            <Typography variants={["inverted", "small"]}>Gatsby v2</Typography>
+            <Typography variants={["inverted", "small"]}>Gatsby V3</Typography>
           </a>
         </div>
       </div>
