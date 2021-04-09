@@ -15,7 +15,7 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - run: |
           yarn --frozen-lockfile
           npm run build
