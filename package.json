@@ -61,9 +61,10 @@
     "build": "cp CNAME public/; npm run build:participants.json ; gatsby build;",
     "build:participants.json": "node scripts/concat-json.js ./participants public/participants.json; cp ./public/participants.json ./src/",
     "test": "mocha test",
-    "build-storybook": "build-storybook",
+    "build-storybook": "NODE_ENV=test build-storybook",
     "storybook": "NODE_ENV=test start-storybook -p 6006 -s ./public",
     "prestorybook": "npm run copy-static-queries",
+    "prebuild-storybook": "npm run copy-static-queries",
     "copy-static-queries": "cp -r ./public/page-data/sq/d ./public/static",
     "hygen": "hygen"
   },
