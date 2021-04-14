@@ -15,7 +15,11 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+        with:
+          # Number of commits to fetch. 0 indicates all history for all branches and tags.
+          # Default would be 1
+          fetch-depth: 0
       - run: |
           yarn --frozen-lockfile
           npm run build
