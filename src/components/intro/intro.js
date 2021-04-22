@@ -16,7 +16,7 @@ const Intro = () => (
     <div className={style.headline}>
       <Typography component="p" variant="subline">
         Unfortunately and due to the current situation, we can not say if or how
-        JSCC 2020 will actually take place.
+        JSCC 2021 will actually take place.
       </Typography>
       <Typography component="p" variant="subline">
         We from the Orga team are observing the situation and will try to make a
@@ -33,7 +33,7 @@ const Intro = () => (
     </div>
     <div className={style.text}>
       <Typography className={style.headline} component="h1">
-        JSCraftCamp 2020
+        JSCraftCamp 2021
       </Typography>
       { false && // disabled until consideration or current situation
       <Typography variant="subline">
