@@ -20,7 +20,7 @@
     "gatsby-source-filesystem": "3.4.0",
     "gatsby-transformer-json": "3.4.0",
     "gatsby-transformer-sharp": "3.4.0",
-    "modern-normalize": "1.0.0",
+    "modern-normalize": "1.1.0",
     "netlify-plugin-gatsby-cache": "0.3.2",
     "prop-types": "15.7.2",
     "react": "17.0.2",
