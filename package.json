@@ -44,7 +44,7 @@
     "@storybook/react": "6.3.8",
     "babel-loader": "8.2.2",
     "babel-plugin-remove-graphql-queries": "3.14.0",
-    "hamjest": "3.7.2",
+    "hamjest": "3.7.3",
     "hygen": "6.1.0",
     "mocha": "9.1.2",
     "node-sass": "4.14.1",
