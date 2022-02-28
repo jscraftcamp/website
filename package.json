@@ -48,7 +48,7 @@
     "babel-plugin-remove-graphql-queries": "4.8.1",
     "hamjest": "3.7.3",
     "hygen": "6.1.5",
-    "mocha": "9.1.4",
+    "mocha": "9.2.1",
     "prettier": "2.5.1",
     "recursive-readdir-sync": "1.0.6",
     "sass": "1.49.9",
