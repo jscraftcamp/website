@@ -8168,6 +8168,11 @@ define-property@^2.0.2:
     is-descriptor "^1.0.2"
     isobject "^3.0.1"
 
+degit@^2.8.4:
+  version "2.8.4"
+  resolved "https://registry.yarnpkg.com/degit/-/degit-2.8.4.tgz#3bb9c5c00f157c44724dd4a50724e4aa75a54d38"
+  integrity sha512-vqYuzmSA5I50J882jd+AbAhQtgK6bdKUJIex1JNfEUPENCgYsxugzKVZlFyMwV4i06MmnV47/Iqi5Io86zf3Ng==
+
 del@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/del/-/del-5.1.0.tgz#d9487c94e367410e6eff2925ee58c0c84a75b3a7"
@@ -11217,15 +11222,16 @@ human-signals@^2.1.0:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-2.1.0.tgz#dc91fcba42e4d06e4abaed33b3e7a3c02f514ea0"
   integrity sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==
 
-hygen@6.1.5:
-  version "6.1.5"
-  resolved "https://registry.yarnpkg.com/hygen/-/hygen-6.1.5.tgz#01ad7bce0e01638da61ef02b33666df7ff950764"
-  integrity sha512-XZBK/RHPCiJ1MpLJI2x6e/fCRRz+2R8AdNrMR2AxSFIuvmTlfW2KIr2gziqkkKc+LP2ZjHEvDbLagIWc0mJfnQ==
+hygen@6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/hygen/-/hygen-6.2.0.tgz#9f71af9218a1cb24f2c9f017a2594a6d61e6874f"
+  integrity sha512-5kma/nx7K+gJu8Q8kirkamUDb2TLvDJEiG/hfAL2Jt93SGrWEd0vWVEwaJW7qQylbIoT7gBVefrXZS2sYS8aag==
   dependencies:
     "@types/node" "^17.0.19"
     chalk "^4.1.2"
     change-case "^3.1.0"
     debug "^4.3.3"
+    degit "^2.8.4"
     ejs "^3.1.6"
     enquirer "^2.3.6"
     eslint-plugin-prettier "^4.0.0"
