@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "JSCraftCamp - 2021 in Munich",
-    description: "Website for JSCraftCamp - 2021 in Munich",
+    title: "JSCraftCamp - 2022 in Munich",
+    description: "Website for JSCraftCamp - 2022 in Munich",
     author: "@davelosert, @rhosts, @michaelzoidl, @Narigo",
   },
   pathPrefix: "/",
@@ -43,7 +43,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "JSCraftCamp - 2021 in Munich",
+        name: "JSCraftCamp - 2022 in Munich",
         short_name: "JSCraftCamp",
         start_url: "/",
         background_color: "#ececec",
