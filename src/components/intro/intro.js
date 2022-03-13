@@ -15,15 +15,13 @@ const Intro = () => (
   <div className={style.root}>
     <div className={style.headline}>
       <Typography component="p" variant="subline">
-        Good news everyone! We plan to have a
-        JSCC 2022! 🎉
+        Good news everyone! We're planning on having a JSCC in 2022! 🎉
       </Typography>
       <Typography component="p" variant="subline">
-        We from the Orga team are starting to kicking off
-        the next steps.
+        The Orga team has kicked off the effort for the next steps to bring this years event into fruition
       </Typography>
       <Typography component="p" variant="subline">
-        to be continued...
+        Stay tuned by following [@JSCraftCamp](https://twitter.com/JSCraftCamp) on Twitter!
       </Typography>
     </div>
 
