@@ -15,17 +15,16 @@ const Intro = () => (
   <div className={style.root}>
     <div className={style.headline}>
       <Typography component="p" variant="subline">
-        Unfortunately and due to the current situation, we can not say if or how
-        JSCC 2021 will actually take place.
+        Good news everyone! We're planning on having a JSCC in 2022! 🎉
+      </Typography>
+    </div>
+    <div className={style.headline}>
+      <Typography component="p" variant="subline">
+        The Orga team has kicked off the effort for the next steps to bring this years event into fruition
       </Typography>
       <Typography component="p" variant="subline">
-        We from the Orga team are observing the situation and will try to make a
-        decision as soon as possible.
+        Stay tuned by following <a href="https://twitter.com/jscraftcamp">@JSCraftCamp on Twitter!</a>
       </Typography>
-      <Typography component="p" variant="subline">
-        Until then, it is probably best for you to consider JSCC cancelled <span role="img" aria-label="disappointed face">😞</span>
-      </Typography>
-      <Typography component="p" variant="subline">We are terribly sorry.</Typography>
     </div>
 
     <div className={style.logo}>
@@ -33,14 +32,12 @@ const Intro = () => (
     </div>
     <div className={style.text}>
       <Typography className={style.headline} component="h1">
-        JSCraftCamp 2021
+        JSCraftCamp 2022
       </Typography>
-      { false && // disabled until consideration or current situation
       <Typography variant="subline">
         Will return to Munich, this summer!
         <br />A Barcamp about JavaScript and Crafting Software
       </Typography>
-      }
       <Spacer size="xs" />
       <div className={style.social}>
         <a href="https://twitter.com/jscraftcamp">
