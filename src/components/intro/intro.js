@@ -17,11 +17,13 @@ const Intro = () => (
       <Typography component="p" variant="subline">
         Good news everyone! We're planning on having a JSCC in 2022! 🎉
       </Typography>
+    </div>
+    <div className={style.headline}>
       <Typography component="p" variant="subline">
         The Orga team has kicked off the effort for the next steps to bring this years event into fruition
       </Typography>
       <Typography component="p" variant="subline">
-        Stay tuned by following [@JSCraftCamp](https://twitter.com/JSCraftCamp) on Twitter!
+        Stay tuned by following <a href="https://twitter.com/jscraftcamp">@JSCraftCamp on Twitter!</a>
       </Typography>
     </div>
 
