@@ -2,7 +2,7 @@
 
 # default for all branches, overriding the UI setting on netlify.com
 [build]
-  command = "yarn run build && yarn build-storybook -o public/storybook"
+  command = "yarn run build"
   publish = "public"
 
 [[plugins]]
