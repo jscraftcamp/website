@@ -59,9 +59,9 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "prebuild": "rm -rfv dist ; mkdir -p ./public",
-    "build": "cp CNAME public/; npm run build:participants.json ; gatsby build;",
-    "build:participants.json": "node scripts/concat-json.js ./participants public/participants.json; cp ./public/participants.json ./src/",
+    "prebuild": "mkdir -p ./public",
+    "build": "cp CNAME public/; npm run build:participants.json ; gatsby build",
+    "build:participants.json": "node scripts/concat-json.js ./participants src/participants.json",
     "test": "mocha test",
     "build-storybook": "NODE_ENV=test build-storybook",
     "storybook": "NODE_ENV=test start-storybook -p 6006",
@@ -70,7 +70,7 @@
     "copy-static-queries": "cp -r ./public/page-data/sq/d ./public/static",
     "hygen": "hygen"
   },
-  "author": "Robert Hostlowsky",
+  "author": "Michael Zoidl, Robert Hostlowsky and others",
   "license": "MIT",
   "repository": "https://github.com/jscraftcamp/website.git"
 }
