@@ -65,9 +65,9 @@
     "test": "mocha test",
     "build-storybook": "NODE_ENV=test build-storybook",
     "storybook": "NODE_ENV=test start-storybook -p 6006",
-    "prestorybook": "npm run copy-static-queries",
-    "prebuild-storybook": "npm run copy-static-queries",
-    "copy-static-queries": "cp -r ./public/page-data/sq/d ./public/static",
+    "prestorybook": "npm run extract-gatsby-meta-for-storybook",
+    "prebuild-storybook": "npm run extract-gatsby-meta-for-storybook",
+    "extract-gatsby-meta-for-storybook": "mkdir -p public/static/d ; node ./scripts/extract-gatsby-meta-for-storybook.js public/static/d/63159454.json",
     "hygen": "hygen"
   },
   "author": "Michael Zoidl, Robert Hostlowsky and others",

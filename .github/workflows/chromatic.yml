@@ -22,7 +22,7 @@ jobs:
           fetch-depth: 0
       - run: |
           yarn --frozen-lockfile
-          npm run build
+          npm run build-storybook
       - uses: chromaui/action@v1
         with:
           projectToken: ${{ secrets.chromatic }}
