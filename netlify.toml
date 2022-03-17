@@ -5,9 +5,6 @@
   command = "yarn run build"
   publish = "public"
 
-[[plugins]]
-  package = "netlify-plugin-gatsby-cache"
-
 # Specific branch context: all deploys from this specific branch will inherit
 # these settings.
 [context."gh-pages"] # 'gh-pages' is a branch name
