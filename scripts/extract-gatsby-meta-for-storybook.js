@@ -20,7 +20,9 @@ if (destFile) {
     destFile,
     JSON.stringify({
       data: {
-        siteMetadata,
+        site: {
+          siteMetadata,
+        }
       },
     }),
     "utf8"
