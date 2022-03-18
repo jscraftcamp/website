@@ -22,8 +22,9 @@ jobs:
           fetch-depth: 0
       - run: |
           yarn --frozen-lockfile
-          npm run build
+          npm run build-storybook
       - uses: chromaui/action@v1
         with:
+          exitOnceUploaded: true
           projectToken: ${{ secrets.chromatic }}
           token: ${{ secrets.GITHUB_TOKEN }}

@@ -33,7 +33,7 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
-/static/storybook/
 
 # Local Netlify folder
-.netlifystorybook-static
+.netlify
+storybook-static

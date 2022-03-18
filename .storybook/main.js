@@ -12,6 +12,11 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-viewport/register",
   ],
+  staticDirs: [
+    //{ from: '../foo/assets', to: '/assets' }
+    '../public',
+    '../static'
+  ],
   webpackFinal: config => {
     // Prepare storybook for Gatsby
     config.module.rules[0].exclude = [/node_modules\/(?!(gatsby)\/)/]
