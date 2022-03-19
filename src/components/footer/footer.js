@@ -9,6 +9,14 @@ import Section from "../section"
 import logo from "../../assets/images/logo.svg"
 import netlify from "../../assets/images/netlify.svg"
 import gatsby from "../../assets/images/gatsby.svg"
+import chromatic from "../../assets/images/chromatic.svg"
+import storybook from "../../assets/images/storybook.svg"
+
+const DEFAULT_BRANCH = "master"
+// env variable will be set by netlify while building, else use default
+const branch = process.env.BRANCH ?? DEFAULT_BRANCH
+const chromaticUrl = `https://www.chromatic.com/library?appId=60d36a243a7c1f0049472423&branch=${branch}`
+const storybookUrl = `https://${branch}--60d36a243a7c1f0049472423.chromatic.com`
 
 const InternalLink = ({ to, children }) => (
   <Typography
@@ -96,8 +104,17 @@ const Footer = () => (
           </a>
           <a className={style.netlify} href="https://gatsbyjs.org">
             <Icon className={style.netlifyLogo} source={gatsby} />
-            <Typography variants={["inverted", "small"]}>Gatsby V3</Typography>
+            <Typography variants={["inverted", "small"]}>Gatsby V4</Typography>
           </a>
+          <div className={style.storybook}>
+            <a href={chromaticUrl}>
+              <Icon className={style.icon} source={chromatic} />
+            </a>
+            <Typography variants={["inverted", "small"]}>Chromatic</Typography>
+            <a href={storybookUrl}>
+              <Icon className={style.icon} source={storybook} />
+            </a>
+          </div>
         </div>
       </div>
     </Section>

@@ -52,6 +52,17 @@
   &Logo {
     width: 30px;
     height: 30px;
-    margin-right: 20px;
+    margin-right: 10px;
+  }
+}
+
+.storybook {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+
+  .icon {
+    width: 30px;
   }
 }
