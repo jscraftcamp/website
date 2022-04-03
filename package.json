@@ -51,7 +51,7 @@
     "mocha": "9.2.2",
     "prettier": "2.6.2",
     "recursive-readdir-sync": "1.0.6",
-    "sass": "1.49.9",
+    "sass": "1.49.11",
     "sass-resources-loader": "2.2.4"
   },
   "scripts": {
