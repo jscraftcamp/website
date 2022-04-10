@@ -45,7 +45,7 @@
     "@storybook/react": "6.4.20",
     "babel-loader": "8.2.4",
     "babel-plugin-remove-graphql-queries": "4.11.1",
-    "gatsby-plugin-netlify": "4.1.0",
+    "gatsby-plugin-netlify": "4.2.0",
     "hamjest": "3.7.3",
     "hygen": "6.2.0",
     "mocha": "9.2.2",
