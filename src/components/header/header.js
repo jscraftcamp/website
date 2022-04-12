@@ -26,7 +26,7 @@ const Header = () => (
       <Typography
         component="a"
         variant="link"
-        href="https://github.com/jscraftcamp/website/projects/10"
+        href="https://github.com/orgs/jscraftcamp/projects/3"
       >
         Sponsoring
       </Typography>

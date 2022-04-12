@@ -53,7 +53,7 @@ const Footer = () => (
           </Typography>
           <div className={style.links}>
             <InternalLink to="/">Home</InternalLink>
-            <ExternalLink href="https://github.com/jscraftcamp/website/projects/10">
+            <ExternalLink href="https://github.com/orgs/jscraftcamp/projects/3">
               Sponsoring
             </ExternalLink>
             <InternalLink to="/values">Values</InternalLink>
