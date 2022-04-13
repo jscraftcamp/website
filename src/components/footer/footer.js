@@ -96,7 +96,7 @@ const Footer = () => (
         </div>
         <div className={style.list}>
           <Typography className={style.listHeadline} variant="inverted">
-            Hostet on
+            Hosted on
           </Typography>
           <a className={style.netlify} href="https://www.netlify.com/">
             <Icon className={style.netlifyLogo} source={netlify} />
