@@ -4,65 +4,60 @@
 
 .root {
   display: flex;
-  height: 240px;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 2em;
 }
 
 .logo {
   height: 100px;
   width: 90px;
-  margin-left: 70px;
 }
 
 .lists {
   display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+  align-items: center;
+  justify-content: center;
 }
 
 .list {
-  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  min-width: 10em;
 
   &Headline {
     display: inline-block;
     font-family: $font-poppins;
     font-size: $font-size-h4;
     font-weight: $font-weight-semibold;
-    margin: 10px 0;
   }
 }
 
 .links {
   display: flex;
   flex-direction: column;
+  gap: 1em;
 }
 
 .link {
-  margin: 8px 0;
-
   &:hover {
     text-decoration: underline;
   }
 }
 
-.netlify {
-  display: flex;
+.tech {
   align-items: center;
-  margin-top: 10px;
-  text-decoration: none;
-
-  &Logo {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  }
-}
-
-.storybook {
   display: flex;
-  gap: 10px;
-  align-items: center;
-  margin-top: 10px;
+  justify-content: flex-start;
+  gap: 1em;
 
   .icon {
+    height: 30px;
     width: 30px;
   }
 }
