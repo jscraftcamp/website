@@ -1,15 +1,12 @@
 .root {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4em;
 }
 
 .textblock {
   max-width: 340px;
-
-  &:last-child,
-  &:first-child {
-    margin-top: 100px;
-  }
 }
 
 .icon {
