@@ -98,22 +98,28 @@ const Footer = () => (
           <Typography className={style.listHeadline} variant="inverted">
             Hosted on
           </Typography>
-          <a className={style.netlify} href="https://www.netlify.com/">
-            <Icon className={style.netlifyLogo} source={netlify} />
-            <Typography variants={["inverted", "small"]}>Netlify</Typography>
-          </a>
-          <a className={style.netlify} href="https://gatsbyjs.org">
-            <Icon className={style.netlifyLogo} source={gatsby} />
-            <Typography variants={["inverted", "small"]}>Gatsby V4</Typography>
-          </a>
-          <div className={style.storybook}>
-            <a href={chromaticUrl}>
-              <Icon className={style.icon} source={chromatic} />
+          <div className={style.links}>
+            <a className={style.tech} href="https://www.netlify.com/">
+              <Icon className={style.icon} source={netlify} />
+              <Typography variants={["inverted", "small"]}>Netlify</Typography>
             </a>
-            <Typography variants={["inverted", "small"]}>Chromatic</Typography>
-            <a href={storybookUrl}>
-              <Icon className={style.icon} source={storybook} />
+            <a className={style.tech} href="https://gatsbyjs.org">
+              <Icon className={style.icon} source={gatsby} />
+              <Typography variants={["inverted", "small"]}>
+                Gatsby V4
+              </Typography>
             </a>
+            <div className={style.tech}>
+              <a href={chromaticUrl}>
+                <Icon className={style.icon} source={chromatic} />
+              </a>
+              <Typography variants={["inverted", "small"]}>
+                Chromatic
+              </Typography>
+              <a href={storybookUrl}>
+                <Icon className={style.icon} source={storybook} />
+              </a>
+            </div>
           </div>
         </div>
       </div>
