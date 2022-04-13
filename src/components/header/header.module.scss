@@ -1,5 +1,7 @@
 .root {
   display: flex;
+  flex-wrap: wrap;
+  column-gap: 2em;
 }
 
 .logoWrapper {
@@ -12,10 +14,7 @@
   font-weight: $font-weight-semibold;
 }
 
-.navigation a {
-  margin: 0 40px;
-
-  &:first-child {
-    margin-left: 0;
-  }
+.navigation {
+  display: flex;
+  gap: 2em;
 }
