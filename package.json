@@ -52,7 +52,7 @@
     "prettier": "2.6.2",
     "recursive-readdir-sync": "1.0.6",
     "sass": "1.50.0",
-    "sass-resources-loader": "2.2.4"
+    "sass-resources-loader": "2.2.5"
   },
   "scripts": {
     "develop": "gatsby develop",
