@@ -15,7 +15,7 @@ export default {
 export const ImprintPage = () => <Imprint />
 export const IndexPage = () => <Index />
 export const NotFoundPage = () => <NotFound />
-export const RegistersPage = () => <Register />
+export const RegisterPage = () => <Register />
 export const SponsoringPage = () => <Sponsoring />
 export const TheTeamPage = () => <TheTeam />
 export const ValuesPage = () => <Values />
