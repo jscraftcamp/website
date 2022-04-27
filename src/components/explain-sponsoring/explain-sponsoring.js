@@ -37,6 +37,14 @@ const ExplainSponsoring = () => (
                 time during the event
               </li>
               <li>
+                You can bring a <strong>stand-up display</strong> to be
+                permanently visible.
+              </li>
+              <li>
+                You can make your job ads visible for all attendees
+                for the whole time during the conference.
+              </li>
+              <li>
                 Your <strong>company name</strong> will be mentioned several
                 times during the conference
               </li>
