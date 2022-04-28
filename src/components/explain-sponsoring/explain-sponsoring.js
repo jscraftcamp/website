@@ -97,8 +97,8 @@ const ExplainSponsoring = () => (
       </Typography>
       <Spacer size="xs" />
 
-      <Typography component={Link} variant="link" href="https://github.com/orgs/jscraftcamp/projects/3">
-        Find all sponsoring items listed on this GitHub Project page:
+      <Typography component={Link} href="https://github.com/orgs/jscraftcamp/projects/3">
+        Find all sponsoring items on GitHub:
         <br />
         https://github.com/orgs/jscraftcamp/projects/3
       </Typography>
