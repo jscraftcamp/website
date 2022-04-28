@@ -75,7 +75,7 @@ const ExplainSponsoring = () => (
         </div>
       </div>
 
-      <Typography>
+      <Typography paragraph>
         Show how much you care about improving the state of Crafting Software
         and Clean Code in the JS-Community!
       </Typography>
