@@ -1,2 +1,3 @@
-import ExplainSponsoring from "./explain-sponsoring";
-export default ExplainSponsoring;
+import ExplainSponsoring from "./explain-sponsoring"
+
+export default ExplainSponsoring

@@ -41,8 +41,8 @@ const ExplainSponsoring = () => (
                 permanently visible.
               </li>
               <li>
-                You can make your job ads visible for all attendees
-                for the whole time during the conference.
+                You can make your job ads visible for all attendees for the
+                whole time during the conference.
               </li>
               <li>
                 Your <strong>company name</strong> will be mentioned several
@@ -97,7 +97,10 @@ const ExplainSponsoring = () => (
       </Typography>
       <Spacer size="xs" />
 
-      <Typography component={Link} href="https://github.com/orgs/jscraftcamp/projects/3">
+      <Typography
+        component={Link}
+        href="https://github.com/orgs/jscraftcamp/projects/3"
+      >
         Find all sponsoring items on GitHub:
         <br />
         https://github.com/orgs/jscraftcamp/projects/3

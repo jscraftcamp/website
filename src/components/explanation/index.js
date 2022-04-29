@@ -1,2 +1,3 @@
-import Explanation from './explanation';
-export default Explanation;
+import Explanation from "./explanation"
+
+export default Explanation
