@@ -1,2 +1,2 @@
-import Intro from './intro';
-export default Intro;
+import Intro from "./intro"
+export default Intro

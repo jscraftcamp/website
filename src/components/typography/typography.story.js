@@ -2,7 +2,7 @@ import React from "react"
 import Typography from "."
 
 export default {
-  title: 'components/Typography',
+  title: "components/Typography",
   component: Typography,
 }
 

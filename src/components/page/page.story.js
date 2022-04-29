@@ -2,7 +2,7 @@ import React from "react"
 import Page from "./"
 
 export default {
-  title: 'components/Page',
+  title: "components/Page",
   component: Page,
 }
 

@@ -1,11 +1,11 @@
 module.exports = {
- core: {
-    builder: 'webpack5',
+  core: {
+    builder: "webpack5",
   },
   stories: [
     "../src/components/**/*.story.js",
     "../src/*.story.js",
-    "../src/DEPRECATED_components/**/*.story.js"
+    "../src/DEPRECATED_components/**/*.story.js",
   ],
   addons: [
     "@storybook/addon-actions",
@@ -14,10 +14,10 @@ module.exports = {
   ],
   staticDirs: [
     //{ from: '../foo/assets', to: '/assets' }
-    '../public',
-    '../static'
+    "../public",
+    "../static",
   ],
-  webpackFinal: config => {
+  webpackFinal: (config) => {
     // Prepare storybook for Gatsby
     config.module.rules[0].exclude = [/node_modules\/(?!(gatsby)\/)/]
     config.module.rules[0].use[0].loader = require.resolve("babel-loader")
@@ -33,12 +33,9 @@ module.exports = {
 
     // Workaround:
     // storybook handles svg with the file-loader which overrides our custom loaders, so adapt rule, to ignore svg extension:
-    config.module.rules = config.module.rules.map(rule => {
+    config.module.rules = config.module.rules.map((rule) => {
       if (rule.test.toString().includes("svg")) {
-        const test = rule.test
-          .toString()
-          .replace("svg|", "")
-          .replace(/\//g, "")
+        const test = rule.test.toString().replace("svg|", "").replace(/\//g, "")
         return { ...rule, test: new RegExp(test) }
       } else {
         return rule

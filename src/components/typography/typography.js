@@ -3,14 +3,14 @@ import style from "./typography.module.scss"
 import cn from "classnames"
 
 const Typography = ({
-                  className,
-                  component,
-                  variant,
-                  variants = [],
-                  paragraph,
-                  children,
-                  ...props
-                }) => {
+  className,
+  component,
+  variant,
+  variants = [],
+  paragraph,
+  children,
+  ...props
+}) => {
   const Component = component || (paragraph ? "p" : "span")
 
   return (
@@ -20,7 +20,7 @@ const Typography = ({
         style.root,
         style[Component], // Component returns the "string" of the tag not a node
         style[variant],
-        ...variants.map(v => style[v])
+        ...variants.map((v) => style[v])
       )}
       {...props}
     >

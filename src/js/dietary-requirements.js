@@ -1,4 +1,4 @@
-;(function() {
+;(function () {
   function updateRequirement(requirementsObj, requirement) {
     var notYetARequirement = !(requirement in requirementsObj)
     if (notYetARequirement) {

@@ -9,11 +9,9 @@ export default () => (
         JS CraftCamp
       </a>
       <ul id="nav-desktop" className="right">
-        {navigationItems.main.map(item => (
+        {navigationItems.main.map((item) => (
           <li key={item.title}>
-            <a href={item.url}>
-              {item.title}
-            </a>
+            <a href={item.url}>{item.title}</a>
           </li>
         ))}
         <li>

@@ -194,7 +194,7 @@ export default () => (
         the modern world.
       </p>
       <div id="participants" className="row">
-        {data.map(d => (
+        {data.map((d) => (
           <SponsorItem {...d} key={d.name} />
         ))}
       </div>

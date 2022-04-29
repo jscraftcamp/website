@@ -1,2 +1,2 @@
-import CodeOfConduct from './code-of-conduct';
-export default CodeOfConduct;
+import CodeOfConduct from "./code-of-conduct"
+export default CodeOfConduct
