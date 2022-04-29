@@ -9,4 +9,4 @@ const Values = () => (
     <CodeOfConduct />
   </Page>
 )
-export default Values;
+export default Values

@@ -1,2 +1,2 @@
-import Typography from './typography';
-export default Typography;
+import Typography from "./typography"
+export default Typography

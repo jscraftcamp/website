@@ -1,9 +1,9 @@
-import React from 'react';
-import Intro from './';
+import React from "react"
+import Intro from "./"
 
 export default {
-  title: 'sections/Intro',
-  component: Intro
-};
+  title: "sections/Intro",
+  component: Intro,
+}
 
-export const base = () => <Intro />;
+export const base = () => <Intro />

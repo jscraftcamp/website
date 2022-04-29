@@ -25,10 +25,12 @@ const Intro = () => (
     </div>
     <div className={style.headline}>
       <Typography component="p" variant="subline">
-        The Orga team has kicked off the effort for the next steps to bring this years event into fruition
+        The Orga team has kicked off the effort for the next steps to bring this
+        years event into fruition
       </Typography>
       <Typography component="p" variant="subline">
-        Stay tuned by following <a href="https://twitter.com/jscraftcamp">@JSCraftCamp on Twitter!</a>
+        Stay tuned by following{" "}
+        <a href="https://twitter.com/jscraftcamp">@JSCraftCamp on Twitter!</a>
       </Typography>
     </div>
 

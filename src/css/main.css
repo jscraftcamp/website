@@ -1,14 +1,15 @@
 body {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 a {
   color: var(--main-color);
 }
-nav #nav-desktop a, nav #nav-desktop ul a {
+nav #nav-desktop a,
+nav #nav-desktop ul a {
   text-shadow: 1px 1px 4px black;
 }
 nav div .brand-logo {
-  color: var(--main-color) ;
+  color: var(--main-color);
 }
 
 @media only screen and (max-device-width: 680px) {
@@ -28,13 +29,27 @@ nav .highlight {
   animation: fadein-nav-highlight 5s;
 }
 @keyframes fadein-nav-highlight {
-  0% { background-color: transparent; }
-  50%  { background-color: darkgoldenrod; }
-  80%  { transform: scale(1); }
-  83%  { transform: scale(2); }
-  86%  { transform: scale(0.5); }
-  90%  { transform: scale(1); }
-  100% { background-color: red; }
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: darkgoldenrod;
+  }
+  80% {
+    transform: scale(1);
+  }
+  83% {
+    transform: scale(2);
+  }
+  86% {
+    transform: scale(0.5);
+  }
+  90% {
+    transform: scale(1);
+  }
+  100% {
+    background-color: red;
+  }
 }
 
 .row {
@@ -141,19 +156,71 @@ footer div {
 
 /* Overwrites for Material Design */
 
-@media only screen and (min-width: 600px) {.flow-text {font-size: 1.114rem;}}
-@media only screen and (min-width: 630px) {.flow-text {font-size: 1.133rem;}}
-@media only screen and (min-width: 660px) {.flow-text {font-size: 1.152rem;}}
-@media only screen and (min-width: 690px) {.flow-text {font-size: 1.171rem;}}
-@media only screen and (min-width: 720px) {.flow-text {font-size: 1.190rem;}}
-@media only screen and (min-width: 750px) {.flow-text {font-size: 1.210rem;}}
-@media only screen and (min-width: 780px) {.flow-text {font-size: 1.229rem;}}
-@media only screen and (min-width: 810px) {.flow-text {font-size: 1.248rem;}}
-@media only screen and (min-width: 840px) {.flow-text {font-size: 1.267rem;}}
-@media only screen and (min-width: 870px) {.flow-text {font-size: 1.286rem;}}
-@media only screen and (min-width: 900px) {.flow-text {font-size: 1.305rem;}}
-@media only screen and (min-width: 930px) {.flow-text {font-size: 1.324rem;}}
-@media only screen and (min-width: 960px) {.flow-text {font-size: 1.344rem;}}
+@media only screen and (min-width: 600px) {
+  .flow-text {
+    font-size: 1.114rem;
+  }
+}
+@media only screen and (min-width: 630px) {
+  .flow-text {
+    font-size: 1.133rem;
+  }
+}
+@media only screen and (min-width: 660px) {
+  .flow-text {
+    font-size: 1.152rem;
+  }
+}
+@media only screen and (min-width: 690px) {
+  .flow-text {
+    font-size: 1.171rem;
+  }
+}
+@media only screen and (min-width: 720px) {
+  .flow-text {
+    font-size: 1.19rem;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .flow-text {
+    font-size: 1.21rem;
+  }
+}
+@media only screen and (min-width: 780px) {
+  .flow-text {
+    font-size: 1.229rem;
+  }
+}
+@media only screen and (min-width: 810px) {
+  .flow-text {
+    font-size: 1.248rem;
+  }
+}
+@media only screen and (min-width: 840px) {
+  .flow-text {
+    font-size: 1.267rem;
+  }
+}
+@media only screen and (min-width: 870px) {
+  .flow-text {
+    font-size: 1.286rem;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .flow-text {
+    font-size: 1.305rem;
+  }
+}
+@media only screen and (min-width: 930px) {
+  .flow-text {
+    font-size: 1.324rem;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .flow-text {
+    font-size: 1.344rem;
+  }
+}
 
 /* the special colors */
 
@@ -161,15 +228,14 @@ footer div {
   --main-color: #000;
 }
 
-
 .colorOfTheYear {
-  background-color: #F2F2F2 !important
+  background-color: #f2f2f2 !important;
 }
 
 .colorOfTheYear-text {
-  color: var(--main-color) !important
+  color: var(--main-color) !important;
 }
 
 .colorOfTheYear-text.text-lighten-5 {
-  color: #fff3e0 !important
+  color: #fff3e0 !important;
 }

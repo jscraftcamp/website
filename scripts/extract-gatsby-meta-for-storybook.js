@@ -22,7 +22,7 @@ if (destFile) {
       data: {
         site: {
           siteMetadata,
-        }
+        },
       },
     }),
     "utf8"

@@ -12,7 +12,7 @@ pre[class*="language-"] {
   color: black;
   background: none;
   /* text-shadow: 0 1px white; better for your eyes */
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   font-weight: bold;
   text-align: left;
   white-space: pre;
@@ -31,14 +31,18 @@ pre[class*="language-"] {
   hyphens: none;
 }
 
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection {
   text-shadow: none;
   background: #b3d4fc;
 }
 
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
   text-shadow: none;
   background: #b3d4fc;
 }
@@ -53,14 +57,14 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
 /* Code blocks */
 pre[class*="language-"] {
   padding: 1em;
-  margin: .5em 0;
+  margin: 0.5em 0;
   overflow: auto;
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-  padding: .1em;
-  border-radius: .3em;
+  padding: 0.1em;
+  border-radius: 0.3em;
   white-space: normal;
 }
 
@@ -76,7 +80,7 @@ pre[class*="language-"] {
 }
 
 .namespace {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .token.property,
@@ -104,7 +108,7 @@ pre[class*="language-"] {
 .language-css .token.string,
 .style .token.string {
   color: #a67f59;
-  background: hsla(0, 0%, 100%, .5);
+  background: hsla(0, 0%, 100%, 0.5);
 }
 
 .token.atrule,
@@ -114,7 +118,7 @@ pre[class*="language-"] {
 }
 
 .token.function {
-  color: #DD4A68;
+  color: #dd4a68;
 }
 
 .token.regex,
@@ -148,8 +152,12 @@ pre[data-line] {
   padding: inherit 0;
   margin-top: 1em; /* Same as .prism’s padding-top */
 
-  background: hsla(24, 20%, 50%, .08);
-  background: linear-gradient(to right, hsla(24, 20%, 50%, .1) 70%, hsla(24, 20%, 50%, 0));
+  background: hsla(24, 20%, 50%, 0.08);
+  background: linear-gradient(
+    to right,
+    hsla(24, 20%, 50%, 0.1) 70%,
+    hsla(24, 20%, 50%, 0)
+  );
 
   pointer-events: none;
 
@@ -161,15 +169,15 @@ pre[data-line] {
 .line-highlight[data-end]:after {
   content: attr(data-start);
   position: absolute;
-  top: .4em;
-  left: .6em;
+  top: 0.4em;
+  left: 0.6em;
   min-width: 1em;
-  padding: 0 .5em;
-  background-color: hsla(24, 20%, 50%, .4);
+  padding: 0 0.5em;
+  background-color: hsla(24, 20%, 50%, 0.4);
   color: hsl(24, 20%, 95%);
   font: bold 65%/1.5 sans-serif;
   text-align: center;
-  vertical-align: .3em;
+  vertical-align: 0.3em;
   border-radius: 999px;
   text-shadow: none;
   box-shadow: 0 1px white;
@@ -178,6 +186,5 @@ pre[data-line] {
 .line-highlight[data-end]:after {
   content: attr(data-end);
   top: auto;
-  bottom: .4em;
+  bottom: 0.4em;
 }
-

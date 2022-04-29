@@ -9,12 +9,12 @@ module.exports = {
     "gatsby-transformer-json",
     "gatsby-plugin-react-helmet",
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /assets/
-        }
-      }
+          include: /assets/,
+        },
+      },
     },
     {
       resolve: "gatsby-plugin-sass",
@@ -22,7 +22,7 @@ module.exports = {
         cssLoaderOptions: {
           esModule: true,
           modules: {
-             namedExport: false,
+            namedExport: false,
           },
         },
         additionalData: `
@@ -52,6 +52,6 @@ module.exports = {
         icon: "src/assets/images/logo.png",
       },
     },
-    'gatsby-plugin-netlify',
+    "gatsby-plugin-netlify",
   ],
 }

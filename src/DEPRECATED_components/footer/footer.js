@@ -9,15 +9,15 @@ import React from "react"
 
 import { navigationItems } from "../../data.json"
 
-import '../../css/main.css';
+import "../../css/main.css"
 
 const Footer = () => {
   return (
-    <footer style={{backgroundColor: "#000"}}>
+    <footer style={{ backgroundColor: "#000" }}>
       <div>
         <h3 className="colorOfTheYear-text text-lighten-5">Sitemap</h3>
         <ul>
-          {navigationItems.main.map(item => (
+          {navigationItems.main.map((item) => (
             <li key={item.title}>
               <a href={item.url} className="colorOfTheYear-text text-lighten-5">
                 {item.title}
@@ -48,7 +48,10 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a className="colorOfTheYear-text text-lighten-5" href="/privacypolicy">
+            <a
+              className="colorOfTheYear-text text-lighten-5"
+              href="/privacypolicy"
+            >
               Privacy Policy
             </a>
           </li>
@@ -57,7 +60,7 @@ const Footer = () => {
       <div style={{ flex: 1.5 }}>
         <h3 className="colorOfTheYear-text text-lighten-5">Archive</h3>
         <ul>
-          {navigationItems.archive.map(item => (
+          {navigationItems.archive.map((item) => (
             <li key={item.title}>
               <a className="colorOfTheYear-text text-lighten-5" href={item.url}>
                 {item.title}
