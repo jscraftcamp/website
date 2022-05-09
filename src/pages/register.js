@@ -31,7 +31,7 @@ const Registration = () => (
             Pull Request
           </a>
           . Registration is free of charge. Your json file should follow the
-          naming scheme <code>$firstname_$lastname.json</code> and must be
+          naming scheme <code>$name_or_nickname.json</code> and must be
           placed in the folder <code>participants</code>. The structure of the
           file is described below.
         </Typography>
@@ -49,15 +49,15 @@ const Registration = () => (
           </a>
           ). Invalid registrations will be rejected. If you need any help with
           registration, don't hesitate to contact one of the{" "}
-          <Link to="/theteam">team</Link>
+          <Link to="/theteam">team</Link>.
         </Typography>
 
-        <Typography>
+        <Typography paragraph>
           Out of these files a page with information about all participants will
           be generated.
         </Typography>
 
-        <Typography>
+        <Typography paragraph>
           To unregister please write another pull request or{" "}
           <a href="mailto:team@jscraftcamp.org">let us know</a>.
         </Typography>
@@ -77,20 +77,19 @@ const Registration = () => (
               __html: `
 {
     "name": "Your real name (OR a nickname)",
-    "company": "optionally, your company name",
+    "company": "your company name (optional)",
     "when": {
-    "friday": true,
-    "friday_party": true,
-    "saturday": true
-},
+       "friday": true,
+       "saturday": true
+    },
     "tags": ["any", "tag", "you like"],
     "vegan": true/false,
     "vegetarian": true/false,
-    "allergies": "...",
+    "allergies": "... (optional)",
     "what_is_my_connection_to_javascript": "Say something about you and JS ...",
     "what_can_i_contribute": "How can you contribute to the event? If you don't know yet, feel free to give it some thought ...",
     "tshirt": "W-S",
-    "twitter": "handle"
+    "twitter": "handle (optional)"
 }
 `,
             }}
@@ -119,15 +118,6 @@ const Registration = () => (
           </tr>
           <tr>
             <td>
-              <code>when.friday_party</code>*
-            </td>
-            <td>
-              If you want to join us on the free Party that will happen Friday
-              after the event (same location). Drinks and food sponsored!
-            </td>
-          </tr>
-          <tr>
-            <td>
               <code>when.saturday</code>*
             </td>
             <td>If you are attending on Saturday (Boolean value)</td>
@@ -145,13 +135,13 @@ const Registration = () => (
             <td>
               <code>vegan</code>*
             </td>
-            <td>Let us know if you are a vegan** (Boolean value)</td>
+            <td>Just for planning: Let us know if you are a vegan** (Boolean value)</td>
           </tr>
           <tr>
             <td>
               <code>vegetarian</code>*
             </td>
-            <td>Let us know if you are a vegetarian** (Boolean value)</td>
+            <td>Just for planning: Let us know if you are a vegetarian** (Boolean value)</td>
           </tr>
           <tr>
             <td>
@@ -185,7 +175,7 @@ const Registration = () => (
             <td>
               We will have a limited number of t-shirts with the event and
               sponsor logos. If you want one: fit (W=women, M=Man) and size
-              (S,M,L,XL), e.g. W-S or M-XL. If your rregistration is shortly
+              (S,M,L,XL), e.g. W-S or M-XL. If your registration is shortly
               before the event there might be no time to have a T-Shirt produced
               for you, please be aware.
             </td>
@@ -195,7 +185,7 @@ const Registration = () => (
               <code>twitter</code>
             </td>
             <td>
-              Your Twitter handle without the leading <code>@</code>.
+              Your Twitter handle <em>without</em> the leading <code>@</code>.
             </td>
           </tr>
         </table>

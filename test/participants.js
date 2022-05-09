@@ -75,15 +75,6 @@ describe("Participants JSON file", () => {
             "'when.friday' must be of type boolean"
           )
           assert.ok(
-            typeof object.when.friday_party !== "undefined",
-            "'when.friday_party' is mandatory. We need this information to better plan the party."
-          )
-          assert.equal(
-            typeof object.when.friday_party,
-            "boolean",
-            "'when.friday_party' must be of type boolean"
-          )
-          assert.ok(
             typeof object.when.saturday !== "undefined",
             "'when.saturday' is mandatory"
           )

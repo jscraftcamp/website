@@ -3,10 +3,9 @@
   "company": "my company",
   "when": {
     "friday": true,
-    "friday_party": true,
     "saturday": false
   },
-  "tags": ["Java", "Script"],
+  "tags": ["ReScript", "Svelte", "Zustand", "GraphQL"],
   "vegan": false,
   "vegetarian": false,
   "allergies": "",
