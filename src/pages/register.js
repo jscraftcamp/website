@@ -185,7 +185,7 @@ const Registration = () => (
               <code>twitter</code>
             </td>
             <td>
-              Your Twitter handle without the leading <code>@</code>.
+              Your Twitter handle <em>without</em> the leading <code>@</code>.
             </td>
           </tr>
         </table>
