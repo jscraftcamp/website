@@ -49,15 +49,15 @@ const Registration = () => (
           </a>
           ). Invalid registrations will be rejected. If you need any help with
           registration, don't hesitate to contact one of the{" "}
-          <Link to="/theteam">team</Link>
+          <Link to="/theteam">team</Link>.
         </Typography>
 
-        <Typography>
+        <Typography paragraph>
           Out of these files a page with information about all participants will
           be generated.
         </Typography>
 
-        <Typography>
+        <Typography paragraph>
           To unregister please write another pull request or{" "}
           <a href="mailto:team@jscraftcamp.org">let us know</a>.
         </Typography>
