@@ -36,8 +36,6 @@
   font-family: $font-poppins;
   font-size: $font-size-h2;
   font-weight: $font-weight-bold;
-  text-transform: uppercase;
-  letter-spacing: $font-letter-spacing;
 }
 
 .p {
@@ -55,6 +53,14 @@
 
 .inverted {
   color: white;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.wide {
+  letter-spacing: $font-letter-spacing;
 }
 
 .link {
@@ -86,9 +92,4 @@
 
 .small {
   font-size: $font-size-small;
-}
-
-.poppins {
-  font-family: $font-poppins;
-  font-weight: $font-weight-semibold;
 }
