@@ -9,7 +9,7 @@ import { Link } from "gatsby"
 const Registration = () => (
   <Page title="Registration">
     <Section>
-      <TextBlock headline="Registration">
+      <TextBlock headlineComponent="h1" headline="Registration">
         <Typography paragraph>
           To register for JSCraftCamp you have to add a json file with your name
           and some other information to our{" "}

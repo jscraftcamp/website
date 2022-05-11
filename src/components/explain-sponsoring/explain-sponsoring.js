@@ -11,9 +11,8 @@ import style from "./explain-sponsoring.module.scss"
 
 const ExplainSponsoring = () => (
   <Section className={style.root}>
-    <Typography component="h1">Want to become a Sponsor?</Typography>
-    <TextBlock>
-      <Typography component="h4">
+    <TextBlock  headlineComponent="h1" headline="Want to become a Sponsor?">
+      <Typography component="h3">
         Expose your Company to a Group of Highly Motivated Technology
         Enthusiasts
       </Typography>
@@ -79,7 +78,7 @@ const ExplainSponsoring = () => (
         and Clean Code in the JS-Community!
       </Typography>
 
-      <Typography>
+      <Typography paragraph>
         We believe in people and our guests - so we ask nothing more of
         everybody than to be respectful and friendly with one another.
       </Typography>
@@ -88,7 +87,7 @@ const ExplainSponsoring = () => (
       <Typography component="h3" className={style.sub_headline}>
         What to Sponsor?
       </Typography>
-      <Typography>
+      <Typography paragraph>
         All expense will serve the attendees of the JSCraftCamp, all the
         expenses serve for food, drinks, chairs, and all alike things that are
         needed for spending a couple of days together thinking and hacking for
