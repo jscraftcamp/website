@@ -3,7 +3,6 @@ import React from "react"
 import Page from "../components/page"
 import Section from "../components/section"
 import Typography from "../components/typography"
-import Spacer from "../components/spacer"
 
 const NotFoundPage = () => (
   <Page title="404: Not found">

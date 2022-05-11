@@ -3,7 +3,6 @@ import Page from "../components/page"
 import Section from "../components/section"
 import TextBlock from "../components/text-block"
 import Typography from "../components/typography"
-import Spacer from "../components/spacer"
 import { Link } from "gatsby"
 
 // TODO: create for the content a new "Section" in the components
