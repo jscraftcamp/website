@@ -9,8 +9,7 @@ module.exports = {
   ],
   addons: [
     "@storybook/addon-actions",
-    "@storybook/addon-links",
-    "@storybook/addon-viewport/register",
+    "@storybook/addon-essentials",
   ],
   staticDirs: [
     //{ from: '../foo/assets', to: '/assets' }
