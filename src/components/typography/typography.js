@@ -1,6 +1,7 @@
 import React from "react"
 import style from "./typography.module.scss"
 import cn from "classnames"
+import PropTypes from "prop-types";
 
 const Typography = ({
   className,
@@ -29,3 +30,11 @@ const Typography = ({
   )
 }
 export default Typography
+
+Typography.propTypes = {
+  component: PropTypes.string,
+  variant: PropTypes.oneOfType([PropTypes.string ,PropTypes.node]),
+  variants: PropTypes.arrayOf(PropTypes.string),
+  className: PropTypes.string,
+  paragraph: PropTypes.bool,
+}
