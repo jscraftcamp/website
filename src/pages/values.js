@@ -5,7 +5,6 @@ import Spacer from "../components/spacer"
 
 const Values = () => (
   <Page title="Location">
-    <Spacer size="m" />
     <CodeOfConduct />
   </Page>
 )

@@ -7,7 +7,6 @@ import Typography from "../components/typography"
 
 const ImprintPage = () => (
   <Page title="Imprint">
-    <Spacer size="s" />
     <Section>
       <Typography component="h1">Impressum</Typography>
 

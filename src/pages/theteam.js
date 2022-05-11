@@ -12,7 +12,6 @@ import "../css/materialize.min.css"
 const TeamPage = () => {
   return (
     <Page title="Team">
-      <Spacer size="m" />
 
       <Section>
         <TextBlock headline="The Team" component="h1">

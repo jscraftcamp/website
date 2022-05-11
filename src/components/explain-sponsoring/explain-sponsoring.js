@@ -11,7 +11,6 @@ import style from "./explain-sponsoring.module.scss"
 
 const ExplainSponsoring = () => (
   <Section className={style.root}>
-    <Spacer size="xs" />
     <Typography component="h1">Want to become a Sponsor?</Typography>
     <TextBlock>
       <Typography component="h4">

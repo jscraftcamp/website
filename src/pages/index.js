@@ -9,7 +9,6 @@ import Explanation from "../components/explanation"
 const IndexPage = () => (
   <Page title="Location">
     <Section>
-      <Spacer size="xl" />
       <Intro />
       <Spacer size="xl" />
       <Explanation />

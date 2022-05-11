@@ -9,7 +9,6 @@ import { Link } from "gatsby"
 // TODO: create for the content a new "Section" in the components
 const Registration = () => (
   <Page title="Registration">
-    <Spacer size="m" />
     <Section>
       <TextBlock headline="Registration">
         <Typography paragraph>
