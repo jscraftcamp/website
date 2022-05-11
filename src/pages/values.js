@@ -3,7 +3,7 @@ import Page from "../components/page"
 import CodeOfConduct from "../components/code-of-conduct"
 
 const Values = () => (
-  <Page title="Location">
+  <Page title="Values">
     <CodeOfConduct />
   </Page>
 )
