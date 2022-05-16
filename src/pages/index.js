@@ -7,9 +7,8 @@ import Spacer from "../components/spacer"
 import Explanation from "../components/explanation"
 
 const IndexPage = () => (
-  <Page title="Location">
+  <Page title="JSCraftCamp">
     <Section>
-      <Spacer size="xl" />
       <Intro />
       <Spacer size="xl" />
       <Explanation />

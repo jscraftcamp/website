@@ -3,15 +3,13 @@ import Page from "../components/page"
 import Section from "../components/section"
 import TextBlock from "../components/text-block"
 import Typography from "../components/typography"
-import Spacer from "../components/spacer"
 import { Link } from "gatsby"
 
 // TODO: create for the content a new "Section" in the components
 const Registration = () => (
   <Page title="Registration">
-    <Spacer size="m" />
     <Section>
-      <TextBlock headline="Registration">
+      <TextBlock headlineComponent="h1" headline="Registration">
         <Typography paragraph>
           To register for JSCraftCamp you have to add a json file with your name
           and some other information to our{" "}

@@ -13,7 +13,11 @@ const TextBlock = ({
 }) => (
   <div className={cn(style.root, className)}>
     {beforeNode && <div className={style.beforeNode}>{beforeNode}</div>}
-    <Typography className={style.headline} component={headlineComponent}>
+    <Typography
+      className={style.headline}
+      component={headlineComponent}
+      variants={["uppercase", "wide"]}
+    >
       {headline}
     </Typography>
     {children}

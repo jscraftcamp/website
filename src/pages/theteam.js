@@ -12,23 +12,23 @@ import "../css/materialize.min.css"
 const TeamPage = () => {
   return (
     <Page title="Team">
-      <Spacer size="m" />
 
       <Section>
-        <TextBlock headline="The Team" component="h1">
+        <TextBlock headlineComponent="h1" headline="The Team">
           <Typography paragraph>
             We are simple developers organizing this event in our spare time. If
             you have any questions or problems before or during the conference,
             don't hesitate to contact one of us!
-            <br />
+          </Typography>
+          <Spacer size="xs" />
+          <Typography paragraph>
             You can always reach us by E-Mail:{" "}
             <a href="mailto: team@jscraftcamp.org">team@jscraftcamp.org</a>
           </Typography>
         </TextBlock>
-      </Section>
 
-      <Spacer size="m" />
-      <Section>
+        <Spacer size="m" />
+
         <div className="row">
           {data.theteam.map((member) => (
             <div className="col s12 m4 l3" key={member.name}>

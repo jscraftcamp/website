@@ -3,16 +3,16 @@ import React from "react"
 import Page from "../components/page"
 import Section from "../components/section"
 import Typography from "../components/typography"
-import Spacer from "../components/spacer"
+import TextBlock from "../components/text-block"
 
 const NotFoundPage = () => (
   <Page title="404: Not found">
     <Section>
-      <Spacer size="m" />
-      <Typography component="h2">not found</Typography>
-      <Typography>
-        You just hit a route that doesn't exist... the sadness
-      </Typography>
+      <TextBlock headlineComponent="h1" headline="not found">
+        <Typography paragraph>
+          You just hit a route that doesn't exist... the sadness
+        </Typography>
+      </TextBlock>
     </Section>
   </Page>
 )

@@ -68,6 +68,7 @@ const Page = ({ children, title }) => {
       <div className={style.root}>
         <Spacer size="s" />
         <Header />
+        <Spacer size="xs" />
         <div className={style.content}>{children}</div>
         <Spacer size="xxl" />
         <Footer />
