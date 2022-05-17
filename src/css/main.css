@@ -7,33 +7,6 @@ body {
   padding-bottom: 3rem;
 }
 
-footer {
-  margin: 2rem 0 0 0;
-  padding: 2rem;
-  display: flex;
-}
-
-footer ul {
-  padding: 0;
-  color: white;
-}
-
-footer li {
-  list-style: none;
-  margin: 0.5rem 0;
-}
-
-footer div {
-  flex: 1;
-}
-
-@media only screen and (max-device-width: 680px) {
-  footer {
-    display: block;
-  }
-}
-
-
 /* the special colors */
 
 :root {
