@@ -1,6 +1,5 @@
 import React from "react"
 import cn from "classnames"
-import { Link } from "gatsby"
 
 import Section from "../section"
 import Spacer from "../spacer"
@@ -96,7 +95,7 @@ const ExplainSponsoring = () => (
       <Spacer size="xs" />
 
       <Typography
-        component={Link}
+        component="a"
         href="https://github.com/orgs/jscraftcamp/projects/3"
       >
         Find all sponsoring items on GitHub:

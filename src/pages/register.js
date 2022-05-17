@@ -96,96 +96,104 @@ const Registration = () => (
       </div>
       <div className="col s12 m12" style={{ background: "white" }}>
         <table className="bordered">
-          <tr>
-            <td>
-              <code>name</code>*
-            </td>
-            <td>first name and last name or a nick name</td>
-          </tr>
-          <tr>
-            <td>
-              <code>company</code>
-            </td>
-            <td>A company name</td>
-          </tr>
-          <tr>
-            <td>
-              <code>when.friday</code>*
-            </td>
-            <td>If you are attending on Friday (Boolean value)</td>
-          </tr>
-          <tr>
-            <td>
-              <code>when.saturday</code>*
-            </td>
-            <td>If you are attending on Saturday (Boolean value)</td>
-          </tr>
-          <tr>
-            <td>
-              <code>tags</code>*
-            </td>
-            <td>
-              Share what you think is important, use at least one tag. (Array of
-              strings)
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <code>vegan</code>*
-            </td>
-            <td>Just for planning: Let us know if you are a vegan** (Boolean value)</td>
-          </tr>
-          <tr>
-            <td>
-              <code>vegetarian</code>*
-            </td>
-            <td>Just for planning: Let us know if you are a vegetarian** (Boolean value)</td>
-          </tr>
-          <tr>
-            <td>
-              <code>allergies</code>
-            </td>
-            <td>Tell us if you have any special dietary requirements**</td>
-          </tr>
-          <tr>
-            <td>
-              <code>what_is_my_connection_to_javascript</code>*
-            </td>
-            <td>
-              {" "}
-              2-5 sentences about your experience with JavaScript or related
-              technologies.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <code>what_can_i_contribute</code>
-            </td>
-            <td>
-              1-3 sentences about what you would like to contribute to the
-              BarCamp.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <code>tshirt</code>
-            </td>
-            <td>
-              We will have a limited number of t-shirts with the event and
-              sponsor logos. If you want one: fit (W=women, M=Man) and size
-              (S,M,L,XL), e.g. W-S or M-XL. If your registration is shortly
-              before the event there might be no time to have a T-Shirt produced
-              for you, please be aware.
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <code>twitter</code>
-            </td>
-            <td>
-              Your Twitter handle <em>without</em> the leading <code>@</code>.
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>
+                <code>name</code>*
+              </td>
+              <td>first name and last name or a nick name</td>
+            </tr>
+            <tr>
+              <td>
+                <code>company</code>
+              </td>
+              <td>A company name</td>
+            </tr>
+            <tr>
+              <td>
+                <code>when.friday</code>*
+              </td>
+              <td>If you are attending on Friday (Boolean value)</td>
+            </tr>
+            <tr>
+              <td>
+                <code>when.saturday</code>*
+              </td>
+              <td>If you are attending on Saturday (Boolean value)</td>
+            </tr>
+            <tr>
+              <td>
+                <code>tags</code>*
+              </td>
+              <td>
+                Share what you think is important, use at least one tag. (Array
+                of strings)
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>vegan</code>*
+              </td>
+              <td>
+                Just for planning: Let us know if you are a vegan** (Boolean
+                value)
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>vegetarian</code>*
+              </td>
+              <td>
+                Just for planning: Let us know if you are a vegetarian**
+                (Boolean value)
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>allergies</code>
+              </td>
+              <td>Tell us if you have any special dietary requirements**</td>
+            </tr>
+            <tr>
+              <td>
+                <code>what_is_my_connection_to_javascript</code>*
+              </td>
+              <td>
+                {" "}
+                2-5 sentences about your experience with JavaScript or related
+                technologies.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>what_can_i_contribute</code>
+              </td>
+              <td>
+                1-3 sentences about what you would like to contribute to the
+                BarCamp.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>tshirt</code>
+              </td>
+              <td>
+                We will have a limited number of t-shirts with the event and
+                sponsor logos. If you want one: fit (W=women, M=Man) and size
+                (S,M,L,XL), e.g. W-S or M-XL. If your registration is shortly
+                before the event there might be no time to have a T-Shirt
+                produced for you, please be aware.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code>twitter</code>
+              </td>
+              <td>
+                Your Twitter handle <em>without</em> the leading <code>@</code>.
+              </td>
+            </tr>
+          </tbody>
         </table>
         <p>*: mandatory field</p>
         <p>
