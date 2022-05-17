@@ -4,8 +4,7 @@ module.exports = {
   },
   stories: [
     "../src/components/**/*.story.js",
-    "../src/*.story.js",
-    "../src/DEPRECATED_components/**/*.story.js",
+    "../src/*.story.js"
   ],
   addons: [
     "@storybook/addon-actions",
