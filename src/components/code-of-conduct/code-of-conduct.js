@@ -3,10 +3,11 @@ import style from "./code-of-conduct.module.scss"
 import Typography from "../typography"
 import Section from "../section"
 import TextBlock from "../text-block"
+import Spacer from "../spacer";
 
 const CodeOfConduct = () => (
   <Section className={style.root}>
-    <TextBlock headline="Code of Conduct">
+    <TextBlock headlineComponent="h1" headline="Code of Conduct">
       <Typography className={style.paragraph} paragraph>
         We are committed to providing a friendly, safe and welcoming environment
         for all, regardless of gender, sexual orientation, programming language,
