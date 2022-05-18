@@ -1,6 +1,5 @@
 import React from "react"
 import cn from "classnames"
-import { Link } from "gatsby"
 
 import Section from "../section"
 import Spacer from "../spacer"
@@ -11,7 +10,7 @@ import style from "./explain-sponsoring.module.scss"
 
 const ExplainSponsoring = () => (
   <Section className={style.root}>
-    <TextBlock  headlineComponent="h1" headline="Want to become a Sponsor?">
+    <TextBlock headlineComponent="h1" headline="Want to become a Sponsor?">
       <Typography component="h3">
         Expose your Company to a Group of Highly Motivated Technology
         Enthusiasts
@@ -59,7 +58,7 @@ const ExplainSponsoring = () => (
           </div>
           <div className="col s12 m6">
             <h5>Why Sponsor?</h5>
-            <p className="block">
+            <p className={style.block}>
               The JSCraftCamp is an Open Space conference that attracts diverse
               people from the JavaScript community who really care about their
               craft. The crowd is self selected by investing time for their own
@@ -96,7 +95,7 @@ const ExplainSponsoring = () => (
       <Spacer size="xs" />
 
       <Typography
-        component={Link}
+        component="a"
         href="https://github.com/orgs/jscraftcamp/projects/3"
       >
         Find all sponsoring items on GitHub:

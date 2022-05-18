@@ -32,8 +32,10 @@ const Typography = ({
 export default Typography
 
 Typography.propTypes = {
-  component: PropTypes.string,
-  variant: PropTypes.oneOfType([PropTypes.string ,PropTypes.node]),
+  component: PropTypes.oneOfType(
+    [PropTypes.string, PropTypes.element, PropTypes.object]
+  ),
+  variant: PropTypes.string,
   variants: PropTypes.arrayOf(PropTypes.string),
   className: PropTypes.string,
   paragraph: PropTypes.bool,
