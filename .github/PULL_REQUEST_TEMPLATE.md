@@ -5,6 +5,7 @@ I would like to register for JS CraftCamp.
 - [ ] I agree that the data I enter in the registration can be used for running the event, e.g. make a name tag, count me as participant. I acknowledge that my data are public on GitHub and I agree that I will be listed on the JSCraftCamp website as a participant.
 - [ ] I agree that photos and videos might be taken and published (e.g. on social media) during the event.
 - [ ] I understand that I might NOT get a T-Shirt, because they might be in production already
+- [ ] I agree to wear my mask to protect everyone as much as possible
 
 Are you from a sponsoring company?
 - [ ] Yes, I am from company ?????
