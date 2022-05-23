@@ -6,6 +6,7 @@ I would like to register for JS CraftCamp.
 - [ ] I agree that photos and videos might be taken and published (e.g. on social media) during the event.
 - [ ] I understand that I might NOT get a T-Shirt, because they might be in production already
 - [ ] I agree to wear my mask to protect everyone as much as possible
+- [ ] I will come and have tested and be covid-negative, at least 24h before I join the event
 
 Are you from a sponsoring company?
 - [ ] Yes, I am from company ?????
