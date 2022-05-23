@@ -38,6 +38,14 @@ module.exports = {
         path: `${__dirname}/src/assets`,
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "participants",
+        path: `${__dirname}/participants`,
+        ignore: [`**/\_*`], // ignore template
+      },
+    },
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {

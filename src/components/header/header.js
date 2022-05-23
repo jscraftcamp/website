@@ -20,6 +20,9 @@ const Header = () => (
       </Typography>
     </div>
     <div className={style.navigation}>
+      <Typography component={Link} variant="link" to="/register">
+        Registration
+      </Typography>
       <Typography component={Link} variant="link" to="/">
         Home
       </Typography>
@@ -29,7 +32,6 @@ const Header = () => (
       <Typography component={Link} variant="link" to="/values">
         Values
       </Typography>
-      {false && <Button onClick={() => navigate("/register")}>Register</Button>}
     </div>
   </Section>
 )
