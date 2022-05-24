@@ -18,6 +18,9 @@ const branch = process.env.BRANCH ?? DEFAULT_BRANCH
 const chromaticUrl = `https://www.chromatic.com/library?appId=60d36a243a7c1f0049472423&branch=${branch}`
 const storybookUrl = `https://${branch}--60d36a243a7c1f0049472423.chromatic.com`
 
+// to temporary disable button and link on page
+const storybookChromaticEnabled = false
+
 const InternalLink = ({ to, children }) => (
   <Typography
     className={style.link}
@@ -108,17 +111,19 @@ const Footer = () => (
                 Gatsby V4
               </Typography>
             </a>
-            <div className={style.tech}>
-              <a href={chromaticUrl}>
-                <Icon className={style.icon} source={chromatic} />
-              </a>
-              <Typography variants={["inverted", "small"]}>
-                Chromatic
-              </Typography>
-              <a href={storybookUrl}>
-                <Icon className={style.icon} source={storybook} />
-              </a>
-            </div>
+            { storybookChromaticEnabled &&
+              <div className={style.tech}>
+                <a href={chromaticUrl}>
+                  <Icon className={style.icon} source={chromatic} />
+                </a>
+                <Typography variants={["inverted", "small"]}>
+                  Chromatic
+                </Typography>
+                <a href={storybookUrl}>
+                  <Icon className={style.icon} source={storybook} />
+                </a>
+              </div>
+            }
           </div>
         </div>
       </div>

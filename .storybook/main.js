@@ -4,6 +4,7 @@ module.exports = {
   },
   stories: [
     "../src/components/**/*.story.js",
+    "../src/sections/**/*.story.js",
     "../src/*.story.js"
   ],
   addons: [

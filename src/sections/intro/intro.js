@@ -1,8 +1,8 @@
 import React from "react"
 
-import Icon from "../icon"
-import Typography from "../typography"
-import Spacer from "../spacer"
+import Icon from "../../components/icon";
+import Typography from "../../components/typography";
+import Spacer from "../../components/spacer";
 
 import style from "./intro.module.scss"
 
