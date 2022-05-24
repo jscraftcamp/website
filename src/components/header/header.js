@@ -2,10 +2,9 @@ import React from "react"
 import style from "./header.module.scss"
 
 import Typography from "../typography"
-import Button from "../button"
 import Section from "../section"
 
-import { Link, navigate } from "gatsby"
+import { Link } from "gatsby"
 
 const Header = () => (
   <Section className={style.root}>
