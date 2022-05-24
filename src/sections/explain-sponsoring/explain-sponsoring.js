@@ -1,10 +1,10 @@
 import React from "react"
 import cn from "classnames"
 
-import Section from "../section"
-import Spacer from "../spacer"
-import TextBlock from "../text-block"
-import Typography from "../typography"
+import Section from "../../components/section";
+import Spacer from "../../components/spacer";
+import TextBlock from "../../components/text-block";
+import Typography from "../../components/typography";
 
 import style from "./explain-sponsoring.module.scss"
 

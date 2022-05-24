@@ -1,9 +1,8 @@
 import React from "react"
 import style from "./code-of-conduct.module.scss"
-import Typography from "../typography"
-import Section from "../section"
-import TextBlock from "../text-block"
-import Spacer from "../spacer";
+import Typography from "../../components/typography"
+import Section from "../../components/section"
+import TextBlock from "../../components/text-block"
 
 const CodeOfConduct = () => (
   <Section className={style.root}>
