@@ -57,7 +57,7 @@
   },
   "scripts": {
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
+    "format": "prettier --write src",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "prebuild": "mkdir -p ./public",

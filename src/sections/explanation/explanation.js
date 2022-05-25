@@ -1,9 +1,9 @@
 import React from "react"
 import style from "./explanation.module.scss"
 
-import TextBlock from "../../components/text-block";
-import Typography from "../../components/typography";
-import Icon from "../../components/icon";
+import TextBlock from "../../components/text-block"
+import Typography from "../../components/typography"
+import Icon from "../../components/icon"
 
 import code from "../../assets/images/code.svg"
 import rocket from "../../assets/images/rocket.svg"

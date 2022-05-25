@@ -111,7 +111,7 @@ const Footer = () => (
                 Gatsby V4
               </Typography>
             </a>
-            { storybookChromaticEnabled &&
+            {storybookChromaticEnabled && (
               <div className={style.tech}>
                 <a href={chromaticUrl}>
                   <Icon className={style.icon} source={chromatic} />
@@ -123,7 +123,7 @@ const Footer = () => (
                   <Icon className={style.icon} source={storybook} />
                 </a>
               </div>
-            }
+            )}
           </div>
         </div>
       </div>
