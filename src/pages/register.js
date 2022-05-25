@@ -29,9 +29,9 @@ const Registration = () => (
             Pull Request
           </a>
           . Registration is free of charge. Your json file should follow the
-          naming scheme <code>$name_or_nickname.json</code> and must be
-          placed in the folder <code>participants</code>. The structure of the
-          file is described below.
+          naming scheme <code>$name_or_nickname.json</code> and must be placed
+          in the folder <code>participants</code>. The structure of the file is
+          described below.
         </Typography>
 
         <Typography paragraph>

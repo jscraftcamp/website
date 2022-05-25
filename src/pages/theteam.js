@@ -6,13 +6,12 @@ import Section from "../components/section"
 import Spacer from "../components/spacer"
 import Typography from "../components/typography"
 import TextBlock from "../components/text-block"
-// import Team from "../components/team";
+
 import "../css/materialize.min.css"
 
 const TeamPage = () => {
   return (
     <Page title="Team">
-
       <Section>
         <TextBlock headlineComponent="h1" headline="The Team">
           <Typography paragraph>
@@ -59,7 +58,6 @@ const TeamPage = () => {
                     <span>{member.name}</span>
                     <br />
                     <a
-                      className=""
                       style={{
                         display: "inline-block",
                         width: "100%",

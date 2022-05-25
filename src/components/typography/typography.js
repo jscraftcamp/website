@@ -1,7 +1,7 @@
 import React from "react"
 import style from "./typography.module.scss"
 import cn from "classnames"
-import PropTypes from "prop-types";
+import PropTypes from "prop-types"
 
 const Typography = ({
   className,
@@ -32,9 +32,11 @@ const Typography = ({
 export default Typography
 
 Typography.propTypes = {
-  component: PropTypes.oneOfType(
-    [PropTypes.string, PropTypes.element, PropTypes.object]
-  ),
+  component: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.element,
+    PropTypes.object,
+  ]),
   variant: PropTypes.string,
   variants: PropTypes.arrayOf(PropTypes.string),
   className: PropTypes.string,
