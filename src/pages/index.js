@@ -5,6 +5,7 @@ import Section from "../components/section"
 import Intro from "../sections/intro"
 import Spacer from "../components/spacer"
 import Explanation from "../sections/explanation"
+import Sponsors from "../sections/sponsors"
 
 const IndexPage = () => (
   <Page title="JSCraftCamp">
@@ -12,6 +13,8 @@ const IndexPage = () => (
       <Intro />
       <Spacer size="xl" />
       <Explanation />
+      <Spacer size="xl" />
+      <Sponsors />
     </Section>
   </Page>
 )
