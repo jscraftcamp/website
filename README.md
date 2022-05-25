@@ -1,6 +1,7 @@
+![Netlify Status](https://api.netlify.com/api/v1/badges/429e37ea-5a85-45d5-8845-e3dad61e63be/deploy-status?branch=main)
+
 # JS CraftCamp - Website
 
-_New README is WIP_
 
 ### Start developing:
 
