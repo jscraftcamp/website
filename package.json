@@ -32,9 +32,9 @@
     "svgo-loader": "3.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.18.0",
+    "@babel/core": "7.18.2",
     "@babel/plugin-proposal-class-properties": "7.17.12",
-    "@babel/preset-env": "7.18.0",
+    "@babel/preset-env": "7.18.2",
     "@babel/preset-react": "7.17.12",
     "@storybook/addon-actions": "6.5.5",
     "@storybook/addon-essentials": "6.5.5",
