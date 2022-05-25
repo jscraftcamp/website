@@ -1,0 +1,17 @@
+{
+    "name": "Tamara Bogantseva",
+    "company": "compose.us",
+    "when": {
+      "friday": true,
+      "saturday": true
+    },
+    "tags": ["React", "Svelte", "Hasura"],
+    "vegan": false,
+    "vegetarian": false,
+    "allergies": "",
+    "what_is_my_connection_to_javascript": "I started my journey in a JavaScript world not so long time ago, but it is already a wonderful one. I'm excited to explore something new on this event",
+    "what_can_i_contribute": "Probably will be more in a listener role, maybe participate in discussions",
+    "tshirt": "M-M",
+    "twitter": "tamarabogant"
+  }
+  
