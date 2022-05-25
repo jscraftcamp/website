@@ -1,0 +1,16 @@
+{
+  "name": "Cristobal Heiss",
+  "company": "Global Savings Group",
+  "when": {
+    "friday": false,
+    "saturday": true
+  },
+  "tags": ["javascript", "basic functional JS", "education", "whitebelt"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "none",
+  "what_is_my_connection_to_javascript": "In a programming context, I consider JS to be my Native Language. Also I work with it",
+  "what_can_i_contribute": "participation in discussions, sharing experiences and point of views",
+  "tshirt": "M-M",
+  "twitter": "Cristobalheiss"
+}

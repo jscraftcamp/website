@@ -39,7 +39,7 @@ const Registration = () => (
           <code>npm test</code>
           (more details about this are in the{" "}
           <a
-            href="https://github.com/jscraftcamp/website/blob/master/README.md"
+            href="https://github.com/jscraftcamp/website/blob/main/README.md"
             rel="noreferrer noopener"
             target="_blank"
           >
