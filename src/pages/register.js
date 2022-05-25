@@ -180,9 +180,9 @@ const Registration = () => (
               <td>
                 We will have a limited number of t-shirts with the event and
                 sponsor logos. If you want one: fit (W=women, M=Man) and size
-                (S,M,L,XL), e.g. W-S or M-XL. If your registration is shortly
-                before the event there might be no time to have a T-Shirt
-                produced for you, please be aware.
+                (S,M,L,XL,XXL), e.g. W-S or M-XL. If your registration is
+                shortly before the event there might be no time to have a
+                t-shirt produced for you, please be aware.
               </td>
             </tr>
             <tr>
