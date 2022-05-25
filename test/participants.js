@@ -56,8 +56,8 @@ describe("Participants JSON file", () => {
               "'tshirt' must be of type string"
             )
             assert.ok(
-              object.tshirt.match(/^(W|M)-(S|M|L|XL)$/),
-              "'tshirt' must match pattern /^(W|M)-(S|M|L|XL)$/"
+              object.tshirt.match(/^(W|M)-(S|M|L|XL|XXL)$/),
+              "'tshirt' must match pattern /^(W|M)-(S|M|L|XL|XXL)$/"
             )
           }
         })

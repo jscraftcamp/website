@@ -17,6 +17,7 @@ describe("T-Shirt sizes", () => {
     "W-XL",
     "M-XL",
     "M-M",
+    "M-XXL",
   ]
   it("indexed by M/W", () => {
     const sizes = sortShirtSizes(shirts)
@@ -28,6 +29,7 @@ describe("T-Shirt sizes", () => {
     assertThat(sizes.M, hasProperty("L"))
     assertThat(sizes.M, hasProperty("M"))
     assertThat(sizes.M, hasProperty("XL"))
+    assertThat(sizes.M, hasProperty("XXL"))
   })
   it("the count per size is correct", () => {
     const sizes = sortShirtSizes(shirts)
@@ -36,10 +38,10 @@ describe("T-Shirt sizes", () => {
   })
   describe("lists the total", () => {
     it("overall", () => {
-      assertThat(sortShirtSizes(shirts).total, equalTo(11))
+      assertThat(sortShirtSizes(shirts).total, equalTo(12))
     })
     it("for `M`", () => {
-      assertThat(sortShirtSizes(shirts).M.total, equalTo(8))
+      assertThat(sortShirtSizes(shirts).M.total, equalTo(9))
     })
     it("for `W`", () => {
       assertThat(sortShirtSizes(shirts).W.total, equalTo(3))
