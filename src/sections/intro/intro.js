@@ -15,18 +15,22 @@ const Intro = () => (
   <div className={style.root}>
     <div className={style.headline}>
       <Typography component="p" variant="subline">
-        Good news everyone! JSCC will happen in 2022! 🎉
+        Welcome to JSCraftCamp 2022! 🎉
       </Typography>
     </div>
     <div className={style.headline}>
       <Typography component="p" variant="subline">
-        Save the Date: June, 17th & 18th 2022
+        When: June, 17th & 18th 2022<br/>
+        Where: <a href="https://www.codecentric.de/ueber-uns/standorte/muenchen">codecentric offices Munich</a>
+             <a href="https://www.ecosia.org/search?method=index&q=August-Everding-Str+20+81671+M%C3%BCnchen">August-Everding-Str 20, 81671 München</a>
+        <br/>
+        <a href="/register">Registrer: click here</a>
       </Typography>
     </div>
     <div className={style.headline}>
       <Typography component="p" variant="subline">
-        Stay tuned by following{" "}
-        <a href="https://twitter.com/jscraftcamp">@JSCraftCamp on Twitter!</a>
+        Follow us on {" "}
+        <a href="https://twitter.com/jscraftcamp">on twitter @JSCraftCamp!</a>
       </Typography>
     </div>
 
