@@ -1,0 +1,15 @@
+{
+  "name": "Lars Gregori",
+  "company": "SAP CX",
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  "tags": ["Web3", "Svelte", "WebAssembly", "NFT"],
+  "vegan": false,
+  "vegetarian": false,
+  "what_is_my_connection_to_javascript": "npm init -y",
+  "what_can_i_contribute": "How to connect to your crypto wallet in a browser",
+  "tshirt": "M-XL",
+  "twitter": "choas"
+}
