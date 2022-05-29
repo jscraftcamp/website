@@ -48,7 +48,7 @@
     "babel-plugin-remove-graphql-queries": "4.15.0",
     "gatsby-plugin-netlify": "5.0.0",
     "hamjest": "3.7.3",
-    "hygen": "6.2.0",
+    "hygen": "6.2.2",
     "mocha": "10.0.0",
     "prettier": "2.6.2",
     "recursive-readdir-sync": "1.0.6",

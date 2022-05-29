@@ -12792,10 +12792,10 @@ human-signals@^2.1.0:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-2.1.0.tgz#dc91fcba42e4d06e4abaed33b3e7a3c02f514ea0"
   integrity sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==
 
-hygen@6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/hygen/-/hygen-6.2.0.tgz#9f71af9218a1cb24f2c9f017a2594a6d61e6874f"
-  integrity sha512-5kma/nx7K+gJu8Q8kirkamUDb2TLvDJEiG/hfAL2Jt93SGrWEd0vWVEwaJW7qQylbIoT7gBVefrXZS2sYS8aag==
+hygen@6.2.2:
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/hygen/-/hygen-6.2.2.tgz#90fc127d67ba45180e394f721d7fd28ccf51103d"
+  integrity sha512-nAnZE+pE/IzekjVycFA3m5A3A+scWQnFU+bWXzewrburFkH1oXv+mpXGAR3P1gFlbvS0pB7rBECPhpDT3QDNnA==
   dependencies:
     "@types/node" "^17.0.19"
     chalk "^4.1.2"
