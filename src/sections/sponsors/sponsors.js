@@ -8,11 +8,26 @@ import style from "./sponsors.module.scss"
 
 const Sponsors = () => {
   const sponsors = [
-    { src: "/img/cc_logo.png" },
-    { src: "/img/sponsor-2022/grollmus.png" },
-    { src: "/img/sponsor-2022/compose-us.png" },
-    { src: "/img/sponsor-2019/tng.png" },
-    { src: "/img/sponsor-2022/peerigon.png" },
+    {
+      src: "/img/cc_logo.png",
+      link: "https://www.codecentric.de/",
+    },
+    {
+      src: "/img/sponsor-2022/grollmus.png",
+      link: "https://www.grollmus.de/",
+    },
+    {
+      src: "/img/sponsor-2022/compose-us.png",
+      link: "https://www.compose.us/",
+    },
+    {
+      src: "/img/sponsor-2019/tng.png",
+      link: "https://www.tngtech.com/",
+    },
+    {
+      src: "/img/sponsor-2022/peerigon.png",
+      link: "https://www.peerigon.com/",
+    },
   ]
   return (
     <>
@@ -26,7 +41,9 @@ const Sponsors = () => {
           return (
             <div className={style.col} key={i}>
               <div className={style.image} key={i}>
-                <img alt={"sponsor #" + i} src={s.src} width="100%" />
+                <a href={s.link} rel="noopener" target="_blank">
+                  <img alt={"sponsor #" + i} src={s.src} width="100%" />
+                </a>
               </div>
             </div>
           )
