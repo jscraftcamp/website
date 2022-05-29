@@ -1,6 +1,5 @@
 {
     "name": "Daniel Hilpoltsteiner",
-    "company": "",
     "when": {
        "friday": true,
        "saturday": true
@@ -12,5 +11,4 @@
     "what_is_my_connection_to_javascript": "JavaScript / TypeScript Developer for several years. Started with AngularJS, followed by React and now back to Angular Development as Frontend Frameworks. Working with Express and NestJS in the Backend",
     "what_can_i_contribute": "Last Time JS Craftcamp happend Robert shared two sessions with me on Gatsby and NestJS. Maybe something related in this context. But I am also very experienced in asking dumb questions and/or making others laugh.",
     "tshirt": "M-XL",
-    "twitter": ""
 }
