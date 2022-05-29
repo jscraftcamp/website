@@ -1,6 +1,5 @@
 import React from "react"
 
-import Section from "../../components/section"
 import TextBlock from "../../components/text-block"
 import Typography from "../../components/typography"
 
@@ -31,20 +30,18 @@ const Sponsors = () => {
   ]
   return (
     <>
-      <Section className={style.root}>
-        <TextBlock headlineComponent="h1" headline="Sponsors">
-          <Typography paragraph>Our great sponsors:</Typography>
-        </TextBlock>
-      </Section>
+      <TextBlock headlineComponent="h1" headline="Sponsors">
+        <Typography paragraph>Our great sponsors:</Typography>
+      </TextBlock>
       <div className={style.row}>
         {sponsors.map((s, i) => {
           return (
             <div className={style.col} key={i}>
-              <div className={style.image} key={i}>
-                <a href={s.link} rel="noopener" target="_blank">
+              <a href={s.link} rel="noopener noreferrer" target="_blank">
+                <div className={style.image} key={i}>
                   <img alt={"sponsor #" + i} src={s.src} width="100%" />
-                </a>
-              </div>
+                </div>
+              </a>
             </div>
           )
         })}
