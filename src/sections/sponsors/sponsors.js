@@ -12,7 +12,7 @@ const Sponsors = () => {
     { src: "/img/sponsor-2022/grollmus.png" },
     { src: "/img/sponsor-2022/compose-us.png" },
     { src: "/img/sponsor-2019/tng.png" },
-    { src: "/img/sponsor-2019/peerigon.png" },
+    { src: "/img/sponsor-2022/peerigon.png" },
   ]
   return (
     <>
