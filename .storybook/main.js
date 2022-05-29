@@ -2,14 +2,14 @@ module.exports = {
   core: {
     builder: "webpack5",
   },
-  stories: [
-    "../src/components/**/*.story.js",
-    "../src/sections/**/*.story.js",
-    "../src/*.story.js"
-  ],
+  stories: ["../src/**/*.story.js"],
   addons: [
-    "@storybook/addon-actions",
-    "@storybook/addon-essentials",
+    "@storybook/addon-backgrounds",
+    "@storybook/addon-controls",
+    "@storybook/addon-measure",
+    "@storybook/addon-outline",
+    "@storybook/addon-toolbars",
+    "@storybook/addon-viewport",
   ],
   staticDirs: [
     //{ from: '../foo/assets', to: '/assets' }
