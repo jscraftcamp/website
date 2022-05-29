@@ -1,9 +1,9 @@
 import React from "react"
-import CodeOfConduct from "./"
+import Sponsors from "./"
 
 export default {
-  title: "sections/CodeOfConduct",
-  component: CodeOfConduct,
+  title: "sections/Sponsors",
+  component: Sponsors,
 }
 
-export const base = () => <CodeOfConduct />
+export const base = {}
