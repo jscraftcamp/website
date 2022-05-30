@@ -1,11 +1,8 @@
-.root {
-  text-align: center;
-  max-width: 1000px;
-}
 .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
 }
 .col {
   width: 33%;
@@ -16,13 +13,10 @@
   @media (max-width: 768px) {
     width: 100%;
   }
-
-  height: 100%;
 }
 
 .image {
   background: white;
   margin: 0.5rem;
   padding: 0.5rem;
-  box-shadow: #888 8px 8px 8px;
 }
