@@ -1,0 +1,16 @@
+{
+  "name": "Gabriel Dias Bahniuk",
+  "company": "Scalable Capital",
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  "tags": ["React", "GraphQL", "Next", "Github Actions", "a11y"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Started long ago 4fun with side projects and decided that's what I wanted to work with :)",
+  "what_can_i_contribute": "I would be in a listener role this time.",
+  "tshirt": "M-M",
+  "twitter": "gabrielbahniuk"
+}
