@@ -1,0 +1,16 @@
+{
+  "name": "Andre Multerer",
+  "company": "Grollmus GmbH",
+  "when": {
+     "friday": true,
+     "saturday": false
+  },
+  "tags": ["angular", "cypress", "ngrx", "typescript"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Daily Business",
+  "what_can_i_contribute": "Open for everything",
+  "tshirt": "M-M",
+  "twitter": ""
+}
