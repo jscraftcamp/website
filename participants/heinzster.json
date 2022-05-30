@@ -1,0 +1,25 @@
+{
+  "name": "Heinz Vargas",
+  "company": "All3DP GmbH",
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  "tags": [
+    "All3DP",
+    "Craftcloud",
+    "3D printing",
+    "functional programming",
+    "event-driven",
+    "microservices",
+    "graphQL",
+    "munich"
+  ],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Currently working with NodeJS and need to get better at it.",
+  "what_can_i_contribute": "Genuine interest and curiosity (it's my first JSCraftCamp).",
+  "tshirt": "M-L",
+  "twitter": "heinzstergram"
+}
