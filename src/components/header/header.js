@@ -25,6 +25,9 @@ const Header = () => (
       <Typography component={Link} variant="link" to="/">
         Home
       </Typography>
+      <Typography component={Link} variant="link" to="/participants">
+        Participants
+      </Typography>
       <Typography component={Link} variant="link" to="/sponsoring">
         Sponsoring
       </Typography>
