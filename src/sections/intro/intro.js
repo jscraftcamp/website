@@ -10,29 +10,33 @@ import logo from "../../assets/images/logo.svg"
 import twitter from "../../assets/images/twitter.svg"
 import github from "../../assets/images/github.svg"
 import skyline from "../../assets/images/skyline.svg"
+import TextBlock from "../../components/text-block"
+import MiniHeadline from "../../components/mini-headline"
 
 const Intro = () => (
   <div className={style.root}>
-    <div className={style.headline}>
-      <Typography component="p" variant="subline">
-        Welcome to JSCraftCamp 2022! 🎉
+    <TextBlock headline="Welcome to JSCraftCamp 2022! 🎉">
+      <MiniHeadline>When?</MiniHeadline>
+      <Typography variant="subline" paragraph>
+        June, 17th &amp; 18th 2022
       </Typography>
-    </div>
-    <div className={style.headline}>
-      <Typography component="p" variant="subline">
-        When: June, 17th & 18th 2022<br/>
-        Where: codecentric offices Munich,{" "}
-             <a href="https://www.ecosia.org/search?method=index&q=August-Everding-Str+20+81671+M%C3%BCnchen">August-Everding-Str 20, 81671 München</a>
-        <br/>
-        <a href="/register">Register: click here</a>
+      <Spacer size="xs" />
+      <MiniHeadline>Where?</MiniHeadline>
+      <Typography variant="subline" paragraph>
+        codecentric offices Munich,{" "}
+        <a href="https://www.ecosia.org/search?method=index&q=August-Everding-Str+20+81671+M%C3%BCnchen">
+          August-Everding-Str 20, 81671 München
+        </a>
       </Typography>
-    </div>
-    <div className={style.headline}>
-      <Typography component="p" variant="subline">
-        Follow us on {" "}
+      <Spacer size="xs" />
+      <MiniHeadline>Participate for free!</MiniHeadline>
+      <Typography variant="subline" paragraph>
+        <a href="/register">Register now</a> and follow us{" "}
         <a href="https://twitter.com/jscraftcamp">on twitter @JSCraftCamp!</a>
       </Typography>
-    </div>
+    </TextBlock>
+
+    <Spacer size="xs" />
 
     <div className={style.logo}>
       <Icon source={logo} />

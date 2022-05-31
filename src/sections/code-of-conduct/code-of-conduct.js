@@ -6,7 +6,7 @@ import TextBlock from "../../components/text-block"
 
 const CodeOfConduct = () => (
   <Section className={style.root}>
-    <TextBlock headlineComponent="h1" headline="Code of Conduct">
+    <TextBlock headlineComponent="h2" headline="Code of Conduct">
       <Typography className={style.paragraph} paragraph>
         We are committed to providing a friendly, safe and welcoming environment
         for all, regardless of gender, sexual orientation, programming language,

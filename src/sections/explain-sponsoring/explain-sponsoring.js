@@ -10,8 +10,8 @@ import style from "./explain-sponsoring.module.scss"
 
 const ExplainSponsoring = () => (
   <Section className={style.root}>
-    <TextBlock headlineComponent="h1" headline="Want to become a Sponsor?">
-      <Typography component="h3">
+    <TextBlock headline="Want to become a Sponsor?">
+      <Typography component="h2">
         Expose your Company to a Group of Highly Motivated Technology
         Enthusiasts
       </Typography>

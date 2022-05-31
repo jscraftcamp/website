@@ -14,7 +14,7 @@ $font-size-subline: 22px;
 $font-size-default: 16px;
 $font-size-small: 14px;
 
-$font-letter-spacing: 4.5px;
+$font-letter-spacing: calc(1em / 6);
 
 // colors
 $primary-color: #ea0074;

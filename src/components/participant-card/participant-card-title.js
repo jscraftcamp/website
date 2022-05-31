@@ -1,31 +1,25 @@
 import React from "react"
+import Typography from "../typography"
 
 const ParticipantCardTitle = ({ name, twitter, onClick }) => (
-  <div
-    className="card-title"
-    // style={{
-    //   height: "4.5em",
-    //   overflow: "hidden",
-    //   wordWrap: "normal",
-    // }}
-  >
-    <button
-      class="card-title activator grey-text text-darken-4"
+  <div>
+    <Typography
+      variants={["uppercase", "wide", "link"]}
       onClick={onClick}
+      paragraph
     >
       {name}
-    </button>
+    </Typography>
     {twitter && (
-      <p>
-        <a
-          className="twitter-link"
-          href={"https://twitter.com/" + twitter}
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          @{twitter}
-        </a>
-      </p>
+      <Typography
+        component="a"
+        href={"https://twitter.com/" + twitter}
+        target="_blank"
+        rel="noreferrer noopener"
+        paragraph
+      >
+        @{twitter}
+      </Typography>
     )}
   </div>
 )
