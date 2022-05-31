@@ -1,0 +1,15 @@
+.root {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 0.5em;
+}
+
+.time {
+  width: 100px;
+}
+
+.children {
+  flex: 1;
+  text-align: left;
+}

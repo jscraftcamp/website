@@ -6,6 +6,8 @@ import Section from "../components/section"
 import Spacer from "../components/spacer"
 import ParticipantCard from "../components/participant-card"
 import ParticipantWrapper from "../components/participants"
+import ParticipantsCounter from "../components/participants-counter/participants-counter"
+import TextBlock from "../components/text-block"
 
 export const query = graphql`
   query ParticipantData {
@@ -15,6 +17,10 @@ export const query = graphql`
         id
         what_can_i_contribute
         what_is_my_connection_to_javascript
+        when {
+          friday
+          saturday
+        }
         twitter
         tags
         name
@@ -30,7 +36,9 @@ export default function Participants({ data }) {
   return (
     <Page title="Participants">
       <Section>
-        <h1>Participants</h1>
+        <TextBlock headline="Participants" />
+
+        <ParticipantsCounter participants={participants} />
 
         <Spacer size="m" />
 

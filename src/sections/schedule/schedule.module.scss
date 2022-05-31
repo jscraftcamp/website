@@ -1,6 +1,11 @@
-.wrapper {
+.tables {
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
   justify-content: space-between;
+}
+
+.daySchedule {
+  flex: 1;
+  min-width: 400px;
 }
