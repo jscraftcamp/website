@@ -1,0 +1,16 @@
+{
+  "name": "Maria",
+  "company": "ZDI",
+  "when": {
+    "friday": false,
+    "saturday": true
+  },
+  "tags": ["typescript", "javascript", "backend", "frontend", "serverless", "education", "TDD", "playwright"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "none",
+  "what_is_my_connection_to_javascript": "In my work I'am using TypeScript, sometimes also JavaScript",
+  "what_can_i_contribute": "listening, participating discussions, workshops, sharing experiences",
+  "tshirt": "M-S",
+  "twitter": "Maria77939067"
+}
