@@ -5,7 +5,7 @@
     "friday": true,
     "saturday": true
   },
-  "tags": ["React", "TypeScript", "Redux", "@autoweird.fm", "papperlapapp"],
+  "tags": ["React", "TypeScript", "Redux", "Testing","@autoweird.fm", "Papperlapapp"],
   "vegan": false,
   "vegetarian": false,
   "allergies": "",
