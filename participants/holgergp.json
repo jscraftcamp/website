@@ -1,0 +1,16 @@
+{
+  "name": "Holger Grosse-Plankermann",
+  "company": "codecentric AG",
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  "tags": ["React", "TypeScript", "Redux", "@autoweird.fm", "papperlapapp"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "My first connection to JS was to compile a Mozilla for native SOAP interfaces. It got better since!",
+  "what_can_i_contribute": "I am curious to join your awesome sessions. I can talk about React/Redux, cucumber.js, testing in general, making a podcast and/or a youtube format",
+  "tshirt": "M-M",
+  "twitter": "holgergp"
+}
