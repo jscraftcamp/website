@@ -1,6 +1,7 @@
 module.exports = {
   core: {
     builder: "webpack5",
+    disableTelemetry: true,
   },
   stories: ["../src/**/*.story.js"],
   addons: [
