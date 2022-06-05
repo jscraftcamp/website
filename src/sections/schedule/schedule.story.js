@@ -1,9 +1,9 @@
 import React from "react"
-import CovidRules from "."
+import Schedule from "."
 
 export default {
-  title: "sections/CovidRules",
-  component: CovidRules,
+  title: "sections/Schedule",
+  component: Schedule,
 }
 
-export const base = () => <CovidRules />
+export const base = () => <Schedule />
