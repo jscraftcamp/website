@@ -25,10 +25,6 @@ module.exports = {
             namedExport: false,
           },
         },
-        additionalData: `
-          @import "node_modules/sass-mq/_mq.scss";
-          @import "${__dirname}/src/config.scss";
-        `,
       },
     },
     {

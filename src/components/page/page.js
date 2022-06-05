@@ -5,7 +5,9 @@ import Header from "../header"
 import Footer from "../footer"
 import Spacer from "../spacer"
 
-import "./../../css/main.css"
+// global style
+import "./main.css"
+
 import style from "./page.module.scss"
 
 const Page = ({ children, title }) => {
