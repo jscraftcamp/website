@@ -1,0 +1,24 @@
+{
+  "name": "Taghi Khavari",
+  "company": "Alasco",
+  "when": {
+    "friday": false,
+    "saturday": true
+  },
+  "tags": [
+    "TypeScript",
+    "React",
+    "PWA",
+    "Webpack",
+    "Jest",
+    "React Testing Library",
+    "Nextjs",
+    "Redux",
+    "Material UI",
+    "React Query"
+  ],
+  "vegan": false,
+  "vegetarian": false,
+  "what_is_my_connection_to_javascript": "Working as a Frontend Software Engineer for 4 years",
+  "tshirt": "M-XXL"
+}
