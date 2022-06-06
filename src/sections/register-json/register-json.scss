@@ -1,9 +1,3 @@
-// Color
-@import "materialize-css/sass/components/color-variables";
-@import "materialize-css/sass/components/color-classes";
-
-// Variables;
-@import "materialize-css/sass/components/variables";
-@import "materialize-css/sass/components/global";
-
-@import "materialize-css/sass/components/cards";
+.card-panel {
+    padding: 16px;
+}

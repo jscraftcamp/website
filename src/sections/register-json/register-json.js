@@ -10,7 +10,7 @@ export const RegisterJson = () => (
       The JSON Format
     </Typography>
 
-    <div className="col s12">
+    <div>
       <pre className="card-panel language-json" style={{ background: "white" }}>
         <code
           className="language-json"
@@ -39,7 +39,7 @@ export const RegisterJson = () => (
       </pre>
     </div>
 
-    <div className="col s12 m12" style={{ background: "white" }}>
+    <div style={{ background: "white" }}>
       <table className="bordered">
         <tbody>
           <tr>
