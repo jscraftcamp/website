@@ -2,7 +2,7 @@ import React from "react"
 
 import Typography from "../../components/typography"
 
-import style from "./register-json.scss"
+import styles from "./register-json.module.scss"
 
 export const RegisterJson = () => (
   <>
@@ -11,7 +11,7 @@ export const RegisterJson = () => (
     </Typography>
 
     <div>
-      <pre className="card-panel language-json" style={{ background: "white" }}>
+      <pre className={styles.cardPanel}>
         <code
           className="language-json"
           dangerouslySetInnerHTML={{
@@ -39,7 +39,7 @@ export const RegisterJson = () => (
       </pre>
     </div>
 
-    <div style={{ background: "white" }}>
+    <div className={styles.cardPanel}>
       <table className="bordered">
         <tbody>
           <tr>
