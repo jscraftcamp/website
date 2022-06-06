@@ -7,8 +7,8 @@ import Typography from "../components/typography"
 import RegisterJson from "../sections/register-json"
 
 import { Link } from "gatsby"
+import Spacer from "../components/spacer"
 
-// TODO: create for the content a new "Section" in the components
 const Registration = () => (
   <Page title="Registration">
     <Section>
@@ -63,6 +63,8 @@ const Registration = () => (
           <a href="mailto:team@jscraftcamp.org">let us know</a>.
         </Typography>
       </TextBlock>
+
+      <Spacer size="s" />
 
       <RegisterJson />
     </Section>

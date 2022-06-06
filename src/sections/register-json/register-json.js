@@ -6,7 +6,7 @@ import styles from "./register-json.module.scss"
 
 export const RegisterJson = () => (
   <>
-    <Typography component="h4" className="center">
+    <Typography component="h3" className="center">
       The JSON Format
     </Typography>
 

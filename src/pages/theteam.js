@@ -11,7 +11,7 @@ const TeamPage = () => {
   return (
     <Page title="Team">
       <Section>
-        <TextBlock headlineComponent="h1" headline="The Team">
+        <TextBlock headlineComponent="h2" headline="The Team">
           <Typography paragraph>
             We are simple developers organizing this event in our spare time. If
             you have any questions or problems before or during the conference,
