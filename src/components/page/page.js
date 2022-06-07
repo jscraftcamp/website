@@ -1,11 +1,18 @@
 import React from "react"
-import Helmet from "react-helmet"
+import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "../header"
 import Footer from "../footer"
 import Spacer from "../spacer"
 
-import "./../../css/main.css"
+// global style
+import "./main.css"
+
+// stripped down, minimal global imports
+// mostly html default styling
+import "./materialcss-global.scss"
+
+// page component styles
 import style from "./page.module.scss"
 
 const Page = ({ children, title }) => {

@@ -1,9 +1,11 @@
 module.exports = {
   core: {
     builder: "webpack5",
+    disableTelemetry: true,
   },
   stories: ["../src/**/*.story.js"],
   addons: [
+    "@storybook/preset-scss", // auto scss support
     "@storybook/addon-backgrounds",
     "@storybook/addon-controls",
     "@storybook/addon-measure",
@@ -11,25 +13,14 @@ module.exports = {
     "@storybook/addon-toolbars",
     "@storybook/addon-viewport",
   ],
-  staticDirs: [
-    //{ from: '../foo/assets', to: '/assets' }
-    "../public",
-    "../static",
-  ],
+  staticDirs: ["../static"],
   webpackFinal: (config) => {
-    // Prepare storybook for Gatsby
+    // Transpile Gatsby module because Gatsby includes un-transpiled ES6 code.
     config.module.rules[0].exclude = [/node_modules\/(?!(gatsby)\/)/]
-    config.module.rules[0].use[0].loader = require.resolve("babel-loader")
-    config.module.rules[0].use[0].options.presets = [
-      require.resolve("@babel/preset-react"),
-      require.resolve("@babel/preset-env"),
-    ]
-    config.module.rules[0].use[0].options.plugins = [
-      require.resolve("@babel/plugin-proposal-class-properties"),
-      require.resolve("babel-plugin-remove-graphql-queries"),
-    ]
-    config.resolve.mainFields = ["browser", "module", "main"]
-
+    // Use babel-plugin-remove-graphql-queries to remove static queries from components when rendering in storybook
+    config.module.rules[0].use[0].options.plugins.push(
+      require.resolve("babel-plugin-remove-graphql-queries")
+    )
     // Workaround:
     // storybook handles svg with the file-loader which overrides our custom loaders, so adapt rule, to ignore svg extension:
     config.module.rules = config.module.rules.map((rule) => {
@@ -43,28 +34,7 @@ module.exports = {
 
     // Add new loaders we want to use
     config.module.rules.push(
-      {
-        test: /\.scss$/i,
-        use: [
-          "style-loader",
-          {
-            loader: "css-loader",
-            options: {
-              importLoaders: 1,
-              modules: {
-                localIdentName: "[local]___[hash:base64:5]",
-              },
-            },
-          },
-          "sass-loader",
-          {
-            loader: "sass-resources-loader",
-            options: {
-              resources: ["node_modules/sass-mq/_mq.scss", "./src/config.scss"],
-            },
-          },
-        ],
-      },
+      // replacing storybook's builtin loader with this one:
       {
         test: /\.svg$/,
         issuer: /\.js$/, // Prevent usage of icon sprite outside of js

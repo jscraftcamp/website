@@ -1,0 +1,23 @@
+.title {
+    overflow: hidden;
+    word-wrap: unset;
+    white-space: nowrap;
+}
+
+.content {
+    height: 3em;
+}
+
+.responsive_img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mail {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: normal;
+    white-space: nowrap;
+}

@@ -2,7 +2,8 @@
   text-align: center;
   max-width: 1000px;
 
-  li {
+  // override material-css default style
+  ul > li {
     list-style: disc;
   }
 }

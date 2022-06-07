@@ -59,7 +59,7 @@ const Footer = () => (
             <InternalLink to="/">Home</InternalLink>
             <InternalLink to="/sponsoring">Sponsoring</InternalLink>
             <InternalLink to="/values">Values</InternalLink>
-            <InternalLink to="/privacypolicy">Privacy Policy</InternalLink>
+            <InternalLink to="/imprint">Privacy Policy</InternalLink>
           </div>
         </div>
         <div className={style.list}>

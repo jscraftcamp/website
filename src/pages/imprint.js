@@ -7,7 +7,7 @@ import Typography from "../components/typography"
 const ImprintPage = () => (
   <Page title="Imprint">
     <Section>
-      <Typography component="h1">Impressum</Typography>
+      <Typography component="h2">Impressum</Typography>
 
       <p>Angaben gemäß § 5 TMG:</p>
 

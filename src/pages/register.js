@@ -3,9 +3,12 @@ import Page from "../components/page"
 import Section from "../components/section"
 import TextBlock from "../components/text-block"
 import Typography from "../components/typography"
-import { Link } from "gatsby"
 
-// TODO: create for the content a new "Section" in the components
+import RegisterJson from "../sections/register-json"
+
+import { Link } from "gatsby"
+import Spacer from "../components/spacer"
+
 const Registration = () => (
   <Page title="Registration">
     <Section>
@@ -61,147 +64,9 @@ const Registration = () => (
         </Typography>
       </TextBlock>
 
-      <div className="col s12 m12">
-        <h4 className="header center colorOfTheYear-text">The JSON Format</h4>
-      </div>
-      <div className="col s12 m12">
-        <pre
-          className="card-panel language-json"
-          style={{ background: "white" }}
-        >
-          <code
-            className="language-json"
-            dangerouslySetInnerHTML={{
-              __html: `
-{
-    "name": "Your real name (OR a nickname)",
-    "company": "your company name (optional)",
-    "when": {
-       "friday": true,
-       "saturday": true
-    },
-    "tags": ["any", "tag", "you like"],
-    "vegan": true/false,
-    "vegetarian": true/false,
-    "allergies": "... (optional)",
-    "what_is_my_connection_to_javascript": "Say something about you and JS ...",
-    "what_can_i_contribute": "How can you contribute to the event? If you don't know yet, feel free to give it some thought ...",
-    "tshirt": "W-S",
-    "twitter": "handle (optional)"
-}
-`,
-            }}
-          ></code>
-        </pre>
-      </div>
-      <div className="col s12 m12" style={{ background: "white" }}>
-        <table className="bordered">
-          <tbody>
-            <tr>
-              <td>
-                <code>name</code>*
-              </td>
-              <td>first name and last name or a nick name</td>
-            </tr>
-            <tr>
-              <td>
-                <code>company</code>
-              </td>
-              <td>A company name</td>
-            </tr>
-            <tr>
-              <td>
-                <code>when.friday</code>*
-              </td>
-              <td>If you are attending on Friday (Boolean value)</td>
-            </tr>
-            <tr>
-              <td>
-                <code>when.saturday</code>*
-              </td>
-              <td>If you are attending on Saturday (Boolean value)</td>
-            </tr>
-            <tr>
-              <td>
-                <code>tags</code>*
-              </td>
-              <td>
-                Share what you think is important, use at least one tag. (Array
-                of strings)
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <code>vegan</code>*
-              </td>
-              <td>
-                Just for planning: Let us know if you are a vegan** (Boolean
-                value)
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <code>vegetarian</code>*
-              </td>
-              <td>
-                Just for planning: Let us know if you are a vegetarian**
-                (Boolean value)
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <code>allergies</code>
-              </td>
-              <td>Tell us if you have any special dietary requirements**</td>
-            </tr>
-            <tr>
-              <td>
-                <code>what_is_my_connection_to_javascript</code>*
-              </td>
-              <td>
-                {" "}
-                2-5 sentences about your experience with JavaScript or related
-                technologies.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <code>what_can_i_contribute</code>
-              </td>
-              <td>
-                1-3 sentences about what you would like to contribute to the
-                BarCamp.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <code>tshirt</code>
-              </td>
-              <td>
-                We will have a limited number of t-shirts with the event and
-                sponsor logos. If you want one: fit (W=women, M=Man) and size
-                (S,M,L,XL,XXL), e.g. W-S or M-XL. If your registration is
-                shortly before the event there might be no time to have a
-                t-shirt produced for you, please be aware.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <code>twitter</code>
-              </td>
-              <td>
-                Your Twitter handle <em>without</em> the leading <code>@</code>.
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <p>*: mandatory field</p>
-        <p>
-          **: This is a free and completely sponsored event. Even though we want
-          to try, we can not guarantee to be able to respect every dietary
-          requirement
-        </p>
-      </div>
+      <Spacer size="s" />
+
+      <RegisterJson />
     </Section>
   </Page>
 )

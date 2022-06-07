@@ -6,7 +6,6 @@
     "node": ">= 14.0.0"
   },
   "dependencies": {
-    "babel-preset-gatsby": "2.15.0",
     "classnames": "2.3.1",
     "css-loader": "6.7.1",
     "gatsby": "4.15.2",
@@ -45,17 +44,18 @@
     "@storybook/addons": "6.5.6",
     "@storybook/builder-webpack5": "6.5.6",
     "@storybook/manager-webpack5": "6.5.6",
+    "@storybook/preset-scss": "1.0.3",
     "@storybook/react": "6.5.6",
     "babel-loader": "8.2.5",
     "babel-plugin-remove-graphql-queries": "4.15.0",
     "gatsby-plugin-netlify": "5.0.0",
     "hamjest": "3.7.3",
     "hygen": "6.2.4",
+    "materialize-css": "1.0.0",
     "mocha": "10.0.0",
     "prettier": "2.6.2",
     "recursive-readdir-sync": "1.0.6",
-    "sass": "1.52.1",
-    "sass-resources-loader": "2.2.5"
+    "sass": "1.52.1"
   },
   "scripts": {
     "develop": "gatsby develop",

@@ -1,3 +1,5 @@
+@import "src/config";
+
 @font-face {
   font-family: "Source Sans Pro";
   src: url("../../assets/font/source-sans-pro-regular.ttf") format("tff");
@@ -40,7 +42,7 @@
 
 .p {
   font-size: $font-size-default;
-  line-height: $font-size-default * 2;
+  line-height: $font-size-default * 1.5;
 }
 
 // Variants

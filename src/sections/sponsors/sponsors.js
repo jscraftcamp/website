@@ -8,7 +8,7 @@ const Sponsors = () => {
   const sponsors = [
     {
       name: "codecentric",
-      src: "/img/cc_logo.png",
+      src: "/img/sponsor-2022/cc_logo.png",
       link: "https://www.codecentric.de/",
     },
     {
@@ -23,7 +23,7 @@ const Sponsors = () => {
     },
     {
       name: "TNG Technology consulting",
-      src: "/img/sponsor-2019/tng.png",
+      src: "/img/sponsor-2022/tng.png",
       link: "https://www.tngtech.com/",
     },
     {
