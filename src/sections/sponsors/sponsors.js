@@ -31,6 +31,11 @@ const Sponsors = () => {
       src: "/img/sponsor-2022/peerigon.png",
       link: "https://www.peerigon.com/",
     },
+    {
+      name: "Sono Motors",
+      src: "/img/sponsor-2022/sono-motors-logo.png",
+      link: "https://sonomotors.com/",
+    },
   ]
   return (
     <TextBlock headlineComponent="h2" headline="Our great sponsors">
