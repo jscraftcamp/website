@@ -10,6 +10,8 @@ import ParticipantWrapper from "../components/participants"
 import ParticipantsCounter from "../components/participants-counter/participants-counter"
 import TextBlock from "../components/text-block"
 
+const inBrowserEnv = Boolean(global.document)
+
 export const query = graphql`
   query ParticipantData {
     allParticipantsJson {
@@ -51,16 +53,17 @@ export default function Participants({ data }) {
     <Page title="Participants">
       <Section>
         <TextBlock headline="Participants" />
-
-        <WordCloud
-          data={wordData}
-          width={220}
-          height={120}
-          font="Poppins"
-          fontSize={(word) => Math.log2(word.value) * 3 + 3}
-          spiral="rectangular"
-          padding={1}
-        />
+        {inBrowserEnv && (
+          <WordCloud
+            data={wordData}
+            width={220}
+            height={120}
+            font="Poppins"
+            fontSize={(word) => Math.log2(word.value) * 3 + 3}
+            spiral="rectangular"
+            padding={1}
+          />
+        )}{" "}
         <ParticipantsCounter participants={participants} />
 
         <Spacer size="m" />
