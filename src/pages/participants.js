@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { graphql } from "gatsby"
 import WordCloud from "react-d3-cloud"
 
@@ -9,8 +9,6 @@ import ParticipantCard from "../components/participant-card"
 import ParticipantWrapper from "../components/participants"
 import ParticipantsCounter from "../components/participants-counter/participants-counter"
 import TextBlock from "../components/text-block"
-
-const inBrowserEnv = Boolean(global.document)
 
 export const query = graphql`
   query ParticipantData {
@@ -37,6 +35,12 @@ export default function Participants({ data }) {
   const { allParticipantsJson } = data
   const participants = allParticipantsJson.nodes
 
+  const [tagCloudEnabled, setTagCloudEnabled] = useState(false)
+
+  useEffect(() => {
+    setTagCloudEnabled(true)
+  })
+
   const allTags = new Map()
   participants.forEach(({ tags }) => {
     tags.forEach((tx) => {
@@ -53,7 +57,7 @@ export default function Participants({ data }) {
     <Page title="Participants">
       <Section>
         <TextBlock headline="Participants" />
-        {inBrowserEnv && (
+        {tagCloudEnabled && (
           <WordCloud
             data={wordData}
             width={220}
@@ -63,11 +67,9 @@ export default function Participants({ data }) {
             spiral="rectangular"
             padding={1}
           />
-        )}{" "}
+        )}
         <ParticipantsCounter participants={participants} />
-
         <Spacer size="m" />
-
         <ParticipantWrapper>
           {participants.map((participant) => (
             <ParticipantCard key={participant.name} data={participant} />
