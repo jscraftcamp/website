@@ -1,0 +1,16 @@
+{
+  "name": "Jonathan Prince",
+  "company": "NVISO Security",
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  "tags": ["NodeJS", "Security", "TDD", "Vanilla", "ETH"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "I have nothing but love for JS, especially Node",
+  "what_can_i_contribute": "Would like to talk about security/pentesting and JS tooling in the Ethereum ecosystem",
+  "tshirt": "M-L",
+  "twitter": "@greatsage"
+}
