@@ -25,8 +25,8 @@ const CovidRules = () => (
           <ul className={style.list}>
             <Rule
               icon="⚠️"
-              text="Have a test certificate ready issued max. 24h before the event -
-              will be checked at the entrance!"
+              text="Have a test certificate ready - will be checked at the entrance.
+               Ideally issued in last 24 hours. Due to the bank holiday on Thursday, up to max. 48h will be accepted."
             />
             <Rule icon="👥" text="Max. 80 people at the location!" />
             <Rule icon="😷" text="Wear an FFP2 mask whenever possible!" />
