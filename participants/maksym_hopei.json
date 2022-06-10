@@ -5,7 +5,7 @@
        "friday": true,
        "saturday": true
     },
-    "tags": ["tags?", "Hm...", "what could it be?"],
+    "tags": ["typescript", "react", "nestjs", "web-components", "microservices"],
     "vegan": false,
     "vegetarian": false,
     "what_is_my_connection_to_javascript": "Well, I use it every day in my work.",
