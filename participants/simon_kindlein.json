@@ -1,0 +1,14 @@
+{
+  "name": "Simon Kindlein",
+  "company": "Collaboration Factory",
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  "tags": ["Angular", "Cypress", "Typescript", "a11y", "FOSS"],
+  "vegan": false,
+  "vegetarian": false,
+  "what_is_my_connection_to_javascript": "Its been a part of my work for a few years now.",
+  "what_can_i_contribute": "I can listen and maybe even ask stupid questions.",
+  "tshirt": "M-L"
+}
