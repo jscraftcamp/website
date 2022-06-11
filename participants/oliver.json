@@ -1,0 +1,14 @@
+{
+  "name": "Oliver",
+  "company": "nop",
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  "tags": ["javascript", "backend", "serverless", "education", "TDD"],
+  "vegan": false,
+  "vegetarian": false,
+  "what_is_my_connection_to_javascript": "In my work I'am using sometimes JavaScript",
+  "what_can_i_contribute": "I'm interesting to listen to the talks and topics",
+  "tshirt": "M-L"
+}
