@@ -5,12 +5,12 @@
     "friday": true,
     "saturday": true
   },
-  "tags": ["Svelte", "Google App Script", "Hasura"],
+  "tags": ["Svelte", "Google Apps Script", "Hasura", "p5js"],
   "vegan": false,
   "vegetarian": false,
   "allergies": "",
-  "what_is_my_connection_to_javascript": "I remember the kid who showed us in 96 or 97, this cool new thing called javascript",
-  "what_can_i_contribute": "ask me about filmmaking",
+  "what_is_my_connection_to_javascript": "Back between 96 or 97, one of the coolest kids you could find at the Computer Lab showed everyone this cool new thing called JavaScript",
+  "what_can_i_contribute": "ask me about filmmaking, music, and drum and bass",
   "tshirt": "M-XXL",
   "twitter": "cowglow"
 }
