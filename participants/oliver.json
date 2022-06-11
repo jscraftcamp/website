@@ -1,5 +1,6 @@
 {
   "name": "Oliver",
+  "company": "nop",
   "when": {
     "friday": true,
     "saturday": true
