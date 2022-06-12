@@ -1,0 +1,14 @@
+{
+    "name": "Jan Schmidle",
+    "company": "Essentim GmbH",
+    "when": {
+       "friday": true,
+       "saturday": true
+    },
+    "tags": ["serverless", "backend", "iot", "security", "BTLE", "oauth", "opcua"],
+    "vegan": false,
+    "vegetarian": false,
+    "what_is_my_connection_to_javascript": "Beside my initials? ;-) It has been a long journey already.",
+    "what_can_i_contribute": "I love sharing and learning so this is a great opportumity. And we had to wait for quite some time ;-) Certainly will talk about security again or whatever comes to my mind when I arrive.",
+    "tshirt": "M-L"
+}
