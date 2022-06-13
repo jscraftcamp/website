@@ -1,0 +1,16 @@
+{
+  "name": "Jewgenij Steinhart",
+  "company": "self employed",
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  "tags": ["Freelancing", "Parenting", "React", "TypeScript", "Flutter", "Web3", "StandWithUkraine"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "my main programming language",
+  "what_can_i_contribute": "curious participation",
+  "tshirt": "M-L",
+  "twitter": "jeffstei"
+}
