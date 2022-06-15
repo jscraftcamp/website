@@ -36,6 +36,11 @@ const Sponsors = () => {
       src: "/img/sponsor-2022/sono-motors-logo.png",
       link: "https://sonomotors.com/",
     },
+    {
+      name: "Instana",
+      src: "/img/sponsor-2022/instana-logo.png",
+      link: "https://www.instana.com/",
+    },
   ]
   return (
     <TextBlock headlineComponent="h2" headline="Our great sponsors">
