@@ -1,0 +1,16 @@
+{
+  "name": "Vanderlei Alves da Silva",
+  "company": "Jochen Schweizer mydays Holding GmbH",
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  "tags": ["Java Script", "React", "Typescript", "Node", "Microfrontend"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "Everyday work, with frontend/backend development",
+  "what_can_i_contribute": "I'd be up giving a talk next time",
+  "tshirt": "M-S",
+  "twitter": "VandAlvesSilva"
+}
