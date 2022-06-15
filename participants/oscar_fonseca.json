@@ -1,0 +1,16 @@
+{
+    "name": "Oscar Fonseca",
+    "company": "Grollmus",
+    "when": {
+       "friday": true,
+       "saturday": false
+    },
+    "tags": ["javascript", "angular"],
+    "vegan": false,
+    "vegetarian": false,
+    "allergies": "",
+    "what_is_my_connection_to_javascript": "I am starting with javascript and angular. I will be working in angular in the future, and therefore it is interesting for me.",
+    "what_can_i_contribute": "I am quite new in javascript but I have long experience in C#, so I think I can participate and offer the point of view of a c# developer. I also will ask many interesting questions",
+    "tshirt": "M-M",
+    "twitter": "oscarEFonseca"
+}
