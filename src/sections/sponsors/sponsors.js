@@ -8,7 +8,7 @@ const Sponsors = () => {
   const sponsors = [
     {
       name: "codecentric",
-      src: "/img/sponsor-2022/cc_logo.png",
+      src: "/img/sponsor-2022/codecentric.png",
       link: "https://www.codecentric.de/",
     },
     {
@@ -33,12 +33,12 @@ const Sponsors = () => {
     },
     {
       name: "Sono Motors",
-      src: "/img/sponsor-2022/sono-motors-logo.png",
+      src: "/img/sponsor-2022/sono-motors.png",
       link: "https://sonomotors.com/",
     },
     {
       name: "Instana",
-      src: "/img/sponsor-2022/instana-logo.png",
+      src: "/img/sponsor-2022/instana.png",
       link: "https://www.instana.com/",
     },
   ]
