@@ -1,0 +1,15 @@
+{
+    "name": "Peter Mbanugo",
+    "company": "foobar Agency",
+    "when": {
+       "friday": false,
+       "saturday": true
+    },
+    "tags": ["typescript", "nodejs", "esm", "serverless", "containers", "kubernetes", "observability", "functional programming", "platform engineering"],
+    "vegan": false,
+    "vegetarian": false,
+    "what_is_my_connection_to_javascript": "I work with JavaScript as a fullstack developer. I'm also maintaining an oss tool for building and deploying JS apps on Kubernetes.",
+    "what_can_i_contribute": "I can help moderate panel sessions or participate in panel sessions around areas that I have experience in. I can also propose and give lightening talks.",
+    "tshirt": "M-L",
+    "twitter": "p_mbanugo"
+}
