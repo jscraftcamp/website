@@ -22,9 +22,7 @@ const Schedule = () => (
         <Row time="09:00">Doors open</Row>
         <Row time="10:00-11:00">Marketplace</Row>
         <Row time="11:00-13:00">Sessions</Row>
-        <Row time="13:00-14:00">
-          Lunch - no sponsor yet! <a href="/sponsoring">Maybe your company?</a>
-        </Row>
+        <Row time="13:00-14:00">Lunch - sponsored by Sono Motors</Row>
         <Row time="14:00-17:00">Sessions</Row>
         <Row time="17:00-18:00">Review &amp; Closing</Row>
       </div>
