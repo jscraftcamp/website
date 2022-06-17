@@ -41,6 +41,11 @@ const Sponsors = () => {
       src: "/img/sponsor-2022/instana.png",
       link: "https://www.instana.com/",
     },
+    {
+      name: "Method park",
+      src: "/img/sponsor-2022/method-park.png",
+      link: "https://www.instana.com/",
+    },
   ]
   return (
     <TextBlock headlineComponent="h2" headline="Our great sponsors">
