@@ -1,4 +1,5 @@
 ![Netlify Status](https://api.netlify.com/api/v1/badges/429e37ea-5a85-45d5-8845-e3dad61e63be/deploy-status?branch=main)
+[![Chromatic](https://github.com/jscraftcamp/website/actions/workflows/chromatic.yml/badge.svg?event=workflow_run)](https://github.com/jscraftcamp/website/actions/workflows/chromatic.yml)
 
 # JS CraftCamp - Website
 
