@@ -6,7 +6,7 @@
   justify-content: center;
 }
 .col {
-  width: 33%;
+  width: 42%;
 
   @media (max-width: 1000px) {
     width: 50%;
@@ -19,6 +19,6 @@
 .image {
   background: white;
   flex: 1 0 auto;
-  margin: 0.5rem;
-  padding: 0.5rem;
+  margin: 2.75rem;
+  padding: 2rem;
 }

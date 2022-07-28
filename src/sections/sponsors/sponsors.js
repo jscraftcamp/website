@@ -48,7 +48,11 @@ const Sponsors = () => {
     },
   ]
   return (
-    <TextBlock headlineComponent="h2" headline="Our great sponsors">
+    <React.Fragment>
+      <TextBlock
+        headlineComponent="h1"
+        headline="A big thanks to our great sponsors"
+      />
       <div className={style.row}>
         {sponsors.map((s, i) => {
           return (
@@ -62,7 +66,7 @@ const Sponsors = () => {
           )
         })}
       </div>
-    </TextBlock>
+    </React.Fragment>
   )
 }
 export default Sponsors
