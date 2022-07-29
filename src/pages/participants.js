@@ -39,7 +39,7 @@ export default function Participants({ data }) {
 
   useEffect(() => {
     setTagCloudEnabled(true)
-  })
+  }, [setTagCloudEnabled])
 
   const allTags = new Map()
   participants.forEach(({ tags }) => {
