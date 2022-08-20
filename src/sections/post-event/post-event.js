@@ -14,7 +14,7 @@ import Typography from "../../components/typography"
 const PostEvent = () => (
   <div className={style.root}>
     <Spacer size="xs" />
-    <TextBlock headline="!🎉 Thank you all for JSCraftcamp 2022 🎉!" />
+    <TextBlock headline="!🎉 Thank you all for #jscc22 🎉!" />
     <div className={style.logo}>
       <Icon source={logo} />
     </div>
