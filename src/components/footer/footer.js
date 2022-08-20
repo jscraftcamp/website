@@ -18,8 +18,8 @@ const branch = process.env.BRANCH ?? DEFAULT_BRANCH
 const chromaticUrl = `https://www.chromatic.com/library?appId=60d36a243a7c1f0049472423&branch=${branch}`
 const storybookUrl = `https://${branch}--60d36a243a7c1f0049472423.chromatic.com`
 
-// to temporary disable button and link on page
-const storybookChromaticEnabled = false
+// set it to /false/ to disable the button and the link in the footer
+const storybookChromaticEnabled = true
 
 const InternalLink = ({ to, children }) => (
   <Typography
