@@ -11,7 +11,7 @@ import camp from "../../assets/images/camp.svg"
 
 const Explanation = () => (
   <>
-    <TextBlock headlineComponent="h1" headline="What you can expect" />
+    <TextBlock headlineComponent="h2" headline="What you can expect" />
     <div className={style.root}>
       <TextBlock
         className={style.textblock}
