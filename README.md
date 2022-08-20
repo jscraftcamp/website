@@ -4,34 +4,34 @@
 # JS CraftCamp - Website
 
 
-### Start developing:
 
-1. clone
-2. install dependencies
+## Start developing:
 
 ### Scripts
+After installing the dependencies (via yarn), run
 
-- `npm run storybook` for storybook
-- `npm start` for gatsby dev
+- `yarn storybook` for storybook in local dev mode
+- `yarn develop` for starting gatsby in dev mode
+- `yarn format` formatting all sources via prettier
+- `yarn test` verify valid participants data
+
+## Project Structure
+Built with gatsby, the static site it built of pages: see the [src/pages](./src/pages) folder: e.g. [./src/pages/theteam.js](./src/pages/theteam.js).
+
+The pages contain sections, located in [src/sections](./src/sections) folder: e.g. [./src/sections/intro.js](./src/sections/intro.js). 
 
 ### Create new components
 
 ```
-npm run hygen component new --name <COMPONENT_NAME>
+yarn hygen component new --name <COMPONENT_NAME>
 ```
 
 The prompt will ask for do you want to create a:
 
-- component
-- section
-
-A section basically a part of a page, e.g. the "child care" is a section.
+- component (any small piece for reuse anywhere)
+- section (as a part of a page)
 
 ### Cool packages
 
-- https://www.npmjs.com/package/sass-mq
-  > makes it easier to write media-queries
-- https://www.npmjs.com/package/@storybook/addon-viewport
-  > Change the viewport in the storybook preview
-- http://www.hygen.io/
-  > Some generator to make it easier creating components with all depending files
+We use [hygen](http://www.hygen.io) as a generator to simplify creating new components with all the file it depends on.
+
