@@ -2,6 +2,9 @@ import React from "react"
 
 import style from "./post-event.module.scss"
 
+import twitter from "../../assets/images/twitter.svg"
+import github from "../../assets/images/github.svg"
+
 import Icon from "../../components/icon"
 import Spacer from "../../components/spacer"
 import TextBlock from "../../components/text-block"
@@ -25,6 +28,15 @@ const PostEvent = () => (
         <a href="https://twitter.com/hashtag/jscc22">#jscc22</a> becomes{" "}
         <a href="https://twitter.com/hashtag/jscc23">#jscc23</a>
       </Typography>
+    </div>
+    <Spacer size="xs" />
+    <div className={style.social}>
+      <a href="https://twitter.com/jscraftcamp">
+        <Icon className={style.socialIcon} source={twitter} />
+      </a>
+      <a href="https://github.com/jscraftcamp/website">
+        <Icon className={style.socialIcon} source={github} />
+      </a>
     </div>
   </div>
 )
