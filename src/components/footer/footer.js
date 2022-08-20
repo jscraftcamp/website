@@ -12,14 +12,14 @@ import gatsby from "../../assets/images/gatsby.svg"
 import chromatic from "../../assets/images/chromatic.svg"
 import storybook from "../../assets/images/storybook.svg"
 
-const DEFAULT_BRANCH = "master"
+const DEFAULT_BRANCH = "main"
 // env variable will be set by netlify while building, else use default
 const branch = process.env.BRANCH ?? DEFAULT_BRANCH
 const chromaticUrl = `https://www.chromatic.com/library?appId=60d36a243a7c1f0049472423&branch=${branch}`
 const storybookUrl = `https://${branch}--60d36a243a7c1f0049472423.chromatic.com`
 
-// to temporary disable button and link on page
-const storybookChromaticEnabled = false
+// set it to /false/ to disable the button and the link in the footer
+const storybookChromaticEnabled = true
 
 const InternalLink = ({ to, children }) => (
   <Typography
@@ -112,17 +112,12 @@ const Footer = () => (
               </Typography>
             </a>
             {storybookChromaticEnabled && (
-              <div className={style.tech}>
-                <a href={chromaticUrl}>
-                  <Icon className={style.icon} source={chromatic} />
-                </a>
+              <a className={style.tech} href={storybookUrl}>
+                <Icon className={style.icon} source={storybook} />
                 <Typography variants={["inverted", "small"]}>
                   Chromatic
                 </Typography>
-                <a href={storybookUrl}>
-                  <Icon className={style.icon} source={storybook} />
-                </a>
-              </div>
+              </a>
             )}
           </div>
         </div>
