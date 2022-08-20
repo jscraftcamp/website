@@ -12,10 +12,10 @@ const IndexPage = () => (
     <Section>
       <PostEvent />
       <Spacer size="xl" />
-      <Spacer size="xl" />
       <Sponsors />
       <Spacer size="xl" />
       <Explanation />
+      <Spacer size="xl" />
     </Section>
   </Page>
 )
