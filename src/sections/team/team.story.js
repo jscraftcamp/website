@@ -1,9 +1,10 @@
-import React from 'react';
-import Team from './';
+import React from "react"
+
+import Team from "./"
 
 export default {
-  title: 'sections/Team',
-  component: Team
-};
+  title: "sections/Team",
+  component: Team,
+}
 
-export const base = () => <Team />;
+export const base = () => <Team />
