@@ -13,3 +13,16 @@
   text-align: center;
   width: 100%;
 }
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  width: 140px;
+  margin: 0 auto;
+  position: relative;
+
+  &Icon {
+    width: 40px;
+    height: 40px;
+  }
+}
