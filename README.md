@@ -3,7 +3,13 @@
 
 # JS CraftCamp - Website
 
+## Contributing:
 
+### Updated of package dependencies:
+* We use [renovate](https://www.mend.io/free-developer-tools/renovate/) to auto-update our dependencies, so we don't need to do that manually. 
+* Please use specific package dependencies like "1.3.5": With tracking the versions it could help avoid breaking things (even while we already make use of yarn.lock)
+* Please create a [Storybook](https://storybook.js.org/) story for every new or changed component.
+* We do visual regression testing on all PRs via [Chromatic](https://www.chromatic.com/library?appId=60d36a243a7c1f0049472423) - but: it only works for collaborators yet, sorry.
 
 ## Start developing:
 
