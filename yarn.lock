@@ -3952,7 +3952,7 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@gatsbyjs/parcel-namer-relative-to-cwd@^1.9.0":
+"@gatsbyjs/parcel-namer-relative-to-cwd@1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@gatsbyjs/parcel-namer-relative-to-cwd/-/parcel-namer-relative-to-cwd-1.9.0.tgz#9263de16d93463974d6fe0cd960eadca184a7d9f"
   integrity sha512-N/GUtMxnYgUdn7BeHFQ3iY4A13bN5a7Jfi+kT0fGbfTggMI3XDvIHWRoMfUDcRtUo2D/gL3sQq5gd1k8obye3A==
@@ -4678,6 +4678,14 @@
     nullthrows "^1.1.1"
     regenerator-runtime "^0.13.7"
     semver "^5.7.1"
+
+"@parcel/transformer-json@2.6.2":
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/@parcel/transformer-json/-/transformer-json-2.6.2.tgz#37a5c3f4571c81e1a5f2d0c77f266b56e3866ad5"
+  integrity sha512-QGcIIvbPF/u10ihYvQhxXqb2QMXWSzcBxJrOSIXIl74TUGrWX05D5LmjDA/rzm/n/kvRnBkFNP60R/smYb8x+Q==
+  dependencies:
+    "@parcel/plugin" "2.6.2"
+    json5 "^2.2.0"
 
 "@parcel/types@2.6.2":
   version "2.6.2"
@@ -11169,12 +11177,12 @@ gatsby-page-utils@^2.24.0:
     lodash "^4.17.21"
     micromatch "^4.0.5"
 
-gatsby-parcel-config@0.15.0:
-  version "0.15.0"
-  resolved "https://registry.yarnpkg.com/gatsby-parcel-config/-/gatsby-parcel-config-0.15.0.tgz#4dc8df4ee59c24e18e7bdf75efb39630e8636641"
-  integrity sha512-hdJVL6QNygQT8BRuhyV5YjMZz2A27gJGLH8vWJJjCIsXX2/qi5nJRaEqRI0mRccA8G8/P7ezxKQiFQSwK8RZlA==
+gatsby-parcel-config@^0.15.1:
+  version "0.15.1"
+  resolved "https://registry.yarnpkg.com/gatsby-parcel-config/-/gatsby-parcel-config-0.15.1.tgz#19c828858f0ce202104f7c182022102f2df570c5"
+  integrity sha512-UcjyqmL8oaRX27QxKb2l6OpGawCVNL27fcutbZFUIppcpenPb7TGkpvyGcjUk2n6IS4cgwjDD6fenqCwtQrCSQ==
   dependencies:
-    "@gatsbyjs/parcel-namer-relative-to-cwd" "^1.9.0"
+    "@gatsbyjs/parcel-namer-relative-to-cwd" "1.9.0"
     "@parcel/bundler-default" "2.6.2"
     "@parcel/compressor-raw" "2.6.2"
     "@parcel/namer-default" "2.6.2"
@@ -11185,6 +11193,7 @@ gatsby-parcel-config@0.15.0:
     "@parcel/resolver-default" "2.6.2"
     "@parcel/runtime-js" "2.6.2"
     "@parcel/transformer-js" "2.6.2"
+    "@parcel/transformer-json" "2.6.2"
 
 gatsby-plugin-manifest@4.24.0:
   version "4.24.0"
@@ -11401,10 +11410,10 @@ gatsby-worker@^1.24.0:
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-gatsby@4.24.1:
-  version "4.24.1"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-4.24.1.tgz#1c72fa484ed84942cdd8439a4528fcb1b6d14194"
-  integrity sha512-3+1RGtXpMmN5AQzcJHy1c0L5RDLI92KF3z97uJ3cnbw2fSr5uxHoaenMJLNIoSfNViZ5FzIoYaqWzDyJHyvNMQ==
+gatsby@4.24.2:
+  version "4.24.2"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-4.24.2.tgz#ba693cc9d3b845200d4fa277bc3a0c8a637ec61f"
+  integrity sha512-qR+KyBmGiybnfuBRzqBW1Tw9mNNDobOD/WF4Zj/vnwsk/L6FCI0UEdovTy9Bu8GmDXLxSReqnl3QQCSCo3QSYA==
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/core" "^7.15.5"
@@ -11492,7 +11501,7 @@ gatsby@4.24.1:
     gatsby-legacy-polyfills "^2.24.0"
     gatsby-link "^4.24.0"
     gatsby-page-utils "^2.24.0"
-    gatsby-parcel-config "0.15.0"
+    gatsby-parcel-config "^0.15.1"
     gatsby-plugin-page-creator "^4.24.0"
     gatsby-plugin-typescript "^4.24.0"
     gatsby-plugin-utils "^3.18.0"
