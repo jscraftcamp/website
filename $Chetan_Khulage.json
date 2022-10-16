@@ -1,0 +1,16 @@
+{
+  "name": "Chetan khulage",
+  "company": "divsec",
+  "when": {
+    "friday": true,
+    "saturday": false
+  },
+  "tags": ["Javascript", "web", "design"],
+  "vegan": true,
+  "vegetarian": true,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "i love to work and explore javascript",
+  "what_can_i_contribute": "i have fixed issue with overflowing links on homepage and added animations to links",
+  "tshirt": "M-M",
+  "twitter": "https://twitter.com/chetan_khulage"
+}
