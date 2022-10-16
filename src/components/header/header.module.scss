@@ -2,8 +2,8 @@
 
 .root {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 2em;
+  align-items: center;
+  flex-direction: column;
 }
 
 .logoWrapper {
@@ -17,6 +17,33 @@
 }
 
 .navigation {
+  margin-top: 2rem;
   display: flex;
+  justify-content: center;
   gap: 2em;
+  flex-wrap: wrap;
+}
+.link{
+  position: relative;
+  z-index: 1;
+  padding: .5rem 2rem;
+
+  &:hover{
+    color: white;
+  }
+
+  &::before{
+    content: '';
+    background-color: #ea0074;
+    height: 10%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    transition: 200ms;
+  }
+  &:hover::before{
+    height: 100%;
+  }
 }

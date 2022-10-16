@@ -1,11 +1,11 @@
-import React from "react"
+import React from "react";
 
-import Page from "../components/page"
-import Section from "../components/section"
-import PostEvent from "../sections/post-event"
-import Spacer from "../components/spacer"
-import Explanation from "../sections/explanation"
-import Sponsors from "../sections/sponsors"
+import Page from "../components/page";
+import Section from "../components/section";
+import PostEvent from "../sections/post-event";
+import Spacer from "../components/spacer";
+import Explanation from "../sections/explanation";
+import Sponsors from "../sections/sponsors";
 
 const IndexPage = () => (
   <Page title="JSCraftCamp">
@@ -18,6 +18,6 @@ const IndexPage = () => (
       <Spacer size="xl" />
     </Section>
   </Page>
-)
+);
 
-export default IndexPage
+export default IndexPage;
