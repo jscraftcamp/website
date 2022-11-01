@@ -16537,10 +16537,10 @@ rc@^1.2.7, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-d3-cloud@1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/react-d3-cloud/-/react-d3-cloud-1.0.5.tgz#84ca337e8b09e049fc22e7d4fab671115a547d3c"
-  integrity sha512-zKrJY+apmhw+J1se64vFW4Cr7y4W1sSYQLjQXHc9JaxiwhBOK1bikVui1IeOy4UHbUqis0YPQUE+9BBL4O8K9g==
+react-d3-cloud@1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/react-d3-cloud/-/react-d3-cloud-1.0.6.tgz#61bc086d2d2bd7b3ed080cb68677e97d8f9fc013"
+  integrity sha512-u9nIDUU9oSJ5RSDBJQTBuXkATiX4lsBUdhzLiKN8bKF6SbEvJU+NrI/MvERxnXegq1/2r7jwl2CUdtbdfI7Ugw==
   dependencies:
     d3-cloud "^1.2.5"
     d3-scale "^3.3.0"
