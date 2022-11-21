@@ -19,9 +19,6 @@ const Header = () => (
       </Typography>
     </div>
     <div className={style.navigation}>
-      <Typography component={Link} variant="link" to="/register">
-        Registration
-      </Typography>
       <Typography component={Link} variant="link" to="/participants">
         Participants
       </Typography>
