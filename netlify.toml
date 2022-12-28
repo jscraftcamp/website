@@ -4,8 +4,6 @@
 [build]
   command = "yarn run build"
   publish = "public"
-[build.environment]
-  NODE_VERION = "18"
 
 # Specific branch context: all deploys from this specific branch will inherit
 # these settings.
