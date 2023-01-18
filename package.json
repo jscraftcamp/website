@@ -8,7 +8,7 @@
   "dependencies": {
     "classnames": "2.3.2",
     "css-loader": "6.7.3",
-    "gatsby": "4.25.1",
+    "gatsby": "4.25.3",
     "gatsby-image": "3.11.0",
     "gatsby-plugin-manifest": "4.25.0",
     "gatsby-plugin-offline": "5.25.0",
