@@ -47,7 +47,7 @@
     "@storybook/manager-webpack5": "6.5.15",
     "@storybook/preset-scss": "1.0.3",
     "@storybook/react": "6.5.15",
-    "babel-loader": "9.1.0",
+    "babel-loader": "9.1.2",
     "babel-plugin-remove-graphql-queries": "4.25.0",
     "gatsby-plugin-netlify": "5.0.1",
     "hamjest": "3.7.3",
