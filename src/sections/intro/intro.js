@@ -15,7 +15,8 @@ import MiniHeadline from "../../components/mini-headline"
 
 const Intro = () => (
   <div className={style.root}>
-    <TextBlock headline="Welcome to JSCraftCamp 2022! 🎉">
+    <TextBlock headline="Welcome to JSCraftCamp 2023! 🎉">
+      {/*
       <MiniHeadline>When?</MiniHeadline>
       <Typography variant="subline" paragraph>
         June, 17th &amp; 18th 2022
@@ -34,6 +35,7 @@ const Intro = () => (
         <a href="/register">Register now</a> and follow us{" "}
         <a href="https://twitter.com/jscraftcamp">on twitter @JSCraftCamp!</a>
       </Typography>
+      */}
     </TextBlock>
 
     <Spacer size="xs" />
@@ -43,7 +45,7 @@ const Intro = () => (
     </div>
     <div className={style.text}>
       <Typography className={style.headline} component="h1">
-        JSCraftCamp 2022
+        JSCraftCamp 2023
       </Typography>
       <Typography variant="subline">
         Will return to Munich, this summer!
