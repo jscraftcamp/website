@@ -84,6 +84,9 @@ const Footer = () => (
             Archive
           </Typography>
           <div className={style.links}>
+            <ExternalLink href="https://web.archive.org/web/20221028190502/https://jscraftcamp.org/">
+              2022
+            </ExternalLink>
             <ExternalLink href="https://web.archive.org/web/20190706093953/http://jscraftcamp.org/">
               2019
             </ExternalLink>
