@@ -55,7 +55,9 @@ const Footer = () => (
             Sitemap
           </Typography>
           <div className={style.links}>
+            {/*
             <InternalLink to="/register">Registration</InternalLink>
+            */}
             <InternalLink to="/">Home</InternalLink>
             <InternalLink to="/sponsoring">Sponsoring</InternalLink>
             <InternalLink to="/values">Values</InternalLink>

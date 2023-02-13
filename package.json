@@ -64,7 +64,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "prebuild": "mkdir -p ./public",
-    "build": "cp CNAME public/ ; gatsby build",
+    "build": "gatsby build",
     "test": "mocha test",
     "build-storybook": "NODE_ENV=test build-storybook",
     "storybook": "NODE_ENV=test start-storybook -p 6006",
