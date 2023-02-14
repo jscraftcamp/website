@@ -9,6 +9,7 @@ import style from "./intro.module.scss"
 import logo from "../../assets/images/logo.svg"
 import twitter from "../../assets/images/twitter.svg"
 import github from "../../assets/images/github.svg"
+import discord from "../../assets/images/discord.svg"
 import skyline from "../../assets/images/skyline.svg"
 import TextBlock from "../../components/text-block"
 import MiniHeadline from "../../components/mini-headline"
@@ -54,6 +55,9 @@ const Intro = () => (
         </a>
         <a href="https://github.com/jscraftcamp/website">
           <Icon className={style.socialIcon} source={github} />
+        </a>
+        <a href="https://discord.gg/3mHhaXVEjP">
+          <Icon className={style.socialIcon} source={discord} />
         </a>
       </div>
       <Icon className={style.skyline} source={skyline} />
