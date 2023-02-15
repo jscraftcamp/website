@@ -9,6 +9,7 @@ import ParticipantCard from "../components/participant-card"
 import ParticipantWrapper from "../components/participants"
 import ParticipantsCounter from "../components/participants-counter/participants-counter"
 import TextBlock from "../components/text-block"
+import Typography from "../components/typography"
 
 export const query = graphql`
   query ParticipantData {
@@ -33,12 +34,13 @@ export const query = graphql`
 
 export default function Participants({ data }) {
   const { allParticipantsJson } = data
-  const participants = allParticipantsJson.nodes
+  // const participants = allParticipantsJson.nodes
+  const participants = []
 
   const [tagCloudEnabled, setTagCloudEnabled] = useState(false)
 
   useEffect(() => {
-    setTagCloudEnabled(true)
+    setTagCloudEnabled(false)
   })
 
   const allTags = new Map()
@@ -57,6 +59,9 @@ export default function Participants({ data }) {
     <Page title="Participants">
       <Section>
         <TextBlock headline="Participants" />
+        <Typography variant="subline">
+          The registration is not yet open.
+        </Typography>
         {tagCloudEnabled && (
           <WordCloud
             data={wordData}
@@ -68,13 +73,13 @@ export default function Participants({ data }) {
             padding={1}
           />
         )}
-        <ParticipantsCounter participants={participants} />
+        {/* <ParticipantsCounter participants={participants} />
         <Spacer size="m" />
         <ParticipantWrapper>
           {participants.map((participant) => (
             <ParticipantCard key={participant.name} data={participant} />
           ))}
-        </ParticipantWrapper>
+        </ParticipantWrapper> */}
       </Section>
     </Page>
   )
