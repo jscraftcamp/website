@@ -56,7 +56,7 @@
     "mocha": "10.2.0",
     "prettier": "2.8.4",
     "recursive-readdir-sync": "1.0.6",
-    "sass": "1.58.0"
+    "sass": "1.58.3"
   },
   "scripts": {
     "develop": "gatsby develop",
