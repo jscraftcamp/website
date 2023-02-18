@@ -20,6 +20,11 @@ jobs:
             ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Set Node.js version
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+      - run: node --version
       - run: |
           yarn --frozen-lockfile
           yarn test
