@@ -96,11 +96,11 @@ const ExplainSponsoring = () => (
 
       <Typography
         component="a"
-        href="https://github.com/orgs/jscraftcamp/projects/3"
+        href="https://github.com/orgs/jscraftcamp/projects/5"
       >
         Find all sponsoring items on GitHub:
         <br />
-        https://github.com/orgs/jscraftcamp/projects/3
+        https://github.com/orgs/jscraftcamp/projects/5
       </Typography>
     </TextBlock>
   </Section>

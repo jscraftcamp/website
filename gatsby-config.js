@@ -1,9 +1,9 @@
-const title = "JSCraftCamp - 2022 in Munich"
+const title = "JSCraftCamp - 2023 in Munich"
 
 module.exports = {
   siteMetadata: {
     title,
-    description: "Website for JSCraftCamp - 2022 in Munich",
+    description: "Website for JSCraftCamp - 2023 in Munich",
     author: "@davelosert, @rhosts, @michaelzoidl, @Narigo",
   },
   pathPrefix: "/",
