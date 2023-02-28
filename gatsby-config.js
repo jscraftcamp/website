@@ -19,7 +19,13 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-sass",
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        cssLoaderOptions: {
+          exportLocalsConvention: false,
+          namedExport: false,
+        },
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
