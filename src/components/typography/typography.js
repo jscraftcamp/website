@@ -1,5 +1,5 @@
 import React from "react"
-import style from "./typography.module.scss"
+import * as style from "./typography.module.scss"
 import cn from "classnames"
 import PropTypes from "prop-types"
 

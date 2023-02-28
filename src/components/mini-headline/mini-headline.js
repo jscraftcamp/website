@@ -1,7 +1,7 @@
 import React from "react"
 import cn from "classnames"
 import Typography from "../typography"
-import style from "./mini-headline.module.scss"
+import * as style from "./mini-headline.module.scss"
 
 const MiniHeadline = ({ children, className }) => {
   return (

@@ -2,7 +2,7 @@ import React from "react"
 
 import TextBlock from "../../components/text-block"
 
-import style from "./sponsors.module.scss"
+import * as style from "./sponsors.module.scss"
 
 const Sponsors = () => {
   const sponsors = [

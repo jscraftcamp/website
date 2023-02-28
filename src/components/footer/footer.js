@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import style from "./footer.module.scss"
+import * as style from "./footer.module.scss"
 
 import Icon from "../icon"
 import Typography from "../typography"

@@ -1,5 +1,5 @@
 import React from "react"
-import style from "./spacer.module.scss"
+import * as style from "./spacer.module.scss"
 
 import cn from "classnames"
 

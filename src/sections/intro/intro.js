@@ -4,7 +4,7 @@ import Icon from "../../components/icon"
 import Typography from "../../components/typography"
 import Spacer from "../../components/spacer"
 
-import style from "./intro.module.scss"
+import * as style from "./intro.module.scss"
 
 import logo from "../../assets/images/logo.svg"
 import twitter from "../../assets/images/twitter.svg"
