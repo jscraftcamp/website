@@ -20,14 +20,6 @@ module.exports = {
     },
     {
       resolve: "gatsby-plugin-sass",
-      options: {
-        cssLoaderOptions: {
-          esModule: true,
-          modules: {
-            namedExport: false,
-          },
-        },
-      },
     },
     {
       resolve: "gatsby-source-filesystem",
