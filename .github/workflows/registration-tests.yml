@@ -26,7 +26,7 @@ jobs:
       - name: Set Node.js version
         uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: 18
       - run: node --version
       - run: |
           yarn --frozen-lockfile
