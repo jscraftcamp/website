@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import ParticipantCardTitle from "./participant-card-title"
 import ParticipantCardReveal from "./participant-card-reveal/participant-card-reveal"
 import Typography from "../../components/typography"
-import style from "./participant-card.module.scss"
+import * as style from "./participant-card.module.scss"
 import cn from "classnames"
 
 const ParticipantCard = ({ data }) => {

@@ -1,5 +1,5 @@
 import React from "react"
-import style from "./text-block.module.scss"
+import * as style from "./text-block.module.scss"
 import Typography from "../typography"
 import cn from "classnames"
 

@@ -1,5 +1,5 @@
 import React from "react"
-import style from "./schedule.module.scss"
+import * as style from "./schedule.module.scss"
 import TextBlock from "../../components/text-block"
 import MiniHeadline from "../../components/mini-headline"
 import Row from "./row"

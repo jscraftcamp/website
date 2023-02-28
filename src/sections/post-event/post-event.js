@@ -1,6 +1,6 @@
 import React from "react"
 
-import style from "./post-event.module.scss"
+import * as style from "./post-event.module.scss"
 
 import twitter from "../../assets/images/twitter.svg"
 import github from "../../assets/images/github.svg"

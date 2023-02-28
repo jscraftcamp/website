@@ -1,6 +1,6 @@
 import React from "react"
 import Typography from "../../../components/typography"
-import style from "./rule.module.scss"
+import * as style from "./rule.module.scss"
 
 const Rule = ({ icon, text }) => {
   return (

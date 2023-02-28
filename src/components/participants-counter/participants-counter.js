@@ -1,6 +1,6 @@
 import React from "react"
 import Typography from "../typography"
-import style from "./participants-counter.module.scss"
+import * as style from "./participants-counter.module.scss"
 
 const ParticipantsCounter = ({ participants }) => {
   return (

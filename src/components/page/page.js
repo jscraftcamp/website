@@ -13,7 +13,7 @@ import "./main.css"
 import "./materialcss-global.scss"
 
 // page component styles
-import style from "./page.module.scss"
+import * as style from "./page.module.scss"
 
 const Page = ({ children, title }) => {
   const { site } = useStaticQuery(

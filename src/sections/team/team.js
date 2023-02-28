@@ -2,7 +2,7 @@ import React from "react"
 
 import data from "../../data.json"
 
-import styles from "./team.module.scss"
+import * as styles from "./team.module.scss"
 import "./team.scss"
 
 export const Team = () => (

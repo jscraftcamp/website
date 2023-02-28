@@ -1,5 +1,5 @@
 import React from "react"
-import style from "./code-of-conduct.module.scss"
+import * as style from "./code-of-conduct.module.scss"
 import Typography from "../../components/typography"
 import Section from "../../components/section"
 import TextBlock from "../../components/text-block"

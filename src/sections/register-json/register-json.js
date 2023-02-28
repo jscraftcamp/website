@@ -2,7 +2,7 @@ import React from "react"
 
 import Typography from "../../components/typography"
 
-import styles from "./register-json.module.scss"
+import * as styles from "./register-json.module.scss"
 
 export const RegisterJson = () => (
   <>

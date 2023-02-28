@@ -6,7 +6,7 @@ import Spacer from "../../components/spacer"
 import TextBlock from "../../components/text-block"
 import Typography from "../../components/typography"
 
-import style from "./explain-sponsoring.module.scss"
+import * as style from "./explain-sponsoring.module.scss"
 
 const ExplainSponsoring = () => (
   <Section className={style.root}>
