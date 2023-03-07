@@ -1,39 +1,39 @@
 import React, { useEffect, useState } from "react"
-import { graphql } from "gatsby"
+// import { graphql } from "gatsby"
 import WordCloud from "react-d3-cloud"
 
 import Page from "../components/page"
 import Section from "../components/section"
+import TextBlock from "../components/text-block"
 import Spacer from "../components/spacer"
 import ParticipantCard from "../components/participant-card"
 import ParticipantWrapper from "../components/participants"
 import ParticipantsCounter from "../components/participants-counter/participants-counter"
-import TextBlock from "../components/text-block"
-import Typography from "../components/typography"
 
-export const query = graphql`
-  query ParticipantData {
-    allParticipantsJson {
-      nodes {
-        company
-        id
-        what_can_i_contribute
-        what_is_my_connection_to_javascript
-        when {
-          friday
-          saturday
-        }
-        twitter
-        tags
-        name
-      }
-      totalCount
-    }
-  }
-`
+// Reuse when registration is open and we have the first participants
+// export const query = graphql`
+//   query ParticipantData {
+//     allParticipantsJson {
+//       nodes {
+//         company
+//         id
+//         what_can_i_contribute
+//         what_is_my_connection_to_javascript
+//         when {
+//           friday
+//           saturday
+//         }
+//         twitter
+//         tags
+//         name
+//       }
+//       totalCount
+//     }
+//   }
+// `
 
 export default function Participants({ data }) {
-  const { allParticipantsJson } = data
+  // const { allParticipantsJson } = data
   // const participants = allParticipantsJson.nodes
   const participants = []
 
@@ -59,9 +59,6 @@ export default function Participants({ data }) {
     <Page title="Participants">
       <Section>
         <TextBlock headline="Participants" />
-        <Typography variant="subline">
-          The registration is not yet open.
-        </Typography>
         {tagCloudEnabled && (
           <WordCloud
             data={wordData}
@@ -73,13 +70,13 @@ export default function Participants({ data }) {
             padding={1}
           />
         )}
-        {/* <ParticipantsCounter participants={participants} />
+        <ParticipantsCounter participants={participants} />
         <Spacer size="m" />
         <ParticipantWrapper>
           {participants.map((participant) => (
             <ParticipantCard key={participant.name} data={participant} />
           ))}
-        </ParticipantWrapper> */}
+        </ParticipantWrapper>
       </Section>
     </Page>
   )
