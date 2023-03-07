@@ -5,12 +5,13 @@ import WordCloud from "react-d3-cloud"
 import Page from "../components/page"
 import Section from "../components/section"
 import TextBlock from "../components/text-block"
-import Spacer from "../components/spacer"
-import ParticipantCard from "../components/participant-card"
-import ParticipantWrapper from "../components/participants"
-import ParticipantsCounter from "../components/participants-counter/participants-counter"
 
 // Reuse when registration is open and we have the first participants
+// import Spacer from "../components/spacer"
+// import ParticipantCard from "../components/participant-card"
+// import ParticipantWrapper from "../components/participants"
+// import ParticipantsCounter from "../components/participants-counter/participants-counter"
+
 // export const query = graphql`
 //   query ParticipantData {
 //     allParticipantsJson {
@@ -58,7 +59,7 @@ export default function Participants({ data }) {
   return (
     <Page title="Participants">
       <Section>
-        <TextBlock headline="Participants" />
+        <TextBlock headline="Participants">Registration is not open yet!</TextBlock>
         {tagCloudEnabled && (
           <WordCloud
             data={wordData}
@@ -70,13 +71,13 @@ export default function Participants({ data }) {
             padding={1}
           />
         )}
-        <ParticipantsCounter participants={participants} />
+        {/* <ParticipantsCounter participants={participants} />
         <Spacer size="m" />
         <ParticipantWrapper>
           {participants.map((participant) => (
             <ParticipantCard key={participant.name} data={participant} />
           ))}
-        </ParticipantWrapper>
+        </ParticipantWrapper> */}
       </Section>
     </Page>
   )
