@@ -1,24 +1,16 @@
 .row {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
+  gap: 3rem 4rem;
 }
-.col {
-  width: 42%;
 
-  @media (max-width: 1000px) {
-    width: 50%;
-  }
-  @media (max-width: 768px) {
-    width: 100%;
-  }
+.col {
+  display: flex;
+  align-items: center;
+  flex-basis: 300px;
 }
 
 .image {
-  background: white;
-  flex: 1 0 auto;
-  margin: 2.75rem;
-  padding: 2rem;
+  width: 100%;
 }

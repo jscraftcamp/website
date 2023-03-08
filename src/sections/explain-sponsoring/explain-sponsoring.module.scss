@@ -1,4 +1,8 @@
 .root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   text-align: center;
   max-width: 1000px;
 
@@ -7,14 +11,31 @@
     list-style: disc;
   }
 }
-.text_left {
-  text-align: left;
-}
 
 .sub_headline {
   margin: 26px 0;
 }
 
-.block {
-  text-align: justify;
+.grid {
+  max-width: 660px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  & > div {
+    flex-basis: 300px;
+    flex-grow: 1;
+    padding: 0 1rem;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: revert;
+    text-align: left;
+  }
 }
