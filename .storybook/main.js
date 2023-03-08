@@ -6,13 +6,9 @@ module.exports = {
   stories: ["../src/**/*.story.js"],
   addons: [
     "@storybook/preset-scss", // auto scss support
-    "@storybook/addon-backgrounds",
-    "@storybook/addon-controls",
-    "@storybook/addon-measure",
-    "@storybook/addon-outline",
-    "@storybook/addon-toolbars",
-    "@storybook/addon-viewport",
+    "@storybook/addon-essentials",
   ],
+  framework: "@storybook/react",
   staticDirs: ["../static"],
   webpackFinal: (config) => {
     // Transpile Gatsby module because Gatsby includes un-transpiled ES6 code.
