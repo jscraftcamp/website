@@ -113,7 +113,7 @@ const Footer = () => (
             <a className={style.tech} href="https://gatsbyjs.org">
               <Icon className={style.icon} source={gatsby} />
               <Typography variants={["inverted", "small"]}>
-                Gatsby V4
+                Gatsby V5
               </Typography>
             </a>
             {storybookChromaticEnabled && (
