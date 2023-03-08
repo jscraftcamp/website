@@ -43,7 +43,6 @@
     "gatsby-plugin-netlify": "5.1.0",
     "hamjest": "3.7.3",
     "hygen": "6.2.11",
-    "materialize-css": "1.0.0",
     "mocha": "10.2.0",
     "prettier": "2.8.4",
     "recursive-readdir-sync": "1.0.6",
