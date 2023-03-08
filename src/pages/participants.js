@@ -42,7 +42,8 @@ export default function Participants({ data }) {
 
   useEffect(() => {
     setTagCloudEnabled(false)
-  })
+    // eslint-disable react-hooks/exhaustive-deps
+  }, [])
 
   const allTags = new Map()
   participants.forEach(({ tags }) => {
@@ -59,7 +60,9 @@ export default function Participants({ data }) {
   return (
     <Page title="Participants">
       <Section>
-        <TextBlock headline="Participants">Registration is not open yet!</TextBlock>
+        <TextBlock headline="Participants">
+          Registration is not open yet!
+        </TextBlock>
         {tagCloudEnabled && (
           <WordCloud
             data={wordData}

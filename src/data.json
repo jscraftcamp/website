@@ -1,55 +1,5 @@
 {
   "pageTitle": "JSCraftCamp - 2023 in Munich",
-  "colorVoting": {
-    "active": false,
-    "url": "https://twitter.com/JSCraftCamp/status/1106878975589138434"
-  },
-  "navigationItems": {
-    "main": [
-      {
-        "url": "/",
-        "title": "Home"
-      },
-      {
-        "url": "https://github.com/orgs/jscraftcamp/projects/5",
-        "title": "Sponsoring"
-      },
-      {
-        "url": "/values",
-        "title": "Values"
-      }
-    ],
-    "archive": [
-      {
-        "url": "https://web.archive.org/web/20190706093953/http://jscraftcamp.org/",
-        "title": "2019 - Home"
-      },
-      {
-        "url": "https://web.archive.org/web/20180809182443/http://jscraftcamp.org/",
-        "title": "2018 - Home"
-      },
-      {
-        "url": "https://web.archive.org/web/20180809182443/http://jscraftcamp.org/photos2018",
-        "title": "2018 - Photos"
-      },
-      {
-        "url": "https://web.archive.org/web/20170715150754/http://jscraftcamp.org/",
-        "title": "2017 - Home"
-      },
-      {
-        "url": "https://web.archive.org/web/20170715150754/http://jscraftcamp.org/photos2017",
-        "title": "2017 - Photos"
-      },
-      {
-        "url": "https://web.archive.org/web/20161011211857/http://jscraftcamp.org/",
-        "title": "2016 - Home"
-      },
-      {
-        "url": "https://web.archive.org/web/20170827114658/http://jscraftcamp.org/photos2016",
-        "title": "2016 - Photos"
-      }
-    ]
-  },
   "theteam": [
     {
       "name": "Agnes Köhler",

@@ -2,20 +2,18 @@ import React from "react"
 import { Link } from "gatsby"
 import * as style from "./footer.module.scss"
 
-import Icon from "../icon"
-import Typography from "../typography"
-import Section from "../section"
+import Icon from "../../components/icon"
+import Typography from "../../components/typography"
+import Section from "../../components/section"
 
 import logo from "../../assets/images/logo.svg"
 import netlify from "../../assets/images/netlify.svg"
 import gatsby from "../../assets/images/gatsby.svg"
-import chromatic from "../../assets/images/chromatic.svg"
 import storybook from "../../assets/images/storybook.svg"
 
 const DEFAULT_BRANCH = "main"
 // env variable will be set by netlify while building, else use default
 const branch = process.env.BRANCH ?? DEFAULT_BRANCH
-const chromaticUrl = `https://www.chromatic.com/library?appId=60d36a243a7c1f0049472423&branch=${branch}`
 const storybookUrl = `https://${branch}--60d36a243a7c1f0049472423.chromatic.com`
 
 // set it to /false/ to disable the button and the link in the footer
@@ -113,7 +111,7 @@ const Footer = () => (
             <a className={style.tech} href="https://gatsbyjs.org">
               <Icon className={style.icon} source={gatsby} />
               <Typography variants={["inverted", "small"]}>
-                Gatsby V4
+                Gatsby V5
               </Typography>
             </a>
             {storybookChromaticEnabled && (

@@ -21,3 +21,25 @@
   word-wrap: normal;
   white-space: nowrap;
 }
+
+.the-team {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
+  grid-template-rows: repeat(auto-fit, min-content);
+  grid-gap: 1rem;
+
+  a {
+    word-wrap: normal;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+}
