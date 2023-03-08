@@ -12,10 +12,10 @@ export default {
   title: "Pages",
 }
 
-export const ImprintPage = () => <Imprint />
-export const IndexPage = () => <Index />
-export const NotFoundPage = () => <NotFound />
-export const RegisterPage = () => <Register />
-export const SponsoringPage = () => <Sponsoring />
+export const HomePage = () => <Index />
 export const TheTeamPage = () => <TheTeam />
+export const SponsoringPage = () => <Sponsoring />
+export const RegisterPage = () => <Register />
 export const ValuesPage = () => <Values />
+export const ImprintPage = () => <Imprint />
+export const NotFoundPage = () => <NotFound />
