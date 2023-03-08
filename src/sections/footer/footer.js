@@ -2,9 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import * as style from "./footer.module.scss"
 
-import Icon from "../icon"
-import Typography from "../typography"
-import Section from "../section"
+import Icon from "../../components/icon"
+import Typography from "../../components/typography"
+import Section from "../../components/section"
 
 import logo from "../../assets/images/logo.svg"
 import netlify from "../../assets/images/netlify.svg"

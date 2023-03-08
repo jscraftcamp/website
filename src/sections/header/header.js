@@ -1,8 +1,8 @@
 import React from "react"
 import * as style from "./header.module.scss"
 
-import Typography from "../typography"
-import Section from "../section"
+import Typography from "../../components/typography"
+import Section from "../../components/section"
 
 import { Link } from "gatsby"
 
