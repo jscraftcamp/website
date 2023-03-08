@@ -10,11 +10,7 @@ export const Team = () => (
       return (
         <div key={name}>
           {photo && (
-            <img
-              className={styles.img}
-              src={`/img/theteam/${photo}`}
-              alt={"member image " + name}
-            />
+            <img src={`/img/theteam/${photo}`} alt={"member image " + name} />
           )}
           <div>{name}</div>
           {email && (

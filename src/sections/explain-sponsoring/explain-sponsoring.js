@@ -17,12 +17,12 @@ const ExplainSponsoring = () => (
       <Spacer size="xs" />
     </TextBlock>
     <div className={style.grid}>
-      <div className={style.col}>
+      <div>
         <h5>You will get ...</h5>
         <ul>
           <li>
-            Get up to <strong>5 preregistered participant spots</strong> for
-            your representatives
+            Up to <strong>5 preregistered participant spots</strong> for your
+            representatives
           </li>
           <li>
             We place your <strong>logo</strong> and <strong>link</strong> on the
@@ -37,8 +37,8 @@ const ExplainSponsoring = () => (
             visible.
           </li>
           <li>
-            You can make your job ads visible for all attendees for the whole
-            time during the conference.
+            You can make your <strong>job ads</strong> visible for all attendees
+            for the whole time during the conference.
           </li>
           <li>
             Your <strong>company name</strong> will be mentioned several times
@@ -49,22 +49,25 @@ const ExplainSponsoring = () => (
             <strong>talks that are important to you</strong> to the community
           </li>
           <li>
-            Sponsors will be announced via the official JSCC{" "}
-            <strong>Twitter</strong> account
+            Sponsors will be announced via the official <strong>Twitter</strong>{" "}
+            account
           </li>
         </ul>
       </div>
-      <div className={style.col}>
+      <div>
         <h5>Why Sponsor?</h5>
         <p className={style.block}>
           The JSCraftCamp is an Open Space conference that attracts diverse
           people from the JavaScript community who really care about their
-          craft. The crowd is self selected by investing time for their own
+          craft.
+          <br /> The crowd is self selected by investing time for their own
           application (pull request). Besides developers, you will find all kind
           of people with different job roles that really care about technology
-          and improvement. You will get the chance to present your brand to
-          these 80 to 120 highly skilled individuals and show them how much you
-          care! We'll all thank you for that!
+          and improvement.
+          <br />
+          You will get the chance to present your brand to these 80 to 120
+          highly skilled individuals and show them how much you care! We'll all
+          thank you for that!
         </p>
       </div>
     </div>

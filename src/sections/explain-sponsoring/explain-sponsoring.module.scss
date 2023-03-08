@@ -12,8 +12,12 @@
   }
 }
 
+.block {
+  text-align: justify;
+}
+
 .sub_headline {
-  margin: 26px 0;
+  margin: 16px 0;
 }
 
 .grid {
@@ -26,10 +30,6 @@
     flex-basis: 300px;
     flex-grow: 1;
     padding: 0 1rem;
-  }
-
-  p {
-    text-align: left;
   }
 
   ul {
