@@ -5,6 +5,9 @@ module.exports = {
     title,
     description: "Website for JSCraftCamp - 2023 in Munich",
     author: "@davelosert, @rhosts, @michaelzoidl, @Narigo",
+    image: `/src/assets/images/logo.png`,
+    siteUrl: "https://jscraftcamp.org",
+    twitterUsername: `@jscraftcamp`,
   },
   pathPrefix: "/",
   plugins: [
