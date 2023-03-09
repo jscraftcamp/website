@@ -5,6 +5,9 @@ module.exports = {
     title,
     description: "Website for JSCraftCamp - 2023 in Munich",
     author: "@davelosert, @rhosts, @michaelzoidl, @Narigo",
+    image: "/logo.png",
+    siteUrl: "https://jscraftcamp.org",
+    twitterUsername: `@jscraftcamp`,
   },
   pathPrefix: "/",
   plugins: [
@@ -47,7 +50,7 @@ module.exports = {
         background_color: "#ececec",
         theme_color: "#ececec",
         display: "minimal-ui",
-        icon: "src/assets/images/logo.png",
+        icon: "static/img/logo.png",
       },
     },
     "gatsby-plugin-netlify",

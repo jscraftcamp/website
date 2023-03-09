@@ -24,6 +24,8 @@ const Page = ({ children, title }) => {
             title
             description
             author
+            image
+            siteUrl
           }
         }
       }
@@ -66,6 +68,10 @@ const Page = ({ children, title }) => {
           {
             name: `twitter:title`,
             content: title,
+          },
+          {
+            name: `twitter:image`,
+            content: site.siteMetadata.siteUrl + site.siteMetadata.image,
           },
           {
             name: `twitter:description`,
