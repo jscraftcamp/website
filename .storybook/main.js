@@ -11,8 +11,32 @@ module.exports = {
   framework: "@storybook/react",
   staticDirs: ["../static"],
   webpackFinal: (config) => {
-    // Transpile Gatsby module because Gatsby includes un-transpiled ES6 code.
-    config.module.rules[0].exclude = [/node_modules\/(?!(gatsby)\/)/]
+    const rules = config.module?.rules
+    if (typeof rules?.[0] === "object") {
+      // Transpile Gatsby module because Gatsby includes un-transpiled ES6 code.
+      config.module.rules[0].exclude = [/node_modules\/(?!(gatsby)\/)/]
+
+      // Replace graphql-query, see also
+      // https://github.com/gatsbyjs/gatsby/issues/26099#issuecomment-783745984
+      const useRulesZeroElement = rules[0].use[0]
+      if (
+        Array.isArray(rules[0].use) &&
+        typeof useRulesZeroElement === "object" &&
+        typeof useRulesZeroElement.options === "object"
+      ) {
+        // use babel-plugin-remove-graphql-queries to remove static queries from components when rendering in storybook
+        useRulesZeroElement.options.plugins.push([
+          require.resolve("babel-plugin-remove-graphql-queries"),
+          {
+            stage:
+              config.mode === `development` ? "develop-html" : "build-html",
+            staticQueryDir: "page-data/sq/d",
+          },
+        ])
+      }
+    }
+    /*
+     */
     // Workaround:
     // storybook handles svg with the file-loader which overrides our custom loaders, so adapt rule, to ignore svg extension:
     config.module.rules = config.module.rules.map((rule) => {
