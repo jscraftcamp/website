@@ -50,7 +50,7 @@
     "prebuild": "mkdir -p ./public",
     "build": "gatsby build",
     "test": "mocha test",
-    "build-storybook": "build-storybook",
+    "build-storybook": "STORYBOOK_BUILD=true build-storybook",
     "storybook": "STORYBOOK_BUILD=true start-storybook -p 6006",
     "prestorybook": "npm run extract-gatsby-meta-for-storybook",
     "prebuild-storybook": "npm run prestorybook",
