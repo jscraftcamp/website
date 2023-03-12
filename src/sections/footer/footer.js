@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import * as style from "./footer.module.scss"
+import convert4StorybookIfNeeded from "../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./footer.module.scss"
 
 import Icon from "../../components/icon"
 import Typography from "../../components/typography"
@@ -10,6 +11,8 @@ import logo from "../../assets/images/logo.svg"
 import netlify from "../../assets/images/netlify.svg"
 import gatsby from "../../assets/images/gatsby.svg"
 import storybook from "../../assets/images/storybook.svg"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 const DEFAULT_BRANCH = "main"
 // env variable will be set by netlify while building, else use default

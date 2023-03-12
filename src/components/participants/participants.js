@@ -1,5 +1,8 @@
 import React from "react"
-import * as style from "./participants.module.scss"
+import convert4StorybookIfNeeded from "../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./participants.module.scss"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 const Participants = ({ children }) => (
   <div className={style.wrapper}>{children}</div>

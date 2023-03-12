@@ -1,7 +1,10 @@
 import React from "react"
-import * as style from "./section.module.scss"
+import convert4StorybookIfNeeded from "../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./section.module.scss"
 
 import cn from "classnames"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 const Section = ({ className, children }) => (
   <div className={cn(style.root)}>

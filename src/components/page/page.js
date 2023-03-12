@@ -13,7 +13,10 @@ import "./main.css"
 import "./materialcss-global.scss"
 
 // page component styles
-import * as style from "./page.module.scss"
+import convert4StorybookIfNeeded from "../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./page.module.scss"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 const Page = ({ children, title }) => {
   const { site } = useStaticQuery(

@@ -2,7 +2,10 @@ import React from "react"
 
 import TextBlock from "../../components/text-block"
 
-import * as style from "./sponsors.module.scss"
+import convert4StorybookIfNeeded from "../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./sponsors.module.scss"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 const Sponsors = () => {
   const sponsors = [

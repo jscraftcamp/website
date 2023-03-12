@@ -1,8 +1,11 @@
 import React from "react"
-import * as style from "./code-of-conduct.module.scss"
+import convert4StorybookIfNeeded from "../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./code-of-conduct.module.scss"
 import Typography from "../../components/typography"
 import Section from "../../components/section"
 import TextBlock from "../../components/text-block"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 const CodeOfConduct = () => (
   <Section className={style.root}>

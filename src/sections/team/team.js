@@ -2,10 +2,13 @@ import React from "react"
 
 import data from "../../data.json"
 
-import * as styles from "./team.module.scss"
+import convert4StorybookIfNeeded from "../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./team.module.scss"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 export const Team = () => (
-  <div className={styles.theTeam}>
+  <div className={style.theteam}>
     {data.theteam.map(({ name, photo, email }) => {
       return (
         <div key={name}>
@@ -14,7 +17,7 @@ export const Team = () => (
           )}
           <div>{name}</div>
           {email && (
-            <a className={styles.mail} href={"mailto:" + email} title={email}>
+            <a className={style.mail} href={"mailto:" + email} title={email}>
               {email}
             </a>
           )}

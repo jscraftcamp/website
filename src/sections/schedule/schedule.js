@@ -1,8 +1,11 @@
 import React from "react"
-import * as style from "./schedule.module.scss"
+import convert4StorybookIfNeeded from "../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./schedule.module.scss"
 import TextBlock from "../../components/text-block"
 import MiniHeadline from "../../components/mini-headline"
 import Row from "./row"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 const Schedule = () => (
   <TextBlock headline="Schedule">

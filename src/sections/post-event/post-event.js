@@ -1,6 +1,7 @@
 import React from "react"
 
-import * as style from "./post-event.module.scss"
+import convert4StorybookIfNeeded from "../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./post-event.module.scss"
 
 import twitter from "../../assets/images/twitter.svg"
 import github from "../../assets/images/github.svg"
@@ -10,6 +11,8 @@ import Spacer from "../../components/spacer"
 import TextBlock from "../../components/text-block"
 import logo from "../../assets/images/logo.svg"
 import Typography from "../../components/typography"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 const PostEvent = () => (
   <div className={style.root}>

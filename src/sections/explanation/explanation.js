@@ -1,5 +1,6 @@
 import React from "react"
-import * as style from "./explanation.module.scss"
+import convert4StorybookIfNeeded from "../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./explanation.module.scss"
 
 import TextBlock from "../../components/text-block"
 import Typography from "../../components/typography"
@@ -8,6 +9,8 @@ import Icon from "../../components/icon"
 import code from "../../assets/images/code.svg"
 import rocket from "../../assets/images/rocket.svg"
 import camp from "../../assets/images/camp.svg"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 const Explanation = () => (
   <>

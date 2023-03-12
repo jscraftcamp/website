@@ -1,9 +1,12 @@
 import React from "react"
-import * as style from "./covid-rules.module.scss"
+import convert4StorybookIfNeeded from "../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./covid-rules.module.scss"
 import Typography from "../../components/typography"
 import Section from "../../components/section"
 import TextBlock from "../../components/text-block"
 import Rule from "./rule"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 const CovidRules = () => (
   <Section className={style.root}>
