@@ -2,15 +2,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem 4rem;
+  gap: 2rem 3rem;
 }
 
 .col {
   display: flex;
   align-items: center;
   flex-basis: 300px;
+  padding: 2rem;
+  height: 4.5rem;
+  background-color: #fff
 }
 
 .image {
-  width: 100%;
+  // avoid an unwanted tiny extra space or shift of the logo
+  // inside of the white container
+  line-height: 0;
 }

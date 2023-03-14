@@ -60,10 +60,13 @@ const Sponsors = () => {
         {sponsors.map((s, i) => {
           return (
             <div className={style.col} key={s.name}>
-              <a href={s.link} rel="noopener noreferrer" target="_blank">
-                <div className={style.image}>
-                  <img alt={s.name} src={s.src} width="100%" />
-                </div>
+              <a
+                href={s.link}
+                rel="noopener noreferrer"
+                target="_blank"
+                className={style.image}
+              >
+                <img alt={s.name} src={s.src} width="100%" />
               </a>
             </div>
           )
