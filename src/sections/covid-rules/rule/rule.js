@@ -1,6 +1,9 @@
 import React from "react"
 import Typography from "../../../components/typography"
-import * as style from "./rule.module.scss"
+import convert4StorybookIfNeeded from "../../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./rule.module.scss"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 const Rule = ({ icon, text }) => {
   return (

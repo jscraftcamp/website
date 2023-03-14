@@ -2,8 +2,11 @@ import React, { useState } from "react"
 import ParticipantCardTitle from "./participant-card-title"
 import ParticipantCardReveal from "./participant-card-reveal/participant-card-reveal"
 import Typography from "../../components/typography"
-import * as style from "./participant-card.module.scss"
+import convert4StorybookIfNeeded from "../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./participant-card.module.scss"
 import cn from "classnames"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 const ParticipantCard = ({ data }) => {
   const [revealState, setRevealState] = useState(false)

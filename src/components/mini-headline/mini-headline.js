@@ -1,7 +1,10 @@
 import React from "react"
 import cn from "classnames"
 import Typography from "../typography"
-import * as style from "./mini-headline.module.scss"
+import convert4StorybookIfNeeded from "../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./mini-headline.module.scss"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 const MiniHeadline = ({ children, className }) => {
   return (

@@ -27,7 +27,6 @@ jobs:
       - run: node --version
       - run: |
           yarn --frozen-lockfile
-          npm run build-storybook
       - uses: chromaui/action@v1
         with:
           exitOnceUploaded: true

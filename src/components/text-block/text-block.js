@@ -1,7 +1,10 @@
 import React from "react"
-import * as style from "./text-block.module.scss"
+import convert4StorybookIfNeeded from "../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./text-block.module.scss"
 import Typography from "../typography"
 import cn from "classnames"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 const TextBlock = ({
   headline,

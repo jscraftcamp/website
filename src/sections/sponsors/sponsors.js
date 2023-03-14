@@ -2,7 +2,10 @@ import React from "react"
 
 import TextBlock from "../../components/text-block"
 
-import * as style from "./sponsors.module.scss"
+import convert4StorybookIfNeeded from "../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./sponsors.module.scss"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 const Sponsors = () => {
   const sponsors = [
@@ -57,10 +60,13 @@ const Sponsors = () => {
         {sponsors.map((s, i) => {
           return (
             <div className={style.col} key={s.name}>
-              <a href={s.link} rel="noopener noreferrer" target="_blank">
-                <div className={style.image}>
-                  <img alt={s.name} src={s.src} width="100%" />
-                </div>
+              <a
+                href={s.link}
+                rel="noopener noreferrer"
+                target="_blank"
+                className={style.image}
+              >
+                <img alt={s.name} src={s.src} width="100%" />
               </a>
             </div>
           )

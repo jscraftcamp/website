@@ -1,10 +1,13 @@
 import React from "react"
-import * as style from "./header.module.scss"
+import convert4StorybookIfNeeded from "../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./header.module.scss"
 
 import Typography from "../../components/typography"
 import Section from "../../components/section"
 
 import { Link } from "gatsby"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 const Header = () => (
   <Section className={style.root}>

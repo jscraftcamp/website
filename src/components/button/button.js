@@ -1,7 +1,10 @@
 import React from "react"
-import * as style from "./button.module.scss"
+import convert4StorybookIfNeeded from "../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./button.module.scss"
 import Typography from "../typography"
 import cn from "classnames"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 const Button = ({ children, className, ...props }) => {
   return (

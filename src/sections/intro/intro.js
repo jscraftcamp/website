@@ -4,7 +4,8 @@ import Icon from "../../components/icon"
 import Typography from "../../components/typography"
 import Spacer from "../../components/spacer"
 
-import * as style from "./intro.module.scss"
+import convert4StorybookIfNeeded from "../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./intro.module.scss"
 
 import logo from "../../assets/images/logo.svg"
 import twitter from "../../assets/images/twitter.svg"
@@ -13,6 +14,8 @@ import discord from "../../assets/images/discord.svg"
 import skyline from "../../assets/images/skyline.svg"
 import TextBlock from "../../components/text-block"
 import MiniHeadline from "../../components/mini-headline"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 const Intro = () => (
   <div className={style.root}>

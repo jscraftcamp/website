@@ -1,6 +1,6 @@
 @import "~sass-mq/mq.scss";
 
-@import "src/config.scss";
+@import "../../config.scss";
 
 @mixin size($size) {
   height: $size;

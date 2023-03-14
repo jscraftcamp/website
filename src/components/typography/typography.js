@@ -1,7 +1,10 @@
 import React from "react"
-import * as style from "./typography.module.scss"
+import convert4StorybookIfNeeded from "../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./typography.module.scss"
 import cn from "classnames"
 import PropTypes from "prop-types"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 const Typography = ({
   className,

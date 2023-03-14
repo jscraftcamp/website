@@ -1,6 +1,9 @@
 import React from "react"
 import Typography from "../typography"
-import * as style from "./participants-counter.module.scss"
+import convert4StorybookIfNeeded from "../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./participants-counter.module.scss"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 const ParticipantsCounter = ({ participants }) => {
   return (

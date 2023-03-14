@@ -22,7 +22,7 @@
   white-space: nowrap;
 }
 
-.the-team {
+.theteam {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
   grid-template-rows: repeat(auto-fit, min-content);

@@ -5,7 +5,10 @@ import Spacer from "../../components/spacer"
 import TextBlock from "../../components/text-block"
 import Typography from "../../components/typography"
 
-import * as style from "./explain-sponsoring.module.scss"
+import convert4StorybookIfNeeded from "../../gatsbyStylesHandler"
+import * as gatsbyStyles from "./explain-sponsoring.module.scss"
+
+const style = convert4StorybookIfNeeded(gatsbyStyles)
 
 const ExplainSponsoring = () => (
   <Section className={style.root}>
