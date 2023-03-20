@@ -8,14 +8,33 @@
 .col {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-basis: 300px;
   padding: 2rem;
-  height: 4.5rem;
+  height: 8.5rem;
   background-color: #fff
 }
 
 .image {
   // avoid an unwanted tiny extra space or shift of the logo
   // inside of the white container
-  line-height: 0;
+//   line-height: 0;
+
+  display: flex;
+  flex-flow: column;
+  place-items: center;
+  justify-content: center;
+//   width: auto;
+
+  img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  span {
+    display: block;
+  }
 }

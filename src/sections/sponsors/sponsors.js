@@ -12,44 +12,64 @@ const Sponsors = () => {
     {
       name: "codecentric",
       src: "/img/sponsor-2022/codecentric.png",
-      link: "https://www.codecentric.de/",
+      link: "https://www.codecentric.de",
     },
     {
-      name: "Grollmus",
-      src: "/img/sponsor-2022/grollmus.png",
-      link: "https://www.grollmus.de/",
+      name: "inovex",
+      src: "/img/sponsor-2023/inovex-logo.svg",
+      link: "https://inovex.de",
     },
     {
-      name: "compose.us",
-      src: "/img/sponsor-2022/compose-us.png",
-      link: "https://www.compose.us/",
+      name: "project lary",
+      src: "/img/sponsor-2023/project-lary.svg",
+      link: "https://project-lary.com",
     },
     {
-      name: "TNG Technology consulting",
-      src: "/img/sponsor-2022/tng.png",
-      link: "https://www.tngtech.com/",
+      name: "sepp.med",
+      src: "/img/sponsor-2023/sepp-med.svg",
+      link: "https://www.seppmed.de",
     },
     {
-      name: "Peerigon",
-      src: "/img/sponsor-2022/peerigon.png",
-      link: "https://www.peerigon.com/",
+      name: "sepp.med",
+      src: "/img/sponsor-2023/typedigital.svg",
+      link: "https://typedigital.de",
     },
-    {
-      name: "Sono Motors",
-      src: "/img/sponsor-2022/sono-motors.png",
-      link: "https://sonomotors.com/",
-    },
-    {
-      name: "Instana",
-      src: "/img/sponsor-2022/instana.png",
-      link: "https://www.instana.com/",
-    },
-    {
-      name: "Method park",
-      src: "/img/sponsor-2022/method-park.png",
-      link: "https://www.instana.com/",
-    },
-  ]
+    // {
+    //   name: "Grollmus",
+    //   src: "/img/sponsor-2022/grollmus.png",
+    //   link: "https://www.grollmus.de/",
+    // },
+    // {
+    //   name: "compose.us",
+    //   src: "/img/sponsor-2022/compose-us.png",
+    //   link: "https://www.compose.us/",
+    // },
+    // {
+    //   name: "TNG Technology consulting",
+    //   src: "/img/sponsor-2022/tng.png",
+    //   link: "https://www.tngtech.com/",
+    // },
+    // {
+    //   name: "Peerigon",
+    //   src: "/img/sponsor-2022/peerigon.png",
+    //   link: "https://www.peerigon.com/",
+    // },
+    // {
+    //   name: "Sono Motors",
+    //   src: "/img/sponsor-2022/sono-motors.png",
+    //   link: "https://sonomotors.com/",
+    // },
+    // {
+    //   name: "Instana",
+    //   src: "/img/sponsor-2022/instana.png",
+    //   link: "https://www.instana.com/",
+    // },
+    // {
+    //   name: "Method park",
+    //   src: "/img/sponsor-2022/method-park.png",
+    //   link: "https://www.instana.com/",
+    // },
+  ].sort()
   return (
     <React.Fragment>
       <TextBlock
@@ -66,7 +86,8 @@ const Sponsors = () => {
                 target="_blank"
                 className={style.image}
               >
-                <img alt={s.name} src={s.src} width="100%" />
+                <img alt={s.name} src={s.src} />
+                <span>{s.link.replaceAll("https://", "")}</span>
               </a>
             </div>
           )
