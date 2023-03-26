@@ -6,15 +6,17 @@
 <div class="page">
 	<TopNavigation />
 	<div class="content">
-		<slot />
+		<div>
+			<slot />
+		</div>
 	</div>
 	<FooterNavigation />
 </div>
 
 <style>
 	.page {
-		background: linear-gradient(135deg, hsla(120, 100%, 20%, 0.1), #fff 20%),
-			linear-gradient(-45deg, hsla(120, 100%, 15%, 0.1), #fff 20%);
+		background: linear-gradient(135deg, hsla(120, 100%, 20%, 0.1), #fff 20em),
+			linear-gradient(-45deg, hsla(120, 100%, 15%, 0.1), #fff 20em);
 		display: flex;
 		flex-flow: column;
 		gap: 2em;
@@ -22,13 +24,16 @@
 	}
 
 	.content {
+		padding: 0 2rem;
+		z-index: 0;
+	}
+	
+	.content > div {
 		align-items: center;
 		display: flex;
 		flex: 1;
 		flex-flow: column;
 		margin: 0 auto;
 		max-width: var(--max-page-width);
-		padding: 0 2rem;
-		z-index: 0;
 	}
 </style>

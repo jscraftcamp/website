@@ -1,6 +1,7 @@
 <script lang="ts">
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 	import InfoBox from '../../lib/layout/InfoBox.svelte';
+	import Sponsors from './Sponsors.svelte';
 </script>
 
 <PageLayout>
@@ -66,10 +67,13 @@
 		</InfoBox>
 		<p>
 			<a href="https://github.com/orgs/jscraftcamp/projects/5" rel="external"
-				>Find all sponsoring items on GitHub:<br />https://github.com/orgs/jscraftcamp/projects/5<br
-				/>💖</a
-			>
+				>Find all sponsoring items on GitHub:<br />https://github.com/orgs/jscraftcamp/projects/5</a
+			><br />
+			💖
 		</p>
+	</section>
+	<section>
+		<Sponsors />
 	</section>
 </PageLayout>
 
