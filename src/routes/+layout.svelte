@@ -31,4 +31,7 @@
 		color: inherit;
 		text-decoration: underline;
 	}
+    :global(*) {
+        box-sizing: border-box;
+    }
 </style>
