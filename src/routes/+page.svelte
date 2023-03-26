@@ -2,7 +2,10 @@
 	import InfoBox from '../lib/layout/InfoBox.svelte';
 	import Logo from '$lib/Logo.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
-    import skyline from './skyline.svg';
+	import discord from './discord.svg';
+	import github from './github.svg';
+	import skyline from './skyline.svg';
+	import twitter from './twitter.svg';
 	import Sponsors from './sponsoring/Sponsors.svelte';
 	import WhatToExpect from './WhatYouCanExpect.svelte';
 </script>
@@ -19,7 +22,16 @@
 			>
 		</InfoBox>
 		<Logo />
-        <img src={skyline} alt="Munich skyline" />
+		<div>
+			<a href="https://twitter.com/jscraftcamp" rel="external"
+				><img src={twitter} alt="Twitter" /></a
+			>
+			<a href="https://github.com/jscraftcamp/website" rel="external"
+				><img src={github} alt="GitHub" /></a
+			>
+			<a href="https://discord.gg/3mHhaXVEjP" rel="external"><img src={discord} alt="Discord" /></a>
+		</div>
+		<img src={skyline} alt="Munich skyline" />
 		<Sponsors />
 		<WhatToExpect />
 	</section>
@@ -35,7 +47,18 @@
 		align-items: center;
 		gap: 2em;
 	}
-    img {
-        max-width: 100%;
-    }
+	div {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 1em;
+	}
+	div img {
+		height: 40px;
+		width: 40px;
+	}
+	img {
+		max-width: 100%;
+	}
 </style>

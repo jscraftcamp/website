@@ -13,6 +13,7 @@
 				<li><a href={base}>Home</a></li>
 				<li><a href="{base}/sponsoring">Sponsoring</a></li>
 				<li><a href="{base}/values">Values</a></li>
+				<li><a href="{base}/imprint">Imprint</a></li>
 				<li><a href="{base}/imprint#datenschutz">Privacy Policy</a></li>
 			</nav>
 		</section>
@@ -22,7 +23,7 @@
 				<li><a href="{base}/team">Team</a></li>
 				<li><a href="https://twitter.com/jscraftcamp" rel="external">Twitter</a></li>
 				<li><a href="https://github.com/jscraftcamp/website" rel="external">GitHub</a></li>
-				<li><a href="{base}/imprint">Imprint</a></li>
+				<li><a href="https://discord.gg/3mHhaXVEjP" rel="external">Discord</a></li>
 			</nav>
 		</section>
 		<section>
