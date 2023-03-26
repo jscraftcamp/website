@@ -6,7 +6,7 @@
 </script>
 
 <h2>What you can expect</h2>
-<div>
+<div style="--box-padding-width: 2em;">
 	<Box>
 		<article>
 			<img src={code} alt="abstract code" />

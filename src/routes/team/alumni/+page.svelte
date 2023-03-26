@@ -3,8 +3,6 @@
 </script>
 
 <PageLayout>
-	<h1>Participants</h1>
-	<p>
-		coming soon...
-	</p>
+	<h1>The Alumni</h1>
+	<p>Thank you all for the support!</p>
 </PageLayout>

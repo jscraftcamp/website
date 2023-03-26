@@ -2,6 +2,7 @@
 	import '@fontsource/poppins';
 	import '@fontsource/poppins/600.css';
 	import '@fontsource/source-sans-pro';
+	import '@fontsource/source-sans-pro/700.css';
 </script>
 
 <slot />

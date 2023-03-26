@@ -1,4 +1,8 @@
-<div>
+<script lang="ts">
+	export let style: string | undefined = undefined;
+</script>
+
+<div {style}>
 	<slot />
 </div>
 
@@ -7,7 +11,7 @@
 		position: relative;
 		background-color: var(--background-color, #fff);
 		box-sizing: border-box;
-		padding: 2em;
+		padding: var(--box-padding-width, 0);
 		position: relative;
 	}
 	div::before {

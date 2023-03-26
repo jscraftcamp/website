@@ -1,7 +1,7 @@
 <script lang="ts">
-	import InfoBox from '$lib/InfoBox.svelte';
+	import InfoBox from '../lib/layout/InfoBox.svelte';
 	import Logo from '$lib/Logo.svelte';
-	import PageLayout from '$lib/PageLayout.svelte';
+	import PageLayout from '$lib/layout/PageLayout.svelte';
     import skyline from './skyline.svg';
 	import Sponsors from './sponsoring/Sponsors.svelte';
 	import WhatToExpect from './WhatYouCanExpect.svelte';

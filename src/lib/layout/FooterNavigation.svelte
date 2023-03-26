@@ -13,7 +13,7 @@
 				<li><a href={base}>Home</a></li>
 				<li><a href="{base}/sponsoring">Sponsoring</a></li>
 				<li><a href="{base}/values">Values</a></li>
-				<li><a href="{base}/imprint">Privacy Policy</a></li>
+				<li><a href="{base}/imprint#datenschutz">Privacy Policy</a></li>
 			</nav>
 		</section>
 		<section>
@@ -84,11 +84,11 @@
 	footer > div {
 		display: flex;
 		flex-flow: row wrap;
-        justify-content: space-between;
+		justify-content: space-between;
 		gap: 2em;
-        margin: 0 auto;
+		margin: 0 auto;
 		max-width: var(--max-page-width);
-        width: 100%;
+		width: 100%;
 	}
 	section {
 		display: flex;

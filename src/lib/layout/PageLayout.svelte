@@ -1,7 +1,6 @@
 <script>
-	import { base } from '$app/paths';
-	import FooterNavigation from './layout/FooterNavigation.svelte';
-	import TopNavigation from './layout/TopNavigation.svelte';
+	import FooterNavigation from './FooterNavigation.svelte';
+	import TopNavigation from './TopNavigation.svelte';
 </script>
 
 <div class="page">
