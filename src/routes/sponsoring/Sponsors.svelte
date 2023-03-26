@@ -15,25 +15,25 @@
 			image: inovex,
 			link: 'https://inovex.de',
 			name: 'inovex',
-			sponsoring: 'Coffee'
+			sponsoring: 'Coffee / Barista'
 		},
 		{
 			image: projectLary,
 			link: 'https://project-lary.de',
 			name: 'project lary',
-			sponsoring: '?'
+			sponsoring: 'Beverages'
 		},
 		{
 			image: seppMed,
 			link: 'https://www.seppmed.de',
 			name: 'sepp.med',
-			sponsoring: '?'
+			sponsoring: 'Stickers'
 		},
 		{
 			image: typedigital,
 			link: 'https://typedigital.de',
 			name: 'typedigital',
-			sponsoring: '?'
+			sponsoring: 'Saturday Snacks'
 		}
 	];
 </script>

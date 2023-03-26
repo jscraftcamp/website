@@ -27,7 +27,7 @@
 		padding: 0 2rem;
 		z-index: 0;
 	}
-	
+
 	.content > div {
 		align-items: center;
 		display: flex;
