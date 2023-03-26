@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Box from '$lib/Box.svelte';
+	import Box from '$lib/layout/Box.svelte';
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 	import agnes from './agnes.png';

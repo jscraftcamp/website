@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Box from '$lib/Box.svelte';
+	import Box from '$lib/layout/Box.svelte';
 	import camp from './camp.svg';
 	import code from './code.svg';
 	import rocket from './rocket.svg';

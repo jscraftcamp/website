@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Box from '../Box.svelte';
+	import Box from './Box.svelte';
 
 	export let id: string | undefined = undefined;
 	export let title: string;

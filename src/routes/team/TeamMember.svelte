@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Box from '$lib/Box.svelte';
+	import Box from '$lib/layout/Box.svelte';
 	export let email: string = '';
 	export let image: string;
 	export let name: string;
