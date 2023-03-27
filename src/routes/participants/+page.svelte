@@ -1,15 +1,26 @@
 <script lang="ts">
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
-	import Participant from './Participant.svelte';
-	import type { Participant as ParticipantT } from '$lib/types';
+	import Participant from '../../lib/participants/Participant.svelte';
+	import type { Participant as ParticipantT } from '$lib/participants/types';
 
 	const participants: ParticipantT[] = [
-		// { name: 'Bernd Kaiser', tags: [] },
-		// { name: 'Wolfram', tags: [] },
-		// { name: 'Robert', tags: [] },
-		// { name: 'Somewhat Longname-Examplepersonified', tags: ['Svelte', 'React', 'TypeScript'] },
-		// { name: 'Jörn Bernhardt', tags: ['Svelte', 'React', 'TypeScript'] },
+		{
+			name: 'Jörn Bernhardt',
+			// company: 'my company',
+			when: {
+				friday: true,
+				saturday: false
+			},
+			tags: ['Svelte', 'GraphQL', 'TypeScript'],
+			vegan: false,
+			vegetarian: false,
+			allergies: '',
+			what_is_my_connection_to_javascript: '...',
+			what_can_i_contribute: '???',
+			tshirt: 'M-XL',
+			twitter: 'a'
+		}
 	];
 </script>
 

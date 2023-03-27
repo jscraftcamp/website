@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Box from '$lib/layout/Box.svelte';
-	import type { Participant } from '$lib/types';
+	import type { Participant } from '$lib/participants/types';
 
 	export let participant: Participant;
 </script>
