@@ -9,6 +9,8 @@
 	"vegan": false,
 	"vegetarian": false,
 	"allergies": "",
+	"what_is_my_connection_to_javascript": "Most of my time is coding with or transpiling into it",
+	"what_can_i_contribute": "Static pages with SvelteKit",
 	"tshirt": "M-XL",
 	"twitter": "NarigoDF"
 }
