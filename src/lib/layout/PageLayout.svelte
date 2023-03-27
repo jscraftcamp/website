@@ -24,6 +24,7 @@
 	}
 
 	.content {
+		flex: 1;
 		padding: 0 2rem;
 		z-index: 0;
 	}
@@ -31,7 +32,6 @@
 	.content > div {
 		align-items: center;
 		display: flex;
-		flex: 1;
 		flex-flow: column;
 		margin: 0 auto;
 		max-width: var(--max-page-width);
