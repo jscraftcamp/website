@@ -3,7 +3,7 @@
 # default for all branches, overriding the UI setting on netlify.com
 [build]
   command = "pnpm run build"
-  publish = "public"
+  publish = "build"
 
 # Specific branch context: all deploys from this specific branch will inherit
 # these settings.
