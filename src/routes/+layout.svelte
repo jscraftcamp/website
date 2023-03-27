@@ -26,11 +26,11 @@
 	}
 	:global(a) {
 		color: inherit;
-		text-decoration: none;
+		text-decoration: underline;
 	}
 	:global(a:hover) {
 		color: inherit;
-		text-decoration: underline;
+		text-decoration: none;
 	}
     :global(*) {
         box-sizing: border-box;

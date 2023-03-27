@@ -75,6 +75,14 @@
 </footer>
 
 <style>
+	footer :global(a) {
+		color: inherit;
+		text-decoration: none;
+	}
+	footer :global(a:hover) {
+		color: inherit;
+		text-decoration: underline;
+	}
 	footer {
 		background: var(--footer-background-color);
 		color: var(--footer-text-color);

@@ -21,12 +21,18 @@
 </header>
 
 <style>
+	header :global(a) {
+		text-decoration: none;
+	}
+	header :global(a:hover) {
+		text-decoration: underline;
+	}
+
 	header {
 		padding: 2rem 2rem 0 2rem;
 		min-width: 100%;
 		max-width: var(--max-page-width);
 	}
-
 	nav {
 		display: flex;
 		flex-flow: row wrap;
