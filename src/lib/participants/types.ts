@@ -5,7 +5,7 @@ export type Participant = {
 		friday: boolean;
 		saturday: boolean;
 	};
-	tags: string[];
+	tags: [string, ...string[]];
 	vegan: boolean;
 	vegetarian: boolean;
 	allergies?: string;

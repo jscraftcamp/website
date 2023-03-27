@@ -11,7 +11,7 @@ describe('Participants', () => {
 			for (const file of folderContent) {
 				const stats = statSync(`${PARTICIPANTS_DIRECTORY}/${file}`);
 				expect(stats.isSymbolicLink()).toBe(false);
-				expect(stats.isFile());
+				expect(stats.isFile()).toBe(true);
 				expect(file.endsWith('.json'));
 			}
 		});
@@ -96,10 +96,13 @@ describe('Participants', () => {
 			});
 
 			it('must contain tags', () => {
-				expect('tags' in person);
-				expect(Array.isArray(person.tags));
-				expect(person.tags.length > 0);
-				expect(person.tags.every((tag) => !!tag));
+				expect(person.tags, "'tags' must be included").toBeDefined();
+				expect(Array.isArray(person.tags), "'tags' must be an array of strings").toBe(true);
+				expect(person.tags.length, "'tags' should at least contain one item").toBeGreaterThan(0);
+				(person.tags as string[]).forEach((element, index) => {
+					expect(element, `'person.tags[${index}]' must be a string`).toBeTypeOf('string');
+					expect(element.trim().length, `'person.tags[${index}]' must not be empty`).toBeTruthy();
+				});
 			});
 
 			it('may contain `allergies`', () => {
