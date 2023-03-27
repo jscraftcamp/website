@@ -35,6 +35,11 @@ jobs:
         shell: bash
         run: pnpm install
 
+      - name: Run checks for Svelte
+        shell: bash
+        run: |
+          pnpm run check
+
       - name: Run tests
         shell: bash
         run: |
