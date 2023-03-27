@@ -51,7 +51,8 @@
 		display: flex;
 		flex-flow: row wrap;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		gap: 2em;
+		margin: 0 auto;
 	}
 </style>
