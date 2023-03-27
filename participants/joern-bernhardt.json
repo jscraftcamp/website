@@ -1,0 +1,14 @@
+{
+	"name": "Jörn Bernhardt",
+	"company": "compose.us",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"tags": ["Svelte", "GitHub Actions", "GraphQL", "TypeScript"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": "",
+	"tshirt": "M-XL",
+	"twitter": "NarigoDF"
+}
