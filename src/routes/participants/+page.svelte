@@ -16,7 +16,7 @@
 <PageLayout>
 	<h1>Participants</h1>
 	<section>
-		<p>Registration will open roughly 1-2 months before the event. Check back soon!</p>
+		<p>Registration will open on May 1st. Check back soon and get your GitHub account ready!</p>
 
 		<InfoBox title="What is this page about?">
 			<p>
