@@ -2,7 +2,7 @@
 	import Box from './Box.svelte';
 
 	export let id: string | undefined = undefined;
-	export let title: string;
+	export let title: string | undefined = undefined;
 </script>
 
 <section>
