@@ -3,25 +3,10 @@
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 	import Participant from '../../lib/participants/Participant.svelte';
 	import type { Participant as ParticipantT } from '$lib/participants/types';
+	import type { PageData } from './$types';
 
-	const participants: ParticipantT[] = [
-		{
-			name: 'Jörn Bernhardt',
-			// company: 'my company',
-			when: {
-				friday: true,
-				saturday: false
-			},
-			tags: ['Svelte', 'GraphQL', 'TypeScript'],
-			vegan: false,
-			vegetarian: false,
-			allergies: '',
-			what_is_my_connection_to_javascript: '...',
-			what_can_i_contribute: '???',
-			tshirt: 'M-XL',
-			twitter: 'a'
-		}
-	];
+	export let data: PageData;
+	const participants: ParticipantT[] = data.participants;
 </script>
 
 <PageLayout>
@@ -53,8 +38,8 @@
 	}
 	ul {
 		display: flex;
+		flex: 1;
 		flex-flow: row wrap;
-		align-items: stretch;
 		justify-content: space-between;
 		gap: 2em;
 		margin: 0;

@@ -1,0 +1,15 @@
+{
+  "name": "Bernd Kaiser",
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  "tags": ["SolidJS", "Tauri", "TypeScript"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": "",
+  "what_is_my_connection_to_javascript": "...",
+  "what_can_i_contribute": "???",
+  "tshirt": "M-L",
+  "twitter": "crimemp"
+}
