@@ -12,7 +12,7 @@ describe('Participants', () => {
 				const stats = statSync(`${PARTICIPANTS_DIRECTORY}/${file}`);
 				expect(stats.isSymbolicLink()).toBe(false);
 				expect(stats.isFile()).toBe(true);
-				expect(file.endsWith('.json'));
+				expect(file.endsWith('.json')).toBe(true);
 			}
 		});
 
