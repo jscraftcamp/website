@@ -3,10 +3,13 @@
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 	import Participant from '../../lib/participants/Participant.svelte';
 	import type { Participant as ParticipantT } from '$lib/participants/types';
-	import type { PageData } from './$types';
+	// TODO enable next few lines on May 1st
+	// import type { PageData } from './$types';
 
-	export let data: PageData;
-	const participants: ParticipantT[] = data.participants;
+	// export let data: PageData;
+	// const participants: ParticipantT[] = data.participants;
+	// TODO remove next line on May 1st
+	const participants: ParticipantT[] = [];
 </script>
 
 <PageLayout>
