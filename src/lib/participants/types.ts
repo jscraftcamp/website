@@ -10,7 +10,7 @@ export type Participant = {
 	vegetarian: boolean;
 	allergies?: string;
 	what_is_my_connection_to_javascript: string;
-	what_can_i_contribute: string;
+	what_can_i_contribute?: string;
 	tshirt?: `${'W' | 'M'}-${'S' | 'M' | 'L' | 'XL' | 'XXL'}`;
 	twitter?: string;
 };

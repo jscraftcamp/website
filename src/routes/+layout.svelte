@@ -2,8 +2,17 @@
 	import '@fontsource/poppins';
 	import '@fontsource/poppins/600.css';
 	import '@fontsource/source-sans-pro';
+	import '@fontsource/source-sans-pro/600.css';
 	import '@fontsource/source-sans-pro/700.css';
 </script>
+
+<svelte:head>
+	<title>JSCraftCamp</title>
+	<meta
+		name="description"
+		content="JSCraftCamp is a free open space / barcamp in Munich with focus on JavaScript."
+	/>
+</svelte:head>
 
 <slot />
 
@@ -11,7 +20,7 @@
 	:root {
 		--footer-background-color: #000;
 		--footer-text-color: #fff;
-        --max-page-width: 66rem;
+		--max-page-width: 66rem;
 	}
 	:global(html, body) {
 		font-family: 'Source Sans Pro', sans-serif;
@@ -32,7 +41,12 @@
 		color: inherit;
 		text-decoration: none;
 	}
-    :global(*) {
-        box-sizing: border-box;
-    }
+	:global(code) {
+		background: #0001;
+		border: 1px solid #0003;
+		padding: 2px;
+	}
+	:global(*) {
+		box-sizing: border-box;
+	}
 </style>

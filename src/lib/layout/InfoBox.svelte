@@ -8,7 +8,9 @@
 <section>
 	<Box style="--box-padding-width: 2em;">
 		<div class="inner">
-			<h2 {id}>{title}</h2>
+			<h2 {id}>
+				{#if title !== undefined}{title}{/if}
+			</h2>
 			<div class="content">
 				<slot />
 			</div>

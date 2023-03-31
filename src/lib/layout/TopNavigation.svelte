@@ -10,13 +10,16 @@
 		<div class="menu-icon">+</div></label
 	>
 	<nav>
-		<li class="home">
-			<a href="{base}/"><img src={logo} alt="JSCraftCamp" /> JSCraftCamp</a>
-		</li>
-		<li class="mobile-home"><a href="{base}/">Home</a></li>
-		<li><a href="{base}/participants/">Participants</a></li>
-		<li><a href="{base}/sponsoring/">Sponsoring</a></li>
-		<li><a href="{base}/values/">Values</a></li>
+		<ul>
+			<li class="home">
+				<a href="{base}/"><img src={logo} alt="JSCraftCamp" /> JSCraftCamp</a>
+			</li>
+			<li class="mobile-home"><a href="{base}/">Home</a></li>
+			<li><a href="{base}/registration/">Registration</a></li>
+			<li><a href="{base}/participants/">Participants</a></li>
+			<li><a href="{base}/sponsoring/">Sponsoring</a></li>
+			<li><a href="{base}/values/">Values</a></li>
+		</ul>
 	</nav>
 </header>
 
@@ -40,6 +43,9 @@
 		gap: 2em;
 		margin: 0 auto;
 		max-width: var(--max-page-width);
+	}
+	nav > ul {
+		display: contents;
 	}
 	input {
 		display: none;
@@ -84,7 +90,7 @@
 		transition: rotate 500ms;
 	}
 
-	@media screen and (max-width: 36em) {
+	@media screen and (max-width: 44em) {
 		label {
 			display: flex;
 		}

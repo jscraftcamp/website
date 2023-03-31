@@ -10,65 +10,73 @@
 		<section>
 			<h3>Sitemap</h3>
 			<nav>
-				<li><a href={base}>Home</a></li>
-				<li><a href="{base}/sponsoring">Sponsoring</a></li>
-				<li><a href="{base}/values">Values</a></li>
-				<li><a href="{base}/imprint">Imprint</a></li>
-				<li><a href="{base}/imprint#datenschutz">Privacy Policy</a></li>
+				<ul>
+					<li><a href="{base}/">Home</a></li>
+					<li><a href="{base}/sponsoring">Sponsoring</a></li>
+					<li><a href="{base}/values">Values</a></li>
+					<li><a href="{base}/imprint">Imprint</a></li>
+					<li><a href="{base}/imprint#datenschutz">Privacy Policy</a></li>
+				</ul>
 			</nav>
 		</section>
 		<section>
 			<h3>Get in touch</h3>
 			<nav>
-				<li><a href="{base}/team">Team</a></li>
-				<li><a href="https://twitter.com/jscraftcamp" rel="external">Twitter</a></li>
-				<li><a href="https://github.com/jscraftcamp/website" rel="external">GitHub</a></li>
-				<li><a href="https://discord.gg/3mHhaXVEjP" rel="external">Discord</a></li>
+				<ul>
+					<li><a href="{base}/team">Team</a></li>
+					<li><a href="https://twitter.com/jscraftcamp" rel="external">Twitter</a></li>
+					<li><a href="https://github.com/jscraftcamp/website" rel="external">GitHub</a></li>
+					<li><a href="https://discord.gg/3mHhaXVEjP" rel="external">Discord</a></li>
+				</ul>
 			</nav>
 		</section>
 		<section>
 			<h3>Archive</h3>
 			<nav>
-				<li>
-					<a
-						href="https://web.archive.org/web/20221028190502/https://jscraftcamp.org/"
-						rel="external">2022</a
-					>
-				</li>
-				<li>
-					<a
-						href="https://web.archive.org/web/20190706093953/http://jscraftcamp.org/"
-						rel="external">2019</a
-					>
-				</li>
-				<li>
-					<a
-						href="https://web.archive.org/web/20180809182443/http://jscraftcamp.org/"
-						rel="external">2018</a
-					>
-				</li>
-				<li>
-					<a
-						href="https://web.archive.org/web/20170715150754/http://jscraftcamp.org:80/"
-						rel="external">2017</a
-					>
-				</li>
-				<li>
-					<a
-						href="https://web.archive.org/web/20161011211857/http://jscraftcamp.org:80/"
-						rel="external">2016</a
-					>
-				</li>
+				<ul>
+					<li>
+						<a
+							href="https://web.archive.org/web/20221028190502/https://jscraftcamp.org/"
+							rel="external">2022</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://web.archive.org/web/20190706093953/http://jscraftcamp.org/"
+							rel="external">2019</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://web.archive.org/web/20180809182443/http://jscraftcamp.org/"
+							rel="external">2018</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://web.archive.org/web/20170715150754/http://jscraftcamp.org:80/"
+							rel="external">2017</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://web.archive.org/web/20161011211857/http://jscraftcamp.org:80/"
+							rel="external">2016</a
+						>
+					</li>
+				</ul>
 			</nav>
 		</section>
 		<section>
 			<h3>Hosted on</h3>
 			<nav>
-				<li>
-					<a href="https://www.netlify.com/" rel="external"
-						><img src={netlify} alt="Netlify logo" /><span>Netlify</span></a
-					>
-				</li>
+				<ul>
+					<li>
+						<a href="https://www.netlify.com/" rel="external"
+							><img src={netlify} alt="Netlify logo" /><span>Netlify</span></a
+						>
+					</li>
+				</ul>
 			</nav>
 		</section>
 	</div>
@@ -111,6 +119,9 @@
 		display: flex;
 		flex-flow: column;
 		gap: 1em;
+	}
+	nav > ul {
+		display: contents;
 	}
 	li {
 		list-style: none;
