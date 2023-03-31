@@ -1,15 +1,15 @@
 {
-  "name": "Joern Bernhardt",
-  "when": {
-    "friday": true,
-    "saturday": true
-  },
-  "tags": ["Svelte", "GraphQL", "TypeScript"],
-  "vegan": false,
-  "vegetarian": false,
-  "allergies": "",
-  "what_is_my_connection_to_javascript": "...",
-  "what_can_i_contribute": "???",
-  "tshirt": "M-XL",
-  "twitter": "NarigoDF"
+	"name": "Joern Bernhardt",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"tags": ["Svelte", "GraphQL", "TypeScript"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": "",
+	"what_is_my_connection_to_javascript": "...",
+	"what_can_i_contribute": "???",
+	"tshirt": "M-XL",
+	"twitter": "NarigoDF"
 }

@@ -6,6 +6,7 @@
 
 <PageLayout>
 	<h1>Registration</h1>
+	<h2>Registration will open on May 1st, 2023.</h2>
 	<section>
 		<InfoBox title="Registration process">
 			<p>
@@ -35,9 +36,7 @@
     "vegetarian": true/false,
     "allergies": "... (optional)",
     "what_is_my_connection_to_javascript": "Say something about you and JS ...",
-    "what_can_i_contribute": "How can you contribute to the event? 
-        If you don't know yet, 
-        feel free to give it some thought ...",
+    "what_can_i_contribute": "How can you contribute to the event? If you don't know yet, feel free to give it some thought ...",
     "tshirt": "W-S",
     "twitter": "handle (optional)"
 }`}</pre>
@@ -60,10 +59,10 @@
 				<dt class="mandatory">tags</dt>
 				<dd>Share what you think is important, use at least one tag. (Array of strings)</dd>
 				<dt class="mandatory">vegan</dt>
-				<dd>Just for planning: Let us know if you are a vegan** (Boolean value)<sup>2</sup></dd>
+				<dd>Just for planning: Let us know if you are a vegan (Boolean value)<sup>2</sup></dd>
 				<dt class="mandatory">vegetarian</dt>
 				<dd>
-					Just for planning: Let us know if you are a vegetarian** (Boolean value)<sup>2</sup>
+					Just for planning: Let us know if you are a vegetarian (Boolean value)<sup>2</sup>
 				</dd>
 				<dt class="optional">allergies</dt>
 				<dd>Tell us if you have any special dietary requirements<sup>2</sup></dd>
