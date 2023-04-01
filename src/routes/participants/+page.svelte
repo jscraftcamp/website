@@ -4,19 +4,22 @@
 	import Participant from '../../lib/participants/Participant.svelte';
 	import type { Participant as ParticipantT } from '$lib/participants/types';
 	import { base } from '$app/paths';
-	// TODO enable next few lines on May 1st
-	// import type { PageData } from './$types';
+	import type { PageData } from './$types';
+	import { isRegistrationOpen } from '$lib/participants/registration';
 
-	// export let data: PageData;
-	// const participants: ParticipantT[] = data.participants;
-	// TODO remove next line on May 1st
-	const participants: ParticipantT[] = [];
+	export let data: PageData;
+
+	const participants: ParticipantT[] = isRegistrationOpen() ? data.participants : [];
 </script>
 
 <PageLayout>
 	<h1>Participants</h1>
 	<section>
-		<p>Registration will open on May 1st. Check back soon and get your GitHub account ready!</p>
+		{#if !isRegistrationOpen()}
+			<p>
+				Registration will open on May 1st, 2023. Get your GitHub account ready and check back soon!
+			</p>
+		{/if}
 
 		<InfoBox title="What is this page about?">
 			<p>
@@ -36,11 +39,13 @@
 			<p>There are no participants registered yet.</p>
 		{/if}
 
-		<InfoBox title="Not seeing yourself on the list?">
-			If you can't find yourself on the list of participants, but you want to join, check out our <a
-				href="{base}/registration">how to register</a
-			> page.
-		</InfoBox>
+		{#if isRegistrationOpen()}
+			<InfoBox title="Not seeing yourself on the list?">
+				If you can't find yourself on the list of participants, but you want to join, check out our <a
+					href="{base}/registration">how to register</a
+				> page.
+			</InfoBox>
+		{/if}
 	</section>
 </PageLayout>
 

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
-	import Logo from './Logo.svelte';
+	import Logo from '$lib/layout/Logo.svelte';
 	import discord from './discord.svg';
 	import github from './github.svg';
 	import skyline from './skyline.svg';
@@ -21,7 +21,7 @@
 				rel="external">August-Everding-Str 20, 81671 München</a
 			>
 		</InfoBox>
-		<Logo />
+		<Logo style="max-width: 100%;" />
 		<div>
 			<a href="https://twitter.com/jscraftcamp" rel="external"
 				><img src={twitter} alt="Twitter" /></a

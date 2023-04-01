@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import logo from './logo.svg';
+	import Logo from './Logo.svelte';
 	import netlify from './netlify.svg';
 </script>
 
 <footer>
 	<div>
-		<img src={logo} alt="JSCraftCamp 2023 logo" />
+		<Logo style="max-width: 6em;" />
 		<section>
 			<h3>Sitemap</h3>
 			<nav>
@@ -130,8 +130,5 @@
 		display: flex;
 		align-items: center;
 		gap: 1em;
-	}
-	img {
-		max-width: 6em;
 	}
 </style>
