@@ -5,19 +5,58 @@
 	import type { Participant as ParticipantT } from '$lib/participants/types';
 	import { base } from '$app/paths';
 	import type { PageData } from './$types';
-	import { isRegistrationOpen } from '$lib/participants/registration';
+	import {
+		isRegistrationOpen,
+		registrationOpensAt,
+		timeLeft
+	} from '$lib/participants/registration';
+	import { writable } from 'svelte/store';
+	import { onMount } from 'svelte';
 
 	export let data: PageData;
 
 	const participants: ParticipantT[] = isRegistrationOpen() ? data.participants : [];
+
+	const canRegister = writable<boolean>(isRegistrationOpen());
+	const countdown = writable<string>(isRegistrationOpen() ? 'NOW' : 'soon');
+
+	const updateCountdown = () => {
+		$canRegister = isRegistrationOpen();
+
+		if ($canRegister) {
+			return;
+		}
+
+		const now = +new Date();
+		const { days, hours, minutes, seconds } = timeLeft(now, registrationOpensAt);
+		const timeAsStringArray = [
+			days > 0 ? `${days} days` : '',
+			hours > 0 ? `${hours} hours` : '',
+			minutes > 0 ? `${minutes} minutes` : '',
+			seconds > 0 ? `${seconds} seconds` : ''
+		].filter((s) => s !== '');
+
+		$countdown =
+			timeAsStringArray.length > 1
+				? `in ${timeAsStringArray.slice(0, -1).join(', ')} and ${
+						timeAsStringArray[timeAsStringArray.length - 1]
+				  }`
+				: timeAsStringArray.length === 1
+				? `in ${timeAsStringArray[0]}`
+				: 'NOW';
+		setTimeout(updateCountdown, 1000);
+	};
+	updateCountdown();
 </script>
 
 <PageLayout>
 	<h1>Participants</h1>
 	<section>
-		{#if !isRegistrationOpen()}
+		{#if !$canRegister}
 			<p>
-				Registration will open on May 1st, 2023. Get your GitHub account ready and check back soon!
+				Registration will open on May 1st, 2023. Get your GitHub account ready and check back <strong
+					>{$countdown}</strong
+				>!
 			</p>
 		{/if}
 
@@ -39,7 +78,7 @@
 			<p>There are no participants registered yet.</p>
 		{/if}
 
-		{#if isRegistrationOpen()}
+		{#if $canRegister}
 			<InfoBox title="Not seeing yourself on the list?">
 				If you can't find yourself on the list of participants, but you want to join, check out our <a
 					href="{base}/registration">how to register</a
