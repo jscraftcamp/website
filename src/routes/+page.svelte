@@ -42,8 +42,8 @@
 
 	<section>
 		<InfoBox title="When?">
-			<p>It will take place on June 30th & July 1st, 2023.</p>
-			<p>The registration opens on May 1st, 2023. {@html $countdown}</p>
+			<p>June 30th & July 1st, 2023.</p>
+			<p>Registration opens on May 1st, 2023. {@html $countdown}</p>
 		</InfoBox>
 		<InfoBox title="Where?">
 			codecentric offices Munich, <a
