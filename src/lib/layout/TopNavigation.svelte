@@ -1,22 +1,26 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import logo from './logo.svg';
+	import { isRegistrationOpen } from '$lib/participants/registration';
+	import Logo from './Logo.svelte';
 </script>
 
 <header>
 	<input id="navbar-open" type="checkbox" />
 	<label for="navbar-open"
-		><img src={logo} alt="JSCraftCamp" /> <span>JSCraftCamp</span>
+		><Logo style="max-height: 1em;" /> <span>JSCraftCamp</span>
 		<div class="menu-icon">+</div></label
 	>
 	<nav>
-		<li class="home">
-			<a href="{base}/"><img src={logo} alt="JSCraftCamp" /> JSCraftCamp</a>
-		</li>
-		<li class="mobile-home"><a href="{base}/">Home</a></li>
-		<li><a href="{base}/participants/">Participants</a></li>
-		<li><a href="{base}/sponsoring/">Sponsoring</a></li>
-		<li><a href="{base}/values/">Values</a></li>
+		<ul>
+			<li class="home">
+				<a href="{base}/"><Logo style="max-height: 1em;" /> JSCraftCamp</a>
+			</li>
+			<li class="mobile-home"><a href="{base}/">Home</a></li>
+			{#if isRegistrationOpen()}<li><a href="{base}/registration/">Registration</a></li>{/if}
+			<li><a href="{base}/participants/">Participants</a></li>
+			<li><a href="{base}/sponsoring/">Sponsoring</a></li>
+			<li><a href="{base}/values/">Values</a></li>
+		</ul>
 	</nav>
 </header>
 
@@ -41,11 +45,11 @@
 		margin: 0 auto;
 		max-width: var(--max-page-width);
 	}
+	nav > ul {
+		display: contents;
+	}
 	input {
 		display: none;
-	}
-	img {
-		max-height: 1em;
 	}
 	li {
 		list-style: none;
@@ -84,7 +88,7 @@
 		transition: rotate 500ms;
 	}
 
-	@media screen and (max-width: 36em) {
+	@media screen and (max-width: 44em) {
 		label {
 			display: flex;
 		}

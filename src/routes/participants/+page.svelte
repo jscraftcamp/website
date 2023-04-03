@@ -3,31 +3,62 @@
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 	import Participant from '../../lib/participants/Participant.svelte';
 	import type { Participant as ParticipantT } from '$lib/participants/types';
+	import { base } from '$app/paths';
+	import type { PageData } from './$types';
+	import {
+		isRegistrationOpen,
+		registrationOpensAt,
+		timeLeft
+	} from '$lib/participants/registration';
+	import { writable } from 'svelte/store';
+	import { onMount } from 'svelte';
 
-	const participants: ParticipantT[] = [
-		{
-			name: 'Jörn Bernhardt',
-			// company: 'my company',
-			when: {
-				friday: true,
-				saturday: false
-			},
-			tags: ['Svelte', 'GraphQL', 'TypeScript'],
-			vegan: false,
-			vegetarian: false,
-			allergies: '',
-			what_is_my_connection_to_javascript: '...',
-			what_can_i_contribute: '???',
-			tshirt: 'M-XL',
-			twitter: 'a'
+	export let data: PageData;
+
+	const participants: ParticipantT[] = isRegistrationOpen() ? data.participants : [];
+
+	const canRegister = writable<boolean>(isRegistrationOpen());
+	const countdown = writable<string>(isRegistrationOpen() ? 'NOW' : 'soon');
+
+	const updateCountdown = () => {
+		$canRegister = isRegistrationOpen();
+
+		if ($canRegister) {
+			return;
 		}
-	];
+
+		const now = +new Date();
+		const { days, hours, minutes, seconds } = timeLeft(now, registrationOpensAt);
+		const timeAsStringArray = [
+			days > 0 ? `${days} days` : '',
+			hours > 0 ? `${hours} hours` : '',
+			minutes > 0 ? `${minutes} minutes` : '',
+			seconds > 0 ? `${seconds} seconds` : ''
+		].filter((s) => s !== '');
+
+		$countdown =
+			timeAsStringArray.length > 1
+				? `in ${timeAsStringArray.slice(0, -1).join(', ')} and ${
+						timeAsStringArray[timeAsStringArray.length - 1]
+				  }`
+				: timeAsStringArray.length === 1
+				? `in ${timeAsStringArray[0]}`
+				: 'NOW';
+		setTimeout(updateCountdown, 1000);
+	};
+	updateCountdown();
 </script>
 
 <PageLayout>
 	<h1>Participants</h1>
 	<section>
-		<p>Registration will open on May 1st. Check back soon and get your GitHub account ready!</p>
+		{#if !$canRegister}
+			<p>
+				Registration will open on May 1st, 2023. Get your GitHub account ready and check back <strong
+					>{$countdown}</strong
+				>!
+			</p>
+		{/if}
 
 		<InfoBox title="What is this page about?">
 			<p>
@@ -37,11 +68,23 @@
 			<p>This allows participants to find like-minded people and lets them connect.</p>
 		</InfoBox>
 
-		<ul>
-			{#each participants as participant}
-				<li><Participant {participant} /></li>
-			{/each}
-		</ul>
+		{#if participants.length > 0}
+			<ul>
+				{#each participants as participant}
+					<li><Participant {participant} /></li>
+				{/each}
+			</ul>
+		{:else}
+			<p>There are no participants registered yet.</p>
+		{/if}
+
+		{#if $canRegister}
+			<InfoBox title="Not seeing yourself on the list?">
+				If you can't find yourself on the list of participants, but you want to join, check out our <a
+					href="{base}/registration">how to register</a
+				> page.
+			</InfoBox>
+		{/if}
 	</section>
 </PageLayout>
 
@@ -53,8 +96,8 @@
 	}
 	ul {
 		display: flex;
+		flex: 1;
 		flex-flow: row wrap;
-		align-items: stretch;
 		justify-content: space-between;
 		gap: 2em;
 		margin: 0;
