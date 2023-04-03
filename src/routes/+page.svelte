@@ -5,16 +5,17 @@
 	import Logo from '$lib/layout/Logo.svelte';
 	import discord from './discord.svg';
 	import github from './github.svg';
+	import linkedIn from './linked-in.png';
 	import skyline from './skyline.svg';
 	import twitter from './twitter.svg';
 	import Sponsors from './sponsoring/Sponsors.svelte';
 	import WhatToExpect from './WhatYouCanExpect.svelte';
-	import { eventStartsAt, timeLeft } from '$lib/participants/registration';
+	import { registrationOpensAt, timeLeft } from '$lib/participants/registration';
 
 	const countdown = writable<string>('');
 	const updateCountdown = () => {
 		const now = +new Date();
-		const { days, hours, minutes, seconds } = timeLeft(now, eventStartsAt);
+		const { days, hours, minutes, seconds } = timeLeft(now, registrationOpensAt);
 		const timeAsStringArray = [
 			days > 0 ? `${days} days` : '',
 			hours > 0 ? `${hours} hours` : '',
@@ -24,11 +25,11 @@
 
 		$countdown =
 			timeAsStringArray.length > 1
-				? `That's in ${timeAsStringArray.slice(0, -1).join(', ')} and ${
+				? `That's in <strong>${timeAsStringArray.slice(0, -1).join(', ')} and ${
 						timeAsStringArray[timeAsStringArray.length - 1]
-				  }.`
+				  }</strong>.`
 				: timeAsStringArray.length === 1
-				? `Only ${timeAsStringArray[0]} left!`
+				? `Only <strong>${timeAsStringArray[0]}</strong> left!`
 				: '';
 
 		setTimeout(updateCountdown, 1000);
@@ -40,7 +41,10 @@
 	<h1>Welcome to JSCraftCamp 2023! 🎉</h1>
 
 	<section>
-		<InfoBox title="When?">June 30th & July 1st, 2023. Registration will open on May 1st, 2023. {$countdown}</InfoBox>
+		<InfoBox title="When?">
+			<p>It will take place on June 30th & July 1st, 2023.</p>
+			<p>The registration opens on May 1st, 2023. {@html $countdown}</p>
+		</InfoBox>
 		<InfoBox title="Where?">
 			codecentric offices Munich, <a
 				href="https://www.ecosia.org/search?method=index&q=August-Everding-Str+20+81671+M%C3%BCnchen"
@@ -54,6 +58,10 @@
 			>
 			<a href="https://github.com/jscraftcamp/website" rel="external"
 				><img src={github} alt="GitHub" /></a
+			>
+			<a
+				href="https://www.linkedin.com/events/jscraftcamp2023-jscc237033512998556028929/comments/"
+				rel="external"><img src={linkedIn} alt="LinkedIn" height="128" width="128" /></a
 			>
 			<a href="https://discord.gg/3mHhaXVEjP" rel="external"><img src={discord} alt="Discord" /></a>
 		</div>
