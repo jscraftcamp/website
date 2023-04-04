@@ -51,6 +51,22 @@
 	<h1>Welcome to JSCraftCamp 2023! 🎉</h1>
 
 	<section>
+		<InfoBox>
+			<p>
+				... a
+				<a href="https://en.wikipedia.org/wiki/Unconference#Barcamp" rel="external"
+					>BarCamp / OpenSpace / Unconference</a
+				> event for JavaScript enthusiasts of all levels. BarCamps and OpenSpaces are participant-driven
+				conferences where attendees create the schedule and lead discussions, making it a truly community-driven
+				experience.
+			</p>
+			<p>
+				JSCraftCamp provides a platform for JavaScript enthusiasts to network and participate in
+				workshops, similar to the <a href="https://www.socrates-conference.de/" rel="external"
+					>SoCraTes conference</a
+				>.
+			</p>
+		</InfoBox>
 		<InfoBox title="When?">
 			<p>June 30th & July 1st, 2023.</p>
 			{#if !$canRegister}
@@ -65,7 +81,7 @@
 				rel="external">August-Everding-Str 20, 81671 München</a
 			>
 		</InfoBox>
-		<Logo style="max-width: 100%;" />
+		<Logo animateYears style="max-width: 100%;" />
 		<div>
 			<a href="https://twitter.com/jscraftcamp" rel="external"
 				><img src={twitter} alt="Twitter" /></a
