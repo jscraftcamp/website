@@ -15,7 +15,7 @@
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write ."
 	},
-	"packageManager": "pnpm@8.1.0",
+	"packageManager": "pnpm@8.1.1",
 	"devDependencies": {
 		"@fontsource/poppins": "4.5.10",
 		"@fontsource/source-sans-pro": "4.5.11",
