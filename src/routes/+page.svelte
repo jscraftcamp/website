@@ -10,11 +10,21 @@
 	import twitter from './twitter.svg';
 	import Sponsors from './sponsoring/Sponsors.svelte';
 	import WhatToExpect from './WhatYouCanExpect.svelte';
-	import { registrationOpensAt, timeLeft } from '$lib/participants/registration';
+	import {
+		isRegistrationOpen,
+		registrationOpensAt,
+		timeLeft
+	} from '$lib/participants/registration';
+	import { base } from '$app/paths';
 
 	const countdown = writable<string>('');
+	const canRegister = writable<boolean>(isRegistrationOpen());
 	const updateCountdown = () => {
 		const now = +new Date();
+		if (registrationOpensAt <= now) {
+			$canRegister = true;
+			return;
+		}
 		const { days, hours, minutes, seconds } = timeLeft(now, registrationOpensAt);
 		const timeAsStringArray = [
 			days > 0 ? `${days} days` : '',
@@ -43,7 +53,11 @@
 	<section>
 		<InfoBox title="When?">
 			<p>June 30th & July 1st, 2023.</p>
-			<p>Registration opens on May 1st, 2023. {@html $countdown}</p>
+			{#if !$canRegister}
+				<p>Registration opens on May 1st, 2023. {@html $countdown}</p>
+			{:else}
+				<p><a href="{base}/registration">Registration is open!</a></p>
+			{/if}
 		</InfoBox>
 		<InfoBox title="Where?">
 			codecentric offices Munich, <a
