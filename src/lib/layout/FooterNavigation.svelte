@@ -35,34 +35,19 @@
 			<nav>
 				<ul>
 					<li>
-						<a
-							href="https://web.archive.org/web/20221028190502/https://jscraftcamp.org/"
-							rel="external">2022</a
-						>
+						<a href="{base}/events/2022">2022</a>
 					</li>
 					<li>
-						<a
-							href="https://web.archive.org/web/20190706093953/http://jscraftcamp.org/"
-							rel="external">2019</a
-						>
+						<a href="{base}/events/2019">2019</a>
 					</li>
 					<li>
-						<a
-							href="https://web.archive.org/web/20180809182443/http://jscraftcamp.org/"
-							rel="external">2018</a
-						>
+						<a href="{base}/events/2018">2018</a>
 					</li>
 					<li>
-						<a
-							href="https://web.archive.org/web/20170715150754/http://jscraftcamp.org:80/"
-							rel="external">2017</a
-						>
+						<a href="{base}/events/2017">2017</a>
 					</li>
 					<li>
-						<a
-							href="https://web.archive.org/web/20161011211857/http://jscraftcamp.org:80/"
-							rel="external">2016</a
-						>
+						<a href="{base}/events/2016">2016</a>
 					</li>
 				</ul>
 			</nav>

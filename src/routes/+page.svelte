@@ -8,7 +8,7 @@
 	import linkedIn from './linked-in.png';
 	import skyline from './skyline.svg';
 	import twitter from './twitter.svg';
-	import Sponsors from './sponsoring/Sponsors.svelte';
+	import Sponsors from './sponsoring/Sponsors2023.svelte';
 	import WhatToExpect from './WhatYouCanExpect.svelte';
 	import {
 		isRegistrationOpen,
