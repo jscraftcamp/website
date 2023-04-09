@@ -9,10 +9,10 @@ devDependencies:
     version: 4.5.11
   '@sveltejs/adapter-static':
     specifier: 2.0.1
-    version: 2.0.1(@sveltejs/kit@1.14.0)
+    version: 2.0.1(@sveltejs/kit@1.15.2)
   '@sveltejs/kit':
-    specifier: 1.14.0
-    version: 1.14.0(svelte@3.57.0)(vite@4.2.1)
+    specifier: 1.15.2
+    version: 1.15.2(svelte@3.57.0)(vite@4.2.1)
   '@typescript-eslint/eslint-plugin':
     specifier: 5.57.0
     version: 5.57.0(@typescript-eslint/parser@5.57.0)(eslint@8.38.0)(typescript@5.0.3)
@@ -359,16 +359,16 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@sveltejs/adapter-static@2.0.1(@sveltejs/kit@1.14.0):
+  /@sveltejs/adapter-static@2.0.1(@sveltejs/kit@1.15.2):
     resolution: {integrity: sha512-o5/q3YwD/ErxYCFlK1v3ydvldyNKk1lh3oeyxn4mhz+Pkbx/uuxhzmbOpytTlp5aVqNHDVsb04xadUzOFCDDzw==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.14.0(svelte@3.57.0)(vite@4.2.1)
+      '@sveltejs/kit': 1.15.2(svelte@3.57.0)(vite@4.2.1)
     dev: true
 
-  /@sveltejs/kit@1.14.0(svelte@3.57.0)(vite@4.2.1):
-    resolution: {integrity: sha512-4e/cZT0z4IppEkqNvMrurGz6VE1gScukFU7XqwTL/yrGJGXHqS9D7RvsOcE1hASsgrMu6w/fKTIhxT5oN0K1Jw==}
+  /@sveltejs/kit@1.15.2(svelte@3.57.0)(vite@4.2.1):
+    resolution: {integrity: sha512-rLNxZrjbrlPf8AWW8GAU4L/Vvu17e9v8EYl7pUip7x72lTft7RcxeP3z7tsrHpMSBBxC9o4XdKzFvz1vMZyXZw==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
@@ -389,7 +389,7 @@ packages:
       sirv: 2.0.2
       svelte: 3.57.0
       tiny-glob: 0.2.9
-      undici: 5.21.0
+      undici: 5.20.0
       vite: 4.2.1(@types/node@18.15.3)
     transitivePeerDependencies:
       - supports-color
@@ -1962,8 +1962,8 @@ packages:
     resolution: {integrity: sha512-MvlCc4GHrmZdAllBc0iUDowff36Q9Ndw/UzqmEKyrfSzokTd9ZCy1i+IIk5hrYKkjoYVQyNbrw7/F8XJ2rEwTg==}
     dev: true
 
-  /undici@5.21.0:
-    resolution: {integrity: sha512-HOjK8l6a57b2ZGXOcUsI5NLfoTrfmbOl90ixJDl0AEFG4wgHNDQxtZy15/ZQp7HhjkpaGlp/eneMgtsu1dIlUA==}
+  /undici@5.20.0:
+    resolution: {integrity: sha512-J3j60dYzuo6Eevbawwp1sdg16k5Tf768bxYK4TUJRH7cBM4kFCbf3mOnM/0E3vQYXvpxITbbWmBafaDbxLDz3g==}
     engines: {node: '>=12.18'}
     dependencies:
       busboy: 1.6.0
