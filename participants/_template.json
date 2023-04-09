@@ -1,16 +1,40 @@
 {
-	"name": "My Name",
-	"company": "my company",
+	// The schema which is used for validation (see https://json-schema.org/) (required)
+	"$schema": "./_schema.json",
+	// your name / nickname (required)
+	"name": "John Doe",
+	// optional company name (required)
+	"company": "ACME",
+	// either both days or at least one day has to be set to true
 	"when": {
+		// 2023-06-30
 		"friday": true,
+		// 2023-07-01
 		"saturday": false
 	},
+	// if you are willing to take session notes and publish them to github (required)
+	"iCanTakeNotesDuringSessions": true,
+	// your current interests (JS and in general) (required)
 	"tags": ["ReScript", "Svelte", "Zustand", "GraphQL"],
+	// if you only eat vegan food (optional)
 	"vegan": false,
-	"vegetarian": false,
-	"allergies": "",
-	"what_is_my_connection_to_javascript": "...",
-	"what_can_i_contribute": "???",
-	"tshirt": "/^(W|M)-(S|M|L|XL)$/",
-	"twitter": ""
+	// if you only eat vegan or vegetarian food (optional)
+	"vegetarian": true,
+	// what you cannot eat or drink (optional)
+	"allergies": ["Gluten", "Peanuts"],
+	// tell us a few words how JavaScript affects you (required)
+	"whatIsMyConnectionToJavascript": "...",
+	// what can you contribute to the bar camp (required)
+	"whatCanIContribute": "???",
+	// if you want a T-Shirt we need your size and variant preference (optional)
+	"tShirt": {
+		// S | M | L | XL | XXL
+		"size": "S",
+		// fitted (also known as waist cut or women variant) or regular
+		"type": "fitted"
+	},
+	// your Twitter handle (must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$) (optional)
+	"twitter": "yourhandle",
+	// your Mastodon handle (must be a a valid email prefixed with an @, e.g: @handle@your-mastodon-instance.social) (optional)
+	"mastodon": "@handle@your-mastodon-instance.social"
 }
