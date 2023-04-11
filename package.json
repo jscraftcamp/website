@@ -19,7 +19,7 @@
 	"devDependencies": {
 		"@fontsource/poppins": "4.5.10",
 		"@fontsource/source-sans-pro": "4.5.11",
-		"@sveltejs/adapter-static": "2.0.1",
+		"@sveltejs/adapter-static": "2.0.2",
 		"@sveltejs/kit": "1.15.2",
 		"@typescript-eslint/eslint-plugin": "5.57.0",
 		"@typescript-eslint/parser": "5.57.0",
