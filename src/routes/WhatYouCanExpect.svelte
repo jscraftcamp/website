@@ -68,7 +68,6 @@
 		gap: 2em;
 	}
 	img {
-		height: 8em;
-		width: auto;
+		max-width: 100%;
 	}
 </style>

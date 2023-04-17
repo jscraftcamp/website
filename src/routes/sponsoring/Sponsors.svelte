@@ -73,7 +73,11 @@
 	a {
 		background-color: #fff;
 		box-sizing: border-box;
-		display: block;
+		display: flex;
+		flex: 1 0 auto;
+		align-items: center;
+		justify-content: center;
+		max-width: 14em;
 		position: relative;
 		padding: 2em;
 	}
@@ -94,15 +98,16 @@
 		height: 100%;
 	}
 	.image {
-		display: grid;
-		flex: 1;
-		place-items: center;
+		display: flex;
+		flex: 1 0 auto;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
 	}
 	img {
 		display: block;
-		max-height: 6em;
-		max-width: 10em;
-		width: 100%;
+		min-width: 100%;
+		max-width: min(100%, 10em);
 	}
 	span {
 		align-self: flex-end;
