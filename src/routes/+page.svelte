@@ -51,7 +51,7 @@
 	<h1>Welcome to JSCraftCamp 2023! 🎉</h1>
 
 	<section>
-		<InfoBox>
+		<InfoBox title="JSCraftCamp is ...">
 			<p>
 				... a
 				<a href="https://en.wikipedia.org/wiki/Unconference#Barcamp" rel="external"
