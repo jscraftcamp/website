@@ -42,7 +42,7 @@ describe('Participants', async () => {
 				let error: string | null = null;
 				try {
 					await _parseParticipantJson(participantFile);
-				} catch (err: any) {
+				} catch (err) {
 					error = (err as Error).message;
 					console.error(error);
 				}
