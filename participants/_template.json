@@ -35,6 +35,6 @@
 	},
 	// your Twitter handle (must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$) (optional)
 	"twitter": "yourhandle",
-	// your Mastodon handle (must be a a valid email prefixed with an @, e.g: @handle@your-mastodon-instance.social) (optional)
-	"mastodon": "@handle@your-mastodon-instance.social"
+	// your Mastodon URL (optional)
+	"mastodon": "https://mastodontech.de/@yourhandle"
 }

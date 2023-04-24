@@ -72,7 +72,7 @@
 				"mastodon": {
 					"anyOf": [
 						{
-							"allOf": [{ "type": "string", "pattern": "^\\@" }]
+							"allOf": [{ "type": "string" }]
 						},
 						{ "type": "null" }
 					]
