@@ -21,7 +21,7 @@ describe('Participants', async () => {
 			expect(nonJsonFiles.length).toBe(0);
 		});
 
-		it('contains only _schema.json & _template.json starting with a _', () => {
+		it('contains only _template.json starting with a _', () => {
 			const underscoreFiles = folderContent.flatMap((dirent) => {
 				if (!dirent.name.startsWith('_')) {
 					return [];
@@ -31,7 +31,6 @@ describe('Participants', async () => {
 			});
 
 			expect(underscoreFiles).toContain('_template.json');
-			expect(underscoreFiles).toContain('_schema.json');
 		});
 	});
 

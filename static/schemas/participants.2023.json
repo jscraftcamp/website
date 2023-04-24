@@ -1,33 +1,19 @@
 {
-	"$id": "https://jscraftcamp.org/schemas/participants.2023.json",
 	"$ref": "#/definitions/participantSchema",
-	"$schema": "http://json-schema.org/draft-07/schema#",
 	"definitions": {
 		"participantSchema": {
 			"type": "object",
 			"properties": {
-				"$schema": {
-					"type": "string",
-					"enum": ["./_schema.json", "https://jscraftcamp.org/schemas/participants.2023.json"]
-				},
 				"name": { "type": "string", "minLength": 2 },
-				"company": {
-					"anyOf": [{ "type": "string", "minLength": 2 }, { "type": "null" }]
-				},
+				"company": { "anyOf": [{ "type": "string", "minLength": 2 }, { "type": "null" }] },
 				"when": {
 					"type": "object",
-					"properties": {
-						"friday": { "type": ["boolean", "null"] },
-						"saturday": { "type": ["boolean", "null"] }
-					},
+					"properties": { "friday": { "type": "boolean" }, "saturday": { "type": "boolean" } },
+					"required": ["friday", "saturday"],
 					"additionalProperties": false
 				},
 				"iCanTakeNotesDuringSessions": { "type": "boolean" },
-				"tags": {
-					"type": "array",
-					"items": { "type": "string" },
-					"minItems": 1
-				},
+				"tags": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
 				"vegan": { "type": ["boolean", "null"] },
 				"vegetarian": { "type": ["boolean", "null"] },
 				"allergies": {
@@ -36,26 +22,15 @@
 						{ "type": "null" }
 					]
 				},
-				"whatIsMyConnectionToJavascript": {
-					"type": "string",
-					"minLength": 3,
-					"maxLength": 200
-				},
-				"whatCanIContribute": {
-					"type": "string",
-					"minLength": 3,
-					"maxLength": 200
-				},
+				"whatIsMyConnectionToJavascript": { "type": "string", "minLength": 3, "maxLength": 200 },
+				"whatCanIContribute": { "type": "string", "minLength": 3, "maxLength": 200 },
 				"tShirt": {
 					"anyOf": [
 						{
 							"type": "object",
 							"properties": {
 								"type": { "type": "string", "enum": ["fitted", "regular"] },
-								"size": {
-									"type": "string",
-									"enum": ["S", "M", "L", "XL", "XXL"]
-								}
+								"size": { "type": "string", "enum": ["S", "M", "L", "XL", "XXL"] }
 							},
 							"required": ["type", "size"],
 							"additionalProperties": false
@@ -69,17 +44,9 @@
 						{ "type": "null" }
 					]
 				},
-				"mastodon": {
-					"anyOf": [
-						{
-							"allOf": [{ "type": "string", "pattern": "^\\@" }]
-						},
-						{ "type": "null" }
-					]
-				}
+				"mastodon": { "anyOf": [{ "type": "string", "minLength": 1 }, { "type": "null" }] }
 			},
 			"required": [
-				"$schema",
 				"name",
 				"when",
 				"iCanTakeNotesDuringSessions",
@@ -89,5 +56,6 @@
 			],
 			"additionalProperties": false
 		}
-	}
+	},
+	"$schema": "http://json-schema.org/draft-07/schema#"
 }

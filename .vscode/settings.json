@@ -6,10 +6,8 @@
 	},
 	"json.schemas": [
 		{
-			"fileMatch": ["**/participants/*.json"],
-			"schema": {
-				"allowTrailingCommas": true
-			}
+			"fileMatch": ["/participants/*.json"],
+			"url": "./static/schemas/participants.2023.json"
 		}
 	],
 	"files.associations": {
