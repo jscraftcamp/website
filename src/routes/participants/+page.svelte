@@ -2,7 +2,7 @@
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 	import Participant from '../../lib/participants/Participant.svelte';
-	import type { Participant as ParticipantT } from '$lib/participants/types';
+	import type { Participant as ParticipantT } from '$lib/participants/ParticipantSchema';
 	import { base } from '$app/paths';
 	import type { PageData } from './$types';
 	import {
@@ -11,7 +11,6 @@
 		timeLeft
 	} from '$lib/participants/registration';
 	import { writable } from 'svelte/store';
-	import { onMount } from 'svelte';
 
 	export let data: PageData;
 
