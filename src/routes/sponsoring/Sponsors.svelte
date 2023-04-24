@@ -1,6 +1,7 @@
 <script lang="ts">
 	import codecentric from './sponsors-2023/codecentric.png';
 	import inovex from './sponsors-2023/inovex-logo.svg';
+	import jambit from './sponsors-2023/jambit.svg';
 	import projectLary from './sponsors-2023/project-lary.svg';
 	import seppMed from './sponsors-2023/sepp-med.svg';
 	import typedigital from './sponsors-2023/typedigital.svg';
@@ -16,6 +17,12 @@
 			link: 'https://inovex.de',
 			name: 'inovex',
 			sponsoring: 'Coffee / Barista'
+		},
+		{
+			image: jambit,
+			link: 'https://jambit.com',
+			name: 'jambit',
+			sponsoring: 'Friday Lunch'
 		},
 		{
 			image: projectLary,
@@ -66,7 +73,11 @@
 	a {
 		background-color: #fff;
 		box-sizing: border-box;
-		display: block;
+		display: flex;
+		flex: 1 0 auto;
+		align-items: center;
+		justify-content: center;
+		max-width: 14em;
 		position: relative;
 		padding: 2em;
 	}
@@ -87,15 +98,16 @@
 		height: 100%;
 	}
 	.image {
-		display: grid;
-		flex: 1;
-		place-items: center;
+		display: flex;
+		flex: 1 0 auto;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
 	}
 	img {
 		display: block;
-		max-height: 6em;
-		max-width: 10em;
-		width: 100%;
+		min-width: 100%;
+		max-width: min(100%, 10em);
 	}
 	span {
 		align-self: flex-end;
