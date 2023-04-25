@@ -1,6 +1,4 @@
 {
-	// The schema which is used for validation (see https://json-schema.org/) (required)
-	"$schema": "./_schema.json",
 	// your name / nickname (required)
 	"name": "John Doe",
 	// optional company name (required)
