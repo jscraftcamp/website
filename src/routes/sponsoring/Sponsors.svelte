@@ -26,7 +26,7 @@
 		},
 		{
 			image: projectLary,
-			link: 'https://project-lary.de',
+			link: 'https://project-lary.com',
 			name: 'project lary',
 			sponsoring: 'Beverages'
 		},
