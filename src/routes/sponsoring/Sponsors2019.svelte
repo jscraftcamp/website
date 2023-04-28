@@ -22,44 +22,38 @@
 		{
 			image: codecentric,
 			link: 'https://www.codecentric.de/',
-			name: 'codecentric',
-			sponsoring: '?'
+			name: 'codecentric'
 		},
-		{ image: peerigon, link: 'https://peerigon.com/', name: 'Peerigon', sponsoring: '?' },
+		{ image: peerigon, link: 'https://peerigon.com/', name: 'Peerigon' },
 		{
 			image: entwicklerstube,
 			link: 'https://entwicklerstube.com/',
-			name: 'Entwicklerstube',
-			sponsoring: '?'
+			name: 'Entwicklerstube'
 		},
 		{
 			image: sinnerschrader,
 			link: 'https://sinnerschrader.com/',
-			name: 'Sinnerschrader',
-			sponsoring: '?'
+			name: 'Sinnerschrader'
 		},
 		{
 			image: methodpark,
 			link: 'https://www.methodpark.com/',
-			name: 'Method Park',
-			sponsoring: '?'
+			name: 'Method Park'
 		},
-		{ image: cioplenu, link: 'https://cioplenu.com/', name: 'cioplenu', sponsoring: '?' },
-		{ image: jambit, link: 'https://www.jambit.com/', name: 'jambit', sponsoring: '?' },
+		{ image: cioplenu, link: 'https://cioplenu.com/', name: 'cioplenu' },
+		{ image: jambit, link: 'https://www.jambit.com/', name: 'jambit' },
 		{
 			image: tng,
 			link: 'https://www.tngtech.com/',
-			name: 'TNG Technology Consulting',
-			sponsoring: '?'
+			name: 'TNG Technology Consulting'
 		},
-		{ image: consol, link: 'https://github.com/ConSol', name: 'consol', sponsoring: '?' },
+		{ image: consol, link: 'https://github.com/ConSol', name: 'consol' },
 		{
 			image: hetzner,
 			link: 'https://github.com/hetznercloud',
-			name: 'Hetzner Cloud',
-			sponsoring: '?'
+			name: 'Hetzner Cloud'
 		},
-		{ image: datev, link: 'https://www.datev.de/', name: 'Datev', sponsoring: '?' }
+		{ image: datev, link: 'https://www.datev.de/', name: 'Datev' }
 	];
 </script>
 

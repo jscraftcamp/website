@@ -22,39 +22,34 @@
 		{
 			image: sinnerschrader,
 			link: 'https://sinnerschrader.com/',
-			name: 'Sinnerschrader',
-			sponsoring: '?'
+			name: 'Sinnerschrader'
 		},
-		{ image: trustyou, link: 'https://www.trustyou.com/', name: 'Trust You', sponsoring: '?' },
+		{ image: trustyou, link: 'https://www.trustyou.com/', name: 'Trust You' },
 		{
 			image: codecentric,
 			link: 'https://www.codecentric.de/',
-			name: 'codecentric',
-			sponsoring: '?'
+			name: 'codecentric'
 		},
 		{
 			image: mercateo,
 			link: 'http://www.mercateo.com/corporate/',
-			name: 'Mercateo',
-			sponsoring: '?'
+			name: 'Mercateo'
 		},
-		{ image: tng, link: 'https://www.tngtech.com/', name: 'TNG', sponsoring: '?' },
+		{ image: tng, link: 'https://www.tngtech.com/', name: 'TNG' },
 		{
 			image: holidaycheck,
 			link: 'https://holidaycheck.de/',
-			name: 'HolidayCheck',
-			sponsoring: '?'
+			name: 'HolidayCheck'
 		},
-		{ image: peerigon, link: 'https://peerigon.com/', name: 'Peerigon', sponsoring: '?' },
-		{ image: wunder, link: 'https://wunder.io/', name: 'Wunder.io', sponsoring: '?' },
+		{ image: peerigon, link: 'https://peerigon.com/', name: 'Peerigon' },
+		{ image: wunder, link: 'https://wunder.io/', name: 'Wunder.io' },
 		{
 			image: jskongress,
 			link: 'https://2017.js-kongress.de/',
-			name: 'JSKongress',
-			sponsoring: '?'
+			name: 'JSKongress'
 		},
-		{ image: campudus, link: 'http://campudus.com/', name: 'Campudus', sponsoring: '?' },
-		{ image: jambit, link: 'https://www.jambit.com/', name: 'Jambit', sponsoring: '?' }
+		{ image: campudus, link: 'http://campudus.com/', name: 'Campudus' },
+		{ image: jambit, link: 'https://www.jambit.com/', name: 'Jambit' }
 	];
 </script>
 

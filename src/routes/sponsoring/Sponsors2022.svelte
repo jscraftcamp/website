@@ -15,18 +15,22 @@
 			name: 'codecentric',
 			sponsoring: 'Location'
 		},
-		{ image: grollmus, link: 'https://www.grollmus.de/', name: 'Grollmus', sponsoring: '?' },
-		{ image: composeus, link: 'https://www.compose.us/', name: 'compose.us', sponsoring: '?' },
+		{ image: grollmus, link: 'https://www.grollmus.de/', name: 'Grollmus', sponsoring: 'Lunch' },
+		{ image: composeus, link: 'https://www.compose.us/', name: 'compose.us', sponsoring: 'Snacks' },
 		{
 			image: tng,
 			link: 'https://www.tngtech.com/',
-			name: 'TNG Technology Consulting',
-			sponsoring: '?'
+			name: 'TNG Technology Consulting'
 		},
-		{ image: peerigon, link: 'https://www.peerigon.com/', name: 'Peerigon', sponsoring: '?' },
-		{ image: sonomotors, link: 'https://sonomotors.com/', name: 'Sono Motors', sponsoring: '?' },
-		{ image: instana, link: 'https://www.instana.com/', name: 'Instana', sponsoring: '?' },
-		{ image: methodpark, link: 'https://www.instana.com/', name: 'Method Park', sponsoring: '?' }
+		{
+			image: peerigon,
+			link: 'https://www.peerigon.com/',
+			name: 'Peerigon',
+			sponsoring: 'Coffee / Barista'
+		},
+		{ image: sonomotors, link: 'https://sonomotors.com/', name: 'Sono Motors' },
+		{ image: instana, link: 'https://www.instana.com/', name: 'Instana' },
+		{ image: methodpark, link: 'https://www.instana.com/', name: 'Method Park' }
 	];
 </script>
 

@@ -19,37 +19,33 @@
 			name: 'Virtual Identity',
 			sponsoring: 'Location'
 		},
-		{ image: jambit, link: 'https://www.jambit.com/', name: 'jambit', sponsoring: '?' },
-		{ image: netcentric, link: 'https://netcentric.biz/', name: 'netcentric', sponsoring: '?' },
-		{ image: peerigon, link: 'https://peerigon.com/', name: 'Peerigon', sponsoring: '?' },
-		{ image: methodpark, link: 'https://www.methodpark.de/', name: 'Method Park', sponsoring: '?' },
+		{ image: jambit, link: 'https://www.jambit.com/', name: 'jambit' },
+		{ image: netcentric, link: 'https://netcentric.biz/', name: 'netcentric' },
+		{ image: peerigon, link: 'https://peerigon.com/', name: 'Peerigon' },
+		{ image: methodpark, link: 'https://www.methodpark.de/', name: 'Method Park' },
 		{
 			image: tngtech,
 			link: 'https://www.tngtech.com/',
-			name: 'TNG Technology Consulting',
-			sponsoring: '?'
+			name: 'TNG Technology Consulting'
 		},
 		{
 			image: codecentric,
 			link: 'https://www.codecentric.de/',
-			name: 'codecentric',
-			sponsoring: '?'
+			name: 'codecentric'
 		},
 		{
 			image: entwicklerstube,
 			link: 'https://entwicklerstube.com/',
-			name: 'Entwicklerstube',
-			sponsoring: '?'
+			name: 'Entwicklerstube'
 		},
-		{ image: cioplenu, link: 'https://cioplenu.com/', name: 'cioplenu', sponsoring: '?' },
-		{ image: futurice, link: 'https://www.futurice.com/', name: 'Futurice', sponsoring: '?' },
+		{ image: cioplenu, link: 'https://cioplenu.com/', name: 'cioplenu' },
+		{ image: futurice, link: 'https://www.futurice.com/', name: 'Futurice' },
 		{
 			image: pro7sat1,
 			link: 'http://tech.prosiebensat1.com/',
-			name: 'ProSiebenSat.1 Media SE',
-			sponsoring: '?'
+			name: 'ProSiebenSat.1 Media SE'
 		},
-		{ image: mayflower, link: 'https://www.mayflower.de/', name: 'Mayflower', sponsoring: '?' }
+		{ image: mayflower, link: 'https://www.mayflower.de/', name: 'Mayflower' }
 	];
 </script>
 

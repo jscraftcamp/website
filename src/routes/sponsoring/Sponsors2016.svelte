@@ -12,44 +12,37 @@
 		{
 			image: atoss,
 			link: 'https://www.atoss.com/',
-			name: 'Atoss',
-			sponsoring: '?'
+			name: 'Atoss'
 		},
 		{
 			image: codecentric,
 			link: 'https://www.codecentric.de/',
-			name: 'codecentric',
-			sponsoring: '?'
+			name: 'codecentric'
 		},
 		{
 			image: gutefrage,
 			link: 'http://www.gutefrage.net/',
-			name: 'gutefrage.net',
-			sponsoring: '?'
+			name: 'gutefrage.net'
 		},
 		{
 			image: innoq,
 			link: 'https://www.innoq.com/',
-			name: 'innoQ',
-			sponsoring: '?'
+			name: 'innoQ'
 		},
 		{
 			image: scandio,
 			link: 'https://www.scandio.de/',
-			name: 'scandio Software & Consulting',
-			sponsoring: '?'
+			name: 'scandio Software & Consulting'
 		},
 		{
 			image: simplabs,
 			link: 'http://simplabs.com/',
-			name: 'simplabs',
-			sponsoring: '?'
+			name: 'simplabs'
 		},
 		{
 			image: tng,
 			link: 'http://www.tngtech.com/',
-			name: 'TNG Technology Consulting',
-			sponsoring: '?'
+			name: 'TNG Technology Consulting'
 		},
 		{
 			image: vi,
