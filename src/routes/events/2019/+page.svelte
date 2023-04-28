@@ -1,4 +1,5 @@
 <script>
+	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import Sponsors2019 from '../../sponsoring/Sponsors2019.svelte';
 	import EventLayout from '../EventLayout.svelte';
 </script>
@@ -9,16 +10,18 @@
 	where="Virtual Identity"
 	year="2019"
 >
-	<p>
-		This event was facilitated by Cecilia Maria Zannini - <a
-			href="https://connexxo.com/"
-			rel="external">Connexxo</a
-		>.
-	</p>
-	<p>
-		Check out the session notes at <a href="https://notes2019.jscraftcamp.org/" rel="external"
-			>notes2019.jscraftcamp.org</a
-		>
-	</p>
+	<InfoBox>
+		<p>
+			This event was facilitated by Cecilia Maria Zannini - <a
+				href="https://connexxo.com/"
+				rel="external">Connexxo</a
+			>.
+		</p>
+		<p>
+			Check out the session notes at <a href="https://notes2019.jscraftcamp.org/" rel="external"
+				>notes2019.jscraftcamp.org</a
+			>
+		</p>
+	</InfoBox>
 	<Sponsors2019 />
 </EventLayout>

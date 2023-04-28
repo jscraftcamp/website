@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let title: string;
-	export let sponsors: { image: string; link: string; name: string; sponsoring: string }[] = [];
+	export let sponsors: { image: string; link: string; name: string; sponsoring?: string }[] = [];
 </script>
 
 <h2>{title}</h2>
@@ -10,6 +10,7 @@
 			<div class="box">
 				<div class="image"><img src={sponsor.image} alt={sponsor.name} /></div>
 				<div class="name"><span>{sponsor.name}</span></div>
+				{#if sponsor.sponsoring}<div class="sponsoring">{sponsor.sponsoring}</div>{/if}
 			</div>
 		</a>
 	{/each}
@@ -62,6 +63,19 @@
 		align-items: center;
 		justify-content: center;
 		width: 100%;
+	}
+	.sponsoring {
+		display: none;
+		position: absolute;
+		inset: 0;
+	}
+	a:hover .sponsoring {
+		background: linear-gradient(82deg, #000c 2em, #0006 calc(100% - 2em), #0000);
+		color: #fff;
+		display: flex;
+		align-items: flex-end;
+		text-align: start;
+		padding: 2em;
 	}
 	img {
 		display: block;
