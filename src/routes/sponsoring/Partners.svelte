@@ -1,15 +1,27 @@
 <script lang="ts">
-	export let title: string;
-	export let sponsors: { image: string; link: string; name: string; sponsoring: string }[] = [];
+	import socrates from './partners/socrates.png';
+	import frontmuc from './partners/munich-frontend-developers.webp';
+	const partners = [
+		{
+			image: frontmuc,
+			link: 'https://www.meetup.com/de-DE/munich-frontend-developers/',
+			name: 'Munich Frontend Developers'
+		},
+		{
+			image: socrates,
+			link: 'https://www.socrates-conference.de/',
+			name: 'SoCraTes'
+		}
+	];
 </script>
 
-<h2>{title}</h2>
+<h2>Our partner conferences</h2>
 <section>
-	{#each sponsors as sponsor}
-		<a href={sponsor.link} rel="external">
+	{#each partners as partner}
+		<a href={partner.link} rel="external">
 			<div class="box">
-				<div class="image"><img src={sponsor.image} alt={sponsor.name} /></div>
-				<div class="name"><span>{sponsor.name}</span></div>
+				<div class="image"><img src={partner.image} alt={partner.name} /></div>
+				<div class="name"><span>{partner.name}</span></div>
 			</div>
 		</a>
 	{/each}
