@@ -1,6 +1,7 @@
 <script lang="ts">
 	import codecentric from './sponsors-2023/codecentric.png';
 	import inovex from './sponsors-2023/inovex-logo.svg';
+	import jambit from './sponsors-2023/jambit.svg';
 	import peerigon from './sponsors-2023/peerigon.svg';
 	import projectLary from './sponsors-2023/project-lary.svg';
 	import seppMed from './sponsors-2023/sepp-med.svg';
@@ -19,6 +20,12 @@
 			link: 'https://inovex.de',
 			name: 'inovex',
 			sponsoring: 'Snacks and more'
+		},
+		{
+			image: jambit,
+			link: 'https://jambit.com',
+			name: 'jambit',
+			sponsoring: 'Friday Lunch'
 		},
 		{
 			image: peerigon,
