@@ -16,6 +16,7 @@
 		timeLeft
 	} from '$lib/participants/registration';
 	import { base } from '$app/paths';
+	import Partners from './sponsoring/Partners.svelte';
 
 	const countdown = writable<string>('');
 	const canRegister = writable<boolean>(isRegistrationOpen());
@@ -97,6 +98,7 @@
 		</div>
 		<img src={skyline} alt="Munich skyline" />
 		<Sponsors />
+		<Partners />
 		<WhatToExpect />
 	</section>
 </PageLayout>
