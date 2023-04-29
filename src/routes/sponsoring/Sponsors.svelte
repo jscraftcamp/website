@@ -1,57 +1,16 @@
 <script lang="ts">
-	import codecentric from './sponsors-2023/codecentric.png';
-	import inovex from './sponsors-2023/inovex-logo.svg';
-	import jambit from './sponsors-2023/jambit.svg';
-	import projectLary from './sponsors-2023/project-lary.svg';
-	import seppMed from './sponsors-2023/sepp-med.svg';
-	import typedigital from './sponsors-2023/typedigital.svg';
-	const sponsors = [
-		{
-			image: codecentric,
-			link: 'https://www.codecentric.de',
-			name: 'codecentric AG',
-			sponsoring: 'Location'
-		},
-		{
-			image: inovex,
-			link: 'https://inovex.de',
-			name: 'inovex',
-			sponsoring: 'Coffee / Barista'
-		},
-		{
-			image: jambit,
-			link: 'https://jambit.com',
-			name: 'jambit',
-			sponsoring: 'Friday Lunch'
-		},
-		{
-			image: projectLary,
-			link: 'https://project-lary.com',
-			name: 'project lary',
-			sponsoring: 'Beverages'
-		},
-		{
-			image: seppMed,
-			link: 'https://www.seppmed.de',
-			name: 'sepp.med',
-			sponsoring: 'Stickers'
-		},
-		{
-			image: typedigital,
-			link: 'https://typedigital.de',
-			name: 'typedigital',
-			sponsoring: 'Saturday Snacks'
-		}
-	];
+	export let title: string;
+	export let sponsors: { image: string; link: string; name: string; sponsoring?: string }[] = [];
 </script>
 
-<h2>A big thanks to our great sponsors</h2>
+<h2>{title}</h2>
 <section>
 	{#each sponsors as sponsor}
 		<a href={sponsor.link} rel="external">
 			<div class="box">
 				<div class="image"><img src={sponsor.image} alt={sponsor.name} /></div>
 				<div class="name"><span>{sponsor.name}</span></div>
+				{#if sponsor.sponsoring}<div class="sponsoring">{sponsor.sponsoring}</div>{/if}
 			</div>
 		</a>
 	{/each}
@@ -80,6 +39,7 @@
 		max-width: 14em;
 		position: relative;
 		padding: 2em;
+		text-align: center;
 	}
 	a::before {
 		position: absolute;
@@ -103,6 +63,19 @@
 		align-items: center;
 		justify-content: center;
 		width: 100%;
+	}
+	.sponsoring {
+		display: none;
+		position: absolute;
+		inset: 0;
+	}
+	a:hover .sponsoring {
+		background: linear-gradient(82deg, #000c 2em, #0006 calc(100% - 2em), #0000);
+		color: #fff;
+		display: flex;
+		align-items: flex-end;
+		text-align: start;
+		padding: 2em;
 	}
 	img {
 		display: block;

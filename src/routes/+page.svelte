@@ -8,7 +8,7 @@
 	import linkedIn from './linked-in.png';
 	import skyline from './skyline.svg';
 	import twitter from './twitter.svg';
-	import Sponsors from './sponsoring/Sponsors.svelte';
+	import Sponsors from './sponsoring/Sponsors2023.svelte';
 	import WhatToExpect from './WhatYouCanExpect.svelte';
 	import {
 		isRegistrationOpen,
@@ -16,6 +16,7 @@
 		timeLeft
 	} from '$lib/participants/registration';
 	import { base } from '$app/paths';
+	import Partners from './sponsoring/Partners.svelte';
 
 	const countdown = writable<string>('');
 	const canRegister = writable<boolean>(isRegistrationOpen());
@@ -97,6 +98,7 @@
 		</div>
 		<img src={skyline} alt="Munich skyline" />
 		<Sponsors />
+		<Partners />
 		<WhatToExpect />
 	</section>
 </PageLayout>
