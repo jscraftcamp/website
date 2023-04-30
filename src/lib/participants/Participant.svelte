@@ -1,11 +1,15 @@
 <script lang="ts">
 	import Box from '$lib/layout/Box.svelte';
 	import type { Participant } from '$lib/participants/ParticipantSchema';
+	import { createEventDispatcher } from 'svelte';
 
 	export let participant: Participant;
+	export let isActive: boolean = false;
+
+	const dispatch = createEventDispatcher<{ selectedTag: string }>();
 </script>
 
-<Box>
+<Box style="--background-color: {isActive ? '#dfd' : '#fff'}">
 	<div class="participant">
 		<div class="attendance">
 			{#if participant.when.friday}<span class="fr">Fr</span>{/if}
@@ -15,7 +19,7 @@
 		{#if participant.company}<h4>{participant.company}</h4>{/if}
 		<ul class="tags">
 			{#each participant.tags as tag}
-				<li><button type="button">{tag}</button></li>
+				<li><button type="button" on:click={() => dispatch('selectedTag', tag)}>{tag}</button></li>
 			{/each}
 		</ul>
 	</div>

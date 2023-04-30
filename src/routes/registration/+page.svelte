@@ -14,7 +14,8 @@
 				information to our GitHub Repository via a Pull Request. Registration is free of charge.
 				Your json file should follow the naming scheme <code>$name_or_nickname.json</code> and must
 				be placed in the folder <code>participants</code>. The structure of the file is described
-				below.
+				below. We are using JSONC to parse the files, so it's okay to keep the comments from the
+				<code>_template.json</code>.
 			</p>
 
 			<p>
@@ -25,20 +26,37 @@
 		<InfoBox title="The JSON format">
 			<p>Your registration as JSON file should be in the following format to pass the tests:</p>
 			<pre>{`{
-    "name": "Your real name (OR a nickname)",
-    "company": "your company name (optional)",
+    "name": "your name",
+    "company": "your company name",
     "when": {
+        // 2023-06-30
         "friday": true/false,
+        // 2023-07-01
         "saturday": true/false
     },
-    "tags": ["any", "tag", "you like"],
-    "vegan": true/false,
-    "vegetarian": true/false,
-    "allergies": "... (optional)",
-    "what_is_my_connection_to_javascript": "Say something about you and JS ...",
-    "what_can_i_contribute": "How can you contribute to the event? If you don't know yet, feel free to give it some thought ...",
-    "tshirt": "W-S",
-    "twitter": "handle (optional)"
+    // if you are willing to take session notes and publish them to github (required)
+    "iCanTakeNotesDuringSessions": true/false,
+    // your current interests (JS and in general) (required)
+    "tags": ["ReScript", "Svelte", "Zustand", "GraphQL"],
+    // if you only eat vegan food (optional)
+    "vegan": false,
+    // if you only eat vegan or vegetarian food (optional)
+    "vegetarian": true,
+    // what you cannot eat or drink (optional)
+    "allergies": ["Gluten", "Peanuts"],
+    // tell us a few words how JavaScript affects you (required)
+    "whatIsMyConnectionToJavascript": "...",
+    // what can you contribute to the bar camp (required)
+    "whatCanIContribute": "???",
+    // if you want a T-Shirt we need your size and variant preference (optional)
+    "tShirt": {
+        // S | M | L | XL | XXL
+        "size": "S",
+        // fitted (also known as waist cut or women variant) or regular
+        "type": "fitted"
+    },
+    "twitter": "yourhandle",
+    "mastodon": "your Mastodon URL"
 }`}</pre>
 			<br />
 
@@ -52,12 +70,20 @@
 
 				<dt class="mandatory">when.friday</dt>
 				<dd>If you are attending on Friday (Boolean value)</dd>
-
 				<dt class="mandatory">when.saturday</dt>
 				<dd>If you are attending on Saturday (Boolean value)</dd>
 
+				<dt class="mandatory">iCanTakeNotesDuringSessions</dt>
+				<dd>
+					Let us know whether you're okay with taking notes during sessions. Check out past events
+					for session notes, for example <a
+						href="https://github.com/jscraftcamp/jscc22-sessions"
+						rel="external">notes for 2022</a
+					>. (Boolean value)
+				</dd>
 				<dt class="mandatory">tags</dt>
 				<dd>Share what you think is important, use at least one tag. (Array of strings)</dd>
+
 				<dt class="mandatory">vegan</dt>
 				<dd>Just for planning: Let us know if you are a vegan (Boolean value)<sup>2</sup></dd>
 				<dt class="mandatory">vegetarian</dt>
@@ -66,25 +92,40 @@
 				</dd>
 				<dt class="optional">allergies</dt>
 				<dd>Tell us if you have any special dietary requirements<sup>2</sup></dd>
-				<dt class="mandatory">what_is_my_connection_to_javascript</dt>
+
+				<dt class="mandatory">whatIsMyConnectionToJavascript</dt>
 				<dd>2-5 sentences about your experience with JavaScript or related technologies.</dd>
-				<dt class="optional">what_can_i_contribute</dt>
+				<dt class="optional">whatCanIContribute</dt>
 				<dd>1-3 sentences about what you would like to contribute to the BarCamp.</dd>
-				<dt class="optional">tshirt</dt>
+
+				<dt class="optional note3">tShirt</dt>
 				<dd>
-					We will have a limited number of t-shirts with the event and sponsor logos. If you want
-					one: fit (W=women, M=Man) and size (S,M,L,XL,XXL), e.g. W-S or M-XL. If your registration
-					is shortly before the event there might be no time to have a t-shirt produced for you,
-					please be aware.
+					If you want a t-shirt, please fill out the <code>size</code> and <code>type</code> values.
+					<code>tShirt.size</code>
+					can be one of <code>"S"</code>, <code>"M"</code>, <code>"L"</code>,<code>"XL"</code> or
+					<code>"XXL"</code>. <code>tShirt.type</code> can be <code>"fitted"</code> for a waist cut
+					(also known as women variant) or <code>"regular"</code>.
 				</dd>
+
 				<dt class="optional">twitter</dt>
 				<dd>Your Twitter handle without the leading @.</dd>
+
+				<dt class="optional">mastodon</dt>
+				<dd>Your Mastodon URL.</dd>
+
+				<dt class="optional">website</dt>
+				<dd>Your personal website or anything else you like to share with people.</dd>
 			</dl>
 			<ol>
 				<li>Mandatory field</li>
 				<li>
 					This is a free and completely sponsored event. Even though we want to try, we can not
 					guarantee to be able to respect every dietary requirement
+				</li>
+				<li>
+					We may have a limited number of t-shirts with the event and sponsor logos. If your
+					registration is shortly before the event there might be no time to have a t-shirt produced
+					for you, please be aware.
 				</li>
 			</ol>
 		</InfoBox>
@@ -137,6 +178,11 @@
 	}
 	dt.mandatory::after {
 		content: '1';
+		vertical-align: super;
+		font-size: smaller;
+	}
+	dt.note3::after {
+		content: '3';
 		vertical-align: super;
 		font-size: smaller;
 	}

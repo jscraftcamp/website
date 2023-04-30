@@ -14,6 +14,13 @@
 
 	export let data: PageData;
 
+	let activeTag: string | null = null;
+
+	const onSelectTag = (e: CustomEvent<string>) => {
+		const tag = e.detail;
+		activeTag = activeTag === tag ? null : tag;
+	};
+
 	const participants: ParticipantT[] = isRegistrationOpen() ? data.participants : [];
 
 	const canRegister = writable<boolean>(isRegistrationOpen());
@@ -67,10 +74,21 @@
 			<p>This allows participants to find like-minded people and lets them connect.</p>
 		</InfoBox>
 
+		{#if activeTag !== null}
+			<div class="selectedTagAnchor">
+				<div class="selectedTag">Selected tag: {activeTag}</div>
+			</div>
+		{/if}
 		{#if participants.length > 0}
 			<ul>
 				{#each participants as participant}
-					<li><Participant {participant} /></li>
+					<li>
+						<Participant
+							{participant}
+							on:selectedTag={onSelectTag}
+							isActive={(activeTag && participant.tags.includes(activeTag)) || false}
+						/>
+					</li>
 				{/each}
 			</ul>
 		{:else}
@@ -106,5 +124,13 @@
 		flex-grow: 1;
 		list-style: none;
 		width: calc(var(--max-page-width) / 4 - 1.5em);
+	}
+	div.selectedTagAnchor {
+		position: relative;
+		margin-top: -2em;
+		height: 0;
+	}
+	div.selectedTag {
+		position: absolute;
 	}
 </style>

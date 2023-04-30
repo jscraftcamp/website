@@ -37,11 +37,12 @@ export const ParticipantSchema = z
 		twitter: z
 			.string()
 			.regex(
-				/^[a-z_]{1}[a-z0-9_]{0,14}$/i,
+				/^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$/,
 				'Must be a valid twitter handle according to regex: /^[a-z_]{1}[a-z0-9_]{0,14}$/i (see https://regex101.com/r/B3WOro/1)'
 			)
 			.nullish(),
-		mastodon: z.string().nonempty().nullish()
+		mastodon: z.string().url().nonempty().nullish(),
+		website: z.string().url().nonempty().nullish()
 	})
 	.strict();
 
