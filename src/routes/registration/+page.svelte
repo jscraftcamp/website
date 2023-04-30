@@ -54,14 +54,13 @@
         "size": "S/M/L/XL/XXL",
         "type": "fitted/regular"
     },
-	// optional
+    // optional
     "twitter": "yourhandle",
-	// optional
+    // optional
     "mastodon": "your Mastodon URL",
-	// optional
-	"website": "your website URL"
+    // optional
+    "website": "your website URL"
 }`}</pre>
-			<br />
 
 			<h3>Fields in the registration JSON</h3>
 			<dl>
@@ -119,6 +118,7 @@
 				<dt class="optional">website</dt>
 				<dd>Your personal website or anything else you like to share with people.</dd>
 			</dl>
+			<h3>Notes</h3>
 			<ol>
 				<li>Mandatory field</li>
 				<li>
@@ -166,12 +166,16 @@
 		max-width: 100%;
 		overflow: auto;
 	}
-
 	h3,
-	dl {
+	dl,
+	ol {
 		font-size: 1em;
 		margin: 0;
 	}
+	h3 {
+		margin-top: 2em;
+	}
+
 	dt {
 		font-weight: 700;
 		opacity: 0.5;
