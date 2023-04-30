@@ -4,7 +4,7 @@ import {
 	_loadParticipantJsonFilePaths,
 	_parseParticipantJson
 } from '../../routes/participants/+page.server';
-import { PARTICIPANTS_DIRECTORY } from './ParticipantSchema';
+import { PARTICIPANTS_DIRECTORY } from './participant-schema';
 
 describe('Participants', async () => {
 	const folderContent = await readdir(PARTICIPANTS_DIRECTORY, {

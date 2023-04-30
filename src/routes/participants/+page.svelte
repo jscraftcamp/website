@@ -2,7 +2,7 @@
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 	import Participant from '../../lib/participants/Participant.svelte';
-	import type { Participant as ParticipantT } from '$lib/participants/ParticipantSchema';
+	import type { Participant as ParticipantT } from '$lib/participants/participant-schema';
 	import { base } from '$app/paths';
 	import type { PageData } from './$types';
 	import {

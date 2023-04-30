@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Box from '$lib/layout/Box.svelte';
-	import type { Participant } from '$lib/participants/ParticipantSchema';
+	import type { Participant } from '$lib/participants/participant-schema';
 	import { createEventDispatcher } from 'svelte';
 
 	export let participant: Participant;
