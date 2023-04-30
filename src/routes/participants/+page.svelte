@@ -126,6 +126,7 @@
 		display: flex;
 		flex: 1;
 		flex-flow: row wrap;
+		align-items: stretch;
 		justify-content: space-between;
 		gap: 2em;
 		margin: 0;
@@ -135,6 +136,9 @@
 		flex-grow: 1;
 		list-style: none;
 		width: calc(var(--max-page-width) / 4 - 1.5em);
+	}
+	li > :global(*) {
+		height: 100%;
 	}
 	.participants {
 		position: relative;
