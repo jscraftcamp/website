@@ -20,6 +20,9 @@
 		const tag = e.detail;
 		activeTag = activeTag === tag ? null : tag;
 	};
+	const unsetActiveTag = () => {
+		activeTag = null;
+	};
 
 	const participants: ParticipantT[] = isRegistrationOpen() ? data.participants : [];
 
@@ -78,7 +81,9 @@
 			<div class="participants">
 				{#if activeTag !== null}
 					<div class="selectedTagAnchor">
-						<div class="selectedTag">Selected tag: {activeTag}</div>
+						<button type="button" class="selectedTag" on:click={unsetActiveTag}
+							>Selected tag: {activeTag}</button
+						>
 					</div>
 				{/if}
 				<ul>
@@ -134,12 +139,16 @@
 	.participants {
 		position: relative;
 	}
-	div.selectedTagAnchor {
+	.selectedTagAnchor {
 		position: sticky;
 		top: 1em;
 		bottom: -1em;
 	}
-	div.selectedTag {
+	.selectedTag {
+		background: none;
+		border: none;
+		cursor: pointer;
+		font: inherit;
 		position: absolute;
 		transform-origin: 0 0;
 		transform: rotate(-90deg) translate(-100%, -2em);
