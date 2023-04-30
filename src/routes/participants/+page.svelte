@@ -2,7 +2,7 @@
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 	import Participant from '../../lib/participants/Participant.svelte';
-	import type { Participant as ParticipantT } from '$lib/participants/ParticipantSchema';
+	import type { Participant as ParticipantT } from '$lib/participants/participant-schema';
 	import { base } from '$app/paths';
 	import type { PageData } from './$types';
 	import {
@@ -13,6 +13,16 @@
 	import { writable } from 'svelte/store';
 
 	export let data: PageData;
+
+	let activeTag: string | null = null;
+
+	const onSelectTag = (e: CustomEvent<string>) => {
+		const tag = e.detail;
+		activeTag = activeTag === tag ? null : tag;
+	};
+	const unsetActiveTag = () => {
+		activeTag = null;
+	};
 
 	const participants: ParticipantT[] = isRegistrationOpen() ? data.participants : [];
 
@@ -68,11 +78,30 @@
 		</InfoBox>
 
 		{#if participants.length > 0}
-			<ul>
-				{#each participants as participant}
-					<li><Participant {participant} /></li>
-				{/each}
-			</ul>
+			<div class="participants">
+				{#if activeTag !== null}
+					<div class="selectedTagAnchor">
+						<button type="button" class="selectedTag" on:click={unsetActiveTag}
+							>Selected tag: {activeTag}</button
+						>
+					</div>
+				{/if}
+				<ul>
+					{#each participants as participant}
+						<li>
+							<Participant
+								{participant}
+								on:selectedTag={onSelectTag}
+								isActive={(activeTag &&
+									participant.tags
+										.map((t) => t.toLocaleLowerCase())
+										.includes(activeTag.toLocaleLowerCase())) ||
+									false}
+							/>
+						</li>
+					{/each}
+				</ul>
+			</div>
 		{:else}
 			<p>There are no participants registered yet.</p>
 		{/if}
@@ -97,6 +126,7 @@
 		display: flex;
 		flex: 1;
 		flex-flow: row wrap;
+		align-items: stretch;
 		justify-content: space-between;
 		gap: 2em;
 		margin: 0;
@@ -106,5 +136,25 @@
 		flex-grow: 1;
 		list-style: none;
 		width: calc(var(--max-page-width) / 4 - 1.5em);
+	}
+	li > :global(*) {
+		height: 100%;
+	}
+	.participants {
+		position: relative;
+	}
+	.selectedTagAnchor {
+		position: sticky;
+		top: 1em;
+		bottom: -1em;
+	}
+	.selectedTag {
+		background: none;
+		border: none;
+		cursor: pointer;
+		font: inherit;
+		position: absolute;
+		transform-origin: 0 0;
+		transform: rotate(-90deg) translate(-100%, -2em);
 	}
 </style>

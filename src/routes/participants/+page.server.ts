@@ -3,7 +3,7 @@ import {
 	ParticipantSchema,
 	type Participant,
 	PARTICIPANTS_DIRECTORY
-} from '$lib/participants/ParticipantSchema';
+} from '$lib/participants/participant-schema';
 import type { PageServerLoad } from './$types';
 import { parse } from 'jsonc-parser';
 import { join } from 'path';

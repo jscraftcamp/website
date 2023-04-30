@@ -40,11 +40,16 @@
 				},
 				"twitter": {
 					"anyOf": [
-						{ "type": "string", "pattern": "^[a-z_]{1}[a-z0-9_]{0,14}$" },
+						{ "type": "string", "pattern": "^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$" },
 						{ "type": "null" }
 					]
 				},
-				"mastodon": { "anyOf": [{ "type": "string", "minLength": 1 }, { "type": "null" }] }
+				"mastodon": {
+					"anyOf": [{ "type": "string", "format": "uri", "minLength": 1 }, { "type": "null" }]
+				},
+				"website": {
+					"anyOf": [{ "type": "string", "format": "uri", "minLength": 1 }, { "type": "null" }]
+				}
 			},
 			"required": [
 				"name",

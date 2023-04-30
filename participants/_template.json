@@ -1,3 +1,5 @@
+// Please provide your info in your own .json file.
+// See https://jscraftcamp.org/registration for more information
 {
 	// your name / nickname (required)
 	"name": "John Doe",
@@ -31,8 +33,10 @@
 		// fitted (also known as waist cut or women variant) or regular
 		"type": "fitted"
 	},
-	// your Twitter handle (must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$) (optional)
+	// your Twitter handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
 	"twitter": "yourhandle",
 	// your Mastodon URL (optional)
-	"mastodon": "https://mastodontech.de/@yourhandle"
+	"mastodon": "https://mastodontech.de/@yourhandle",
+	// your website URL or other social media (optional)
+	"website": "https://www.your-domain.com"
 }
