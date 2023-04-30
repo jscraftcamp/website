@@ -29,34 +29,34 @@
     "name": "your name",
     "company": "your company name",
     "when": {
-        // 2023-06-30
         "friday": true/false,
-        // 2023-07-01
         "saturday": true/false
     },
-    // if you are willing to take session notes and publish them to github (required)
+    // required
     "iCanTakeNotesDuringSessions": true/false,
-    // your current interests (JS and in general) (required)
+    // required - at least one
     "tags": ["ReScript", "Svelte", "Zustand", "GraphQL"],
-    // if you only eat vegan food (optional)
+    // optional
     "vegan": false,
-    // if you only eat vegan or vegetarian food (optional)
+    // optional
     "vegetarian": true,
-    // what you cannot eat or drink (optional)
+    // optional
     "allergies": ["Gluten", "Peanuts"],
-    // tell us a few words how JavaScript affects you (required)
+    // required
     "whatIsMyConnectionToJavascript": "...",
-    // what can you contribute to the bar camp (required)
+    // required
     "whatCanIContribute": "???",
-    // if you want a T-Shirt we need your size and variant preference (optional)
+    // optional
     "tShirt": {
-        // S | M | L | XL | XXL
-        "size": "S",
-        // fitted (also known as waist cut or women variant) or regular
-        "type": "fitted"
+        "size": "S/M/L/XL/XXL",
+        "type": "fitted/regular"
     },
+	// optional
     "twitter": "yourhandle",
-    "mastodon": "your Mastodon URL"
+	// optional
+    "mastodon": "your Mastodon URL",
+	// optional
+	"website": "your website URL"
 }`}</pre>
 			<br />
 
@@ -66,7 +66,7 @@
 				<dd>First name and last name or a nick name.</dd>
 
 				<dt class="optional">company</dt>
-				<dd>A company name</dd>
+				<dd>A company name, if you work for one or want to mention yours.</dd>
 
 				<dt class="mandatory">when.friday</dt>
 				<dd>If you are attending on Friday (Boolean value)</dd>
