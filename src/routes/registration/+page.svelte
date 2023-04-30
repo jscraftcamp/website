@@ -26,8 +26,11 @@
 		<InfoBox title="The JSON format">
 			<p>Your registration as JSON file should be in the following format to pass the tests:</p>
 			<pre>{`{
+    // required
     "name": "your name",
+    // optional
     "company": "your company name",
+    // required
     "when": {
         "friday": true/false,
         "saturday": true/false
