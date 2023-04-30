@@ -1,0 +1,21 @@
+{
+	"name": "Wolfram Kriesing",
+	"company": "Sono Motors",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["JavaScript", "jskatas.org", "sustainability"],
+	"vegan": true,
+	"vegetarian": false,
+	"whatIsMyConnectionToJavascript": "I care to share and love to learn, these two days have always been energizing, I want the next kick!",
+	"whatCanIContribute": "I will definitely talk about TDD and offer a session about JavaScript the Language (as our monthly meetup) but in person",
+	"tShirt": {
+		"size": "XL",
+		"type": "regular"
+	},
+	"twitter": "wolframkriesing",
+	"mastodon": "https://mastodontech.de/@wolframkriesing",
+	"website": "https://picostitch.com/"
+}

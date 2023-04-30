@@ -1,0 +1,20 @@
+{
+	"name": "Jörn Bernhardt",
+	"company": "compose.us",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["Svelte", "Static pages", "OpenSource", "TypeScript"],
+	"vegan": false,
+	"vegetarian": false,
+	"whatIsMyConnectionToJavascript": "Working for the web since 2.5 decades.",
+	"whatCanIContribute": "I can explain the tech behind the new website.",
+	"tShirt": {
+		"size": "XL",
+		"type": "regular"
+	},
+	"twitter": "NarigoDF",
+	"website": "https://narigo.dev"
+}
