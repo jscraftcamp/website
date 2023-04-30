@@ -40,9 +40,9 @@
     // required - at least one
     "tags": ["ReScript", "Svelte", "Zustand", "GraphQL"],
     // optional
-    "vegan": false,
+    "vegan": true/false,
     // optional
-    "vegetarian": true,
+    "vegetarian": true/false,
     // optional
     "allergies": ["Gluten", "Peanuts"],
     // required
