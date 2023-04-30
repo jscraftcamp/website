@@ -74,23 +74,29 @@
 			<p>This allows participants to find like-minded people and lets them connect.</p>
 		</InfoBox>
 
-		{#if activeTag !== null}
-			<div class="selectedTagAnchor">
-				<div class="selectedTag">Selected tag: {activeTag}</div>
-			</div>
-		{/if}
 		{#if participants.length > 0}
-			<ul>
-				{#each participants as participant}
-					<li>
-						<Participant
-							{participant}
-							on:selectedTag={onSelectTag}
-							isActive={(activeTag && participant.tags.includes(activeTag)) || false}
-						/>
-					</li>
-				{/each}
-			</ul>
+			<div class="participants">
+				{#if activeTag !== null}
+					<div class="selectedTagAnchor">
+						<div class="selectedTag">Selected tag: {activeTag}</div>
+					</div>
+				{/if}
+				<ul>
+					{#each participants as participant}
+						<li>
+							<Participant
+								{participant}
+								on:selectedTag={onSelectTag}
+								isActive={(activeTag &&
+									participant.tags
+										.map((t) => t.toLocaleLowerCase())
+										.includes(activeTag.toLocaleLowerCase())) ||
+									false}
+							/>
+						</li>
+					{/each}
+				</ul>
+			</div>
 		{:else}
 			<p>There are no participants registered yet.</p>
 		{/if}
@@ -125,12 +131,17 @@
 		list-style: none;
 		width: calc(var(--max-page-width) / 4 - 1.5em);
 	}
-	div.selectedTagAnchor {
+	.participants {
 		position: relative;
-		margin-top: -2em;
-		height: 0;
+	}
+	div.selectedTagAnchor {
+		position: sticky;
+		top: 1em;
+		bottom: -1em;
 	}
 	div.selectedTag {
 		position: absolute;
+		transform-origin: 0 0;
+		transform: rotate(-90deg) translate(-100%, -2em);
 	}
 </style>

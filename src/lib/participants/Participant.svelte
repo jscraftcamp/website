@@ -9,7 +9,7 @@
 	const dispatch = createEventDispatcher<{ selectedTag: string }>();
 </script>
 
-<Box style="--background-color: {isActive ? '#dfd' : '#fff'}">
+<Box style={isActive ? '--box-shadow: 0 0 15px #080f, 0 0 200px rgba(0, 0, 0, 0.1);' : ''}>
 	<div class="participant">
 		<div class="attendance">
 			{#if participant.when.friday}<span class="fr">Fr</span>{/if}

@@ -19,6 +19,6 @@
 		content: '';
 		z-index: -1;
 		inset: 0;
-		box-shadow: 0 0 200px rgba(0, 0, 0, 0.1);
+		box-shadow: var(--box-shadow, 0 0 200px rgba(0, 0, 0, 0.1));
 	}
 </style>
