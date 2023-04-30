@@ -2,7 +2,7 @@
 	"name": "Wolfram Kriesing",
 	"company": "Sono Motors",
 	"when": {
-		"friday": true,
+		"friday": false,
 		"saturday": true
 	},
 	"iCanTakeNotesDuringSessions": true,

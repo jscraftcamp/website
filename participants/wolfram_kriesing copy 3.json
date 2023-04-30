@@ -5,7 +5,7 @@
 		"friday": true,
 		"saturday": true
 	},
-	"iCanTakeNotesDuringSessions": true,
+	"iCanTakeNotesDuringSessions": false,
 	"tags": ["JavaScript", "jskatas.org", "sustainability"],
 	"vegan": true,
 	"vegetarian": false,

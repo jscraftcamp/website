@@ -2,10 +2,10 @@
 	"name": "Wolfram Kriesing",
 	"company": "Sono Motors",
 	"when": {
-		"friday": true,
+		"friday": false,
 		"saturday": true
 	},
-	"iCanTakeNotesDuringSessions": true,
+	"iCanTakeNotesDuringSessions": false,
 	"tags": ["JavaScript", "jskatas.org", "sustainability"],
 	"vegan": true,
 	"vegetarian": false,

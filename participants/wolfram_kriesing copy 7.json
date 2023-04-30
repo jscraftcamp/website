@@ -3,9 +3,9 @@
 	"company": "Sono Motors",
 	"when": {
 		"friday": true,
-		"saturday": true
+		"saturday": false
 	},
-	"iCanTakeNotesDuringSessions": true,
+	"iCanTakeNotesDuringSessions": false,
 	"tags": ["JavaScript", "jskatas.org", "sustainability"],
 	"vegan": true,
 	"vegetarian": false,
