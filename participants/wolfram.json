@@ -1,6 +1,6 @@
 {
 	"name": "Wolfram Kriesing",
-	"company": "",
+	"company": "Sono Motors",
 	"when": {
 		"friday": true,
 		"saturday": true	},
@@ -8,7 +8,6 @@
 	"tags": ["C", "Python", "Web Components", "Refactoring", "TDD"],
 	"vegan": true,
 	"vegetarian": true,
-	"allergies": [],
 	"whatIsMyConnectionToJavascript": "I want everybody to learn more of it, to know what (not) to use of it.",
 	"whatCanIContribute": "I can hold a jskatas session",
 	"tShirt": {
