@@ -11,10 +11,12 @@
 		<InfoBox title="Registration process">
 			<p>
 				To register for JSCraftCamp you have to add a json file with your name and some other
-				information to our GitHub Repository via a Pull Request. Registration is free of charge.
-				Your json file should follow the naming scheme <code>$name_or_nickname.json</code> and must
-				be placed in the folder <code>participants</code>. The structure of the file is described
-				below. We are using JSONC to parse the files, so it's okay to keep the comments from the
+				information to our <a href="https://github.com/jscraftcamp/website">GitHub Repository</a>
+				via a Pull Request. Registration is free of charge. Your json file should follow the naming
+				scheme
+				<code>$name_or_nickname.json</code> and must be placed in the folder
+				<code>participants</code>. The structure of the file is described below. We are using JSONC
+				to parse the files, so it's okay to keep the comments from the
 				<code>_template.json</code>.
 			</p>
 
