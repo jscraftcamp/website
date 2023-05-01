@@ -16,8 +16,6 @@
     "vegan": false,
     // optional
     "vegetarian": false,
-    // optional
-    "allergies": [],
     // required
     "whatIsMyConnectionToJavascript": "For some years, I use JavaScript as well as TypeScript daily in my job",
     // required
@@ -28,9 +26,5 @@
         "type": "fitted"
     },
     // optional
-    "twitter": "philiplenhart",
-    // optional
-    "mastodon": "",
-    // optional
-    "website": ""
+    "twitter": "philiplenhart"
 }
