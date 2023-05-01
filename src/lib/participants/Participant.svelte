@@ -91,7 +91,6 @@
 	}
 	.details {
 		flex: 1;
-		align-self: flex-end;
 	}
 	.details h4 {
 		margin-top: 1em;
@@ -114,6 +113,7 @@
 		font: inherit;
 		padding: 0;
 		margin: 0;
+		text-align: inherit;
 		text-transform: uppercase;
 	}
 	li button {

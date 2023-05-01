@@ -14,6 +14,7 @@
 
 	export let data: PageData;
 
+	const participants: ParticipantT[] = isRegistrationOpen() ? data.participants : [];
 	let activeTag: string | null = null;
 
 	const onSelectTag = (e: CustomEvent<string>) => {
@@ -24,7 +25,14 @@
 		activeTag = null;
 	};
 
-	const participants: ParticipantT[] = isRegistrationOpen() ? data.participants : [];
+	const noFilter = () => true;
+	const fridayFilter = (p: ParticipantT) => p.when.friday;
+	const saturdayFilter = (p: ParticipantT) => p.when.saturday;
+	const setFridayOrUnset = () =>
+		($participantsFilter = $participantsFilter === fridayFilter ? noFilter : fridayFilter);
+	const setSaturdayOrUnset = () =>
+		($participantsFilter = $participantsFilter === saturdayFilter ? noFilter : saturdayFilter);
+	let participantsFilter = writable<(p: ParticipantT) => boolean>(noFilter);
 
 	const canRegister = writable<boolean>(isRegistrationOpen());
 	const countdown = writable<string>(isRegistrationOpen() ? 'NOW' : 'soon');
@@ -77,7 +85,22 @@
 			<p>This allows participants to find like-minded people and lets them connect.</p>
 		</InfoBox>
 
-		{#if participants.length > 0}
+		<div class="attendance-filter">
+			<button
+				type="button"
+				on:click={setFridayOrUnset}
+				class:isActive={$participantsFilter === fridayFilter}
+				>Friday ({participants.filter(fridayFilter).length} participants)</button
+			>
+			<button
+				type="button"
+				on:click={setSaturdayOrUnset}
+				class:isActive={$participantsFilter === saturdayFilter}
+				>Saturday ({participants.filter(saturdayFilter).length} participants)</button
+			>
+		</div>
+
+		{#if participants.filter($participantsFilter).length > 0}
 			<div class="participants">
 				{#if activeTag !== null}
 					<div class="selectedTagAnchor">
@@ -87,7 +110,7 @@
 					</div>
 				{/if}
 				<ul>
-					{#each participants as participant}
+					{#each participants.filter($participantsFilter) as participant}
 						<li>
 							<Participant
 								{participant}
@@ -140,6 +163,17 @@
 	li > :global(*) {
 		height: 100%;
 	}
+	.attendance-filter button {
+		background: inherit;
+		border: inherit;
+		cursor: pointer;
+		font: inherit;
+		text-align: inherit;
+	}
+	.attendance-filter button.isActive {
+		text-decoration: underline;
+	}
+
 	.participants {
 		position: relative;
 	}
