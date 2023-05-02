@@ -24,8 +24,8 @@
 						{ "type": "null" }
 					]
 				},
-				"whatIsMyConnectionToJavascript": { "type": "string", "minLength": 3, "maxLength": 200 },
-				"whatCanIContribute": { "type": "string", "minLength": 3, "maxLength": 200 },
+				"whatIsMyConnectionToJavascript": { "type": "string", "minLength": 3, "maxLength": 400 },
+				"whatCanIContribute": { "type": "string", "minLength": 3, "maxLength": 400 },
 				"tShirt": {
 					"anyOf": [
 						{
