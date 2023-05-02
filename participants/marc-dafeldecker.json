@@ -1,0 +1,23 @@
+// Please provide your info in your own .json file.
+// See https://jscraftcamp.org/registration for more information
+{
+	"name": "Marc Dafeldecker",
+	"company": "optilyz GmbH",
+	"when": {
+		// 2023-06-30
+		"friday": true,
+		// 2023-07-01
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["Typescript", "Node", "React"],
+	"vegan": false,
+	"vegetarian": true,
+	"allergies": [""],
+	"whatIsMyConnectionToJavascript": "it's good fun",
+	"whatCanIContribute": "I can speak about the beauty of meditation",
+	"tShirt": {
+    "size": "L",
+		"type": "fitted"
+	},
+}
