@@ -13,7 +13,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test": "vitest",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write .",
+		"format": "prettier --plugin-search-dir . --write . '!participants/*.json'",
 		"update-schema": "node --loader ts-node/esm --experimental-specifier-resolution=node create-json-schema.ts > static/schemas/participants.2023.json && prettier --write ./static/schemas/participants.2023.json"
 	},
 	"packageManager": "pnpm@8.3.1",
@@ -38,7 +38,7 @@
 		"vite": "4.3.3",
 		"vitest": "0.30.1",
 		"zod": "^3.21.4",
-		"zod-to-json-schema": "^3.20.4"
+		"zod-to-json-schema": "^3.21.0"
 	},
 	"type": "module"
 }
