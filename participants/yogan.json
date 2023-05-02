@@ -1,0 +1,21 @@
+{
+	"name": "Frank Blendinger",
+	"company": "inovex",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["TypeScript", "React", "Next.js", "NeoVim", "tmux"],
+	"vegan": false,
+	"vegetarian": true,
+	"whatIsMyConnectionToJavascript": "love it since TypeScript has arrived",
+	"whatCanIContribute": "sessions on the topics from my tags :-)",
+	"tShirt": {
+		"size": "M",
+		"type": "regular"
+	},
+	"twitter": "yooogan",
+	"mastodon": "https://chaos.social/@yogan",
+	"website": "https://zogan.de"
+}
