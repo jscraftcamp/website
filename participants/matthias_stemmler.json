@@ -21,7 +21,6 @@
 	// if you only eat vegan or vegetarian food (optional)
 	"vegetarian": true,
 	// what you cannot eat or drink (optional)
-	"allergies": [],
 	// tell us a few words how JavaScript affects you (required)
 	"whatIsMyConnectionToJavascript": "I use JS every day in my professional and private life",
 	// what can you contribute to the bar camp (required)
