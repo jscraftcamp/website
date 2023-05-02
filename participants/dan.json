@@ -1,16 +1,20 @@
 {
-  "name": "Daniel Weiß",
-  "company": "Grollmus München GmbH",
-  "when": {
-    "friday": true,
-    "saturday": true
-  },
-  "tags": ["Angular", "rxjs", "TypeScript", "Nest.js", "Cypress", "Azure Cloud", "Terraform"],
-  "vegan": false,
-  "vegetarian": false,
-  "allergies": "",
-  "what_is_my_connection_to_javascript": "Daily business",
-  "what_can_i_contribute": "Something about Angular and Nest.js",
-  "tshirt": "M-L",
-  "twitter": "WanielDeiss"
+	"name": "Daniel Weiß",
+	"company": "Grollmus München GmbH",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["TypeScript", "Angular", "ChatGPT", "Terraform"],
+	"vegan": false,
+	"vegetarian": false,
+	"whatIsMyConnectionToJavascript": "I use it daily for work and hobby.",
+	"whatCanIContribute": "I can talk about Angular and Terraform.",
+	"tShirt": {
+		"size": "L",
+		"type": "regular"
+	},
+	"twitter": "WanielDeiss",
+	"website": "https://wanieldeiss.com"
 }
