@@ -10,14 +10,14 @@
 		"saturday": true
 	},
 	"iCanTakeNotesDuringSessions": false,
-	"tags": ["Typescript", "Node", "React"],
+	"tags": ["Typescript", "Node", "React", "Cloud"],
 	"vegan": false,
 	"vegetarian": true,
 	"allergies": [""],
-	"whatIsMyConnectionToJavascript": "it's good fun",
+	"whatIsMyConnectionToJavascript": "it's good fun, I love it",
 	"whatCanIContribute": "I can speak about the beauty of meditation",
 	"tShirt": {
-    "size": "L",
+    	"size": "L",
 		"type": "fitted"
 	},
 }
