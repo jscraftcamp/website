@@ -6,7 +6,7 @@
 		"saturday": true
 	},
 	"iCanTakeNotesDuringSessions": false,
-	"tags": ["Typescript", "Node", "React", "Cloud Technologies", "Ensembling"],
+	"tags": ["Typescript", "Node", "React", "AWS CDK", "Cloud Technologies", "Ensembling"],
 	"vegan": false,
 	"vegetarian": true,
 	"allergies": [""],
