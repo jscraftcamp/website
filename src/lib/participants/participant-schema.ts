@@ -45,8 +45,8 @@ export const ParticipantSchema = z
 		vegan: optionalBoolean(),
 		vegetarian: optionalBoolean(),
 		allergies: z.preprocess(emptyToNull, nonEmptyStringArray().nullish()),
-		whatIsMyConnectionToJavascript: z.string().min(3).max(200),
-		whatCanIContribute: z.string().min(3).max(200),
+		whatIsMyConnectionToJavascript: z.string().min(3).max(400),
+		whatCanIContribute: z.string().min(3).max(400),
 		tShirt: z
 			.object({
 				type: z.preprocess((v) => String(v).toLowerCase(), z.enum(['fitted', 'regular'])),
