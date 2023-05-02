@@ -1,0 +1,25 @@
+{
+    "name": "Akash Sawant",
+    // optional
+    "company": "optilyz GmbH",
+    // required
+    "when": {
+        "friday": true,
+        "saturday": true
+    },
+    // required
+    "iCanTakeNotesDuringSessions": true,
+    // required - at least one
+    "tags": ["Typescript", "React", "Node", "AWS"],
+    // required
+    "whatIsMyConnectionToJavascript": "I use JS in my professional life.",
+    // required
+    "whatCanIContribute": "I can share my knowledge aroung testing react components, redux, node",
+    // optional
+    "tShirt": {
+        "size": "S",
+        "type": "fitted"
+    },
+    // optional
+    "twitter": "sakash321"
+}
