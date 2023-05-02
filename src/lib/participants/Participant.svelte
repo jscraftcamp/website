@@ -127,4 +127,8 @@
 		background: hsl(120, 100%, 20%);
 		color: #fff;
 	}
+
+	.fr, .sa, .nt {
+		cursor: help;
+	}
 </style>
