@@ -36,7 +36,7 @@
 		"tslib": "2.5.0",
 		"typescript": "5.0.4",
 		"vite": "4.3.4",
-		"vitest": "0.30.1",
+		"vitest": "0.31.0",
 		"zod": "3.21.4",
 		"zod-to-json-schema": "3.21.0"
 	},
