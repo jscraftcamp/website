@@ -21,7 +21,7 @@
 	// what you cannot eat or drink (optional)
 	"allergies": [],
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "As a fullstack developer I need a strong Frontend Game. Sometimes I win, sometimes I loose.",
+	"whatIsMyConnectionToJavascript": "As a fullstack developer I need a strong frontend game. Sometimes I win, sometimes I loose.",
 	// what can you contribute to the bar camp (required)
 	"whatCanIContribute": "I could sum up some points about how to build more sustainable web applications.",
 	// if you want a T-Shirt we need your size and variant preference (optional)
