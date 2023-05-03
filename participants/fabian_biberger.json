@@ -2,7 +2,7 @@
 	// your name / nickname (required)
 	"name": "Fabian Biberger",
 	// optional company name (required)
-	"company": "Vitamin P Software GmbH",
+	"company": "Vitamin P Software",
 	// either both days or at least one day has to be set to true
 	"when": {
 		// 2023-06-30
@@ -13,7 +13,7 @@
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": true,
 	// your current interests (JS and in general) (required)
-	"tags": ["React", "Typescript", "Kotlin", "Databases", "Product Development", "Company Building", "Running", "Sustainability"],
+	"tags": ["React", "Kotlin", "Product Development", "Running", "Sustainability"],
 	// if you only eat vegan food (optional)
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
