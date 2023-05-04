@@ -13,15 +13,11 @@
 		"saturday": true
 	},
 	// if you are willing to take session notes and publish them to github (required)
-	"iCanTakeNotesDuringSessions": false,
+	"iCanTakeNotesDuringSessions": true,
 	// your current interests (JS and in general) (required)
 	"tags": ["Vue", "Vite", "Angular", "Accessibility"],
-	// if you only eat vegan food (optional)
-	"vegan": false,
-	// if you only eat vegan or vegetarian food (optional)
-	"vegetarian": false,
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "I am full time web developer, mostly with single page applications",
+	"whatIsMyConnectionToJavascript": "I am a full time web developer, mostly with single page applications",
 	// what can you contribute to the bar camp (required)
 	"whatCanIContribute": "Experience with making large products accessible and performance optimization of single page applications",
 	// if you want a T-Shirt we need your size and variant preference (optional)
