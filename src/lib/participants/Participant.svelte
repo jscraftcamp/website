@@ -14,9 +14,9 @@
 <Box style={isActive ? '--box-shadow: 0 0 25px -10px #080f, 0 0 200px rgba(0, 0, 0, 0.1);' : ''}>
 	<div class="participant">
 		<div class="attendance">
-			{#if participant.iCanTakeNotesDuringSessions}<span class="nt">📝</span>{/if}
-			{#if participant.when.friday}<span class="fr">Fr</span>{/if}
-			{#if participant.when.saturday}<span class="sa">Sa</span>{/if}
+			{#if participant.iCanTakeNotesDuringSessions}<span class="nt" title="offers to take notes">📝</span>{/if}
+			{#if participant.when.friday}<span class="fr" title="will attend Friday, 30th June">Fr</span>{/if}
+			{#if participant.when.saturday}<span class="sa" title="will attend Saturday, 1st July">Sa</span>{/if}
 		</div>
 		<h3>
 			<button type="button" on:click={() => (isShowingDetails = !isShowingDetails)}
@@ -126,5 +126,9 @@
 	li button:active {
 		background: hsl(120, 100%, 20%);
 		color: #fff;
+	}
+
+	.fr, .sa, .nt {
+		cursor: help;
 	}
 </style>

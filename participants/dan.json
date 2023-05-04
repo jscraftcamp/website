@@ -3,7 +3,7 @@
 	"company": "Grollmus München GmbH",
 	"when": {
 		"friday": true,
-		"saturday": false
+		"saturday": true
 	},
 	"iCanTakeNotesDuringSessions": true,
 	"tags": ["TypeScript", "Angular", "ChatGPT", "Terraform"],
