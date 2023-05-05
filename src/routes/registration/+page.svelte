@@ -24,6 +24,15 @@
 			</p>
 		</InfoBox>
 
+		<InfoBox title="Personal Data">
+			If you don't feel comfortable entering personal information publicly, please direct message
+			one of the organizers on <a href="https://discord.gg/3mHhaXVEjP" title="JSCC Discord"
+				>Discord</a
+			>
+			or reach out to <a href="mailto:team@jscraftcamp.org">team@jscraftcamp.org</a> and we will record
+			information such as allergies or the like privately.
+		</InfoBox>
+
 		<InfoBox title="The JSON format">
 			<p>Your registration as JSON file should be in the following format to pass the tests:</p>
 			<pre>{`{
@@ -105,7 +114,9 @@
 				<dd>
 					If you want a t-shirt, please fill out the <code>size</code> and <code>type</code> values.
 					<code>tShirt.size</code>
-					can be one of <code>"S"</code>, <code>"M"</code>, <code>"L"</code>, <code>"XL"</code>, <code>"2XL"</code> or
+					can be one of <code>"S"</code>, <code>"M"</code>, <code>"L"</code>, <code>"XL"</code>,
+					<code>"2XL"</code>
+					or
 					<code>"3XL"</code>. <code>tShirt.type</code> can be <code>"fitted"</code> for a waist cut
 					(also known as women variant) or <code>"regular"</code>.
 				</dd>
