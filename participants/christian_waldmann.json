@@ -1,0 +1,38 @@
+// Please provide your info in your own .json file.
+// See https://jscraftcamp.org/registration for more information
+{
+	// your name / nickname (required)
+	"name": "Christian Waldmann",
+	// optional company name (required)
+	"company": "Hetzner Cloud GmbH",
+	// either both days or at least one day has to be set to true
+	"when": {
+		// 2023-06-30
+		"friday": true,
+		// 2023-07-01
+		"saturday": false
+	},
+	// if you are willing to take session notes and publish them to github (required)
+	"iCanTakeNotesDuringSessions": false,
+	// your current interests (JS and in general) (required)
+	"tags": ["Angular", "TypeScript", "RxJS", "Cypress", "Schematics", "NX", "Jest", "Storybook", "Visual Regression Testing"],
+	// if you only eat vegan food (optional)
+	"vegan": false,
+	// if you only eat vegan or vegetarian food (optional)
+	"vegetarian": true,
+	// what you cannot eat or drink (optional)
+	"allergies": [],
+	// tell us a few words how JavaScript affects you (required)
+	"whatIsMyConnectionToJavascript": "Over 10 years of professional experience in frontend development and even more in web development",
+	// what can you contribute to the bar camp (required)
+	"whatCanIContribute": "Experience in building, developing, maintaining and managing an enterprise Angular application",
+	// if you want a T-Shirt we need your size and variant preference (optional)
+	"tShirt": {
+		// S | M | L | XL | XXL
+		"size": "M",
+		// fitted (also known as waist cut or women variant) or regular
+		"type": "regular"
+	},
+	// your Twitter handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
+	"twitter": "wachri"
+}
