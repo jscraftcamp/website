@@ -25,7 +25,7 @@
     // optional
     "tShirt": {
         "size": "M",
-        "type": "fitted"
+        "type": "regular"
     },
     // optional
     "twitter": "maxhopei"
