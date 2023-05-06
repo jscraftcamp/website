@@ -11,6 +11,7 @@
 	"vegetarian": true,
 	"whatIsMyConnectionToJavascript": "My hot glue in my toolbelt for quite some years.",
 	"whatCanIContribute": "Some security or infrastructure talk. As always ;-)",
+	"iCanTakeNotesDuringSessions": false,
 	"tShirt": {
 		"size": "L",
 		"type": "regular"
