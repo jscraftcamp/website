@@ -1,7 +1,6 @@
 {
 	"name": "Jan Schmidle",
 	"company": "Essentim Gmbh",
-	// either both days or at least one day has to be set to true
 	"when": {
 		"friday": true,
 		"saturday": true
