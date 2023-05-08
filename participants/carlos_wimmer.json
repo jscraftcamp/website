@@ -11,7 +11,7 @@
     // required
     "iCanTakeNotesDuringSessions": false,
     // required - at least one
-    "tags": ["ReScript", "Zustand", "GraphQL"],
+    "tags": ["React", "Typescript", "UX/UI", "Kubernetes", "Nest.js", "React Query", "React Hook Form", "Web Component"],
     // optional
     "vegan": false,
     // optional
@@ -21,7 +21,7 @@
     // required
     "whatIsMyConnectionToJavascript": "Work and have fun",
     // required
-    "whatCanIContribute": "React",
+    "whatCanIContribute": "UX/UI and the communication from app to end user",
     // optional
     "tShirt": {
         "size": "L",
