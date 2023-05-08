@@ -1,0 +1,36 @@
+{
+    // required
+    "name": "Carlos Wimmer",
+    // optional
+    "company": "Regiondo",
+    // required
+    "when": {
+        "friday": true,
+        "saturday": true
+    },
+    // required
+    "iCanTakeNotesDuringSessions": false,
+    // required - at least one
+    "tags": ["ReScript", "Zustand", "GraphQL"],
+    // optional
+    "vegan": false,
+    // optional
+    "vegetarian": false,
+    // optional
+    "allergies": [],
+    // required
+    "whatIsMyConnectionToJavascript": "Work and have fun",
+    // required
+    "whatCanIContribute": "React",
+    // optional
+    "tShirt": {
+        "size": "L",
+        "type": "regular"
+    },
+    // optional
+    "twitter": "",
+    // optional
+    "mastodon": "",
+    // optional
+    "website": ""
+}
