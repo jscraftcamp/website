@@ -1,5 +1,8 @@
 <script lang="ts">
 	import Box from '$lib/layout/Box.svelte';
+	import twitterLogo from './twitter.svg';
+	import mastodonLogo from './mastodon.svg';
+	import websiteLogo from './website.svg';
 	import type { Participant } from '$lib/participants/participant-schema';
 	import { createEventDispatcher } from 'svelte';
 
@@ -7,6 +10,7 @@
 	export let isActive: boolean = false;
 
 	let isShowingDetails = false;
+	const hasSocialLink = participant.twitter || participant.mastodon || participant.website;
 
 	const dispatch = createEventDispatcher<{ selectedTag: string }>();
 </script>
@@ -14,9 +18,14 @@
 <Box style={isActive ? '--box-shadow: 0 0 25px -10px #080f, 0 0 200px rgba(0, 0, 0, 0.1);' : ''}>
 	<div class="participant">
 		<div class="attendance">
-			{#if participant.iCanTakeNotesDuringSessions}<span class="nt" title="offers to take notes">📝</span>{/if}
-			{#if participant.when.friday}<span class="fr" title="will attend Friday, 30th June">Fr</span>{/if}
-			{#if participant.when.saturday}<span class="sa" title="will attend Saturday, 1st July">Sa</span>{/if}
+			{#if participant.iCanTakeNotesDuringSessions}<span class="nt" title="offers to take notes"
+					>📝</span
+				>{/if}
+			{#if participant.when.friday}<span class="fr" title="will attend Friday, 30th June">Fr</span
+				>{/if}
+			{#if participant.when.saturday}<span class="sa" title="will attend Saturday, 1st July"
+					>Sa</span
+				>{/if}
 		</div>
 		<h3>
 			<button type="button" on:click={() => (isShowingDetails = !isShowingDetails)}
@@ -24,6 +33,41 @@
 			>
 		</h3>
 		{#if participant.company}<h4>{participant.company}</h4>{/if}
+		{#if hasSocialLink}
+			<div class="socials">
+				{#if participant.twitter}
+					<a href="https://twitter.com/{participant.twitter}" rel="external"
+						><img
+							src={twitterLogo}
+							height="32"
+							width="32"
+							alt="Link to @{participant.twitter} on Twitter"
+						/></a
+					>
+				{/if}
+				{#if participant.mastodon}
+					<a href={participant.twitter} rel="external"
+						><img
+							src={mastodonLogo}
+							height="32"
+							width="32"
+							alt="Link to {participant.name} on Mastodon"
+						/></a
+					>
+				{/if}
+				{#if participant.website}
+					<a href={participant.website} rel="external"
+						><img
+							class="website"
+							src={websiteLogo}
+							height="32"
+							width="32"
+							alt="Link to website of {participant.name}"
+						/></a
+					>
+				{/if}
+			</div>
+		{/if}
 		<div class="details">
 			{#if isShowingDetails}
 				<h4>Connection</h4>
@@ -98,6 +142,21 @@
 	.details p {
 		margin: 0;
 	}
+	.socials {
+		align-items: center;
+		display: flex;
+		margin: 0 -0.5em -0.5em;
+	}
+	.socials img {
+		max-height: 2em;
+		max-width: 2em;
+	}
+	.socials a {
+		padding: 0.5em;
+	}
+	.socials a:hover {
+		background: #0001;
+	}
 	ul {
 		list-style: none;
 		margin: 1em 0 0;
@@ -128,7 +187,9 @@
 		color: #fff;
 	}
 
-	.fr, .sa, .nt {
+	.fr,
+	.sa,
+	.nt {
 		cursor: help;
 	}
 </style>

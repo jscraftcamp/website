@@ -13,6 +13,7 @@ export const load: PageServerLoad = async (): Promise<{ participants: Participan
 		const participantsFilePaths = await _loadParticipantJsonFilePaths(PARTICIPANTS_DIRECTORY);
 
 		const participants = await _loadParticipants(participantsFilePaths);
+		participants.sort((a, b) => (a.name < b.name ? -1 : a.name === b.name ? 0 : 1));
 
 		return { participants };
 	} catch (err) {
