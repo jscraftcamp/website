@@ -52,7 +52,7 @@
     "whatCanIContribute": "???",
     // optional
     "tShirt": {
-        "size": "S/M/L/XL/XXL",
+        "size": "S/M/L/XL/2XL/3XL",
         "type": "fitted/regular"
     },
     // optional
@@ -105,8 +105,8 @@
 				<dd>
 					If you want a t-shirt, please fill out the <code>size</code> and <code>type</code> values.
 					<code>tShirt.size</code>
-					can be one of <code>"S"</code>, <code>"M"</code>, <code>"L"</code>,<code>"XL"</code> or
-					<code>"XXL"</code>. <code>tShirt.type</code> can be <code>"fitted"</code> for a waist cut
+					can be one of <code>"S"</code>, <code>"M"</code>, <code>"L"</code>, <code>"XL"</code>, <code>"2XL"</code> or
+					<code>"3XL"</code>. <code>tShirt.type</code> can be <code>"fitted"</code> for a waist cut
 					(also known as women variant) or <code>"regular"</code>.
 				</dd>
 
