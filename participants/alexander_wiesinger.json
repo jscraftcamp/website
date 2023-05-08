@@ -28,7 +28,7 @@
 	"whatCanIContribute": "Good knowledge of angular.",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	"tShirt": {
-		// S | M | L | XL | XXL
+		// S | M | L | XL | 2XL | 3XL
 		"size": "L",
 		// fitted (also known as waist cut or women variant) or regular
 		"type": "regular"
