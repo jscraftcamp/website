@@ -46,7 +46,7 @@
 					>
 				{/if}
 				{#if participant.mastodon}
-					<a href={participant.twitter} rel="external"
+					<a href={participant.mastodon} rel="external"
 						><img
 							src={mastodonLogo}
 							height="32"
