@@ -16,7 +16,7 @@
 		"format": "prettier --plugin-search-dir . --write . '!participants/*.json'",
 		"update-schema": "node --loader ts-node/esm --experimental-specifier-resolution=node create-json-schema.ts > static/schemas/participants.2023.json && prettier --write ./static/schemas/participants.2023.json"
 	},
-	"packageManager": "pnpm@8.4.0",
+	"packageManager": "pnpm@8.5.0",
 	"devDependencies": {
 		"@fontsource/poppins": "4.5.10",
 		"@fontsource/source-sans-pro": "4.5.11",
