@@ -3,7 +3,7 @@
 	"company": "Neocom.ai",
 	"when": {
 		"friday": true,
-		"saturday": false
+		"saturday": true
 	},
 	"iCanTakeNotesDuringSessions": false,
 	"tags": ["TypeScript", "Python", "React", "Django"],
