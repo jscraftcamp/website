@@ -13,9 +13,9 @@
     // required - at least one
     "tags": ["ReScript"],
     // optional
-    "vegan": true/false,
+    "vegan": false,
     // optional
-    "vegetarian": true/false,
+    "vegetarian": true,
     // optional
     "allergies": ["Gluten", "Peanuts"],
     // required
