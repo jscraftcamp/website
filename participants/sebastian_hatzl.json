@@ -2,7 +2,7 @@
   "name": "Sebastian Hatzl",
   "company": "Komdat GmbH",
   "when": {
-    "friday": false,
+    "friday": true,
     "saturday": true
   },
   "iCanTakeNotesDuringSessions": false,
