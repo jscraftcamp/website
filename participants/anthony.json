@@ -1,8 +1,7 @@
 {
     // required
     "name": "Anthony Craig",
-    // optional
-    "company": "your company name",
+    
     // required
     "when": {
         "friday": true,
@@ -16,8 +15,7 @@
     "vegan": false,
     // optional
     "vegetarian": true,
-    // optional
-    "allergies": ["Gluten", "Peanuts"],
+    
     // required
     "whatIsMyConnectionToJavascript": "I find javascript exciting and filled with endless posibilities",
     // required
