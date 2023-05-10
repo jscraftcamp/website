@@ -1,0 +1,36 @@
+{
+    // required
+    "name": "Anthony Craig",
+    // optional
+    "company": "your company name",
+    // required
+    "when": {
+        "friday": true,
+        "saturday": false
+    },
+    // required
+    "iCanTakeNotesDuringSessions": false,
+    // required - at least one
+    "tags": ["ReScript"],
+    // optional
+    "vegan": true/false,
+    // optional
+    "vegetarian": true/false,
+    // optional
+    "allergies": ["Gluten", "Peanuts"],
+    // required
+    "whatIsMyConnectionToJavascript": "I find javascript exciting and filled with endless posibilities",
+    // required
+    "whatCanIContribute": "I can volunteer during the event",
+    // optional
+    "tShirt": {
+        "size": "3XL",
+        "type": "regular"
+    },
+    // optional
+    "twitter": "@bundesligavibes",
+    // optional
+    "mastodon": "@Coveh@c.im ",
+    // optional
+    "website": "https://bundesligavibes.com/"
+}
