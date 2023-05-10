@@ -2,7 +2,7 @@
   "name": "Dominic Ingram",
   "company": "xpecto AG",
   "when": {
-    "friday": false,
+    "friday": true,
     "saturday": true
   },
   "iCanTakeNotesDuringSessions": false,

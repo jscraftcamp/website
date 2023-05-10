@@ -2,7 +2,7 @@
   "name": "Tobias Sittenauer",
   "company": "Voltane GbR",
   "when": {
-    "friday": false,
+    "friday": true,
     "saturday": true
   },
   "iCanTakeNotesDuringSessions": false,
