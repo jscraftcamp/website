@@ -30,7 +30,7 @@
     // optional
     "twitter": "bundesligavibes",
     // optional
-    "mastodon": "@Coveh@c.im ",
+    "mastodon": "https://c.im/@Coveh",
     // optional
     "website": "https://bundesligavibes.com/"
 }
