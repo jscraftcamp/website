@@ -38,7 +38,7 @@
 		"vite": "4.3.5",
 		"vitest": "0.31.0",
 		"zod": "3.21.4",
-		"zod-to-json-schema": "3.21.0"
+		"zod-to-json-schema": "3.21.1"
 	},
 	"type": "module"
 }
