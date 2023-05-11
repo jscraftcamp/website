@@ -30,9 +30,9 @@
         "type": "regular"
     },
     // optional
-    "twitter": "yourhandle",
+    "twitter": null,
     // optional
-    "mastodon": "your Mastodon URL",
+    "mastodon": null,
     // optional
-    "website": "your website URL"
+    "website": null
 }
