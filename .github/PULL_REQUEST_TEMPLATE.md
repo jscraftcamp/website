@@ -10,4 +10,4 @@ I would like to register for JS CraftCamp.
 
 Are you from a sponsoring company?
 
-- [ ] Yes, I am from company
+- [ ] Yes, I am from company ?????
