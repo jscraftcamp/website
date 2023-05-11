@@ -10,7 +10,7 @@
     // required
     "iCanTakeNotesDuringSessions": false,
     // required - at least one
-    "tags": ["ReScript"],
+    "tags": ["CS50", "React", "Vanilla JS"],
     // optional
     "vegan": false,
     // optional
