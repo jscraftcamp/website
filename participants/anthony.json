@@ -5,7 +5,7 @@
     // required
     "when": {
         "friday": true,
-        "saturday": false
+        "saturday": true
     },
     // required
     "iCanTakeNotesDuringSessions": false,
