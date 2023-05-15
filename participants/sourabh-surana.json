@@ -15,17 +15,17 @@
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": false,
 	// your current interests (JS and in general) (required)
-    "tags": ["Typescript", "React", "Angular", "Node.js"],
+        "tags": ["Typescript", "React", "Angular", "Node.js"],
 	// if you only eat vegan food (optional)
 	"vegan": true,
 	// if you only eat vegan or vegetarian food (optional)
 	"vegetarian": false,
 	// what you cannot eat or drink (optional)
-	"allergies": ["egg", "non veg", "fish"],
+	"allergies": ["egg"],
 	// tell us a few words how JavaScript affects you (required)
 	"whatIsMyConnectionToJavascript": "...",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "???",
+	"whatCanIContribute": "I can share my knowledge aroung Angular, Node.",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	"tShirt": {
 		// S | M | L | XL | 2XL | 3XL
