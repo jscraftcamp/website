@@ -23,7 +23,7 @@
 	// what you cannot eat or drink (optional)
 	"allergies": ["egg"],
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "...",
+	"whatIsMyConnectionToJavascript": "I am learning JS to use it in my professional work.",
 	// what can you contribute to the bar camp (required)
 	"whatCanIContribute": "I can share my knowledge aroung Angular, Node.",
 	// if you want a T-Shirt we need your size and variant preference (optional)
