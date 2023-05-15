@@ -8,6 +8,7 @@
 	import linkedIn from './linked-in.png';
 	import skyline from './skyline.svg';
 	import twitter from './twitter.svg';
+	import mastodon from './mastodon.svg';
 	import Sponsors from './sponsoring/Sponsors2023.svelte';
 	import WhatToExpect from './WhatYouCanExpect.svelte';
 	import {
@@ -50,6 +51,12 @@
 
 <PageLayout>
 	<h1>Welcome to JSCraftCamp 2023! 🎉</h1>
+
+	<p style="display: flex; align-items: center;">
+  	Our hashtag is&nbsp;<b>#jscc23</b>&nbsp; find us on
+  	&nbsp;<a href="https://mastodontech.de/tags/jscc23"><img src={mastodon} alt="mastodon" style="height: 1.5rem;" /></a>
+  	&nbsp;<a href="https://twitter.com/search?q=%23jscc23"><img src={twitter} alt="twitter" style="height: 1.5rem;" /></a>
+	</p>
 
 	<section>
 		<InfoBox title="JSCraftCamp is ...">
