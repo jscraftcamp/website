@@ -173,7 +173,6 @@
 		padding: 0;
 		margin: 0;
 		text-align: inherit;
-		text-transform: uppercase;
 	}
 	li button {
 		background: transparent;
