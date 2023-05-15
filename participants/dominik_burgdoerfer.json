@@ -27,7 +27,7 @@
 		// S | M | L | XL | 2XL | 3XL
 		"size": "M",
 		// fitted (also known as waist cut or women variant) or regular
-		"type": "fitted"
+		"type": "regular"
 	},
 	// your Mastodon URL (optional)
 	"mastodon": "https://fosstodon.org/@domachine",
