@@ -1,0 +1,19 @@
+{
+	"name": "Leo Kettmeir",
+	"company": "Deno",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["TypeScript", "Rust", "Web APIs"],
+	"vegan": false,
+	"vegetarian": false,
+	"whatIsMyConnectionToJavascript": "I work with V8 and implementing Web APIs regularly, and also maintain a few websites",
+	"whatCanIContribute": "Discussions & talk about a part of the Deno ecosystem",
+	"tShirt": {
+		"size": "L",
+		"type": "regular"
+	},
+	"twitter": "crowlKats"
+}
