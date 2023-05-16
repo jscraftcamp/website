@@ -50,7 +50,10 @@ export const ParticipantSchema = z
 		tShirt: z
 			.object({
 				type: z.preprocess((v) => String(v).toLowerCase(), z.enum(['fitted', 'regular'])),
-				size: z.preprocess((v) => String(v).toUpperCase(), z.enum(['S', 'M', 'L', 'XL', 'XXL']))
+				size: z.preprocess(
+					(v) => String(v).toUpperCase(),
+					z.enum(['S', 'M', 'L', 'XL', '2XL', '3XL'])
+				)
 			})
 			.nullish(),
 		twitter: z.preprocess(
