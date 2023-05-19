@@ -2,35 +2,28 @@
 
 # JS CraftCamp - Website
 
+## Contributing:
 
-### Start developing:
+### Updated of package dependencies:
 
-1. clone
-2. install dependencies
+- We use [renovate](https://www.mend.io/free-developer-tools/renovate/) to auto-update our dependencies, so we don't need to do that manually.
+- Please use specific package dependencies like "1.3.5": With tracking the versions it could help avoid breaking things (even while we already make use of `pnpm-lock.yaml`)
+
+## Start developing:
+
+Use `corepack enable` to make sure you have the same package manager enabled as we use in the project (`pnpm` in the version set in `package.json`).
 
 ### Scripts
 
-- `npm run storybook` for storybook
-- `npm start` for gatsby dev
+After installing the dependencies (via `pnpm install`), run
 
-### Create new components
+- `pnpm run dev` for starting gatsby in dev mode
+- `pnpm run format` formatting all sources via prettier
+- `pnpm run test` verify valid participants data
+- `pnpm run build` verify that static build works
 
-```
-npm run hygen component new --name <COMPONENT_NAME>
-```
+## Project Structure
 
-The prompt will ask for do you want to create a:
+The website is a static page that gets built through [SvelteKit](https://kit.svelte.dev/) with their `adapter-static`. You can find the routes in the [`src/routes` directory](./src/routes).
 
-- component
-- section
-
-A section basically a part of a page, e.g. the "child care" is a section.
-
-### Cool packages
-
-- https://www.npmjs.com/package/sass-mq
-  > makes it easier to write media-queries
-- https://www.npmjs.com/package/@storybook/addon-viewport
-  > Change the viewport in the storybook preview
-- http://www.hygen.io/
-  > Some generator to make it easier creating components with all depending files
+Every page is put in `+page.svelte` and may include additional components just for that page or reusable components or functions from the [`src/lib`](./src/lib) folder.
