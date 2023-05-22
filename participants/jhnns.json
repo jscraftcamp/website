@@ -1,0 +1,15 @@
+{
+  "name": "Johannes Ewald",
+  "company": "Peerigon GmbH",
+  "when": {
+      "friday": true,
+      "saturday": false
+  },
+  "iCanTakeNotesDuringSessions": false,
+  "tags": ["TypeScript", "React", "Webpack", "Bundler"],
+  "vegetarian": true,
+  "whatIsMyConnectionToJavascript": "I love it :)",
+  "whatCanIContribute": "Bundler knowledge",
+  "twitter": "jhnnns",
+  "website": "https://www.peerigon.com"
+}
