@@ -18,7 +18,7 @@
 	},
 	"packageManager": "pnpm@8.5.1",
 	"devDependencies": {
-		"@fontsource/poppins": "4.5.10",
+		"@fontsource/poppins": "5.0.0",
 		"@fontsource/source-sans-pro": "5.0.0",
 		"@sveltejs/adapter-static": "2.0.2",
 		"@sveltejs/kit": "1.18.0",
