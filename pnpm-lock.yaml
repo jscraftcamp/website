@@ -5,8 +5,8 @@ devDependencies:
     specifier: 5.0.0
     version: 5.0.0
   '@fontsource/source-sans-pro':
-    specifier: 5.0.0
-    version: 5.0.0
+    specifier: 5.0.1
+    version: 5.0.1
   '@sveltejs/adapter-static':
     specifier: 2.0.2
     version: 2.0.2(@sveltejs/kit@1.18.0)
@@ -313,8 +313,8 @@ packages:
     resolution: {integrity: sha512-YdJlR5Q/XXvp1rd0668YtzBM/QQmR/1T/oMyatcn648wkLiAt4FOhi6CT1xxo6PeucqX/+w8gAhP5XvToeMg0Q==}
     dev: true
 
-  /@fontsource/source-sans-pro@5.0.0:
-    resolution: {integrity: sha512-vdA21dHPm0daMU2KD8atishInl4ckrl3bMVYYlLslTBLKlUfHBkjfzbWKYjHdnsw8/NCyhy6H0alEsz5+zRiyQ==}
+  /@fontsource/source-sans-pro@5.0.1:
+    resolution: {integrity: sha512-x7JeUW93BXIYzDGuHCxbe+0gFNnqUNTliEcrhWqJnOSglD2zo6GHuSSoqoy8lOnbtgK394JY6CwXLRR31W6b2g==}
     dev: true
 
   /@humanwhocodes/config-array@0.11.8:
