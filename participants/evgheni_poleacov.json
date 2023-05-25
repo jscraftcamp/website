@@ -6,12 +6,22 @@
 		"saturday": true
 	},
 	"iCanTakeNotesDuringSessions": false,
-	"tags": ["NestJS", "Kubernetes", "TypeScript", "NX", "Angular", "ArgoCD", "Helm", "ArgoWorkflows", "InternalDevelopmentPlatform"],
+	"tags": [
+		"NestJS",
+		"Kubernetes",
+		"TypeScript",
+		"NX",
+		"Angular",
+		"ArgoCD",
+		"Helm",
+		"ArgoWorkflows",
+		"InternalDevelopmentPlatform"
+	],
 	"vegan": false,
 	"vegetarian": false,
 	"allergies": [],
 	"whatIsMyConnectionToJavascript": "JavaScript is default language for all my projects. Especially: NestJS, Angular, NextJS, ReactJS, VueJS, etc.",
-	"whatCanIContribute": "I could share my current experince in creation of JavaScript Development Platform based on Kubernetes",
+	"whatCanIContribute": "I could share my current experience in creation of JavaScript Development Platform based on Kubernetes",
 	"tShirt": {
 		"size": "XL",
 		"type": "regular"
