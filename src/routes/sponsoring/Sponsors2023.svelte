@@ -5,6 +5,7 @@
 	import jambit from './sponsors-2023/jambit.svg';
 	import peerigon from './sponsors-2023/peerigon.svg';
 	import projectLary from './sponsors-2023/project-lary.svg';
+	import scalableCapital from './sponsors-2023/scalable-capital.svg';
 	import seppMed from './sponsors-2023/sepp-med.svg';
 	import tng from './sponsors-2023/tng.png';
 	import typedigital from './sponsors-2023/typedigital.svg';
@@ -45,6 +46,12 @@
 			link: 'https://project-lary.com',
 			name: 'project lary',
 			sponsoring: 'Beverages'
+		},
+		{
+			image: scalableCapital,
+			link: 'https://scalable.capital/',
+			name: 'Scalable Capital',
+			sponsoring: 'BBQ'
 		},
 		{
 			image: seppMed,
