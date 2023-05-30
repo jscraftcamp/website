@@ -135,6 +135,9 @@
 	}
 	.details {
 		flex: 1;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        word-break: break-word;
 	}
 	.details h4 {
 		margin-top: 1em;
