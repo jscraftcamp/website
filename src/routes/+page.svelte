@@ -18,6 +18,7 @@
 	} from '$lib/participants/registration';
 	import { base } from '$app/paths';
 	import Partners from './sponsoring/Partners.svelte';
+	import Schedule from './Schedule.svelte';
 
 	const countdown = writable<string>('');
 	const canRegister = writable<boolean>(isRegistrationOpen());
@@ -53,9 +54,13 @@
 	<h1>Welcome to JSCraftCamp 2023! 🎉</h1>
 
 	<p style="display: flex; align-items: center;">
-  	Our hashtag is&nbsp;<b>#jscc23</b>&nbsp; find us on
-  	&nbsp;<a href="https://mastodontech.de/tags/jscc23"><img src={mastodon} alt="mastodon" style="height: 1.5rem;" /></a>
-  	&nbsp;<a href="https://twitter.com/search?q=%23jscc23"><img src={twitter} alt="twitter" style="height: 1.5rem;" /></a>
+		Our hashtag is&nbsp;<b>#jscc23</b>&nbsp; find us on &nbsp;<a
+			href="https://mastodontech.de/tags/jscc23"
+			><img src={mastodon} alt="mastodon" style="height: 1.5rem;" /></a
+		>
+		&nbsp;<a href="https://twitter.com/search?q=%23jscc23"
+			><img src={twitter} alt="twitter" style="height: 1.5rem;" /></a
+		>
 	</p>
 
 	<section>
@@ -107,6 +112,7 @@
 		<Sponsors />
 		<Partners />
 		<WhatToExpect />
+		<Schedule />
 	</section>
 </PageLayout>
 
