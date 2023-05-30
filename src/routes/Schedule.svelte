@@ -14,6 +14,11 @@
 	</ol>
 </InfoBox>
 <InfoBox title="Saturday schedule">
+	<p>
+		If you did not attend the JSCraftCamp before and are only able to come on Saturday, please try
+		to be there as early as possible. The orga team, facilitator and participants will help you
+		understand the format better if you missed the Opening on Friday.
+	</p>
 	<ol>
 		<li>09:00 - 10:00 Doors open, breakfast (if sponsor)</li>
 		<li>10:00 - 11:00 Marketplace</li>
