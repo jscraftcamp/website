@@ -3,7 +3,6 @@
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 	import agnes from './agnes.png';
-	import david from './david.jpg';
 	import joern from './joern.jpg';
 	import marco from './marco.jpg';
 	import michael from './michael.png';
@@ -30,7 +29,6 @@
 
 	<section>
 		<TeamMember image={agnes} name="Agnes Köhler" email="koehler.agnes@gmail.com" />
-		<TeamMember image={david} name="David Losert" email="david@david-losert.com" />
 		<TeamMember image={joern} name="Jörn Bernhardt" email="joern.bernhardt@compose.us" />
 		<TeamMember image={marco} name="Marco Emrich" email="marco.emrich@codecentric.de" />
 		<TeamMember image={michael} name="Michael Zoidl" email="michael@alm.sh" />
