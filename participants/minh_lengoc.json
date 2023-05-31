@@ -1,0 +1,42 @@
+// Please provide your info in your own .json file.
+// See https://jscraftcamp.org/registration for more information
+{
+	// your name / nickname (required)
+	"name": "Minh Le Ngoc",
+	// optional company name (required)
+	"company": "Ambright",
+	// either both days or at least one day has to be set to true
+	"when": {
+		// 2023-06-30
+		"friday": true,
+		// 2023-07-01
+		"saturday": false
+	},
+	// if you are willing to take session notes and publish them to github (required)
+	"iCanTakeNotesDuringSessions": false,
+	// your current interests (JS and in general) (required)
+	"tags": ["ReScript", "Svelte", "Zustand", "GraphQL"],
+	// if you only eat vegan food (optional)
+	"vegan": false,
+	// if you only eat vegan or vegetarian food (optional)
+	"vegetarian": false,
+	// what you cannot eat or drink (optional)
+	"allergies": ["Crab"],
+	// tell us a few words how JavaScript affects you (required)
+	"whatIsMyConnectionToJavascript": "Workingstudent",
+	// what can you contribute to the bar camp (required)
+	"whatCanIContribute": "Nothing, just listen and learn from experts?",
+	// if you want a T-Shirt we need your size and variant preference (optional)
+	"tShirt": {
+		// S | M | L | XL | 2XL | 3XL
+		"size": "L",
+		// fitted (also known as waist cut or women variant) or regular
+		"type": "regular"
+	},
+	// your Twitter handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
+	"twitter": "yourhandle",
+	// your Mastodon URL (optional)
+	"mastodon": "https://mastodontech.de/@yourhandle",
+	// your website URL or other social media (optional)
+	"website": "https://www.your-domain.com"
+}
