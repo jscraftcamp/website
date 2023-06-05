@@ -125,6 +125,11 @@
 					{/each}
 				</ul>
 			</div>
+			<p>
+				Looking for interesting stats? See <a href="{base}/participants/stats"
+					>/participants/stats</a
+				>
+			</p>
 		{:else}
 			<p>There are no participants registered yet.</p>
 		{/if}
