@@ -3,6 +3,11 @@
 </script>
 
 <InfoBox title="Friday schedule">
+	<p>
+		JSCraftCamp 2023 will be facilitated by <a href="https://twitter.com/w3ltraumpirat"
+			>Tobias Goeschel</a
+		>!
+	</p>
 	<ol>
 		<li>09:00 - 10:00 Doors open, breakfast</li>
 		<li>10:00 - 11:00 Opening and Marketplace</li>
