@@ -1,0 +1,20 @@
+{
+  "name": "Robert Hostlowsky",
+  "company": "instana",
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  "iCanTakeNotesDuringSessions": false,
+  "tags": ["OpenTelemetry", "React", "GraphQL", "Prisma", "micro frontends", "Typescript"],
+  "vegan": false,
+  "vegetarian": true,
+  "allergies": [],
+  "whatIsMyConnectionToJavascript": "Got in love with JS years ago. JS IS my production env every day. The creativity and innovations by its community is inspiring me every day.",
+  "whatCanIContribute": "Design Systems. Let's talk about fully typesafe GraphQL app server/client",
+  "tShirt": {
+    "size": "M",
+    "type": "regular"
+  },
+  "twitter": "rhosts"
+}
