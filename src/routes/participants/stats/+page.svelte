@@ -159,7 +159,7 @@
 	.tables {
 		display: grid;
 		gap: 1em;
-		grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+		grid-template-columns: repeat(auto-fit, minmax(min-content, min(100%, 300px)));
 		justify-content: space-between;
 	}
 	th {
