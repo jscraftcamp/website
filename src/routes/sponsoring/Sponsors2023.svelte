@@ -1,6 +1,7 @@
 <script lang="ts">
 	import codecentric from './sponsors-2023/codecentric.png';
 	import composeus from './sponsors-2023/compose-us.svg';
+	import hetzner from './sponsors-2023/hetzner-logo.svg';
 	import inovex from './sponsors-2023/inovex-logo.svg';
 	import jambit from './sponsors-2023/jambit.svg';
 	import peerigon from './sponsors-2023/peerigon.svg';
@@ -22,6 +23,12 @@
 			link: 'https://compose.us',
 			name: 'compose.us',
 			sponsoring: 'Friday breakfast'
+		},
+		{
+			image: hetzner,
+			link: 'https://www.hetzner.com',
+			name: 'Hetzner',
+			sponsoring: 'T-Shirts'
 		},
 		{
 			image: inovex,
