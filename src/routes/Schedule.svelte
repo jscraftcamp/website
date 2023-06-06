@@ -1,11 +1,13 @@
 <script lang="ts">
 	import InfoBox from '$lib/layout/InfoBox.svelte';
+	import PersonLink from '$lib/layout/PersonLink.svelte';
 </script>
 
 <InfoBox title="Friday schedule">
 	<p>
-		JSCraftCamp 2023 will be facilitated by <a href="https://twitter.com/w3ltraumpirat"
-			>Tobias Goeschel</a
+		JSCraftCamp 2023 will be facilitated by <PersonLink
+			linkedIn="https://www.linkedin.com/in/w3ltraumpirat/"
+			mastodon="https://mastodon.social/@weltraumpirat">Tobias Goeschel</PersonLink
 		>!
 	</p>
 	<ol>
