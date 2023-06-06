@@ -15,14 +15,13 @@
 
 <style>
 	div {
-		display: inline-flex;
 		align-items: center;
+		display: inline-flex;
 		gap: 0.25em;
 		line-height: inherit;
 	}
 	img {
 		display: block;
 		height: 1.5em;
-		width: auto;
 	}
 </style>
