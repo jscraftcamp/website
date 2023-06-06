@@ -1,0 +1,14 @@
+{
+	"name": "Jakob",
+	"company": "Project Lary",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["React"],
+	"vegan": false,
+	"vegetarian": false,
+	"whatIsMyConnectionToJavascript": "I work as Full Stack Developer and I'm interested in all kind of new Web Technologies.",
+	"whatCanIContribute": "My company Project Lary will be sponsoring drinks for the event",
+}
