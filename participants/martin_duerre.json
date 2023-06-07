@@ -25,7 +25,7 @@
 	// tell us a few words how JavaScript affects you (required)
 	"whatIsMyConnectionToJavascript": "Mostly backend Java Developer(J2EE->Spring->Quarkus), in more and more projects I do some <Fullstack> now",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "???",
+	"whatCanIContribute": "insights in software development at big public customer",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	"tShirt": {
 		// S | M | L | XL | 2XL | 3XL
