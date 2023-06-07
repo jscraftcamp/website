@@ -10,7 +10,7 @@
 		// 2023-06-30
 		"friday": true,
 		// 2023-07-01
-		"saturday": false
+		"saturday": true
 	},
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": false,
