@@ -9,8 +9,8 @@
 	"tags": ["JavaScript", "TypeScript", "Functional Programming", "TDD", "DDD", "Haskell"],
 	"vegan": false,
 	"vegetarian": true,
-	"whatIsMyConnectionToJavascript": "I use JS/TS at a daily base as a web developer. Growing to like JS/TS when i started learning FP.",
-	"whatCanIContribute": "Session about functional programming paradigms in JS",
+	"whatIsMyConnectionToJavascript": "I use JS/TS on a daily base as a web developer. I started to grow fond when I began learning FP.",
+	"whatCanIContribute": "Session about functional programming paradigms in JS/TS",
 	"tShirt": {
 		"size": "L",
 		"type": "regular"
