@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@fontsource/poppins':
-    specifier: 5.0.1
-    version: 5.0.1
+    specifier: 5.0.3
+    version: 5.0.3
   '@fontsource/source-sans-pro':
     specifier: 5.0.3
     version: 5.0.3
@@ -313,8 +313,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fontsource/poppins@5.0.1:
-    resolution: {integrity: sha512-meHDJ+t2NrfiKdcQefv+CYGcup8ZHXoSzOwRV3RolmGXG4569y9zL/lV8qMe3q8WdqSn8CAyRoJKxZXEkPBcAg==}
+  /@fontsource/poppins@5.0.3:
+    resolution: {integrity: sha512-5lL2vmvmh4zbknTh1nVH9pTWyhYqAlYMHIAnkNhqo5qwMZGlr+coM1dtMwiQHRBgmHAl3ZvJ35Bj0s8cpmXZbg==}
     dev: true
 
   /@fontsource/source-sans-pro@5.0.3:
