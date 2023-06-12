@@ -1,0 +1,33 @@
+{
+	"name": "Vladimir Breanţev",
+	"company": "Web Seven",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": [
+		"React",
+		"NextJS",
+		"Vue",
+		"NestJS",
+		"TypeScript",
+		"JavaScript",
+		"Kubernetes",
+		"Docker",
+		"ArgoCD",
+		"Helm"
+	],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "As a team lead in a web development company, my work revolves around overseeing projects and guiding the development team in utilizing JavaScript to create dynamic and interactive web applications.",
+	"whatCanIContribute": "",
+	"tShirt": {
+		"size": "2XL",
+		"type": "regular"
+	},
+	"twitter": "",
+	"mastodon": "",
+	"website": "https://www.linkedin.com/in/vladimir-bryantsev/"
+}
