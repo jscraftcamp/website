@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { base } from '$app/paths';
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 
