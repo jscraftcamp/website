@@ -1,9 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { readdir } from 'node:fs/promises';
-import {
-	loadParticipantJsonFilePaths,
-	parseParticipantJson
-} from './participants';
+import { loadParticipantJsonFilePaths, parseParticipantJson } from './participants';
 import { PARTICIPANTS_DIRECTORY } from './participant-schema';
 
 describe('Participants', async () => {
