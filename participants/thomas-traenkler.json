@@ -9,7 +9,6 @@
 	"when": {
 		// 2023-06-30
 		"friday": true,
-		"friday": false,
 		// 2023-07-01
 		"saturday": true
 	},
