@@ -1,7 +1,4 @@
-import {
-	type Participant,
-	PARTICIPANTS_DIRECTORY
-} from '$lib/participants/participant-schema';
+import { type Participant, PARTICIPANTS_DIRECTORY } from '$lib/participants/participant-schema';
 import type { PageServerLoad } from './$types';
 import { loadParticipantJsonFilePaths, loadParticipants } from '$lib/participants/participants';
 

@@ -74,4 +74,4 @@ export const ParticipantSchema = z
 export type Participant = z.infer<typeof ParticipantSchema>;
 
 type NoUndefinedField<T> = { [P in keyof T]-?: NoUndefinedField<NonNullable<T[P]>> };
-export type TShirtSize = NoUndefinedField<Participant>["tShirt"]["size"]
+export type TShirtSize = NoUndefinedField<Participant>['tShirt']['size'];
