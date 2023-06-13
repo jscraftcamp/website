@@ -1,7 +1,7 @@
 {
     "name": "Corinna Steinhoff",
     "when": {
-        "friday": true,
+        "friday": false,
         "saturday": true
     },
     "iCanTakeNotesDuringSessions": false,
