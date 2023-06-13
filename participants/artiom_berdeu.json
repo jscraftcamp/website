@@ -1,0 +1,22 @@
+{
+	"name": "Berdeu Artiom",
+	"company": "Web Seven",
+	"when": {
+		"friday": false,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["Docker", "Kubernetes", "Helm", "JavaScript", "ArgoCD", "NX", "ArgoWorkflows"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "My connection to JavaScript is essential as I use it to develop a platform based on Kubernetes (k8s). Through JavaScript, I implement third-party services and leverage the Node.js client to seamlessly integrate and interact with these services within the platform.",
+	"whatCanIContribute": "As someone working on the development platform, I have the opportunity to contribute by sharing my expertise with individuals who are interested in.",
+	"tShirt": {
+		"size": "L",
+		"type": "regular"
+	},
+	"twitter": "",
+	"mastodon": "",
+	"website": ""
+}
