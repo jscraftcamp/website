@@ -1,0 +1,22 @@
+{
+	"name": "Manish K",
+	"company": "Raj Enterprises",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["Javascript", "Iot", "Electronics", "Database Internals", "Robotics"],
+	"vegan": false,
+	"vegetarian": false,
+  "allergies": [],
+  "whatIsMyConnectionToJavascript": "Employers Code Contributor, My Bread and Butter since a year",
+	"whatCanIContribute": "I am not able to comprehend what is asked. I am attending online/virtually",
+  "tShirt": {
+		"size": "3XL",
+		"type": "fitted"
+	},
+	"twitter": "null",
+	"mastodon": "null",
+	"website": "https://agentcuriosity.wordpress.com"
+}
