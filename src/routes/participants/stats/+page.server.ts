@@ -3,6 +3,8 @@ import type { PageServerLoad } from './$types';
 import { loadAllParticipants } from '$lib/participants/participants';
 
 type Allergies = { [k: string]: number };
+type Company = { name: string; amount: number; isSponsor: boolean };
+type Companies = { [k: string]: Company };
 type Shirts = {
 	count: number;
 	fitted: number;
@@ -21,9 +23,30 @@ const orgaMembers = [
 	'Robert Hostlowsky',
 	'Wolfram Kriesing'
 ];
+const isOrgaMember = (name: string) => orgaMembers.includes(name);
+
+const isSponsor = (key: string) =>
+	[
+		'codecentric',
+		'compose-us',
+		'hetzner-logo',
+		'inovex-logo',
+		'jambit',
+		'lary-logo-white',
+		'peerigon',
+		'project-lary',
+		'scalable-capital',
+		'sepp-med',
+		'tng',
+		'typedigital'
+	].includes(key);
+
+const isNonFoodAllergy = (allergyKey: string) =>
+	['', 'none', 'bullshit', 'hard work'].includes(allergyKey);
 
 export const load: PageServerLoad = async (): Promise<{
 	allergies: Allergies;
+	companies: Company[];
 	orgaCount: number;
 	orgaShirts: Shirts;
 	participantCount: number;
@@ -49,16 +72,32 @@ export const load: PageServerLoad = async (): Promise<{
 			notetakersFriday: 0,
 			notetakersSaturday: 0
 		};
+		const companies: Companies = { __empty: { name: '(no company)', amount: 0, isSponsor: false } };
 
 		for (const participant of participants) {
 			let shirts = participantsShirts;
-			if (orgaMembers.includes(participant.name)) {
+			if (isOrgaMember(participant.name)) {
 				shirts = orgaShirts;
+			}
+			if (participant.company) {
+				const name = participant.company;
+				const companyAsKey = name
+					.toLocaleLowerCase()
+					.replace(/\s+(?:ag|gbr|gmbh|gmdbh)/, '')
+					.replace(/[^a-z]/g, '-');
+				companies[companyAsKey] = companies[companyAsKey] ?? {
+					name,
+					amount: 0,
+					isSponsor: isSponsor(companyAsKey)
+				};
+				companies[companyAsKey].amount = companies[companyAsKey].amount + 1;
+			} else {
+				companies['__empty'].amount = companies['__empty'].amount + 1;
 			}
 			if (participant.allergies) {
 				for (const allergy of participant.allergies) {
 					const allergyKey = allergy.toLocaleLowerCase().trim();
-					if (!['', 'none', 'bullshit', 'hard work'].includes(allergyKey)) {
+					if (!isNonFoodAllergy(allergyKey)) {
 						allergies[allergyKey] = (allergies[allergyKey] ?? 0) + 1;
 					}
 				}
@@ -84,8 +123,21 @@ export const load: PageServerLoad = async (): Promise<{
 				(participant.when.saturday && participant.iCanTakeNotesDuringSessions ? 1 : 0);
 		}
 
+		const sortedCompanyEntries = Object.entries(companies);
+		sortedCompanyEntries.sort(([aName], [bName]) => {
+			if (aName < bName) {
+				return -1;
+			}
+			if (aName === bName) {
+				return 0;
+			}
+			return 1;
+		});
+		const sortedCompanies = sortedCompanyEntries.map(([key, company]) => company);
+
 		return {
 			allergies,
+			companies: sortedCompanies,
 			orgaCount: orgaMembers.length,
 			orgaShirts,
 			participantCount: participants.length,
