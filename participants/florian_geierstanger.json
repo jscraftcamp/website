@@ -1,0 +1,33 @@
+// Please provide your info in your own .json file.
+// See https://jscraftcamp.org/registration for more information
+{
+	// your name / nickname (required)
+	"name": "Florian Geierstanger",
+	// optional company name (required)
+	"company": "Pluswerk München",
+	// either both days or at least one day has to be set to true
+	"when": {
+		// 2023-06-30
+		"friday": true,
+		// 2023-07-01
+		"saturday": true
+	},
+	// if you are willing to take session notes and publish them to github (required)
+	"iCanTakeNotesDuringSessions": true,
+	// your current interests (JS and in general) (required)
+	"tags": ["Svelte", "Vue", "CSS", "Web Components", "Lit", "Accessibility", "Vite", "Vitest", "Playwright"],
+	// if you only eat vegan food (optional)
+	"vegan": false,
+	// if you only eat vegan or vegetarian food (optional)
+	"vegetarian": true,
+	// what you cannot eat or drink (optional)
+	"allergies": null,
+	// tell us a few words how JavaScript affects you (required)
+	"whatIsMyConnectionToJavascript": "I work as a Frontend Developer for a Munich based web agency. I like to do side projects, like 'Muenchen Plantscht' and 'Daily Bingo', which are using Sveltekit/Vue.",
+	// what can you contribute to the bar camp (required)
+	"whatCanIContribute": "I integrated Vite into the server rendered PHP based TYPO3 CMS and can report my learnings. Also, if anyone looks for ideas for fun side projects - I have a bunch one could contribute to. I'm about to organize a CSS Munich meetup, that might be of interest too.",
+	// your Mastodon URL (optional)
+	"mastodon": "https://mastodon.social/@kinoauge",
+	// your website URL or other social media (optional)
+	"website": "https://florian.geierstanger.org"
+}
