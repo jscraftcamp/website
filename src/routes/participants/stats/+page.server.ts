@@ -29,15 +29,14 @@ const isSponsor = (key: string) =>
 	[
 		'codecentric',
 		'compose-us',
-		'hetzner-logo',
-		'inovex-logo',
+		'hetzner-cloud',
+		'inovex',
 		'jambit',
-		'lary-logo-white',
 		'peerigon',
 		'project-lary',
 		'scalable-capital',
 		'sepp-med',
-		'tng',
+		'tng-technology-consulting',
 		'typedigital'
 	].includes(key);
 
