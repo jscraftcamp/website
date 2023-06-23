@@ -2,7 +2,7 @@
 	"name": "Michael Zoidl",
 	"company": "alm engineering GmbH",
 	"when": {
-		"friday": true,
+		"friday": false,
 		"saturday": true
 	},
 	"iCanTakeNotesDuringSessions": true,

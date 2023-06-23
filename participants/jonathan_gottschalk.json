@@ -2,9 +2,9 @@
 // See https://jscraftcamp.org/registration for more information
 {
 	// your name / nickname (required)
-	"name": "Sourabh Surana",
+	"name": "Jonathan Gottschalk Roda",
 	// optional company name (required)
-	"company": "Birkenstock",
+	"company": "OBI",
 	// either both days or at least one day has to be set to true
 	"when": {
 		// 2023-06-30
@@ -13,30 +13,22 @@
 		"saturday": true
 	},
 	// if you are willing to take session notes and publish them to github (required)
-	"iCanTakeNotesDuringSessions": false,
+	"iCanTakeNotesDuringSessions": true,
 	// your current interests (JS and in general) (required)
-        "tags": ["Typescript", "React", "Angular", "Node.js"],
+	"tags": ["Typescript", "CSS", "Nuxt", "ThreeJS"],
 	// if you only eat vegan food (optional)
 	"vegan": true,
-	// if you only eat vegan or vegetarian food (optional)
-	"vegetarian": false,
 	// what you cannot eat or drink (optional)
-	"allergies": ["egg"],
+	"allergies": ["Gluten"],
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "I am learning JS to use it in my professional work.",
+	"whatIsMyConnectionToJavascript": "A deep love for web applications and creative content on the web.",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "I can share my knowledge of Angular, Node.",
+	"whatCanIContribute": "Insights to Nuxt3 and modern css.",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	"tShirt": {
 		// S | M | L | XL | 2XL | 3XL
-		"size": "L",
+		"size": "M",
 		// fitted (also known as waist cut or women variant) or regular
-		"type": "fitted"
-	},
-	// your Twitter handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
-	"twitter": null,
-	// your Mastodon URL (optional)
-	"mastodon": null,
-	// your website URL or other social media (optional)
-	"website": null
+		"type": "regular"
+	}
 }
