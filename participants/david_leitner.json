@@ -16,6 +16,6 @@
         "type": "regular"
     },
     "twitter": "duffleit",
-    "mastodon": "@duffleit@mastodon.social",
+    "mastodon": "https://mastodon.social/@duffleit",
     "website": "https://leitner.io"
 }
