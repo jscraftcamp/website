@@ -1,0 +1,17 @@
+{
+  "name": "David Völkel",
+  "when": {
+    "friday": true,
+    "saturday": false
+  },
+  "iCanTakeNotesDuringSessions": false,
+  "tags": ["TDD", "Refactoring", "Trade-Offs", "DevOps"],
+  "whatIsMyConnectionToJavascript": "Some Typescript experience",
+  "whatCanIContribute": "Crazy ideas and questions",
+  "tShirt": {
+    "size": "M",
+    "type": "regular"
+  },
+  "twitter": "davidvoelkel",
+  "website": "https://www.davidvoelkel.de"
+}
