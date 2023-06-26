@@ -8,7 +8,7 @@
 	// either both days or at least one day has to be set to true
 	"when": {
 		// 2023-06-30
-		"friday": false,
+		"friday": true,
 		// 2023-07-01
 		"saturday": true
 	},
