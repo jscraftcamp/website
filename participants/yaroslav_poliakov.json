@@ -5,7 +5,7 @@
     "company": "Regiondo GmbH",
     // required
     "when": {
-       "friday": false,
+       "friday": true,
        "saturday": true
     },
     // required
