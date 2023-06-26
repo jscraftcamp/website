@@ -1,0 +1,20 @@
+{
+    "name": "Faisal Ahmed",
+    "company": "Brainlab AG",
+    "when": {
+        "friday": true,
+        "saturday": true
+    },
+    "iCanTakeNotesDuringSessions": true,
+    "tags": ["React Native", "TypeScript", "React"],
+    "vegan": false,
+    "vegetarian": false,
+    "whatIsMyConnectionToJavascript": "Software Engineer using JS/TS for 6+ years. I have published many JS based apps that have currently 15000+ active users.",
+    "whatCanIContribute": "I can code and talk about TS or React Native.",
+    "tShirt": {
+        "size": "M",
+        "type": "regular"
+    },
+    "twitter": "faisalbahmed",
+    "website": "https://faisalbin.com"
+}
