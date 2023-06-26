@@ -2,7 +2,7 @@
 	"name": "Berdeu Artiom",
 	"company": "Web Seven",
 	"when": {
-		"friday": false,
+		"friday": true,
 		"saturday": true
 	},
 	"iCanTakeNotesDuringSessions": false,
