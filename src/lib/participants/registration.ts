@@ -5,6 +5,16 @@ export const isRegistrationOpen = () => {
 	const now = +new Date();
 	return registrationOpensAt <= now && now <= registrationClosessAt;
 };
+export const getRegistrationState = () => {
+	const now = +new Date();
+	if (now <= registrationOpensAt) {
+		return 'not-yet';
+	}
+	if (registrationClosessAt <= now) {
+		return 'closed';
+	}
+	return 'open';
+};
 export function timeLeft(
 	nowInMs: number,
 	timeInMs: number

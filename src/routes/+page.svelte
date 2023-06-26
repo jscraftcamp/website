@@ -12,7 +12,8 @@
 	import Sponsors from './sponsoring/Sponsors2023.svelte';
 	import WhatToExpect from './WhatYouCanExpect.svelte';
 	import {
-		isRegistrationOpen,
+		getRegistrationState,
+		registrationClosessAt,
 		registrationOpensAt,
 		timeLeft
 	} from '$lib/participants/registration';
@@ -21,11 +22,11 @@
 	import Schedule from './Schedule.svelte';
 
 	const countdown = writable<string>('');
-	const canRegister = writable<boolean>(isRegistrationOpen());
+	const registrationState = writable<'not-yet' | 'closed' | 'open'>(getRegistrationState());
 	const updateCountdown = () => {
 		const now = +new Date();
-		if (registrationOpensAt <= now) {
-			$canRegister = true;
+		if (registrationOpensAt <= now && now <= registrationClosessAt) {
+			$registrationState = 'open';
 			return;
 		}
 		const { days, hours, minutes, seconds } = timeLeft(now, registrationOpensAt);
@@ -82,8 +83,10 @@
 		</InfoBox>
 		<InfoBox title="When?">
 			<p>June 30th & July 1st, 2023.</p>
-			{#if !$canRegister}
+			{#if $registrationState === 'not-yet'}
 				<p>Registration opens on May 1st, 2023. {@html $countdown}</p>
+			{:else if $registrationState === 'closed'}
+				<p>Registration is closed, we're full!</p>
 			{:else}
 				<p><a href="{base}/registration">Registration is open!</a></p>
 			{/if}
