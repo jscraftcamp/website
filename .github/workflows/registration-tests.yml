@@ -40,6 +40,11 @@ jobs:
         run: |
           pnpm run check
 
+      - name: Run linter
+        shell: bash
+        run: |
+          pnpm run lint
+
       - name: Run tests
         shell: bash
         run: |

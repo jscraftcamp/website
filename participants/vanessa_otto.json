@@ -3,7 +3,7 @@
 	"company": "Zavvy GmbH",
 	"when": {
 		"friday": true,
-		"saturday": false
+		"saturday": true
 	},
 	"iCanTakeNotesDuringSessions": true,
 	"tags": ["Vue", "Qwik", "CSS", "AI"],
