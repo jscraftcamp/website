@@ -1,0 +1,19 @@
+{
+	"name": "Tobias Klug",
+	"company": "codecentric",
+	"when": {
+		"friday": true,
+		"saturday": false
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["JavaScript", "TypeScript", "Functional Programming", "TDD", "DDD", "Haskell"],
+	"vegan": false,
+	"vegetarian": true,
+	"whatIsMyConnectionToJavascript": "I use JS/TS on a daily base as a web developer. I started to grow fond when I began learning FP.",
+	"whatCanIContribute": "Session about functional programming paradigms in JS/TS",
+	"tShirt": {
+		"size": "L",
+		"type": "regular"
+	},
+	"twitter": "tbsklg"
+}

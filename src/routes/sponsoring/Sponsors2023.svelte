@@ -1,9 +1,12 @@
 <script lang="ts">
 	import codecentric from './sponsors-2023/codecentric.png';
-	import inovex from './sponsors-2023/inovex-logo.svg';
+	import composeus from './sponsors-2023/compose-us.svg';
+	import hetzner from './sponsors-2023/hetzner-logo-slogan_red-square.png';
+	import inovex from './sponsors-2023/inovex-logo.png';
 	import jambit from './sponsors-2023/jambit.svg';
 	import peerigon from './sponsors-2023/peerigon.svg';
 	import projectLary from './sponsors-2023/project-lary.svg';
+	import scalableCapital from './sponsors-2023/scalable-capital.svg';
 	import seppMed from './sponsors-2023/sepp-med.svg';
 	import tng from './sponsors-2023/tng.png';
 	import typedigital from './sponsors-2023/typedigital.svg';
@@ -14,6 +17,18 @@
 			link: 'https://www.codecentric.de',
 			name: 'codecentric AG',
 			sponsoring: 'Location'
+		},
+		{
+			image: composeus,
+			link: 'https://compose.us',
+			name: 'compose.us',
+			sponsoring: 'Friday breakfast'
+		},
+		{
+			image: hetzner,
+			link: 'https://www.hetzner.com',
+			name: 'Hetzner',
+			sponsoring: 'T-Shirts'
 		},
 		{
 			image: inovex,
@@ -38,6 +53,12 @@
 			link: 'https://project-lary.com',
 			name: 'project lary',
 			sponsoring: 'Beverages'
+		},
+		{
+			image: scalableCapital,
+			link: 'https://scalable.capital/',
+			name: 'Scalable Capital',
+			sponsoring: 'BBQ'
 		},
 		{
 			image: seppMed,

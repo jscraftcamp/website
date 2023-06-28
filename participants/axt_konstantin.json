@@ -1,0 +1,34 @@
+// Please provide your info in your own .json file.
+// See https://jscraftcamp.org/registration for more information
+{
+	// your name / nickname (required)
+	"name": "Konstantin Axt",
+	// optional company name (required)
+	"company": "Joyn GmbH",
+	// either both days or at least one day has to be set to true
+	"when": {
+		// 2023-06-30
+		"friday": true,
+		// 2023-07-01
+		"saturday": false
+	},
+	// if you are willing to take session notes and publish them to github (required)
+	"iCanTakeNotesDuringSessions": true,
+	// your current interests (JS and in general) (required)
+	"tags": ["NextJS", "Svelte", "SolidJS", "GraphQL", "Cypress", "Playwright", "Github Actions", "Storybook", "Clean Code"],
+	// if you only eat vegan food (optional)
+	"vegan": false,
+	// if you only eat vegan or vegetarian food (optional)
+	"vegetarian": false,
+	// tell us a few words how JavaScript affects you (required)
+	"whatIsMyConnectionToJavascript": "It is part of my daily work and I enjoy working with it.",
+	// what can you contribute to the bar camp (required)
+	"whatCanIContribute": "I can contribute with my experience developing application with web technologies.",
+	// if you want a T-Shirt we need your size and variant preference (optional)
+	"tShirt": {
+		// S | M | L | XL | 2XL | 3XL
+		"size": "L",
+		// fitted (also known as waist cut or women variant) or regular
+		"type": "fitted"
+	}
+}

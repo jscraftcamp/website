@@ -1,9 +1,19 @@
 export const registrationOpensAt = +new Date('2023-05-01 00:00:00Z');
 export const eventStartsAt = +new Date('2023-06-30 09:30:00Z');
-export const registrationClosessAt = +new Date('2023-07-01 18:00:00Z');
+export const registrationClosessAt = +new Date('2023-06-26 17:00:00Z');
 export const isRegistrationOpen = () => {
 	const now = +new Date();
 	return registrationOpensAt <= now && now <= registrationClosessAt;
+};
+export const getRegistrationState = () => {
+	const now = +new Date();
+	if (now <= registrationOpensAt) {
+		return 'not-yet';
+	}
+	if (registrationClosessAt <= now) {
+		return 'closed';
+	}
+	return 'open';
 };
 export function timeLeft(
 	nowInMs: number,

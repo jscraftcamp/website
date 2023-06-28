@@ -1,0 +1,36 @@
+{
+    // required
+    "name": "Celestine Auburger",
+    // optional
+    "company": "Peerigon GmbH",
+    // required
+    "when": {
+        "friday": true,
+        "saturday": true
+    },
+    // required
+    "iCanTakeNotesDuringSessions": false,
+    // required - at least one
+    "tags": ["Typescript", "React", "Vue", "GraphQL","Playwright"],
+    // optional
+    "vegan": false,
+    // optional
+    "vegetarian": false,
+    // optional
+    "allergies": [],
+    // required
+    "whatIsMyConnectionToJavascript": "I use it everyday, but it's Typescript now!",
+    // required
+    "whatCanIContribute": "Good coffee and a nice chat!",
+    // optional
+    "tShirt": {
+        "size": "L",
+        "type": "fitted"
+    },
+    // optional
+    "twitter": null,
+    // optional
+    "mastodon": null,
+    // optional
+    "website": null
+}

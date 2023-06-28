@@ -1,0 +1,17 @@
+{
+  "name": "Stefan Hoferer",
+  "when": {
+    "friday": false,
+    "saturday": true
+  },
+  "iCanTakeNotesDuringSessions": false,
+  "tags": ["AWS SDK", "AWS Lambda", "React"],
+  "vegan": false,
+  "vegetarian": false,
+  "whatIsMyConnectionToJavascript": "I like to work fast",
+  "whatCanIContribute": "Knowledge in building serverless Apps",
+  "tShirt": {
+    "size": "3XL",
+    "type": "regular"
+  }
+}

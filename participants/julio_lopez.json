@@ -1,0 +1,20 @@
+{
+	"name": "Julio Jose Lopez Aldazoro",
+	"company": "Sofatutor GmbH",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["React", "Javascript", "NextJS", "GraphQL", "Typscript", "TDD", "NextJS","ThreeJS", "React Testing Library"],
+	"vegan": false,
+	"vegetarian": false,
+	"whatIsMyConnectionToJavascript": "My job is to build react applications",
+	"whatCanIContribute": "Share some react experience and help with the organization",
+	"tShirt": {
+		"size": "M",
+		"type": "regular"
+	},
+	"twitter": "JulioJLopezA",
+  "website": "https://juliolopezdev.com"
+}

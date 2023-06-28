@@ -1,0 +1,15 @@
+{
+    "name": "Luisa Venancio",
+    "company": "Project Lary",
+    "when": { "friday": true, "saturday": true},
+    "iCanTakeNotesDuringSessions": false,
+    "tags": ["React", "Redux", "VueJS"],
+    "vegan": false,
+    "vegetarian": false,
+    "whatIsMyConnectionToJavascript": "I'm a fullstack developer and work with javascript daily",
+    "whatCanIContribute": "A positive attitude and a willingness to learn. Sometimes I might know something",
+    "tShirt": {
+        "size": "M",
+        "type": "regular"
+    }
+}

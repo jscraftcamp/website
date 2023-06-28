@@ -1,0 +1,19 @@
+{
+	"name": "Faisal Shahzad",
+	"company": "Freelancer/SERP Wings",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["VanillaJS", "Python", "Web APIs", "Teaching"],
+	"vegan": true,
+	"vegetarian": true,
+	"whatIsMyConnectionToJavascript": "Working with JavaScript for 2 decades and now a days mostly use it for static web apps",
+	"whatCanIContribute": "Discussions about static web apps and a talk about static WordPress",
+	"tShirt": {
+		"size": "2XL",
+		"type": "regular"
+	},
+  "website": "https://www.serpwings.com",  
+}
