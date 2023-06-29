@@ -1,0 +1,11 @@
+{
+    "name": "Corinna Steinhoff",
+    "when": {
+        "friday": true,
+        "saturday": true
+    },
+    "iCanTakeNotesDuringSessions": false,
+    "tags": ["frontend", "Svelte", "typescript", "testing"],
+    "whatIsMyConnectionToJavascript": "The language that made me want to know more about programming",
+    "whatCanIContribute": "My humble Svelte knowledge"
+}
