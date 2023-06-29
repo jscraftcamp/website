@@ -1,0 +1,18 @@
+{
+  "name": "Maheshwaran Velusamy",
+  "when": {
+    "friday": false,
+    "saturday": true
+  },
+  "iCanTakeNotesDuringSessions": false,
+  "tags": ["React", "Python", "Django"],
+  "vegan": false,
+  "vegetarian": false,
+  "whatIsMyConnectionToJavascript": "I wanted to build javascript based web apps. I want to take my javascript skills next level, because i was fall in l❤️ve with its quirks 😉 . I want to run tech startup in future.",
+  "whatCanIContribute": "I can build fullstack web apps with react and django. ",
+  "tShirt": {
+    "size": "M",
+    "type": "regular"
+  },
+  "website": "https://www.linkedin.com/in/maheshwaranv"
+}
