@@ -16,29 +16,29 @@
 		"format": "prettier --plugin-search-dir . --write . '!participants/*.json'",
 		"update-schema": "node --loader ts-node/esm --experimental-specifier-resolution=node create-json-schema.ts > static/schemas/participants.2023.json && prettier --write ./static/schemas/participants.2023.json"
 	},
-	"packageManager": "pnpm@8.6.3",
+	"packageManager": "pnpm@8.6.5",
 	"devDependencies": {
 		"@fontsource/poppins": "5.0.3",
 		"@fontsource/source-sans-pro": "5.0.3",
 		"@sveltejs/adapter-static": "2.0.2",
 		"@sveltejs/kit": "1.20.5",
-		"@typescript-eslint/eslint-plugin": "5.60.0",
-		"@typescript-eslint/parser": "5.60.0",
+		"@typescript-eslint/eslint-plugin": "5.60.1",
+		"@typescript-eslint/parser": "5.60.1",
 		"eslint": "8.43.0",
 		"eslint-config-prettier": "8.8.0",
 		"eslint-plugin-svelte3": "4.0.0",
 		"jsonc-parser": "3.2.0",
 		"prettier": "2.8.8",
 		"prettier-plugin-svelte": "2.10.1",
-		"svelte": "3.59.2",
+		"svelte": "4.0.0",
 		"svelte-check": "3.4.4",
 		"ts-node": "10.9.1",
-		"tslib": "2.5.3",
-		"typescript": "5.1.3",
+		"tslib": "2.6.0",
+		"typescript": "5.1.5",
 		"vite": "4.3.9",
 		"vitest": "0.32.2",
 		"zod": "3.21.4",
-		"zod-to-json-schema": "3.21.2"
+		"zod-to-json-schema": "3.21.3"
 	},
 	"type": "module"
 }

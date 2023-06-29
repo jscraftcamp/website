@@ -3,7 +3,7 @@
 	"company": "codecentric",
 	"when": {
 		"friday": true,
-		"saturday": true
+		"saturday": false
 	},
 	"iCanTakeNotesDuringSessions": true,
 	"tags": ["JavaScript", "TypeScript", "Functional Programming", "TDD", "DDD", "Haskell"],
