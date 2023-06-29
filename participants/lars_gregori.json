@@ -8,9 +8,9 @@
 	// either both days or at least one day has to be set to true
 	"when": {
 		// 2023-06-30
-		"friday": true,
+		"friday": false,
 		// 2023-07-01
-		"saturday": true
+		"saturday": false
 	},
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": false,
