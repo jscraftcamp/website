@@ -22,7 +22,9 @@
 	</ol>
 </InfoBox>
 <InfoBox title="Friday detailed schedule">
-	<Schedule2023Friday />
+	<div class="scrollable">
+		<Schedule2023Friday />
+	</div>
 </InfoBox>
 <InfoBox title="Saturday schedule">
 	<p>
@@ -47,5 +49,9 @@
 		list-style: none;
 		margin: 0;
 		padding: 0;
+	}
+	.scrollable {
+		max-width: calc(100vw - 4em);
+		overflow: auto;
 	}
 </style>
