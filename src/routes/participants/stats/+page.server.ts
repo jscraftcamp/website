@@ -132,7 +132,7 @@ export const load: PageServerLoad = async (): Promise<{
 			}
 			return 1;
 		});
-		const sortedCompanies = sortedCompanyEntries.map(([key, company]) => company);
+		const sortedCompanies = sortedCompanyEntries.map(([, company]) => company);
 
 		return {
 			allergies,

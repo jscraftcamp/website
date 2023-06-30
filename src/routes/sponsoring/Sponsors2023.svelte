@@ -1,4 +1,5 @@
 <script lang="ts">
+	import alm from './sponsors-2023/alm-logo-2022.svg';
 	import codecentric from './sponsors-2023/codecentric.png';
 	import composeus from './sponsors-2023/compose-us.svg';
 	import hetzner from './sponsors-2023/hetzner-logo-slogan_red-square.png';
@@ -12,6 +13,12 @@
 	import typedigital from './sponsors-2023/typedigital.svg';
 	import Sponsors from './Sponsors.svelte';
 	const sponsors = [
+		{
+			image: alm,
+			link: 'https://alm.sh',
+			name: 'alm engineering',
+			sponsoring: 'Additional lunch money'
+		},
 		{
 			image: codecentric,
 			link: 'https://www.codecentric.de',
