@@ -8,7 +8,7 @@
 	// either both days or at least one day has to be set to true
 	"when": {
 		// 2023-06-30
-		"friday": true,
+		"friday": false,
 		// 2023-07-01
 		"saturday": true
 	},
@@ -39,5 +39,5 @@
 	// your Mastodon URL (optional)
 	"mastodon": null,
 	// your website URL or other social media (optional)
-	"website": "https://www.your-domain.com"
+	"website": "https://devbysophia.online"
 }
