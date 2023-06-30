@@ -1,6 +1,7 @@
 <script lang="ts">
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PersonLink from '$lib/layout/PersonLink.svelte';
+	import Schedule2023Friday from '$lib/schedules/2023/Schedule2023Friday.svelte';
 </script>
 
 <InfoBox title="Friday schedule">
@@ -19,6 +20,9 @@
 		<li>17:00 - 18:00 Review and Learnings</li>
 		<li>18:00 - 22:00 BBQ, board games, networking, party</li>
 	</ol>
+</InfoBox>
+<InfoBox title="Friday detailed schedule">
+	<Schedule2023Friday />
 </InfoBox>
 <InfoBox title="Saturday schedule">
 	<p>
