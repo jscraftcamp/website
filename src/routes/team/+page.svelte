@@ -5,6 +5,7 @@
 	import joern from './joern.jpg';
 	import marco from './marco.jpg';
 	import robert from './robert.png';
+	import bernd from './bernd.webp';
 	import TeamMember from './TeamMember.svelte';
 	import TeamMemberSection from './TeamMemberSection.svelte';
 	import wolfram from './wolfram.jpg';
@@ -29,7 +30,7 @@
 	</p>
 
 	<TeamMemberSection>
-		<TeamMember name="Bernd Kaiser" />
+		<TeamMember image={bernd} name="Bernd Kaiser" />
 		<TeamMember name="Gustaf Graf" />
 		<TeamMember image={joern} name="Jörn Bernhardt" email="joern.bernhardt@compose.us" />
 		<TeamMember image={marco} name="Marco Emrich" email="marco.emrich@codecentric.de" />
