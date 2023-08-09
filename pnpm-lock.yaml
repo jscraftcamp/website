@@ -6,11 +6,11 @@ settings:
 
 devDependencies:
   '@fontsource/poppins':
-    specifier: 5.0.3
-    version: 5.0.3
+    specifier: 5.0.8
+    version: 5.0.8
   '@fontsource/source-sans-pro':
-    specifier: 5.0.3
-    version: 5.0.3
+    specifier: 5.0.8
+    version: 5.0.8
   '@sveltejs/adapter-static':
     specifier: 2.0.2
     version: 2.0.2(@sveltejs/kit@1.20.5)
@@ -321,12 +321,12 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fontsource/poppins@5.0.3:
-    resolution: {integrity: sha512-5lL2vmvmh4zbknTh1nVH9pTWyhYqAlYMHIAnkNhqo5qwMZGlr+coM1dtMwiQHRBgmHAl3ZvJ35Bj0s8cpmXZbg==}
+  /@fontsource/poppins@5.0.8:
+    resolution: {integrity: sha512-P8owfYWluoUY5Nyzk4gT/L6LmLmseP6ezFWhj6VBUa5pRIdnCvNJpoQ6i/vhekjtJOfqX6nKlB+LCttoUl2GQQ==}
     dev: true
 
-  /@fontsource/source-sans-pro@5.0.3:
-    resolution: {integrity: sha512-mQnjuif/37VxwRloHZ+wQdoozd2VPWutbFSt1AuSkk7nFXIBQxHJLw80rgCF/osL0t7N/3Gx1V7UJuOX2zxzhQ==}
+  /@fontsource/source-sans-pro@5.0.8:
+    resolution: {integrity: sha512-5U2UvIYRkCMozZ388gCE73PEpa2MFgN/0t9O4a1FF7bGT/MIneQWSL1XpWZ8iMVYdh6ntxRf3iFA6slCIuFgkg==}
     dev: true
 
   /@humanwhocodes/config-array@0.11.10:
