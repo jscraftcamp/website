@@ -58,10 +58,10 @@
 			timeAsStringArray.length > 1
 				? `in ${timeAsStringArray.slice(0, -1).join(', ')} and ${
 						timeAsStringArray[timeAsStringArray.length - 1]
-				  }`
+					}`
 				: timeAsStringArray.length === 1
-				? `in ${timeAsStringArray[0]}`
-				: 'NOW';
+					? `in ${timeAsStringArray[0]}`
+					: 'NOW';
 		setTimeout(updateCountdown, 1000);
 	};
 	updateCountdown();

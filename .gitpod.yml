@@ -11,6 +11,6 @@ image:
   file: .gitpod.Dockerfile
 
 github:
-    prebuilds:
-        addBadge: true
-        addComment: true
+  prebuilds:
+    addBadge: true
+    addComment: true
