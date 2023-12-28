@@ -21,7 +21,7 @@
 		"@fontsource/poppins": "5.0.8",
 		"@fontsource/source-sans-pro": "5.0.8",
 		"@sveltejs/adapter-static": "2.0.3",
-		"@sveltejs/kit": "1.27.7",
+		"@sveltejs/kit": "1.30.3",
 		"@typescript-eslint/eslint-plugin": "6.16.0",
 		"@typescript-eslint/parser": "6.16.0",
 		"eslint": "8.55.0",
