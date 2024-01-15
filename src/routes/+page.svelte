@@ -52,14 +52,14 @@
 </script>
 
 <PageLayout>
-	<h1>Welcome to JSCraftCamp 2023! 🎉</h1>
+	<h1>Welcome to JSCraftCamp 2024! ✅</h1>
 
 	<p style="display: flex; align-items: center;">
-		Our hashtag is&nbsp;<b>#jscc23</b>&nbsp; find us on &nbsp;<a
-			href="https://mastodontech.de/tags/jscc23"
+		Our hashtag is&nbsp;<b>#jscc24</b>&nbsp; find us on &nbsp;<a
+			href="https://mastodontech.de/tags/jscc24"
 			><img src={mastodon} alt="mastodon" style="height: 1.5rem;" /></a
 		>
-		&nbsp;<a href="https://twitter.com/search?q=%23jscc23"
+		&nbsp;<a href="https://twitter.com/search?q=%23jscc24"
 			><img src={twitter} alt="twitter" style="height: 1.5rem;" /></a
 		>
 	</p>
@@ -82,9 +82,9 @@
 			</p>
 		</InfoBox>
 		<InfoBox title="When?">
-			<p>June 30th & July 1st, 2023.</p>
+			<p>Summer 2024.</p>
 			{#if $registrationState === 'not-yet'}
-				<p>Registration opens on May 1st, 2023. {@html $countdown}</p>
+				<p>Registration will open about a month before.</p>
 			{:else if $registrationState === 'closed'}
 				<p>Registration is closed, we're full!</p>
 			{:else}
@@ -92,10 +92,7 @@
 			{/if}
 		</InfoBox>
 		<InfoBox title="Where?">
-			codecentric offices Munich, <a
-				href="https://www.ecosia.org/search?method=index&q=August-Everding-Str+20+81671+M%C3%BCnchen"
-				rel="external">August-Everding-Str 20, 81671 München</a
-			>
+			<a href="https://www.linkedin.com/posts/wolframkriesing_jscraftcamp-activity-7152725029393248256-I103?utm_source=share&utm_medium=member_desktop">Let us know if you want to host us</a>
 		</InfoBox>
 		<Logo animateYears style="max-width: 100%;" />
 		<div>
