@@ -84,7 +84,7 @@
 		<InfoBox title="When?">
 			<p>Summer 2024.</p>
 			{#if $registrationState === 'not-yet'}
-				<p>Registration will open about a month before.</p>
+				<p>Registration will open about a month before the event starts.</p>
 			{:else if $registrationState === 'closed'}
 				<p>Registration is closed, we're full!</p>
 			{:else}
