@@ -66,8 +66,8 @@
 			</p>
 		</InfoBox>
 		<p>
-			<a href="https://github.com/orgs/jscraftcamp/projects/5" rel="external"
-				>Find all sponsoring items on GitHub:<br />https://github.com/orgs/jscraftcamp/projects/5</a
+			<a href="https://github.com/orgs/jscraftcamp/projects/7" rel="external"
+				>Find all sponsoring items on GitHub:<br />https://github.com/orgs/jscraftcamp/projects/7</a
 			><br />
 			💖
 		</p>
