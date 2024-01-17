@@ -165,9 +165,7 @@
 	svg.animYears .year-2016 .back + * + .front {
 		opacity: 1;
 		rotate: 0deg;
-		transition:
-			rotate 1s,
-			opacity 1000ms;
+		transition: rotate 1s, opacity 1000ms;
 		transform-box: fill-box;
 		transform-origin: center;
 	}
@@ -192,9 +190,7 @@
 	svg.animYears .year-2018:hover .back + * + .front,
 	svg.animYears .year-2017:hover .back + * + .front,
 	svg.animYears .year-2016:hover .back + * + .front {
-		transition:
-			rotate 1s,
-			opacity 1000ms 500ms;
+		transition: rotate 1s, opacity 1000ms 500ms;
 		opacity: 0;
 		rotate: 540deg;
 	}
