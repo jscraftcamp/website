@@ -88,4 +88,4 @@
 	];
 </script>
 
-<Sponsors title="A big thanks to our great sponsors" {sponsors} />
+<Sponsors title="A big thanks to our 2023 sponsors" {sponsors} />
