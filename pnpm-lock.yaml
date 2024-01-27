@@ -66,8 +66,8 @@ devDependencies:
     specifier: 3.22.4
     version: 3.22.4
   zod-to-json-schema:
-    specifier: 3.22.3
-    version: 3.22.3(zod@3.22.4)
+    specifier: 3.22.4
+    version: 3.22.4(zod@3.22.4)
 
 packages:
 
@@ -2433,8 +2433,8 @@ packages:
     engines: {node: '>=12.20'}
     dev: true
 
-  /zod-to-json-schema@3.22.3(zod@3.22.4):
-    resolution: {integrity: sha512-9isG8SqRe07p+Aio2ruBZmLm2Q6Sq4EqmXOiNpDxp+7f0LV6Q/LX65fs5Nn+FV/CzfF3NLBoksXbS2jNYIfpKw==}
+  /zod-to-json-schema@3.22.4(zod@3.22.4):
+    resolution: {integrity: sha512-2Ed5dJ+n/O3cU383xSY28cuVi0BCQhF8nYqWU5paEpl7fVdqdAmiLdqLyfblbNdfOFwFfi/mqU4O1pwc60iBhQ==}
     peerDependencies:
       zod: ^3.22.4
     dependencies:
