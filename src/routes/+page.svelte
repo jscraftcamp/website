@@ -41,10 +41,10 @@
 			timeAsStringArray.length > 1
 				? `That's in <strong>${timeAsStringArray.slice(0, -1).join(', ')} and ${
 						timeAsStringArray[timeAsStringArray.length - 1]
-					}</strong>.`
+				  }</strong>.`
 				: timeAsStringArray.length === 1
-					? `Only <strong>${timeAsStringArray[0]}</strong> left!`
-					: '';
+				? `Only <strong>${timeAsStringArray[0]}</strong> left!`
+				: '';
 
 		setTimeout(updateCountdown, 1000);
 	};
@@ -82,7 +82,7 @@
 			</p>
 		</InfoBox>
 		<InfoBox title="When?">
-			<p>Summer 2024.</p>
+			<p><strong>07.-08. June 2024</strong></p>
 			{#if $registrationState === 'not-yet'}
 				<p>Registration will open about a month before the event starts.</p>
 			{:else if $registrationState === 'closed'}
@@ -92,10 +92,12 @@
 			{/if}
 		</InfoBox>
 		<InfoBox title="Where?">
-			<a
-				href="https://www.linkedin.com/posts/wolframkriesing_jscraftcamp-activity-7152725029393248256-I103?utm_source=share&utm_medium=member_desktop"
-				>Let us know if you want to host us</a
-			>
+			<p>
+				Thanks to Maiborn Wolff, this year we'll be at the <a
+					href="https://www.maibornwolff.de/location/muenchen-kraftwerk/"
+					rel="external noopener noreferrer">München Kraftwerk</a
+				>!
+			</p>
 		</InfoBox>
 		<Logo animateYears style="max-width: 100%;" />
 		<div>
