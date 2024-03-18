@@ -19,7 +19,7 @@
 			image: seneca,
 			link: 'https://seneca.camp/',
 			name: 'Seneca',
-			sponsoring: 'September 22-24, 2023 - Medical Valley Center, Erlangen'
+			sponsoring: 'September 27-29, 2024 - Medical Valley Center, Erlangen'
 		}
 	];
 </script>
