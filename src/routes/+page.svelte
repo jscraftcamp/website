@@ -41,10 +41,10 @@
 			timeAsStringArray.length > 1
 				? `That's in <strong>${timeAsStringArray.slice(0, -1).join(', ')} and ${
 						timeAsStringArray[timeAsStringArray.length - 1]
-				  }</strong>.`
+					}</strong>.`
 				: timeAsStringArray.length === 1
-				? `Only <strong>${timeAsStringArray[0]}</strong> left!`
-				: '';
+					? `Only <strong>${timeAsStringArray[0]}</strong> left!`
+					: '';
 
 		setTimeout(updateCountdown, 1000);
 	};
