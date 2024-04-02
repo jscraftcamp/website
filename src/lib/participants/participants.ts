@@ -5,7 +5,16 @@ import {
 	PARTICIPANTS_DIRECTORY
 } from '$lib/participants/participant-schema';
 import { parse } from 'jsonc-parser';
-import { join } from 'path';
+import { join } from 'node:path';
+
+export const orgaMembers = [
+	'Bernd Kaiser',
+	'Jörn Bernhardt',
+	'Leo Kettmeir',
+	'Philip Saa',
+	'Sina Aschenbrenner',
+	'Wolfram Kriesing'
+];
 
 export async function loadParticipantJsonFilePaths(directory: string): Promise<string[]> {
 	const participantsDirectory = await readdir(directory, {

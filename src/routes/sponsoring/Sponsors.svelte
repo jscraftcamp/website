@@ -82,6 +82,9 @@
 		min-width: 100%;
 		max-width: min(100%, 10em);
 	}
+	.name {
+		min-width: 8em;
+	}
 	span {
 		align-self: flex-end;
 	}

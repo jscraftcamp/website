@@ -9,7 +9,7 @@
 	import skyline from './skyline.svg';
 	import twitter from './twitter.svg';
 	import mastodon from './mastodon.svg';
-	import Sponsors from './sponsoring/Sponsors2023.svelte';
+	import Sponsors from './sponsoring/Sponsors2024.svelte';
 	import WhatToExpect from './WhatYouCanExpect.svelte';
 	import {
 		getRegistrationState,
@@ -65,6 +65,31 @@
 	</p>
 
 	<section>
+		<InfoBox title="When?">
+			<p><strong>07.-08. June 2024</strong></p>
+			{#if $registrationState === 'not-yet'}
+				<p>Registration will open on April 22nd, 2024. {@html $countdown}</p>
+			{:else if $registrationState === 'closed'}
+				<p>Registration is closed, we're full!</p>
+			{:else}
+				<p><a href="{base}/registration">Registration is open!</a></p>
+			{/if}
+		</InfoBox>
+		<InfoBox title="Where?">
+			<p>
+				Thanks to Maiborn Wolff, this year we'll be at the <a
+					href="https://www.maibornwolff.de/location/muenchen-kraftwerk/"
+					rel="external noopener noreferrer">München Kraftwerk</a
+				>!
+			</p>
+		</InfoBox>
+		<InfoBox title="Still looking for sponsors!">
+			<p>
+				You represent a company that looks for talented developers? You want to support the
+				JavaScript community? Have a look at <a href="{base}/sponsoring">our sponsoring page</a> and
+				find out about what items are still open and how your company benefits by being a sponsor.
+			</p>
+		</InfoBox>
 		<InfoBox title="JSCraftCamp is ...">
 			<p>
 				... a
@@ -79,24 +104,6 @@
 				workshops, similar to the <a href="https://www.socrates-conference.de/" rel="external"
 					>SoCraTes conference</a
 				>.
-			</p>
-		</InfoBox>
-		<InfoBox title="When?">
-			<p><strong>07.-08. June 2024</strong></p>
-			{#if $registrationState === 'not-yet'}
-				<p>Registration will open about a month before the event starts.</p>
-			{:else if $registrationState === 'closed'}
-				<p>Registration is closed, we're full!</p>
-			{:else}
-				<p><a href="{base}/registration">Registration is open!</a></p>
-			{/if}
-		</InfoBox>
-		<InfoBox title="Where?">
-			<p>
-				Thanks to Maiborn Wolff, this year we'll be at the <a
-					href="https://www.maibornwolff.de/location/muenchen-kraftwerk/"
-					rel="external noopener noreferrer">München Kraftwerk</a
-				>!
 			</p>
 		</InfoBox>
 		<Logo animateYears style="max-width: 100%;" />

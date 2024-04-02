@@ -6,7 +6,7 @@
 
 <PageLayout>
 	<h1>Registration</h1>
-	<h2>Registration will open on May 1st, 2023.</h2>
+	<h2>Registration will open on April 22nd, 2024.</h2>
 	<section>
 		<InfoBox title="Registration process">
 			<p>

@@ -70,9 +70,9 @@
 <PageLayout>
 	<h1>Participants</h1>
 	<section>
-		{#if !$registrationState}
+		{#if $registrationState === 'not-yet'}
 			<p>
-				Registration will open on May 1st, 2023. Get your GitHub account ready and check back <strong
+				Registration will open on April 22nd, 2024. Get your GitHub account ready and check back <strong
 					>{$countdown}</strong
 				>!
 			</p>
@@ -135,7 +135,7 @@
 			<p>There are no participants registered yet.</p>
 		{/if}
 
-		{#if $registrationState}
+		{#if $registrationState === 'open'}
 			<InfoBox title="Not seeing yourself on the list?">
 				If you can't find yourself on the list of participants, but you want to join, check out our <a
 					href="{base}/registration">how to register</a
