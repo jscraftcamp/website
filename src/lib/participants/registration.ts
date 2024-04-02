@@ -1,6 +1,6 @@
-export const registrationOpensAt = +new Date('2024-05-01 00:00:00Z');
-export const eventStartsAt = +new Date('2024-06-30 09:30:00Z');
-export const registrationClosessAt = +new Date('2023-04-26 17:00:00Z');
+export const registrationOpensAt = +new Date('2024-04-22 07:00:00Z');
+export const eventStartsAt = +new Date('2024-06-07 09:30:00Z');
+export const registrationClosessAt = +new Date('2024-06-06 17:00:00Z');
 export const isRegistrationOpen = () => {
 	const now = +new Date();
 	return registrationOpensAt <= now && now <= registrationClosessAt;
