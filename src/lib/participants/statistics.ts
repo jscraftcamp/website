@@ -1,4 +1,4 @@
-import type { Participant, TShirtSize } from "./participant-schema";
+import type { Participant, TShirtSize } from './participant-schema';
 
 type Allergies = { [k: string]: number };
 type Company = { name: string; amount: number; isSponsor: boolean };
@@ -25,7 +25,7 @@ export type Statistics = {
 		notetakersFriday: number;
 		notetakersSaturday: number;
 	};
-}
+};
 
 const isOrgaMember = (name: string, orgaMembers: string[]) => orgaMembers.includes(name);
 
@@ -47,7 +47,10 @@ const isSponsor = (key: string) =>
 const isNonFoodAllergy = (allergyKey: string) =>
 	['', 'none', 'bullshit', 'hard work'].includes(allergyKey);
 
-export const createStatsFromParticipants = (participants: Participant[], orgaMembers: string[]): Statistics => {
+export const createStatsFromParticipants = (
+	participants: Participant[],
+	orgaMembers: string[]
+): Statistics => {
 	const allergies: Allergies = {};
 	const orgaShirts: Shirts = { count: 0, fitted: 0, regular: 0, sizes: {} };
 	const participantsShirts: Shirts = { count: 0, fitted: 0, regular: 0, sizes: {} };
@@ -130,4 +133,4 @@ export const createStatsFromParticipants = (participants: Participant[], orgaMem
 		participantsShirts,
 		participants: stats
 	};
-}
+};
