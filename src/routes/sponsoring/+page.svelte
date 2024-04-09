@@ -6,7 +6,7 @@
 
 <PageLayout>
 	<h1>Want to become a sponsor?</h1>
-	<h2>Expose your Company to a Group of Highly Motivated Technology Enthusiasts</h2>
+	<p>Expose your Company to a group of Highly Motivated Technology Enthusiasts</p>
 
 	<section>
 		<InfoBox title="You will get ...">
@@ -76,20 +76,3 @@
 		<Sponsors />
 	</section>
 </PageLayout>
-
-<style>
-	h1,
-	h2 {
-		text-align: center;
-	}
-
-	section {
-		display: flex;
-		flex-flow: column;
-		gap: 2em;
-	}
-
-	section > p {
-		text-align: center;
-	}
-</style>

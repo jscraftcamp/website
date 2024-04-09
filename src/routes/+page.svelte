@@ -54,7 +54,7 @@
 <PageLayout>
 	<h1>Welcome to JSCraftCamp 2024! ✅</h1>
 
-	<p style="display: flex; align-items: center;">
+	<p>
 		Our hashtag is&nbsp;<b>#jscc24</b>&nbsp; find us on &nbsp;<a
 			href="https://mastodontech.de/tags/jscc24"
 			><img src={mastodon} alt="mastodon" style="height: 1.5rem;" /></a
@@ -62,7 +62,7 @@
 		&nbsp;<a href="https://twitter.com/search?q=%23jscc24"
 			><img src={twitter} alt="twitter" style="height: 1.5rem;" /></a
 		>
-	</p>
+  </p>
 
 	<section>
 		<InfoBox title="When?">
@@ -134,29 +134,3 @@
 		<Schedule />
 	</section>
 </PageLayout>
-
-<style>
-	h1 {
-		text-align: center;
-	}
-	section {
-		display: flex;
-		flex-flow: column;
-		align-items: center;
-		gap: 2em;
-	}
-	div {
-		display: flex;
-		flex-flow: row wrap;
-		align-items: center;
-		justify-content: center;
-		gap: 1em;
-	}
-	div img {
-		height: 40px;
-		width: 40px;
-	}
-	img {
-		max-width: 100%;
-	}
-</style>
