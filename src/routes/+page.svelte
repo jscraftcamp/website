@@ -66,7 +66,7 @@
 
 	<section>
 		<InfoBox title="When?">
-			<p><strong>07.-08. June 2024</strong></p>
+			<p><strong>7. & 8. June 2024</strong></p>
 			{#if $registrationState === 'not-yet'}
 				<p>Registration will open on April 22nd, 2024. {@html $countdown}</p>
 			{:else if $registrationState === 'closed'}
@@ -79,8 +79,15 @@
 			<p>
 				Thanks to Maiborn Wolff, this year we'll be at the <a
 					href="https://www.maibornwolff.de/location/muenchen-kraftwerk/"
-					rel="external noopener noreferrer">München Kraftwerk</a
-				>!
+					rel="external noopener noreferrer"
+					>München Kraftwerk
+				</a>! <br />
+			</p>
+			<p>
+				MaibornWolff GmbH<br />
+				Drygalski-Allee 25<br />
+				81477 München <br />
+				(<a href="https://maps.app.goo.gl/hUhbheFci2sSJ7SZ6">Google Maps</a>)
 			</p>
 		</InfoBox>
 		<InfoBox title="Still looking for sponsors!">
