@@ -92,9 +92,13 @@
 		</InfoBox>
 		<InfoBox title="Still looking for sponsors!">
 			<p>
-				You represent a company that looks for talented developers? You want to support the
-				JavaScript community? Have a look at <a href="{base}/sponsoring">our sponsoring page</a> and
-				find out about what items are still open and how your company benefits by being a sponsor.
+				Do you represent a company looking for talented developers? Want to support the JavaScript
+				community? Take a look at <a href="{base}/sponsoring">our sponsoring page</a> and find out
+				about what items are still open and how your company can benefit from sponsoring. Or go
+				directly to
+				<a href="https://github.com/orgs/jscraftcamp/projects/7" rel="external"
+					><strong>our Github Sponsorship Board</strong></a
+				> and pick something.
 			</p>
 		</InfoBox>
 		<InfoBox title="JSCraftCamp is ...">
