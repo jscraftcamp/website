@@ -6,9 +6,10 @@
 	import marco from './marco.jpg';
 	import robert from './robert.png';
 	import bernd from './bernd.webp';
+	import fii from './fii.jpg';
+	import wolfram from './wolfram.jpg';
 	import TeamMember from './TeamMember.svelte';
 	import TeamMemberSection from './TeamMemberSection.svelte';
-	import wolfram from './wolfram.jpg';
 </script>
 
 <PageLayout>
@@ -37,6 +38,7 @@
 		<TeamMember name="Philip Saa" />
 		<TeamMember image={robert} name="Robert Hostlowsky" />
 		<TeamMember image={wolfram} name="Wolfram Kriesing" email="w@kriesing.de" />
+		<TeamMember image={fii} name="Stefanie (Fii) Hasler" email="stefanie.hasler@gmail.com"/>
 	</TeamMemberSection>
 
 	<p>
