@@ -38,7 +38,7 @@
 		<TeamMember name="Philip Saa" />
 		<TeamMember image={robert} name="Robert Hostlowsky" />
 		<TeamMember image={wolfram} name="Wolfram Kriesing" email="w@kriesing.de" />
-		<TeamMember image={fii} name="Stefanie (Fii) Hasler" email="stefanie.hasler@gmail.com"/>
+		<TeamMember image={fii} name="Stefanie (Fii) Hasler" email="stefanie.hasler@gmail.com" />
 	</TeamMemberSection>
 
 	<p>
