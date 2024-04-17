@@ -40,8 +40,9 @@
 				walking disabilities). The front door does not open automatically.
 			</p>
 			<p>
-				The carpet (where there is carpet) is short enough to drive on using a wheelchair. We asked
-				about wheelchair-accessible toilets and will update as soon as we know more.
+				The carpet (where there is carpet) is short enough to drive on using a wheelchair. There is
+				a wheelchair-accessible toilet on the fourth floor of the building; if you plan to come and
+				use it, please contact us in advance so we can make sure it's open.
 			</p>
 			<p>The elevator has buttons with raised print numbers, no Braille.</p>
 			<p>Unfortunately, none of the Orga team speak sign language with any fluency.</p>
