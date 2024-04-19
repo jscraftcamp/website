@@ -15,8 +15,8 @@ importers:
         specifier: 5.0.8
         version: 5.0.8
       '@sveltejs/adapter-static':
-        specifier: 2.0.3
-        version: 2.0.3(@sveltejs/kit@1.30.4(svelte@4.2.15)(vite@5.2.9(@types/node@18.16.3)))
+        specifier: 3.0.1
+        version: 3.0.1(@sveltejs/kit@1.30.4(svelte@4.2.15)(vite@5.2.9(@types/node@18.16.3)))
       '@sveltejs/kit':
         specifier: 1.30.4
         version: 1.30.4(svelte@4.2.15)(vite@5.2.9(@types/node@18.16.3))
@@ -388,10 +388,10 @@ packages:
   '@sinclair/typebox@0.27.8':
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
 
-  '@sveltejs/adapter-static@2.0.3':
-    resolution: {integrity: sha512-VUqTfXsxYGugCpMqQv1U0LIdbR3S5nBkMMDmpjGVJyM6Q2jHVMFtdWJCkeHMySc6mZxJ+0eZK3T7IgmUCDrcUQ==}
+  '@sveltejs/adapter-static@3.0.1':
+    resolution: {integrity: sha512-6lMvf7xYEJ+oGeR5L8DFJJrowkefTK6ZgA4JiMqoClMkKq0s6yvsd3FZfCFvX1fQ0tpCD7fkuRVHsnUVgsHyNg==}
     peerDependencies:
-      '@sveltejs/kit': ^1.5.0
+      '@sveltejs/kit': ^2.0.0
 
   '@sveltejs/kit@1.30.4':
     resolution: {integrity: sha512-JSQIQT6XvdchCRQEm7BABxPC56WP5RYVONAi+09S8tmzeP43fBsRlr95bFmsTQM2RHBldfgQk+jgdnsKI75daA==}
@@ -1671,7 +1671,7 @@ snapshots:
 
   '@sinclair/typebox@0.27.8': {}
 
-  '@sveltejs/adapter-static@2.0.3(@sveltejs/kit@1.30.4(svelte@4.2.15)(vite@5.2.9(@types/node@18.16.3)))':
+  '@sveltejs/adapter-static@3.0.1(@sveltejs/kit@1.30.4(svelte@4.2.15)(vite@5.2.9(@types/node@18.16.3)))':
     dependencies:
       '@sveltejs/kit': 1.30.4(svelte@4.2.15)(vite@5.2.9(@types/node@18.16.3))
 
