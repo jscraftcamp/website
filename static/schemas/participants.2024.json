@@ -43,7 +43,7 @@
 				"tShirtSize": {
 					"anyOf": [{ "type": "string", "enum": ["S", "M", "L", "XL", "XXL"] }, { "type": "null" }]
 				},
-				"twitter": {
+				"X": {
 					"anyOf": [
 						{ "type": "string", "pattern": "^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$" },
 						{ "type": "null" }
