@@ -1,3 +1,4 @@
+import { isSponsor } from '$lib/sponsoring/is-sponsor';
 import type { Participant, TShirtSize } from './participant-schema';
 
 type Allergies = { [k: string]: number };
@@ -8,9 +9,10 @@ type Shirts = {
 	fitted: number;
 	regular: number;
 	sizes: {
-		[key in `${'fitted' | 'regular'}-${TShirtSize}`]?: number;
+		[key in TShirtSize]?: number;
 	};
 };
+type Name = { givenName: string; familyName: string };
 export type Statistics = {
 	allergies: Allergies;
 	companies: Company[];
@@ -27,29 +29,18 @@ export type Statistics = {
 	};
 };
 
-const isOrgaMember = (name: string, orgaMembers: string[]) => orgaMembers.includes(name);
-
-const isSponsor = (key: string) =>
-	[
-		'codecentric',
-		'compose-us',
-		'hetzner-cloud',
-		'inovex',
-		'jambit',
-		'peerigon',
-		'project-lary',
-		'scalable-capital',
-		'sepp-med',
-		'tng-technology-consulting',
-		'typedigital'
-	].includes(key);
+const isOrgaMember = (p: Name, orgaMembers: Name[]) => {
+	return orgaMembers.some(
+		(m) => `${m.givenName} ${m.familyName}` === `${p.givenName} ${p.familyName}`
+	);
+};
 
 const isNonFoodAllergy = (allergyKey: string) =>
 	['', 'none', 'bullshit', 'hard work'].includes(allergyKey);
 
 export const createStatsFromParticipants = (
 	participants: Participant[],
-	orgaMembers: string[]
+	orgaMembers: Name[]
 ): Statistics => {
 	const allergies: Allergies = {};
 	const orgaShirts: Shirts = { count: 0, fitted: 0, regular: 0, sizes: {} };
@@ -65,7 +56,7 @@ export const createStatsFromParticipants = (
 
 	for (const participant of participants) {
 		let shirts = participantsShirts;
-		if (isOrgaMember(participant.name, orgaMembers)) {
+		if (isOrgaMember(participant.realName, orgaMembers)) {
 			shirts = orgaShirts;
 		}
 		if (participant.company) {
@@ -91,12 +82,9 @@ export const createStatsFromParticipants = (
 				}
 			}
 		}
-		if (participant.tShirt) {
+		if (participant.tShirtSize) {
 			shirts.count = shirts.count + 1;
-			shirts.fitted = shirts.fitted + (participant.tShirt.type === 'fitted' ? 1 : 0);
-			shirts.regular = shirts.regular + (participant.tShirt.type === 'regular' ? 1 : 0);
-			shirts.sizes[`${participant.tShirt.type}-${participant.tShirt.size}`] =
-				(shirts.sizes[`${participant.tShirt.type}-${participant.tShirt.size}`] ?? 0) + 1;
+			shirts.sizes[participant.tShirtSize] = (shirts.sizes[participant.tShirtSize] ?? 0) + 1;
 		}
 		stats.bothDays =
 			stats.bothDays + (participant.when.friday && participant.when.saturday ? 1 : 0);

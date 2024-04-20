@@ -8,12 +8,12 @@ import { parse } from 'jsonc-parser';
 import { join } from 'node:path';
 
 export const orgaMembers = [
-	'Bernd Kaiser',
-	'Jörn Bernhardt',
-	'Leo Kettmeir',
-	'Philip Saa',
-	'Sina Aschenbrenner',
-	'Wolfram Kriesing'
+	{ givenName: 'Bernd', familyName: 'Kaiser' },
+	{ givenName: 'Jörn', familyName: 'Bernhardt' },
+	{ givenName: 'Leo', familyName: 'Kettmeir' },
+	{ givenName: 'Philip', familyName: 'Saa' },
+	{ givenName: 'Sina', familyName: 'Aschenbrenner' },
+	{ givenName: 'Wolfram', familyName: 'Kriesing' }
 ];
 
 export async function loadParticipantJsonFilePaths(directory: string): Promise<string[]> {
