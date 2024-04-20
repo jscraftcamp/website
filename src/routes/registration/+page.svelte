@@ -2,7 +2,7 @@
 	import { base } from '$app/paths';
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
-	import RegistrationTemplate  from "../../../participants/_template.json?raw";
+	import RegistrationTemplate from '../../../participants/_template.json?raw';
 </script>
 
 <PageLayout>
@@ -26,11 +26,30 @@
 
 		<InfoBox title="The important stuff">
 			<ul>
-				<li>Please put in your <strong>real name</strong>; Location host will check it at the entrance</li>
-				<li>If you don't want to put in allergies or anything else, drop us a message at <a href="https://discord.gg/3mHhaXVEjP" rel="external">Discord</a> or <a href="mailto:team@jscraftcamp.org">team@jscraftcamp.org</a></li>
-				<li>If you need help <a href="https://discord.gg/3mHhaXVEjP" rel="external">reach out</a>! You will learn some git for free</li>
-				<li>Please read the JSON comments, they should explain every field, and if you have questions <a href="mailto:team@jscraftcamp.org">reach out</a></li>
-				<li>If you have any improvement suggestions, <a href="mailto:team@jscraftcamp.org">let us know</a></li>
+				<li>
+					Please put in your <strong>real name</strong>; Location host will check it at the entrance
+				</li>
+				<li>
+					If you don't want to put in allergies or anything else, drop us a message at <a
+						href="https://discord.gg/3mHhaXVEjP"
+						rel="external">Discord</a
+					>
+					or <a href="mailto:team@jscraftcamp.org">team@jscraftcamp.org</a>
+				</li>
+				<li>
+					If you need help <a href="https://discord.gg/3mHhaXVEjP" rel="external">reach out</a>! You
+					will learn some git for free
+				</li>
+				<li>
+					Please read the JSON comments, they should explain every field, and if you have questions <a
+						href="mailto:team@jscraftcamp.org">reach out</a
+					>
+				</li>
+				<li>
+					If you have any improvement suggestions, please <a href="mailto:team@jscraftcamp.org"
+						>let us know</a
+					>
+				</li>
 			</ul>
 		</InfoBox>
 

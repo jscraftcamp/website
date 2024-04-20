@@ -39,12 +39,12 @@
 	"whatCanIContribute": "???",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	"tShirtSize": "S",
-	// your Twitter handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
-	"twitter": "yourhandle",
 	// your Mastodon URL (optional)
 	"mastodon": "https://mastodontech.de/@yourhandle",
 	// your LinkedIn profile URL
 	"linkedin": "https://www.linkedin.com/in/blub/",
+	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
+	"X": "yourhandle",
 	// your website URL or other social media (optional)
 	"website": "https://www.your-domain.com"
 }
