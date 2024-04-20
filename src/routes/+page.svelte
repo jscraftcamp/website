@@ -9,7 +9,6 @@
 	import skyline from './skyline.svg';
 	import twitter from './twitter.svg';
 	import mastodon from './mastodon.svg';
-	import Sponsors from './sponsoring/Sponsors2024.svelte';
 	import WhatToExpect from './WhatYouCanExpect.svelte';
 	import {
 		getRegistrationState,
@@ -18,7 +17,8 @@
 		timeLeft
 	} from '$lib/participants/registration';
 	import { base } from '$app/paths';
-	import Partners from './sponsoring/Partners.svelte';
+	import Partners from '$lib/sponsoring/Partners.svelte';
+	import Sponsors from '$lib/sponsoring/Sponsors2024.svelte';
 	import Schedule from './Schedule.svelte';
 
 	const countdown = writable<string>('');
