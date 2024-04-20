@@ -55,7 +55,7 @@ export const ParticipantSchema = z
 		whatCanIContribute: z.string().min(3).max(200),
 		tShirtSize: z.preprocess(
 			(v) => String(v).toUpperCase(),
-			z.enum(['S', 'M', 'L', 'XL', 'XXL']).nullish()
+			z.enum(['S', 'M', 'L', 'XL', '2XL', '3XL']).nullish()
 		),
 		X: z.preprocess(
 			emptyToNull,
@@ -74,3 +74,4 @@ export const ParticipantSchema = z
 	.strict();
 
 export type Participant = z.infer<typeof ParticipantSchema>;
+export type TShirtSize = NonNullable<Participant['tShirtSize']>;
