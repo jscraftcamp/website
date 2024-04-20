@@ -4,11 +4,11 @@ export const PARTICIPANTS_DIRECTORY = './participants';
 
 const nonEmptyOptionalUrl = () => z.string().url().nonempty().nullish();
 
-const optionalBoolean = () =>
+const optionalBoolean = (defaultValue = false) =>
 	z
 		.boolean()
 		.nullish()
-		.transform((v) => v ?? false);
+		.transform((v) => v ?? defaultValue);
 
 const nonEmptyStringArray = (errorMessage?: string) => z.string().array().nonempty(errorMessage);
 
@@ -29,7 +29,13 @@ function emptyToNull(arg: unknown): unknown | null {
 
 export const ParticipantSchema = z
 	.object({
-		name: z.string().min(2, { message: 'Must be 2 or more characters long' }).max(200),
+		realName: z.object({
+			givenName: z.string().min(2, { message: 'Must be 2 or more characters long' }).max(100),
+			familyName: z.string().min(2, { message: 'Must be 2 or more characters long' }).max(100),
+			placeFamilyNameFirst: optionalBoolean(),
+			hideFamilyNameOnWebsite: optionalBoolean()
+		}),
+		githubAccountName: z.string().regex(/^(?!-)(?!.*--)[A-Za-z0-9-]{1,39}(?<!-)$/),
 		company: z.preprocess(emptyToNull, z.string().min(2).max(200).nullish()),
 		when: z
 			.object({
@@ -45,17 +51,12 @@ export const ParticipantSchema = z
 		vegan: optionalBoolean(),
 		vegetarian: optionalBoolean(),
 		allergies: z.preprocess(emptyToNull, nonEmptyStringArray().nullish()),
-		whatIsMyConnectionToJavascript: z.string().min(3).max(400),
-		whatCanIContribute: z.string().min(3).max(400),
-		tShirt: z
-			.object({
-				type: z.preprocess((v) => String(v).toLowerCase(), z.enum(['fitted', 'regular'])),
-				size: z.preprocess(
-					(v) => String(v).toUpperCase(),
-					z.enum(['S', 'M', 'L', 'XL', '2XL', '3XL'])
-				)
-			})
-			.nullish(),
+		whatIsMyConnectionToJavascript: z.string().min(3).max(200),
+		whatCanIContribute: z.string().min(3).max(200),
+		tShirtSize: z.preprocess(
+			(v) => String(v).toUpperCase(),
+			z.enum(['S', 'M', 'L', 'XL', 'XXL']).nullish()
+		),
 		twitter: z.preprocess(
 			emptyToNull,
 			z
@@ -67,11 +68,9 @@ export const ParticipantSchema = z
 				.nullish()
 		),
 		mastodon: z.preprocess(emptyToNull, nonEmptyOptionalUrl()),
+		linkedin: z.preprocess(emptyToNull, nonEmptyOptionalUrl()),
 		website: z.preprocess(emptyToNull, nonEmptyOptionalUrl())
 	})
 	.strict();
 
 export type Participant = z.infer<typeof ParticipantSchema>;
-
-type NoUndefinedField<T> = { [P in keyof T]-?: NoUndefinedField<NonNullable<T[P]>> };
-export type TShirtSize = NoUndefinedField<Participant>['tShirt']['size'];
