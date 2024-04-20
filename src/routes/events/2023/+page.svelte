@@ -2,7 +2,7 @@
 	import { base } from '$app/paths';
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import Logo2023 from '$lib/logos/Logo2023.svelte';
-	import Sponsors2023 from '../../sponsoring/Sponsors2023.svelte';
+	import Sponsors2023 from '$lib/sponsoring/Sponsors2023.svelte';
 	import EventLayout from '../EventLayout.svelte';
 </script>
 

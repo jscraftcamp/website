@@ -1,7 +1,7 @@
 <script>
 	import { base } from '$app/paths';
 	import InfoBox from '$lib/layout/InfoBox.svelte';
-	import Sponsors2018 from '../../sponsoring/Sponsors2018.svelte';
+	import Sponsors2018 from '$lib/sponsoring/Sponsors2018.svelte';
 	import EventLayout from '../EventLayout.svelte';
 </script>
 
