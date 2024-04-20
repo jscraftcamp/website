@@ -1,5 +1,9 @@
 {
-	"name": "Jörn Bernhardt",
+	"realName": {
+		"givenName": "Jörn",
+		"familyName": "Bernhardt"
+	},
+	"githubAccountName": "Narigo",
 	"company": "compose.us",
 	"when": {
 		"friday": true,
@@ -11,10 +15,8 @@
 	"vegetarian": false,
 	"whatIsMyConnectionToJavascript": "Working for the web since 2.5 decades.",
 	"whatCanIContribute": "I can explain the tech behind the new JSCC website.",
-	"tShirt": {
-		"size": "XL",
-		"type": "regular"
-	},
-	"twitter": "NarigoDF",
+	"tShirtSize": "XL",
+	"linkedin": "https://www.linkedin.com/in/joern-bernhardt/",
+	"X": "NarigoDF",
 	"website": "https://narigo.dev"
 }
