@@ -7,7 +7,13 @@ export const load: PageServerLoad = async (): Promise<{ participants: Participan
 		const participantsFilePaths = await loadParticipantJsonFilePaths(PARTICIPANTS_DIRECTORY);
 
 		const participants = await loadParticipants(participantsFilePaths);
-		participants.sort((a, b) => (a.name < b.name ? -1 : a.name === b.name ? 0 : 1));
+		participants.sort((a, b) =>
+			a.realName.givenName < b.realName.givenName
+				? -1
+				: a.realName.givenName === b.realName.givenName
+				? 0
+				: 1
+		);
 
 		return { participants };
 	} catch (err) {

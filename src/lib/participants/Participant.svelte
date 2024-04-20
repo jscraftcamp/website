@@ -12,6 +12,11 @@
 	let isShowingDetails = false;
 	const hasSocialLink = participant.twitter || participant.mastodon || participant.website;
 
+	// TODO
+	function displayName(p: Participant): string {
+		return p.realName.placeFamilyNameFirst ? `` : ``;
+	}
+
 	const dispatch = createEventDispatcher<{ selectedTag: string }>();
 </script>
 
