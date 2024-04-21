@@ -6,6 +6,9 @@
 	import maibornwolff from './sponsors-2024/maibornwolff.svg';
 	import peerigon from './sponsors-2024/peerigon.svg';
 	import projectLary from './sponsors-2024/project-lary.svg';
+	import saab from './sponsors-2024/saab.svg';
+	import satellytes from './sponsors-2024/satellytes.png';
+	import tng from './sponsors-2024/tng.png';
 	import Sponsors from './Sponsors.svelte';
 	const sponsors = [
 		{
@@ -49,6 +52,24 @@
 			link: 'https://project-lary.com',
 			name: 'project lary',
 			sponsoring: 'Beverages'
+		},
+		{
+			image: saab,
+			link: 'https://www.saab.com',
+			name: 'Saab AB',
+			sponsoring: 'Breakfast'
+		},
+		{
+			image: satellytes,
+			link: 'https://www.satellytes.com/',
+			name: 'Satellytes Digital Consulting',
+			sponsoring: 'T-Shirts'
+		},
+		{
+			image: tng,
+			link: 'https://www.tngtech.com/',
+			name: 'TNG Technology Consulting',
+			sponsoring: 'Lunch'
 		}
 	];
 </script>
