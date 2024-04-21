@@ -13,7 +13,8 @@
 	export let isActive: boolean = false;
 
 	let isShowingDetails = false;
-	const hasSocialLink = participant.X || participant.mastodon || participant.website;
+	const hasSocialLink =
+		participant.X || participant.mastodon || participant.website || participant.linkedin;
 
 	const dispatch = createEventDispatcher<{ selectedTag: string }>();
 </script>
