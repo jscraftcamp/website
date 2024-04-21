@@ -53,10 +53,17 @@ export const ParticipantSchema = z
 		allergies: z.preprocess(emptyToNull, nonEmptyStringArray().nullish()),
 		whatIsMyConnectionToJavascript: z.string().min(3).max(200),
 		whatCanIContribute: z.string().min(3).max(200),
-		tShirtSize: z.preprocess(
-			(v) => String(v).toUpperCase(),
-			z.enum(['S', 'M', 'L', 'XL', '2XL', '3XL']).nullish()
-		),
+		tShirtSize: z.preprocess((v) => {
+			const size = String(v).toUpperCase();
+			switch (size) {
+				case 'XXL':
+					return '2XL';
+				case 'XXXL':
+					return '3XL';
+				default:
+					return size;
+			}
+		}, z.enum(['S', 'M', 'L', 'XL', '2XL', '3XL']).nullish()),
 		X: z.preprocess(
 			emptyToNull,
 			z

@@ -41,7 +41,10 @@
 				"whatIsMyConnectionToJavascript": { "type": "string", "minLength": 3, "maxLength": 200 },
 				"whatCanIContribute": { "type": "string", "minLength": 3, "maxLength": 200 },
 				"tShirtSize": {
-					"anyOf": [{ "type": "string", "enum": ["S", "M", "L", "XL", "XXL"] }, { "type": "null" }]
+					"anyOf": [
+						{ "type": "string", "enum": ["S", "M", "L", "XL", "2XL", "3XL"] },
+						{ "type": "null" }
+					]
 				},
 				"X": {
 					"anyOf": [
