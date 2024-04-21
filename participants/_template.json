@@ -16,9 +16,9 @@
 	"company": "ACME",
 	// either both days or at least one day has to be set to true
 	"when": {
-		// 2023-06-07
+		// June 7th, 2024
 		"friday": true,
-		// 2023-06-08
+		// June 8th, 2024
 		"saturday": false
 	},
 	// if you are willing to take session notes and publish them to github (required)
