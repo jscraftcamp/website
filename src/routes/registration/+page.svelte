@@ -10,26 +10,32 @@
 	<section>
 		<InfoBox title="Registration process">
 			<p>
-				To register for the JSCraftCamp you have to add a JSONC file<sup>1</sup> with your name and some other
-				information to our <a href="https://github.com/jscraftcamp/website">github repository</a>
-				via a pull request<sup>2</sup>. Registration is free of charge. 
-        Your json file should follow the naming scheme
+				To register for the JSCraftCamp you have to add a JSONC file<sup>1</sup> with your name and
+				some other information to our
+				<a href="https://github.com/jscraftcamp/website">github repository</a>
+				via a pull request<sup>2</sup>. Registration is free of charge. Your json file should follow
+				the naming scheme
 				<code>$name_or_nickname.json</code> and must be placed in the folder
 				<code>participants</code>. The structure of the file is described below. We are using JSONC
 				to parse the files, so it's okay to keep the comments from the
 				<code>_template.json</code>.
-      </p>
+			</p>
 			<p>
 				Out of these JSON files, the <a href="{base}/participants/">/participants</a> page will be generated.
 			</p>
-      
-      <p>
-        <sup>1</sup> <a href="https://www.npmjs.com/package/jsonc-parser">JSONC is JSON with JavaScript style comments</a>.
-        <br/>
-        <sup>2</sup> Click <a href="https://github.com/jscraftcamp/website/new/main/participants">this link to start the process on the github page</a>
-        to create the JSONC file in the repo. Make sure you are logged in to github.
-			</p>
 
+			<p>
+				<sup>1</sup>
+				<a href="https://www.npmjs.com/package/jsonc-parser"
+					>JSONC is JSON with JavaScript style comments</a
+				>.
+				<br />
+				<sup>2</sup> Click
+				<a href="https://github.com/jscraftcamp/website/new/main/participants"
+					>this link to start the process on the github page</a
+				>
+				to create the JSONC file in the repo. Make sure you are logged in to github.
+			</p>
 		</InfoBox>
 
 		<InfoBox title="The important stuff">
@@ -99,8 +105,8 @@
 		max-width: 100%;
 		overflow: auto;
 	}
-  
-  sup {
-    line-height: 0; /* Remove the change in line height for lines with <sup> in them, makes these lines with <sup>s be higher, which renders ugly. */
-  }
+
+	sup {
+		line-height: 0; /* Remove the change in line height for lines with <sup> in them, makes these lines with <sup>s be higher, which renders ugly. */
+	}
 </style>
