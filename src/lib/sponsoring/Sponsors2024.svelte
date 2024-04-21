@@ -7,7 +7,7 @@
 	import peerigon from './sponsors-2024/peerigon.svg';
 	import projectLary from './sponsors-2024/project-lary.svg';
 	import saab from './sponsors-2024/saab.svg';
-	import satellytes from './sponsors-2024/satellytes.png';
+	import satellytes from './sponsors-2024/satellytes-blue.svg';
 	import tng from './sponsors-2024/tng.png';
 	import Sponsors from './Sponsors.svelte';
 	const sponsors = [
