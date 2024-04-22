@@ -13,7 +13,7 @@
 	// please put in the account name of the PR creator, if you sign up somebody else
 	"githubAccountName": "mahes1287",
 	// company name (optional)
-	"company": " ",
+	// "company": " ",
 	// either both days or at least one day has to be set to true
 	"when": {
 		// June 7th, 2024
@@ -24,7 +24,7 @@
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": false,
 	// your current interests (JS and in general) (required)
-	"tags": ["ReScript", "Svelte", "Zustand", "GraphQL"],
+	"tags": ["Typescript","Next","ReScript", "Svelte", "Zustand", "GraphQL"],
 	// if you only eat vegan food (optional)
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
