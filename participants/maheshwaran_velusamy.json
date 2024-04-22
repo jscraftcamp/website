@@ -32,7 +32,7 @@
 	// what you cannot eat or drink (optional); If you don't want to put it in here, message the organizers.
 	// IMPORTANT: we cannot guarantee that food for every diet will be available,
 	//            if you have gluten free diet, please make backup plans.
-	"allergies": [""],
+	// "allergies": [""],
 	// tell us a few words how JavaScript affects you (required)
 	"whatIsMyConnectionToJavascript": "I am a Full Stack Developer and I use JavaScript for my front end and backend development.",
 	// what can you contribute to the bar camp (required)
@@ -41,7 +41,7 @@
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
 	"tShirtSize": "M",
 	// your Mastodon URL (optional)
-	"mastodon": "",
+	// "mastodon": "",
 	// your LinkedIn profile URL
 	"linkedin": "https://www.linkedin.com/in/maheshwaranv/",
 	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
