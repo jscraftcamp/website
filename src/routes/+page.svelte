@@ -9,22 +9,24 @@
 	import skyline from './skyline.svg';
 	import twitter from './twitter.svg';
 	import mastodon from './mastodon.svg';
-	import Sponsors from './sponsoring/Sponsors2023.svelte';
 	import WhatToExpect from './WhatYouCanExpect.svelte';
 	import {
-		isRegistrationOpen,
+		getRegistrationState,
+		registrationClosessAt,
 		registrationOpensAt,
 		timeLeft
 	} from '$lib/participants/registration';
 	import { base } from '$app/paths';
-	import Partners from './sponsoring/Partners.svelte';
+	import Partners from '$lib/sponsoring/Partners.svelte';
+	import Sponsors from '$lib/sponsoring/Sponsors2024.svelte';
+	import Schedule from './Schedule.svelte';
 
 	const countdown = writable<string>('');
-	const canRegister = writable<boolean>(isRegistrationOpen());
+	const registrationState = writable<'not-yet' | 'closed' | 'open'>(getRegistrationState());
 	const updateCountdown = () => {
 		const now = +new Date();
-		if (registrationOpensAt <= now) {
-			$canRegister = true;
+		if (registrationOpensAt <= now && now <= registrationClosessAt) {
+			$registrationState = 'open';
 			return;
 		}
 		const { days, hours, minutes, seconds } = timeLeft(now, registrationOpensAt);
@@ -39,10 +41,10 @@
 			timeAsStringArray.length > 1
 				? `That's in <strong>${timeAsStringArray.slice(0, -1).join(', ')} and ${
 						timeAsStringArray[timeAsStringArray.length - 1]
-				  }</strong>.`
+					}</strong>.`
 				: timeAsStringArray.length === 1
-				? `Only <strong>${timeAsStringArray[0]}</strong> left!`
-				: '';
+					? `Only <strong>${timeAsStringArray[0]}</strong> left!`
+					: '';
 
 		setTimeout(updateCountdown, 1000);
 	};
@@ -50,15 +52,55 @@
 </script>
 
 <PageLayout>
-	<h1>Welcome to JSCraftCamp 2023! 🎉</h1>
+	<h1>Welcome to JSCraftCamp 2024! ✅</h1>
 
 	<p style="display: flex; align-items: center;">
-  	Our hashtag is&nbsp;<b>#jscc23</b>&nbsp; find us on
-  	&nbsp;<a href="https://mastodontech.de/tags/jscc23"><img src={mastodon} alt="mastodon" style="height: 1.5rem;" /></a>
-  	&nbsp;<a href="https://twitter.com/search?q=%23jscc23"><img src={twitter} alt="twitter" style="height: 1.5rem;" /></a>
+		Our hashtag is&nbsp;<b>#jscc24</b>&nbsp; find us on &nbsp;<a
+			href="https://mastodontech.de/tags/jscc24"
+			><img src={mastodon} alt="mastodon" style="height: 1.5rem;" /></a
+		>
+		&nbsp;<a href="https://twitter.com/search?q=%23jscc24"
+			><img src={twitter} alt="twitter" style="height: 1.5rem;" /></a
+		>
 	</p>
 
 	<section>
+		<InfoBox title="When?">
+			<p><strong>7. & 8. June 2024</strong></p>
+			{#if $registrationState === 'not-yet'}
+				<p>Registration will open on April 22nd, 2024. {@html $countdown}</p>
+			{:else if $registrationState === 'closed'}
+				<p>Registration is closed, we're full!</p>
+			{:else}
+				<p><a href="{base}/registration">Registration is open!</a></p>
+			{/if}
+		</InfoBox>
+		<InfoBox title="Where?">
+			<p>
+				Thanks to Maiborn Wolff, this year we'll be at the <a
+					href="https://www.maibornwolff.de/location/muenchen-kraftwerk/"
+					rel="external noopener noreferrer"
+					>München Kraftwerk
+				</a>! <br />
+			</p>
+			<p>
+				MaibornWolff GmbH<br />
+				Drygalski-Allee 25<br />
+				81477 München <br />
+				(<a href="https://maps.app.goo.gl/hUhbheFci2sSJ7SZ6">Google Maps</a>)
+			</p>
+		</InfoBox>
+		<InfoBox title="Still looking for sponsors!">
+			<p>
+				Do you represent a company looking for talented developers? Want to support the JavaScript
+				community? Take a look at <a href="{base}/sponsoring">our sponsoring page</a> and find out
+				about what items are still open and how your company can benefit from sponsoring. Or go
+				directly to
+				<a href="https://github.com/orgs/jscraftcamp/projects/7" rel="external"
+					><strong>our Github Sponsorship Board</strong></a
+				> and pick something.
+			</p>
+		</InfoBox>
 		<InfoBox title="JSCraftCamp is ...">
 			<p>
 				... a
@@ -74,20 +116,6 @@
 					>SoCraTes conference</a
 				>.
 			</p>
-		</InfoBox>
-		<InfoBox title="When?">
-			<p>June 30th & July 1st, 2023.</p>
-			{#if !$canRegister}
-				<p>Registration opens on May 1st, 2023. {@html $countdown}</p>
-			{:else}
-				<p><a href="{base}/registration">Registration is open!</a></p>
-			{/if}
-		</InfoBox>
-		<InfoBox title="Where?">
-			codecentric offices Munich, <a
-				href="https://www.ecosia.org/search?method=index&q=August-Everding-Str+20+81671+M%C3%BCnchen"
-				rel="external">August-Everding-Str 20, 81671 München</a
-			>
 		</InfoBox>
 		<Logo animateYears style="max-width: 100%;" />
 		<div>
@@ -107,6 +135,7 @@
 		<Sponsors />
 		<Partners />
 		<WhatToExpect />
+		<Schedule />
 	</section>
 </PageLayout>
 

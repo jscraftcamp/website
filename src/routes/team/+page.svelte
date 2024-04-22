@@ -1,18 +1,15 @@
 <script lang="ts">
-	import Box from '$lib/layout/Box.svelte';
+	import { base } from '$app/paths';
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
-	import agnes from './agnes.png';
-	import david from './david.jpg';
 	import joern from './joern.jpg';
 	import marco from './marco.jpg';
-	import michael from './michael.png';
-	import patrick from './patrick.jpg';
 	import robert from './robert.png';
-	import sebastian from './sebastian.jpg';
-	import simon from './simon.png';
-	import TeamMember from './TeamMember.svelte';
+	import bernd from './bernd.webp';
+	import fii from './fii.jpg';
 	import wolfram from './wolfram.jpg';
+	import TeamMember from './TeamMember.svelte';
+	import TeamMemberSection from './TeamMemberSection.svelte';
 </script>
 
 <PageLayout>
@@ -22,37 +19,31 @@
 			We are simple developers organizing this event in our spare time. If you have any questions or
 			problems before or during the conference, don't hesitate to contact one of us!
 		</p>
+		<p>
+			Throughout the years, there were lots of people involved in organizing the past events. You
+			can <a href="{base}/team/alumni">find out more about our alumnis on the /team/alumni page</a>.
+		</p>
 	</InfoBox>
+
 	<p>
 		You can always reach us by e-mail: <a href="mailto:team@jscraftcamp.org">team@jscraftcamp.org</a
 		>
 	</p>
 
-	<section>
-		<TeamMember image={agnes} name="Agnes Köhler" email="koehler.agnes@gmail.com" />
-		<TeamMember image={david} name="David Losert" email="david@david-losert.com" />
+	<TeamMemberSection>
+		<TeamMember image={bernd} name="Bernd Kaiser" />
+		<TeamMember name="Gustaf Graf" />
 		<TeamMember image={joern} name="Jörn Bernhardt" email="joern.bernhardt@compose.us" />
 		<TeamMember image={marco} name="Marco Emrich" email="marco.emrich@codecentric.de" />
-		<TeamMember image={michael} name="Michael Zoidl" email="michael@alm.sh" />
-		<TeamMember image={patrick} name="Patrick Müller" email="mp@floatec.de" />
+		<TeamMember name="Philip Saa" />
 		<TeamMember image={robert} name="Robert Hostlowsky" />
-		<TeamMember
-			image={sebastian}
-			name="Sebastian Frerichs"
-			email="sebastian.frerichs@codecentric.de"
-		/>
-		<TeamMember image={simon} name="Simon Hofmann" email="simon@s1h.org" />
 		<TeamMember image={wolfram} name="Wolfram Kriesing" email="w@kriesing.de" />
-	</section>
-</PageLayout>
+		<TeamMember image={fii} name="Stefanie (Fii) Hasler" email="stefanie.hasler@gmail.com" />
+	</TeamMemberSection>
 
-<style>
-	section {
-		display: flex;
-		flex-flow: row wrap;
-		align-items: center;
-		justify-content: space-evenly;
-		gap: 2em;
-		margin: 0 auto;
-	}
-</style>
+	<p>
+		Want to see yourself on the list and help out? <a href="https://discord.gg/3mHhaXVEjP"
+			>Join our Discord and the regular orga meetings</a
+		>!
+	</p>
+</PageLayout>

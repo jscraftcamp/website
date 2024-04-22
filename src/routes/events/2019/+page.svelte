@@ -1,6 +1,6 @@
 <script>
 	import InfoBox from '$lib/layout/InfoBox.svelte';
-	import Sponsors2019 from '../../sponsoring/Sponsors2019.svelte';
+	import Sponsors2019 from '$lib/sponsoring/Sponsors2019.svelte';
 	import EventLayout from '../EventLayout.svelte';
 </script>
 
