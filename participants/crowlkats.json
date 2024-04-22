@@ -9,7 +9,7 @@
 	"company": "Deno",
 	"when": {
 		"friday": true,
-		"saturday": false
+		"saturday": true
 	},
 	"iCanTakeNotesDuringSessions": false,
 	"tags": ["Deno", "Fresh", "TypeScript", "Rust", "Web APIs"],
