@@ -1,0 +1,23 @@
+{
+	"realName": {
+		"givenName": "Markus",
+		"familyName": "Krogemann",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "mkrogemann",
+	"company": "Markus Krogemann",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["TypeScript", "Astro", "Svelte"],
+	"vegan": false,
+	"vegetarian": false,
+	"whatIsMyConnectionToJavascript": "I wish to learn more about everything around JS/TS, eco-systems, frameworks, trends, ...",
+	"whatCanIContribute": "pool billard - including a playing cue for whoever wants to play with me",
+	"tShirtSize": "XL",
+	"linkedin": "https://www.linkedin.com/in/mkrogemann/",
+	"website": "https://just-cues.krogemann.de"
+}
