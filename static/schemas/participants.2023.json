@@ -32,7 +32,7 @@
 							"type": "object",
 							"properties": {
 								"type": { "type": "string", "enum": ["fitted", "regular"] },
-								"size": { "type": "string", "enum": ["S", "M", "L", "XL", "XXL"] }
+								"size": { "type": "string", "enum": ["S", "M", "L", "XL", "2XL", "3XL"] }
 							},
 							"required": ["type", "size"],
 							"additionalProperties": false

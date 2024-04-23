@@ -19,6 +19,7 @@
 			{#if isRegistrationOpen()}<li><a href="{base}/registration/">Registration</a></li>{/if}
 			<li><a href="{base}/participants/">Participants</a></li>
 			<li><a href="{base}/sponsoring/">Sponsoring</a></li>
+			<li><a href="{base}/venue">Venue</a></li>
 			<li><a href="{base}/values/">Values</a></li>
 		</ul>
 	</nav>
