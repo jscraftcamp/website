@@ -7,8 +7,8 @@
 				"realName": {
 					"type": "object",
 					"properties": {
-						"givenName": { "type": "string", "minLength": 2, "maxLength": 100 },
-						"familyName": { "type": "string", "minLength": 2, "maxLength": 100 },
+						"givenName": { "type": "string", "minLength": 0, "maxLength": 100 },
+						"familyName": { "type": "string", "minLength": 1, "maxLength": 100 },
 						"placeFamilyNameFirst": { "type": ["boolean", "null"] },
 						"hideFamilyNameOnWebsite": { "type": ["boolean", "null"] }
 					},
