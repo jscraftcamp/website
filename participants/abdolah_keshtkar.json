@@ -9,7 +9,7 @@
 	"company": "Predium",
 	"when": {
 		"friday": true,
-		"saturday": false
+		"saturday": true
 	},
 	"iCanTakeNotesDuringSessions": false,
 	"tags": ["TypeScript", "JavaScript", "React"],
