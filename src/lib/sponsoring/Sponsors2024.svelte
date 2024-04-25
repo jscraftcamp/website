@@ -10,6 +10,7 @@
 	import satellytes from './sponsors-2024/satellytes-blue.svg';
 	import tng from './sponsors-2024/tng.png';
 	import codecentric from './sponsors-2024/codecentric.png';
+	import hipsquare from "./sponsors-2024/hipsquare.svg";
 	import Sponsors from './Sponsors.svelte';
 	const sponsors = [
 		{
@@ -77,6 +78,12 @@
 			link: 'https://www.codecentric.de',
 			name: 'codecentric AG',
 			sponsoring: 'Snacks Friday'
+		},
+		{
+			image: hipsquare,
+			link: 'https://www.hipsquare.net',
+			name: 'HipSquare GmbH',
+			sponsoring: 'Snacks Saturday'
 		}
 	];
 </script>
