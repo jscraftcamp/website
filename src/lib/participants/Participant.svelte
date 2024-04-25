@@ -165,6 +165,7 @@
 	.socials {
 		align-items: center;
 		display: flex;
+		flex-wrap: wrap;
 		margin: 0 -0.5em -0.5em;
 	}
 	.socials img {
