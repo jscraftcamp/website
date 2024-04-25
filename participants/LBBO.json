@@ -20,12 +20,12 @@
 		// June 7th, 2024
 		"friday": true,
 		// June 8th, 2024
-		"saturday": false
+		"saturday": true
 	},
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": true,
 	// your current interests (JS and in general) (required)
-	"tags": ["TypeScript", "Functional Programming", "Type systems", "Testing", "React", "A11y"],
+	"tags": ["TypeScript", "Functional Programming", "Type systems", "Testing", "React", "A11y", "Go"],
 	// if you only eat vegan food (optional)
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
