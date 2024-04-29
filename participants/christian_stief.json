@@ -12,7 +12,7 @@
 		"saturday": true
 	},
 	"iCanTakeNotesDuringSessions": false,
-	"tags": ["Next.js", "React", "Typescript"],
+	"tags": ["Next.js", "React", "Typescript", "legacy-refactoring"],
 	"vegan": false,
 	"vegetarian": false,
   "allergies": [],
