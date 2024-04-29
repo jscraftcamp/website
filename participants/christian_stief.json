@@ -15,7 +15,6 @@
 	"tags": ["Next.js", "React", "Typescript", "legacy-refactoring"],
 	"vegan": false,
 	"vegetarian": false,
-  "allergies": [],
 	"whatIsMyConnectionToJavascript": "I'm an engineer in the automotive industry turned webdeveloper",
 	"whatCanIContribute": "Experiences around migrating old react apps to up to date technologies and patterns",
 	"tShirtSize": "M",
