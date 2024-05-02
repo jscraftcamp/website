@@ -31,7 +31,7 @@
 	// if you only eat vegan or vegetarian food (optional)
 	"vegetarian": false,
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "JavaScript? Who is that?",
+	"whatIsMyConnectionToJavascript": "JavaScript is the cornerstone of my work. I use it to build both frontend and backend components, shaping dynamic and interactive web experiences.",
 	// what can you contribute to the bar camp (required)
 	"whatCanIContribute": "I can share my experience as JS fullstack developer",
 	// if you want a T-Shirt we need your size and variant preference (optional)
