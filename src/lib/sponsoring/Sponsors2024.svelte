@@ -9,6 +9,7 @@
 	import saab from './sponsors-2024/saab.svg';
 	import satellytes from './sponsors-2024/satellytes-blue.svg';
 	import tng from './sponsors-2024/tng.png';
+	import tiffingerthiel from './sponsors-2024/tiffinger-thiel.svg';
 	import codecentric from './sponsors-2024/codecentric.png';
 	import hipsquare from './sponsors-2024/hipsquare.svg';
 	import Sponsors from './Sponsors.svelte';
@@ -74,6 +75,12 @@
 			link: 'https://www.tngtech.com/',
 			name: 'TNG Technology Consulting',
 			sponsoring: 'Lunch'
+		},
+		{
+			image: tiffingerthiel,
+			link: 'https://tiffinger-thiel.de/',
+			name: 'Tiffinger & Thiel GmbH',
+			sponsoring: '200 €'
 		},
 		{
 			image: codecentric,
