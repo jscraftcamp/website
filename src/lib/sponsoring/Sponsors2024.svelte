@@ -12,7 +12,9 @@
 	import codecentric from './sponsors-2024/codecentric.png';
 	import hipsquare from './sponsors-2024/hipsquare.svg';
 	import Sponsors from './Sponsors.svelte';
-	const sponsors = [
+	import type { Sponsor } from './is-sponsor';
+
+	const sponsors: Sponsor[] = [
 		{
 			image: alm,
 			link: 'https://alm.sh',
@@ -85,7 +87,7 @@
 			name: 'HipSquare GmbH',
 			sponsoring: 'Snacks Saturday'
 		}
-	];
+	].sort((a, b) => a.name.localeCompare(b.name));
 </script>
 
 <Sponsors title="A big thanks to our 2024 sponsors" {sponsors} />
