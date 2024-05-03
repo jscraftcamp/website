@@ -1,0 +1,22 @@
+{
+	"realName": {
+		"givenName": "Kai",
+		"familyName": "Kopecky",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "kkopecky",
+	"company": "Saab Deutschland",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["Typescript", "Redux"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "...",
+	"whatCanIContribute": "???",
+	"tShirtSize": "3XL"
+}
