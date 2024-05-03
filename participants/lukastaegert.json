@@ -6,7 +6,7 @@
 		"hideFamilyNameOnWebsite": false
 	},
 	"githubAccountName": "lukastaegert",
-	"company": "TNG Technolog Consulting",
+	"company": "TNG Technology Consulting",
 	"when": {
 		"friday": true,
 		"saturday": false
@@ -16,7 +16,7 @@
 	"vegan": false,
 	"vegetarian": true,
 	"allergies": [],
-	"whatIsMyConnectionToJavascript": "I love hacking things as well as deeply understanding them, which made my maintainer of RollupJS since 2017. Since then, there are few things in the language I did not touch yet.",
+	"whatIsMyConnectionToJavascript": "I love hacking things as well as deeply understanding them, which made me maintainer of RollupJS since 2017. Since then, there are few things in the language I did not touch yet.",
 	"whatCanIContribute": "Experiences from integrating native Rust code in JavaScript, possibly something about schema stitching in GraphQL.",
 	"tShirtSize": "M",
 	"mastodon": "https://m.webtoo.ls/@lukastaegert",
