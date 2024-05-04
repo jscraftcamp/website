@@ -1,29 +1,44 @@
 {
-  "name": "js-craftcamp-website",
-  "version": "1.0.0",
-  "description": "Website for the JSCC (jscraftcamp.org)",
-  "main": "index.js",
-  "engines": {
-    "node": ">= 6.6.0"
-  },
-  "dependencies": {
-  },
-  "devDependencies": {
-    "browser-sync": "^2.18.7",
-    "hamjest": "^2.13.0",
-    "harp": "^0.23.0",
-    "hashcode": "^1.0.3",
-    "mocha": "^3.0.2",
-    "recursive-readdir-sync": "^1.0.6"
-  },
-  "scripts": {
-    "prebuild": "mkdir -p ./dist",
-    "build": "harp compile ./src ./dist; cp CNAME dist/; npm run 'build:participants.json'",
-    "build:participants.json": "node scripts/concat-json.js ./participants dist/participants.json; cp ./dist/participants.json ./src/",
-    "start": "harp server ./src & browser-sync start --proxy 'localhost:9000' --files 'src/**/*.ejs, src/**/*.css', src/**/*.js",
-    "test": "mocha test"
-  },
-  "author": "David Losert <david.losert@virtual-identity.com>",
-  "license": "MIT",
-  "repository": "https://github.com/jscraftcamp/website.git"
+	"name": "website",
+	"version": "0.0.1",
+	"private": true,
+	"engines": {
+		"node": ">= 18.0.0"
+	},
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"test": "vitest",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write . '!participants/*.json'",
+		"update-schema": "node --loader ts-node/esm --experimental-specifier-resolution=node create-json-schema.ts > static/schemas/participants.2024.json && prettier --write ./static/schemas/participants.2024.json"
+	},
+	"packageManager": "pnpm@9.0.6",
+	"devDependencies": {
+		"@fontsource/poppins": "5.0.13",
+		"@fontsource/source-sans-pro": "5.0.8",
+		"@sveltejs/adapter-static": "2.0.3",
+		"@sveltejs/kit": "1.30.4",
+		"@typescript-eslint/eslint-plugin": "7.7.0",
+		"@typescript-eslint/parser": "7.7.0",
+		"eslint": "8.57.0",
+		"eslint-config-prettier": "9.1.0",
+		"eslint-plugin-svelte3": "4.0.0",
+		"jsonc-parser": "3.2.1",
+		"prettier": "3.2.5",
+		"prettier-plugin-svelte": "3.2.3",
+		"svelte": "4.2.15",
+		"svelte-check": "3.6.9",
+		"ts-node": "10.9.2",
+		"tslib": "2.6.2",
+		"typescript": "5.4.5",
+		"vite": "5.2.9",
+		"vitest": "1.5.0",
+		"zod": "3.23.0",
+		"zod-to-json-schema": "3.22.5"
+	},
+	"type": "module"
 }

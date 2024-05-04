@@ -1,20 +1,22 @@
 {
-  "name": "Joern Bernhardt",
-  "company": "Campudus",
-  "email": "jb@campudus.com",
-  "tags": [ "react", "redux", "testing", "es6" ],
-  "when": {
-    "friday": true,
-    "friday_party": true,
-    "saturday": true
-  },
-  "what_is_my_connection_to_javascript": "Pure love for programming lead me to JS. Built my own job on top of it. I like the nice community.",
-  "what_can_i_contribute": "Philosophical startup challenges and quite a bit programming experience.",
-  "tshirt": "M-L",
-  "urls": {
-    "photo": "https://pbs.twimg.com/profile_images/2987119513/30b2efa0fba22db1fc3bad35dbf98af7.jpeg",
-    "homepage": "http://www.campudus.com/",
-    "github": "https://github.com/Narigo",
-    "twitter": "https://twitter.com/NarigoDF"
-  }
+	"realName": {
+		"givenName": "Jörn",
+		"familyName": "Bernhardt"
+	},
+	"githubAccountName": "Narigo",
+	"company": "compose.us",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["Flottform.io", "Svelte", "TypeScript", "JSCC", "WebRTC"],
+	"vegan": false,
+	"vegetarian": false,
+	"whatIsMyConnectionToJavascript": "Working for the web since 2.5 decades.",
+	"whatCanIContribute": "I'm happy to share how we built flottform.io and something about Svelte.",
+	"tShirtSize": "XL",
+	"linkedin": "https://www.linkedin.com/in/joern-bernhardt/",
+	"X": "NarigoDF",
+	"website": "https://narigo.dev"
 }
