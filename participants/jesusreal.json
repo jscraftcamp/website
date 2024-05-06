@@ -26,7 +26,7 @@
 	"iCanTakeNotesDuringSessions": false,
   "tShirtSize": "L",
 	// your current interests (JS and in general) (required)
-	"tags": ["JavaScript", "Typescript", "Angular", "Browser Native APIs", "AI", "SSG", "SSR", "Micro Frontends", "Leadership", "Team dynamics", "People Management"],
+	"tags": ["JavaScript", "Angular", "Browser Native APIs", "AI", "SSG", "SSR", "Micro Frontends", "Leadership", "Team dynamics", "People Management"],
 	// if you only eat vegan food (optional)
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
