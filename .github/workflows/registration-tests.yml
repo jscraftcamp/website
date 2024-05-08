@@ -1,4 +1,4 @@
-name: "Check registrations"
+name: 'Check registrations'
 on:
   pull_request:
     branches: [main]
@@ -7,19 +7,45 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-      - name: Prepare cache
-        uses: actions/cache@v3
-        id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+      - name: Checkout 🛎
+        uses: actions/checkout@v4
+      - name: Install Node.js
+        uses: actions/setup-node@v4
         with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          node-version: 18
+      - name: Prepare package manager 📦
+        shell: bash
+        run: corepack enable
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-      - name: Checkout
-        uses: actions/checkout@v3
-      - run: |
-          yarn --frozen-lockfile
-          yarn test
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies 📦
+        shell: bash
+        run: pnpm install
+
+      - name: Run checks for Svelte
+        shell: bash
+        run: |
+          pnpm run check
+
+      - name: Run linter
+        shell: bash
+        run: |
+          pnpm run lint
+
+      - name: Run tests
+        shell: bash
+        run: |
+          pnpm run test
