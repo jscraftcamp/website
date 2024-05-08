@@ -33,7 +33,7 @@
 	// what you cannot eat or drink (optional); If you don't want to put it in here, message the organizers.
 	// IMPORTANT: we cannot guarantee that food for every diet will be available,
 	//            if you have gluten free diet, please make backup plans.
-	"allergies": ["-"],
+	"allergies": [""],
 	// tell us a few words how JavaScript affects you (required)
 	"whatIsMyConnectionToJavascript": "10+ years of love and hate professional relationship as a developer, working on enterprise applications.",
 	// what can you contribute to the bar camp (required)
@@ -46,7 +46,7 @@
 	// your LinkedIn profile URL
 	"linkedin": "https://www.linkedin.com/in/ultimatekrishna/",
 	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
-	"X": "-",
+	"X": "",
 	// your website URL or other social media (optional)
-	"website": "-"
+	"website": ""
 }
