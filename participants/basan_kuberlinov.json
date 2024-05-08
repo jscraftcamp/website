@@ -1,38 +1,23 @@
 {
-	// your real name (required by location host)
 	"realName": {
 		"givenName": "Basan",
 		"familyName": "Kuberlinov",
-		// if you prefer to have your family name shown first (optional)
 		"placeFamilyNameFirst": false,
-		// if you do not want to show your family name on the participant list (optional)
 		"hideFamilyNameOnWebsite": false
 	},
-
-    // optional
-    "company": "Navigating.art gGmbH",
-    // required
-    "when": {
-        "friday": true,
-        "saturday": true
-    },
-    // required
-    "iCanTakeNotesDuringSessions": true,
-    // required - at least one
-    "tags": ["TypeScript", "NodeJS", "Angular"],
-    // optional
-    "vegan": false,
-    // optional
-    "vegetarian": false,
-    // required
-    "whatIsMyConnectionToJavascript": "JavaScript was the first programming language that I have learnt. For the past three years I have been using JavaScript as well as TypeScript daily in my job",
-    // required
-    "whatCanIContribute": "Sharing knowledge about Angular and particularly about its new features released with the Angular 16 and 17",
-    // optional
-    "tShirt": {
-        "size": "M",
-        "type": "fitted"
-    },
-    // optional
-  	"linkedin": "https://de.linkedin.com/in/basan-kuberlinov-637170166",
+	"githubAccountName": "KuBerlinOV",
+	"company": "Navigating.art gGmbH",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["TypeScript", "NodeJS", "Angular"],
+	"vegan": false,
+	"vegetarian": true,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "JavaScript was the first programming language that I learnt. For the past three years I have been using JavaScript as well as TypeScript daily in my job",
+	"whatCanIContribute": "Sharing knowledge about Angular and particularly about its new features released with the Angular 16 and 17.",
+	"tShirtSize": "M",
+	"linkedin": "https://de.linkedin.com/in/basan-kuberlinov-637170166",
 }
