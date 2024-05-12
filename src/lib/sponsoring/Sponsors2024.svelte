@@ -10,6 +10,7 @@
 	import satellytes from './sponsors-2024/satellytes-blue.svg';
 	import tng from './sponsors-2024/tng.png';
 	import tiffingerthiel from './sponsors-2024/tiffinger-thiel.svg';
+	import twilio from './sponsors-2024/twilio.svg';
 	import codecentric from './sponsors-2024/codecentric.png';
 	import hipsquare from './sponsors-2024/hipsquare.svg';
 	import Sponsors from './Sponsors.svelte';
@@ -81,6 +82,12 @@
 			link: 'https://tiffinger-thiel.de/',
 			name: 'Tiffinger & Thiel GmbH',
 			sponsoring: '200 €'
+		},
+		{
+			image: twilio,
+			link: 'https://twilio.com/',
+			name: 'Twilio',
+			sponsoring: '400 €'
 		},
 		{
 			image: codecentric,
