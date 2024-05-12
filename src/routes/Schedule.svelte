@@ -4,12 +4,14 @@
 </script>
 
 <InfoBox title="Friday schedule">
+	<!-- Needs to be changed:
 	<p>
-		JSCraftCamp 2023 was facilitated by <PersonLink
-			linkedIn="https://www.linkedin.com/in/w3ltraumpirat/"
-			mastodon="https://mastodon.social/@weltraumpirat">Tobias Goeschel</PersonLink
+		JSCraftCamp 2024 will be facilitated by <PersonLink
+			linkedIn=""
+			mastodon=""></PersonLink
 		>!
 	</p>
+	-->
 	<ol>
 		<li>09:00 - 10:00 Doors open, breakfast</li>
 		<li>10:00 - 11:00 Opening and Marketplace</li>
