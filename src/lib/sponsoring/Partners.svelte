@@ -13,7 +13,7 @@
 			image: socrates,
 			link: 'https://www.socrates-conference.de/',
 			name: 'SoCraTes',
-			sponsoring: 'August 24-27, 2023 - Hotel Park, Soltau'
+			sponsoring: 'August 22-25, 2024 - Hotel Park, Soltau'
 		},
 		{
 			image: seneca,
