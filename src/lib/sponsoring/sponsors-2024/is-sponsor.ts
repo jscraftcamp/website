@@ -5,6 +5,7 @@ export const isSponsor = (key: string) =>
 		'deno',
 		'hipsquare',
 		'inovex',
+		'inspired-consulting',
 		'jambit',
 		'maibornwolff',
 		'peerigon',
