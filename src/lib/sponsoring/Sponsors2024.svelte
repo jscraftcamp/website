@@ -2,6 +2,7 @@
 	import alm from './sponsors-2024/alm-logo-2022.svg';
 	import deno from './sponsors-2024/deno-logo.svg';
 	import inovex from './sponsors-2024/inovex-logo.png';
+	import inspiredconsulting from './sponsors-2024/inspired-consulting-logo.svg';
 	import jambit from './sponsors-2024/jambit.svg';
 	import maibornwolff from './sponsors-2024/maibornwolff.svg';
 	import peerigon from './sponsors-2024/peerigon.svg';
@@ -34,6 +35,12 @@
 			link: 'https://inovex.de',
 			name: 'inovex',
 			sponsoring: 'Lunch'
+		},
+		{
+			image: inspiredconsulting,
+			link: 'https://inspired.consulting',
+			name: 'Inspired Consulting',
+			sponsoring: '200 €'
 		},
 		{
 			image: jambit,
