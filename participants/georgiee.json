@@ -1,0 +1,21 @@
+{
+  "realName": {
+    "givenName": "Georgios",
+    "familyName": "Kaleadis",
+    "placeFamilyNameFirst": false,
+    "hideFamilyNameOnWebsite": false
+  },
+  "githubAccountName": "georgiee",
+  "company": "Satellytes",
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  "iCanTakeNotesDuringSessions": false,
+  "tags": ["Angular", "React", "Accessibility", "Code Reviews", "Inner Source", "Ruby on Rails"],
+  "whatIsMyConnectionToJavascript": "Flash ignited my tech passion in 1999, leading me to a Frontend career and to the founding of Satellytes six years ago.",
+  "whatCanIContribute": "Working with modern tech in clumsy enterprises is challenging but highly rewarding. I may share some stories around it.",
+  "tShirtSize": "L",
+  "linkedin": "https://www.linkedin.com/in/kaleadis/",
+  "website": "https://www.satellytes.com"
+}
