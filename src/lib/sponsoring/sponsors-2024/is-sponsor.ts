@@ -13,6 +13,6 @@ export const isSponsor = (key: string) =>
 		'saab',
 		'satellytes',
 		'tiffinger-thiel',
-		'tng',
+		'tng-technology-consulting',
 		'twilio'
 	].includes(key);
