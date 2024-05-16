@@ -1,0 +1,19 @@
+{
+  "realName": {
+    "givenName": "Birgit",
+    "familyName": "Fuchs"
+  },
+  "githubAccountName": "georgiee",
+  "company": "Satellytes",
+  "when": {
+    "friday": true,
+    "saturday": false
+  },
+  "iCanTakeNotesDuringSessions": false,
+  "tags": ["HR", "Culture", "People"],
+  "whatIsMyConnectionToJavascript": "I'm a woman without a technical background, but I work with people where JavaScript matters.",
+  "whatCanIContribute": "I love to work with people, organizing events and shaping people culture in our company. So, let's chat :)",
+  "tShirtSize": "M",
+  "linkedin": "https://www.linkedin.com/in/birgit-fuchs-a94ab12a4/",
+  "website": "https://www.satellytes.com"
+}
