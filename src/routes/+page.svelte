@@ -90,6 +90,14 @@
 				(<a href="https://maps.app.goo.gl/hUhbheFci2sSJ7SZ6">Google Maps</a>)
 			</p>
 		</InfoBox>
+		<InfoBox title="How much does it cost?">
+			<p>
+				For participants, you do not need any money to attend. We expect everyone to pay by their
+				active participation during the event and committing themselves to it by creating a PR for
+				themselves. We want everybody to contribute to discussions, share their experiences and help
+				each other to learn something new.
+			</p>
+		</InfoBox>
 		<InfoBox title="Still looking for sponsors!">
 			<p>
 				Do you represent a company looking for talented developers? Want to support the JavaScript

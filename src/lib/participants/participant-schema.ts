@@ -10,7 +10,8 @@ const optionalBoolean = (defaultValue = false) =>
 		.nullish()
 		.transform((v) => v ?? defaultValue);
 
-const nonEmptyStringArray = (errorMessage?: string) => z.string().array().nonempty(errorMessage);
+const nonEmptyStringArray = (errorMessage?: string) =>
+	z.string().nonempty().array().nonempty(errorMessage);
 
 /**
  * preprocessing function which replaces empty strings ('') or empty arrays ([]) with null

@@ -1,0 +1,25 @@
+{
+	"realName": {
+		"givenName": "Florian",
+		"familyName": "Rappl",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "FlorianRappl",
+	"company": "smapiot",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["React", "Microfrontends", "Architecture", "TypeScript", "Zustand", "esbuild"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "Pretty much the son of the father of JavaScript. One could say we are brothers.",
+	"whatCanIContribute": "Anything from JS or TS internals up to large-scale webapp architecture.",
+	"tShirtSize": "L",
+	"linkedin": "https://www.linkedin.com/in/florian-rappl/",
+	"X": "FlorianRappl",
+	"website": "https://www.florian-rappl.de"
+}

@@ -1,0 +1,26 @@
+{
+	"realName": {
+		"givenName": "Trishul",
+		"familyName": "Goel",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": true
+	},
+	"githubAccountName": "tsl143",
+	"company": "",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["react", "node", "microFrontends", "frontendSecurity", "frontendArchitecture"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "Trishul is a professional frontend developer. He loves to talk about modern Javascript and tries to use it to solve all of his problems, even the domestic ones",
+	"whatCanIContribute": "mentorship, present a talk, workshop",
+	"tShirtSize": "XL",
+	"mastodon": "",
+	"linkedin": "https://www.linkedin.com/in/trishul",
+	"X": "trishulgoel",
+	"website": "https://www.trishulgoel.com"
+}

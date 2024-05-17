@@ -48,21 +48,26 @@
 						href="https://discord.gg/3mHhaXVEjP"
 						rel="external">Discord</a
 					>
-					or <a href="mailto:team@jscraftcamp.org">team@jscraftcamp.org</a>
+					or <a href="mailto:team@jscraftcamp.org">team@jscraftcamp.org</a>.
+				</li>
+				<li>
+					We will try our best to fulfil your dietary requirements, but we cannot guarantee
+					anything. We will post the ordered food in the issues, so you can check if you need to
+					bring something for yourself.
 				</li>
 				<li>
 					If you need help <a href="https://discord.gg/3mHhaXVEjP" rel="external">reach out</a>! You
-					will learn some git for free
+					will learn some git for free.
 				</li>
 				<li>
 					Please read the JSON comments, they should explain every field, and if you have questions <a
 						href="mailto:team@jscraftcamp.org">reach out</a
-					>
+					>.
 				</li>
 				<li>
 					If you have any improvement suggestions, please <a href="mailto:team@jscraftcamp.org"
 						>let us know</a
-					>
+					>.
 				</li>
 			</ul>
 		</InfoBox>

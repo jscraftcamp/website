@@ -1,0 +1,33 @@
+{
+	"realName": {
+		"givenName": "Robert",
+		"familyName": "Hostlowsky",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "lowsky",
+	"company": "instana",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": [
+		"OTEL",
+		"performance",
+		"lofi",
+		"localfirst",
+		"micro frontends",
+		"typescript",
+		"GraphQL"
+	],
+	"vegan": true,
+	"vegetarian": true,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "Got in love with JS years ago. JS IS my production env every day. The creativity and innovations of its community is inspiring me every day.",
+	"whatCanIContribute": "I love bring people together, Let's talk about OTEL. Let's talk about scaling huge web sites, or web performance. AMA related to GraphQL",
+	"tShirtSize": "M",
+	"mastodon": "https://mastodontech.de/@lowsky",
+	"linkedin": "",
+	"website": "https://www.coolboard.fun"
+}

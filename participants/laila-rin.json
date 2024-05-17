@@ -1,0 +1,23 @@
+{
+  "realName": {
+    "givenName": "Johanna",
+    "familyName": "Schlinger",
+    "placeFamilyNameFirst": false,
+    "hideFamilyNameOnWebsite": false
+  },
+  "githubAccountName": "laila-rin",
+  "company": "inovex",
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  "iCanTakeNotesDuringSessions": false,
+  "tags": ["TypeScript", "Distributed Systems", "Storybook", "React"],
+  "vegan": false,
+  "vegetarian": true,
+  "allergies": [],
+  "whatIsMyConnectionToJavascript": "It's a love hate relationship full of highs and typeof lows. Determined to solve our issues though.",
+  "whatCanIContribute": "Sometimes I'm funny",
+  "tShirtSize": "XL",
+  "linkedin": "https://www.linkedin.com/in/johanna-schlinger-9a40b1175/"
+}
