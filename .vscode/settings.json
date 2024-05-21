@@ -2,12 +2,12 @@
 	"editor.formatOnSave": true,
 	"editor.indentSize": 4,
 	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": true
+		"source.fixAll.eslint": "explicit"
 	},
 	"json.schemas": [
 		{
 			"fileMatch": ["/participants/*.json"],
-			"url": "./static/schemas/participants.2023.json"
+			"url": "./static/schemas/participants.2024.json"
 		}
 	],
 	"files.associations": {

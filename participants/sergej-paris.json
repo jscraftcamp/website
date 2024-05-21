@@ -1,0 +1,18 @@
+{
+	"realName": {
+		"givenName": "Sergej",
+		"familyName": "Paris"
+	},
+	"githubAccountName": "HeeL",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["TypeScript", "Big Data", "AI"],
+	"vegan": false,
+	"vegetarian": false,
+	"whatIsMyConnectionToJavascript": "Building frontend apps and backend services using JS/TS for many years now",
+	"whatCanIContribute": "Tech talks on different topics, share our experience on building things, or moderate discussions",
+	"tShirtSize": "L"
+}

@@ -1,19 +1,24 @@
 {
-	"name": "Christian Ranz",
+	"realName": {
+		"givenName": "Christian",
+		"familyName": "Ranz",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "ranzwertig",
 	"company": "Codastic",
 	"when": {
 		"friday": true,
 		"saturday": true
 	},
-	"iCanTakeNotesDuringSessions": false,
-	"tags": ["React", "Next.js", "TypeScript", "Storybook"],
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["React", "TypeScript", "Next.js", "Storybook", "SASS", "Component driven design systems"],
 	"vegan": false,
 	"vegetarian": false,
+	"allergies": ["Hamster"],
 	"whatIsMyConnectionToJavascript": "I am working as freelance web developer since 2009.",
-	"whatCanIContribute": "Experience in building maintainable web applications, how to utilize GPT in your services or hacking your home to use as much renewable energy as possible.",
-	"tShirt": {
-		"size": "XL",
-		"type": "regular"
-	},
-	"website": "https://codastic.com"
+	"whatCanIContribute": "Experience in building maintainable web applications, how to utilize LLMs in your services or hacking your home to use as much renewable energy as possible.",
+	"tShirtSize": "XL",
+	"linkedin": "https://www.linkedin.com/in/christianranz/",
+	"website": "https://www.codastic.com"
 }
