@@ -1,21 +1,23 @@
 {
-	"name": "Markus Krogemann",
+	"realName": {
+		"givenName": "Markus",
+		"familyName": "Krogemann",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "mkrogemann",
 	"company": "Markus Krogemann",
 	"when": {
 		"friday": true,
 		"saturday": true
 	},
 	"iCanTakeNotesDuringSessions": true,
-	"tags": ["TypeScript", "Svelte", "Vue.js"],
+	"tags": ["TypeScript", "Astro", "Svelte"],
 	"vegan": false,
 	"vegetarian": false,
-	"allergies": [],
-	"whatIsMyConnectionToJavascript": "Mainly wanting to learn more about language, ecosystem and community",
-	"whatCanIContribute": "Free Pool Billard lessons (table fee covered, cue provided)",
-	"tShirt": {
-		"size": "XL",
-		"type": "regular"
-	},
-	"twitter": "mkrogemann",
-  "website": "https://www.linkedin.com/in/mkrogemann/"
+	"whatIsMyConnectionToJavascript": "I wish to learn more about everything around JS/TS, eco-systems, frameworks, trends, ...",
+	"whatCanIContribute": "pool billard - including a playing cue for whoever wants to play with me",
+	"tShirtSize": "XL",
+	"linkedin": "https://www.linkedin.com/in/mkrogemann/",
+	"website": "https://just-cues.krogemann.de"
 }

@@ -1,0 +1,409 @@
+{
+	"allergies": {
+		"peanuts": 3,
+		"hazelnuts": 1,
+		"raw carrots": 1,
+		"gluten": 2,
+		"crab": 1,
+		"lactose": 1,
+		"egg": 1,
+		"tequila": 1
+	},
+	"companies": [
+		{
+			"name": "(no company)",
+			"amount": 8,
+			"isSponsor": false
+		},
+		{
+			"name": "actively seeking opportunities",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "adorsys GmbH Co KG",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Advertace",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Alm Engineering",
+			"amount": 2,
+			"isSponsor": false
+		},
+		{
+			"name": "Ambright",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "badenova",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Birkenstock",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "BMW",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Brainlab AG",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Burgdörfer Software GmbH",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Codastic",
+			"amount": 3,
+			"isSponsor": false
+		},
+		{
+			"name": "codecentric AG",
+			"amount": 4,
+			"isSponsor": true
+		},
+		{
+			"name": "Collaboration Factory",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "compose.us",
+			"amount": 2,
+			"isSponsor": true
+		},
+		{
+			"name": "Daniel Valenti Software Development & Consulting",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "DB Systel",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Deno",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "DieProduktMacher GmbH",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Essentim Gmbh",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "eXXcellent solutions GmbH",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "FH Salzburg",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "fraud0 GmbH",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Freelancer",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Freelancer/SERP Wings",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Futurice",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "geile.software (soon codecentric)",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Grollmus München GmbH",
+			"amount": 2,
+			"isSponsor": false
+		},
+		{
+			"name": "Hetzner Cloud GmbH",
+			"amount": 3,
+			"isSponsor": true
+		},
+		{
+			"name": "independent",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "inovex",
+			"amount": 7,
+			"isSponsor": true
+		},
+		{
+			"name": "InsiderPie",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Inspired Consulting",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "instana",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Interface AG",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Jochen Schweizer Mydays Group",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Joyn GmbH",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Kalscheuer it",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Komdat GmbH",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Loopdive",
+			"amount": 2,
+			"isSponsor": false
+		},
+		{
+			"name": "Markus Krogemann",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Mediamarkt / Saturn",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "MilkScout",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Neocom.ai",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "OBI",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "onyo",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "optilyz GmbH",
+			"amount": 4,
+			"isSponsor": false
+		},
+		{
+			"name": "Peerigon GmbH",
+			"amount": 7,
+			"isSponsor": true
+		},
+		{
+			"name": "Pluswerk München",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Port Blue Sky",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Project Lary",
+			"amount": 2,
+			"isSponsor": true
+		},
+		{
+			"name": "Regiondo",
+			"amount": 4,
+			"isSponsor": false
+		},
+		{
+			"name": "Saab Deutschland GmbH",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Scalable Capital",
+			"amount": 1,
+			"isSponsor": true
+		},
+		{
+			"name": "SKELAR",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "smokeless",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Sofatutor GmbH",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Sono Motors",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Speisekammer.App",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "SQUER Solutions",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Storyblok",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "TNG Technology Consulting GmbH",
+			"amount": 1,
+			"isSponsor": true
+		},
+		{
+			"name": "Toptal",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "typedigital GmbH",
+			"amount": 4,
+			"isSponsor": true
+		},
+		{
+			"name": "Vitamin P Software",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "vivenu GmbH",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Voltane GbR",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Web Seven",
+			"amount": 3,
+			"isSponsor": false
+		},
+		{
+			"name": "Wikimedia Deutschland",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "xpecto AG",
+			"amount": 1,
+			"isSponsor": false
+		},
+		{
+			"name": "Zavvy GmbH",
+			"amount": 1,
+			"isSponsor": false
+		}
+	],
+	"orgaCount": 7,
+	"orgaShirts": {
+		"count": 7,
+		"fitted": 0,
+		"regular": 7,
+		"sizes": {
+			"regular-L": 1,
+			"regular-S": 1,
+			"regular-XL": 2,
+			"regular-2XL": 1,
+			"regular-3XL": 1,
+			"regular-M": 1
+		}
+	},
+	"participantCount": 113,
+	"participantsShirts": {
+		"count": 97,
+		"fitted": 17,
+		"regular": 80,
+		"sizes": {
+			"regular-2XL": 6,
+			"fitted-S": 5,
+			"regular-XL": 9,
+			"regular-S": 9,
+			"regular-L": 30,
+			"fitted-2XL": 2,
+			"regular-3XL": 3,
+			"fitted-L": 7,
+			"regular-M": 23,
+			"fitted-M": 2,
+			"fitted-XL": 1
+		}
+	},
+	"participants": {
+		"fridayOnly": 17,
+		"saturdayOnly": 5,
+		"bothDays": 91,
+		"notetakersFriday": 48,
+		"notetakersSaturday": 43
+	}
+}

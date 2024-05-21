@@ -1,19 +1,24 @@
 {
-	"name": "Leo Kettmeir",
+	"realName": {
+		"givenName": "Leo",
+		"familyName": "Kettmeir",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "crowlKats",
 	"company": "Deno",
 	"when": {
 		"friday": true,
 		"saturday": true
 	},
 	"iCanTakeNotesDuringSessions": false,
-	"tags": ["TypeScript", "Rust", "Web APIs"],
+	"tags": ["Deno", "Fresh", "TypeScript", "Rust", "Web APIs"],
 	"vegan": false,
 	"vegetarian": false,
-	"whatIsMyConnectionToJavascript": "I work with V8 and implementing Web APIs regularly, and also maintain a few websites",
-	"whatCanIContribute": "Discussions & talk about a part of the Deno ecosystem",
-	"tShirt": {
-		"size": "L",
-		"type": "regular"
-	},
-	"twitter": "crowlKats"
+	"whatIsMyConnectionToJavascript": "Working at Deno",
+	"whatCanIContribute": "Deno and fresh sessions",
+	"tShirtSize": "L",
+	"linkedin": "https://www.linkedin.com/in/leo-kettmeir/",
+	"X": "crowlKats",
+	"website": "https://toaxl.com"
 }

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 	import InfoBox from '../../lib/layout/InfoBox.svelte';
-	import Sponsors from './Sponsors2023.svelte';
+	import Sponsors from '$lib/sponsoring/Sponsors2024.svelte';
 </script>
 
 <PageLayout>
@@ -9,6 +9,14 @@
 	<h2>Expose your Company to a Group of Highly Motivated Technology Enthusiasts</h2>
 
 	<section>
+		<InfoBox title="Sponsor us now">
+			<p>
+				<a href="https://github.com/orgs/jscraftcamp/projects/7" rel="external"
+					>Find all sponsoring items on GitHub: https://github.com/orgs/jscraftcamp/projects/7</a
+				>
+				💖
+			</p>
+		</InfoBox>
 		<InfoBox title="You will get ...">
 			<ul>
 				<li>Up to <strong>5 preregistered participant spots</strong> for your representatives</li>
@@ -65,12 +73,6 @@
 				thinking and hacking for the modern world.
 			</p>
 		</InfoBox>
-		<p>
-			<a href="https://github.com/orgs/jscraftcamp/projects/5" rel="external"
-				>Find all sponsoring items on GitHub:<br />https://github.com/orgs/jscraftcamp/projects/5</a
-			><br />
-			💖
-		</p>
 	</section>
 	<section>
 		<Sponsors />

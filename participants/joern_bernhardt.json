@@ -1,20 +1,22 @@
 {
-	"name": "Jörn Bernhardt",
+	"realName": {
+		"givenName": "Jörn",
+		"familyName": "Bernhardt"
+	},
+	"githubAccountName": "Narigo",
 	"company": "compose.us",
 	"when": {
 		"friday": true,
 		"saturday": true
 	},
 	"iCanTakeNotesDuringSessions": true,
-	"tags": ["Svelte", "TypeScript", "JSCC"],
+	"tags": ["Flottform.io", "Svelte", "TypeScript", "JSCC", "WebRTC"],
 	"vegan": false,
 	"vegetarian": false,
 	"whatIsMyConnectionToJavascript": "Working for the web since 2.5 decades.",
-	"whatCanIContribute": "I can explain the tech behind the new JSCC website.",
-	"tShirt": {
-		"size": "XL",
-		"type": "regular"
-	},
-	"twitter": "NarigoDF",
+	"whatCanIContribute": "I'm happy to share how we built flottform.io and something about Svelte.",
+	"tShirtSize": "XL",
+	"linkedin": "https://www.linkedin.com/in/joern-bernhardt/",
+	"X": "NarigoDF",
 	"website": "https://narigo.dev"
 }

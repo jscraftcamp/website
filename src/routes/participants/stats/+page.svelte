@@ -6,22 +6,16 @@
 
 	export let data: PageData;
 
-	const { allergies, orgaCount, orgaShirts, participantCount, participants, participantsShirts } =
-		data;
-	const shirtKinds: `${'fitted' | 'regular'}-${TShirtSize}`[] = [
-		'fitted-S',
-		'fitted-M',
-		'fitted-L',
-		'fitted-XL',
-		'fitted-2XL',
-		'fitted-3XL',
-		'regular-S',
-		'regular-M',
-		'regular-L',
-		'regular-XL',
-		'regular-2XL',
-		'regular-3XL'
-	];
+	const {
+		allergies,
+		companies,
+		orgaCount,
+		orgaShirts,
+		participantCount,
+		participants,
+		participantsShirts
+	} = data;
+	const shirtKinds: TShirtSize[] = ['S', 'M', 'L', 'XL', '2XL', '3XL'];
 </script>
 
 <PageLayout>
@@ -79,14 +73,6 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr>
-							<td>Fitted (all sizes)</td>
-							<td>{participantsShirts.fitted}</td>
-						</tr>
-						<tr class="bottom-divider">
-							<td>Regular (all sizes)</td>
-							<td>{participantsShirts.regular}</td>
-						</tr>
 						{#each shirtKinds as kind}
 							<tr>
 								<td>{kind}</td>
@@ -146,6 +132,28 @@
 				</table>
 			</section>
 		</InfoBox>
+
+		<InfoBox title="Companies">
+			<p>There are participants from at least {companies.length} different companies.</p>
+			<section class="tables">
+				<table>
+					<thead>
+						<tr>
+							<th>Company</th>
+							<th>Participants</th>
+						</tr>
+					</thead>
+					<tbody>
+						{#each companies as { name, amount, isSponsor }}
+							<tr class:isSponsor>
+								<td>{name}</td>
+								<td>{amount}</td>
+							</tr>
+						{/each}
+					</tbody>
+				</table>
+			</section>
+		</InfoBox>
 	</div>
 </PageLayout>
 
@@ -179,5 +187,8 @@
 	}
 	tr:nth-child(even) {
 		background: #eee;
+	}
+	tr.isSponsor > td:first-child::before {
+		content: '👑 ';
 	}
 </style>

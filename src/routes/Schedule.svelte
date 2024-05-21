@@ -5,9 +5,9 @@
 
 <InfoBox title="Friday schedule">
 	<p>
-		JSCraftCamp 2023 will be facilitated by <PersonLink
-			linkedIn="https://www.linkedin.com/in/w3ltraumpirat/"
-			mastodon="https://mastodon.social/@weltraumpirat">Tobias Goeschel</PersonLink
+		JSCraftCamp 2024 will be facilitated by <PersonLink
+			linkedIn="https://www.linkedin.com/in/stefanie-hasler-05458a4/"
+			mastodon="">Stefanie Hasler</PersonLink
 		>!
 	</p>
 	<ol>
