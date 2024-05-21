@@ -91,13 +91,13 @@
 				type="button"
 				on:click={setFridayOrUnset}
 				class:isActive={$participantsFilter === fridayFilter}
-				>Friday ({participants.filter(fridayFilter).length} participants)</button
+				>Friday ({participants.filter(fridayFilter).length} / 100 participants)</button
 			>
 			<button
 				type="button"
 				on:click={setSaturdayOrUnset}
 				class:isActive={$participantsFilter === saturdayFilter}
-				>Saturday ({participants.filter(saturdayFilter).length} participants)</button
+				>Saturday ({participants.filter(saturdayFilter).length} / 100 participants)</button
 			>
 		</div>
 
