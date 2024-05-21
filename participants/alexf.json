@@ -4,17 +4,17 @@
 {
 	// your real name (required by location host)
 	"realName": {
-		"givenName": "Your Given Name",
-		"familyName": "Your Family Name",
+		"givenName": "Alexander",
+		"familyName": "Friedl",
 		// if you prefer to have your family name shown first (optional)
 		"placeFamilyNameFirst": false,
 		// if you do not want to show your family name on the participant list (optional)
 		"hideFamilyNameOnWebsite": false
 	},
 	// please put in the account name of the PR creator, if you sign up somebody else
-	"githubAccountName": "jscraftcamp",
+	"githubAccountName": "alex-all3dp",
 	// company name (optional)
-	"company": "ACME",
+	"company": "All3DP",
 	// either both days or at least one day has to be set to true
 	"when": {
 		// June 7th, 2024
@@ -23,30 +23,30 @@
 		"saturday": false
 	},
 	// if you are willing to take session notes and publish them to github (required)
-	"iCanTakeNotesDuringSessions": true,
+	"iCanTakeNotesDuringSessions": false,
 	// your current interests (JS and in general) (required)
-	"tags": ["ReScript", "Svelte", "Zustand", "GraphQL"],
+	"tags": ["node.js", "functional programming", "ramda.js", "nest.js", "terraform", "AWS"],
 	// if you only eat vegan food (optional)
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
-	"vegetarian": true,
+	"vegetarian": false,
 	// what you cannot eat or drink (optional); If you don't want to put it in here, message the organizers.
 	// IMPORTANT: we cannot guarantee that food for every diet will be available,
 	//            if you have gluten free diet, please make backup plans.
-	"allergies": ["Gluten", "Peanuts"],
+	"allergies": [],
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "...",
+	"whatIsMyConnectionToJavascript": "I've been working with JS professionally for 12 years and it remains an integral part of my daily work.",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "???",
+	"whatCanIContribute": "Sharing knowledge and experience on using JS/TS in production",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
-	"tShirtSize": "S",
+	"tShirtSize": "L",
 	// your Mastodon URL (optional)
-	"mastodon": "https://mastodontech.de/@yourhandle",
+	"mastodon": "",
 	// your LinkedIn profile URL
-	"linkedin": "https://www.linkedin.com/in/blub/",
+	"linkedin": "",
 	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
-	"X": "yourhandle",
+	"X": "",
 	// your website URL or other social media (optional)
-	"website": "https://www.your-domain.com"
+	"website": "https://www.craftcloud3d.com"
 }

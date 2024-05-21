@@ -1,6 +1,8 @@
 <script lang="ts">
+	import type { Sponsor } from './is-sponsor';
+
 	export let title: string;
-	export let sponsors: { image: string; link: string; name: string; sponsoring?: string }[] = [];
+	export let sponsors: Sponsor[] = [];
 </script>
 
 <h2>{title}</h2>
