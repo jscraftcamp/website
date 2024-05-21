@@ -20,6 +20,12 @@
 	import Partners from '$lib/sponsoring/Partners.svelte';
 	import Sponsors from '$lib/sponsoring/Sponsors2024.svelte';
 	import Schedule from './Schedule.svelte';
+	import type { PageData } from './$types';
+	import type { Participant as ParticipantT } from '$lib/participants/participant-schema';
+
+	export let data: PageData;
+
+	const { fridayParticipants, saturdayParticipants } = data;
 
 	const countdown = writable<string>('');
 	const registrationState = writable<'not-yet' | 'closed' | 'open'>(getRegistrationState());
@@ -73,6 +79,11 @@
 				<p>Registration is closed, we're full!</p>
 			{:else}
 				<p><a href="{base}/registration">Registration is open!</a></p>
+				<p>Grab your spot!</p>
+				<p>Friday: <strong>{100 - fridayParticipants}</strong> spots left</p>
+				<p>
+					Saturday: <strong>{100 - saturdayParticipants}</strong> spots left
+				</p>
 			{/if}
 		</InfoBox>
 		<InfoBox title="Where?">
