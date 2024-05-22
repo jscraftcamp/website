@@ -69,7 +69,7 @@
 		{
 			image: saab,
 			link: 'https://www.saab.com',
-			name: 'Saab AB',
+			name: 'Saab',
 			sponsoring: 'Breakfast'
 		},
 		{
