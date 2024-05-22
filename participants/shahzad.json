@@ -1,0 +1,32 @@
+{
+    "realName": {
+        "givenName": "Faisal",
+        "familyName": "Shahzad",
+        "placeFamilyNameFirst": false,
+        "hideFamilyNameOnWebsite": false
+    },
+    "githubAccountName": "seowings",
+    "company": "Freelancer/SERP Wings",
+    "when": {
+        "friday": false,
+        "saturday": true
+    },
+    "iCanTakeNotesDuringSessions": true,
+    "tags": [
+        "VanillaJS",
+        "Python",
+        "Web APIs",
+        "Teaching"
+    ],
+    "vegan": true,
+    "vegetarian": true,
+    "allergies": [
+        "Gluten",
+        "Peanuts"
+    ],
+    "whatIsMyConnectionToJavascript": "Start Working with JavaScript in 2001 and now a days mostly use it for static web apps",
+    "whatCanIContribute": "Discussions about static web apps and a talk about static WordPress",
+    "tShirtSize": "S",
+    "X": "seowings_org",
+    "website": "https://www.serpwings.com"
+}
