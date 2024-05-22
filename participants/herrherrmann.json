@@ -4,17 +4,17 @@
 {
 	// your real name (required by location host)
 	"realName": {
-    "givenName": "Patrick",
-    "familyName": "Piedad",
+		"givenName": "Sebastian",
+		"familyName": "Herrmann",
 		// if you prefer to have your family name shown first (optional)
-		//"placeFamilyNameFirst": false,
+		"placeFamilyNameFirst": false,
 		// if you do not want to show your family name on the participant list (optional)
-		//"hideFamilyNameOnWebsite": false
+		"hideFamilyNameOnWebsite": false
 	},
 	// please put in the account name of the PR creator, if you sign up somebody else
-  "githubAccountName": "patrickpiedad",
+	"githubAccountName": "herrherrmann",
 	// company name (optional)
-  //"company": false,
+	"company": "picdrop",
 	// either both days or at least one day has to be set to true
 	"when": {
 		// June 7th, 2024
@@ -23,30 +23,37 @@
 		"saturday": true
 	},
 	// if you are willing to take session notes and publish them to github (required)
-	"iCanTakeNotesDuringSessions": false,
+	"iCanTakeNotesDuringSessions": true,
 	// your current interests (JS and in general) (required)
-  "tags": ["JavaScript", "TypeScript", "React", "Node", "Svelte", "C#"],
+	"tags": [
+		"TypeScript",
+		"React",
+		"Next.js",
+		"Vue.js",
+		"Storybook",
+		"Node.js",
+		"Accessibility",
+		"Sustainability",
+		"Functional Programming",
+		"Browser Extensions",
+		"Cycling",
+		"Music"
+	],
 	// if you only eat vegan food (optional)
-	//"vegan": false,
+	"vegan": true,
 	// if you only eat vegan or vegetarian food (optional)
-	//"vegetarian": false,
-	// what you cannot eat or drink (optional); If you don't want to put it in here, message the organizers.
-	// IMPORTANT: we cannot guarantee that food for every diet will be available,
-	//            if you have gluten free diet, please make backup plans.
-	//"allergies": false,
+	"vegetarian": true,
 	// tell us a few words how JavaScript affects you (required)
-  "whatIsMyConnectionToJavascript": "Currently in 100Devs training learning full stack development",
+	"whatIsMyConnectionToJavascript": "Professional (and hobby) web developer for ~10 years",
 	// what can you contribute to the bar camp (required)
-  "whatCanIContribute": "Perspective on job searching and networking as an American living in Germany",
+	"whatCanIContribute": "Happy to contribute with a presentation or two, and take notes!",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
-	"tShirtSize": "M",
+	"tShirtSize": "S",
 	// your Mastodon URL (optional)
-	//"mastodon": false,
+	"mastodon": "https://mastodon.social/@herrherrmann",
 	// your LinkedIn profile URL
-  "linkedin": "https://www.linkedin.com/in/patrick-piedad/",
-	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
- "X": "patpexplores",
+	"linkedin": "https://www.linkedin.com/in/herrherrmann/",
 	// your website URL or other social media (optional)
-  "website": "https://patrickpiedad.netlify.app/"
+	"website": "https://herrherrmann.net/"
 }

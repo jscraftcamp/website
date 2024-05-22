@@ -20,6 +20,9 @@
 	import Partners from '$lib/sponsoring/Partners.svelte';
 	import Sponsors from '$lib/sponsoring/Sponsors2024.svelte';
 	import Schedule from './Schedule.svelte';
+	import type { PageData } from './$types';
+
+	export let data: PageData;
 
 	const countdown = writable<string>('');
 	const registrationState = writable<'not-yet' | 'closed' | 'open'>(getRegistrationState());
@@ -73,6 +76,11 @@
 				<p>Registration is closed, we're full!</p>
 			{:else}
 				<p><a href="{base}/registration">Registration is open!</a></p>
+				<p>Grab your spot!</p>
+				<p>Friday: <strong>{100 - data.fridayParticipants}</strong> spots left</p>
+				<p>
+					Saturday: <strong>{100 - data.saturdayParticipants}</strong> spots left
+				</p>
 			{/if}
 		</InfoBox>
 		<InfoBox title="Where?">
@@ -88,6 +96,14 @@
 				Drygalski-Allee 25<br />
 				81477 München <br />
 				(<a href="https://maps.app.goo.gl/hUhbheFci2sSJ7SZ6">Google Maps</a>)
+			</p>
+		</InfoBox>
+		<InfoBox title="How much does it cost?">
+			<p>
+				For participants, you do not need any money to attend. We expect everyone to pay by their
+				active participation during the event and committing themselves to it by creating a PR for
+				themselves. We want everybody to contribute to discussions, share their experiences and help
+				each other to learn something new.
 			</p>
 		</InfoBox>
 		<InfoBox title="Still looking for sponsors!">

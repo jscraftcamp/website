@@ -1,11 +1,18 @@
 export const isSponsor = (key: string) =>
 	[
 		'alm',
+		'codecentric',
 		'deno',
+		'hipsquare',
 		'inovex',
+		'inspired-consulting',
 		'jambit',
 		'maibornwolff',
 		'peerigon',
 		'project-lary',
-		'codecentric'
+		'saab',
+		'satellytes',
+		'tiffinger-thiel',
+		'tng-technology-consulting',
+		'twilio'
 	].includes(key);

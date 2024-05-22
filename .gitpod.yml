@@ -14,3 +14,5 @@ github:
   prebuilds:
     addBadge: true
     addComment: true
+    master: true
+    pullRequests: true
