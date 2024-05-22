@@ -12,7 +12,7 @@
 		"saturday": true
 	},
 	"iCanTakeNotesDuringSessions": false,
-	"tags": ["GitLab", "CI/CD", "k8s", "Rest", "Next.js", "Python"],
+	"tags": ["GitLab", "CI/CD", "k8s", "Rest", "Next.js", "PostgreSQL", "Python"],
 	"vegan": false,
 	"vegetarian": false,
 	"whatIsMyConnectionToJavascript": "I started with JS when jQuery was a thing.",
