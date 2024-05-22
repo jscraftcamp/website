@@ -40,11 +40,11 @@
   "whatCanIContribute": "Strong opinions and random trivia around JavaScript ;)",
   // if you want a T-Shirt we need your size and variant preference (optional)
   // the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
-  // "tShirtSize": "S",
+  "tShirtSize": null,
   // your Mastodon URL (optional)
-  // "mastodon": "https://mastodontech.de/@yourhandle",
+  "mastodon": null,
   // your LinkedIn profile URL
-  // "linkedin": "https://www.linkedin.com/in/blub/",
+  "linkedin": null,
   // your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
   "X": "jhnnns",
   // your website URL or other social media (optional)
