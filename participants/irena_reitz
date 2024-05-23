@@ -12,7 +12,7 @@
 		"saturday": false
 	},
 	"iCanTakeNotesDuringSessions": true,
-	"tags": ["React", "Next.js", "zod", "playwright", "a11y", "tailwind"],
+	"tags": ["React", "Next.js", "zod", "playwright", "a11y", "monorepo"],
 	"vegan": false,
 	"vegetarian": true,
 	"whatIsMyConnectionToJavascript": "Doing the JavaScript & Typescript dance since 2016",
