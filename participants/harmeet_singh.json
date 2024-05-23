@@ -44,7 +44,7 @@
 	// your LinkedIn profile URL
 	"linkedin": "https://www.linkedin.com/in/harmeet-singh-taara-1654165b/",
 	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
-	"X": "@singh_harmeet13",
+	"X": "singh_harmeet13",
 	// your website URL or other social media (optional)
 	"website": "https://www.harmeetsingh.in/"
 }
