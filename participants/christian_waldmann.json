@@ -1,0 +1,22 @@
+{
+	"realName": {
+		"givenName": "Christian",
+		"familyName": "Waldmann",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "wachri",
+	"company": "Hetzner Cloud GmbH",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["Angular", "TypeScript", "RxJS", "Cypress", "Schematics", "NX", "Jest", "Storybook", "Visual Regression Testing", "Leadership"],
+	"vegan": false,
+	"vegetarian": true,
+	"whatIsMyConnectionToJavascript": "Over 10 years of professional experience in frontend development and even more in web development",
+	"whatCanIContribute": "Experience in building, developing, maintaining and managing an enterprise Angular application",
+	"tShirtSize": "L",
+	"website": "https://hetzner-cloud.de/"
+}
