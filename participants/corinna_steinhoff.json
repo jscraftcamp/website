@@ -11,6 +11,8 @@
 		// if you do not want to show your family name on the participant list (optional)
 		"hideFamilyNameOnWebsite": false
 	},
+	// please put in the account name of the PR creator, if you sign up somebody else
+	"githubAccountName": "Corrl",
 	// either both days or at least one day has to be set to true
 	"when": {
 		// June 7th, 2024
