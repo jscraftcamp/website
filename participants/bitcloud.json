@@ -10,7 +10,7 @@
 		"saturday": true
 	},
 	"iCanTakeNotesDuringSessions": false,
-	"tags": ["NodeJs", "TypeScript", "AWS", "Azure", "Terraform", "OPCUA"],
+	"tags": ["NodeJs", "TypeScript", "AWS", "Azure", "Terraform", "OPCUA", "k8s", "security"],
 	"vegan": false,
 	"vegetarian": false,
 	"whatIsMyConnectionToJavascript": "My goto tool to glue things together for years ;-)",
