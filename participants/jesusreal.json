@@ -20,7 +20,7 @@
 		// June 7th, 2024
 		"friday": true,
 		// June 8th, 2024
-		"saturday": true
+		"saturday": false
 	},
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": false,
