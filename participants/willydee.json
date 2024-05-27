@@ -1,0 +1,25 @@
+// vim: ft=jsonc
+{
+	"realName": {
+		"givenName": "Wilfried",
+		"familyName": "Schott",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "willydee",
+	"company": "Hetzner Cloud GmbH",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	// your current interests (JS and in general) (required)
+	"tags": ["Angular", "Typescript", "Bryntum Suite"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "We're like an old couple. I love it dearly, but sometimes I'm not sure if it loves me back the same.",
+	"whatCanIContribute": "Stupid questions and less stupid answers",
+	"tShirtSize": "3XL",
+	"linkedin": "https://www.linkedin.com/in/wilfried-schott-2bb18b79",
+}
