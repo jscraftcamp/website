@@ -3,10 +3,12 @@
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 	import joern from './joern.jpg';
-	import marco from './marco.jpg';
 	import robert from './robert.png';
 	import bernd from './bernd.webp';
 	import fii from './fii.jpg';
+	import philip from './philip.jpeg';
+	import leo from './leo.webp';
+	import sina from './sina.jpeg';
 	import wolfram from './wolfram.jpg';
 	import TeamMember from './TeamMember.svelte';
 	import TeamMemberSection from './TeamMemberSection.svelte';
@@ -32,13 +34,13 @@
 
 	<TeamMemberSection>
 		<TeamMember image={bernd} name="Bernd Kaiser" />
-		<TeamMember name="Gustaf Graf" />
 		<TeamMember image={joern} name="Jörn Bernhardt" email="joern.bernhardt@compose.us" />
-		<TeamMember image={marco} name="Marco Emrich" email="marco.emrich@codecentric.de" />
-		<TeamMember name="Philip Saa" />
+		<TeamMember image={leo} name="Leo Kettmeir" email="leo@deno.com" />
+		<TeamMember image={philip} name="Philip Saa" />
 		<TeamMember image={robert} name="Robert Hostlowsky" />
-		<TeamMember image={wolfram} name="Wolfram Kriesing" email="w@kriesing.de" />
+		<TeamMember image={sina} name="Sina Aschenbrenner" />
 		<TeamMember image={fii} name="Stefanie (Fii) Hasler" email="stefanie.hasler@gmail.com" />
+		<TeamMember image={wolfram} name="Wolfram Kriesing" email="w@kriesing.de" />
 	</TeamMemberSection>
 
 	<p>
