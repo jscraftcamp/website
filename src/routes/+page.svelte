@@ -98,6 +98,7 @@
 				(<a href="https://maps.app.goo.gl/hUhbheFci2sSJ7SZ6">Google Maps</a>)
 			</p>
 		</InfoBox>
+		<Schedule />
 		<InfoBox title="How much does it cost?">
 			<p>
 				For participants, you do not need any money to attend. We expect everyone to pay by their
@@ -151,7 +152,6 @@
 		<Sponsors />
 		<Partners />
 		<WhatToExpect />
-		<Schedule />
 	</section>
 </PageLayout>
 
