@@ -1,6 +1,9 @@
 <script lang="ts">
 	import Box from '$lib/layout/Box.svelte';
+	import linkedinLogo from '$lib/participants/linkedin.svg';
+
 	export let email: string = '';
+	export let linkedin: string | undefined = undefined;
 	export let image: string | undefined = undefined;
 	export let name: string;
 </script>
@@ -15,7 +18,19 @@
 			{/if}
 		</div>
 		<div class="infos">
-			<strong>{name}</strong>
+			<strong class="name-with-logo">
+				{name}
+				{#if linkedin}
+					<a
+						href={linkedin}
+						rel="external"
+						class="linkedin-link"
+						title="Link to {name} on LinkedIn"
+					>
+						<img src={linkedinLogo} height="32" width="32" alt="Link to {name} on LinkedIn" />
+					</a>
+				{/if}
+			</strong>
 			{#if email}
 				<a href="mailto:{email}" title={email}>{email}</a>
 			{:else}
@@ -35,6 +50,13 @@
 		display: flex;
 		flex-flow: column;
 		padding: 1em;
+	}
+	.name-with-logo {
+		display: flex;
+		align-items: center;
+	}
+	.linkedin-link {
+		margin-left: 0.5em;
 	}
 	a {
 		max-width: 13em;
