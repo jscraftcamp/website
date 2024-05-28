@@ -33,14 +33,46 @@
 	</p>
 
 	<TeamMemberSection>
-		<TeamMember image={bernd} name="Bernd Kaiser" />
-		<TeamMember image={joern} name="Jörn Bernhardt" email="joern.bernhardt@compose.us" />
-		<TeamMember image={leo} name="Leo Kettmeir" email="leo@deno.com" />
-		<TeamMember image={philip} name="Philip Saa" />
+		<TeamMember
+			image={bernd}
+			linkedin="https://www.linkedin.com/in/bernd-kaiser/"
+			name="Bernd Kaiser"
+		/>
+		<TeamMember
+			image={joern}
+			linkedin="https://www.linkedin.com/in/joern-bernhardt/"
+			name="Jörn Bernhardt"
+			email="joern.bernhardt@compose.us"
+		/>
+		<TeamMember
+			image={leo}
+			linkedin="https://www.linkedin.com/in/leo-kettmeir/"
+			name="Leo Kettmeir"
+			email="leo@deno.com"
+		/>
+		<TeamMember
+			image={philip}
+			linkedin="https://www.linkedin.com/in/philipsaa/"
+			name="Philip Saa"
+		/>
 		<TeamMember image={robert} name="Robert Hostlowsky" />
-		<TeamMember image={sina} name="Sina Aschenbrenner" />
-		<TeamMember image={fii} name="Stefanie (Fii) Hasler" email="stefanie.hasler@gmail.com" />
-		<TeamMember image={wolfram} name="Wolfram Kriesing" email="w@kriesing.de" />
+		<TeamMember
+			image={sina}
+			linkedin="https://www.linkedin.com/in/sina-aschenbrenner-146aa8229/"
+			name="Sina Aschenbrenner"
+		/>
+		<TeamMember
+			image={fii}
+			linkedin="https://www.linkedin.com/in/stefanie-hasler-05458a4/"
+			name="Stefanie (Fii) Hasler"
+			email="stefanie.hasler@gmail.com"
+		/>
+		<TeamMember
+			image={wolfram}
+			linkedin="https://www.linkedin.com/in/wolframkriesing/"
+			name="Wolfram Kriesing"
+			email="w@kriesing.de"
+		/>
 	</TeamMemberSection>
 
 	<p>
