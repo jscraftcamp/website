@@ -45,7 +45,7 @@
 	// your LinkedIn profile URL
 	"linkedin": "https://www.linkedin.com/in/christophervoit/",
 	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
-	"X": "@thechrisvoit",
+	"X": "thechrisvoit",
 	// your website URL or other social media (optional)
 	"website": "https://cv.christophervoit.de/"
 }
