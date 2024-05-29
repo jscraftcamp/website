@@ -35,9 +35,9 @@
 	//            if you have gluten free diet, please make backup plans.
 	"allergies": [],
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "JavaScript has been instrumental in my journey into programming. It sparked my interest and led me to delve deeper into various aspects of software development, thanks to its versatility and the dynamic, interactive capabilities it brings to web applications.",
+	"whatIsMyConnectionToJavascript": "JavaScript leds me to delve deeper into various aspects of software development, thanks to its versatility and the dynamic, interactive capabilities it brings to web applications.",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "I can contribute to the BarCamp by sharing my knowledge and passion for JavaScript and web development. I can lead interactive sessions or workshops on topics like modern JavaScript frameworks, best practices in coding, and tips for optimizing web performance. ",
+	"whatCanIContribute": "I can contribute to the BootCamp by sharing my knowledge and passion for JavaScript and web development",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
 	"tShirtSize": "M",
