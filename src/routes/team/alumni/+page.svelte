@@ -5,6 +5,7 @@
 	import TeamMemberSection from '../TeamMemberSection.svelte';
 	import agnes from './agnes.png';
 	import david from './david.jpg';
+	import marco from './marco.jpg';
 	import michael from './michael.png';
 	import patrick from './patrick.jpg';
 	import sebastian from './sebastian.jpg';
@@ -21,6 +22,8 @@
 	<TeamMemberSection>
 		<TeamMember image={agnes} name="Agnes Köhler" email="koehler.agnes@gmail.com" />
 		<TeamMember image={david} name="David Losert" email="david@david-losert.com" />
+		<TeamMember name="Gustaf Graf" />
+		<TeamMember image={marco} name="Marco Emrich" email="marco.emrich@codecentric.de" />
 		<TeamMember image={michael} name="Michael Zoidl" email="michael@alm.sh" />
 		<TeamMember image={patrick} name="Patrick Müller" email="mp@floatec.de" />
 		<TeamMember
