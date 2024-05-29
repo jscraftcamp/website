@@ -27,7 +27,7 @@
 		understand the format better if you missed the Opening on Friday.
 	</p>
 	<ol>
-		<li>09:00 - 10:00 Doors open, breakfast (if sponsor)</li>
+		<li>09:00 - 10:00 Doors open, breakfast</li>
 		<li>10:00 - 11:00 Marketplace</li>
 		<li>11:00 - 13:00 Two session slots</li>
 		<li>13:00 - 14:00 Lunch</li>
