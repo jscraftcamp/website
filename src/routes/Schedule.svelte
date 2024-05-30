@@ -17,7 +17,7 @@
 		<li>13:00 - 14:00 Lunch</li>
 		<li>14:00 - 17:00 Three session slots</li>
 		<li>17:00 - 18:00 Review and Learnings</li>
-		<li>18:00 - 22:00 BBQ, board games, networking, party</li>
+		<li>18:00 - 22:00 Pizza, board games, networking, party</li>
 	</ol>
 </InfoBox>
 <InfoBox title="Saturday schedule">
