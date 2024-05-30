@@ -1,0 +1,24 @@
+// vim: ft=jsonc
+{
+	"realName": {
+		"givenName": "Kerstin",
+		"familyName": "Dengl",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "MoppetX",
+	"company": "mobile.de",
+	"when": {
+		"friday": true,
+		"saturday": false
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["JavaScript", "React"],
+	"vegan": false,
+	"vegetarian": true,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "My Bread and Butter",
+	"whatCanIContribute": "Bad Jokes and questions",
+	"tShirtSize": "M",
+	"linkedin": "https://www.linkedin.com/in/kerstin-dengl/"
+}
