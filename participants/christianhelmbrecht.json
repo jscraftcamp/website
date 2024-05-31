@@ -12,7 +12,7 @@
 		"hideFamilyNameOnWebsite": false
 	},
 	// please put in the account name of the PR creator, if you sign up somebody else
-	"githubAccountName": "jscraftcamp",
+	"githubAccountName": "Arachnatur",
 	// company name (optional)
 	"company": "Tiffinger & Thiel GmbH",
 	// either both days or at least one day has to be set to true
@@ -35,9 +35,9 @@
 	//            if you have gluten free diet, please make backup plans.
 	"allergies": [],
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "I don't have personal connections to programming languages ;) However, I like typescript/javascript for its simplicity (and also curse it for it)",
+	"whatIsMyConnectionToJavascript": "I've been using it professionally since the dawn of time (ca. 2009)",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "First time - just looking around :)",
+	"whatCanIContribute": "I've been using Javascript for a long time and also have experience in some other languages which gives a broader perspective.",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
 	"tShirtSize": "L",
