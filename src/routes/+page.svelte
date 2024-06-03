@@ -29,7 +29,7 @@
 	const updateCountdown = () => {
 		const now = +new Date();
 		if (registrationOpensAt <= now && now <= registrationClosessAt) {
-			$registrationState = 'open';
+			$registrationState = 'closed';
 			return;
 		}
 		const { days, hours, minutes, seconds } = timeLeft(now, registrationOpensAt);
@@ -73,7 +73,9 @@
 			{#if $registrationState === 'not-yet'}
 				<p>Registration will open on April 22nd, 2024. {@html $countdown}</p>
 			{:else if $registrationState === 'closed'}
-				<p>Registration is closed, we're full!</p>
+				<p>
+					Registration is closed, we're full! <a href="{base}/registration">Join the wait list</a>!
+				</p>
 			{:else}
 				<p><a href="{base}/registration">Registration is open!</a></p>
 				<p>Grab your spot!</p>
@@ -98,6 +100,7 @@
 				(<a href="https://maps.app.goo.gl/hUhbheFci2sSJ7SZ6">Google Maps</a>)
 			</p>
 		</InfoBox>
+		<Schedule />
 		<InfoBox title="How much does it cost?">
 			<p>
 				For participants, you do not need any money to attend. We expect everyone to pay by their
@@ -151,7 +154,6 @@
 		<Sponsors />
 		<Partners />
 		<WhatToExpect />
-		<Schedule />
 	</section>
 </PageLayout>
 

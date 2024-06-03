@@ -1,0 +1,23 @@
+{
+	"realName": {
+		"givenName": "Irena",
+		"familyName": "Reitz",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "irenama",
+	"company": "Peerigon",
+	"when": {
+		"friday": true,
+		"saturday": false
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["React", "Next.js", "zod", "playwright", "a11y", "monorepo"],
+	"vegan": false,
+	"vegetarian": true,
+	"whatIsMyConnectionToJavascript": "Doing the JavaScript & Typescript dance since 2016",
+	"whatCanIContribute": "I can contribute my experience with React and its ecosystem and general curiosity on 'meta' topics like team culture and diversity.",
+	"tShirtSize": "M",
+	"linkedin": "https://www.linkedin.com/in/irena-reitz/",
+	"website": "https://www.peerigon.com"
+}

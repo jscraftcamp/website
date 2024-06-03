@@ -1,0 +1,22 @@
+{
+	"realName": {
+		"givenName": "Manuel",
+		"familyName": "Stingl",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "mstingl",
+	"company": "Voltane",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["GitLab", "CI/CD", "k8s", "Rest", "Next.js", "PostgreSQL", "Python"],
+	"vegan": false,
+	"vegetarian": false,
+	"whatIsMyConnectionToJavascript": "I started with JS when jQuery was a thing.",
+	"whatCanIContribute": "Provide insights beyond the frontend perspective.",
+	"tShirtSize": "M",
+	"website": "https://manuel.stingl.st"
+}

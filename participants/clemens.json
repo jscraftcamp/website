@@ -1,0 +1,26 @@
+// vim: ft=jsonc
+{
+	"realName": {
+		"givenName": "Clemens",
+		"familyName": "Hübner"
+	},
+	"githubAccountName": "meldron",
+	"company": "inovex",
+	"when": {
+		"friday": false,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": [
+		"Security",
+		"Passkeys"
+	],
+	"vegan": false,
+	"vegetarian": true,
+	"whatIsMyConnectionToJavascript": "Passkeys are my passion",
+	"whatCanIContribute": "Sessions about Passkeys, Web Security and more",
+	"tShirtSize": "M",
+	"X": "ClemensHuebner",
+	"mastodon": "https://infosec.exchange/@clemens",
+	"linkedin": "https://www.linkedin.com/in/clemens-huebner/"
+}

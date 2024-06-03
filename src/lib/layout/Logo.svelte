@@ -141,7 +141,7 @@
 			</g>
 			<g class="year-2016">
 				<path class="back" d="M109 343L107 303L147 323L149 363L109 343Z" fill="#9b03a6" />
-				<text fill="#fff" x="111" y="330">2024</text>
+				<text fill="#fff" x="111" y="330">2016</text>
 				<path class="front" d="M109 343L107 303L147 323L149 363L109 343Z" fill="#E98B23" />
 			</g>
 		</g>

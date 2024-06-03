@@ -1,0 +1,23 @@
+{
+	"realName": {
+		"givenName": "Jakob",
+		"familyName": "Fahr",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "jfhr",
+	"company": "InsiderPie",
+	"when": {
+		"friday": false,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["node.js", "Scraping", "Security", "PostgreSQL"],
+	"vegan": true,
+	"vegetarian": true,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "5 years of developing with JavaScript, including about 2 years at my own company.",
+	"whatCanIContribute": "I can share my experience writing full-stack web apps and scraping tools.",
+	"tShirtSize": "S",
+	"website": "https://jfhr.de"
+}
