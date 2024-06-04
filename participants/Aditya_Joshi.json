@@ -35,7 +35,7 @@
 	//            if you have gluten free diet, please make backup plans.
 	"allergies": [],
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "for devlopment of applications",
+	"whatIsMyConnectionToJavascript": "for development of applications",
 	// what can you contribute to the bar camp (required)
 	"whatCanIContribute": "about integrating to web3 and GPT plugins",
 	// if you want a T-Shirt we need your size and variant preference (optional)
