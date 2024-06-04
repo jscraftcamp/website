@@ -1,19 +1,19 @@
 import { chromium } from '@playwright/test';
 
-const logo = process.argv[2];
+const year = process.argv[2];
 
 const browser = await chromium.launch({ headless: true, slowMo: 50 });
 try {
-	await takeScreenshot({ name: 'jscc-discord-logo', logo, width: 512, height: 512 });
-	await takeScreenshot({ name: 'jscc-meetup-event', logo, width: 1200, height: 675 });
-	await takeScreenshot({ name: 'jscc-meetup-group', logo, width: 1200, height: 900 });
-	await takeScreenshot({ name: 'jscc-linkedin-profile', logo, width: 400, height: 400 });
+	await takeScreenshot({ name: 'jscc-discord-logo', logo: year, width: 512, height: 512 });
+	await takeScreenshot({ name: 'jscc-meetup-event', logo: year, width: 1200, height: 675 });
+	await takeScreenshot({ name: 'jscc-meetup-group', logo: year, width: 1200, height: 900 });
+	await takeScreenshot({ name: 'jscc-linkedin-profile', logo: year, width: 400, height: 400 });
 	await takeScreenshot({
 		name: 'jscc-linkedin-banner',
-		logo,
+		logo: year,
 		width: 1128,
 		height: 191,
-		withText: 'JSCraftCamp 2024'
+		withText: `JSCraftCamp ${year}`
 	});
 } finally {
 	await browser.close();
