@@ -10,7 +10,7 @@ export const isSponsor = (key: string) =>
 		'maibornwolff',
 		'peerigon',
 		'project-lary',
-		'saab',
+		'saab-deutschland',
 		'satellytes',
 		'tiffinger-thiel',
 		'tng-technology-consulting',
