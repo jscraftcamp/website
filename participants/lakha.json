@@ -43,6 +43,6 @@
 	"tShirtSize": "M",
 	// your Mastodon URL (optional)
 	// your LinkedIn profile URL
-	"linkedin": "https://www.linkedin.com/in/theengineer1982/",
+	"linkedin": "https://www.linkedin.com/in/theengineer1982/"
 	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
 }

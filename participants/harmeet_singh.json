@@ -37,7 +37,7 @@
 	// tell us a few words how JavaScript affects you (required)
 	"whatIsMyConnectionToJavascript": "From the beginning of my career, I never get a chance to work on JavaScript and explore JavaScript-based technologies.",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "I am happy to discuss backend technologies like Java and Scala and happy to explore distributed systems architecture."
+	"whatCanIContribute": "I am happy to discuss backend technologies like Java and Scala and happy to explore distributed systems architecture.",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: M (only regular cut)
 	"tShirtSize": "M",

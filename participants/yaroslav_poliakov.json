@@ -4,7 +4,7 @@
 {
 	// your real name (required by location host)
 	"realName": {
-		"givenName": "Yaroslav,
+		"givenName": "Yaroslav",
 		"familyName": "Poliakov",
 		// if you prefer to have your family name shown first (optional)
 		"placeFamilyNameFirst": false,
