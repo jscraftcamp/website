@@ -6,13 +6,13 @@
 	  "hideFamilyNameOnWebsite": false
 	},
 	"githubAccountName": "Oleksandr-Markovskyi",
-	"company": "looking for a new job",
+	"company": "",
 	"when": {
-	  "friday": false,
+	  "friday": true,
 	  "saturday": true
 	},
 	"iCanTakeNotesDuringSessions": true,
-	"tags": ["Typescript", "React", "NextJS", "VueJS", "Node.js"],
+	"tags": ["Typescript", "React", "NextJS", "VueJS", "Node.js", "NestJS"],
 	"vegan": false,
 	"vegetarian": false,
 	"allergies": [],
