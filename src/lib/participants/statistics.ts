@@ -64,7 +64,8 @@ export const createStatsFromParticipants = (
 			const companyAsKey = name
 				.toLocaleLowerCase()
 				.replace(/\s+(?:ag|gbr|gmbh|gmdbh)/, '')
-				.replace(/[^a-z]/g, '-');
+				.replace(/[^a-z]/g, '-')
+				.replace(/-+/g, '-');
 			companies[companyAsKey] = companies[companyAsKey] ?? {
 				name,
 				amount: 0,

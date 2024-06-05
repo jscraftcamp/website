@@ -5,12 +5,14 @@ export const isSponsor = (key: string) =>
 		'deno',
 		'hipsquare',
 		'inovex',
+		'inspired-consulting',
 		'jambit',
 		'maibornwolff',
 		'peerigon',
 		'project-lary',
-		'saab',
+		'saab-deutschland',
 		'satellytes',
 		'tiffinger-thiel',
-		'tng'
+		'tng-technology-consulting',
+		'twilio'
 	].includes(key);

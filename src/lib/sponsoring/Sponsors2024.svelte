@@ -2,6 +2,7 @@
 	import alm from './sponsors-2024/alm-logo-2022.svg';
 	import deno from './sponsors-2024/deno-logo.svg';
 	import inovex from './sponsors-2024/inovex-logo.png';
+	import inspiredconsulting from './sponsors-2024/inspired-consulting-logo.svg';
 	import jambit from './sponsors-2024/jambit.svg';
 	import maibornwolff from './sponsors-2024/maibornwolff.svg';
 	import peerigon from './sponsors-2024/peerigon.svg';
@@ -10,6 +11,7 @@
 	import satellytes from './sponsors-2024/satellytes-blue.svg';
 	import tng from './sponsors-2024/tng.png';
 	import tiffingerthiel from './sponsors-2024/tiffinger-thiel.svg';
+	import twilio from './sponsors-2024/twilio.svg';
 	import codecentric from './sponsors-2024/codecentric.png';
 	import hipsquare from './sponsors-2024/hipsquare.svg';
 	import Sponsors from './Sponsors.svelte';
@@ -33,6 +35,12 @@
 			link: 'https://inovex.de',
 			name: 'inovex',
 			sponsoring: 'Lunch'
+		},
+		{
+			image: inspiredconsulting,
+			link: 'https://inspired.consulting',
+			name: 'Inspired Consulting',
+			sponsoring: '200 €'
 		},
 		{
 			image: jambit,
@@ -61,7 +69,7 @@
 		{
 			image: saab,
 			link: 'https://www.saab.com',
-			name: 'Saab AB',
+			name: 'Saab',
 			sponsoring: 'Breakfast'
 		},
 		{
@@ -81,6 +89,12 @@
 			link: 'https://tiffinger-thiel.de/',
 			name: 'Tiffinger & Thiel GmbH',
 			sponsoring: '200 €'
+		},
+		{
+			image: twilio,
+			link: 'https://twilio.com/',
+			name: 'Twilio',
+			sponsoring: '400 €'
 		},
 		{
 			image: codecentric,

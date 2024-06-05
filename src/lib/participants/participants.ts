@@ -12,7 +12,9 @@ export const orgaMembers = [
 	{ givenName: 'Jörn', familyName: 'Bernhardt' },
 	{ givenName: 'Leo', familyName: 'Kettmeir' },
 	{ givenName: 'Philip', familyName: 'Saa' },
+	{ givenName: 'Robert', familyName: 'Hostlowsky' },
 	{ givenName: 'Sina', familyName: 'Aschenbrenner' },
+	{ givenName: 'Stefanie', familyName: 'Hasler' },
 	{ givenName: 'Wolfram', familyName: 'Kriesing' }
 ];
 

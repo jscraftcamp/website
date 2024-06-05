@@ -1,0 +1,40 @@
+// vim: ft=jsonc
+// Please provide your info in your own .json file.
+// See https://jscraftcamp.org/registration for more information
+{
+	// your real name (required by location host)
+	"realName": {
+		"givenName": "Jesús",
+		"familyName": "Real",
+		// if you prefer to have your family name shown first (optional)
+		"placeFamilyNameFirst": false,
+		// if you do not want to show your family name on the participant list (optional)
+		"hideFamilyNameOnWebsite": false
+	},
+	// please put in the account name of the PR creator, if you sign up somebody else
+	"githubAccountName": "jesusreal",
+	// company name (optional)
+	"company": "Satellytes",
+	// either both days or at least one day has to be set to true
+	"when": {
+		// June 7th, 2024
+		"friday": true,
+		// June 8th, 2024
+		"saturday": false
+	},
+	// if you are willing to take session notes and publish them to github (required)
+	"iCanTakeNotesDuringSessions": false,
+  "tShirtSize": "L",
+	// your current interests (JS and in general) (required)
+	"tags": ["JavaScript", "Angular", "Browser Native APIs", "AI", "SSG", "SSR", "Micro Frontends", "Leadership", "Team dynamics", "People Management"],
+	// if you only eat vegan food (optional)
+	"vegan": false,
+	// if you only eat vegan or vegetarian food (optional)
+	"vegetarian": false,
+	// tell us a few words how JavaScript affects you (required)
+	"whatIsMyConnectionToJavascript": "10+ years working as an enterprise developer",
+	// what can you contribute to the bar camp (required)
+	"whatCanIContribute": "I can share my experience in both Software Development and Soft Skills areas",
+	// your LinkedIn profile URL
+	"linkedin": "https://www.linkedin.com/in/jesusrealserrano"
+}

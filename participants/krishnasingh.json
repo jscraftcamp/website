@@ -4,17 +4,17 @@
 {
 	// your real name (required by location host)
 	"realName": {
-		"givenName": "Evgheni",
-		"familyName": "Poleacov",
+		"givenName": "Krishna",
+		"familyName": "Singh",
 		// if you prefer to have your family name shown first (optional)
 		"placeFamilyNameFirst": false,
 		// if you do not want to show your family name on the participant list (optional)
 		"hideFamilyNameOnWebsite": false
 	},
 	// please put in the account name of the PR creator, if you sign up somebody else
-	"githubAccountName": "evghen1",
+	"githubAccountName": "ultimatekrishna",
 	// company name (optional)
-	"company": "web7",
+	"company": "Allianz",
 	// either both days or at least one day has to be set to true
 	"when": {
 		// June 7th, 2024
@@ -25,22 +25,28 @@
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": false,
 	// your current interests (JS and in general) (required)
-	"tags": ["NestJS", "VueJS", "Kubernetes", "Crossplane"],
+	"tags": ["Javascript", "Angular", "React", "Micro-Frontends", "Webpack", "Node"],
 	// if you only eat vegan food (optional)
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
 	"vegetarian": false,
+	// what you cannot eat or drink (optional); If you don't want to put it in here, message the organizers.
+	// IMPORTANT: we cannot guarantee that food for every diet will be available,
+	//            if you have gluten free diet, please make backup plans.
+	"allergies": [],
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "JavaScript is main language in most of our projects",
+	"whatIsMyConnectionToJavascript": "10+ years of love and hate professional relationship as a developer, working on enterprise applications.",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "Share practice of creation Internal Developer Platform using ReactJS/NodeJS and Backstage",
+	"whatCanIContribute": "I can share my experience as a web developer, having worked with large scale enterprise applications with multiple frameworks.",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
-	"tShirtSize": "XL",
+	"tShirtSize": "S",
+	// your Mastodon URL (optional)
+	"mastodon": "",
 	// your LinkedIn profile URL
-	"linkedin": "https://www.linkedin.com/in/evgheni-poleacov-md/",
+	"linkedin": "https://www.linkedin.com/in/ultimatekrishna/",
 	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
-	"X": "EvgheniPoleacov",
+	"X": "",
 	// your website URL or other social media (optional)
-	"website": "https://web7.md"
+	"website": ""
 }

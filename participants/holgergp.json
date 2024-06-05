@@ -1,44 +1,46 @@
-// vim: ft=jsonc
-// Please provide your info in your own .json file.
-// See https://jscraftcamp.org/registration for more information
 {
 	// your real name (required by location host)
 	"realName": {
-		"givenName": "Dan",
-		"familyName": "Dolghi",
+		"givenName": "Holger",
+		"familyName": "Grosse-Plankermann",
 		// if you prefer to have your family name shown first (optional)
 		"placeFamilyNameFirst": false,
 		// if you do not want to show your family name on the participant list (optional)
 		"hideFamilyNameOnWebsite": false
 	},
 	// please put in the account name of the PR creator, if you sign up somebody else
-	"githubAccountName": "fixit2001",
+	"githubAccountName": "holgergp",
 	// company name (optional)
-	"company": "web7",
+	"company": "looking for a new job",
 	// either both days or at least one day has to be set to true
 	"when": {
-		// June 7th, 2024
 		"friday": true,
-		// June 8th, 2024
 		"saturday": true
 	},
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": false,
 	// your current interests (JS and in general) (required)
-	"tags": ["React", "Next.js", "TypeScript", "NestJS", "GraphQL"],
+	"tags": ["ReactJS", "Nextjs", "TypeScript", "Testing", "Youtube", "papperlapapp.dev", "Podcasting", "autoweird.fm"],
 	// if you only eat vegan food (optional)
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
 	"vegetarian": false,
+	// what you cannot eat or drink (optional); If you don't want to put it in here, message the organizers.
+	// IMPORTANT: we cannot guarantee that food for every diet will be available,
+	//            if you have gluten free diet, please make backup plans.
+	"allergies": [],
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "JavaScript is the cornerstone of my work. I use it to build both frontend and backend components, shaping dynamic and interactive web experiences.",
+	"whatIsMyConnectionToJavascript": "For reasons and university: First thing I did was to tinker with the native Mozilla SOAP integration. Stayed nontheless.",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "I can share my experience as JS fullstack developer",
+	"whatCanIContribute": "I can do sth about React Server Components, might do a session on youtubing/podcasting",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
-	"tShirtSize": "XL",
+	"tShirtSize": "M",
+	// your Mastodon URL (optional)
+	"mastodon": "https://chaos.social/@holgergp",
 	// your LinkedIn profile URL
-	"linkedin": "https://www.linkedin.com/in/dan-dolghi/",
+	"linkedin": "https://www.linkedin.com/in/holgergp/",
 	// your website URL or other social media (optional)
-	"website": "https://web7.md"
+	"website": "https://grosse-plankermann.com",
+	"X": "holgergp"
 }
