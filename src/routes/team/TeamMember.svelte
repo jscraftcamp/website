@@ -34,7 +34,7 @@
 			{#if email}
 				<a href='mailto:{email}' title={email}>{email}</a>
 			{:else}
-				<span>&nbsp;</span>
+				<span>-</span>
 			{/if}
 		</div>
 	</div>
