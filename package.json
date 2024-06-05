@@ -6,7 +6,7 @@
 		"node": ">= 18.18.0"
 	},
 	"scripts": {
-		"dev": "vite dev",
+		"dev": "vite dev --host --port=3000",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
