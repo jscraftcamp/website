@@ -25,7 +25,7 @@
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": true,
 	// your current interests (JS and in general) (required)
-	"tags": ["node.js", "GraphQL"],
+	"tags": ["node.js", "playwright", "Typescript", "jest", "Cypress", "nest.js"],
 	// if you only eat vegan food (optional)
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
