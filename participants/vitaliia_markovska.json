@@ -8,11 +8,11 @@
 	"githubAccountName": "Vitalia-Markovska",
 	"company": "",
 	"when": {
-	  "friday": false,
+	  "friday": true,
 	  "saturday": true
 	},
 	"iCanTakeNotesDuringSessions": true,
-	"tags": ["Typescript", "JavaScript"],
+	"tags": ["Typescript", "JavaScript", "React", "NodeJS"],
 	"vegan": false,
 	"vegetarian": false,
 	"allergies": [],
