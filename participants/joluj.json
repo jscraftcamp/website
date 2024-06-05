@@ -43,7 +43,7 @@
 	// your Mastodon URL (optional)
 	// "mastodon": "https://mastodontech.de/@yourhandle",
 	// your LinkedIn profile URL
-	"linkedin": "https://www.linkedin.com/in/johannes-jablonski-517891240/",
+	"linkedin": "https://www.linkedin.com/in/johannes-jablonski-517891240/"
 	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
 	// "X": "yourhandle",
 	// your website URL or other social media (optional)
