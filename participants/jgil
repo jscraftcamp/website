@@ -1,0 +1,29 @@
+{
+  "realName": {
+    "givenName": "Joel",
+    "familyName": "Gil",
+    "placeFamilyNameFirst": false,
+    "hideFamilyNameOnWebsite": false
+  },
+  "githubAccountName": "keponk",
+  "company": "futurice",
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  "iCanTakeNotesDuringSessions": true,
+  "tags": [
+    "Node Runtimes",
+    "Typescript",
+    "Rust",
+    "Functional Programming",
+    "Open Source"
+  ],
+  "vegan": false,
+  "vegetarian": false,
+  "whatIsMyConnectionToJavascript": "Using it as main main development languagen for several years.",
+  "whatCanIContribute": "Background on linux, devops, home servers and automation.",
+  "tShirtSize": "M",
+  "linkedin": "https://www.linkedin.com/in/joelmx/",
+  "mastodon": "https://toot.io/@jgil"
+}
