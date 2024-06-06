@@ -9,7 +9,7 @@
   "company": "onyo",
   "when": {
     "friday": true,
-    "saturday": false
+    "saturday": true
   },
   "iCanTakeNotesDuringSessions": false,
   "tags": [
