@@ -3,7 +3,7 @@
 	"company": "Alm Engineering",
 	"when": {
 		"friday": true,
-		"saturday": true
+		"saturday": false
 	},
 	"iCanTakeNotesDuringSessions": true,
 	"tags": ["Node.js", "TypeScript", "GraphQL", "LLM", "Storybook", "React", "Bundler"],
