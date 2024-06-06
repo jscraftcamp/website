@@ -1,0 +1,26 @@
+{
+  "realName": {
+    "givenName": "Andreas",
+    "familyName": "Scharf",
+    "placeFamilyNameFirst": false,
+    "hideFamilyNameOnWebsite": true
+  },
+  "githubAccountName": "andys8",
+  "company": "vivenu",
+  "when": {
+    "friday": true,
+    "saturday": false
+  },
+  "iCanTakeNotesDuringSessions": false,
+  "tags": ["Node.js", "TypeScript",  "React", "Functional Programming", "Elm", "PureScript", "CI"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": [],
+  "whatIsMyConnectionToJavascript": "Different frameworks, frontend and backend, hobby and day job",
+  "whatCanIContribute": "I can help with Node.js, TypeScript, React, Functional Programming, and Type Systems",
+  "tShirtSize": "S",
+  "mastodon": "",
+  "linkedin": "",
+  "X": "_andys8",
+  "website": "https://andys8.de"
+}
