@@ -1,5 +1,6 @@
 <script>
-	import Sponsors2022 from '../../sponsoring/Sponsors2022.svelte';
+	import InfoBox from '$lib/layout/InfoBox.svelte';
+	import Sponsors2022 from '$lib/sponsoring/Sponsors2022.svelte';
 	import EventLayout from '../EventLayout.svelte';
 </script>
 
@@ -9,12 +10,14 @@
 	where="Codecentric"
 	year="2022"
 >
-	<p>This event was facilitated by Marco Emrich.</p>
-	<p>
-		Check out the session notes at <a
-			href="https://github.com/jscraftcamp/jscc22-sessions"
-			rel="external">https://github.com/jscraftcamp/jscc22-sessions</a
-		>.
-	</p>
+	<InfoBox>
+		<p>This event was facilitated by Marco Emrich.</p>
+		<p>
+			Check out the session notes at <a
+				href="https://github.com/jscraftcamp/jscc22-sessions"
+				rel="external">https://github.com/jscraftcamp/jscc22-sessions</a
+			>.
+		</p>
+	</InfoBox>
 	<Sponsors2022 />
 </EventLayout>

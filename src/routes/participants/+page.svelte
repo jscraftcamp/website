@@ -6,6 +6,7 @@
 	import { base } from '$app/paths';
 	import type { PageData } from './$types';
 	import {
+		getRegistrationState,
 		isRegistrationOpen,
 		registrationOpensAt,
 		timeLeft
@@ -14,7 +15,7 @@
 
 	export let data: PageData;
 
-	const participants: ParticipantT[] = isRegistrationOpen() ? data.participants : [];
+	const participants: ParticipantT[] = data.participants;
 	let activeTag: string | null = null;
 
 	const onSelectTag = (e: CustomEvent<string>) => {
@@ -34,13 +35,13 @@
 		($participantsFilter = $participantsFilter === saturdayFilter ? noFilter : saturdayFilter);
 	let participantsFilter = writable<(p: ParticipantT) => boolean>(noFilter);
 
-	const canRegister = writable<boolean>(isRegistrationOpen());
+	const registrationState = writable<'not-yet' | 'open' | 'closed'>(getRegistrationState());
 	const countdown = writable<string>(isRegistrationOpen() ? 'NOW' : 'soon');
 
 	const updateCountdown = () => {
-		$canRegister = isRegistrationOpen();
+		$registrationState = getRegistrationState();
 
-		if ($canRegister) {
+		if ($registrationState !== 'not-yet') {
 			return;
 		}
 
@@ -57,10 +58,10 @@
 			timeAsStringArray.length > 1
 				? `in ${timeAsStringArray.slice(0, -1).join(', ')} and ${
 						timeAsStringArray[timeAsStringArray.length - 1]
-				  }`
+					}`
 				: timeAsStringArray.length === 1
-				? `in ${timeAsStringArray[0]}`
-				: 'NOW';
+					? `in ${timeAsStringArray[0]}`
+					: 'NOW';
 		setTimeout(updateCountdown, 1000);
 	};
 	updateCountdown();
@@ -69,9 +70,9 @@
 <PageLayout>
 	<h1>Participants</h1>
 	<section>
-		{#if !$canRegister}
+		{#if $registrationState === 'not-yet'}
 			<p>
-				Registration will open on May 1st, 2023. Get your GitHub account ready and check back <strong
+				Registration will open on April 22nd, 2024. Get your GitHub account ready and check back <strong
 					>{$countdown}</strong
 				>!
 			</p>
@@ -90,13 +91,13 @@
 				type="button"
 				on:click={setFridayOrUnset}
 				class:isActive={$participantsFilter === fridayFilter}
-				>Friday ({participants.filter(fridayFilter).length} participants)</button
+				>Friday ({participants.filter(fridayFilter).length} / 100 participants)</button
 			>
 			<button
 				type="button"
 				on:click={setSaturdayOrUnset}
 				class:isActive={$participantsFilter === saturdayFilter}
-				>Saturday ({participants.filter(saturdayFilter).length} participants)</button
+				>Saturday ({participants.filter(saturdayFilter).length} / 100 participants)</button
 			>
 		</div>
 
@@ -125,11 +126,16 @@
 					{/each}
 				</ul>
 			</div>
+			<p>
+				Looking for interesting stats? See <a href="{base}/participants/stats"
+					>/participants/stats</a
+				>
+			</p>
 		{:else}
 			<p>There are no participants registered yet.</p>
 		{/if}
 
-		{#if $canRegister}
+		{#if $registrationState === 'open'}
 			<InfoBox title="Not seeing yourself on the list?">
 				If you can't find yourself on the list of participants, but you want to join, check out our <a
 					href="{base}/registration">how to register</a

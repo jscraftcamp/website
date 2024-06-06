@@ -1,0 +1,27 @@
+{
+	"realName": {
+	  "givenName": "Oleksandr",
+	  "familyName": "Markovskyi",
+	  "placeFamilyNameFirst": false,
+	  "hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "Oleksandr-Markovskyi",
+	"company": "looking for a new job",
+	"when": {
+	  "friday": false,
+	  "saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["Typescript", "React", "NextJS", "VueJS", "Node.js"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "Goal-oriented and innovative professional open to new skills and quick project adaptation.",
+	"whatCanIContribute": "Extensive experience in software engineering and development, willing to share knowledge and contribute to discussions.",
+	"tShirtSize": "XL",
+	"mastodon": "",
+	"linkedin": "https://www.linkedin.com/in/oleksandr-markovskyi/",
+	"X": "",
+	"website": ""
+  }
+  

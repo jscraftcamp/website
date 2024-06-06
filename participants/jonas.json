@@ -1,0 +1,25 @@
+// vim: ft=jsonc
+{
+	"realName": {
+		"givenName": "Jonas",
+		"familyName": "Kaltenbach"
+	},
+	"githubAccountName": "meldron",
+	"company": "inovex",
+	"when": {
+		"friday": false,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": [
+		"Vue",
+		"Vite",
+		"Angular",
+		"Accessibility"
+	],
+	"vegan": false,
+	"vegetarian": false,
+	"whatIsMyConnectionToJavascript": "I am full time web developer, mostly with single page applications",
+	"whatCanIContribute": "Experience with making large products accessible and performance optimization of single page applications",
+	"tShirtSize": "L"
+}

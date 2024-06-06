@@ -1,0 +1,21 @@
+{
+	"realName": {
+		"givenName": "Jan",
+		"familyName": "Schmidle"
+	},
+	"githubAccountName": "bitcloud",
+	"company": "Essentim GmbH",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["NodeJs", "TypeScript", "AWS", "Azure", "Terraform", "OPCUA", "k8s", "security"],
+	"vegan": false,
+	"vegetarian": false,
+	"whatIsMyConnectionToJavascript": "My goto tool to glue things together for years ;-)",
+	"whatCanIContribute": "Probably a talk about security again or automation or architecture or whatever ...",
+	"tShirtSize": "L",
+	"linkedin": "https://www.linkedin.com/in/jschmidle/",
+	"website": "https://www.essentim.com"
+}

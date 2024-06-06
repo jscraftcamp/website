@@ -1,0 +1,20 @@
+// Please provide your info in your own .json file.
+// See https://jscraftcamp.org/registration for more information
+{
+	"realName": { "givenName": "Julian", "familyName": "Beck" },
+	"githubAccountName": "julianfbeck",
+	"company": "inovex",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["TypeScript", "Astro", "Terraform", "Cloud", "Infra"],
+	"vegan": false,
+	"vegetarian": false,
+	"whatIsMyConnectionToJavascript": "Yaml by day, js by night",
+	"whatCanIContribute": "Sharing knowledge about Astro, deploying Web-Frameworks and getting JS to the cloud",
+	"tShirtSize": "L",
+	"linkedin": "https://www.linkedin.com/in/julian-beck/",
+	"website": "https://juli.sh"
+}

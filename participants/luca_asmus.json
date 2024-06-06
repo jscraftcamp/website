@@ -1,0 +1,23 @@
+{
+	"realName": {
+		"givenName": "Luca",
+		"familyName": "Asmus",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "1xcq",
+	"company": "NVISO",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["Typescript", "CSS", "React", "Svelte", "Python", "Security", "Game-Dev"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "Daily work introduced me to JS, the creativity in building webapps made me stay.",
+	"whatCanIContribute": "A fresh mind and openness to learn new tech, experiences around modern React and Styling/UX.",
+	"tShirtSize": "L",
+	"linkedin": "https://de.linkedin.com/in/luca-asmus-37a937208"
+}

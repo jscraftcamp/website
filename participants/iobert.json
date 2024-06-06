@@ -1,0 +1,24 @@
+{
+	"realName": {
+		"givenName": "Marius",
+		"familyName": "Obert",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "iobert",
+	"company": "Twilio",
+	"when": {
+		"friday": true,
+		"saturday": false
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["React", "NextJS", "AI", "Communication APIs"],
+	"vegan": false,
+	"vegetarian": false,
+	"tShirtSize": "L",
+	"whatIsMyConnectionToJavascript": "My JS journey started with my bachelor thesis in 2014 and I've been using it ever since. I'm also a fan of NextJS and communication APIs and I'm curious how human will interact with AI in the future.",
+	"whatCanIContribute": "I'm happy to discuss/talk about about recent NextJS features such as the App Router and Server Actions and their pro and cons",
+	"linkedin": "https://www.linkedin.com/in/mariusobert/",
+	"X": "IObert_",
+	"website": "https://www.iobert.me"
+}

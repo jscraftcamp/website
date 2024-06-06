@@ -1,0 +1,21 @@
+{
+	"realName": {
+		"givenName": "Matthew",
+		"familyName": "O'Donnell"
+	},
+	"githubAccountName": "mjodonnell",
+	"company": "New Coder/Career Changer",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["React", "Pixi.js", "TypeScript", "Vue.js"],
+	"vegan": false,
+	"vegetarian": false,
+	"whatIsMyConnectionToJavascript": "New coder. Want to gain first experience/job using JavaScript",
+	"whatCanIContribute": "Can support organizing team at event. Willing to conduct outreach to potential speakers/participants",
+	"tShirtSize": "XXL",
+	"linkedin": "https://www.linkedin.com/in/mjodonnell/",
+	"X": "mjodonnell"
+}

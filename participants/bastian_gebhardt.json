@@ -1,0 +1,24 @@
+{
+	"realName": {
+		"givenName": "Bastian",
+		"familyName": "Gebhardt",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "BuZZ-T",
+	"company": "jambit GmbH",
+	"when": {
+		"friday": false,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["Angular", "React", "Typescript", "Core Web Vitals"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "daily business (work and private projects)",
+	"whatCanIContribute": "Sharing some knowledge about stuff i've done, dunno what in particular",
+	"tShirtSize": "M",
+	"linkedin": "https://www.linkedin.com/in/bastian-gebhardt-9a9719301/",
+	"X": "BuZZ_Tee"
+}

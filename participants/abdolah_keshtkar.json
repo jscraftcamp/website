@@ -1,0 +1,23 @@
+{
+	"realName": {
+		"givenName": "Abdolah",
+		"familyName": "Keshtkar",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "HamadTheIronside",
+	"company": "Predium",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["TypeScript", "JavaScript", "React"],
+	"vegan": false,
+	"vegetarian": false,
+	"whatIsMyConnectionToJavascript": "I used to hate JavaScript, now I hate it more.",
+	"whatCanIContribute": "I am pretty good at TypeScript and React, I can help with that.",
+	"tShirtSize": "2XL",
+	"linkedin": "https://www.linkedin.com/in/abdollah-keshtkar/",
+	"website": "https://theironside.io/"
+}

@@ -1,22 +1,22 @@
 {
-	"name": "David Grajal",
-	"company": "David Grajal",
+  "realName": {
+    "givenName": "David",
+    "familyName": "Grajal"
+  },
 	"when": {
-		"friday": false,
-    "saturday": true
+		"friday": true,
+    "saturday": false
 	},
 	"iCanTakeNotesDuringSessions": true,
-	"tags": ["Vue", "gRPC", "CSS color functions", "Nvim"],
+	"githubAccountName": "dgrabla",
+	"tags": ["Vue", "Legacy Platforms", "3dPrint"],
 	"vegan": false,
 	"vegetarian": false,
 	"allergies": [],
 	"whatIsMyConnectionToJavascript": "Full time frontend developer since 2010",
-	"whatCanIContribute": "Discussions about FE",
-	"tShirt": {
-		"size": "M",
-		"type": "regular"
-	},
-	"twitter": "dgrabla",
+	"whatCanIContribute": "How to update a legacy application, from java tagligs to vue. It is still building SFC files on the browser.",
+	"tShirtSize": "S",
+	"X": "dgrabla",
 	"mastodon": "https://mastodon.social/@dgrabla",
 	"website": "https://www.davidgrajal.com"
 }

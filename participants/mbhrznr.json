@@ -1,0 +1,22 @@
+{
+	"realName": {
+		"givenName": "Michael",
+		"familyName": "Herzner",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "mbhrznr",
+	"company": "HipSquare GmbH",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["Deno", "Fresh", "JSX", "React", "TypeScript", "Web APIs"],
+	"vegan": false,
+	"vegetarian": false,
+	"whatIsMyConnectionToJavascript": "Working with JavaScript for more than 10 years.",
+	"whatCanIContribute": "Discussions about Deno, JSX and the Web.",
+	"tShirtSize": "L",
+	"linkedin": "https://www.linkedin.com/in/michael-herzner-9ba292134/"
+}

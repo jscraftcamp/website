@@ -1,0 +1,25 @@
+{
+	"realName": {
+		"givenName": "Jonathan",
+		"familyName": "Prince",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "JonathanPrince",
+	"company": "NVISO",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["JS", "Security", "Mainframes", "AS400"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "JavaScript was my first love...",
+	"whatCanIContribute": "Something about security, mainframes, or smart contracts?",
+	"tShirtSize": "L",
+	"linkedin": "https://www.linkedin.com/in/jonathan-m-prince/",
+	"X": "greatsage",
+	"website": "https://edgeofconfusion.com"
+}

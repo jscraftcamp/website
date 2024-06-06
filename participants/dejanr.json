@@ -1,0 +1,29 @@
+{
+  "realName": {
+    "givenName": "Dejan",
+    "familyName": "Ranisavljevic",
+    "placeFamilyNameFirst": false,
+    "hideFamilyNameOnWebsite": false
+  },
+  "githubAccountName": "dejanr",
+  "company": "futurice",
+  "when": {
+    "friday": false,
+    "saturday": true
+  },
+  "iCanTakeNotesDuringSessions": true,
+  "tags": [
+    "Software Architecture",
+    "Software Quality",
+    "Software Craftsmanship",
+    "Functional Programming",
+    "Development Environments"
+  ],
+  "vegan": false,
+  "vegetarian": false,
+  "whatIsMyConnectionToJavascript": "As a full stack developer, i use it on both ends frontend and backend.",
+  "whatCanIContribute": "Experienced in utilizing Pulumi for IaC, generative AI, LLMs, and RAG applications.",
+  "tShirtSize": "2XL",
+  "linkedin": "https://www.linkedin.com/in/dejanr/",
+  "X": "dejanr"
+}

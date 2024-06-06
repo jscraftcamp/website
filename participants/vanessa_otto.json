@@ -1,21 +1,26 @@
 {
-	"name": "Vanessa Otto",
-	"company": "Zavvy GmbH",
+	"realName": {
+		"givenName": "Vanessa",
+		"familyName": "Otto",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "Vannsl",
+	"company": "GitLab",
 	"when": {
 		"friday": true,
-		"saturday": false
+		"saturday": true
 	},
 	"iCanTakeNotesDuringSessions": true,
-	"tags": ["Vue", "Qwik", "CSS", "AI"],
+	"tags": ["Vue", "Tiptap"],
 	"vegan": false,
 	"vegetarian": false,
-	"whatIsMyConnectionToJavascript": "Working as Webdev since 2015. I love to learn new things and I am always curious about new technologies, and also old ones ;)",
-	"whatCanIContribute": "I can help you with Vue and AI, but also happy to join any other topic.",
-	"tShirt": {
-		"size": "M",
-		"type": "fitted"
-	},
-	"twitter": "vannsl",
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "Frontend engineering since 9 years! I've been Head of Frontend, and moving on as Senior FE working for GitLab. I'm an expert in Vue.js, have experiences with Rich text editors and AI.",
+	"whatCanIContribute": "something about Vue 3, Pinia, Vue+TS, Tiptap",
+	"tShirtSize": "S",
 	"mastodon": "https://hachyderm.io/@vanessa_otto",
+	"linkedin": "https://www.linkedin.com/in/vannsl/",
+	"X": "vannsl",
 	"website": "https://www.vannsl.io"
 }

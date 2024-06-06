@@ -1,38 +1,22 @@
-// Please provide your info in your own .json file.
-// See https://jscraftcamp.org/registration for more information
 {
-	// your name / nickname (required)
-	"name": "Simon Kindlein",
-	// optional company name (required)
-	"company": "Collaboration Factory",
-	// either both days or at least one day has to be set to true
+	"realName": {
+		"givenName": "Simon",
+		"familyName": "Kindlein",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "simonerus",
+	"company": "Cplace",
 	"when": {
-		// 2023-06-30
 		"friday": true,
-		// 2023-07-01
-		"saturday": true
+		"saturday": false
 	},
-	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": true,
-	// your current interests (JS and in general) (required)
-	"tags": ["Angular", "Cypress", "TypeScript", "Accessibility", "Empiric Agile"],
-	// if you only eat vegan food (optional)
+	"tags": ["Typescript", "Angular", "Storybook", "Module Federation", "Empiric Agile"],
 	"vegan": false,
-	// if you only eat vegan or vegetarian food (optional)
 	"vegetarian": false,
-	// what you cannot eat or drink (optional)
-	"allergies": [],
-	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "For several years now I'm doing it for a living.",
-	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "Taking notes, maybe sharing some experience using MF in angular... We'll see",
-	// if you want a T-Shirt we need your size and variant preference (optional)
-	"tShirt": {
-		// S | M | L | XL | XXL
-		"size": "L",
-		// fitted (also known as waist cut or women variant) or regular
-		"type": "regular"
-	},
-	// your Twitter handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
-	"twitter": "ThePsystor"
+	"whatIsMyConnectionToJavascript": "I've been working mainly with javascript for the last nine years.",
+	"whatCanIContribute": "A lot of curiosity for current trends and developments. I can also share some annecdotes and experiences.",
+	"tShirtSize": "L",
+	"linkedin": "https://www.linkedin.com/in/simon-kindlein-58b526128/"
 }

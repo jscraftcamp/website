@@ -1,0 +1,79 @@
+{
+	"$ref": "#/definitions/participantSchema",
+	"definitions": {
+		"participantSchema": {
+			"type": "object",
+			"properties": {
+				"realName": {
+					"type": "object",
+					"properties": {
+						"givenName": { "type": "string", "minLength": 2, "maxLength": 100 },
+						"familyName": { "type": "string", "minLength": 2, "maxLength": 100 },
+						"placeFamilyNameFirst": { "type": ["boolean", "null"] },
+						"hideFamilyNameOnWebsite": { "type": ["boolean", "null"] }
+					},
+					"required": ["givenName", "familyName"],
+					"additionalProperties": false
+				},
+				"githubAccountName": {
+					"type": "string",
+					"pattern": "^(?!-)(?!.*--)[A-Za-z0-9-]{1,39}(?<!-)$"
+				},
+				"company": {
+					"anyOf": [{ "type": "string", "minLength": 2, "maxLength": 200 }, { "type": "null" }]
+				},
+				"when": {
+					"type": "object",
+					"properties": { "friday": { "type": "boolean" }, "saturday": { "type": "boolean" } },
+					"required": ["friday", "saturday"],
+					"additionalProperties": false
+				},
+				"iCanTakeNotesDuringSessions": { "type": "boolean" },
+				"tags": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+				"vegan": { "type": ["boolean", "null"] },
+				"vegetarian": { "type": ["boolean", "null"] },
+				"allergies": {
+					"anyOf": [
+						{ "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
+						{ "type": "null" }
+					]
+				},
+				"whatIsMyConnectionToJavascript": { "type": "string", "minLength": 3, "maxLength": 200 },
+				"whatCanIContribute": { "type": "string", "minLength": 3, "maxLength": 200 },
+				"tShirtSize": {
+					"anyOf": [
+						{ "type": "string", "enum": ["S", "M", "L", "XL", "2XL", "3XL"] },
+						{ "type": "null" }
+					]
+				},
+				"X": {
+					"anyOf": [
+						{ "type": "string", "pattern": "^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$" },
+						{ "type": "null" }
+					]
+				},
+				"mastodon": {
+					"anyOf": [{ "type": "string", "format": "uri", "minLength": 1 }, { "type": "null" }]
+				},
+				"linkedin": {
+					"anyOf": [{ "type": "string", "format": "uri", "minLength": 1 }, { "type": "null" }]
+				},
+				"website": {
+					"anyOf": [{ "type": "string", "format": "uri", "minLength": 1 }, { "type": "null" }]
+				}
+			},
+			"required": [
+				"realName",
+				"githubAccountName",
+				"when",
+				"iCanTakeNotesDuringSessions",
+				"tags",
+				"whatIsMyConnectionToJavascript",
+				"whatCanIContribute",
+				"tShirtSize"
+			],
+			"additionalProperties": false
+		}
+	},
+	"$schema": "http://json-schema.org/draft-07/schema#"
+}

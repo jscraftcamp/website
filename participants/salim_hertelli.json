@@ -1,0 +1,41 @@
+// vim: ft=jsonc
+// Please provide your info in your own .json file.
+// See https://jscraftcamp.org/registration for more information
+{
+	// your real name (required by location host)
+	"realName": {
+		"givenName": "Salim",
+		"familyName": "Hertelli",
+		// if you prefer to have your family name shown first (optional)
+		"placeFamilyNameFirst": true,
+		// if you do not want to show your family name on the participant list (optional)
+		"hideFamilyNameOnWebsite": false
+	},
+	// please put in the account name of the PR creator, if you sign up somebody else
+	"githubAccountName": "salim-hertelli",
+	"company": "PREDIUM",
+	// either both days or at least one day has to be set to true
+	"when": {
+		// June 7th, 2024
+		"friday": true,
+		// June 8th, 2024
+		"saturday": true
+	},
+	// if you are willing to take session notes and publish them to github (required)
+	"iCanTakeNotesDuringSessions": false,
+	// your current interests (JS and in general) (required)
+	"tags": ["React", "Competitive Programming", "Database systems", "video games", "generative ai"],
+	// if you only eat vegan food (optional)
+	"vegan": false,
+	// if you only eat vegan or vegetarian food (optional)
+	"vegetarian": false,
+	// tell us a few words how JavaScript affects you (required)
+	"whatIsMyConnectionToJavascript": "I use it everyday!",
+	// what can you contribute to the bar camp (required)
+	"whatCanIContribute": "Good vibes",
+	// if you want a T-Shirt we need your size and variant preference (optional)
+	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
+	"tShirtSize": "XL",
+	// your LinkedIn profile URL
+	"linkedin": "https://www.linkedin.com/in/salim-hertelli/"
+}

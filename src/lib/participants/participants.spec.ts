@@ -1,9 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { readdir } from 'node:fs/promises';
-import {
-	_loadParticipantJsonFilePaths,
-	_parseParticipantJson
-} from '../../routes/participants/+page.server';
+import { loadParticipantJsonFilePaths, parseParticipantJson } from './participants';
 import { PARTICIPANTS_DIRECTORY } from './participant-schema';
 
 describe('Participants', async () => {
@@ -30,18 +27,18 @@ describe('Participants', async () => {
 				return dirent.name;
 			});
 
-			expect(underscoreFiles).toContain('_template.json');
+			expect(underscoreFiles).toEqual(['_template.json']);
 		});
 	});
 
-	const participantJsonPaths = await _loadParticipantJsonFilePaths(PARTICIPANTS_DIRECTORY);
+	const participantJsonPaths = await loadParticipantJsonFilePaths(PARTICIPANTS_DIRECTORY);
 
 	for (const participantFile of participantJsonPaths) {
 		describe('parseParticipants', async () => {
 			it(`should parse '${participantFile}' without validation error`, async () => {
 				let error: string | null = null;
 				try {
-					await _parseParticipantJson(participantFile);
+					await parseParticipantJson(participantFile);
 				} catch (err) {
 					error = (err as Error).message;
 					console.error(error);

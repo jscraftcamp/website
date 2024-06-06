@@ -1,32 +1,26 @@
+// vim: ft=jsonc
 {
-    // required
-    "name": "Clemens",
-    // optional
-    "company": "inovex GmbH",
-    // required
-    "when": {
-        "friday": true,
-        "saturday": true
-    },
-    // required
-    "iCanTakeNotesDuringSessions": true,
-    // required - at least one
-    "tags": ["Security", "WebAuthn", "Passkeys"],
-    // optional
-    "vegan": false,
-    // optional
-    "vegetarian": true,
-    // required
-    "whatIsMyConnectionToJavascript": "Trying to make JS development secure",
-    // required
-    "whatCanIContribute": "Sessions about Secure Webapps or Multifactor Authentication",
-    // optional
-    "tShirt": {
-        "size": "L",
-        "type": "fitted"
-    },
-    // optional
-    "twitter": "ClemensHuebner",
-    // optional
-    "mastodon": "https://infosec.exchange/@clemens"
+	"realName": {
+		"givenName": "Clemens",
+		"familyName": "Hübner"
+	},
+	"githubAccountName": "meldron",
+	"company": "inovex",
+	"when": {
+		"friday": false,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": [
+		"Security",
+		"Passkeys"
+	],
+	"vegan": false,
+	"vegetarian": true,
+	"whatIsMyConnectionToJavascript": "Passkeys are my passion",
+	"whatCanIContribute": "Sessions about Passkeys, Web Security and more",
+	"tShirtSize": "M",
+	"X": "ClemensHuebner",
+	"mastodon": "https://infosec.exchange/@clemens",
+	"linkedin": "https://www.linkedin.com/in/clemens-huebner/"
 }

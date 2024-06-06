@@ -1,0 +1,44 @@
+// vim: ft=jsonc
+// Please provide your info in your own .json file.
+// See https://jscraftcamp.org/registration for more information
+{
+	// your real name (required by location host)
+	"realName": {
+		"givenName": "Maksym",
+		"familyName": "Hopei",
+		// if you prefer to have your family name shown first (optional)
+		"placeFamilyNameFirst": false,
+		// if you do not want to show your family name on the participant list (optional)
+		"hideFamilyNameOnWebsite": false
+	},
+	// please put in the account name of the PR creator, if you sign up somebody else
+	"githubAccountName": "Radio",
+	// company name (optional)
+	"company": "Celonis",
+	// either both days or at least one day has to be set to true
+	"when": {
+		// June 7th, 2024
+		"friday": false,
+		// June 8th, 2024
+		"saturday": true
+	},
+	// if you are willing to take session notes and publish them to github (required)
+	"iCanTakeNotesDuringSessions": false,
+	// your current interests (JS and in general) (required)
+	"tags": ["React.js", "Nest.js", "micro-services", "micro-frontends", "web-components"],
+	// if you only eat vegan food (optional)
+	"vegan": false,
+	// if you only eat vegan or vegetarian food (optional)
+	"vegetarian": false,
+	// what you cannot eat or drink (optional); If you don't want to put it in here, message the organizers.
+	// IMPORTANT: we cannot guarantee that food for every diet will be available,
+	//            if you have gluten free diet, please make backup plans.
+	"allergies": [],
+	// tell us a few words how JavaScript affects you (required)
+	"whatIsMyConnectionToJavascript": "JavaScript is my primary work programming language",
+	// what can you contribute to the bar camp (required)
+	"whatCanIContribute": "Microservices, micro-frontends, web components",
+	// your LinkedIn profile URL
+	"linkedin": "https://www.linkedin.com/in/maksymhopei/",
+	"tShirtSize": "S"
+}

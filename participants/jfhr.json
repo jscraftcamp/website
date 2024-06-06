@@ -1,19 +1,23 @@
 {
-	"name": "Jakob Fahr",
+	"realName": {
+		"givenName": "Jakob",
+		"familyName": "Fahr",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "jfhr",
 	"company": "InsiderPie",
 	"when": {
-		"friday": true,
+		"friday": false,
 		"saturday": true
 	},
-	"iCanTakeNotesDuringSessions": false,
-	"tags": ["TypeScript", "JavaScript", "Node.JS", "Web", "Scraping", "Svelte"],
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["node.js", "Scraping", "Security", "PostgreSQL"],
 	"vegan": true,
 	"vegetarian": true,
-	"whatIsMyConnectionToJavascript": "I've been using JavaScript and TypeScript for a few years, and also started a software company that uses 97% JavaScript. The best thing about JS for me is: it lets me do what I want relatively easily, it's easy to read, and I can use the same language throughout the stack.",
-	"whatCanIContribute": "I can share my experience gathering data from APIs, websites, RSS feeds, PDF files, E-Mails, and other sources across the web.",
-	"tShirt": {
-		"size": "S",
-		"type": "regular"
-	},
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "5 years of developing with JavaScript, including about 2 years at my own company.",
+	"whatCanIContribute": "I can share my experience writing full-stack web apps and scraping tools.",
+	"tShirtSize": "S",
 	"website": "https://jfhr.de"
 }

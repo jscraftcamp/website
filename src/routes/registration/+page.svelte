@@ -2,147 +2,79 @@
 	import { base } from '$app/paths';
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
+	import RegistrationTemplate from '../../../participants/_template.json?raw';
 </script>
 
 <PageLayout>
 	<h1>Registration</h1>
-	<h2>Registration will open on May 1st, 2023.</h2>
 	<section>
 		<InfoBox title="Registration process">
 			<p>
-				To register for JSCraftCamp you have to add a json file with your name and some other
-				information to our <a href="https://github.com/jscraftcamp/website">GitHub Repository</a>
-				via a Pull Request. Registration is free of charge. Your json file should follow the naming scheme
+				To register for the JSCraftCamp you have to add a JSONC file<sup>1</sup> with your name and
+				some other information to our
+				<a href="https://github.com/jscraftcamp/website">github repository</a>
+				via a pull request<sup>2</sup>. Registration is free of charge. Your json file should follow
+				the naming scheme
 				<code>$name_or_nickname.json</code> and must be placed in the folder
 				<code>participants</code>. The structure of the file is described below. We are using JSONC
 				to parse the files, so it's okay to keep the comments from the
 				<code>_template.json</code>.
 			</p>
-
 			<p>
 				Out of these JSON files, the <a href="{base}/participants/">/participants</a> page will be generated.
 			</p>
+
+			<p>
+				<sup>1</sup>
+				<a href="https://www.npmjs.com/package/jsonc-parser"
+					>JSONC is JSON with JavaScript style comments</a
+				>.
+				<br />
+				<sup>2</sup> Click
+				<a href="https://github.com/jscraftcamp/website/new/main/participants"
+					>this link to start the process on the github page</a
+				>
+				to create the JSONC file in the repo. Make sure you are logged in to github.
+			</p>
 		</InfoBox>
 
-		<InfoBox title="Personal Data">
-			If you don't feel comfortable entering personal information publicly, please direct message
-			one of the organizers on <a href="https://discord.gg/3mHhaXVEjP" title="JSCC Discord"
-				>Discord</a
-			>
-			or reach out to <a href="mailto:team@jscraftcamp.org">team@jscraftcamp.org</a> and we will record
-			information such as allergies or the like privately.
+		<InfoBox title="The important stuff">
+			<ul>
+				<li>
+					Please put in your <strong>real name</strong>; Location host will check it at the entrance
+				</li>
+				<li>
+					If you don't want to put in allergies or anything else, drop us a message at <a
+						href="https://discord.gg/3mHhaXVEjP"
+						rel="external">Discord</a
+					>
+					or <a href="mailto:team@jscraftcamp.org">team@jscraftcamp.org</a>.
+				</li>
+				<li>
+					We will try our best to fulfil your dietary requirements, but we cannot guarantee
+					anything. We will post the ordered food in the issues, so you can check if you need to
+					bring something for yourself.
+				</li>
+				<li>
+					If you need help <a href="https://discord.gg/3mHhaXVEjP" rel="external">reach out</a>! You
+					will learn some git for free.
+				</li>
+				<li>
+					Please read the JSON comments, they should explain every field, and if you have questions <a
+						href="mailto:team@jscraftcamp.org">reach out</a
+					>.
+				</li>
+				<li>
+					If you have any improvement suggestions, please <a href="mailto:team@jscraftcamp.org"
+						>let us know</a
+					>.
+				</li>
+			</ul>
 		</InfoBox>
 
 		<InfoBox title="The JSON format">
 			<p>Your registration as JSON file should be in the following format to pass the tests:</p>
-			<pre>{`{
-    // required
-    "name": "your name",
-    // optional
-    "company": "your company name",
-    // required
-    "when": {
-        "friday": true/false,
-        "saturday": true/false
-    },
-    // required
-    "iCanTakeNotesDuringSessions": true/false,
-    // required - at least one
-    "tags": ["ReScript", "Svelte", "Zustand", "GraphQL"],
-    // optional
-    "vegan": true/false,
-    // optional
-    "vegetarian": true/false,
-    // optional
-    "allergies": ["Gluten", "Peanuts"],
-    // required
-    "whatIsMyConnectionToJavascript": "...",
-    // required
-    "whatCanIContribute": "???",
-    // optional
-    "tShirt": {
-        "size": "S/M/L/XL/2XL/3XL",
-        "type": "fitted/regular"
-    },
-    // optional
-    "twitter": "yourhandle",
-    // optional
-    "mastodon": "your Mastodon URL",
-    // optional
-    "website": "your website URL"
-}`}</pre>
-
-			<h3>Fields in the registration JSON</h3>
-			<dl>
-				<dt class="mandatory">name</dt>
-				<dd>First name and last name or a nick name.</dd>
-
-				<dt class="optional">company</dt>
-				<dd>A company name, if you work for one or want to mention yours.</dd>
-
-				<dt class="mandatory">when.friday</dt>
-				<dd>If you are attending on Friday (Boolean value)</dd>
-				<dt class="mandatory">when.saturday</dt>
-				<dd>If you are attending on Saturday (Boolean value)</dd>
-
-				<dt class="mandatory">iCanTakeNotesDuringSessions</dt>
-				<dd>
-					Let us know whether you're okay with taking notes during sessions. Check out past events
-					for session notes, for example <a
-						href="https://github.com/jscraftcamp/jscc22-sessions"
-						rel="external">notes for 2022</a
-					>. (Boolean value)
-				</dd>
-				<dt class="mandatory">tags</dt>
-				<dd>Share what you think is important, use at least one tag. (Array of strings)</dd>
-
-				<dt class="mandatory">vegan</dt>
-				<dd>Just for planning: Let us know if you are a vegan (Boolean value)<sup>2</sup></dd>
-				<dt class="mandatory">vegetarian</dt>
-				<dd>
-					Just for planning: Let us know if you are a vegetarian (Boolean value)<sup>2</sup>
-				</dd>
-				<dt class="optional">allergies</dt>
-				<dd>Tell us if you have any special dietary requirements<sup>2</sup></dd>
-
-				<dt class="mandatory">whatIsMyConnectionToJavascript</dt>
-				<dd>2-5 sentences about your experience with JavaScript or related technologies.</dd>
-				<dt class="optional">whatCanIContribute</dt>
-				<dd>1-3 sentences about what you would like to contribute to the BarCamp.</dd>
-
-				<dt class="optional note3">tShirt</dt>
-				<dd>
-					If you want a t-shirt, please fill out the <code>size</code> and <code>type</code> values.
-					<code>tShirt.size</code>
-					can be one of <code>"S"</code>, <code>"M"</code>, <code>"L"</code>, <code>"XL"</code>,
-					<code>"2XL"</code>
-					or
-					<code>"3XL"</code>. <code>tShirt.type</code> can be <code>"fitted"</code> for a waist cut
-					(also known as women variant) or <code>"regular"</code>.
-				</dd>
-
-				<dt class="optional">twitter</dt>
-				<dd>Your Twitter handle without the leading @.</dd>
-
-				<dt class="optional">mastodon</dt>
-				<dd>Your Mastodon URL.</dd>
-
-				<dt class="optional">website</dt>
-				<dd>Your personal website or anything else you like to share with people.</dd>
-			</dl>
-			<h3>Notes</h3>
-			<ol>
-				<li>Mandatory field</li>
-				<li>
-					This is a free and completely sponsored event. Even though we want to try, we can not
-					guarantee to be able to respect every dietary requirement
-				</li>
-				<li>
-					We may have a limited number of t-shirts with the event and sponsor logos. If your
-					registration is shortly before the event there might be no time to have a t-shirt produced
-					for you, please be aware.
-				</li>
-			</ol>
+			<pre>{RegistrationTemplate}</pre>
 		</InfoBox>
 
 		<InfoBox title="Validation for your JSON file">
@@ -178,31 +110,8 @@
 		max-width: 100%;
 		overflow: auto;
 	}
-	h3,
-	dl,
-	ol {
-		font-size: 1em;
-		margin: 0;
-	}
-	h3 {
-		margin-top: 2em;
-	}
 
-	dt {
-		font-weight: 700;
-		opacity: 0.5;
-	}
-	dt.mandatory {
-		opacity: 1;
-	}
-	dt.mandatory::after {
-		content: '1';
-		vertical-align: super;
-		font-size: smaller;
-	}
-	dt.note3::after {
-		content: '3';
-		vertical-align: super;
-		font-size: smaller;
+	sup {
+		line-height: 0; /* Remove the change in line height for lines with <sup> in them, makes these lines with <sup>s be higher, which renders ugly. */
 	}
 </style>

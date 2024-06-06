@@ -1,16 +1,20 @@
 <script lang="ts">
 	import Box from '$lib/layout/Box.svelte';
-	import twitterLogo from './twitter.svg';
+	import githubLogo from './github.svg';
+	import linkedinLogo from './linkedin.svg';
 	import mastodonLogo from './mastodon.svg';
 	import websiteLogo from './website.svg';
+	import xLogo from './x.svg';
 	import type { Participant } from '$lib/participants/participant-schema';
+	import { displayName } from '$lib/participants/display-name';
 	import { createEventDispatcher } from 'svelte';
 
 	export let participant: Participant;
 	export let isActive: boolean = false;
 
 	let isShowingDetails = false;
-	const hasSocialLink = participant.twitter || participant.mastodon || participant.website;
+	const hasSocialLink =
+		participant.X || participant.mastodon || participant.website || participant.linkedin;
 
 	const dispatch = createEventDispatcher<{ selectedTag: string }>();
 </script>
@@ -29,20 +33,23 @@
 		</div>
 		<h3>
 			<button type="button" on:click={() => (isShowingDetails = !isShowingDetails)}
-				>{participant.name}</button
+				>{displayName(participant)}</button
 			>
 		</h3>
 		{#if participant.company}<h4>{participant.company}</h4>{/if}
 		{#if hasSocialLink}
 			<div class="socials">
-				{#if participant.twitter}
-					<a href="https://twitter.com/{participant.twitter}" rel="external"
-						><img
-							src={twitterLogo}
-							height="32"
-							width="32"
-							alt="Link to @{participant.twitter} on Twitter"
-						/></a
+				<a href="https://github.com/{participant.githubAccountName}" rel="external"
+					><img
+						src={githubLogo}
+						height="32"
+						width="32"
+						alt="Link to {participant.githubAccountName} on GitHub"
+					/></a
+				>
+				{#if participant.X}
+					<a href="https://x.com/{participant.X}" rel="external"
+						><img src={xLogo} height="32" width="32" alt="Link to @{participant.X} on X" /></a
 					>
 				{/if}
 				{#if participant.mastodon}
@@ -51,7 +58,17 @@
 							src={mastodonLogo}
 							height="32"
 							width="32"
-							alt="Link to {participant.name} on Mastodon"
+							alt="Link to {displayName(participant)} on Mastodon"
+						/></a
+					>
+				{/if}
+				{#if participant.linkedin}
+					<a href={participant.linkedin} rel="external"
+						><img
+							src={linkedinLogo}
+							height="32"
+							width="32"
+							alt="Link to {displayName(participant)} on LinkedIn"
 						/></a
 					>
 				{/if}
@@ -62,7 +79,7 @@
 							src={websiteLogo}
 							height="32"
 							width="32"
-							alt="Link to website of {participant.name}"
+							alt="Link to website of {displayName(participant)}"
 						/></a
 					>
 				{/if}
@@ -135,9 +152,9 @@
 	}
 	.details {
 		flex: 1;
-        word-wrap: break-word;
-        white-space: pre-wrap;
-        word-break: break-word;
+		word-wrap: break-word;
+		white-space: pre-wrap;
+		word-break: break-word;
 	}
 	.details h4 {
 		margin-top: 1em;
@@ -148,6 +165,7 @@
 	.socials {
 		align-items: center;
 		display: flex;
+		flex-wrap: wrap;
 		margin: 0 -0.5em -0.5em;
 	}
 	.socials img {

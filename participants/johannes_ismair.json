@@ -1,0 +1,23 @@
+{
+	"realName": {
+		"givenName": "Johannes",
+		"familyName": "Ismair",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "osterbaer",
+	"company": "MaibornWolff GmbH",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["TypeScript", "Next", "SolidJS", "Astro", "Accessibility", "UX", "Meta frameworks"],
+	"vegan": true,
+	"vegetarian": false,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "Daily work",
+	"whatCanIContribute": "Session about Accessibility",
+	"tShirtSize": "L",
+	"linkedin": "https://www.linkedin.com/in/joismair/"
+}

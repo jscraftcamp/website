@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { base } from '$app/paths';
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 
@@ -21,14 +20,16 @@
 	<InfoBox title="Impressions of JSCraftCamp {year}">
 		<div class="images">
 			{#each photos as photo, index}
-				<div class="image" class:active={activePhoto === photo}>
+				<button
+					class="image"
+					class:active={activePhoto === photo}
+					on:click={() => setOrUnsetPhoto(photo)}
+				>
 					<img
 						src={photo}
 						alt="Impression {index + 1} of {photos.length} from JSCraftCamp {year}"
-						on:click={() => setOrUnsetPhoto(photo)}
-						on:keypress={() => setOrUnsetPhoto(photo)}
 					/>
-				</div>
+				</button>
 			{/each}
 		</div>
 	</InfoBox>
@@ -47,6 +48,12 @@
 		max-height: 10em;
 		max-width: 10em;
 		width: auto;
+	}
+	button {
+		appearance: none;
+		border: 0;
+		background: none;
+		cursor: pointer;
 	}
 	img {
 		display: block;

@@ -1,0 +1,23 @@
+{
+	"realName": {
+		"givenName": "Reed",
+		"familyName": "von Redwitz",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "deer",
+	"company": "Workday",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["Deno", "Fresh", "Typescript"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": ["Gluten"],
+	"whatIsMyConnectionToJavascript": "Looking to branch out from java into web development and open source.",
+	"whatCanIContribute": "How to get started in open source by documenting, testing, and refreshing old PRs.",
+	"tShirtSize": "L",
+	"linkedin": "https://www.linkedin.com/in/reed-vonredwitz/"
+}
