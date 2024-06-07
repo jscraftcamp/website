@@ -1,0 +1,22 @@
+{
+	"realName": {
+		"givenName": "Eric",
+		"familyName": "Stocklassa",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": true
+	},
+	"githubAccountName": "stocklassa",
+	"company": "Mayflower GmbH",
+	"when": {
+		"friday": false,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["Just visiting"],
+	"vegan": true,
+	"vegetarian": false,
+	"whatIsMyConnectionToJavascript": "My wife. Though technically I am a developer who has worked with Javascript before.",
+	"whatCanIContribute": "I supervise our kid while she facilitates.",
+	"tShirtSize": "L",
+	"linkedin": ""
+}
