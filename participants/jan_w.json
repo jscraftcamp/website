@@ -5,7 +5,7 @@
 	// your real name (required by location host)
 	"realName": {
 		"givenName": "Jan",
-		"familyName": "W",
+		"familyName": "Wa",
 		// if you prefer to have your family name shown first (optional)
 		"placeFamilyNameFirst": false,
 		// if you do not want to show your family name on the participant list (optional)
