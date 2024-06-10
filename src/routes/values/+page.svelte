@@ -86,9 +86,3 @@
 		</ul>
 	</InfoBox>
 </PageLayout>
-
-<style>
-	h2 {
-		margin: 2em 0 0 0;
-	}
-</style>
