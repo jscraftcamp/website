@@ -1,0 +1,15 @@
+{
+  "name": "Brigitte Jellinek",
+  "company": "Salzburg University of Applied Sciences",
+  "when": {
+     "friday": true,
+     "saturday": true
+  },
+  "tags": ["Web", "Backend", "Education"],
+  "vegan": false,
+  "vegetarian": false,
+  "what_is_my_connection_to_javascript": "When I used JavaScript for the first time in a commercial project in around '96 it was a total desaster. We've come a long way since then!  Today I'm glad to teach JavaScript to my students.",
+  "what_can_i_contribute": "avid listener, participant in discussions, might bring a card game or two, help out where I can, ...",
+  "tshirt": "W-XL",
+  "twitter": "bjelline"
+}
