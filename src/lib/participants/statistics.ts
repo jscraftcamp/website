@@ -2,7 +2,7 @@ import { isSponsor } from '$lib/sponsoring/is-sponsor';
 import type { Participant, TShirtSize } from './participant-schema';
 
 type Allergies = { [k: string]: number };
-type Company = { name: string; amount: number; isSponsor: boolean };
+export type Company = { name: string; amount: number; isSponsor: boolean };
 type Companies = { [k: string]: Company };
 type Shirts = {
 	count: number;
@@ -65,7 +65,8 @@ export const createStatsFromParticipants = (
 				.toLocaleLowerCase()
 				.replace(/\s+(?:ag|gbr|gmbh|gmdbh)/, '')
 				.replace(/[^a-z]/g, '-')
-				.replace(/-+/g, '-');
+				.replace(/-+/g, '-')
+				.replace(/^alm-engineering$/g, 'alm');
 			companies[companyAsKey] = companies[companyAsKey] ?? {
 				name,
 				amount: 0,

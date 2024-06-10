@@ -2,6 +2,7 @@
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 	import type { TShirtSize } from '$lib/participants/participant-schema';
+	import type { Company } from '$lib/participants/statistics';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -16,6 +17,20 @@
 		participantsShirts
 	} = data;
 	const shirtKinds: TShirtSize[] = ['S', 'M', 'L', 'XL', '2XL', '3XL'];
+	const byName = (a: Company, b: Company) =>
+		a.name.toLocaleLowerCase() < b.name.toLocaleLowerCase()
+			? -1
+			: a.name.toLocaleLowerCase() === b.name.toLocaleLowerCase()
+				? 0
+				: 1;
+	const byAmount = (a: Company, b: Company) => a.amount - b.amount;
+	let sorter: (a: Company, b: Company) => number = byName;
+	function invert(sortFn: (a: Company, b: Company) => number): (a: Company, b: Company) => number {
+		return (a, b) => sortFn(a, b) * -1;
+	}
+	function setSort(sortFn: (a: Company, b: Company) => number) {
+		sorter = sorter !== sortFn ? sortFn : invert(sortFn);
+	}
 </script>
 
 <PageLayout>
@@ -139,12 +154,12 @@
 				<table>
 					<thead>
 						<tr>
-							<th>Company</th>
-							<th>Participants</th>
+							<th on:click={() => setSort(byName)}>Company</th>
+							<th on:click={() => setSort(byAmount)}>Participants</th>
 						</tr>
 					</thead>
 					<tbody>
-						{#each companies as { name, amount, isSponsor }}
+						{#each companies.toSorted(sorter) as { name, amount, isSponsor }}
 							<tr class:isSponsor>
 								<td>{name}</td>
 								<td>{amount}</td>

@@ -22,7 +22,7 @@
 		{
 			image: abs,
 			link: 'https://www.absturzsicherung.de/',
-			name: 'ABS SAFETY GMBH',
+			name: 'ABS Safety GmbH',
 			sponsoring: 'Money'
 		},
 		{
