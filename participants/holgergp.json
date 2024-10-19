@@ -30,7 +30,7 @@
 	//            if you have gluten free diet, please make backup plans.
 	"allergies": [],
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "For reasons and university: First thing I did was to tinker with the native Mozilla SOAP integration. Stayed nontheless.",
+	"whatIsMyConnectionToJavascript": "For reasons and university: First thing I did was to tinker with the native Mozilla SOAP integration. Stayed nonetheless.",
 	// what can you contribute to the bar camp (required)
 	"whatCanIContribute": "I can do sth about React Server Components, might do a session on youtubing/podcasting",
 	// if you want a T-Shirt we need your size and variant preference (optional)
