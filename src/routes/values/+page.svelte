@@ -57,7 +57,7 @@
 			lead to consequences.
 		</p>
 		<ul>
-			<li>Harrass, intimidate or threaten anyone.</li>
+			<li>Harass, intimidate or threaten anyone.</li>
 			<li>Use sexualized language and content.</li>
 			<li>Make unwanted sexual advances. Assume it&#39;s unwanted as a default.</li>
 			<li>Insult or put down other participants.</li>

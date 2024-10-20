@@ -116,7 +116,7 @@
 				about what items are still open and how your company can benefit from sponsoring. Or go
 				directly to
 				<a href="https://github.com/orgs/jscraftcamp/projects/7" rel="external"
-					><strong>our Github Sponsorship Board</strong></a
+					><strong>our GitHub Sponsorship Board</strong></a
 				> and pick something.
 			</p>
 		</InfoBox>
