@@ -1,46 +1,52 @@
+// vim: ft=jsonc
+// Please provide your info in your own .json file.
+// See https://jscraftcamp.org/registration for more information
 {
 	// your real name (required by location host)
 	"realName": {
-		"givenName": "Holger",
-		"familyName": "Grosse-Plankermann",
+		"givenName": "Ruslana",
+		"familyName": "Hural",
 		// if you prefer to have your family name shown first (optional)
 		"placeFamilyNameFirst": false,
 		// if you do not want to show your family name on the participant list (optional)
 		"hideFamilyNameOnWebsite": false
 	},
 	// please put in the account name of the PR creator, if you sign up somebody else
-	"githubAccountName": "holgergp",
+	"githubAccountName": "rh-pr",
 	// company name (optional)
-	"company": "looking for a new job",
+	"company": "",
 	// either both days or at least one day has to be set to true
 	"when": {
+		// June 7th, 2024
 		"friday": true,
+		// June 8th, 2024
 		"saturday": true
 	},
 	// if you are willing to take session notes and publish them to github (required)
-	"iCanTakeNotesDuringSessions": false,
+	"iCanTakeNotesDuringSessions": true,
 	// your current interests (JS and in general) (required)
-	"tags": ["ReactJS", "Nextjs", "TypeScript", "Testing", "Youtube", "papperlapapp.dev", "Podcasting", "autoweird.fm"],
+	"tags": ["ReScript", "Svelte", "Zustand", "GraphQL"],
 	// if you only eat vegan food (optional)
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
-	"vegetarian": false,
+	"vegetarian": true,
 	// what you cannot eat or drink (optional); If you don't want to put it in here, message the organizers.
 	// IMPORTANT: we cannot guarantee that food for every diet will be available,
 	//            if you have gluten free diet, please make backup plans.
 	"allergies": [],
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "For reasons and university: First thing I did was to tinker with the native Mozilla SOAP integration. Stayed nonetheless.",
+	"whatIsMyConnectionToJavascript": "JavaScript leds me to delve deeper into various aspects of software development, thanks to its versatility and the dynamic, interactive capabilities it brings to web applications.",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "I can do sth about React Server Components, might do a session on youtubing/podcasting",
+	"whatCanIContribute": "I can contribute to the BootCamp by sharing my knowledge and passion for JavaScript and web development",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
 	"tShirtSize": "M",
 	// your Mastodon URL (optional)
-	"mastodon": "https://chaos.social/@holgergp",
+	"mastodon": "",
 	// your LinkedIn profile URL
-	"linkedin": "https://www.linkedin.com/in/holgergp/",
+	"linkedin": "https://www.linkedin.com/in/ruslana-hural-95292529b",
+	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
+	"X": "",
 	// your website URL or other social media (optional)
-	"website": "https://grosse-plankermann.com",
-	"X": "holgergp"
+	"website": ""
 }
