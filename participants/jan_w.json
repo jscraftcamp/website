@@ -5,7 +5,7 @@
 	// your real name (required by location host)
 	"realName": {
 		"givenName": "Jan",
-		"familyName": "Wahler",
+		"familyName": "Wa",
 		// if you prefer to have your family name shown first (optional)
 		"placeFamilyNameFirst": false,
 		// if you do not want to show your family name on the participant list (optional)
@@ -14,13 +14,13 @@
 	// please put in the account name of the PR creator, if you sign up somebody else
 	"githubAccountName": "bs123",
 	// company name (optional)
-	"company": "ARRI",
+	"company": "",
 	// either both days or at least one day has to be set to true
 	"when": {
 		// June 7th, 2024
 		"friday": true,
 		// June 8th, 2024
-		"saturday": true
+		"saturday": false
 	},
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": true,
@@ -44,7 +44,7 @@
 	// your Mastodon URL (optional)
 	"mastodon": "",
 	// your LinkedIn profile URL
-	"linkedin": "https://www.linkedin.com/in/jan-wahler/",
+	"linkedin": "",
 	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
 	"X": "",
 	// your website URL or other social media (optional)
