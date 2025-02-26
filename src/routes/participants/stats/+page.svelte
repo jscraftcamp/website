@@ -2,6 +2,7 @@
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 	import type { TShirtSize } from '$lib/participants/participant-schema';
+	import type { Company } from '$lib/participants/statistics';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -16,6 +17,35 @@
 		participantsShirts
 	} = data;
 	const shirtKinds: TShirtSize[] = ['S', 'M', 'L', 'XL', '2XL', '3XL'];
+	const byName = (a: Company, b: Company) =>
+		a.name.toLocaleLowerCase() < b.name.toLocaleLowerCase()
+			? -1
+			: a.name.toLocaleLowerCase() === b.name.toLocaleLowerCase()
+				? 0
+				: 1;
+	const byAmount = (a: Company, b: Company) => a.amount - b.amount;
+	let ascending = true;
+	let sorter: (a: Company, b: Company) => number = byName;
+	let actualSorter: (a: Company, b: Company) => number = sorter;
+	function invert(sortFn: (a: Company, b: Company) => number): (a: Company, b: Company) => number {
+		return (a, b) => sortFn(a, b) * -1;
+	}
+	function setSort(sortFn: (a: Company, b: Company) => number) {
+		const wasSortFn = sorter === sortFn;
+		sorter = sortFn;
+		if (wasSortFn) {
+			if (ascending) {
+				ascending = false;
+				actualSorter = invert(sortFn);
+			} else {
+				ascending = true;
+				actualSorter = sortFn;
+			}
+		} else {
+			ascending = true;
+			actualSorter = sortFn;
+		}
+	}
 </script>
 
 <PageLayout>
@@ -139,12 +169,26 @@
 				<table>
 					<thead>
 						<tr>
-							<th>Company</th>
-							<th>Participants</th>
+							<th
+								style="{ascending ? '--invert:0deg' : '--invert:180deg'}; {sorter === byAmount
+									? '--sort-color:#0000;'
+									: ''}"
+								class="sortable"
+								role="columnheader"
+								on:click={() => setSort(byName)}>Company</th
+							>
+							<th
+								style="{ascending ? '--invert:0deg' : '--invert:180deg'}; {sorter === byName
+									? '--sort-color:#0000;'
+									: ''}"
+								class="sortable"
+								role="columnheader"
+								on:click={() => setSort(byAmount)}>Participants</th
+							>
 						</tr>
 					</thead>
 					<tbody>
-						{#each companies as { name, amount, isSponsor }}
+						{#each companies.toSorted(actualSorter) as { name, amount, isSponsor }}
 							<tr class:isSponsor>
 								<td>{name}</td>
 								<td>{amount}</td>
@@ -158,6 +202,26 @@
 </PageLayout>
 
 <style>
+	.sortable {
+		cursor: pointer;
+		position: relative;
+		padding-right: 1.5em;
+		--sort-color: #000;
+		--invert: 0deg;
+	}
+	.sortable:after {
+		content: '';
+		position: absolute;
+		right: 0;
+		top: calc(50% - 0.25em);
+		transition: rotate 300ms;
+		rotate: var(--invert);
+		border: 0.4em solid var(--sort-color);
+		border-bottom-width: 0.5em;
+		border-top-width: 0;
+		border-left-color: #0000;
+		border-right-color: #0000;
+	}
 	div {
 		display: grid;
 		gap: 2em;
