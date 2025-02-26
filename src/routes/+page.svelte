@@ -18,7 +18,7 @@
 	} from '$lib/participants/registration';
 	import { base } from '$app/paths';
 	import Partners from '$lib/sponsoring/Partners.svelte';
-	import Sponsors from '$lib/sponsoring/Sponsors2024.svelte';
+	import CurrentSponsors from '$lib/sponsoring/CurrentSponsors';
 	import Schedule from './Schedule.svelte';
 	import type { PageData } from './$types';
 
@@ -153,7 +153,7 @@
 			<a href="https://discord.gg/3mHhaXVEjP" rel="external"><img src={discord} alt="Discord" /></a>
 		</div>
 		<img src={skyline} alt="Munich skyline" />
-		<Sponsors />
+		<CurrentSponsors />
 		<Partners />
 		<WhatToExpect />
 	</section>
