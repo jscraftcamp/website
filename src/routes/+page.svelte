@@ -55,23 +55,23 @@
 </script>
 
 <PageLayout>
-	<h1>Welcome to JSCraftCamp 2024! ✅</h1>
+	<h1>Welcome to JSCraftCamp 2025! ✅</h1>
 
 	<p style="display: flex; align-items: center;">
-		Our hashtag is&nbsp;<b>#jscc24</b>&nbsp; find us on &nbsp;<a
-			href="https://mastodontech.de/tags/jscc24"
+		Our hashtag is&nbsp;<b>#jscc25</b>&nbsp; find us on &nbsp;<a
+			href="https://mastodontech.de/tags/jscc25"
 			><img src={mastodon} alt="mastodon" style="height: 1.5rem;" /></a
 		>
-		&nbsp;<a href="https://twitter.com/search?q=%23jscc24"
-			><img src={twitter} alt="twitter" style="height: 1.5rem;" /></a
+		&nbsp;<a href="https://twitter.com/search?q=%23jscc25"
+			><img src={twitter} alt="twitter / X" style="height: 1.5rem;" /></a
 		>
 	</p>
 
 	<section>
 		<InfoBox title="When?">
-			<p><strong>7. & 8. June 2024</strong></p>
+			<p><strong>27. & 28. June 2025</strong></p>
 			{#if $registrationState === 'not-yet'}
-				<p>Registration will open on April 22nd, 2024. {@html $countdown}</p>
+				<p>Registration will open on April 30nd, 2025. {@html $countdown}</p>
 			{:else if $registrationState === 'closed'}
 				<p>
 					Registration is closed, we're full! <a href="{base}/registration">Join the wait list</a>!
@@ -87,17 +87,19 @@
 		</InfoBox>
 		<InfoBox title="Where?">
 			<p>
-				Thanks to Maiborn Wolff, this year we'll be at the <a
-					href="https://www.maibornwolff.de/location/muenchen-kraftwerk/"
+				Thanks to codecentric AG, this year we'll be at the <a
+					href="https://www.codecentric.de/standorte/muenchen"
 					rel="external noopener noreferrer"
-					>München Kraftwerk
+					>codecentric München office
 				</a>! <br />
 			</p>
 			<p>
-				MaibornWolff GmbH<br />
-				Drygalski-Allee 25<br />
-				81477 München <br />
-				(<a href="https://maps.app.goo.gl/hUhbheFci2sSJ7SZ6">Google Maps</a>)
+				codecentric AG<br />
+				August-Everding-Straße 20<br />
+				81671 München<br />
+				(<a href="https://maps.app.goo.gl/P2V1zn797ffFdjPm9" rel="external noopener noreferrer"
+					>Google Maps</a
+				>)
 			</p>
 		</InfoBox>
 		<Schedule />
