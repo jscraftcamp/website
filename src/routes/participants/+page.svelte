@@ -72,7 +72,7 @@
 	<section>
 		{#if $registrationState === 'not-yet'}
 			<p>
-				Registration will open on April 22nd, 2024. Get your GitHub account ready and check back <strong
+				Registration will open on April 30nd, 2025. Get your GitHub account ready and check back <strong
 					>{$countdown}</strong
 				>!
 			</p>

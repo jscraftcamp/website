@@ -1,4 +1,4 @@
-import { isSponsor as isSponsor2024 } from './sponsors-2024/is-sponsor';
+import { isSponsor as isSponsor2025 } from './sponsors-2025/is-sponsor';
 
 export interface Sponsor {
 	image: string;
@@ -7,4 +7,4 @@ export interface Sponsor {
 	sponsoring?: string;
 }
 
-export const isSponsor = isSponsor2024;
+export const isSponsor = isSponsor2025;
