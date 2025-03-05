@@ -68,6 +68,22 @@
 	</p>
 
 	<section>
+		<InfoBox title="JSCraftCamp is ...">
+			<p>
+				... a
+				<a href="https://en.wikipedia.org/wiki/Unconference#Barcamp" rel="external"
+					>BarCamp / OpenSpace / Unconference</a
+				> event for JavaScript enthusiasts of all levels. BarCamps and OpenSpaces are participant-driven
+				conferences where attendees create the schedule and lead discussions, making it a truly community-driven
+				experience.
+			</p>
+			<p>
+				JSCraftCamp provides a platform for JavaScript enthusiasts to network and participate in
+				workshops, similar to the <a href="https://www.socrates-conference.de/" rel="external"
+					>SoCraTes conference</a
+				>.
+			</p>
+		</InfoBox>
 		<InfoBox title="When?">
 			<p><strong>27. & 28. June 2025</strong></p>
 			{#if $registrationState === 'not-yet'}
@@ -89,9 +105,8 @@
 			<p>
 				Thanks to codecentric AG, this year we'll be at the <a
 					href="https://www.codecentric.de/standorte/muenchen"
-					rel="external noopener noreferrer"
-					>codecentric München office
-				</a>! <br />
+					rel="external noopener noreferrer">codecentric München office</a
+				>! <br />
 			</p>
 			<p>
 				codecentric AG<br />
@@ -102,40 +117,15 @@
 				>)
 			</p>
 		</InfoBox>
-		<Schedule />
-		<InfoBox title="How much does it cost?">
-			<p>
-				For participants, you do not need any money to attend. We expect everyone to pay by their
-				active participation during the event and committing themselves to it by creating a PR for
-				themselves. We want everybody to contribute to discussions, share their experiences and help
-				each other to learn something new.
-			</p>
-		</InfoBox>
-		<InfoBox title="Still looking for sponsors!">
+		<InfoBox title="We're looking for sponsors!">
 			<p>
 				Do you represent a company looking for talented developers? Want to support the JavaScript
 				community? Take a look at <a href="{base}/sponsoring">our sponsoring page</a> and find out
 				about what items are still open and how your company can benefit from sponsoring. Or go
 				directly to
-				<a href="https://github.com/orgs/jscraftcamp/projects/7" rel="external"
+				<a href="https://github.com/orgs/jscraftcamp/projects/10" rel="external"
 					><strong>our GitHub Sponsorship Board</strong></a
 				> and pick something.
-			</p>
-		</InfoBox>
-		<InfoBox title="JSCraftCamp is ...">
-			<p>
-				... a
-				<a href="https://en.wikipedia.org/wiki/Unconference#Barcamp" rel="external"
-					>BarCamp / OpenSpace / Unconference</a
-				> event for JavaScript enthusiasts of all levels. BarCamps and OpenSpaces are participant-driven
-				conferences where attendees create the schedule and lead discussions, making it a truly community-driven
-				experience.
-			</p>
-			<p>
-				JSCraftCamp provides a platform for JavaScript enthusiasts to network and participate in
-				workshops, similar to the <a href="https://www.socrates-conference.de/" rel="external"
-					>SoCraTes conference</a
-				>.
 			</p>
 		</InfoBox>
 		<Logo animateYears style="max-width: 100%;" />
@@ -153,6 +143,7 @@
 			<a href="https://discord.gg/3mHhaXVEjP" rel="external"><img src={discord} alt="Discord" /></a>
 		</div>
 		<img src={skyline} alt="Munich skyline" />
+		<Schedule />
 		<CurrentSponsors />
 		<Partners />
 		<WhatToExpect />
