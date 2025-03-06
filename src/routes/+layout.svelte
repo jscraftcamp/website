@@ -4,6 +4,11 @@
 	import '@fontsource/source-sans-pro';
 	import '@fontsource/source-sans-pro/600.css';
 	import '@fontsource/source-sans-pro/700.css';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 </script>
 
 <svelte:head>
@@ -14,7 +19,7 @@
 	/>
 </svelte:head>
 
-<slot />
+{@render children?.()}
 
 <style>
 	:root {

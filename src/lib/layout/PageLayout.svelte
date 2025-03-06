@@ -1,13 +1,18 @@
-<script>
+<script lang="ts">
 	import FooterNavigation from './FooterNavigation.svelte';
 	import TopNavigation from './TopNavigation.svelte';
+	interface Props {
+		children?: import('svelte').Snippet;
+	}
+
+	let { children }: Props = $props();
 </script>
 
 <div class="page">
 	<TopNavigation />
 	<div class="content">
 		<div>
-			<slot />
+			{@render children?.()}
 		</div>
 	</div>
 	<FooterNavigation />
@@ -15,7 +20,8 @@
 
 <style>
 	.page {
-		background: linear-gradient(135deg, hsla(120, 100%, 20%, 0.1), #fff 20em),
+		background:
+			linear-gradient(135deg, hsla(120, 100%, 20%, 0.1), #fff 20em),
 			linear-gradient(-45deg, hsla(120, 100%, 15%, 0.1), #fff 20em);
 		display: flex;
 		flex-flow: column;

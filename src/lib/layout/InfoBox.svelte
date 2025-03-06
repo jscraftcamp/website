@@ -1,8 +1,13 @@
 <script lang="ts">
 	import Box from './Box.svelte';
 
-	export let id: string | undefined = undefined;
-	export let title: string | undefined = undefined;
+	interface Props {
+		id?: string | undefined;
+		title?: string | undefined;
+		children?: import('svelte').Snippet;
+	}
+
+	let { id = undefined, title = undefined, children }: Props = $props();
 </script>
 
 <section>
@@ -12,7 +17,7 @@
 				{#if title !== undefined}{title}{/if}
 			</h2>
 			<div class="content">
-				<slot />
+				{@render children?.()}
 			</div>
 		</div>
 	</Box>

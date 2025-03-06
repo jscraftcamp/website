@@ -13,10 +13,14 @@
 	} from '$lib/participants/registration';
 	import { writable } from 'svelte/store';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 
 	const participants: ParticipantT[] = data.participants;
-	let activeTag: string | null = null;
+	let activeTag: string | null = $state(null);
 
 	const onSelectTag = (e: CustomEvent<string>) => {
 		const tag = e.detail;
@@ -89,13 +93,13 @@
 		<div class="attendance-filter">
 			<button
 				type="button"
-				on:click={setFridayOrUnset}
+				onclick={setFridayOrUnset}
 				class:isActive={$participantsFilter === fridayFilter}
 				>Friday ({participants.filter(fridayFilter).length} / 100 participants)</button
 			>
 			<button
 				type="button"
-				on:click={setSaturdayOrUnset}
+				onclick={setSaturdayOrUnset}
 				class:isActive={$participantsFilter === saturdayFilter}
 				>Saturday ({participants.filter(saturdayFilter).length} / 100 participants)</button
 			>
@@ -105,13 +109,13 @@
 			<div class="participants">
 				{#if activeTag !== null}
 					<div class="selectedTagAnchor">
-						<button type="button" class="selectedTag" on:click={unsetActiveTag}
+						<button type="button" class="selectedTag" onclick={unsetActiveTag}
 							>Selected tag: {activeTag}</button
 						>
 					</div>
 				{/if}
 				<ul>
-					{#each participants.filter($participantsFilter) as participant}
+					{#each participants.filter($participantsFilter) as participant (participant.githubAccountName)}
 						<li>
 							<Participant
 								{participant}

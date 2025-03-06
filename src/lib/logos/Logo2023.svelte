@@ -1,10 +1,14 @@
-<script lang="ts" context="module">
+<script lang="ts" module>
 	let idCounter = 1;
 </script>
 
 <script lang="ts">
-	export let animateYears: boolean = false;
-	export let style: string = '';
+	interface Props {
+		animateYears?: boolean;
+		style?: string;
+	}
+
+	let { animateYears = false, style = '' }: Props = $props();
 	const currentId = idCounter++;
 </script>
 

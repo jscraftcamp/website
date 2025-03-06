@@ -9,10 +9,14 @@
 	import { displayName } from '$lib/participants/display-name';
 	import { createEventDispatcher } from 'svelte';
 
-	export let participant: Participant;
-	export let isActive: boolean = false;
+	interface Props {
+		participant: Participant;
+		isActive?: boolean;
+	}
 
-	let isShowingDetails = false;
+	let { participant, isActive = false }: Props = $props();
+
+	let isShowingDetails = $state(false);
 	const hasSocialLink =
 		participant.X || participant.mastodon || participant.website || participant.linkedin;
 
@@ -32,7 +36,7 @@
 				>{/if}
 		</div>
 		<h3>
-			<button type="button" on:click={() => (isShowingDetails = !isShowingDetails)}
+			<button type="button" onclick={() => (isShowingDetails = !isShowingDetails)}
 				>{displayName(participant)}</button
 			>
 		</h3>
@@ -93,9 +97,9 @@
 				<p>{participant.whatCanIContribute}</p>
 			{:else}
 				<ul class="tags">
-					{#each participant.tags as tag}
+					{#each participant.tags as tag (tag)}
 						<li>
-							<button type="button" on:click={() => dispatch('selectedTag', tag)}>{tag}</button>
+							<button type="button" onclick={() => dispatch('selectedTag', tag)}>{tag}</button>
 						</li>
 					{/each}
 				</ul>
