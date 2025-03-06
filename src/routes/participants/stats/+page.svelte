@@ -30,25 +30,19 @@
 	const byAmount = (a: Company, b: Company) => a.amount - b.amount;
 	let ascending = $state(true);
 	let sorter: (a: Company, b: Company) => number = $state(byName);
-	let actualSorter: (a: Company, b: Company) => number = $state(sorter);
+	let actualSorter: (a: Company, b: Company) => number = $derived((a, b) => {
+		if (ascending) {
+			return sorter(a, b);
+		}
+		return invert(sorter)(a, b);
+	});
 	function invert(sortFn: (a: Company, b: Company) => number): (a: Company, b: Company) => number {
 		return (a, b) => sortFn(a, b) * -1;
 	}
 	function setSort(sortFn: (a: Company, b: Company) => number) {
 		const wasSortFn = sorter === sortFn;
 		sorter = sortFn;
-		if (wasSortFn) {
-			if (ascending) {
-				ascending = false;
-				actualSorter = invert(sortFn);
-			} else {
-				ascending = true;
-				actualSorter = sortFn;
-			}
-		} else {
-			ascending = true;
-			actualSorter = sortFn;
-		}
+		ascending = wasSortFn ? !ascending : true;
 	}
 </script>
 
