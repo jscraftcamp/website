@@ -1,1 +1,1 @@
-export const isSponsor = (key: string) => ['saab'].includes(key);
+export const isSponsor = (key: string) => ['codecentric', 'saab'].includes(key);
