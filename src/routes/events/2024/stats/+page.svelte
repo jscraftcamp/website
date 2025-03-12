@@ -77,7 +77,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						{#each shirtKinds as kind}
+						{#each shirtKinds as kind (kind)}
 							<tr>
 								<td>{kind}</td>
 								<td>{amountOfShirts(participantsShirts.sizes, kind)}</td>
@@ -93,7 +93,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						{#each shirtKinds as kind}
+						{#each shirtKinds as kind (kind)}
 							<tr>
 								<td>{kind}</td>
 								<td>{amountOfShirts(orgaShirts.sizes, kind)}</td>
@@ -118,7 +118,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						{#each Object.entries(allergies) as [name, amount]}
+						{#each Object.entries(allergies) as [name, amount] (name)}
 							<tr>
 								<td>{name}</td>
 								<td>{amount}</td>
@@ -140,7 +140,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						{#each companies as { name, amount, isSponsor }}
+						{#each companies as { name, amount, isSponsor } (name)}
 							<tr class:isSponsor>
 								<td>{name}</td>
 								<td>{amount}</td>

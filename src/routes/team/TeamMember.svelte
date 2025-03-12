@@ -2,10 +2,14 @@
 	import Box from '$lib/layout/Box.svelte';
 	import linkedinLogo from '$lib/participants/linkedin.svg';
 
-	export let email: string = '';
-	export let linkedin: string | undefined = undefined;
-	export let image: string | undefined = undefined;
-	export let name: string;
+	interface Props {
+		email?: string;
+		linkedin?: string | undefined;
+		image?: string | undefined;
+		name: string;
+	}
+
+	let { email = '', linkedin = undefined, image = undefined, name }: Props = $props();
 </script>
 
 <Box>

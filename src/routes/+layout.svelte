@@ -1,9 +1,15 @@
 <script lang="ts">
+	import type { Snippet } from 'svelte';
 	import '@fontsource/poppins';
 	import '@fontsource/poppins/600.css';
 	import '@fontsource/source-sans-pro';
 	import '@fontsource/source-sans-pro/600.css';
 	import '@fontsource/source-sans-pro/700.css';
+	interface Props {
+		children?: Snippet;
+	}
+
+	let { children }: Props = $props();
 </script>
 
 <svelte:head>
@@ -14,7 +20,7 @@
 	/>
 </svelte:head>
 
-<slot />
+{@render children?.()}
 
 <style>
 	:root {

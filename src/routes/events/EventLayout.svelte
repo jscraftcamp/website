@@ -1,13 +1,27 @@
 <script lang="ts">
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
+	import type { Snippet } from 'svelte';
 
-	export let archiveLink: string | undefined = undefined;
-	export let logo: string | undefined = undefined;
-	export let notesLink: string | undefined = undefined;
-	export let when: string;
-	export let where: string;
-	export let year: string;
+	interface Props {
+		archiveLink?: string | undefined;
+		logo?: string | undefined;
+		notesLink?: string | undefined;
+		when: string;
+		where: string;
+		year: string;
+		children?: Snippet;
+	}
+
+	let {
+		archiveLink = undefined,
+		logo = undefined,
+		notesLink = undefined,
+		when,
+		where,
+		year,
+		children
+	}: Props = $props();
 </script>
 
 <PageLayout>
@@ -33,7 +47,7 @@
 				</div>
 			{/if}
 		</InfoBox>
-		<slot />
+		{@render children?.()}
 	</div>
 </PageLayout>
 
