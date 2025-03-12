@@ -1,7 +1,7 @@
 <script lang="ts">
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
-	import { Snippet } from 'svelte';
+	import type { Snippet } from 'svelte';
 
 	interface Props {
 		archiveLink?: string | undefined;

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Snippet } from 'svelte';
+	import type { Snippet } from 'svelte';
 	import '@fontsource/poppins';
 	import '@fontsource/poppins/600.css';
 	import '@fontsource/source-sans-pro';
