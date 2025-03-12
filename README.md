@@ -28,3 +28,7 @@ After installing the dependencies (via `pnpm install`), run
 The website is a static page that gets built through [SvelteKit](https://kit.svelte.dev/) with their `adapter-static`. You can find the routes in the [`src/routes` directory](./src/routes).
 
 Every page is put in `+page.svelte` and may include additional components just for that page or reusable components or functions from the [`src/lib`](./src/lib) folder.
+
+---
+
+testing branch protection rule.
