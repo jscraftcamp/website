@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/typography';
+
+@theme {
+	--color-primary-2016: #e98b23;
+	--color-primary-2017: #4b81b6;
+	--color-primary-2018: #219e87;
+	--color-primary-2019: #eaeaea;
+	--color-primary-2022: #ff007f;
+	--color-primary-2023: #006600;
+	--color-primary-2024: #9b03a6;
+	--color-primary-2025: #fbc641;
+
+	--color-primary: var(--color-primary-2025);
+}
