@@ -1,11 +1,12 @@
 <script lang="ts">
+	import { Snippet } from 'svelte';
 	import '@fontsource/poppins';
 	import '@fontsource/poppins/600.css';
 	import '@fontsource/source-sans-pro';
 	import '@fontsource/source-sans-pro/600.css';
 	import '@fontsource/source-sans-pro/700.css';
 	interface Props {
-		children?: import('svelte').Snippet;
+		children?: Snippet;
 	}
 
 	let { children }: Props = $props();
