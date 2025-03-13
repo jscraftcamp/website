@@ -15,7 +15,6 @@
 		<a href={sponsor.link} rel="external">
 			<div class="box">
 				<div class="image"><img src={sponsor.image} alt={sponsor.name} /></div>
-				<div class="name"><span>{sponsor.name}</span></div>
 				{#if sponsor.sponsoring}<div class="sponsoring">{sponsor.sponsoring}</div>{/if}
 			</div>
 		</a>
@@ -37,11 +36,9 @@
 	}
 	a {
 		background-color: #fff;
-		box-sizing: border-box;
+		box-sizing: content-box;
 		display: flex;
 		flex: 1 0 auto;
-		align-items: center;
-		justify-content: center;
 		max-width: 14em;
 		position: relative;
 		padding: 2em;
@@ -87,9 +84,6 @@
 		display: block;
 		min-width: 100%;
 		max-width: min(100%, 10em);
-	}
-	.name {
-		min-width: 8em;
 	}
 	span {
 		align-self: flex-end;
