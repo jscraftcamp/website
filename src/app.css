@@ -1,8 +1,18 @@
+@import '@fontsource/rubik/500.css';
+@import '@fontsource/rubik/700.css';
 @import 'tailwindcss';
 
 @plugin '@tailwindcss/typography';
 
 @theme {
+	--font-sans:
+		'Rubik', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+		'Segoe UI Symbol', 'Noto Color Emoji';
+	--font-serif: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+	--font-mono:
+		ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+		monospace;
+
 	--color-primary-2016: #e98b23;
 	--color-primary-2017: #4b81b6;
 	--color-primary-2018: #219e87;
@@ -12,5 +22,11 @@
 	--color-primary-2024: #9b03a6;
 	--color-primary-2025: #fbc641;
 
-	--color-primary: var(--color-primary-2025);
+	--color-primary: #f9db12;
+}
+
+@layer base {
+	body {
+		@apply bg-[rgba(15,15,15,1)] text-white;
+	}
 }

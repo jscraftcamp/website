@@ -14,6 +14,9 @@ importers:
       '@fontsource/poppins':
         specifier: 5.2.5
         version: 5.2.5
+      '@fontsource/rubik':
+        specifier: ^5.2.5
+        version: 5.2.5
       '@fontsource/source-sans-pro':
         specifier: 5.2.5
         version: 5.2.5
@@ -310,6 +313,9 @@ packages:
 
   '@fontsource/poppins@5.2.5':
     resolution: {integrity: sha512-1S3k45pZOz2jqGPPqKw0in3uxFwnB+d5jSU8Tp9YwH/dIJptE3jdkQbYN0QD861GtuOpn6QhPW/yKt1w7hVRBQ==}
+
+  '@fontsource/rubik@5.2.5':
+    resolution: {integrity: sha512-vr7hwIRJfK+OGi8+pEcNdLCzMoOAxfHPOmfDfZ63mDzG1/OUSeTLWiAtYywKCwPluTcV84hY2CHBUBF+OpKEcw==}
 
   '@fontsource/source-sans-pro@5.2.5':
     resolution: {integrity: sha512-ypendqc4pYUc+EgF7qqPY9iVYEz1t/Qr03VojKxG/2g3dnpHa1B6DOlDxWQjQXDj5QrG6inEqGT0g+edjALZyg==}
@@ -1728,6 +1734,8 @@ snapshots:
       levn: 0.4.1
 
   '@fontsource/poppins@5.2.5': {}
+
+  '@fontsource/rubik@5.2.5': {}
 
   '@fontsource/source-sans-pro@5.2.5': {}
 
