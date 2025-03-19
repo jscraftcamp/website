@@ -2,7 +2,7 @@
 	import { writable } from 'svelte/store';
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
-	import Logo from '$lib/layout/Logo.svelte';
+	import Logo from '$lib/layout/Logo';
 	import discord from './discord.svg';
 	import github from './github.svg';
 	import linkedIn from './linked-in.png';
