@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import { isRegistrationOpen } from '$lib/participants/registration';
-	import Logo from './Logo.svelte';
+	import Logo from './Logo';
 </script>
 
 <header>

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import Logo from './Logo.svelte';
+	import Logo from './Logo';
 	import netlify from './netlify.svg';
 </script>
 
