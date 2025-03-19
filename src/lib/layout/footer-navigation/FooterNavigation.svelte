@@ -4,13 +4,15 @@
 </script>
 
 <footer>
-	<nav>
-		<ul class="flex items-center gap-8 opacity-50">
-			<li><a href="{base}/imprint">Imprint</a></li>
-			<li><a href="{base}/">Privacy Policy</a></li>
-			<li><a href="{base}/events">Archive</a></li>
-		</ul>
-	</nav>
+	<div class="container mx-auto">
+		<nav>
+			<ul class="flex items-center gap-8 opacity-50">
+				<li><a href="{base}/imprint">Imprint</a></li>
+				<li><a href="{base}/">Privacy Policy</a></li>
+				<li><a href="{base}/events">Archive</a></li>
+			</ul>
+		</nav>
+	</div>
 	<div class="grid grid-cols-1 grid-rows-1">
 		<svg
 			class="h-auto w-full"

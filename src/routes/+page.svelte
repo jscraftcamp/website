@@ -1,6 +1,9 @@
 <script lang="ts">
 	import { writable } from 'svelte/store';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
+	import MainBanner from '$lib/tiles/MainBanner.svelte';
+	import Sponsor from '$lib/tiles/Sponsor.svelte';
+	import Thanks from '$lib/tiles/Thanks.svelte';
 	import {
 		getRegistrationState,
 		registrationClosessAt,
@@ -38,4 +41,18 @@
 	updateCountdown();
 </script>
 
-<PageLayout>hello world</PageLayout>
+<PageLayout>
+	<div class="@container p-4">
+		<div class="grid grid-cols-1 gap-6 @md:grid-cols-3 @md:grid-rows-[auto_1fr]">
+			<div class="@md:col-span-2 @md:h-full">
+				<MainBanner class="h-full" />
+			</div>
+			<div class="@md:col-span-1 @md:h-full">
+				<Sponsor class="h-full" />
+			</div>
+			<div class="@md:col-span-3">
+				<Thanks />
+			</div>
+		</div>
+	</div>
+</PageLayout>

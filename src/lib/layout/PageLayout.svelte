@@ -9,10 +9,11 @@
 	let { children }: Props = $props();
 </script>
 
-<div>
+<div class="container mx-auto">
 	<TopNavigation />
 	<main>
 		{@render children?.()}
 	</main>
-	<FooterNavigation />
 </div>
+
+<FooterNavigation />
