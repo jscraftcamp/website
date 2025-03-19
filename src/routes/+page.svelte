@@ -92,7 +92,7 @@
 			<p><strong>27. & 28. June 2025</strong></p>
 			{#if $registrationState === 'not-yet'}
 				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-				<p>Registration will open on April 30nd, 2025. {@html $countdown}</p>
+				<p>Registration will open on April 30th, 2025. {@html $countdown}</p>
 			{:else if $registrationState === 'closed'}
 				<p>
 					Registration is closed, we're full! <a href="{base}/registration">Join the wait list</a>!
