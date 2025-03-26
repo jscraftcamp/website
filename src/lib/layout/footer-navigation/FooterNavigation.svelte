@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import Logo from '../Logo.svelte';
+	import Logo from '../Logo';
 </script>
 
 <footer>
-	<div class="container mx-auto">
+	<div class="@container mx-auto">
 		<nav>
 			<ul class="flex items-center gap-8 opacity-50">
 				<li><a href="{base}/imprint">Imprint</a></li>
