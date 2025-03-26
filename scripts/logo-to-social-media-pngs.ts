@@ -4,8 +4,11 @@ const year = process.argv[2];
 
 const browser = await chromium.launch({ headless: true, slowMo: 50 });
 try {
+	await takeScreenshot({ name: 'favicon', logo: year, width: 32, height: 32 });
 	await takeScreenshot({ name: 'jscc-discord-logo', logo: year, width: 512, height: 512 });
 	await takeScreenshot({ name: 'jscc-discord-event', logo: year, width: 800, height: 320 });
+	await takeScreenshot({ name: 'jscc-github-organization', logo: year, width: 500, height: 500 });
+	await takeScreenshot({ name: 'jscc-github-repository', logo: year, width: 1280, height: 640 });
 	await takeScreenshot({ name: 'jscc-meetup-event', logo: year, width: 1200, height: 675 });
 	await takeScreenshot({ name: 'jscc-meetup-group', logo: year, width: 1200, height: 900 });
 	await takeScreenshot({ name: 'jscc-linkedin-profile', logo: year, width: 400, height: 400 });
