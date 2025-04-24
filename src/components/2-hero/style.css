@@ -1,0 +1,91 @@
+/**
+  * Component: Hero, the hero/main box on the homepage.
+  */
+.hero {
+  /* TODO get the pattern right */
+  background: repeating-linear-gradient(
+    120deg,
+    #fbc640,
+    #fbc640 17.32px,
+    #fdbb10 17.32px,
+    #fdbb10 34.64px
+  ),
+  repeating-linear-gradient(
+    60deg,
+    #fbc640,
+    #fbc640 17.32px,
+    #ffbc10 17.32px,
+    #ffbc10 34.64px
+  );
+
+  padding: 2em;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero :visited,
+.hero * {
+  color: black;
+}
+
+.hero a {
+  text-decoration: none;
+}
+.hero a:hover {
+  text-decoration: underline;
+}
+
+.hero :is(h1, p>strong) {
+  font-size: xxx-large;
+  font-weight: bold;
+}
+
+.hero header h1 {
+  margin: 0;
+}
+
+.hero header p {
+  display: inline-block;
+}
+
+.hero header [role=button],
+.hero header [role=button] * {
+  color: #f9db10;
+}
+.hero header [role=button] {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 0.5em;
+  display: block;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  width: fit-content;
+}
+.hero header [role=button]:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+.hero aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero aside p strong {
+  display: block;
+}
+
+.hero aside p:first-of-type {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: small;
+}
+
+.hero aside p:nth-of-type(2) {
+  font-weight: bold;
+  font-size: xx-large;
+}

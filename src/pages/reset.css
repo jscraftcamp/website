@@ -1,0 +1,81 @@
+:root {
+  --text-color-white: white;
+  --text-color-primary: #ffd54f;
+  --text-color-dimmed: #b3b3b3;
+  --background-color-primary: #0f0f0f;
+  --spacing-normal: 1em;
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+html, body {
+  -webkit-overflow-scrolling: touch; /* Add momentum scrolling to iOS devices. */
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Futura, Arial, sans-serif;
+  background-color: var(--background-color-primary);
+  padding: var(--spacing-normal);
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+}
+
+article {
+  border-radius: var(--spacing-normal);
+  margin-bottom: var(--spacing-normal);
+  margin-right: var(--spacing-normal);
+}
+@media screen and (max-width: 600px) {
+  article {
+    margin-right: 0;
+  }
+}
+
+a:visited {
+  color: var(--text-color-dimmed);
+}
+
+button.primary, a.primary, 
+button.secondary, a.secondary {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+button.primary, a.primary {
+  background-color: var(--text-color-primary);
+  color: black;
+}
+
+button.secondary, a.secondary {
+  background-color: transparent;
+  border: 2px solid var(--text-color-primary);
+  color: var(--text-color-primary);
+}
+
+button.primary:hover, button.secondary:hover,
+a.primary:hover, a.secondary:hover {
+  transform: translateY(-2px);
+}
+
+button.primary:hover,
+a.primary:hover {
+  background-color: var(--text-color-primary);
+}
+
+button.secondary:hover,
+a.secondary:hover {
+  background-color: rgba(255, 153, 0, 0.1);
+}

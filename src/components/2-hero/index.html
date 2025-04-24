@@ -1,0 +1,32 @@
+<article class="hero">
+  <header>
+    <small>The JavaScript Unconference – in Munich, Germany</small>
+    <h1>
+      <a href="/">JSCraftCamp</a>
+    </h1>
+
+    <p><strong>2025</strong></p>
+    <p>
+      <time datetime="2025-06-27 09:00">27</time>
+      –
+      <time datetime="2025-06-28 18:00">28</time>
+      <br/>
+      June
+    </p>
+    <a role="button" href="/registration/">Registration <span class="num-days-to-registration"></span></a>
+  </header>
+  <aside>
+    <p><strong class="num-days"></strong>days to go</p>
+    <p>
+      <a href="https://mastodontech.de/tags/jscc25" target="_blank">#jscc25</a>
+    </p>
+  </aside>
+</article>
+
+
+<script>
+  $('.hero .num-days').innerText = Math.round((new Date(JSCC_START_DATE) - new Date()) / (1000 * 60 * 60 * 24));
+  const numDaysToRegistration = Math.round((new Date(REGISTRATION_START_DATE) - new Date()) / (1000 * 60 * 60 * 24));
+  const numDaysRegistrationText = numDaysToRegistration > 0 ? `opens in ${numDaysToRegistration} days` : 'is open';
+  $('.hero .num-days-to-registration').innerText = numDaysRegistrationText;
+</script>

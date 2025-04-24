@@ -1,0 +1,57 @@
+/**
+  * The top navigation
+  */
+nav.top-nav {
+  color: var(--text-color-white);
+  padding: 0;
+  overflow-x: scroll;
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+nav.top-nav ul {
+  display: inline-flex;
+  list-style: none;
+  align-items: center;
+  padding: 0 var(--spacing-normal);
+}
+
+nav.top-nav ul li {
+  color: var(--text-color-dimmed);
+}
+nav.top-nav ul li a {
+  color: var(--text-color-white);
+  text-decoration: none;
+  padding: var(--spacing-normal);
+  display: inline-block;
+}
+
+nav.top-nav ul li:first-child a {
+  color: var(--text-color-primary);
+  font-weight: bold;
+  padding-left: 0;
+}
+
+nav.top-nav ul li a:hover,
+body.home nav.top-nav ul li a.home,
+body.sponsoring nav.top-nav ul li a.sponsoring, 
+body.values nav.top-nav ul li a.values, 
+body.registration nav.top-nav ul li a.registration 
+{
+  color: var(--text-color-primary);
+  position: relative;
+}
+/* Active indicator dot */
+nav.top-nav ul li a:hover::after,
+body.home nav.top-nav ul li a.home::after,
+body.sponsoring nav.top-nav ul li a.sponsoring::after, 
+body.values nav.top-nav ul li a.values::after, 
+body.registration nav.top-nav ul li a.registration::after 
+{
+  content: "•";
+  position: absolute;
+  bottom: -0.5em;
+  left: 50%;
+  transform: translateX(-50%);
+}

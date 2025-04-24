@@ -1,0 +1,42 @@
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  background: #252525;
+}
+.sponsors p  {
+  overflow: scroll;
+  white-space: nowrap;
+  scrollbar-width: none;
+  
+  display: flex;
+  justify-content: center;
+}
+.sponsors p.thanks span {
+  margin-inline: 0 1em;
+}
+.sponsors p.thanks span:nth-child(odd) {
+  color: #929292;
+}
+.sponsors p.thanks span:nth-child(even) {
+  color: #3b3b3b;
+}
+
+
+.sponsors p.names {
+  color: white;
+  margin-bottom: 2em;
+}
+.sponsors p.names > * {
+  color: var(--text-color-dimmed);
+  margin-inline: 0 4em;
+  text-decoration: none;
+  font-size: larger;
+}
+.sponsors p.names > a {
+  color: var(--text-color-white);
+}
+.sponsors p.names .teaser {
+  color: var(--text-color-primary);
+}

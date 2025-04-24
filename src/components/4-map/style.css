@@ -1,0 +1,26 @@
+.map {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.map header {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  
+  background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  color: black;
+  padding: var(--spacing-normal);
+  backdrop-filter: blur(3px); /* Adds blur effect to content behind the header */
+}
+
+.map .view-larger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(to bottom left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  padding: 1em;
+  color: black;
+}

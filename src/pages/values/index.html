@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="JSCraftCamp">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JSCraftCamp 2025 Values and Code of Conduct - Creating a welcoming environment for all">
+  <meta name="theme-color" content="#000000">
+  
+  <title>JSCraftCamp 2025 – Our Community Values</title>
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../components.css">
+  <script src="/global.js" type="application/ecmascript"></script>
+</head>
+<body class="values">
+  
+  {{ nav }}
+  
+  <style>
+    /* Values Page Styles */
+    .values-hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+      background-size: cover;
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+    
+    .values-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    
+    .values-hero h2 {
+      font-size: 1.5rem;
+      font-weight: normal;
+      margin-bottom: 2rem;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    
+    section {
+      padding: 4rem 0;
+    }
+    
+    section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2.2rem;
+    }
+    
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .value-card {
+      border: 1px solid var(--text-color-dimmed);
+      background-color: #252525;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    
+    .value-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .value-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .value-card h3 {
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+    
+    .guidelines {
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      padding: 2rem;
+      margin: 2rem 0;
+      color: black;
+    }
+    
+    .guideline-section {
+      margin-bottom: 2.5rem;
+    }
+    
+    .guideline-section h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #ff9900;
+      display: inline-block;
+    }
+    
+    .guideline-list {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .guideline-list li {
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    
+    .guideline-list li:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.5rem;
+      width: 0.8rem;
+      height: 0.8rem;
+      background-color: #ff9900;
+      border-radius: 50%;
+    }
+    
+    .dont-list li:before {
+      background-color: #d44950;
+    }
+    
+    .help-section {
+      background-color: rgba(255, 153, 0, 0.1);
+      border-radius: 8px;
+      padding: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .help-section h3 {
+      margin-bottom: 1.5rem;
+      font-size: 1.6rem;
+    }
+    
+    .team-contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    
+    .contact-method {
+      flex: 1;
+      min-width: 200px;
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    
+    .contact-method h4 {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+    
+    .contact-method p {
+      color: #666;
+    }
+    
+    .commitment {
+      text-align: center;
+      margin: 3rem 0;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      color: black;
+    }
+    
+    .commitment p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    
+    @media (max-width: 768px) {
+      .values-hero h1 {
+        font-size: 2.2rem;
+      }
+      
+      .values-hero h2 {
+        font-size: 1.2rem;
+      }
+      
+      section {
+        padding: 3rem 1rem;
+      }
+      
+      .value-card {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+  
+  <section class="values-hero">
+    <div class="container">
+      <h1>Our Community Values</h1>
+      <h2>Creating a welcoming, respectful, and inclusive space for everyone</h2>
+    </div>
+  </section>
+  
+  <section id="our-commitment">
+    <div class="container">
+      <h2>Our Commitment to You</h2>
+      
+      <p>The JSCraftCamp community is committed to providing a friendly, safe, and welcoming environment for all participants. We believe that everyone deserves to feel comfortable, respected, and valued during our event.</p>
+      
+      <p>We invite all those who participate in JSCraftCamp to help us create positive experiences for everyone. These values guide our community interactions and help us maintain a space where people can learn, share, and grow together.</p>
+      
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">🤝</div>
+          <h3>Respect</h3>
+          <p>We treat each other with dignity and consideration, valuing diverse perspectives and experiences.</p>
+        </div>
+        
+        <div class="value-card">
+          <div class="value-icon">🌈</div>
+          <h3>Inclusivity</h3>
+          <p>We welcome people of all backgrounds, identities, and experience levels to participate fully in our community.</p>
+        </div>
+        
+        <div class="value-card">
+          <div class="value-icon">🧠</div>
+          <h3>Learning</h3>
+          <p>We embrace a growth mindset, being open to new ideas and approaches to coding and collaboration.</p>
+        </div>
+        
+        <div class="value-card">
+          <div class="value-icon">💬</div>
+          <h3>Communication</h3>
+          <p>We engage in thoughtful discussions, listening actively and considering different viewpoints.</p>
+        </div>
+      </div>
+      
+      <div class="commitment">
+        <p>We do not tolerate discrimination of any kind, including but not limited to discrimination based on gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion, or technical experience level.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="guidelines">
+    <div class="container">
+      <h2>Community Guidelines</h2>
+      
+      <div class="guidelines">
+        <div class="guideline-section">
+          <h3>Encouraged Behaviors</h3>
+          
+          <ul class="guideline-list">
+            <li><strong>Treat all attendees as equals.</strong> We're all humans learning together. Assume the person next to you is just as capable as you are, regardless of their appearance or background.</li>
+            
+            <li><strong>Be welcoming, friendly, and patient.</strong> Treat everyone you meet with respect and kindness. Ask questions before jumping to conclusions about someone's knowledge or experience.</li>
+            
+            <li><strong>Be professional and constructive.</strong> Disagreements are opportunities for learning, not for putting others down. If a discussion becomes heated, take a step back and focus on "I" statements about your perspective.</li>
+            
+            <li><strong>Be mindful of your words and their impact.</strong> Remember that strong criticism of tools and technologies can make others feel unwelcome if they use those tools. Frame opinions as personal preferences rather than universal truths.</li>
+            
+            <li><strong>Use inclusive language.</strong> Choose words that welcome everyone. Consider using terms like "folks," "everyone," or "friends" instead of gendered terms like "guys." If someone suggests a more inclusive term, take it as helpful feedback.</li>
+          </ul>
+        </div>
+        
+        <div class="guideline-section">
+          <h3>Behaviors to Avoid</h3>
+          
+          <ul class="guideline-list dont-list">
+            <li><strong>Harassment or intimidation</strong> of any participant in any form.</li>
+            
+            <li><strong>Discriminatory jokes or language</strong> related to gender, gender identity, sexual orientation, disability, mental health, physical appearance, body size, race, or religion.</li>
+            
+            <li><strong>Unwelcome physical attention or contact</strong> without explicit consent.</li>
+            
+            <li><strong>Disruptive behavior</strong> during sessions or deliberate intimidation, stalking, or following.</li>
+            
+            <li><strong>Insults or put-downs</strong> of other participants or their contributions.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="help-process">
+    <div class="container">
+      <h2>Getting Help</h2>
+      
+      <div class="help-section">
+        <h3>If You Experience or Witness a Problem</h3>
+        
+        <p>If you experience or witness behavior that violates our community values:</p>
+        
+        <ul class="guideline-list">
+          <li>Speak up if you safely can, politely asking the person to stop the concerning behavior.</li>
+          
+          <li>If you don't feel comfortable addressing it directly, or if the behavior continues, please contact a member of the organizing team immediately.</li>
+          
+          <li>All reports will be handled with discretion and taken seriously.</li>
+        </ul>
+        
+        <h3>How We'll Respond</h3>
+        
+        <p>The organizing team will:</p>
+        
+        <ul class="guideline-list">
+          <li>Listen carefully to your concern and collect necessary information</li>
+          <li>Speak with all involved parties to understand the situation</li>
+          <li>Take appropriate action based on the severity of the violation</li>
+          <li>Follow up with the reporting person about the resolution</li>
+        </ul>
+        
+        <p>Potential responses may include a conversation about behavior, a formal warning, or if necessary, asking someone to leave the event. In severe cases, we may contact relevant authorities.</p>
+        
+        <div class="team-contact">
+          <div class="contact-method">
+            <h4>Email Us</h4>
+            <p><a href="mailto:team@jscraftcamp.org">team@jscraftcamp.org</a></p>
+          </div>
+          
+          <div class="contact-method">
+            <h4>Find Us On-Site</h4>
+            <p>Look for organizers wearing special name tags</p>
+          </div>
+          
+          <div class="contact-method">
+            <h4>Discord</h4>
+            <p>Message the organizers on our <a href="https://discord.gg/3mHhaXVEjP" target="_blank">Discord server</a></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="commitment">
+        <p>These values reflect our commitment to fostering a community where everyone can participate fully, learn together, and have a positive experience at JSCraftCamp. Thank you for helping us maintain this welcoming environment.</p>
+      </div>
+    </div>
+  </section>
+  
+  {{ footer }}
+  
+</body>
+</html>

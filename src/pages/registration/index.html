@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="mobile-web-app-capable" content="yes"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="JSCraftCamp">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register for JSCraftCamp 2025 - Join the JavaScript community for two days of learning and sharing">
+  <meta name="theme-color" content="#000000">
+  
+  <title>JSCraftCamp 2025 – Registration</title>
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../components.css">
+  <script src="/global.js" type="application/ecmascript"></script>
+</head>
+<body class="registration">
+  
+  {{ nav }}
+  
+  <style>
+    /* Registration Page Styles */
+    .registration-hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+      background-size: cover;
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+    
+    .registration-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    
+    .registration-hero h2 {
+      font-size: 1.5rem;
+      font-weight: normal;
+      margin-bottom: 2rem;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    
+    section {
+      padding: 4rem 0;
+    }
+    
+    section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2.2rem;
+    }
+    
+    section h3 {
+      margin: 2rem 0 1rem;
+      font-size: 1.6rem;
+    }
+    
+    .process-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    
+    .process-card {
+      background-color: #252525;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .process-card .card-number {
+      background-color: var(--text-color-primary);
+      color: black;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .process-card h3 {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .code-block {
+      background-color: #252525;
+      border-radius: 4px;
+      padding: 1.5rem;
+      overflow-x: auto;
+      margin: 2rem 0;
+      border-left: 4px solid var(--text-color-primary);
+      font-family: monospace;
+      white-space: pre;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    
+    .help-note {
+      background-color: rgba(255, 153, 0, 0.1);
+      border-left: 4px solid var(--text-color-primary);
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 4px;
+    }
+    
+    .help-note h4 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .help-note h4:before {
+      content: "💡";
+    }
+    
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 2rem 0;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    
+    th, td {
+      padding: 0.75rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+    
+    th {
+      background-color: #252525;
+      font-weight: bold;
+    }
+    
+    .required:after {
+      content: " *";
+      color: #d44950;
+    }
+    
+    .field-note {
+      display: block;
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.25rem;
+    }
+    
+    .contact-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    
+    .contact-option {
+      flex: 1;
+      min-width: 200px;
+      padding: 1.5rem;
+      background: #252525;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .contact-option i {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .contact-option h4 {
+      margin-bottom: 0.5rem;
+    }
+    
+    @media (max-width: 768px) {
+      section {
+        padding: 3rem 1rem;
+      }
+      
+      .registration-hero h1 {
+        font-size: 2.2rem;
+      }
+      
+      .registration-hero h2 {
+        font-size: 1.2rem;
+      }
+      
+      .code-block {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+  
+  <section class="registration-hero">
+    <div class="container">
+      <h1>Join JSCraftCamp 2025</h1>
+      <h2>Register for our free event on June 27-28, 2025</h2>
+      
+      <div>
+        <a href="https://github.com/jscraftcamp/website/new/main/participants?filename=firstname_lastname.json&value=%7B%0A%09%22realName%22%3A%20%7B%0A%09%09%22givenName%22%3A%20%22Your%20Given%20Name%22%2C%0A%09%09%22familyName%22%3A%20%22Your%20Family%20Name%22%2C%0A%09%09%22placeFamilyNameFirst%22%3A%20false%2C%0A%09%09%22hideFamilyNameOnWebsite%22%3A%20false%0A%09%7D%2C%0A%09%22githubAccountName%22%3A%20%22yourgithubhandle%22%2C%0A%09%22company%22%3A%20%22Your%20Company%22%2C%0A%09%22when%22%3A%20%7B%0A%09%09%22friday%22%3A%20true%2C%0A%09%09%22saturday%22%3A%20true%0A%09%7D%2C%0A%09%22iCanTakeNotesDuringSessions%22%3A%20true%2C%0A%09%22tags%22%3A%20%5B%22JavaScript%22%2C%20%22Your%22%2C%20%22Interests%22%2C%20%22Here%22%5D%2C%0A%09%22vegan%22%3A%20false%2C%0A%09%22vegetarian%22%3A%20false%2C%0A%09%22allergies%22%3A%20%5B%5D%2C%0A%09%22whatIsMyConnectionToJavascript%22%3A%20%22Tell%20us%20about%20your%20connection%20to%20JavaScript%20here%22%2C%0A%09%22whatCanIContribute%22%3A%20%22What%20can%20you%20contribute%20to%20the%20camp%3F%22%2C%0A%09%22tShirtSize%22%3A%20%22M%22%0A%7D" class="primary" target="_blank">Register Now via GitHub</a>
+        <a href="#registration-details" class="secondary">Learn How It Works</a>
+      </div>
+    </div>
+  </section>
+  
+  <section id="registration-details">
+    <div class="container">
+      <h2>How to Register for JSCraftCamp</h2>
+      
+      <p>JSCraftCamp uses a unique community-driven registration process. Instead of a traditional form, you'll create a simple JSON file about yourself and submit it through GitHub. This helps us build our participant page and gives you a taste of collaborative workflows used in the JavaScript community.</p>
+      
+      <div class="process-cards">
+        <div class="process-card">
+          <div class="card-number">1</div>
+          <h3>Create a JSON File</h3>
+          <p>Create a JSON file with your information following our template format. The file should be named <code>firstname_lastname.json</code>.</p>
+          <p>You can click the "Register Now" button above to get started with a pre-filled template on GitHub.</p>
+        </div>
+        
+        <div class="process-card">
+          <div class="card-number">2</div>
+          <h3>Submit a Pull Request</h3>
+          <p>Submit your file as a pull request to our GitHub repository. This adds your registration to our system.</p>
+          <p>Don't worry if you're new to GitHub - we're happy to help you through the process!</p>
+        </div>
+        
+        <div class="process-card">
+          <div class="card-number">3</div>
+          <h3>Confirmation</h3>
+          <p>Once your pull request is accepted, you're officially registered! Your name will appear on our participants page.</p>
+          <p>You'll receive updates about the event through GitHub and our community channels.</p>
+        </div>
+      </div>
+      
+      <div class="help-note">
+        <h4>Need Help?</h4>
+        <p>If you're not familiar with GitHub or pull requests, don't worry! Reach out on <a href="https://discord.gg/3mHhaXVEjP" target="_blank">Discord</a>, there is a community to guide you through the process.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="json-format">
+    <div class="container">
+      <h2>Registration JSON Format</h2>
+      
+      <p>Your registration JSON file should include the following information. The comments explain each field:</p>
+      
+      <div class="code-block">// vim: ft=jsonc
+// Please provide your info in your own .json file.
+// See https://jscraftcamp.org/registration for more information        
+
+// This is the template for your registration
+{
+    // Your real name (required by venue)
+    "realName": {
+        "givenName": "Your Given Name",
+        "familyName": "Your Family Name",
+        // if you prefer to have your family name shown first (optional)
+        "placeFamilyNameFirst": false,
+        // if you do not want to show your family name on the website (optional)
+        "hideFamilyNameOnWebsite": false
+    },
+    // Your GitHub username
+    "githubAccountName": "yourgithubhandle",
+    // Your company name (optional)
+    "company": "Your Company",
+    // Which days you'll attend (at least one must be true)
+    "when": {
+        "friday": true,    // June 27th, 2025
+        "saturday": true   // June 28th, 2025
+    },
+    // Are you willing to take session notes? (required)
+    "iCanTakeNotesDuringSessions": true,
+    // Your JavaScript interests/skills (required)
+    "tags": ["JavaScript", "React", "Node.js", "Testing"],
+    // Dietary preferences (optional)
+    "vegan": false,
+    "vegetarian": false,
+    "allergies": ["List allergies here"],
+    // Tell us about your JavaScript journey (required)
+    "whatIsMyConnectionToJavascript": "...",
+    // What you can bring to the community (required)
+    "whatCanIContribute": "...",
+    // T-shirt size if you want one (optional)
+    "tShirtSize": "M"
+}</div>
+
+      <h3>Important Registration Notes</h3>
+      
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Field</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="required">Real Name</td>
+              <td>Your real name is required for venue security. ID may be checked at entrance.</td>
+            </tr>
+            <tr>
+              <td class="required">Attendance Days</td>
+              <td>You must select at least one day (Friday/Saturday) to attend.</td>
+            </tr>
+            <tr>
+              <td class="required">Taking Notes</td>
+              <td>As a community event, we ask all participants to be willing to take notes during at least one session.</td>
+            </tr>
+            <tr>
+              <td class="required">Connection to JavaScript</td>
+              <td>Tell us a bit about your experience with JavaScript and what you're hoping to learn/share.</td>
+            </tr>
+            <tr>
+              <td>Dietary Needs</td>
+              <td>We'll do our best to accommodate dietary restrictions, but cannot guarantee all needs will be met. <span class="field-note">If you have severe allergies, please consider bringing backup food options.</span></td>
+            </tr>
+            <tr>
+              <td>Social Links</td>
+              <td>Optional links to your social profiles will be displayed on the participants page.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  
+  <section id="need-to-cancel">
+    <div class="container">
+      <h2>Need to Cancel Your Registration?</h2>
+      
+      <p>We understand plans change. If you can no longer attend JSCraftCamp, please let us know as soon as possible so we can offer your spot to someone else. You can cancel your registration in any of these ways:</p>
+      
+      <div class="contact-options">
+        <div class="contact-option">
+          <span role="img" aria-label="GitHub">📝</span>
+          <h4>Submit a PR</h4>
+          <p>Create a pull request to remove your JSON file from the repository</p>
+        </div>
+        
+        <div class="contact-option">
+          <span role="img" aria-label="GitHub Issue">🔔</span>
+          <h4>Open an Issue</h4>
+          <p>Create an issue in our GitHub repository asking to be removed</p>
+        </div>
+        
+        <div class="contact-option">
+          <span role="img" aria-label="Email">✉️</span>
+          <h4>Email Us</h4>
+          <p>Send a message to <a href="mailto:team@jscraftcamp.org">team@jscraftcamp.org</a></p>
+        </div>
+      </div>
+      
+      <div class="help-note">
+        <h4>Registration is Free</h4>
+        <p>
+          JSCraftCamp is completely free to attend thanks to our 
+          <a href="/sponsoring/">sponsors</a>. 
+          However, since spots are limited, please register only if you're confident you can attend. If your plans change, let us know promptly so others can participate.</p>
+      </div>
+    </div>
+  </section>
+  
+  {{ footer }}
+
+</body>
+</html>
