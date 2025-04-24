@@ -38,14 +38,14 @@ jobs:
       - name: Run checks for Svelte
         shell: bash
         run: |
-          pnpm run check
+          npm run check
 
       - name: Run linter
         shell: bash
         run: |
-          pnpm run lint
+          npm run lint
 
       - name: Run tests
         shell: bash
         run: |
-          pnpm run test
+          npm run test

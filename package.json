@@ -7,6 +7,10 @@
     "start": "npx http-server . -p 8000",
     
     "preview": "npm run build; npx http-server _dist -p 8000",
-    "build": "node ./build.js"
+    "build": "node ./build.js",
+    
+    "check": "",
+    "test": "",
+    "lint": ""
   }
 }
