@@ -3,13 +3,3 @@
 [build]
   publish = "_dist"
   command = "npm run build"
-
-[[redirects]]
-  from = "/old"
-  to = "/new"
-  status = 301
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "DENY"
