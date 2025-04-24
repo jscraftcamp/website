@@ -57,6 +57,7 @@ const COMPONENTS_DIR = 'src/components';
 const DIST_DIR = '_dist';
 
 const start = Date.now();
+await mkdir(DIST_DIR, {recursive: true});
 Promise.all([
   buildPages(COMPONENTS_DIR, SRC_DIR, DIST_DIR),
   buildCssFiles(COMPONENTS_DIR, DIST_DIR),
