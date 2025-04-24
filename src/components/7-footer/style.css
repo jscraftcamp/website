@@ -18,6 +18,7 @@
 .footer-section {
   flex: 1;
   min-width: 180px;
+  text-align: left;
 }
 
 .footer-section h3 {

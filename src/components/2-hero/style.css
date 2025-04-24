@@ -42,12 +42,17 @@
   font-weight: bold;
 }
 
+.hero header {
+  text-align: left;
+}
+
 .hero header h1 {
   margin: 0;
 }
 
 .hero header p {
   display: inline-block;
+  font-size: medium;
 }
 
 .hero header [role=button],
