@@ -2,7 +2,7 @@
 
 # default for all branches, overriding the UI setting on netlify.com
 [build]
-  command = "pnpm run build"
+  command = "npm run build"
   publish = "build"
 
 # Specific branch context: all deploys from this specific branch will inherit

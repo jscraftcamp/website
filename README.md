@@ -2,29 +2,13 @@
 
 # JS CraftCamp - Website
 
-## Contributing:
+## Run The Site
+- run `npm run preview`, this builds the site and serves it at `localhost:8000`
+- run `npm run dev`, this builds the site continuously when there is a changes in the src directory
+Just reload the page to see the changes.
 
-### Updated of package dependencies:
-
-- We use [renovate](https://www.mend.io/free-developer-tools/renovate/) to auto-update our dependencies, so we don't need to do that manually.
-- Please use specific package dependencies like "1.3.5": With tracking the versions it could help avoid breaking things (even while we already make use of `pnpm-lock.yaml`)
-
-## Start developing:
-
-Use `corepack enable` to make sure you have the same package manager enabled as we use in the project (`pnpm` in the version set in `package.json`).
-
-### Scripts
-
-After installing the dependencies (via `pnpm install`), run
-
-- `pnpm run dev` for starting a dev server to see the site locally
-- `pnpm run format` formatting all sources via prettier
-- `pnpm run test` verify valid participants data
-- `pnpm run build` verify that static build works
-- `pnpm run logos <year>` to create logos for a year (needs a `logo.svg` file in the specified year under `/static/logos/`)
-
-## Project Structure
-
-The website is a static page that gets built through [SvelteKit](https://kit.svelte.dev/) with their `adapter-static`. You can find the routes in the [`src/routes` directory](./src/routes).
-
-Every page is put in `+page.svelte` and may include additional components just for that page or reusable components or functions from the [`src/lib`](./src/lib) folder.
+## Development
+- you can find `src` directory with all pages and components in there
+  - `src/components` has all the parts, basically all big "boxes" that each page is made of, they are separate so they can be developed in isolation
+  - `src/pages` has all the pages
+- in `_dist` you find the build output, the final page (use `npm run preview` to serve this and see the site as it would be live)
