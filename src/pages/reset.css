@@ -21,6 +21,11 @@ body {
   background-color: var(--background-color-primary);
   padding: var(--spacing-normal);
   color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -34,6 +39,20 @@ article {
   margin-bottom: var(--spacing-normal);
   margin-right: var(--spacing-normal);
 }
+
+article:has(header h1) {
+  padding: 2rem 2rem;
+}
+article header h1 {
+  margin-bottom: 1rem;
+}
+
+article:has(h1) header p {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 600px) {
   article {
     margin-right: 0;
