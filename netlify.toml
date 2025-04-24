@@ -1,11 +1,5 @@
 # https://docs.netlify.com/configure-builds/file-based-configuration/
 
-# default for all branches, overriding the UI setting on netlify.com
 [build]
+  publish = "_dist"
   command = "npm run build"
-  publish = "build"
-
-# Specific branch context: all deploys from this specific branch will inherit
-# these settings.
-[context."gh-pages"] # 'gh-pages' is a branch name
-  ignore = "true"
