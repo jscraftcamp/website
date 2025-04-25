@@ -12,6 +12,7 @@
   
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .sponsors p.thanks span {
   margin-inline: 0 1em;
