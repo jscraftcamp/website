@@ -67,9 +67,12 @@ Promise.all([
   copyFile(join(PAGES_DIR, 'global.js'), join(DIST_DIR, 'global.js')),
   
   // the sponsors
+  copyFile(join(SPONSOR_LOGOS_DIR, 'compose-us.svg'), join(DIST_DIR, 'img/sponsors/compose-us.svg')),
   copyFile(join(SPONSOR_LOGOS_DIR, 'codecentric.webp'), join(DIST_DIR, 'img/sponsors/codecentric.webp')),
   copyFile(join(SPONSOR_LOGOS_DIR, 'deno-logo.svg'), join(DIST_DIR, 'img/sponsors/deno-logo.svg')),
+  copyFile(join(SPONSOR_LOGOS_DIR, 'peerigon.svg'), join(DIST_DIR, 'img/sponsors/peerigon.svg')),
   copyFile(join(SPONSOR_LOGOS_DIR, 'saab.svg'), join(DIST_DIR, 'img/sponsors/saab.svg')),
+  copyFile(join(SPONSOR_LOGOS_DIR, 'typedigital.svg'), join(DIST_DIR, 'img/sponsors/typedigital.svg')),
   
 ]).then(() => {
   const duration = Date.now() - start;

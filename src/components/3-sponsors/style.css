@@ -6,13 +6,13 @@
   background: #252525;
 }
 .sponsors p  {
-  overflow: scroll;
+  overflow: hidden;
   white-space: nowrap;
   scrollbar-width: none;
   
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .sponsors p.thanks span {
   margin-inline: 0 1em;
@@ -28,10 +28,18 @@
 .sponsors p.names {
   color: white;
   margin-bottom: 2em;
+  gap: 2em;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-left: 2em;
+  animation: scroll 50s linear alternate infinite;
 }
+.sponsors p.names:has(:first-child:last-child) {
+  justify-content: flex-start;
+}
+
 .sponsors p.names > * {
   color: var(--text-color-dimmed);
-  margin-inline: 0 4em;
   text-decoration: none;
   font-size: larger;
 }
@@ -40,4 +48,13 @@
 }
 .sponsors p.names .teaser {
   color: var(--text-color-primary);
+}
+
+@keyframes scroll {
+  /*0% {*/
+  /*  transform: translateX(50%);*/
+  /*}*/
+  100% {
+    transform: translateX(calc(-100% + 100vw));
+  }
 }
