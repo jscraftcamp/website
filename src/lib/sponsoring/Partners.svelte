@@ -19,7 +19,7 @@
 			image: seneca,
 			link: 'https://seneca.camp/',
 			name: 'Seneca',
-			sponsoring: '(Date/Location to be announced)'
+			sponsoring: '19.-21.09.2025'
 		}
 	];
 </script>
