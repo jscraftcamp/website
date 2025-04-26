@@ -10,6 +10,7 @@
 	import patrick from './patrick.jpg';
 	import sebastian from './sebastian.jpg';
 	import simon from './simon.png';
+	import robert from './robert.png';
 </script>
 
 <PageLayout>
@@ -32,6 +33,7 @@
 			email="sebastian.frerichs@codecentric.de"
 		/>
 		<TeamMember image={simon} name="Simon Hofmann" email="simon@s1h.org" />
+		<TeamMember image={robert} name="Robert Hostlowsky" />
 	</TeamMemberSection>
 
 	<p>Looking for the current team members? <a href="{base}/team">Check the /team page</a>!</p>

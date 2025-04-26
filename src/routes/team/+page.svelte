@@ -3,7 +3,6 @@
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 	import joern from './joern.jpg';
-	import robert from './robert.png';
 	import bernd from './bernd.webp';
 	import fii from './fii.jpg';
 	import philip from './philip.jpeg';
@@ -55,7 +54,6 @@
 			linkedin="https://www.linkedin.com/in/philipsaa/"
 			name="Philip Saa"
 		/>
-		<TeamMember image={robert} name="Robert Hostlowsky" />
 		<TeamMember
 			image={sina}
 			linkedin="https://www.linkedin.com/in/sina-aschenbrenner-146aa8229/"
