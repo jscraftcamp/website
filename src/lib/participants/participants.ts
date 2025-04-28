@@ -8,13 +8,14 @@ import { parse } from 'jsonc-parser';
 import { join } from 'node:path';
 
 export const orgaMembers = [
+	{ givenName: 'Ariadne', familyName: 'Engelbrecht' },
 	{ givenName: 'Bernd', familyName: 'Kaiser' },
 	{ givenName: 'Jörn', familyName: 'Bernhardt' },
 	{ givenName: 'Leo', familyName: 'Kettmeir' },
+	{ givenName: 'Michael', familyName: 'Zoidl' },
+	{ givenName: 'Patrick', familyName: 'Piedad' },
 	{ givenName: 'Philip', familyName: 'Saa' },
-	{ givenName: 'Robert', familyName: 'Hostlowsky' },
 	{ givenName: 'Sina', familyName: 'Aschenbrenner' },
-	{ givenName: 'Stefanie', familyName: 'Hasler' },
 	{ givenName: 'Wolfram', familyName: 'Kriesing' }
 ];
 

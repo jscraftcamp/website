@@ -14,8 +14,8 @@
 					<li><a href="{base}/">Home</a></li>
 					<li><a href="{base}/sponsoring">Sponsoring</a></li>
 					<li><a href="{base}/values">Values</a></li>
-					<li><a href="{base}/imprint">Imprint</a></li>
-					<li><a href="{base}/imprint#datenschutz">Privacy Policy</a></li>
+					<li><a href="{base}/legal">Legal</a></li>
+					<li><a href="{base}/legal#datenschutz">Privacy Policy</a></li>
 				</ul>
 			</nav>
 		</section>

@@ -5,8 +5,8 @@
 	import TeamMemberSection from '../TeamMemberSection.svelte';
 	import agnes from './agnes.png';
 	import david from './david.jpg';
+	import fii from './fii.jpg';
 	import marco from './marco.jpg';
-	import michael from './michael.png';
 	import patrick from './patrick.jpg';
 	import sebastian from './sebastian.jpg';
 	import simon from './simon.png';
@@ -25,7 +25,6 @@
 		<TeamMember image={david} name="David Losert" email="david@david-losert.com" />
 		<TeamMember name="Gustaf Graf" />
 		<TeamMember image={marco} name="Marco Emrich" email="marco.emrich@codecentric.de" />
-		<TeamMember image={michael} name="Michael Zoidl" email="michael@alm.sh" />
 		<TeamMember image={patrick} name="Patrick Müller" email="mp@floatec.de" />
 		<TeamMember
 			image={sebastian}
@@ -33,6 +32,11 @@
 			email="sebastian.frerichs@codecentric.de"
 		/>
 		<TeamMember image={simon} name="Simon Hofmann" email="simon@s1h.org" />
+		<TeamMember
+			image={fii}
+			linkedin="https://www.linkedin.com/in/stefanie-hasler-05458a4/"
+			name="Stefanie (Fii) Hasler"
+		/>
 		<TeamMember image={robert} name="Robert Hostlowsky" />
 	</TeamMemberSection>
 

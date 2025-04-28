@@ -2,11 +2,13 @@
 	import { base } from '$app/paths';
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
-	import joern from './joern.jpg';
+	import ariadne from './ariadne.jpg';
 	import bernd from './bernd.webp';
-	import fii from './fii.jpg';
-	import philip from './philip.jpeg';
+	import joern from './joern.jpg';
 	import leo from './leo.webp';
+	import michael from './michael.png';
+	import patrickp from './patrickp.png';
+	import philip from './philip.jpeg';
 	import sina from './sina.jpeg';
 	import wolfram from './wolfram.jpg';
 	import TeamMember from './TeamMember.svelte';
@@ -33,6 +35,12 @@
 
 	<TeamMemberSection>
 		<TeamMember
+			image={ariadne}
+			linkedin="https://www.linkedin.com/in/ariadne-engelbrecht/"
+			name="Ariadne Engelbrecht"
+			email="Ariadne.Engelbrecht@curiosdevcookie.dev"
+		/>
+		<TeamMember
 			image={bernd}
 			linkedin="https://www.linkedin.com/in/bernd-kaiser/"
 			name="Bernd Kaiser"
@@ -49,6 +57,13 @@
 			name="Leo Kettmeir"
 			email="leo@deno.com"
 		/>
+		<TeamMember image={michael} name="Michael Zoidl" email="michael@alm.sh" />
+		<TeamMember
+			image={patrickp}
+			name="Patrick Piedad"
+			email="patrickpiedad@gmail.com"
+			linkedin="https://www.linkedin.com/in/patrick-piedad/"
+		/>
 		<TeamMember
 			image={philip}
 			linkedin="https://www.linkedin.com/in/philipsaa/"
@@ -58,12 +73,6 @@
 			image={sina}
 			linkedin="https://www.linkedin.com/in/sina-aschenbrenner-146aa8229/"
 			name="Sina Aschenbrenner"
-		/>
-		<TeamMember
-			image={fii}
-			linkedin="https://www.linkedin.com/in/stefanie-hasler-05458a4/"
-			name="Stefanie (Fii) Hasler"
-			email="stefanie.hasler@gmail.com"
 		/>
 		<TeamMember
 			image={wolfram}
