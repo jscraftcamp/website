@@ -7,7 +7,6 @@
 	import david from './david.jpg';
 	import fii from './fii.jpg';
 	import marco from './marco.jpg';
-	import michael from './michael.png';
 	import patrick from './patrick.jpg';
 	import sebastian from './sebastian.jpg';
 	import simon from './simon.png';

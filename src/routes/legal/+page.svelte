@@ -10,11 +10,11 @@
 		<InfoBox title="Kontakt">
 			<p>
 				<strong>E-Mail:</strong><br />
-				wolfram+jscraftcamp@kriesing.de
+				joern.bernhardt+jscc@compose.us
 			</p>
 			<p>
 				<strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br />
-				Wolfram Kriesing, Richard-Strauss-Str. 21 81677 Muenchen
+				Jörn Bernhardt, Goethestr. 46, 84032 Landshut
 			</p>
 		</InfoBox>
 		<InfoBox title="Haftung für Inhalte">
