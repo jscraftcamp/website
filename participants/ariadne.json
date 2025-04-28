@@ -36,7 +36,7 @@
   // IMPORTANT: we cannot guarantee that food for every diet will be available,
   //            if you have gluten free diet, please make backup plans.
   "allergies": [
-    ""
+    "None"
   ],
   // tell us a few words how JavaScript affects you (required)
   "whatIsMyConnectionToJavascript": "Vanilla JS was my first love.",
