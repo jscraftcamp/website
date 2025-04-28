@@ -1,2 +1,11 @@
 export const isSponsor = (key: string) =>
-	['codecentric', 'compose-us', 'deno', 'peerigon', 'saab', 'typedigital'].includes(key);
+	[
+		'all-prints-cut-com',
+		'codecentric',
+		'compose-us',
+		'deno',
+		'inspired-consulting',
+		'peerigon',
+		'saab',
+		'typedigital'
+	].includes(key);
