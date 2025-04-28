@@ -35,9 +35,7 @@
   // what you cannot eat or drink (optional); If you don't want to put it in here, message the organizers.
   // IMPORTANT: we cannot guarantee that food for every diet will be available,
   //            if you have gluten free diet, please make backup plans.
-  "allergies": [
-    "None"
-  ],
+  "allergies": [],
   // tell us a few words how JavaScript affects you (required)
   "whatIsMyConnectionToJavascript": "Vanilla JS was my first love.",
   // what can you contribute to the bar camp (required)
