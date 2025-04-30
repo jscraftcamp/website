@@ -12,7 +12,6 @@
 	import WhatToExpect from './WhatYouCanExpect.svelte';
 	import {
 		getRegistrationState,
-		registrationClosessAt,
 		registrationOpensAt,
 		timeLeft
 	} from '$lib/participants/registration';
@@ -32,10 +31,13 @@
 	const registrationState = writable<'not-yet' | 'closed' | 'open'>(getRegistrationState());
 	const updateCountdown = () => {
 		const now = +new Date();
-		if (registrationOpensAt <= now && now <= registrationClosessAt) {
-			$registrationState = 'closed';
+
+		const state = getRegistrationState();
+		if (state !== 'not-yet') {
+			$registrationState = state;
 			return;
 		}
+
 		const { days, hours, minutes, seconds } = timeLeft(now, registrationOpensAt);
 		const timeAsStringArray = [
 			days > 0 ? `${days} days` : '',
