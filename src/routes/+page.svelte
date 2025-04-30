@@ -33,7 +33,7 @@
 	const updateCountdown = () => {
 		const now = +new Date();
 		if (registrationOpensAt <= now && now <= registrationClosessAt) {
-			$registrationState = 'closed';
+			$registrationState = 'open';
 			return;
 		}
 		const { days, hours, minutes, seconds } = timeLeft(now, registrationOpensAt);
