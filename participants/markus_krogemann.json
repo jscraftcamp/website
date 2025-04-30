@@ -1,0 +1,29 @@
+{
+	"realName": {
+		"givenName": "Markus",
+		"familyName": "Krogemann",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "mkrogemann",
+	"company": "Markus Krogemann",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+  "tags": [
+    "TypeScript",
+    "Tailwind CSS",
+    "Astro",
+    "AWS"
+  ],
+	"vegan": false,
+	"vegetarian": false,
+  "allergies": [],
+	"whatIsMyConnectionToJavascript": "Mainly wanting to learn more about language, ecosystem and community",
+	"whatCanIContribute": "Lots of curiosity and anecdotes on failed endeavours",
+	"tShirtSize": "XL",
+	"linkedin": "https://www.linkedin.com/in/mkrogemann/",
+  "website": "https://just-cues.krogemann.de"
+}
