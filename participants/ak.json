@@ -1,0 +1,28 @@
+{
+	"realName": {
+		"givenName": "Andreas",
+		"familyName": "Kottre",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "timidak",
+	// company name (optional)
+	"company": "typedigital GmbH",
+	"when": {
+		// June 27th, 2025
+		"friday": true,
+		// June 28th, 2025
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["Architecture", "TypeScript", "Zustand", "GraphQL", "Go"],
+	"vegan": true,
+	"vegetarian": false,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "At our company we use JS daily and I love it.",
+	"whatCanIContribute": "Maybe a lightning talk",
+	"tShirtSize": "L",
+	"mastodon": "@timidak@mastodon.social",
+	"linkedin": "https://www.linkedin.com/in/andreas-kottre/",
+	"website": "https://typedigital.de"
+}
