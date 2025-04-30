@@ -31,7 +31,8 @@
 				>.
 				<br />
 				<sup>2</sup> Click
-				<a href="https://github.com/jscraftcamp/website/new/main/participants?filename=YOUR_NAME.json"
+				<a
+					href="https://github.com/jscraftcamp/website/new/main/participants?filename=YOUR_NAME.json"
 					>this link to start the process on the github page</a
 				>
 				to create the JSONC file in the repo. Make sure you are logged in to github.
