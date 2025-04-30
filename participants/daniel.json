@@ -1,0 +1,20 @@
+// vim: ft=jsonc
+{
+    "realName": {
+        "givenName": "Daniel",
+        "familyName": "Danner",
+        "hideFamilyNameOnWebsite": true
+    },
+    "githubAccountName": "dnnr",
+    "when": {
+        // June 27th, 2025
+        "friday": true,
+        // June 28th, 2025
+        "saturday": true
+    },
+    "iCanTakeNotesDuringSessions": false,
+    "tags": ["C#", "Observability", "TypeScript", "PostgreSQL", "UX", "Distributed Systems"],
+    "whatIsMyConnectionToJavascript": "I tried, but I can't escape it...",
+    "whatCanIContribute": "No PR drama this time <3",
+    "tShirtSize": "M"
+}
