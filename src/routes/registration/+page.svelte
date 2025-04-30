@@ -26,11 +26,13 @@
 
 			<p>
 				<sup>1</sup>
-				<a href="https://www.npmjs.com/package/jsonc-parser">JSONC is JSON with JavaScript style comments</a>.
+				<a href="https://www.npmjs.com/package/jsonc-parser"
+					>JSONC is JSON with JavaScript style comments</a
+				>.
 				<br />
 				<sup>2</sup> Click
-				<a href="https://github.com/jscraftcamp/website/new/main/participants">this link to start the process on the
-					github page</a
+				<a href="https://github.com/jscraftcamp/website/new/main/participants"
+					>this link to start the process on the github page</a
 				>
 				to create the JSONC file in the repo. Make sure you are logged in to github.
 			</p>
@@ -43,9 +45,9 @@
 				</li>
 				<li>
 					If you don't want to put in allergies or anything else, drop us a message at <a
-					href="https://discord.gg/3mHhaXVEjP"
-					rel="external">Discord</a
-				>
+						href="https://discord.gg/3mHhaXVEjP"
+						rel="external">Discord</a
+					>
 					or <a href="mailto:team@jscraftcamp.org">team@jscraftcamp.org</a>.
 				</li>
 				<li>
@@ -59,13 +61,13 @@
 				</li>
 				<li>
 					Please read the JSON comments, they should explain every field, and if you have questions <a
-					href="mailto:team@jscraftcamp.org">reach out</a
-				>.
+						href="mailto:team@jscraftcamp.org">reach out</a
+					>.
 				</li>
 				<li>
 					If you have any improvement suggestions, please <a href="mailto:team@jscraftcamp.org"
-				>let us know</a
-				>.
+						>let us know</a
+					>.
 				</li>
 			</ul>
 		</InfoBox>
@@ -80,7 +82,7 @@
 				To test if your JSON file is a valid registration you can run <code>pnpm run test</code>
 				(more details about this are in the
 				<a href="https://github.com/jscraftcamp/website/tree/main/README.md" rel="external"
-				><code>README.md</code></a
+					><code>README.md</code></a
 				> file). Invalid registrations will be rejected. If you need any help with registration, don't
 				hesitate to contact one of the team.
 			</p>
@@ -97,19 +99,19 @@
 </PageLayout>
 
 <style>
-    section {
-        display: flex;
-        flex-flow: column;
-        gap: 2em;
-        max-width: 100%;
-    }
+	section {
+		display: flex;
+		flex-flow: column;
+		gap: 2em;
+		max-width: 100%;
+	}
 
-    pre {
-        max-width: 100%;
-        overflow: auto;
-    }
+	pre {
+		max-width: 100%;
+		overflow: auto;
+	}
 
-    sup {
-        line-height: 0; /* Remove the change in line height for lines with <sup> in them, makes these lines with <sup>s be higher, which renders ugly. */
-    }
+	sup {
+		line-height: 0; /* Remove the change in line height for lines with <sup> in them, makes these lines with <sup>s be higher, which renders ugly. */
+	}
 </style>
