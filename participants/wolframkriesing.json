@@ -13,7 +13,7 @@
 	},
 	// please put in the account name of the PR creator, if you sign up somebody else
 	"githubAccountName": "wolframkriesing",
-	"codeRepositories": ["https://codeberg.org/wolframkriesing", "https://github.com/wolframkriesing"],
+	//"codeRepositories": ["https://codeberg.org/wolframkriesing", "https://github.com/wolframkriesing"], would be nice to have, since i dont use github much anymore
 	// company name (optional)
 	"company": "Freelancer",
 	// either both days or at least one day has to be set to true.
