@@ -1,0 +1,26 @@
+{
+  "realName": {
+    "givenName": "Oleksandr",
+    "familyName": "Markovskyi",
+    "placeFamilyNameFirst": false,
+    "hideFamilyNameOnWebsite": false
+  },
+  "githubAccountName": "",
+  "company": "",
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  "iCanTakeNotesDuringSessions": true,
+  "tags": ["React", "Next.js", "Angular", "Vue.js", "Node.js", "NestJS", "Microservices"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": [],
+  "whatIsMyConnectionToJavascript": "I use JavaScript daily as a Full Stack Engineer and build AI and civic tech products with it.",
+  "whatCanIContribute": "",
+  "tShirtSize": "XL",
+  "mastodon": "",
+  "linkedin": "https://www.linkedin.com/in/oleksandr-markovskyi/",
+  "X": "",
+  "website": ""
+}
