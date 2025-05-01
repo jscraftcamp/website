@@ -1,4 +1,4 @@
-I would like to register for JS CraftCamp.
+**I would like to register for JS CraftCamp.**
 
 - [ ] My pull request contains a JSON file `$name_or_nickname.json`
 - [ ] I read the `THE IMPORTANT STUFF` at [https://jscraftcamp.org/registration](https://jscraftcamp.org/registration), the JSON file follows the [template](https://github.com/jscraftcamp/website/blob/main/participants/_template.json), and contains the mandatory fields like `realName`, `githubAccountName`, `when`, `iCanTakeNotesDuringSessions`, `whatIsMyConnectionToJavascript` and `whatCanIContribute`.
@@ -8,6 +8,10 @@ I would like to register for JS CraftCamp.
 - [ ] I understand that I might NOT get a T-Shirt, because they might be in production already
 - [ ] I asked my company about sponsoring (see open items at: https://github.com/orgs/jscraftcamp/projects/10)
 
-Are you from a sponsoring company?
+**Are you from a sponsoring company?**
 
 - [ ] Yes, I am from company ?????
+
+**Optional GIF to show my level of excitement**
+
+<!-- If you like to share some fun GIF with us, try to drag & drop something from giphy.com here ;) -->
