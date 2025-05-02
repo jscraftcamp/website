@@ -13,7 +13,7 @@
 			image: socrates,
 			link: 'https://www.socrates-conference.de/',
 			name: 'SoCraTes',
-			sponsoring: '(Date/Location to be announced)'
+			sponsoring: 'July 17 - 20, 2025, Hotel Park Soltau, Germany'
 		},
 		{
 			image: seneca,
