@@ -1,13 +1,17 @@
 <script lang="ts">
 	import type { Sponsor } from './is-sponsor';
 
-	export let title: string;
-	export let sponsors: Sponsor[] = [];
+	interface Props {
+		title: string;
+		sponsors?: Sponsor[];
+	}
+
+	let { title, sponsors = [] }: Props = $props();
 </script>
 
 <h2>{title}</h2>
 <section>
-	{#each sponsors as sponsor}
+	{#each sponsors as sponsor (sponsor.name)}
 		<a href={sponsor.link} rel="external">
 			<div class="box">
 				<div class="image"><img src={sponsor.image} alt={sponsor.name} /></div>

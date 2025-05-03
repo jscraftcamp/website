@@ -26,7 +26,7 @@
 			>.
 		</p>
 		<p>
-			There are <a href="{base}/participants/stats/2023">statistics available for the JSCC23</a>.
+			There are <a href="{base}/events/2023/stats">statistics available for the JSCC23</a>.
 		</p>
 	</InfoBox>
 	<Sponsors2023 />

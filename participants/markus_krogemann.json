@@ -12,12 +12,18 @@
 		"saturday": true
 	},
 	"iCanTakeNotesDuringSessions": true,
-	"tags": ["TypeScript", "Astro", "Svelte"],
+  "tags": [
+    "TypeScript",
+    "Tailwind CSS",
+    "Astro",
+    "AWS"
+  ],
 	"vegan": false,
 	"vegetarian": false,
-	"whatIsMyConnectionToJavascript": "I wish to learn more about everything around JS/TS, eco-systems, frameworks, trends, ...",
-	"whatCanIContribute": "pool billard - including a playing cue for whoever wants to play with me",
+  "allergies": [],
+	"whatIsMyConnectionToJavascript": "Mainly wanting to learn more about language, ecosystem and community",
+	"whatCanIContribute": "Lots of curiosity and anecdotes on failed endeavours",
 	"tShirtSize": "XL",
 	"linkedin": "https://www.linkedin.com/in/mkrogemann/",
-	"website": "https://just-cues.krogemann.de"
+  "website": "https://just-cues.krogemann.de"
 }

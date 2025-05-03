@@ -1,9 +1,14 @@
 <script lang="ts">
-	export let style: string | undefined = undefined;
+	interface Props {
+		style?: string | undefined;
+		children?: import('svelte').Snippet;
+	}
+
+	let { style = undefined, children }: Props = $props();
 </script>
 
 <div {style}>
-	<slot />
+	{@render children?.()}
 </div>
 
 <style>

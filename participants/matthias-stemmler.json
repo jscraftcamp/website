@@ -1,3 +1,4 @@
+// vim: ft=jsonc
 // Please provide your info in your own .json file.
 // See https://jscraftcamp.org/registration for more information
 {
@@ -14,17 +15,18 @@
 	"githubAccountName": "ms-tng",
 	// company name (optional)
 	"company": "TNG Technology Consulting GmbH",
-	// either both days or at least one day has to be set to true
+	// either both days or at least one day has to be set to true.
+	// If you cannot make one of the days, please set it to false, to allow someone else take that spot!
 	"when": {
-		// June 7th, 2024
+		// June 27th, 2025
 		"friday": true,
-		// June 8th, 2024
+		// June 28th, 2025
 		"saturday": true
 	},
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": true,
 	// your current interests (JS and in general) (required)
-	"tags": ["Kotlin", "Nx", "React", "Rollup", "Rust", "State management", "Tauri", "TypeScript", "Vite"],
+	"tags": ["Kotlin", "Nx", "React", "Rust", "State management", "Tauri", "TypeScript", "Vite"],
 	// if you only eat vegan food (optional)
 	"vegan": true,
 	// if you only eat vegan or vegetarian food (optional)
@@ -32,7 +34,6 @@
 	// what you cannot eat or drink (optional); If you don't want to put it in here, message the organizers.
 	// IMPORTANT: we cannot guarantee that food for every diet will be available,
 	//            if you have gluten free diet, please make backup plans.
-	
 	// tell us a few words how JavaScript affects you (required)
 	"whatIsMyConnectionToJavascript": "I use it daily in my job as a Software Consultant and in private projects",
 	// what can you contribute to the bar camp (required)
@@ -41,11 +42,9 @@
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
 	"tShirtSize": "M",
 	// your Mastodon URL (optional)
-
+	"mastodon": null,
 	// your LinkedIn profile URL
 	"linkedin": "https://de.linkedin.com/in/matthias-stemmler-61607ab3",
-	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
-	
 	// your website URL or other social media (optional)
-	
+	"website": null
 }
