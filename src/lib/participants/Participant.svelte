@@ -29,9 +29,9 @@
 			{#if participant.iCanTakeNotesDuringSessions}<span class="nt" title="offers to take notes"
 					>📝</span
 				>{/if}
-			{#if participant.when.friday}<span class="fr" title="will attend Friday, 30th June">Fr</span
+			{#if participant.when.friday}<span class="fr" title="will attend Friday, 27th June">Fr</span
 				>{/if}
-			{#if participant.when.saturday}<span class="sa" title="will attend Saturday, 1st July"
+			{#if participant.when.saturday}<span class="sa" title="will attend Saturday, 28th June"
 					>Sa</span
 				>{/if}
 		</div>

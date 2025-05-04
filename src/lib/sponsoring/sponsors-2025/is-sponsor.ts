@@ -4,6 +4,7 @@ export const isSponsor = (key: string) =>
 		'codecentric',
 		'compose-us',
 		'deno',
+		'inovex',
 		'inspired-consulting',
 		'peerigon',
 		'saab',
