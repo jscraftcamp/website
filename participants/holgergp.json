@@ -11,7 +11,7 @@
 	// please put in the account name of the PR creator, if you sign up somebody else
 	"githubAccountName": "holgergp",
 	// company name (optional)
-	"company": "looking for a new job",
+	"company": "JobRad",
 	// either both days or at least one day has to be set to true
 	"when": {
 		"friday": true,
@@ -20,7 +20,7 @@
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": false,
 	// your current interests (JS and in general) (required)
-	"tags": ["ReactJS", "Nextjs", "TypeScript", "Testing", "Youtube", "papperlapapp.dev", "Podcasting", "autoweird.fm"],
+	"tags": ["ReactJS", "Nextjs", "TypeScript", "Testing", "Youtube", "papperlapapp.dev", "Podcasting", "@autoweird.fm"],
 	// if you only eat vegan food (optional)
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
@@ -32,7 +32,7 @@
 	// tell us a few words how JavaScript affects you (required)
 	"whatIsMyConnectionToJavascript": "For reasons and university: First thing I did was to tinker with the native Mozilla SOAP integration. Stayed nontheless.",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "I can do sth about React Server Components, might do a session on youtubing/podcasting",
+	"whatCanIContribute": "I like to talk about react and its flavors, I like to learn about anything new in the JavaScript and frontend space. I could do a session on youtubing/podcasting",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
 	"tShirtSize": "M",
@@ -42,5 +42,4 @@
 	"linkedin": "https://www.linkedin.com/in/holgergp/",
 	// your website URL or other social media (optional)
 	"website": "https://grosse-plankermann.com",
-	"X": "holgergp"
 }
