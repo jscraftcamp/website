@@ -41,7 +41,7 @@
 	"whatCanIContribute": "Angular latest features such as signals API and reactive programming",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
-	"tShirtSize": "S",
+	"tShirtSize": "M",
 	// your Mastodon URL (optional)
 	"mastodon": "",
 	// your LinkedIn profile URL
