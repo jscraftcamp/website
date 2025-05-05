@@ -38,7 +38,7 @@
 	// tell us a few words how JavaScript affects you (required)
 	"whatIsMyConnectionToJavascript": "I've been working with JavaScript professionally for 15+ years and it's a passion for me.",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "frontend development expertise with React and TypeScript, practical experience integrating LLMs and AI into web applications, knowledge sharing on modern JavaScript patterns, and I'm happy to lead discussions or workshops on AI-powered frontend development. I can also contribute insights on building performant web applications and share real-world experiences from professional projects.",
+	"whatCanIContribute": "frontend development expertise with React and TypeScript, practical experience integrating LLMs and AI into web applications, knowledge sharing on modern JavaScript patterns",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
 	"tShirtSize": "S",
