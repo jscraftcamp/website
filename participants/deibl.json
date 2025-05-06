@@ -36,9 +36,9 @@
 	//            if you have gluten free diet, please make backup plans.
 	"allergies": [],
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "I am doing Fullstack in an environment containing multiple frontends for different user groups. After i started doing backend and the ugly stuff we had before fancy frameworks (things like GWT, JSF, Wicket), i am using vue and react since five years as Fullstack developer.",
+	"whatIsMyConnectionToJavascript": "I am working as a Fullstack developer in an environment with multiple frontends for different user groups. After starting with backend development and the ugly stuff we used before modern frameworks (like GWT, JSF, and Wicket), I have been using Vue and React for the past five years as a Fullstack developer.",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "10 year of experience in different industries. Experience in building cooperative web application using websockets and CQRS. Insides in working in health tech industry in germany.",
+	"whatCanIContribute": "10 years of experience in various industries. Experienced in building collaborative web applications using WebSockets and CQRS. Insights into working in the health tech industry in Germany.",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
 	"tShirtSize": "XL",
