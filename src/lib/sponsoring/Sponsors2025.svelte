@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { Sponsor } from './is-sponsor';
 	import allPrintCut from './sponsors-2025/all-print-cut-com.svg';
+	import alm from './sponsors-2025/alm-logo-2022.svg';
 	import codecentric from './sponsors-2025/codecentric.png';
 	import composeus from './sponsors-2025/compose-us.svg';
 	import deno from './sponsors-2025/deno-full-light-transparent.svg';
@@ -9,6 +10,7 @@
 	import peerigon from './sponsors-2025/peerigon.svg';
 	import saab from './sponsors-2025/saab.svg';
 	import typedigital from './sponsors-2025/typedigital.svg';
+	import tiffingerthiel from './sponsors-2025/tiffinger-thiel.svg';
 	import Sponsors from './Sponsors.svelte';
 
 	const sponsors: Array<Sponsor> = [
@@ -17,6 +19,12 @@
 			link: 'https://allprintcut.com/',
 			name: 'All Print Cut',
 			sponsoring: 'Stickers'
+		},
+		{
+			image: alm,
+			link: 'https://alm.sh',
+			name: 'alm engineering',
+			sponsoring: '500 €'
 		},
 		{
 			image: codecentric,
@@ -58,7 +66,13 @@
 			image: saab,
 			link: 'https://www.saab.com',
 			name: 'Saab',
-			sponsoring: 'Breakfast'
+			sponsoring: 'Breakfast & Energy Drinks'
+		},
+		{
+			image: tiffingerthiel,
+			link: 'https://tiffinger-thiel.de/',
+			name: 'Tiffinger & Thiel GmbH',
+			sponsoring: 'Beverages'
 		},
 		{
 			image: typedigital,
