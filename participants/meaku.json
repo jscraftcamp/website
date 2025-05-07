@@ -24,6 +24,7 @@
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
 	"vegetarian": true,
+	"tShirtSize": "M",
 	// what you cannot eat or drink (optional); If you don't want to put it in here, message the organizers.
 	// IMPORTANT: we cannot guarantee that food for every diet will be available,
 	//            if you have gluten free diet, please make backup plans.
