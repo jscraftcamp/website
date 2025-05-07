@@ -1,0 +1,39 @@
+{
+	// your real name (required by location host)
+	"realName": {
+		"givenName": "Michael",
+		"familyName": "Jaser",
+	},
+	// please put in the account name of the PR creator, if you sign up somebody else
+	"githubAccountName": "meaku",
+	// company name (optional)
+	"company": "Peerigon GmbH",
+	// either both days or at least one day has to be set to true.
+	// If you cannot make one of the days, please set it to false, to allow someone else take that spot!
+	"when": {
+		// June 27th, 2025
+		"friday": true,
+		// June 28th, 2025
+		"saturday": false
+	},
+	// if you are willing to take session notes and publish them to github (required)
+	"iCanTakeNotesDuringSessions": true,
+	// your current interests (JS and in general) (required)
+	"tags": ["Green Software", "Cloudflare Workers", "Vibe Coding", "LLMs", "MCP", "Deno"],
+	// if you only eat vegan food (optional)
+	"vegan": false,
+	// if you only eat vegan or vegetarian food (optional)
+	"vegetarian": true,
+	// what you cannot eat or drink (optional); If you don't want to put it in here, message the organizers.
+	// IMPORTANT: we cannot guarantee that food for every diet will be available,
+	//            if you have gluten free diet, please make backup plans.
+	"allergies": [],
+	// tell us a few words how JavaScript affects you (required)
+	"whatIsMyConnectionToJavascript": "Always bet on JS",
+	// what can you contribute to the bar camp (required)
+	"whatCanIContribute": "Possible session: green software, cloudflare workers, fun with MCPs",
+	// your LinkedIn profile URL
+	"linkedin": "https://www.linkedin.com/in/michael-jaser",
+	// your website URL or other social media (optional)
+	"website": "https://www.peerigon.com"
+}
