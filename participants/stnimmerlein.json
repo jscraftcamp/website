@@ -38,7 +38,7 @@
 	// tell us a few words how JavaScript affects you (required)
 	"whatIsMyConnectionToJavascript": "From a previous JavaScript sceptic, TypeScript has grown to become my most beloved programming language. I use it at work but also in my free time, e. g. in the annual Advent of Code.",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "I can show the wonders and versatility of the TypeScript type system, show interesting usages of TypeScript decorators and have a profound knowledge in Angular as well as in automated unit testing with jest that I can share. Also, I can contribute my curiosity to learn new stuff ;-)",
+	"whatCanIContribute": "I can showcase TypeScript’s versatile type system and decorator usage, share deep expertise in Angular and Jest unit testing, and bring enthusiasm for learning new technologies.",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
 	"tShirtSize": "L",
