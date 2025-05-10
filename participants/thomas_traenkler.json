@@ -17,15 +17,15 @@
 	"company": "Loopdive GmbH",
 	// either both days or at least one day has to be set to true
 	"when": {
-		// June 7th, 2024
+		// June 27th, 2025
 		"friday": true,
-		// June 8th, 2024
+		// June 28th, 2025
 		"saturday": true
 	},
 	// if you are willing to take session notes and publish them to github (required)
-	"iCanTakeNotesDuringSessions": true,
+	"iCanTakeNotesDuringSessions": false,
 	// your current interests (JS and in general) (required)
-	"tags": ["Web Components", "Typescript", "LLMs", "WebAssembly"],
+	"tags": ["Startup", "Web Components", "Typescript", "LLMs", "WebAssembly"],
 	// if you only eat vegan food (optional)
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
