@@ -1,0 +1,24 @@
+{
+  "realName": {
+    "givenName": "Philip",
+    "familyName": "Saa",
+    "placeFamilyNameFirst": false,
+    "hideFamilyNameOnWebsite": false
+  },
+  "githubAccountName": "cowglow",
+  "company": "Saab",
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  "iCanTakeNotesDuringSessions": true,
+  "tags": ["Indie Web", "A/V", "React", "Svelte", "TypeScript", "Playwright"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": [],
+  "whatIsMyConnectionToJavascript": "I joined the internet in 1996 and I am currently working with JavaScript/TypeScript",
+  "whatCanIContribute": "I can help you with hurdles you might have when it comes to creating audio/video content.",
+  "tShirtSize": "3XL",
+  "linkedin": "https://www.linkedin.com/in/philipsaa/",
+  "website": "https://www.cowglow.com"
+}

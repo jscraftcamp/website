@@ -1,15 +1,9 @@
 <script lang="ts">
 	import InfoBox from '$lib/layout/InfoBox.svelte';
-	import PersonLink from '$lib/layout/PersonLink.svelte';
 </script>
 
 <InfoBox title="Friday schedule">
-	<p>
-		JSCraftCamp 2023 was facilitated by <PersonLink
-			linkedIn="https://www.linkedin.com/in/w3ltraumpirat/"
-			mastodon="https://mastodon.social/@weltraumpirat">Tobias Goeschel</PersonLink
-		>!
-	</p>
+	<p>JSCraftCamp 2025 will be facilitated by ... to be announced!</p>
 	<ol>
 		<li>09:00 - 10:00 Doors open, breakfast</li>
 		<li>10:00 - 11:00 Opening and Marketplace</li>
@@ -17,7 +11,7 @@
 		<li>13:00 - 14:00 Lunch</li>
 		<li>14:00 - 17:00 Three session slots</li>
 		<li>17:00 - 18:00 Review and Learnings</li>
-		<li>18:00 - 22:00 BBQ, board games, networking, party</li>
+		<li>18:00 - 22:00 Pizza, board games, networking, party</li>
 	</ol>
 </InfoBox>
 <InfoBox title="Saturday schedule">
@@ -27,7 +21,7 @@
 		understand the format better if you missed the Opening on Friday.
 	</p>
 	<ol>
-		<li>09:00 - 10:00 Doors open, breakfast (if sponsor)</li>
+		<li>09:00 - 10:00 Doors open, breakfast</li>
 		<li>10:00 - 11:00 Marketplace</li>
 		<li>11:00 - 13:00 Two session slots</li>
 		<li>13:00 - 14:00 Lunch</li>

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import Logo from './Logo.svelte';
+	import Logo from './Logo';
 	import netlify from './netlify.svg';
 </script>
 
@@ -14,8 +14,8 @@
 					<li><a href="{base}/">Home</a></li>
 					<li><a href="{base}/sponsoring">Sponsoring</a></li>
 					<li><a href="{base}/values">Values</a></li>
-					<li><a href="{base}/imprint">Imprint</a></li>
-					<li><a href="{base}/imprint#datenschutz">Privacy Policy</a></li>
+					<li><a href="{base}/legal">Legal</a></li>
+					<li><a href="{base}/legal#datenschutz">Privacy Policy</a></li>
 				</ul>
 			</nav>
 		</section>
@@ -34,6 +34,9 @@
 			<h3>Archive</h3>
 			<nav>
 				<ul>
+					<li>
+						<a href="{base}/events/2024">2024</a>
+					</li>
 					<li>
 						<a href="{base}/events/2023">2023</a>
 					</li>

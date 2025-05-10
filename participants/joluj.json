@@ -1,3 +1,4 @@
+// vim: ft=jsonc
 // Please provide your info in your own .json file.
 // See https://jscraftcamp.org/registration for more information
 {
@@ -13,18 +14,19 @@
 	// please put in the account name of the PR creator, if you sign up somebody else
 	"githubAccountName": "joluj",
 	// company name (optional)
-	"company": "FAU Erlangen-Nürnberg",
-	// either both days or at least one day has to be set to true
+	// "company": "",
+	// either both days or at least one day has to be set to true.
+	// If you cannot make one of the days, please set it to false, to allow someone else take that spot!
 	"when": {
-		// June 7th, 2024
-		"friday": true,
-		// June 8th, 2024
+		// June 27th, 2025
+		"friday": false,
+		// June 28th, 2025
 		"saturday": true
 	},
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": false,
 	// your current interests (JS and in general) (required)
-	"tags": ["TypeScript", "NestJS", "Storybook", "langium"],
+	"tags": ["TypeScript", "React", "Redux", "NestJS"],
 	// if you only eat vegan food (optional)
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
@@ -34,12 +36,12 @@
 	//            if you have gluten free diet, please make backup plans.
 	// "allergies": [],
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "Use it daily for basically everything",
+	"whatIsMyConnectionToJavascript": "I use it almost daily for frontend, backend, and scripts",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "Share my experience of developing a language with TypeScript (langium)",
+	"whatCanIContribute": "I can share my knowledge about TypeScript",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
-	"tShirtSize": "L",
+	"tShirtSize": "XL",
 	// your Mastodon URL (optional)
 	// "mastodon": "https://mastodontech.de/@yourhandle",
 	// your LinkedIn profile URL

@@ -2,11 +2,14 @@
 	import { base } from '$app/paths';
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
-	import joern from './joern.jpg';
-	import marco from './marco.jpg';
-	import robert from './robert.png';
+	import ariadne from './ariadne.jpg';
 	import bernd from './bernd.webp';
-	import fii from './fii.jpg';
+	import joern from './joern.jpg';
+	import leo from './leo.webp';
+	import michael from './michael.png';
+	import patrickp from './patrickp.png';
+	import philip from './philip.jpeg';
+	import sina from './sina.jpeg';
 	import wolfram from './wolfram.jpg';
 	import TeamMember from './TeamMember.svelte';
 	import TeamMemberSection from './TeamMemberSection.svelte';
@@ -31,14 +34,52 @@
 	</p>
 
 	<TeamMemberSection>
-		<TeamMember image={bernd} name="Bernd Kaiser" />
-		<TeamMember name="Gustaf Graf" />
-		<TeamMember image={joern} name="Jörn Bernhardt" email="joern.bernhardt@compose.us" />
-		<TeamMember image={marco} name="Marco Emrich" email="marco.emrich@codecentric.de" />
-		<TeamMember name="Philip Saa" />
-		<TeamMember image={robert} name="Robert Hostlowsky" />
-		<TeamMember image={wolfram} name="Wolfram Kriesing" email="w@kriesing.de" />
-		<TeamMember image={fii} name="Stefanie (Fii) Hasler" email="stefanie.hasler@gmail.com" />
+		<TeamMember
+			image={ariadne}
+			linkedin="https://www.linkedin.com/in/ariadne-engelbrecht/"
+			name="Ariadne Engelbrecht"
+			email="Ariadne.Engelbrecht@curiosdevcookie.dev"
+		/>
+		<TeamMember
+			image={bernd}
+			linkedin="https://www.linkedin.com/in/bernd-kaiser/"
+			name="Bernd Kaiser"
+		/>
+		<TeamMember
+			image={joern}
+			linkedin="https://www.linkedin.com/in/joern-bernhardt/"
+			name="Jörn Bernhardt"
+			email="joern.bernhardt@compose.us"
+		/>
+		<TeamMember
+			image={leo}
+			linkedin="https://www.linkedin.com/in/leo-kettmeir/"
+			name="Leo Kettmeir"
+			email="leo@deno.com"
+		/>
+		<TeamMember image={michael} name="Michael Zoidl" email="michael@alm.sh" />
+		<TeamMember
+			image={patrickp}
+			name="Patrick Piedad"
+			email="patrickpiedad@gmail.com"
+			linkedin="https://www.linkedin.com/in/patrick-piedad/"
+		/>
+		<TeamMember
+			image={philip}
+			linkedin="https://www.linkedin.com/in/philipsaa/"
+			name="Philip Saa"
+		/>
+		<TeamMember
+			image={sina}
+			linkedin="https://www.linkedin.com/in/sina-aschenbrenner-146aa8229/"
+			name="Sina Aschenbrenner"
+		/>
+		<TeamMember
+			image={wolfram}
+			linkedin="https://www.linkedin.com/in/wolframkriesing/"
+			name="Wolfram Kriesing"
+			email="w@kriesing.de"
+		/>
 	</TeamMemberSection>
 
 	<p>

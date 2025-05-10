@@ -2,9 +2,14 @@
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 	import type { TShirtSize } from '$lib/participants/participant-schema';
+	import type { Company } from '$lib/participants/statistics';
 	import type { PageData } from './$types';
 
-	export let data: PageData;
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 
 	const {
 		allergies,
@@ -16,6 +21,29 @@
 		participantsShirts
 	} = data;
 	const shirtKinds: TShirtSize[] = ['S', 'M', 'L', 'XL', '2XL', '3XL'];
+	const byName = (a: Company, b: Company) =>
+		a.name.toLocaleLowerCase() < b.name.toLocaleLowerCase()
+			? -1
+			: a.name.toLocaleLowerCase() === b.name.toLocaleLowerCase()
+				? 0
+				: 1;
+	const byAmount = (a: Company, b: Company) => a.amount - b.amount;
+	let ascending = $state(true);
+	let sorter: (a: Company, b: Company) => number = $state(byName);
+	let actualSorter: (a: Company, b: Company) => number = $derived((a, b) => {
+		if (ascending) {
+			return sorter(a, b);
+		}
+		return invert(sorter)(a, b);
+	});
+	function invert(sortFn: (a: Company, b: Company) => number): (a: Company, b: Company) => number {
+		return (a, b) => sortFn(a, b) * -1;
+	}
+	function setSort(sortFn: (a: Company, b: Company) => number) {
+		const wasSortFn = sorter === sortFn;
+		sorter = sortFn;
+		ascending = wasSortFn ? !ascending : true;
+	}
 </script>
 
 <PageLayout>
@@ -73,7 +101,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						{#each shirtKinds as kind}
+						{#each shirtKinds as kind (kind)}
 							<tr>
 								<td>{kind}</td>
 								<td>{participantsShirts.sizes[kind] ?? 0}</td>
@@ -97,7 +125,7 @@
 							<td>Regular (all sizes)</td>
 							<td>{orgaShirts.regular}</td>
 						</tr>
-						{#each shirtKinds as kind}
+						{#each shirtKinds as kind (kind)}
 							<tr>
 								<td>{kind}</td>
 								<td>{orgaShirts.sizes[kind] ?? 0}</td>
@@ -122,7 +150,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						{#each Object.entries(allergies) as [name, amount]}
+						{#each Object.entries(allergies) as [name, amount] (name)}
 							<tr>
 								<td>{name}</td>
 								<td>{amount}</td>
@@ -139,12 +167,26 @@
 				<table>
 					<thead>
 						<tr>
-							<th>Company</th>
-							<th>Participants</th>
+							<th
+								style="{ascending ? '--invert:0deg' : '--invert:180deg'}; {sorter === byAmount
+									? '--sort-color:#0000;'
+									: ''}"
+								class="sortable"
+								role="columnheader"
+								onclick={() => setSort(byName)}>Company</th
+							>
+							<th
+								style="{ascending ? '--invert:0deg' : '--invert:180deg'}; {sorter === byName
+									? '--sort-color:#0000;'
+									: ''}"
+								class="sortable"
+								role="columnheader"
+								onclick={() => setSort(byAmount)}>Participants</th
+							>
 						</tr>
 					</thead>
 					<tbody>
-						{#each companies as { name, amount, isSponsor }}
+						{#each companies.toSorted(actualSorter) as { name, amount, isSponsor } (name)}
 							<tr class:isSponsor>
 								<td>{name}</td>
 								<td>{amount}</td>
@@ -158,6 +200,26 @@
 </PageLayout>
 
 <style>
+	.sortable {
+		cursor: pointer;
+		position: relative;
+		padding-right: 1.5em;
+		--sort-color: #000;
+		--invert: 0deg;
+	}
+	.sortable:after {
+		content: '';
+		position: absolute;
+		right: 0;
+		top: calc(50% - 0.25em);
+		transition: rotate 300ms;
+		rotate: var(--invert);
+		border: 0.4em solid var(--sort-color);
+		border-bottom-width: 0.5em;
+		border-top-width: 0;
+		border-left-color: #0000;
+		border-right-color: #0000;
+	}
 	div {
 		display: grid;
 		gap: 2em;

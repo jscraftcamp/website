@@ -1,7 +1,7 @@
 <script lang="ts">
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 	import InfoBox from '../../lib/layout/InfoBox.svelte';
-	import Sponsors from '$lib/sponsoring/Sponsors2024.svelte';
+	import CurrentSponsors from '$lib/sponsoring/CurrentSponsors';
 </script>
 
 <PageLayout>
@@ -11,8 +11,8 @@
 	<section>
 		<InfoBox title="Sponsor us now">
 			<p>
-				<a href="https://github.com/orgs/jscraftcamp/projects/7" rel="external"
-					>Find all sponsoring items on GitHub: https://github.com/orgs/jscraftcamp/projects/7</a
+				<a href="https://github.com/orgs/jscraftcamp/projects/10" rel="external"
+					>Find all sponsoring items on GitHub: https://github.com/orgs/jscraftcamp/projects/10</a
 				>
 				💖
 			</p>
@@ -23,20 +23,22 @@
 				<li>
 					We place your <strong>logo</strong> and <strong>link</strong> on the JSCraftCamp website
 				</li>
-				<li>Your <strong>exhibitor</strong> will be visible for the whole time during the event</li>
+				<li>
+					Your <strong>exhibitor</strong> will be visible for the whole time during the event.
+				</li>
 				<li>You can bring a <strong>stand-up display</strong> to be permanently visible.</li>
 				<li>
 					You can make your <strong>job ads</strong> visible for all attendees for the whole time during
 					the conference.
 				</li>
 				<li>
-					Your <strong>company name</strong> will be mentioned several times during the conference
+					Your <strong>company name</strong> will be mentioned several times during the conference.
 				</li>
 				<li>
 					It's an OpenSpace — contribute the <strong>talks that are important to you</strong> to the
-					community
+					community!
 				</li>
-				<li>Sponsors will be announced via the official <strong>Twitter</strong> account</li>
+				<li>Sponsors will be announced via the official <strong>social media</strong> account.</li>
 			</ul>
 		</InfoBox>
 
@@ -75,7 +77,7 @@
 		</InfoBox>
 	</section>
 	<section>
-		<Sponsors />
+		<CurrentSponsors />
 	</section>
 </PageLayout>
 
