@@ -1,0 +1,22 @@
+{
+	"realName": {
+		"givenName": "Johannes",
+		"familyName": "Ewald",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "jhnns",
+	"company": "Peerigon GmbH",
+	"when": {
+		"friday": true,
+		"saturday": false
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["TypeScript", "React", "Node.js", "LLMs"],
+	"vegan": false,
+	"vegetarian": true,
+	"whatIsMyConnectionToJavascript": "It's the only programming language I actually know. I use it for everything, backend, frontend, cooking, baking, etc.",
+	"whatCanIContribute": "Bad jokes. I can also help with TypeScript and React problems.",
+	"X": "jhnnns",
+	"website": "https://www.peerigon.com"
+}
