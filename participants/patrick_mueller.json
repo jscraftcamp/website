@@ -12,9 +12,9 @@
 		"hideFamilyNameOnWebsite": false
 	},
 	// please put in the account name of the PR creator, if you sign up somebody else
-	"githubAccountName": "jscraftcamp",
+	"githubAccountName": "patrickwire",
 	// company name (optional)
-	"company": "Alm",
+	"company": "alm engineering GmbH",
 	// either both days or at least one day has to be set to true.
 	// If you cannot make one of the days, please set it to false, to allow someone else take that spot!
 	"when": {
@@ -36,7 +36,7 @@
 	//            if you have gluten free diet, please make backup plans.
 	"allergies": [],
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "My Daily",
+	"whatIsMyConnectionToJavascript": "My Daily Job",
 	// what can you contribute to the bar camp (required)
 	"whatCanIContribute": "talk",
 	// if you want a T-Shirt we need your size and variant preference (optional)
