@@ -14,7 +14,7 @@
 	// please put in the account name of the PR creator, if you sign up somebody else
 	"githubAccountName": "a-rahimzada",
 	// company name (optional)
-	"company": "FV",
+	"company": "Finanzvergleich.com GmbH",
 	// either both days or at least one day has to be set to true.
 	// If you cannot make one of the days, please set it to false, to allow someone else take that spot!
 	"when": {
