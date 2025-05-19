@@ -38,9 +38,9 @@
 		content="JSCraftCamp is a community-driven unconference focused on JavaScript and software craftership."
 	/>
 
-	<meta property="og:image" content="{base}/logos/2025/jscc-og-image.png" />
-	<meta property="og:image:url" content="{base}/logos/2025/jscc-og-image.png" />
-	<meta name="twitter:image" content="{base}/logos/2025/jscc-twitter-image.png" />
+	<meta property="og:image" content="https://jscraftcamp.org/logos/2025/jscc-og-image.png" />
+	<meta property="og:image:url" content="https://jscraftcamp.org/logos/2025/jscc-og-image.png" />
+	<meta name="twitter:image" content="https://jscraftcamp.org/logos/2025/jscc-twitter-image.png" />
 </svelte:head>
 
 {@render children?.()}
