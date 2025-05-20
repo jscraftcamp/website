@@ -1,0 +1,51 @@
+// vim: ft=jsonc
+{
+	// your real name (required by location host)
+	"realName": {
+		"givenName": "Christian",
+		"familyName": "Ulbrich",
+		// if you prefer to have your family name shown first (optional)
+		"placeFamilyNameFirst": false,
+		// if you do not want to show your family name on the participant list (optional)
+		"hideFamilyNameOnWebsite": false
+	},
+	// please put in the account name of the PR creator, if you sign up somebody else
+	"githubAccountName": "christianulbrich",
+	// company name (optional)
+	"company": "Zalari GmbH",
+	// either both days or at least one day has to be set to true.
+	// If you cannot make one of the days, please set it to false, to allow someone else take that spot!
+	"when": {
+		// June 27th, 2025
+		"friday": true,
+		// June 28th, 2025
+		"saturday": true
+	},
+	// if you are willing to take session notes and publish them to github (required)
+	"iCanTakeNotesDuringSessions": true,
+	// your current interests (JS and in general) (required)
+	"tags": ["JavaScript", "Web Components", "Frontend architecture", "TypeScript", "TC39", "Micro Frontends"],
+	// if you only eat vegan food (optional)
+	"vegan": false,
+	// if you only eat vegan or vegetarian food (optional)
+	"vegetarian": false,
+	// what you cannot eat or drink (optional); If you don't want to put it in here, message the organizers.
+	// IMPORTANT: we cannot guarantee that food for every diet will be available,
+	//            if you have gluten free diet, please make backup plans.
+	"allergies": [],
+	// tell us a few words how JavaScript affects you (required)
+	"whatIsMyConnectionToJavascript": "I simply love its simplicity and its multi-paradigm approach for writing clean and maintainable software with combining the best of both worlds - both functional as well as modular design. I am a TC39 member, actively working on the development of JS as a language and I am hosting a regular, monthly MeetUp in Dresden called DresdenJS. I am a big proponent of Web Components as well as micro frontend architectures. I have built a small company around JS, it is our core technology.",
+	// what can you contribute to the bar camp (required)
+	"whatCanIContribute": "I can speak and tutor about JS as a programming language and have a wide array of presentations from a ton of meetups (70+) covering very deep topics (operator overloading in JS) as well as also an entertaining way (funny coercion rules). I have been a regular speaker at JS-related conferences in Germany, yet I still love to actually program and solve problems in JS on a daily basis. I can organize \"things\", host a cooking course (how about making our very own JS CraftCamp bratwurst?) and moderating an impromptu JS quiz show without twitching. I'd also provide instant code reviews. :) I simply love to connect with other like-minded JS people! I am not focused on any single popular framework, instead I can have a laid-back look at all of them and I go along with what makes simply the most sense for the customer. Conversations with me, won't be boring and I have opinions that keep them going...",
+	// if you want a T-Shirt we need your size and variant preference (optional)
+	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
+	"tShirtSize": "M",
+	// your Mastodon URL (optional)
+	//"mastodon": null,
+	// your LinkedIn profile URL
+	"linkedin": "https://www.linkedin.com/in/christian-ulbrich-a39a04174/",
+	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
+	"X": "walterfaber",
+	// your website URL or other social media (optional)
+	"website": "https://zalari.de"
+}
