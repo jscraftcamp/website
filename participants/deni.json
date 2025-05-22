@@ -12,7 +12,7 @@
 		"hideFamilyNameOnWebsite": false
 	},
 	// please put in the account name of the PR creator, if you sign up somebody else
-	"githubAccountName": "this-chord",
+	"githubAccountName": "mintydev789",
 	// company name (optional)
 	"company": "LEW",
 	// either both days or at least one day has to be set to true.
@@ -43,7 +43,7 @@
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
 	"tShirtSize": "L",
 	// your Mastodon URL (optional)
-	"mastodon": "https://mastodon.social/@this_chord",
+	"mastodon": "https://mastodon.social/@mintydev",
 	// your LinkedIn profile URL
 	"linkedin": "https://www.linkedin.com/in/deni-mintsaev/",
 	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
