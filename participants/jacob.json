@@ -37,7 +37,7 @@
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
 	"tShirtSize": "L",
-	"linkedin": "https://www.linkedin.com/in/jacobayokunle",
+	"linkedin": "https://www.linkedin.com/in/jacob-ayokunle",
 	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
 	"X": "jayrobzy",
 	"website": "https://ayokunle.com"
