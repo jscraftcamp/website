@@ -1,0 +1,22 @@
+{
+	"realName": {
+		"givenName": "Michael",
+		"familyName": "Zoidl"
+	},
+	"githubAccountName": "michaelzoidl",
+	"company": "alm engineering GmbH",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["TypeScript", "React", "Next", "Supabase", "LLM", "Design-Engineer"],
+	"vegan": false,
+	"vegetarian": false,
+	"whatIsMyConnectionToJavascript": "I do it for money.",
+	"whatCanIContribute": "Design, AI, Tools, Agency Experience, Hosting Stuff and more.",
+	"tShirtSize": "3XL",
+	"linkedin": "https://www.linkedin.com/in/michael-zoidl-55936987/",
+	"X": "michaelzoidl",
+	"website": "https://alm.sh/"
+}
