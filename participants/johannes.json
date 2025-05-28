@@ -1,0 +1,25 @@
+{
+	"realName": {
+		"givenName": "Johannes",
+		"familyName": "Loher",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "ghost91-",
+	"company": "TNG Technology Consulting GmbH",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["TypeScript", "React", "Next.js", "SolidJS", "Node.js", "AI", "Ollama", "CSS", "Modern Web APIs"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": ["Mushrooms", "Fish", "Seafood"],
+	"whatIsMyConnectionToJavascript": "Using it every day, both professionally and as a hobby",
+	"whatCanIContribute": "Deep TypeScript Knowledge",
+	"tShirtSize": "M",
+	"linkedin": "https://de.linkedin.com/in/johannes-loher-062809191",
+	"X": "loherj",
+	"website": "https://www.johannesloher.com/"
+}
