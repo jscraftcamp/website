@@ -26,7 +26,7 @@
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": true,
 	// your current interests (JS and in general) (required)
-	"tags": ["Web Components", "Stencil, "Svelte", "Accessibility"],
+	"tags": ["Web Components", "Stencil", "Svelte", "Accessibility"],
 	// if you only eat vegan food (optional)
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
