@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { optionalTShirtSize } from '$lib/participants/optional-t-shirt-size';
 
 export const PARTICIPANTS_DIRECTORY = './participants';
 
@@ -16,7 +17,7 @@ const nonEmptyStringArray = (errorMessage?: string) =>
 /**
  * preprocessing function which replaces empty strings ('') or empty arrays ([]) with null
  */
-function emptyToNull(arg: unknown): unknown | null {
+export function emptyToNull(arg: unknown): unknown | null {
 	if (arg === '') {
 		return null;
 	}
@@ -55,24 +56,8 @@ export const ParticipantSchema = z
 		whatIsMyConnectionToJavascript: z.string().min(3).max(200),
 		whatCanIContribute: z.string().min(3).max(200),
 		tShirtSize: z.preprocess(
-			(v) => {
-				const maybeV = emptyToNull(v);
-
-				if (maybeV === null) {
-					return null;
-				}
-
-				const size = String(maybeV).toUpperCase();
-				switch (size) {
-					case 'XXL':
-						return '2XL';
-					case 'XXXL':
-						return '3XL';
-					default:
-						return size;
-				}
-			},
-			z.enum(['S', 'M', 'L', 'XL', '2XL', '3XL']).nullish()
+			optionalTShirtSize,
+			z.enum(['S', 'M', 'L', 'XL', '2XL', '3XL']).optional()
 		),
 		X: z.preprocess(
 			emptyToNull,
