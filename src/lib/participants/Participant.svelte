@@ -9,10 +9,14 @@
 	import { displayName } from '$lib/participants/display-name';
 	import { createEventDispatcher } from 'svelte';
 
-	export let participant: Participant;
-	export let isActive: boolean = false;
+	interface Props {
+		participant: Participant;
+		isActive?: boolean;
+	}
 
-	let isShowingDetails = false;
+	let { participant, isActive = false }: Props = $props();
+
+	let isShowingDetails = $state(false);
 	const hasSocialLink =
 		participant.X || participant.mastodon || participant.website || participant.linkedin;
 
@@ -25,14 +29,14 @@
 			{#if participant.iCanTakeNotesDuringSessions}<span class="nt" title="offers to take notes"
 					>📝</span
 				>{/if}
-			{#if participant.when.friday}<span class="fr" title="will attend Friday, 30th June">Fr</span
+			{#if participant.when.friday}<span class="fr" title="will attend Friday, 27th June">Fr</span
 				>{/if}
-			{#if participant.when.saturday}<span class="sa" title="will attend Saturday, 1st July"
+			{#if participant.when.saturday}<span class="sa" title="will attend Saturday, 28th June"
 					>Sa</span
 				>{/if}
 		</div>
 		<h3>
-			<button type="button" on:click={() => (isShowingDetails = !isShowingDetails)}
+			<button type="button" onclick={() => (isShowingDetails = !isShowingDetails)}
 				>{displayName(participant)}</button
 			>
 		</h3>
@@ -93,9 +97,9 @@
 				<p>{participant.whatCanIContribute}</p>
 			{:else}
 				<ul class="tags">
-					{#each participant.tags as tag}
+					{#each participant.tags as tag (tag)}
 						<li>
-							<button type="button" on:click={() => dispatch('selectedTag', tag)}>{tag}</button>
+							<button type="button" onclick={() => dispatch('selectedTag', tag)}>{tag}</button>
 						</li>
 					{/each}
 				</ul>

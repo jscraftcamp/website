@@ -1,6 +1,8 @@
 export const isSponsor = (key: string) =>
 	[
+		'abs-safety',
 		'alm',
+		'alm-engineering',
 		'codecentric',
 		'deno',
 		'hipsquare',

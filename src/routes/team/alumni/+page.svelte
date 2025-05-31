@@ -5,10 +5,12 @@
 	import TeamMemberSection from '../TeamMemberSection.svelte';
 	import agnes from './agnes.png';
 	import david from './david.jpg';
-	import michael from './michael.png';
+	import fii from './fii.jpg';
+	import marco from './marco.jpg';
 	import patrick from './patrick.jpg';
 	import sebastian from './sebastian.jpg';
 	import simon from './simon.png';
+	import robert from './robert.png';
 </script>
 
 <PageLayout>
@@ -21,7 +23,8 @@
 	<TeamMemberSection>
 		<TeamMember image={agnes} name="Agnes Köhler" email="koehler.agnes@gmail.com" />
 		<TeamMember image={david} name="David Losert" email="david@david-losert.com" />
-		<TeamMember image={michael} name="Michael Zoidl" email="michael@alm.sh" />
+		<TeamMember name="Gustaf Graf" />
+		<TeamMember image={marco} name="Marco Emrich" email="marco.emrich@codecentric.de" />
 		<TeamMember image={patrick} name="Patrick Müller" email="mp@floatec.de" />
 		<TeamMember
 			image={sebastian}
@@ -29,6 +32,12 @@
 			email="sebastian.frerichs@codecentric.de"
 		/>
 		<TeamMember image={simon} name="Simon Hofmann" email="simon@s1h.org" />
+		<TeamMember
+			image={fii}
+			linkedin="https://www.linkedin.com/in/stefanie-hasler-05458a4/"
+			name="Stefanie (Fii) Hasler"
+		/>
+		<TeamMember image={robert} name="Robert Hostlowsky" />
 	</TeamMemberSection>
 
 	<p>Looking for the current team members? <a href="{base}/team">Check the /team page</a>!</p>

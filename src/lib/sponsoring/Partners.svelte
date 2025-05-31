@@ -13,13 +13,13 @@
 			image: socrates,
 			link: 'https://www.socrates-conference.de/',
 			name: 'SoCraTes',
-			sponsoring: 'August 22-25, 2024 - Hotel Park, Soltau'
+			sponsoring: 'July 17 - 20, 2025, Hotel Park Soltau, Germany'
 		},
 		{
 			image: seneca,
 			link: 'https://seneca.camp/',
 			name: 'Seneca',
-			sponsoring: 'September 27-29, 2024 - Medical Valley Center, Erlangen'
+			sponsoring: '19.-21.09.2025'
 		}
 	];
 </script>

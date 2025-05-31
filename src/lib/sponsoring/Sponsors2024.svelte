@@ -1,5 +1,6 @@
 <script lang="ts">
 	import alm from './sponsors-2024/alm-logo-2022.svg';
+	import abs from './sponsors-2024/abs-logo.svg';
 	import deno from './sponsors-2024/deno-logo.svg';
 	import inovex from './sponsors-2024/inovex-logo.png';
 	import inspiredconsulting from './sponsors-2024/inspired-consulting-logo.svg';
@@ -18,6 +19,12 @@
 	import type { Sponsor } from './is-sponsor';
 
 	const sponsors: Sponsor[] = [
+		{
+			image: abs,
+			link: 'https://www.absturzsicherung.de/',
+			name: 'ABS Safety GmbH',
+			sponsoring: 'Money'
+		},
 		{
 			image: alm,
 			link: 'https://alm.sh',
@@ -69,7 +76,7 @@
 		{
 			image: saab,
 			link: 'https://www.saab.com',
-			name: 'Saab AB',
+			name: 'Saab',
 			sponsoring: 'Breakfast'
 		},
 		{

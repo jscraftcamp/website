@@ -2,10 +2,14 @@
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 
-	export let photos: string[];
-	export let year: string;
+	interface Props {
+		photos: string[];
+		year: string;
+	}
 
-	let activePhoto: string | null = null;
+	let { photos, year }: Props = $props();
+
+	let activePhoto: string | null = $state(null);
 
 	function setOrUnsetPhoto(photo: string) {
 		if (activePhoto === photo) {
@@ -19,11 +23,11 @@
 <PageLayout>
 	<InfoBox title="Impressions of JSCraftCamp {year}">
 		<div class="images">
-			{#each photos as photo, index}
+			{#each photos as photo, index (photo)}
 				<button
 					class="image"
 					class:active={activePhoto === photo}
-					on:click={() => setOrUnsetPhoto(photo)}
+					onclick={() => setOrUnsetPhoto(photo)}
 				>
 					<img
 						src={photo}

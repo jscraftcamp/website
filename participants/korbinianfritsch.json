@@ -12,15 +12,15 @@
 		"saturday": true
 	},
 	"iCanTakeNotesDuringSessions": true,
-	"tags": ["React", "TypeScript", "Next.js", "Storybook", "SASS", "Component driven design systems"],
+	"tags": ["React", "TypeScript", "Next.js", "Storybook", "SASS", "LLMs", "Component driven design systems"],
 	"vegan": false,
 	"vegetarian": false,
 	"allergies": [],
 	"whatIsMyConnectionToJavascript": "I started freelancing and joined Codastic in 2018. I love building Web Applications, User Interfaces & Rapid Prototypes. Also, I am an enthusiast and evangelist of New Work culture.",
-	"whatCanIContribute": "13 years of experience in web development with focus on UX/UI engineering - specifically React, Typescript and SASS.",
+	"whatCanIContribute": "14 years of experience in web development with focus on UX/UI engineering - specifically React, Typescript and SASS.",
 	"tShirtSize": "XL",
 	"mastodon": "https://hachyderm.io/@kobe",
 	"linkedin": "https://www.linkedin.com/in/korbinianfritsch",
 	"X": "korbi21",
-	"website": "https://www.korbinianfritsch.com"
+	"website": "https://www.codastic.com"
 }

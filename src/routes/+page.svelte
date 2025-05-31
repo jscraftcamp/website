@@ -2,7 +2,7 @@
 	import { writable } from 'svelte/store';
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
-	import Logo from '$lib/layout/Logo.svelte';
+	import Logo from '$lib/layout/Logo';
 	import discord from './discord.svg';
 	import github from './github.svg';
 	import linkedIn from './linked-in.png';
@@ -18,8 +18,15 @@
 	} from '$lib/participants/registration';
 	import { base } from '$app/paths';
 	import Partners from '$lib/sponsoring/Partners.svelte';
-	import Sponsors from '$lib/sponsoring/Sponsors2024.svelte';
+	import CurrentSponsors from '$lib/sponsoring/CurrentSponsors';
 	import Schedule from './Schedule.svelte';
+	import type { PageData } from './$types';
+
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 
 	const countdown = writable<string>('');
 	const registrationState = writable<'not-yet' | 'closed' | 'open'>(getRegistrationState());
@@ -52,63 +59,19 @@
 </script>
 
 <PageLayout>
-	<h1>Welcome to JSCraftCamp 2024! ✅</h1>
+	<h1>Welcome to JSCraftCamp 2025! ✅</h1>
 
 	<p style="display: flex; align-items: center;">
-		Our hashtag is&nbsp;<b>#jscc24</b>&nbsp; find us on &nbsp;<a
-			href="https://mastodontech.de/tags/jscc24"
+		Our hashtag is&nbsp;<b>#jscc25</b>&nbsp; find us on &nbsp;<a
+			href="https://mastodontech.de/tags/jscc25"
 			><img src={mastodon} alt="mastodon" style="height: 1.5rem;" /></a
 		>
-		&nbsp;<a href="https://twitter.com/search?q=%23jscc24"
-			><img src={twitter} alt="twitter" style="height: 1.5rem;" /></a
+		&nbsp;<a href="https://twitter.com/search?q=%23jscc25"
+			><img src={twitter} alt="twitter / X" style="height: 1.5rem;" /></a
 		>
 	</p>
 
 	<section>
-		<InfoBox title="When?">
-			<p><strong>7. & 8. June 2024</strong></p>
-			{#if $registrationState === 'not-yet'}
-				<p>Registration will open on April 22nd, 2024. {@html $countdown}</p>
-			{:else if $registrationState === 'closed'}
-				<p>Registration is closed, we're full!</p>
-			{:else}
-				<p><a href="{base}/registration">Registration is open!</a></p>
-			{/if}
-		</InfoBox>
-		<InfoBox title="Where?">
-			<p>
-				Thanks to Maiborn Wolff, this year we'll be at the <a
-					href="https://www.maibornwolff.de/location/muenchen-kraftwerk/"
-					rel="external noopener noreferrer"
-					>München Kraftwerk
-				</a>! <br />
-			</p>
-			<p>
-				MaibornWolff GmbH<br />
-				Drygalski-Allee 25<br />
-				81477 München <br />
-				(<a href="https://maps.app.goo.gl/hUhbheFci2sSJ7SZ6">Google Maps</a>)
-			</p>
-		</InfoBox>
-		<InfoBox title="How much does it cost?">
-			<p>
-				For participants, you do not need any money to attend. We expect everyone to pay by their
-				active participation during the event and committing themselves to it by creating a PR for
-				themselves. We want everybody to contribute to discussions, share their experiences and help
-				each other to learn something new.
-			</p>
-		</InfoBox>
-		<InfoBox title="Still looking for sponsors!">
-			<p>
-				Do you represent a company looking for talented developers? Want to support the JavaScript
-				community? Take a look at <a href="{base}/sponsoring">our sponsoring page</a> and find out
-				about what items are still open and how your company can benefit from sponsoring. Or go
-				directly to
-				<a href="https://github.com/orgs/jscraftcamp/projects/7" rel="external"
-					><strong>our Github Sponsorship Board</strong></a
-				> and pick something.
-			</p>
-		</InfoBox>
 		<InfoBox title="JSCraftCamp is ...">
 			<p>
 				... a
@@ -123,6 +86,51 @@
 				workshops, similar to the <a href="https://www.socrates-conference.de/" rel="external"
 					>SoCraTes conference</a
 				>.
+			</p>
+		</InfoBox>
+		<InfoBox title="When?">
+			<p><strong>27. & 28. June 2025</strong></p>
+			{#if $registrationState === 'not-yet'}
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+				<p>Registration will open on April 30th, 2025. {@html $countdown}</p>
+			{:else if $registrationState === 'closed'}
+				<p>
+					Registration is closed, we're full! <a href="{base}/registration">Join the wait list</a>!
+				</p>
+			{:else}
+				<p><a href="{base}/registration">Registration is open!</a></p>
+				<p>Grab your spot!</p>
+				<p>Friday: <strong>{100 - data.fridayParticipants}</strong> spots left</p>
+				<p>
+					Saturday: <strong>{100 - data.saturdayParticipants}</strong> spots left
+				</p>
+			{/if}
+		</InfoBox>
+		<InfoBox title="Where?">
+			<p>
+				Thanks to codecentric AG, this year we'll be at the <a
+					href="https://www.codecentric.de/standorte/muenchen"
+					rel="external noopener noreferrer">codecentric München office</a
+				>! <br />
+			</p>
+			<p>
+				codecentric AG<br />
+				August-Everding-Straße 20<br />
+				81671 München<br />
+				(<a href="https://maps.app.goo.gl/P2V1zn797ffFdjPm9" rel="external noopener noreferrer"
+					>Google Maps</a
+				>)
+			</p>
+		</InfoBox>
+		<InfoBox title="We're looking for sponsors!">
+			<p>
+				Do you represent a company looking for talented developers? Want to support the JavaScript
+				community? Take a look at <a href="{base}/sponsoring">our sponsoring page</a> and find out
+				about what items are still open and how your company can benefit from sponsoring. Or go
+				directly to
+				<a href="https://github.com/orgs/jscraftcamp/projects/10" rel="external"
+					><strong>our GitHub Sponsorship Board</strong></a
+				> and pick something.
 			</p>
 		</InfoBox>
 		<Logo animateYears style="max-width: 100%;" />
@@ -140,10 +148,10 @@
 			<a href="https://discord.gg/3mHhaXVEjP" rel="external"><img src={discord} alt="Discord" /></a>
 		</div>
 		<img src={skyline} alt="Munich skyline" />
-		<Sponsors />
+		<Schedule />
+		<CurrentSponsors />
 		<Partners />
 		<WhatToExpect />
-		<Schedule />
 	</section>
 </PageLayout>
 

@@ -1,9 +1,10 @@
+// vim: ft=jsonc
 // Please provide your info in your own .json file.
 // See https://jscraftcamp.org/registration for more information
 {
 	// your real name (required by location host)
 	"realName": {
-		"givenName": "Nick Vicente Roland",
+		"givenName": "Nick",
 		"familyName": "Kriesing Garcia",
 		// if you prefer to have your family name shown first (optional)
 		"placeFamilyNameFirst": false,
@@ -12,11 +13,14 @@
 	},
 	// please put in the account name of the PR creator, if you sign up somebody else
 	"githubAccountName": "Pichi11",
-	// either both days or at least one day has to be set to true
+	// company name (optional)
+	"company": "",
+	// either both days or at least one day has to be set to true.
+	// If you cannot make one of the days, please set it to false, to allow someone else take that spot!
 	"when": {
-		// June 7th, 2024
+		// June 27th, 2025
 		"friday": true,
-		// June 8th, 2024
+		// June 28th, 2025
 		"saturday": true
 	},
 	// if you are willing to take session notes and publish them to github (required)

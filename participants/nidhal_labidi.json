@@ -1,11 +1,10 @@
-{
+
+  {
   "realName": {
     "givenName": "Nidhal",
     "familyName": "Labidi",
-    
   },
   "githubAccountName": "nidhal-labidi",
-  "company": "compose-us",
   "when": {
     "friday": true,
     "saturday": true
@@ -15,7 +14,6 @@
     "Typescript",
     "Svelte",
     "SvelteKit",
-    "Flottform.io",
     "React"
   ],
   "vegan": true,

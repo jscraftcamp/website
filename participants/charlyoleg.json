@@ -1,3 +1,4 @@
+// vim: ft=jsonc
 // Please provide your info in your own .json file.
 // See https://jscraftcamp.org/registration for more information
 {
@@ -14,17 +15,18 @@
 	"githubAccountName": "charlyoleg2",
 	// company name (optional)
 	"company": "",
-	// either both days or at least one day has to be set to true
+	// either both days or at least one day has to be set to true.
+	// If you cannot make one of the days, please set it to false, to allow someone else take that spot!
 	"when": {
-		// June 7th, 2024
+		// June 27th, 2025
 		"friday": true,
-		// June 8th, 2024
+		// June 28th, 2025
 		"saturday": true
 	},
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": false,
 	// your current interests (JS and in general) (required)
-	"tags": ["Svelte", "ThreeJS", "CAD", "geometrix"],
+	"tags": ["Svelte", "ThreeJS", "CAD", "geometrix", "Parametrix", "11ty", "astro", "jscad"],
 	// if you only eat vegan food (optional)
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
@@ -47,5 +49,5 @@
 	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
 	"X": "",
 	// your website URL or other social media (optional)
-	"website": "https://charlyoleg2.github.io/parametrix/"
+	"website": "https://catalos-catalui.vercel.app/sorted-parts/newest"
 }

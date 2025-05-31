@@ -15,12 +15,13 @@
 	"githubAccountName": "jscraftcamp",
 	// company name (optional)
 	"company": "ACME",
-	// either both days or at least one day has to be set to true
+	// either both days or at least one day has to be set to true.
+	// If you cannot make one of the days, please set it to false, to allow someone else take that spot!
 	"when": {
-		// June 7th, 2024
+		// June 27th, 2025
 		"friday": true,
-		// June 8th, 2024
-		"saturday": false
+		// June 28th, 2025
+		"saturday": true
 	},
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": true,

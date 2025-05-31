@@ -13,22 +13,14 @@
   },
   "iCanTakeNotesDuringSessions": false,
   "tags": [
-    "TypeScript",
-    "Node.js",
-    "Reverse Engineering",
-    "Scraping",
-    "Automation",
-    "Fingerprinting",
-    "Code Transforms",
-    "Error Handling",
-    "Stacktraces",
-    "Rock climbing",
-    "Rationality"
+    "Thinking better on purpose",
+    "Reducing existential risk",
+    "Rabbit holing"
   ],
-  "vegan": false,
+  "vegan": true,
   "vegetarian": true,
   "allergies": [],
-  "whatIsMyConnectionToJavascript": "6 years of hobby development and now a year on my job",
-  "whatCanIContribute": "I don't plan on presenting, but that's what I said last time and then I did anyway. I am still happy to talk about anything relating to the web",
+  "whatIsMyConnectionToJavascript": "7 years of programming, the last 2 of which were at my job",
+  "whatCanIContribute": "You tell me about your niche interest 🤝 I try to understand as deeply as possible & ask something useful",
   "tShirtSize": "S"
 }

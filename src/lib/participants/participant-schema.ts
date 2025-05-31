@@ -36,7 +36,7 @@ export const ParticipantSchema = z
 			placeFamilyNameFirst: optionalBoolean(),
 			hideFamilyNameOnWebsite: optionalBoolean()
 		}),
-		githubAccountName: z.string().regex(/^(?!-)(?!.*--)[A-Za-z0-9-]{1,39}(?<!-)$/),
+		githubAccountName: z.string().regex(/^(?!-)(?!.*--)[A-Za-z0-9-]{1,39}$/),
 		company: z.preprocess(emptyToNull, z.string().min(2).max(200).nullish()),
 		when: z
 			.object({
@@ -56,7 +56,13 @@ export const ParticipantSchema = z
 		whatCanIContribute: z.string().min(3).max(200),
 		tShirtSize: z.preprocess(
 			(v) => {
-				const size = String(v).toUpperCase();
+				const maybeV = emptyToNull(v);
+
+				if (maybeV === null) {
+					return null;
+				}
+
+				const size = String(maybeV).toUpperCase();
 				switch (size) {
 					case 'XXL':
 						return '2XL';
