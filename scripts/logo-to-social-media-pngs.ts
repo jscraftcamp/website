@@ -4,9 +4,24 @@ const year = process.argv[2];
 
 const browser = await chromium.launch({ headless: true, slowMo: 50 });
 try {
+	const shortJscc = `JSCC${`${year}`.slice(-2)}`;
 	await takeScreenshot({ name: 'favicon', logo: year, width: 32, height: 32 });
 	await takeScreenshot({ name: 'jscc-discord-logo', logo: year, width: 512, height: 512 });
 	await takeScreenshot({ name: 'jscc-discord-event', logo: year, width: 800, height: 320 });
+	await takeScreenshot({
+		name: 'jscc-og-image',
+		logo: year,
+		width: 1200,
+		height: 628,
+		withText: shortJscc
+	});
+	await takeScreenshot({
+		name: 'jscc-twitter-image',
+		logo: year,
+		width: 1024,
+		height: 512,
+		withText: shortJscc
+	});
 	await takeScreenshot({ name: 'jscc-github-organization', logo: year, width: 500, height: 500 });
 	await takeScreenshot({ name: 'jscc-github-repository', logo: year, width: 1280, height: 640 });
 	await takeScreenshot({ name: 'jscc-meetup-event', logo: year, width: 1200, height: 675 });
@@ -17,6 +32,13 @@ try {
 		logo: year,
 		width: 1128,
 		height: 191,
+		withText: `JSCraftCamp ${year}`
+	});
+	await takeScreenshot({
+		name: 'jscc-linkedin-group-banner',
+		logo: year,
+		width: 1774,
+		height: 444,
 		withText: `JSCraftCamp ${year}`
 	});
 } finally {
@@ -71,7 +93,7 @@ function createHtmlWithText({ logo, text }: { logo: string; text: string }): str
 					place-items: center;
 				"
 			>
-				<div style="display: flex; flex-direction: row; place-items: center; gap: 1em">
+				<div style="display: flex; flex-direction: row; place-items: center; gap: .5em">
 					<img
 						style="object-fit: contain; width: auto; height: 100%; max-width: 100%; max-height: 1em"
 						alt="JSCraftCamp logo"
@@ -84,6 +106,7 @@ function createHtmlWithText({ logo, text }: { logo: string; text: string }): str
 							font-weight: 800;
 							font-size: 30vh;
 							justify-self: flex-start;
+							text-shadow: 0 0 1vh #fff;
 						"
 					>
 						${text}
