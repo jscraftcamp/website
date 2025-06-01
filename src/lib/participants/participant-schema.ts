@@ -36,7 +36,7 @@ export const ParticipantSchema = z
 			placeFamilyNameFirst: optionalBoolean(),
 			hideFamilyNameOnWebsite: optionalBoolean()
 		}),
-		githubAccountName: z.string().regex(/^(?!-)(?!.*--)[A-Za-z0-9-]{1,39}(?<!-)$/),
+		githubAccountName: z.string().regex(/^(?!-)(?!.*--)[A-Za-z0-9-]{1,39}$/),
 		company: z.preprocess(emptyToNull, z.string().min(2).max(200).nullish()),
 		when: z
 			.object({
