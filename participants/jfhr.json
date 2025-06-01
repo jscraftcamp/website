@@ -1,0 +1,23 @@
+{
+	"realName": {
+		"givenName": "Jakob",
+		"familyName": "Fahr",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "jfhr",
+	"company": "InsiderPie",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["Node.js", "Web Scraping", "Web Security", "PostgreSQL"],
+	"vegan": true,
+	"vegetarian": true,
+	"allergies": [],
+	"tShirtSize": "S",
+	"whatIsMyConnectionToJavascript": "Not a day goes by where I don't use JavaScript.",
+	"whatCanIContribute": "I can share my experience developing and running numerous node.js web services.",
+	"website": "https://jfhr.de"
+}
