@@ -34,6 +34,13 @@ try {
 		height: 191,
 		withText: `JSCraftCamp ${year}`
 	});
+	await takeScreenshot({
+		name: 'jscc-linkedin-group-banner',
+		logo: year,
+		width: 1774,
+		height: 444,
+		withText: `JSCraftCamp ${year}`
+	});
 } finally {
 	await browser.close();
 }
