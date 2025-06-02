@@ -43,7 +43,7 @@
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
 	"tShirtSize": "L",
 	// your Mastodon URL (optional)
-	"mastodon": "https://mastodontech.de/@yourhandle",
+	"mastodon": "",
 	// your LinkedIn profile URL
 	"linkedin": "https://www.linkedin.com/in/christian-helmbrecht-5a468a1a/",
 	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
