@@ -38,7 +38,7 @@
 	// tell us a few words how JavaScript affects you (required)
 	"whatIsMyConnectionToJavascript": "Gave me my first software job",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "Share knowledge on caching, benchmarking, rewrites; help as volunteer for some time slots",
+	"whatCanIContribute": "Take photographs; share knowledge on caching, benchmarking, rewrites; help as volunteer for some time slots",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
 	"tShirtSize": "S",
