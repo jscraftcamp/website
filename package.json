@@ -6,12 +6,10 @@
   "engines": {
     "node": ">= 6.6.0"
   },
-  "dependencies": {
-  },
   "devDependencies": {
     "browser-sync": "^2.18.7",
     "hamjest": "^2.13.0",
-    "harp": "^0.23.0",
+    "harp": "^0.46.1",
     "hashcode": "^1.0.3",
     "mocha": "^3.0.2",
     "recursive-readdir-sync": "^1.0.6"
