@@ -1,0 +1,44 @@
+// vim: ft=jsonc
+{
+	// your real name (required by location host)
+	"realName": {
+		"givenName": "Christian",
+		"familyName": "Waldmann",
+		// if you prefer to have your family name shown first (optional)
+		"placeFamilyNameFirst": false,
+		// if you do not want to show your family name on the participant list (optional)
+		"hideFamilyNameOnWebsite": false
+	},
+	// please put in the account name of the PR creator, if you sign up somebody else
+	"githubAccountName": "wachri",
+	// company name (optional)
+	"company": "Hetzner Cloud GmbH",
+	// either both days or at least one day has to be set to true.
+	// If you cannot make one of the days, please set it to false, to allow someone else take that spot!
+	"when": {
+		// June 27th, 2025
+		"friday": true,
+		// June 28th, 2025
+		"saturday": true
+	},
+	// if you are willing to take session notes and publish them to github (required)
+	"iCanTakeNotesDuringSessions": false,
+	// your current interests (JS and in general) (required)
+	"tags": ["Angular", "TypeScript", "RxJS", "Cypress", "Schematics", "NX", "Leadership"],
+	// if you only eat vegan food (optional)
+	"vegan": false,
+	// if you only eat vegan or vegetarian food (optional)
+	"vegetarian": true,
+	// what you cannot eat or drink (optional); If you don't want to put it in here, message the organizers.
+	// IMPORTANT: we cannot guarantee that food for every diet will be available,
+	//            if you have gluten free diet, please make backup plans.
+	"allergies": [],
+	// tell us a few words how JavaScript affects you (required)
+	"whatIsMyConnectionToJavascript": "Over 10 years of professional experience in frontend development and even more in web development",
+	// what can you contribute to the bar camp (required)
+	"whatCanIContribute": "Experience in building, developing, maintaining and managing an enterprise Angular application"
+	// if you want a T-Shirt we need your size and variant preference (optional)
+	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
+	"tShirtSize": "L",
+	"website": "https://hetzner-cloud.de/"
+}
