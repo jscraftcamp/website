@@ -1,0 +1,33 @@
+{
+    "realName": {
+        "givenName": "Adolfo",
+        "familyName": "Guevara",
+        "placeFamilyNameFirst": false,
+        "hideFamilyNameOnWebsite": false
+    },
+    "githubAccountName": "FitoGT",
+    "company": "Freelancer",
+    "when": {
+        "friday": true,
+        "saturday": false
+    },
+    "iCanTakeNotesDuringSessions": true,
+    "tags": [
+        "React",
+        "TypeScript",
+        "ReactQuery",
+        "TailwindCSS"
+    ],
+    "vegan": false,
+    "vegetarian": false,
+    "allergies": [
+        "Seafood"
+    ],
+    "whatIsMyConnectionToJavascript": "Been developing with JS for a long while :)",
+    "whatCanIContribute": "",
+    "tShirtSize": "L",
+    "mastodon": "",
+    "linkedin": "https://www.linkedin.com/in/adolfoguevara11/",
+    "X": "",
+    "website": ""
+}
