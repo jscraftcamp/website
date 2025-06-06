@@ -1,38 +1,30 @@
+![Netlify Status](https://api.netlify.com/api/v1/badges/429e37ea-5a85-45d5-8845-e3dad61e63be/deploy-status?branch=main)
+
 # JS CraftCamp - Website
 
-This project contains the [jscraftcamp.org](http://jscraftcamp.org) website and all the setup for the deployment.
+## Contributing:
 
-## Development
+### Updated of package dependencies:
 
-Getting started to develop on the website follow those steps
+- We use [renovate](https://www.mend.io/free-developer-tools/renovate/) to auto-update our dependencies, so we don't need to do that manually.
+- Please use specific package dependencies like "1.3.5": With tracking the versions it could help avoid breaking things (even while we already make use of `pnpm-lock.yaml`)
 
-- set up your development environment, [see below](#development-setup)
-- run `npm i` to install all dependencies
-- run `npm start` which will run the local webserver at [localhost:9000](http://localhost:9000), for developing
-- run `npm test`  to run the tests
-- run `npm run build` to generate all static files and to concatenate all participants files into the `dist` directory (in production this will be done by travis)
+## Start developing:
 
-### Development setup
+Use `corepack enable` to make sure you have the same package manager enabled as we use in the project (`pnpm` in the version set in `package.json`).
 
-We offer two ways to install this project, you choose the one you like:
-- use you own [global nodejs version](#global-nodejs-version) if installed on your system, or
-- setup everything from scratch [using nix](#setup-via-nix)
+### Scripts
 
-#### Global nodejs version
+After installing the dependencies (via `pnpm install`), run
 
-If you want to use your (global) nodejs setup, find out which version we require in the [./.travis.yml].
+- `pnpm run dev` for starting a dev server to see the site locally
+- `pnpm run format` formatting all sources via prettier
+- `pnpm run test` verify valid participants data
+- `pnpm run build` verify that static build works
+- `pnpm run logos <year>` to create logos for a year (needs a `logo.svg` file in the specified year under `/static/logos/`)
 
-#### Setup via nix
+## Project Structure
 
-If you don't want to rely on a global nodejs version, but want a reproducible environment, you can use [nix] as described here.
+The website is a static page that gets built through [SvelteKit](https://kit.svelte.dev/) with their `adapter-static`. You can find the routes in the [`src/routes` directory](./src/routes).
 
-1) Make sure to have nix installed (see [nixos.org/nix][nix]) and then
-1) `cd <project-dir>`
-1) run `nix-shell` and you should have the environment up and running
-1) install all node modules using `npm install`
-1) prove that it works, `npm test`
-1) now you have a shell with a deterministic environment (incl. the right nodejs version)
-
-[nix]: http://nixos.org/nix/
-
-
+Every page is put in `+page.svelte` and may include additional components just for that page or reusable components or functions from the [`src/lib`](./src/lib) folder.

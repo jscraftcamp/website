@@ -1,0 +1,20 @@
+export const isSponsor = (key: string) =>
+	[
+		'abs-safety',
+		'alm',
+		'alm-engineering',
+		'codecentric',
+		'deno',
+		'hipsquare',
+		'inovex',
+		'inspired-consulting',
+		'jambit',
+		'maibornwolff',
+		'peerigon',
+		'project-lary',
+		'saab',
+		'satellytes',
+		'tiffinger-thiel',
+		'tng-technology-consulting',
+		'twilio'
+	].includes(key);

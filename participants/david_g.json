@@ -1,0 +1,25 @@
+{
+	"realName": {
+		"givenName": "David",
+		"familyName": "Grajal",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "dgrabla",
+	"company": "",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["GIS", "Vuejs", "Legacy", "TypeScript", "Gardening", "Radio Control", "3dPrinting"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "I've been doing web since 1996. JS full time since 2010.",
+	"whatCanIContribute": "Web dev, legacy, self hosted ai, freelancing 101",
+	"tShirtSize": "S",
+	"mastodon": "https://mastodon.social/@dgrabla",
+	"linkedin": "https://www.linkedin.com/in/dgrabla/",
+	"website": "https://www.davidgrajal.com"
+}

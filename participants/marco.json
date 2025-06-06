@@ -1,0 +1,29 @@
+{
+	"realName": {
+		"givenName": "Marco",
+		"familyName": "Emrich",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "marcoemrich",
+	"company": "codecentric",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": [
+    "TDD",
+    "Quality",
+    "Craft",
+    "DDD",
+    "Architecture",
+    "SchoolsOfTDD"
+  ],
+	"vegan": false,
+	"vegetarian": false,
+	"whatIsMyConnectionToJavascript": "I use JS for a long time and love to be part of the community",
+	"whatCanIContribute": "Sessions about #TDD and #DomainModelling and more",
+	"tShirtSize": "2XL",
+	"linkedin": "https://www.linkedin.com/in/marco-emrich",
+}

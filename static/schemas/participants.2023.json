@@ -1,0 +1,68 @@
+{
+	"$ref": "#/definitions/participantSchema",
+	"definitions": {
+		"participantSchema": {
+			"type": "object",
+			"properties": {
+				"name": { "type": "string", "minLength": 2, "maxLength": 200 },
+				"company": {
+					"anyOf": [{ "type": "string", "minLength": 2, "maxLength": 200 }, { "type": "null" }]
+				},
+				"when": {
+					"type": "object",
+					"properties": { "friday": { "type": "boolean" }, "saturday": { "type": "boolean" } },
+					"required": ["friday", "saturday"],
+					"additionalProperties": false
+				},
+				"iCanTakeNotesDuringSessions": { "type": "boolean" },
+				"tags": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+				"vegan": { "type": ["boolean", "null"] },
+				"vegetarian": { "type": ["boolean", "null"] },
+				"allergies": {
+					"anyOf": [
+						{ "type": "array", "items": { "type": "string" }, "minItems": 1 },
+						{ "type": "null" }
+					]
+				},
+				"whatIsMyConnectionToJavascript": { "type": "string", "minLength": 3, "maxLength": 400 },
+				"whatCanIContribute": { "type": "string", "minLength": 3, "maxLength": 400 },
+				"tShirt": {
+					"anyOf": [
+						{
+							"type": "object",
+							"properties": {
+								"type": { "type": "string", "enum": ["fitted", "regular"] },
+								"size": { "type": "string", "enum": ["S", "M", "L", "XL", "2XL", "3XL"] }
+							},
+							"required": ["type", "size"],
+							"additionalProperties": false
+						},
+						{ "type": "null" }
+					]
+				},
+				"twitter": {
+					"anyOf": [
+						{ "type": "string", "pattern": "^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$" },
+						{ "type": "null" }
+					]
+				},
+				"mastodon": {
+					"anyOf": [{ "type": "string", "format": "uri", "minLength": 1 }, { "type": "null" }]
+				},
+				"website": {
+					"anyOf": [{ "type": "string", "format": "uri", "minLength": 1 }, { "type": "null" }]
+				}
+			},
+			"required": [
+				"name",
+				"when",
+				"iCanTakeNotesDuringSessions",
+				"tags",
+				"whatIsMyConnectionToJavascript",
+				"whatCanIContribute"
+			],
+			"additionalProperties": false
+		}
+	},
+	"$schema": "http://json-schema.org/draft-07/schema#"
+}
