@@ -6,6 +6,7 @@ export const isSponsor = (key: string) =>
 		'compose-us',
 		'deno',
 		'finanzvergleich-com',
+		'freelancer-gorlug-software',
 		'hetzner',
 		'inovex',
 		'inspired-consulting',
@@ -13,5 +14,6 @@ export const isSponsor = (key: string) =>
 		'saab',
 		'tiffinger-thiel',
 		'tng-technology-consulting',
+		'twilio',
 		'typedigital'
 	].includes(key);
