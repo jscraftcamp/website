@@ -5,12 +5,17 @@
 	import codecentric from './sponsors-2025/codecentric.png';
 	import composeus from './sponsors-2025/compose-us.svg';
 	import deno from './sponsors-2025/deno-full-light-transparent.svg';
+	import finanzvergleich from './sponsors-2025/finanzvergleich-logo.png';
+	import gorlug from './sponsors-2025/gorlug_logo.svg';
+	import hetzner from './sponsors-2025/hetzner-logo-slogan_red-square.png';
 	import inovex from './sponsors-2025/inovex-logo.png';
 	import inspiredconsulting from './sponsors-2025/inspired-consulting-logo.svg';
 	import peerigon from './sponsors-2025/peerigon.svg';
 	import saab from './sponsors-2025/saab.svg';
-	import typedigital from './sponsors-2025/typedigital.svg';
 	import tiffingerthiel from './sponsors-2025/tiffinger-thiel.svg';
+	import tng from './sponsors-2025/tng.png';
+	import twilio from './sponsors-2025/twilio.svg';
+	import typedigital from './sponsors-2025/typedigital.svg';
 	import Sponsors from './Sponsors.svelte';
 
 	const sponsors: Array<Sponsor> = [
@@ -23,7 +28,7 @@
 		{
 			image: alm,
 			link: 'https://alm.sh',
-			name: 'alm engineering',
+			name: 'Alm Engineering',
 			sponsoring: '500 €'
 		},
 		{
@@ -43,6 +48,24 @@
 			link: 'https://deno.land',
 			name: 'deno',
 			sponsoring: '250 €'
+		},
+		{
+			image: finanzvergleich,
+			link: 'https://finanzvergleich.com',
+			name: 'Finanzvergleich.com',
+			sponsoring: '200 €'
+		},
+		{
+			image: gorlug,
+			link: 'https://gorlug.de/',
+			name: 'Gorlug',
+			sponsoring: '100 €'
+		},
+		{
+			image: hetzner,
+			link: 'https://www.hetzner.com',
+			name: 'Hetzner',
+			sponsoring: '300 €'
 		},
 		{
 			image: inovex,
@@ -73,6 +96,18 @@
 			link: 'https://tiffinger-thiel.de/',
 			name: 'Tiffinger & Thiel GmbH',
 			sponsoring: 'Beverages'
+		},
+		{
+			image: tng,
+			link: 'https://www.tngtech.com/',
+			name: 'TNG Technology Consulting',
+			sponsoring: '500 €'
+		},
+		{
+			image: twilio,
+			link: 'https://twilio.com/',
+			name: 'Twilio',
+			sponsoring: '1.500 $'
 		},
 		{
 			image: typedigital,
