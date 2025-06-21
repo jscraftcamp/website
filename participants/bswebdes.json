@@ -1,0 +1,21 @@
+{
+  "realName": {
+    "givenName": "Benjamin",
+    "familyName": "Schey"
+  },
+  "githubAccountName": "bswebdes",
+  "company": "Freelancer",
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  "iCanTakeNotesDuringSessions": true,
+  "tags": ["Astro", "SEO", "Local SEO", "Freelancing", "Accessibility", "Business", "Marketing", "Design"],
+  "vegan": false,
+  "vegetarian": false,
+  "whatIsMyConnectionToJavascript": "I build websites with Astro, but I avoid JS as much as possible. Not out of defiance — but for maximum performance.",
+  "whatCanIContribute": "I bring honest feedback, Astro expertise, SEO experience, and the perspective of a freelancer who takes web design a bit too seriously.",
+  "tShirtSize": "L",
+  "website": "https://bennyschey.com",
+  "linkedin": "https://www.linkedin.com/in/bennyschey/"
+}

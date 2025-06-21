@@ -1,0 +1,26 @@
+// vim: ft=jsonc
+{
+	"realName": {
+		"givenName": "David",
+		"familyName": "Goeth",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	// please put in the account name of the PR creator, if you sign up somebody else
+	"githubAccountName": "DavidGoethCplace",
+	"company": "cplace",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	// if you are willing to take session notes and publish them to github (required)
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["Angular", "Clean Architecture", "TypeScript", "Legacy", "DDD"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": ["Milk", "Peanuts"],
+	"whatIsMyConnectionToJavascript": "Use it for work for 5 years",
+	"whatCanIContribute": "Share my learnings",
+	"tShirtSize": "M",
+	"linkedin": "https://de.linkedin.com/in/david-goeth-57969b207",
+}
