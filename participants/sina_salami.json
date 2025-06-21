@@ -1,0 +1,24 @@
+{
+	"realName": {
+		"givenName": "Sina",
+		"familyName": "Salami",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "sinasalami99",
+	"company": "Neo Commerce GmbH",
+	"when": {
+		// June 27th, 2025
+		"friday": true,
+		// June 28th, 2025
+		"saturday": false
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["JS", "TS", "React", "React-Native"],
+	"vegan": false,
+	"vegetarian": false,
+	"whatIsMyConnectionToJavascript": "I have been using JS and TS daily for the last 6 years.",
+	"whatCanIContribute": "My experience in providing js scripts and SDKs to businesses.",
+	"tShirtSize": "2XL",
+	"linkedin": "https://www.linkedin.com/in/sina-salami/"
+}
