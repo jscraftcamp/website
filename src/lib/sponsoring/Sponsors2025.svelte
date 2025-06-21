@@ -65,7 +65,7 @@
 			image: hetzner,
 			link: 'https://www.hetzner.com',
 			name: 'Hetzner',
-			sponsoring: '300 €'
+			sponsoring: '500 €'
 		},
 		{
 			image: inovex,
