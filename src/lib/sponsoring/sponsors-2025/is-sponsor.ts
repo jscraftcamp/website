@@ -1,12 +1,19 @@
 export const isSponsor = (key: string) =>
 	[
 		'all-prints-cut-com',
+		'alm',
 		'codecentric',
 		'compose-us',
 		'deno',
+		'finanzvergleich-com',
+		'freelancer-gorlug-software',
+		'hetzner',
 		'inovex',
 		'inspired-consulting',
 		'peerigon',
 		'saab',
+		'tiffinger-thiel',
+		'tng-technology-consulting',
+		'twilio',
 		'typedigital'
 	].includes(key);
