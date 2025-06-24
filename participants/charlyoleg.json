@@ -49,5 +49,5 @@
 	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
 	"X": "",
 	// your website URL or other social media (optional)
-	"website": "https://catalos-catalui.vercel.app/sorted-parts/newest"
+	"website": "https://parametrix.fr/sorted-parts/newest"
 }
