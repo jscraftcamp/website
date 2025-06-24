@@ -18,7 +18,10 @@
 		orgaShirts,
 		participantCount,
 		participants,
-		participantsShirts
+		participantsShirts,
+		vegan,
+		vegetarian,
+		noFoodPreference
 	} = data;
 	const shirtKinds: TShirtSize[] = ['S', 'M', 'L', 'XL', '2XL', '3XL'];
 	const byName = (a: Company, b: Company) =>
@@ -136,7 +139,7 @@
 			</section>
 		</InfoBox>
 
-		<InfoBox title="Allergies">
+		<InfoBox title="Food">
 			<p>
 				There are a couple of participants registered with allergies. Let's try to find food that
 				works for everybody.
@@ -150,7 +153,35 @@
 						</tr>
 					</thead>
 					<tbody>
-						{#each Object.entries(allergies) as [name, amount] (name)}
+						<tr>
+							<td>Vegan</td>
+							<td>{vegan}</td>
+						</tr>
+						<tr>
+							<td>Vegetarian</td>
+							<td>{vegetarian}</td>
+						</tr>
+						<tr>
+							<td>No preference</td>
+							<td>{noFoodPreference}</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<thead>
+						<tr>
+							<th>Allergy</th>
+							<th>Amount</th>
+						</tr>
+					</thead>
+					<tbody>
+						{#each Object.entries(allergies).toSorted(([_a, amountA], [_b, amountB]) => {
+							const sorted = amountB - amountA;
+							if (sorted === 0) {
+								return _a > _b ? 1 : _a === _b ? 0 : -1;
+							}
+							return sorted;
+						}) as [name, amount] (name)}
 							<tr>
 								<td>{name}</td>
 								<td>{amount}</td>
@@ -231,6 +262,7 @@
 		gap: 1em;
 		grid-template-columns: repeat(auto-fit, minmax(min-content, min(100%, 300px)));
 		justify-content: space-between;
+		align-items: start;
 	}
 	th {
 		text-align: start;
