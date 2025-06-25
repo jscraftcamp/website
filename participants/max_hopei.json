@@ -21,7 +21,7 @@
 		// June 27th, 2025
 		"friday": true,
 		// June 28th, 2025
-		"saturday": false
+		"saturday": true
 	},
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": false,
