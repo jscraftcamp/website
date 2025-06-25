@@ -100,9 +100,9 @@
 			{:else}
 				<p><a href="{base}/registration">Registration is open!</a></p>
 				<p>Grab your spot!</p>
-				<p>Friday: <strong>{100 - data.fridayParticipants}</strong> spots left</p>
+				<p>Friday: <strong>{Math.max(0, 100 - data.fridayParticipants)}</strong> spots left</p>
 				<p>
-					Saturday: <strong>{100 - data.saturdayParticipants}</strong> spots left
+					Saturday: <strong>{Math.max(0, 100 - data.saturdayParticipants)}</strong> spots left
 				</p>
 			{/if}
 		</InfoBox>
