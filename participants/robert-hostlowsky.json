@@ -1,0 +1,29 @@
+{
+	"realName": {
+		"givenName": "Robert",
+		"familyName": "Hostlowsky",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": true
+	},
+	"githubAccountName": "lowsky",
+	"company": "instana",
+	"when": {
+		// June 27th, 2025
+		"friday": false,
+		// June 28th, 2025
+		"saturday": true
+	},
+	// if you are willing to take session notes and publish them to github (required)
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["Reactive programming", "local first", "tooling", "GraphQL", "OTel"],
+	"vegan": false,
+	"vegetarian": true,
+	"allergies": [],
+	// tell us a few words how JavaScript affects you (required)
+	"whatIsMyConnectionToJavascript": "15y JS, 11y React, 9y GraphQL 5y TS, 5y Reactive programming",
+	// what can you contribute to the bar camp (required)
+	"whatCanIContribute": "news from localfirst.conf, GraphQL AMA, OTel",
+	"tShirtSize": "M",
+	"mastodon": "https://mastodontech.de/@lowsky",
+	// really needed? "linkedin": "https://www.linkedin.com/in/blub/"
+}

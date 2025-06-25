@@ -19,7 +19,7 @@
 	// If you cannot make one of the days, please set it to false, to allow someone else take that spot!
 	"when": {
 		// June 27th, 2025
-		"friday": true,
+		"friday": false,
 		// June 28th, 2025
 		"saturday": true
 	},
