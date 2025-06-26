@@ -4,50 +4,41 @@
 {
 	// your real name (required by location host)
 	"realName": {
-		"givenName": "Charles",
-		"familyName": "Braquet",
+		"givenName": "Aron",
+		"familyName": "Homberg",
 		// if you prefer to have your family name shown first (optional)
 		"placeFamilyNameFirst": false,
 		// if you do not want to show your family name on the participant list (optional)
 		"hideFamilyNameOnWebsite": false
 	},
 	// please put in the account name of the PR creator, if you sign up somebody else
-	"githubAccountName": "charlyoleg2",
+	"githubAccountName": "kyr0",
 	// company name (optional)
-	"company": "",
 	// either both days or at least one day has to be set to true.
 	// If you cannot make one of the days, please set it to false, to allow someone else take that spot!
 	"when": {
 		// June 27th, 2025
-		"friday": true,
+		"friday": false,
 		// June 28th, 2025
 		"saturday": true
 	},
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": false,
 	// your current interests (JS and in general) (required)
-	"tags": ["Svelte", "ThreeJS", "CAD", "geometrix", "Parametrix", "11ty", "astro", "jscad"],
+	"tags": ["defuss", "WebAssembly", "TypeScript", "JavaScript", "Node.js"],
 	// if you only eat vegan food (optional)
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
 	"vegetarian": false,
-	// what you cannot eat or drink (optional); If you don't want to put it in here, message the organizers.
-	// IMPORTANT: we cannot guarantee that food for every diet will be available,
-	//            if you have gluten free diet, please make backup plans.
-	"allergies": [],
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "In my spare time, I have developed Parametrix, an open-source light-weight CAD solution",
+	"whatIsMyConnectionToJavascript": "Active since 2005, author (O'Reilly, 2011), JS trainer (Open Source Press/School), MNUG co-founder, conf speaker, OSS contributor (Node.js, Astro, ONNX Runtime, Transformers.js, W3C, more).",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "Present my open-source project Parametrix",
+	"whatCanIContribute": "I've recently developed a *multicore*, in-browser hybrid search engine (vector, full-text); 100k docs / 8ms. I can present the novel algos, WebAssembly hacks, code, etc. 25 GFLOPS on MBA M3 benched :)",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
 	"tShirtSize": "L",
-	// your Mastodon URL (optional)
-	"mastodon": "",
 	// your LinkedIn profile URL
-	"linkedin": "https://www.linkedin.com/in/charles-braquet-38965b20/",
-	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
-	"X": "",
+	"linkedin": "https://www.linkedin.com/in/aronhomberg/",
 	// your website URL or other social media (optional)
-	"website": "https://parametrix.fr/sorted-parts/newest"
+	"website": "https://aron-homberg.de"
 }

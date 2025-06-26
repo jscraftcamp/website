@@ -1,53 +1,50 @@
-// vim: ft=jsonc
-// Please provide your info in your own .json file.
-// See https://jscraftcamp.org/registration for more information
 {
 	// your real name (required by location host)
 	"realName": {
-		"givenName": "Florian",
-		"familyName": "Geierstanger",
+		"givenName": "Shayan",
+		"familyName": "ypn",
 		// if you prefer to have your family name shown first (optional)
 		"placeFamilyNameFirst": false,
 		// if you do not want to show your family name on the participant list (optional)
-		"hideFamilyNameOnWebsite": false
+		"hideFamilyNameOnWebsite": true
 	},
 	// please put in the account name of the PR creator, if you sign up somebody else
-	"githubAccountName": "fgeierst",
+	"githubAccountName": "yazdanpanahH",
 	// company name (optional)
-	"company": "codecentric",
+	"company": "Knauf Digital Gmbh",
 	// either both days or at least one day has to be set to true.
 	// If you cannot make one of the days, please set it to false, to allow someone else take that spot!
 	"when": {
 		// June 27th, 2025
-		"friday": false,
+		"friday": true,
 		// June 28th, 2025
 		"saturday": true
 	},
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": true,
 	// your current interests (JS and in general) (required)
-	"tags": ["Web Components", "Stencil", "Svelte", "Accessibility"],
+	"tags": ["React", "GraphQL"],
 	// if you only eat vegan food (optional)
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
-	"vegetarian": true,
+	"vegetarian": false,
 	// what you cannot eat or drink (optional); If you don't want to put it in here, message the organizers.
 	// IMPORTANT: we cannot guarantee that food for every diet will be available,
 	//            if you have gluten free diet, please make backup plans.
-	// "allergies": [],
+	"allergies": [],
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "I am building a component library with web components",
+	"whatIsMyConnectionToJavascript": "JS was my first programming language as a kid and now I code it daily for a living",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "something about web accessibility",
+	"whatCanIContribute": "Sharing experience from my previous JS projects",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
-	"tShirtSize": null,
+	"tShirtSize": "M",
 	// your Mastodon URL (optional)
-	"mastodon": "https://mastodon.social/@kinoauge",
+	"mastodon": "",
 	// your LinkedIn profile URL
-	"linkedin": "https://www.linkedin.com/in/florian-geierstanger/",
+	"linkedin": "",
 	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
-	//"X": "yourhandle",
+	"X": "",
 	// your website URL or other social media (optional)
-	"website": "https://florian.geierstanger.org/"
+	"website": ""
 }
