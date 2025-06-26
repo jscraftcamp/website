@@ -9,7 +9,7 @@
 	"company": "instana",
 	"when": {
 		// June 27th, 2025
-		"friday": false,
+		"friday": true,
 		// June 28th, 2025
 		"saturday": true
 	},
