@@ -1,0 +1,44 @@
+// vim: ft=jsonc
+// Daniel Georgiev's registration for JSCraftCamp 2025
+{
+  // your real name (required by location host)
+  "realName": {
+    "givenName": "Daniel",
+    "familyName": "Georgiev",
+    "placeFamilyNameFirst": false,
+    "hideFamilyNameOnWebsite": false
+  },
+  // please put in the account name of the PR creator, if you sign up somebody else
+  "githubAccountName": "deinGithubUsername", // <-- Ersetze das mit deinem GitHub-Nutzernamen
+  // company name (optional)
+  "company": "",
+  // either both days or at least one day has to be set to true.
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  // if you are willing to take session notes and publish them to github (required)
+  "iCanTakeNotesDuringSessions": true,
+  // your current interests (JS and in general) (required)
+  "tags": ["JavaScript", "Webentwicklung", "HTML", "CSS", "Lernen"],
+  // if you only eat vegan food (optional)
+  "vegan": false,
+  // if you only eat vegan or vegetarian food (optional)
+  "vegetarian": false,
+  // what you cannot eat or drink (optional)
+  "allergies": [],
+  // tell us a few words how JavaScript affects you (required)
+  "whatIsMyConnectionToJavascript": "Ich lerne gerade JavaScript, weil ich in die Welt der Webentwicklung einsteigen möchte. Mich faszinieren die Möglichkeiten, die man damit im Browser und auf dem Server hat. Ich freue mich darauf, mehr über moderne Tools und Frameworks zu erfahren.",
+  // what can you contribute to the bar camp (required)
+  "whatCanIContribute": "Ich bin JavaScript-Anfänger und möchte die Gelegenheit nutzen, um von anderen zu lernen. Ich kann die Perspektive eines Einsteigers einbringen, gute Fragen stellen und bei Sessions mitschreiben. Vielleicht kann ich gemeinsam mit anderen Anfängern eine Diskussion über Lernwege und gute Ressourcen starten.",
+  // if you want a T-Shirt we need your size and variant preference (optional)
+  "tShirtSize": "M",
+  // your Mastodon URL (optional)
+  "mastodon": "",
+  // your LinkedIn profile URL
+  "linkedin": "https://www.linkedin.com/in/daniel-georgiev/",
+  // your X (Twitter) handle - optional
+  "X": "",
+  // your website URL or other social media (optional)
+  "website": ""
+}
