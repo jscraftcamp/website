@@ -35,6 +35,9 @@
 			<nav>
 				<ul>
 					<li>
+						<a href="{base}/events/2025">2025</a>
+					</li>
+					<li>
 						<a href="{base}/events/2024">2024</a>
 					</li>
 					<li>

@@ -1,0 +1,25 @@
+{
+	"allergies": {},
+	"companies": [],
+	"orgaCount": 0,
+	"orgaShirts": {
+		"count": 0,
+		"fitted": 0,
+		"regular": 0,
+		"sizes": { "M": 0, "L": 0, "XL": 0, "3XL": 0 }
+	},
+	"participantCount": 0,
+	"participantsShirts": {
+		"count": 0,
+		"fitted": 0,
+		"regular": 0,
+		"sizes": { "M": 0, "2XL": 0, "XL": 0, "L": 0, "3XL": 0, "S": 0 }
+	},
+	"participants": {
+		"fridayOnly": 0,
+		"saturdayOnly": 0,
+		"bothDays": 0,
+		"notetakersFriday": 0,
+		"notetakersSaturday": 0
+	}
+}

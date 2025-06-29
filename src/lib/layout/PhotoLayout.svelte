@@ -48,10 +48,12 @@
 		gap: 2em;
 	}
 	.image {
-		height: auto;
-		max-height: 10em;
-		max-width: 10em;
-		width: auto;
+		flex-grow: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 10em;
+		height: 10em;
 	}
 	button {
 		appearance: none;
@@ -61,9 +63,9 @@
 	}
 	img {
 		display: block;
-		height: auto;
-		max-height: 100%;
-		max-width: 100%;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
 	}
 	.active.image {
 		position: fixed;
