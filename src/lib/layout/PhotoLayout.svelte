@@ -36,6 +36,14 @@
 				</button>
 			{/each}
 		</div>
+
+		<p>
+			Photos by
+			<a href="https://github.com/weiliddat" target="_blank">Chiawei</a>
+			is licensed under
+			<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a> for
+			JSCraftCamp {year}.
+		</p>
 	</InfoBox>
 </PageLayout>
 
