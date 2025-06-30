@@ -1,13 +1,15 @@
 <script lang="ts">
+	import type { Snippet } from 'svelte';
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 
 	interface Props {
 		photos: string[];
 		year: string;
+		credit?: Snippet;
 	}
 
-	let { photos, year }: Props = $props();
+	let { photos, year, credit }: Props = $props();
 
 	let activePhoto: string | null = $state(null);
 
@@ -37,13 +39,7 @@
 			{/each}
 		</div>
 
-		<p>
-			Photos by
-			<a href="https://github.com/weiliddat" target="_blank">Chiawei</a>
-			is licensed under
-			<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a> for
-			JSCraftCamp {year}.
-		</p>
+		{@render credit?.()}
 	</InfoBox>
 </PageLayout>
 
