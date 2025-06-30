@@ -58,11 +58,12 @@ export const ParticipantSchema = z
 			(v) => {
 				const maybeV = emptyToNull(v);
 
-				if (maybeV === null) {
+				if (!maybeV) {
 					return null;
 				}
 
 				const size = String(maybeV).toUpperCase();
+
 				switch (size) {
 					case 'XXL':
 						return '2XL';
