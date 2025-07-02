@@ -1,13 +1,15 @@
 <script lang="ts">
+	import type { Snippet } from 'svelte';
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 
 	interface Props {
 		photos: string[];
 		year: string;
+		credit?: Snippet;
 	}
 
-	let { photos, year }: Props = $props();
+	let { photos, year, credit }: Props = $props();
 
 	let activePhoto: string | null = $state(null);
 
@@ -36,6 +38,8 @@
 				</button>
 			{/each}
 		</div>
+
+		{@render credit?.()}
 	</InfoBox>
 </PageLayout>
 
@@ -48,10 +52,12 @@
 		gap: 2em;
 	}
 	.image {
-		height: auto;
-		max-height: 10em;
-		max-width: 10em;
-		width: auto;
+		flex-grow: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 10em;
+		height: 10em;
 	}
 	button {
 		appearance: none;
@@ -61,9 +67,9 @@
 	}
 	img {
 		display: block;
-		height: auto;
-		max-height: 100%;
-		max-width: 100%;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
 	}
 	.active.image {
 		position: fixed;
