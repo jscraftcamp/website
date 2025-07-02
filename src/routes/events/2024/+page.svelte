@@ -8,7 +8,7 @@
 </script>
 
 <EventLayout
-	archiveLink="https://web.archive.org/web/20250107140755/https://jscraftcamp.org/"
+	archiveLink="https://web.archive.org/web/20240915233620/https://jscraftcamp.org/"
 	when="June 07th & 8th 2024"
 	where="Maiborn-Wolff Kraftwerk"
 	year="2024"
