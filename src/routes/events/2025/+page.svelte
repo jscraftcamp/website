@@ -15,7 +15,9 @@
 >
 	<InfoBox>
 		<p>
-			This event was facilitated by <PersonLink linkedIn="" mastodon="">PLACEHOLDER</PersonLink>
+			This event was facilitated by <PersonLink linkedIn="https://www.linkedin.com/in/marco-emrich/"
+				>Marco Emrich</PersonLink
+			>.
 		</p>
 		<p>
 			Check out the session notes at <a
