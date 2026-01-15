@@ -19,7 +19,7 @@
 	import { base } from '$app/paths';
 	import Partners from '$lib/sponsoring/Partners.svelte';
 	import CurrentSponsors from '$lib/sponsoring/CurrentSponsors';
-	import Schedule from './Schedule.svelte';
+	// import Schedule from './Schedule.svelte';
 	import type { PageData } from './$types';
 
 	interface Props {
@@ -59,14 +59,14 @@
 </script>
 
 <PageLayout>
-	<h1>Welcome to JSCraftCamp 2025! ✅</h1>
+	<h1>Welcome to JSCraftCamp 2026! ✅</h1>
 
 	<p style="display: flex; align-items: center;">
-		Our hashtag is&nbsp;<b>#jscc25</b>&nbsp; find us on &nbsp;<a
-			href="https://mastodontech.de/tags/jscc25"
+		Our hashtag is&nbsp;<b>#jscc26</b>&nbsp; find us on &nbsp;<a
+			href="https://mastodontech.de/tags/jscc26"
 			><img src={mastodon} alt="mastodon" style="height: 1.5rem;" /></a
 		>
-		&nbsp;<a href="https://twitter.com/search?q=%23jscc25"
+		&nbsp;<a href="https://twitter.com/search?q=%23jscc26"
 			><img src={twitter} alt="twitter / X" style="height: 1.5rem;" /></a
 		>
 	</p>
@@ -89,11 +89,11 @@
 			</p>
 		</InfoBox>
 		<InfoBox title="When?">
-			<p><strong>27. & 28. June 2025</strong></p>
-			{#if $registrationState === 'not-yet'}
+			<p><strong>End of Sprint/Start of Summer</strong></p>
+			<!--{#if $registrationState === 'not-yet'}-->
 				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-				<p>Registration will open on April 30th, 2025. {@html $countdown}</p>
-			{:else if $registrationState === 'closed'}
+				<p>Registration will probably be open on April 30th, 2026. {@html $countdown}</p>
+			<!--{:else if $registrationState === 'closed'}
 				<p>
 					Registration is closed, we're full! <a href="{base}/registration">Join the wait list</a>!
 				</p>
@@ -104,10 +104,11 @@
 				<p>
 					Saturday: <strong>{Math.max(0, 100 - data.saturdayParticipants)}</strong> spots left
 				</p>
-			{/if}
+			{/if}-->
 		</InfoBox>
 		<InfoBox title="Where?">
-			<p>
+			<p>TBD</p>
+			<!--<p>
 				Thanks to codecentric AG, this year we'll be at the <a
 					href="https://www.codecentric.de/standorte/muenchen"
 					rel="external noopener noreferrer">codecentric München office</a
@@ -120,7 +121,7 @@
 				(<a href="https://maps.app.goo.gl/P2V1zn797ffFdjPm9" rel="external noopener noreferrer"
 					>Google Maps</a
 				>)
-			</p>
+			</p>-->
 		</InfoBox>
 		<InfoBox title="We're looking for sponsors!">
 			<p>
@@ -148,7 +149,7 @@
 			<a href="https://discord.gg/3mHhaXVEjP" rel="external"><img src={discord} alt="Discord" /></a>
 		</div>
 		<img src={skyline} alt="Munich skyline" />
-		<Schedule />
+		`<!--<Schedule />-->`
 		<CurrentSponsors />
 		<Partners />
 		<WhatToExpect />
