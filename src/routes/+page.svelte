@@ -20,13 +20,13 @@
 	import Partners from '$lib/sponsoring/Partners.svelte';
 	import CurrentSponsors from '$lib/sponsoring/CurrentSponsors';
 	// import Schedule from './Schedule.svelte';
-	import type { PageData } from './$types';
+	// import type { PageData } from './$types';
 
-	interface Props {
-		data: PageData;
-	}
+	// interface Props {
+	// 	data: PageData;
+	// }
 
-	let { data }: Props = $props();
+	// let { data }: Props = $props();
 
 	const countdown = writable<string>('');
 	const registrationState = writable<'not-yet' | 'closed' | 'open'>(getRegistrationState());
