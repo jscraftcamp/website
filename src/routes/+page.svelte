@@ -89,7 +89,7 @@
 			</p>
 		</InfoBox>
 		<InfoBox title="When?">
-			<p><strong>End of Sprint/Start of Summer</strong></p>
+			<p><strong>End of Spring/Start of Summer</strong></p>
 			<!--{#if $registrationState === 'not-yet'}-->
 				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 				<p>Registration will probably be open on April 30th, 2026. {@html $countdown}</p>
