@@ -1,4 +1,6 @@
 @import 'tailwindcss';
+
 @theme {
 	--font-sans: 'Rubik', sans-serif;
+	--color-background: #0f0f0f;
 }

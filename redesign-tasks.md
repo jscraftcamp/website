@@ -16,7 +16,7 @@
 
 ### Footer
 
-- [ ] Redesign Footer
+- [x] Redesign Footer
 
 ## Pages
 

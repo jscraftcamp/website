@@ -1,5 +1,5 @@
 <script lang="ts">
-	import FooterNavigation from './FooterNavigation.svelte';
+	import FooterNavigation from './footer/FooterNavigation.svelte';
 	import TopNavigation from './TopNavigation.svelte';
 	interface Props {
 		children?: import('svelte').Snippet;
@@ -20,9 +20,6 @@
 
 <style>
 	.page {
-		background:
-			linear-gradient(135deg, hsla(120, 100%, 20%, 0.1), #fff 20em),
-			linear-gradient(-45deg, hsla(120, 100%, 15%, 0.1), #fff 20em);
 		display: flex;
 		flex-flow: column;
 		gap: 2em;

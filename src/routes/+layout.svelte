@@ -45,8 +45,6 @@
 
 <style>
 	:root {
-		--footer-background-color: #000;
-		--footer-text-color: #fff;
 		--max-page-width: 66rem;
 	}
 
@@ -65,7 +63,6 @@
 
 	:global(a) {
 		color: inherit;
-		text-decoration: underline;
 	}
 
 	:global(a:hover) {
