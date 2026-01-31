@@ -8,13 +8,13 @@
 >
 	<nav class="z-10 flex items-center gap-3 font-medium text-white/50">
 		<a
-			href="{base}/legal"
+			href="{base}/imprint"
 			class="no-underline opacity-50 transition-opacity duration-200 hover:text-white/80 hover:underline"
 			>Imprint</a
 		>
 		<span class="opacity-50">·</span>
 		<a
-			href="{base}/legal#datenschutz"
+			href="{base}/privacy"
 			class="opacity-50 transition-opacity duration-200 hover:text-white/80 hover:underline"
 			>Privacy Policy</a
 		>

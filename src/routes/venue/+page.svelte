@@ -32,10 +32,6 @@
 </PageLayout>
 
 <style>
-	h1 {
-		text-align: center;
-	}
-
 	section {
 		display: flex;
 		flex-flow: column;
