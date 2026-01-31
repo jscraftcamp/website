@@ -20,8 +20,6 @@
 	"packageManager": "pnpm@9.1.0",
 	"devDependencies": {
 		"@eslint/compat": "^1.2.7",
-		"@fontsource/poppins": "5.2.5",
-		"@fontsource/source-sans-pro": "5.2.5",
 		"@playwright/test": "^1.50.1",
 		"@sveltejs/adapter-static": "^3.0.8",
 		"@sveltejs/kit": "^2.18.0",
@@ -57,8 +55,5 @@
 			"esbuild",
 			"@tailwindcss/oxide"
 		]
-	},
-	"dependencies": {
-		"@fontsource/rubik": "^5.2.8"
 	}
 }

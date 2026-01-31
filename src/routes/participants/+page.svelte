@@ -165,11 +165,14 @@
 		margin: 0;
 		padding: 0;
 	}
+
+	/* 66rem is the max-width of the page (was --max-page-width) before */
 	li {
 		flex-grow: 1;
 		list-style: none;
-		width: calc(var(--max-page-width) / 4 - 1.5em);
+		width: calc(66rem / 4 - 1.5em);
 	}
+
 	li > :global(*) {
 		height: 100%;
 	}

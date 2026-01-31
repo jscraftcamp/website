@@ -1,5 +1,11 @@
 @import 'tailwindcss';
 
+@font-face {
+	font-family: 'Rubik';
+	src: url('/fonts/rubik-variable.ttf') format('truetype-variations');
+	font-weight: 100 900;
+}
+
 @theme {
 	--font-sans: 'Rubik', sans-serif;
 
@@ -7,4 +13,26 @@
 
 	--color-primary-500: #f9db12;
 	--color-primary-700: #fdbb12;
+
+	--color-dark-300: #363636;
+	--color-dark-500: #202020;
+}
+
+:global(html, body) {
+	font-family: 'Rubik', sans-serif;
+	margin: 0;
+	height: 100vh;
+	padding: 0;
+}
+
+h2 {
+	color: var(--color-primary-700);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font-size-2xl);
+}
+
+h3 {
+	color: var(--color-primary-700);
+	font-weight: var(--font-weight-bold);
+	text-transform: uppercase;
 }

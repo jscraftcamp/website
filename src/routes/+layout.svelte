@@ -1,12 +1,6 @@
 <script lang="ts">
 	import './layout.css';
 	import type { Snippet } from 'svelte';
-	import '@fontsource/rubik';
-	import '@fontsource/rubik/500.css';
-	import '@fontsource/rubik/600.css';
-	import '@fontsource/rubik/700.css';
-	import '@fontsource/poppins';
-	import '@fontsource/poppins/600.css';
 
 	interface Props {
 		children?: Snippet;
@@ -42,36 +36,3 @@
 	<meta name="twitter:image" content="https://jscraftcamp.org/logos/2025/jscc-twitter-image.png" />
 </svelte:head>
 {@render children?.()}
-
-<style>
-	:root {
-		--max-page-width: 66rem;
-	}
-
-	:global(html, body) {
-		font-family: 'Rubik', sans-serif;
-		margin: 0;
-		height: 100vh;
-		padding: 0;
-	}
-
-	:global(h1, h2, h3, h4, h5, h6) {
-		font-family: 'Poppins', sans-serif;
-		font-weight: 700;
-		text-transform: uppercase;
-	}
-
-	:global(a:hover) {
-		text-decoration: none;
-	}
-
-	:global(code) {
-		background: #0001;
-		border: 1px solid #0003;
-		padding: 2px;
-	}
-
-	:global(*) {
-		box-sizing: border-box;
-	}
-</style>

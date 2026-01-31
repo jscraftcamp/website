@@ -3,10 +3,7 @@
 ## Setup
 
 - [x] Tailwind CSS implementieren
-
-### Font
-
-- [ ] Check if Font should be a npm package instead of static asset
+- [x] Rubik Font as static asset
 
 ## Layout Components
 
@@ -55,3 +52,7 @@
 ### Values Page
 
 ### Team Page
+
+### logo-to-social-media-pngs.ts
+
+what is this for ?
