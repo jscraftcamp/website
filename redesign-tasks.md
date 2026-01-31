@@ -12,11 +12,12 @@
 
 ### Header
 
-- [ ] Redesign Header
+- [x] Redesign Header
 
 ### Footer
 
 - [x] Redesign Footer
+- [ ] Discuss contrast for links
 
 ## Pages
 
