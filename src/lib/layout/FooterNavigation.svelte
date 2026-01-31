@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import Logo from '../../logos/CurrentLogo';
-	import background from './background.svg';
+	import Logo from '../logos/CurrentLogo';
 </script>
 
 <footer
@@ -29,8 +28,4 @@
 	<div class="z-10 mt-12">
 		<Logo style="max-width: 8rem;" />
 	</div>
-	<div
-		class="pointer-events-none absolute right-0 bottom-0 left-0 h-full bg-cover bg-bottom bg-no-repeat"
-		style="background-image: url({background});"
-	></div>
 </footer>
