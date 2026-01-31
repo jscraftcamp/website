@@ -8,6 +8,7 @@
 
 @theme {
 	--font-sans: 'Rubik', sans-serif;
+	--font-serif: 'Times New Roman', Times, serif;
 
 	--color-background: #0f0f0f;
 
@@ -25,13 +26,13 @@
 	padding: 0;
 }
 
-h2 {
+:global(h2) {
 	color: var(--color-primary-700);
 	font-weight: var(--font-weight-bold);
 	font-size: var(--font-size-2xl);
 }
 
-h3 {
+:global(h3) {
 	color: var(--color-primary-700);
 	font-weight: var(--font-weight-bold);
 	text-transform: uppercase;

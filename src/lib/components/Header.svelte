@@ -7,6 +7,7 @@
 		getYear,
 		isRegistrationOpen
 	} from '$lib/config/event';
+	import Card from '$lib/layout/Card.svelte';
 
 	const daysToGo = getDaysToGo();
 	const registrationOpen = isRegistrationOpen();
@@ -38,7 +39,7 @@
 	});
 </script>
 
-<div class="header-content relative overflow-hidden rounded-2xl px-6 py-8 sm:px-10 sm:py-12">
+<Card class="header-content relative overflow-hidden ">
 	<!-- Geometric pattern overlay -->
 	<div class="bavarian-diamonds pattern-overlay absolute inset-0 opacity-20"></div>
 
@@ -97,10 +98,10 @@
 			</span>
 		</div>
 	</div>
-</div>
+</Card>
 
 <style>
-	.header-content {
+	:global(.header-content) {
 		background: linear-gradient(
 			135deg,
 			var(--color-primary-500) 0%,

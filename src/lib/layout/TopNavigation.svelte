@@ -112,7 +112,7 @@
 	</div>
 
 	<!-- Desktop Navigation (>= lg) -->
-	<nav class="mx-auto hidden max-w-6xl flex-row flex-nowrap items-center gap-8 lg:flex">
+	<nav class="mx-auto hidden max-w-7xl flex-row flex-nowrap items-center gap-8 lg:flex">
 		<a href="{base}/" class="text-2xl font-bold text-primary-500">JSCraftCamp </a>
 
 		<ul class="m-0 flex flex-1 list-none flex-row flex-nowrap items-center gap-6 p-0">

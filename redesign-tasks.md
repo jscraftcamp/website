@@ -37,7 +37,7 @@
   - [x] Link register button
   - [x] configurable through `event.ts` file
   - [ ] Design for "Register now button"
-- [ ] 402 Sponsor Required
+- [x] 402 Sponsor Required
 - [ ] Sponsorbar
 - [ ] Random Photo
 - [ ] Location Info

@@ -13,7 +13,7 @@
 <div class="relative flex min-h-screen flex-col">
 	<TopNavigation />
 	<main class="z-10 flex-1 px-4">
-		<div class="mx-auto max-w-6xl">
+		<div class="mx-auto max-w-7xl">
 			{@render children?.()}
 		</div>
 	</main>
