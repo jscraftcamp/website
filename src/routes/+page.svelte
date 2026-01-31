@@ -1,8 +1,8 @@
 <script lang="ts">
 	import PageLayout from '$lib/layout/PageLayout.svelte';
-	import type { PageData } from './$types';
+	import Header from '$lib/components/Header.svelte';
 </script>
 
 <PageLayout>
-	<h2>Hello JSCC!</h2>
+	<Header />
 </PageLayout>

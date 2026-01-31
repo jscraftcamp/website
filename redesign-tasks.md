@@ -32,7 +32,11 @@
 
 ### Root Page (/)
 
-- [ ] Days to go / Registration CTA
+- [ ] Header
+  - [x] Days to go
+  - [x] Link register button
+  - [x] configurable through `event.ts` file
+  - [ ] Design for "Register now button"
 - [ ] 402 Sponsor Required
 - [ ] Sponsorbar
 - [ ] Random Photo

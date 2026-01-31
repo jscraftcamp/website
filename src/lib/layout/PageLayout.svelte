@@ -10,16 +10,16 @@
 	let { children }: Props = $props();
 </script>
 
-<div class="flex min-h-screen flex-col">
+<div class="relative flex min-h-screen flex-col">
 	<TopNavigation />
-	<main class="flex-1">
+	<main class="z-10 flex-1 px-4">
 		<div class="mx-auto max-w-6xl">
 			{@render children?.()}
 		</div>
 	</main>
 	<FooterNavigation />
 	<div
-		class="pointer-events-none absolute right-0 bottom-0 left-0 h-auto w-full bg-contain bg-bottom bg-no-repeat lg:-bottom-16 xl:-bottom-32"
+		class="pointer-events-none absolute right-0 bottom-0 left-0 w-full bg-contain bg-bottom bg-no-repeat"
 		style="background-image: url({background}); aspect-ratio: 1512/473;"
 	></div>
 </div>

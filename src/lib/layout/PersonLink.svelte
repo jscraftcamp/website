@@ -1,6 +1,6 @@
 <script lang="ts">
-	import linkedInLogo from './linked-in.png';
-	import mastodonLogo from './mastodon.svg';
+	import linkedInLogo from '../icons/linkedin.svg';
+	import mastodonLogo from '../icons/mastodon.svg';
 
 	interface Props {
 		mastodon?: string | undefined;
