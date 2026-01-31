@@ -16,7 +16,28 @@
 	--color-primary-700: #fdbb12;
 
 	--color-dark-300: #363636;
-	--color-dark-500: #202020;
+	--color-dark-500: #252525;
+
+	--animate-scroll-left: scroll-left 30s linear infinite;
+	--animate-scroll-right: scroll-right 40s linear infinite;
+}
+
+@keyframes scroll-left {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
+
+@keyframes scroll-right {
+	0% {
+		transform: translateX(-50%);
+	}
+	100% {
+		transform: translateX(0);
+	}
 }
 
 :global(html, body) {

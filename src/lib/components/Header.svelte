@@ -50,16 +50,20 @@
 			<span class="text-sm font-bold tracking-wide text-black sm:text-base">
 				The JavaScript Unconference
 			</span>
-			<h1 class="text-3xl font-bold text-black sm:text-5xl md:text-6xl">JSCraftCamp</h1>
+			<h1 class="text-3xl font-bold text-black sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl">
+				JSCraftCamp
+			</h1>
 			<div class="flex items-center gap-3">
-				<span class="text-3xl font-bold tracking-tight text-black sm:text-6xl md:text-7xl">
+				<span
+					class="text-3xl font-bold tracking-tight text-black sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl"
+				>
 					{getYear()}
 				</span>
 				<div class="flex flex-col leading-tight">
-					<span class="text-md font-bold text-black sm:text-xl md:text-2xl">
+					<span class="text-md font-bold text-black sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl">
 						{eventConfig.startDate.getDate()} - {eventConfig.endDate.getDate()}
 					</span>
-					<span class="text-md font-bold text-black sm:text-xl md:text-2xl">
+					<span class="text-md font-bold text-black sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl">
 						{eventConfig.startDate.toLocaleString('en-US', { month: 'long' })}
 					</span>
 				</div>
@@ -87,13 +91,15 @@
 		<!-- Right side content -->
 		<div class="flex flex-col justify-between text-right">
 			<div class="flex flex-col items-end">
-				<span class="text-4xl leading-none font-black text-black sm:text-6xl md:text-7xl">
+				<span
+					class="text-4xl leading-none font-black text-black sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl"
+				>
 					{displayedDays}
 				</span>
 				<span class="text-sm font-bold tracking-wider text-black">DAYS TO GO</span>
 			</div>
 
-			<span class="mt-4 text-xl font-black text-black sm:text-2xl">
+			<span class="mt-4 text-xl font-black text-black sm:text-2xl lg:text-2xl xl:text-2xl">
 				#jscc{getShortYear()}
 			</span>
 		</div>

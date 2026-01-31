@@ -38,7 +38,7 @@
   - [x] configurable through `event.ts` file
   - [ ] Design for "Register now button"
 - [x] 402 Sponsor Required
-- [ ] Sponsorbar
+- [x] Sponsorbar
 - [ ] Random Photo
 - [ ] Location Info
 - [ ] Description Unconference

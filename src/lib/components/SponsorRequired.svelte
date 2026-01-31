@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { getYear } from '$lib/config/event';
 	import Card from '$lib/layout/Card.svelte';
+	import { cn } from '$lib/utils/cn';
 
 	interface Props {
 		class?: string;
@@ -9,7 +10,7 @@
 	let { class: className = '' }: Props = $props();
 </script>
 
-<Card class="bg-white p-6 {className}">
+<Card class={cn('bg-white p-6', className)}>
 	<div class="flex flex-col gap-4">
 		<!-- Placeholder image -->
 		<div class="flex h-12 w-12 items-center justify-center rounded bg-stone-200 text-stone-400">
