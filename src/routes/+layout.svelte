@@ -61,12 +61,7 @@
 		text-transform: uppercase;
 	}
 
-	:global(a) {
-		color: inherit;
-	}
-
 	:global(a:hover) {
-		color: inherit;
 		text-decoration: none;
 	}
 

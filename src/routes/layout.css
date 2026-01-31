@@ -2,5 +2,9 @@
 
 @theme {
 	--font-sans: 'Rubik', sans-serif;
+
 	--color-background: #0f0f0f;
+
+	--color-primary-500: #f9db12;
+	--color-primary-700: #fdbb12;
 }
