@@ -1,11 +1,12 @@
 <script lang="ts">
 	import './layout.css';
 	import type { Snippet } from 'svelte';
+	import '@fontsource/rubik';
+	import '@fontsource/rubik/500.css';
+	import '@fontsource/rubik/600.css';
+	import '@fontsource/rubik/700.css';
 	import '@fontsource/poppins';
 	import '@fontsource/poppins/600.css';
-	import '@fontsource/source-sans-pro';
-	import '@fontsource/source-sans-pro/600.css';
-	import '@fontsource/source-sans-pro/700.css';
 
 	interface Props {
 		children?: Snippet;
@@ -50,7 +51,7 @@
 	}
 
 	:global(html, body) {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Rubik', sans-serif;
 		margin: 0;
 		height: 100vh;
 		padding: 0;

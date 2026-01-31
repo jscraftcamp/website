@@ -4,6 +4,10 @@
 
 - [x] Tailwind CSS implementieren
 
+### Font
+
+- [ ] Check if Font should be a npm package instead of static asset
+
 ## Layout Components
 
 ### Header
