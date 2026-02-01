@@ -99,7 +99,9 @@
 							{#each shirtKinds as kind (kind)}
 								<tr class="border-b border-gray-700/50 last:border-b-0">
 									<td class="px-3 py-2 text-gray-300">{kind}</td>
-									<td class="px-3 py-2 text-white">{amountOfShirts(participantsShirts.sizes, kind)}</td>
+									<td class="px-3 py-2 text-white"
+										>{amountOfShirts(participantsShirts.sizes, kind)}</td
+									>
 								</tr>
 							{/each}
 						</tbody>
@@ -107,7 +109,8 @@
 					<table class="w-full border-collapse text-sm">
 						<thead>
 							<tr class="border-b border-gray-600">
-								<th class="px-3 py-2 text-left font-semibold text-primary-500">Shirt sizes (orga)</th
+								<th class="px-3 py-2 text-left font-semibold text-primary-500"
+									>Shirt sizes (orga)</th
 								>
 								<th class="px-3 py-2 text-left font-semibold text-primary-500">Amount</th>
 							</tr>

@@ -46,7 +46,7 @@
 
 	<!-- Mobile layout: vertical list -->
 	<div class="flex flex-col gap-2 md:hidden">
-		{#each agenda.items as item}
+		{#each agenda.items as item (item.time)}
 			<div class="flex items-center gap-2">
 				<span class="w-12 shrink-0 text-sm font-semibold text-yellow-500"
 					>{formatTime(item.time)}</span
@@ -63,7 +63,7 @@
 		<!-- Timeline line -->
 		<div class="absolute right-0 bottom-1 left-0 h-px bg-yellow-500/30"></div>
 
-		{#each slots as slot, index}
+		{#each slots as slot, index (slot)}
 			{@const item = itemsByTime.get(slot)}
 			{@const isFirst = index === 0}
 			{@const isLast = index === slots.length - 1}
@@ -87,7 +87,7 @@
 									: 'items-center text-center'
 						)}
 					>
-						{#each splitTitle(item.title) as line}
+						{#each splitTitle(item.title) as line, lineIndex (`${item.time}-${lineIndex}`)}
 							<span>{line}</span>
 						{/each}
 					</div>

@@ -28,14 +28,14 @@
 		<div class="flex flex-row flex-wrap items-center justify-between gap-[2em]">
 			{#each photos as photo, index (photo)}
 				<button
-					class="appearance-none border-0 bg-transparent cursor-pointer grow flex items-center justify-center {activePhoto ===
+					class="flex grow cursor-pointer appearance-none items-center justify-center border-0 bg-transparent {activePhoto ===
 					photo
-						? 'fixed inset-0 p-[2em] bg-black/80 max-h-none max-w-none w-full h-full z-50'
-						: 'w-[10em] h-[10em]'}"
+						? 'fixed inset-0 z-50 h-full max-h-none w-full max-w-none bg-black/80 p-[2em]'
+						: 'h-[10em] w-[10em]'}"
 					onclick={() => setOrUnsetPhoto(photo)}
 				>
 					<img
-						class="block w-full h-full object-contain"
+						class="block h-full w-full object-contain"
 						src={photo}
 						alt="Impression {index + 1} of {photos.length} from JSCraftCamp {year}"
 					/>

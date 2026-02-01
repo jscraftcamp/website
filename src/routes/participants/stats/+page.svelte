@@ -69,8 +69,9 @@
 			<Card>
 				<h2 class="text-xl font-semibold text-primary-500">Participants</h2>
 				<p class="text-gray-300">
-					There are currently <span class="font-semibold text-white">{participantCount}</span> participants
-					registered (including <span class="font-semibold text-white">{orgaCount}</span> orga members).
+					There are currently <span class="font-semibold text-white">{participantCount}</span>
+					participants registered (including
+					<span class="font-semibold text-white">{orgaCount}</span> orga members).
 				</p>
 				<div class="grid gap-4 md:grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
 					<table class="w-full border-collapse text-sm">
@@ -136,7 +137,8 @@
 					<table class="w-full border-collapse text-sm">
 						<thead>
 							<tr class="border-b border-gray-600">
-								<th class="px-3 py-2 text-left font-semibold text-primary-500">Shirt sizes (orga)</th
+								<th class="px-3 py-2 text-left font-semibold text-primary-500"
+									>Shirt sizes (orga)</th
 								>
 								<th class="px-3 py-2 text-left font-semibold text-primary-500">Amount</th>
 							</tr>
@@ -230,7 +232,7 @@
 							<tr class="border-b border-gray-600">
 								<th class="w-8 px-1 py-2"></th>
 								<th
-									class="cursor-pointer px-3 py-2 text-left font-semibold text-primary-500 transition-colors select-none hover:text-primary-400"
+									class="hover:text-primary-400 cursor-pointer px-3 py-2 text-left font-semibold text-primary-500 transition-colors select-none"
 									role="columnheader"
 									onclick={() => setSort(byName)}
 								>
@@ -247,7 +249,7 @@
 									</span>
 								</th>
 								<th
-									class="cursor-pointer px-3 py-2 text-left font-semibold text-primary-500 transition-colors select-none hover:text-primary-400"
+									class="hover:text-primary-400 cursor-pointer px-3 py-2 text-left font-semibold text-primary-500 transition-colors select-none"
 									role="columnheader"
 									onclick={() => setSort(byAmount)}
 								>

@@ -1,4 +1,3 @@
-import stackForge from './logos/stack-forge.svg';
 import allPrintCut from './logos/all-print-cut-com.svg';
 import alm from './logos/alm-logo-2022.svg';
 import codecentric from './logos/codecentric.png';

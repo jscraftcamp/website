@@ -17,7 +17,7 @@
 <Card class={cn('flex flex-col gap-3 overflow-hidden px-0 py-4 sm:px-0 sm:py-4', className)}>
 	<div class="scroll-container w-full overflow-hidden py-2">
 		<div class="flex w-max animate-scroll-left items-center gap-8">
-			{#each duplicatedTranslations as text, i}
+			{#each duplicatedTranslations as text, i (`${text}-${i}`)}
 				<span
 					class="text-xs font-medium tracking-wide whitespace-nowrap uppercase {i % 2 === 1
 						? 'text-white/80'

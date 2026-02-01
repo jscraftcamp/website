@@ -70,7 +70,7 @@
 	>
 		<nav class="flex h-full flex-col items-center justify-center gap-8 p-8">
 			<ul class="flex list-none flex-col items-center gap-6">
-				{#each navItems as item}
+				{#each navItems as item (item.href)}
 					{#if !item.showWhen || item.showWhen()}
 						<li>
 							<a
@@ -93,7 +93,7 @@
 			<div class="flex flex-col items-center gap-4">
 				<span class="text-sm font-medium text-white/50">Socials</span>
 				<div class="flex items-center gap-4">
-					{#each socialLinks as social}
+					{#each socialLinks as social (social.label)}
 						<a
 							href={social.href}
 							target="_blank"
@@ -116,7 +116,7 @@
 		<a href="{base}/" class="text-2xl font-bold text-primary-500">JSCraftCamp </a>
 
 		<ul class="m-0 flex flex-1 list-none flex-row flex-nowrap items-center gap-6 p-0">
-			{#each navItems as item}
+			{#each navItems as item (item.href)}
 				{#if !item.showWhen || item.showWhen()}
 					<li>
 						<a
@@ -143,7 +143,7 @@
 		<div class="flex flex-row flex-nowrap items-center gap-4">
 			<span class="font-medium text-white/50">Socials</span>
 			<div class="flex flex-row flex-nowrap items-center gap-3">
-				{#each socialLinks as social}
+				{#each socialLinks as social (social.label)}
 					<a
 						href={social.href}
 						target="_blank"

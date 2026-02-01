@@ -76,16 +76,14 @@
 				>
 					<div class="mb-2 flex items-center justify-between">
 						<span class="text-3xl font-bold text-primary-500">{event.year}</span>
-						<span
-							class="text-sm text-gray-400 transition-colors group-hover:text-primary-500"
-						>
+						<span class="text-sm text-gray-400 transition-colors group-hover:text-primary-500">
 							View →
 						</span>
 					</div>
 					<p class="text-sm text-gray-300">{event.date}</p>
 					<p class="mb-3 text-sm text-gray-400">{event.location}</p>
 					<div class="mt-auto flex flex-wrap gap-1">
-						{#each event.highlights as highlight}
+						{#each event.highlights as highlight (highlight)}
 							<span class="rounded-full bg-gray-700 px-2 py-0.5 text-xs text-gray-300">
 								{highlight}
 							</span>

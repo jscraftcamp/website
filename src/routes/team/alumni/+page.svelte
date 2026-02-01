@@ -20,7 +20,7 @@
 	</Content>
 
 	<section class="grid grid-cols-1 justify-items-center gap-8 sm:grid-cols-2 lg:grid-cols-4">
-		{#each alumni as member}
+		{#each alumni as member (member.name)}
 			<TeamMember {...member} />
 		{/each}
 	</section>

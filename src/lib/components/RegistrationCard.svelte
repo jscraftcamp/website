@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Card from '$lib/layout/Card.svelte';
-	import { cn } from '$lib/utils/cn';
 	import RegisterNow from '$lib/assets/register-now.svg';
 
 	interface Props {

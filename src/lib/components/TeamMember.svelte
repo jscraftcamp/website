@@ -62,7 +62,7 @@
 
 		{#if socials.length > 0}
 			<div class="mt-1 flex gap-3">
-				{#each socials as social}
+				{#each socials as social (social.label)}
 					<a
 						href={social.url}
 						rel="external noopener noreferrer"

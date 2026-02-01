@@ -30,7 +30,7 @@
 	</ContentSection>
 
 	<section class="grid grid-cols-1 justify-items-center gap-8 sm:grid-cols-2 lg:grid-cols-4">
-		{#each team as member}
+		{#each team as member (member.name)}
 			<TeamMember {...member} />
 		{/each}
 	</section>

@@ -113,7 +113,7 @@
 				{#if visibleDots.showLeftEllipsis}
 					<span class="px-1 text-white/50">...</span>
 				{/if}
-				{#each { length: visibleDots.end - visibleDots.start } as _, i}
+				{#each { length: visibleDots.end - visibleDots.start }, i}
 					{@const dotIndex = visibleDots.start + i}
 					<button
 						onclick={() => goToIndex(dotIndex)}

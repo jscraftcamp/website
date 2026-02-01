@@ -36,7 +36,7 @@
 			</svg>
 
 			<!-- Location pin -->
-			<div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-full">
+			<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-full">
 				<div class="h-8 w-6 rounded-full bg-red-400 opacity-50"></div>
 			</div>
 		</div>

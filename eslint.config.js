@@ -47,7 +47,8 @@ export default ts.config(
 	{
 		rules: {
 			// Override or add rule settings here, such as:
-			'@typescript-eslint/no-inferrable-types': ['off']
+			'@typescript-eslint/no-inferrable-types': ['off'],
+			'svelte/no-at-html-tags': ['off']
 		}
 	}
 );
