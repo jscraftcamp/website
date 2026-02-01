@@ -123,6 +123,13 @@ export const sponsors: Sponsor[] = [
 	}
 ].sort((a, b) => a.name.localeCompare(b.name));
 
+export const isSponsor = (key: string) => {
+	return sponsors.some(
+		(sponsor) =>
+			sponsor.name.replace(/\s/g, '-').toLowerCase() === key.replace(/\s/g, '-').toLowerCase()
+	);
+};
+
 // "Thank You" in multiple languages for the scrolling banner
 export const thankYouTranslations = [
 	'DANKE',

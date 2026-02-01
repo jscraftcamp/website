@@ -13,7 +13,7 @@
 <div class="relative flex min-h-screen flex-col">
 	<TopNavigation />
 	<main class="z-10 flex-1 px-4">
-		<div class="mx-auto flex max-w-7xl flex-col gap-4">
+		<div class="mx-auto flex max-w-7xl flex-col sm:gap-8 md:gap-12">
 			{@render children?.()}
 		</div>
 	</main>

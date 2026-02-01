@@ -11,6 +11,7 @@
 	import RegistrationCard from '$lib/components/RegistrationCard.svelte';
 	import { fridayAgenda, saturdayAgenda, allTimeSlots } from '$lib/config/agenda';
 	import type { PageData } from './$types';
+	import Content from '$lib/layout/Content.svelte';
 
 	interface Props {
 		data: PageData;
@@ -20,25 +21,29 @@
 </script>
 
 <PageLayout>
-	<div class="grid grid-cols-1 gap-4 pb-8 lg:grid-cols-3">
-		<!-- Row 1: Header + SponsorRequired -->
-		<Header class="lg:col-span-2" />
-		<SponsorRequired />
+	<Content>
+		<div class="grid grid-cols-1 gap-4 pb-8 lg:grid-cols-3">
+			<!-- Row 1: Header + SponsorRequired -->
+			<Header class="lg:col-span-2" />
+			<SponsorRequired />
 
-		<!-- Row 2: SponsorCard (full width) -->
-		<SponsorCard class="lg:col-span-3" />
+			<!-- Row 2: SponsorCard (full width) -->
+			<SponsorCard class="lg:col-span-3" />
 
-		<!-- Row 3: Photo + Location + Unconference -->
-		<EventPhotos photos={data.eventPhotos} />
-		<LocationPlaceholder />
-		<UnconferenceDescription />
+			<!-- Row 3: Photo + Location + Unconference -->
+			<EventPhotos photos={data.eventPhotos} />
+			<LocationPlaceholder />
+			<UnconferenceDescription />
 
-		<!-- Row 4: Registration + Timelines -->
-		<RegistrationCard />
-		<div class="flex h-full flex-col justify-between gap-4 lg:col-span-2">
-			<Timeline agenda={fridayAgenda} slots={allTimeSlots} />
-			<Timeline agenda={saturdayAgenda} slots={allTimeSlots} />
+			<!-- Row 4: Registration + Timelines -->
+			<RegistrationCard />
+			<div class="flex h-full flex-col justify-between gap-4 lg:col-span-2">
+				<Timeline agenda={fridayAgenda} slots={allTimeSlots} />
+				<Timeline agenda={saturdayAgenda} slots={allTimeSlots} />
+			</div>
 		</div>
-	</div>
-	<Partners />
+	</Content>
+	<Content>
+		<Partners />
+	</Content>
 </PageLayout>
