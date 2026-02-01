@@ -2,7 +2,6 @@
 	import { base } from '$app/paths';
 	import Card from '$lib/layout/Card.svelte';
 	import Content from '$lib/layout/Content.svelte';
-	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 	import RegistrationTemplate from '../../../participants/_template.json?raw';
 </script>

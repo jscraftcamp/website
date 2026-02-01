@@ -2,7 +2,7 @@ import type { AgendaDay } from './types';
 
 export const fridayAgenda: AgendaDay = {
 	dayLabel: 'FRIDAY',
-	date: '11.07.2025',
+	date: '27.06.2025',
 	items: [
 		{ title: 'DOORS OPENING', time: 9 },
 		{ title: 'OPENING & MARKETPLACE', time: 10 },
@@ -17,7 +17,7 @@ export const fridayAgenda: AgendaDay = {
 
 export const saturdayAgenda: AgendaDay = {
 	dayLabel: 'SATURDAY',
-	date: '12.07.2025',
+	date: '28.06.2025',
 	items: [
 		{ title: 'DOORS OPENING', time: 9 },
 		{ title: 'MARKETPLACE', time: 10 },

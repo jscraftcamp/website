@@ -3,7 +3,7 @@
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 	import Content from '$lib/layout/Content.svelte';
 	import Card from '$lib/layout/Card.svelte';
-	import PersonLink from '$lib/layout/PersonLink.svelte';
+	import PersonLink from '$lib/components/PersonLink.svelte';
 	import Logo2024 from '$lib/logos/Logo2024.svelte';
 	import Sponsors2024 from '$lib/sponsoring/Sponsors2024.svelte';
 </script>

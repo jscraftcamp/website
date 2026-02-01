@@ -18,13 +18,13 @@ import typedigital from './logos/typedigital.svg';
 import type { Sponsor } from './types';
 
 export const sponsors: Sponsor[] = [
-	{
-		// tobi: kann man stehen lassen für 2026 ;)
+	// tobi: kann man stehen lassen für 2026 ;)
+	/*{
 		image: stackForge,
 		link: 'https://www.stack-forge.eu',
 		name: 'StackForge',
 		sponsoring: 'Breakfast Fr & Sa'
-	},
+	},*/
 	{
 		image: allPrintCut,
 		link: 'https://allprintcut.com/',

@@ -3,7 +3,7 @@
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 	import Content from '$lib/layout/Content.svelte';
 	import Card from '$lib/layout/Card.svelte';
-	import PersonLink from '$lib/layout/PersonLink.svelte';
+	import PersonLink from '$lib/components/PersonLink.svelte';
 	import Logo2025 from '$lib/logos/Logo2025.svelte';
 	import Sponsors2025 from '$lib/sponsoring/Sponsors2025.svelte';
 </script>
@@ -36,7 +36,7 @@
 					<a
 						href="https://web.archive.org/web/20250628212649/https://jscraftcamp.org/"
 						rel="external"
-						class="text-primary-500 underline hover:text-primary-400"
+						class="hover:text-primary-400 text-primary-500 underline"
 					>
 						View old JSCraftCamp 2025 homepage
 					</a>
@@ -53,7 +53,7 @@
 				Check out the session notes at <a
 					href="https://github.com/jscraftcamp/jscc2025"
 					rel="external"
-					class="text-primary-500 underline hover:text-primary-400"
+					class="hover:text-primary-400 text-primary-500 underline"
 				>
 					github.com/jscraftcamp/jscc2025
 				</a>
