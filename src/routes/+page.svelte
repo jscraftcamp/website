@@ -6,10 +6,17 @@
 	import Partners from '$lib/components/PartnersArea.svelte';
 	import UnconferenceDescription from '$lib/components/UnconferenceDescriptionCard.svelte';
 	import Timeline from '$lib/components/TimelineCard.svelte';
-	import PhotoPlaceholder from '$lib/components/PhotoPlaceholderCard.svelte';
+	import EventPhotos from '$lib/components/EventPhotosCard.svelte';
 	import LocationPlaceholder from '$lib/components/LocationPlaceholderCard.svelte';
 	import RegistrationCard from '$lib/components/RegistrationCard.svelte';
 	import { fridayAgenda, saturdayAgenda, allTimeSlots } from '$lib/config/agenda';
+	import type { PageData } from './$types';
+
+	interface Props {
+		data: PageData;
+	}
+
+	let { data }: Props = $props();
 </script>
 
 <PageLayout>
@@ -22,7 +29,7 @@
 		<SponsorCard class="lg:col-span-3" />
 
 		<!-- Row 3: Photo + Location + Unconference -->
-		<PhotoPlaceholder />
+		<EventPhotos photos={data.eventPhotos} />
 		<LocationPlaceholder />
 		<UnconferenceDescription />
 
