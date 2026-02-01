@@ -1,13 +1,13 @@
 <script lang="ts">
 	import PageLayout from '$lib/layout/PageLayout.svelte';
-	import Header from '$lib/components/Header.svelte';
-	import SponsorRequired from '$lib/components/SponsorRequired.svelte';
-	import SponsorCard from '$lib/components/SponsorCard.svelte';
-	import Partners from '$lib/components/Partners.svelte';
-	import UnconferenceDescription from '$lib/components/UnconferenceDescription.svelte';
-	import Timeline from '$lib/components/Timeline.svelte';
-	import PhotoPlaceholder from '$lib/components/PhotoPlaceholder.svelte';
-	import LocationPlaceholder from '$lib/components/LocationPlaceholder.svelte';
+	import Header from '$lib/components/HeaderCard.svelte';
+	import SponsorRequired from '$lib/components/SponsorRequiredCard.svelte';
+	import SponsorCard from '$lib/components/CurrentSponsorsCard.svelte';
+	import Partners from '$lib/components/PartnersArea.svelte';
+	import UnconferenceDescription from '$lib/components/UnconferenceDescriptionCard.svelte';
+	import Timeline from '$lib/components/TimelineCard.svelte';
+	import PhotoPlaceholder from '$lib/components/PhotoPlaceholderCard.svelte';
+	import LocationPlaceholder from '$lib/components/LocationPlaceholderCard.svelte';
 	import RegistrationCard from '$lib/components/RegistrationCard.svelte';
 	import { fridayAgenda, saturdayAgenda, allTimeSlots } from '$lib/config/agenda';
 </script>

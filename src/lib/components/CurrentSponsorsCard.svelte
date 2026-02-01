@@ -38,7 +38,7 @@
 					<img
 						src={sponsor.image}
 						alt={sponsor.name}
-						class="h-full w-auto max-w-32 object-contain invert"
+						class="h-full w-auto max-w-32 object-contain"
 					/>
 				</a>
 			{/each}

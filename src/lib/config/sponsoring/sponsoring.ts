@@ -1,3 +1,4 @@
+import stackForge from './logos/stack-forge.svg';
 import allPrintCut from './logos/all-print-cut-com.svg';
 import alm from './logos/alm-logo-2022.svg';
 import codecentric from './logos/codecentric.png';
@@ -17,6 +18,13 @@ import typedigital from './logos/typedigital.svg';
 import type { Sponsor } from './types';
 
 export const sponsors: Sponsor[] = [
+	{
+		// tobi: kann man stehen lassen für 2026 ;)
+		image: stackForge,
+		link: 'https://www.stack-forge.eu',
+		name: 'StackForge',
+		sponsoring: 'Breakfast Fr & Sa'
+	},
 	{
 		image: allPrintCut,
 		link: 'https://allprintcut.com/',
@@ -114,26 +122,6 @@ export const sponsors: Sponsor[] = [
 		sponsoring: 'Friday Snacks'
 	}
 ].sort((a, b) => a.name.localeCompare(b.name));
-
-export const isSponsor = (key: string) =>
-	[
-		'all-prints-cut-com',
-		'alm',
-		'codecentric',
-		'compose-us',
-		'deno',
-		'finanzvergleich-com',
-		'freelancer-gorlug-software',
-		'hetzner',
-		'inovex',
-		'inspired-consulting',
-		'peerigon',
-		'saab',
-		'tiffinger-thiel',
-		'tng-technology-consulting',
-		'twilio',
-		'typedigital'
-	].includes(key);
 
 // "Thank You" in multiple languages for the scrolling banner
 export const thankYouTranslations = [
