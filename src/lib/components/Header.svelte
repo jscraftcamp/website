@@ -8,6 +8,13 @@
 		isRegistrationOpen
 	} from '$lib/config/event';
 	import Card from '$lib/layout/Card.svelte';
+	import { cn } from '$lib/utils/cn';
+
+	interface Props {
+		class?: string;
+	}
+
+	let { class: className = '' }: Props = $props();
 
 	const daysToGo = getDaysToGo();
 	const registrationOpen = isRegistrationOpen();
@@ -39,7 +46,7 @@
 	});
 </script>
 
-<Card class="header-content relative overflow-hidden ">
+<Card class={cn('header-content relative overflow-hidden px-6 py-8 sm:px-10 sm:py-12', className)}>
 	<!-- Geometric pattern overlay -->
 	<div class="bavarian-diamonds pattern-overlay absolute inset-0 opacity-20"></div>
 

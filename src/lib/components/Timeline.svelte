@@ -38,7 +38,7 @@
 	}
 </script>
 
-<Card class={cn('gap-2 px-2 py-4 sm:px-4 sm:py-4', className)}>
+<Card class={cn('h-full justify-between px-2 py-4 sm:px-4 sm:py-4', className)}>
 	<div class="flex items-baseline gap-2">
 		<span class="font-bold text-yellow-500">{agenda.dayLabel}</span>
 		<span class="text-yellow-500">{agenda.date}</span>
@@ -59,7 +59,7 @@
 	</div>
 
 	<!-- Desktop layout: slot-based timeline -->
-	<div class="relative hidden h-20 md:block">
+	<div class="relative hidden flex-1 md:block">
 		<!-- Timeline line -->
 		<div class="absolute right-0 bottom-1 left-0 h-px bg-yellow-500/30"></div>
 
