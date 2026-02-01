@@ -1,41 +1,42 @@
 <script lang="ts">
-	import InfoBox from '$lib/layout/InfoBox.svelte';
+	import Card from '$lib/layout/Card.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
+	import VenueSearchCard from '$lib/components/VenueSearchCard.svelte';
+	import { venueConfig } from '$lib/config/venue';
 </script>
 
 <PageLayout>
 	<h1>Location Information</h1>
 
-	<section>
-		<InfoBox>
-			<p>This year's location will be in codecentric München office.</p>
-			<p>
-				codecentric AG<br />
-				August-Everding-Straße 20<br />
-				81671 München<br />
-				(<a href="https://maps.app.goo.gl/P2V1zn797ffFdjPm9" rel="external noopener noreferrer"
-					>Google Maps</a
-				>)
-			</p>
-			<p>
-				See some impressions of the codecentric Plaza here:
-				<a href="https://www.codecentric.de/standorte/muenchen" rel="external noopener noreferrer"
-					>here</a
-				>.
-			</p>
-		</InfoBox>
+	{#if venueConfig.noVenueAvailable}
+		<VenueSearchCard />
+	{:else}
+		<Card>
+			{#if venueConfig.description}
+				<p>{venueConfig.description}</p>
+			{/if}
+			{#if venueConfig.address}
+				<p>
+					{venueConfig.address.name}<br />
+					{venueConfig.address.street}<br />
+					{venueConfig.address.city}<br />
+					(<a href={venueConfig.address.mapsLink} rel="external noopener noreferrer">Google Maps</a
+					>)
+				</p>
+			{/if}
+			{#if venueConfig.impressionsLink}
+				<p>
+					See some impressions of the venue
+					<a href={venueConfig.impressionsLink} rel="external noopener noreferrer">here</a>.
+				</p>
+			{/if}
+		</Card>
 
-		<InfoBox title="Accessibility">
-			<p>We'll update this when we have more information available.</p>
-		</InfoBox>
-	</section>
+		{#if venueConfig.accessibility}
+			<Card>
+				<h3>Accessibility</h3>
+				<p>{venueConfig.accessibility.description}</p>
+			</Card>
+		{/if}
+	{/if}
 </PageLayout>
-
-<style>
-	section {
-		display: flex;
-		flex-flow: column;
-		align-items: center;
-		gap: 2em;
-	}
-</style>
