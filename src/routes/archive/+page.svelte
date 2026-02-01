@@ -1,88 +1,98 @@
 <script lang="ts">
-	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
+	import Content from '$lib/layout/Content.svelte';
+	import Card from '$lib/layout/Card.svelte';
+	import { base } from '$app/paths';
+
+	const events = [
+		{
+			year: 2025,
+			date: 'June 27th & 28th',
+			location: 'TBD',
+			highlights: ['Session notes available', 'Statistics available']
+		},
+		{
+			year: 2024,
+			date: 'June 7th & 8th',
+			location: 'Maiborn-Wolff Kraftwerk',
+			highlights: ['Session notes available', 'Statistics available']
+		},
+		{
+			year: 2023,
+			date: 'June 9th & 10th',
+			location: 'Munich',
+			highlights: ['Session notes available', 'Statistics available']
+		},
+		{
+			year: 2022,
+			date: 'July 1st & 2nd',
+			location: 'Munich',
+			highlights: ['First event after pandemic']
+		},
+		{
+			year: 2019,
+			date: 'June 21st & 22nd',
+			location: 'Munich',
+			highlights: ['Last event before pandemic']
+		},
+		{
+			year: 2018,
+			date: 'June 22nd & 23rd',
+			location: 'Munich',
+			highlights: ['Photos available']
+		},
+		{
+			year: 2017,
+			date: 'July 21st & 22nd',
+			location: 'Munich',
+			highlights: ['Photos available']
+		},
+		{
+			year: 2016,
+			date: 'October 8th & 9th',
+			location: 'Virtual Identity',
+			highlights: ['First JSCraftCamp ever', 'Photos available']
+		}
+	];
 </script>
 
 <PageLayout>
-	<h1>Impressum</h1>
-	<h2>Angaben gemäß § 5 TMG:</h2>
-	<section>
-		<InfoBox title="Kontakt">
-			<p>
-				<strong>E-Mail:</strong><br />
-				joern.bernhardt+jscc@compose.us
-			</p>
-			<p>
-				<strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br />
-				Jörn Bernhardt, Goethestr. 46, 84032 Landshut
-			</p>
-		</InfoBox>
-		<InfoBox title="Haftung für Inhalte">
-			<p>
-				Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit,
-				Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als
-				Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den
-				allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter
-				jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen
-				oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
-				Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den
-				allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst
-				ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden
-				von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
-			</p>
-		</InfoBox>
-		<InfoBox title="Haftung für Links">
-			<p>
-				Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen
-				Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
-				Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der
-				Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf
-				mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung
-				nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne
-				konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von
-				Rechtsverletzungen werden wir derartige Links umgehend entfernen.
-			</p>
-		</InfoBox>
-		<InfoBox title="Urheberrecht">
-			<p>
-				Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem
-				deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
-				Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung
-				des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den
-				privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht
-				vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere
-				werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine
-				Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei
-				Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
-			</p>
-		</InfoBox>
-		<InfoBox id="datenschutz" title="Datenschutz">
-			<p>
-				Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich.
-				Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder
-				eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis.
-				Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.
-			</p>
-			<p>
-				Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per
-				E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff
-				durch Dritte ist nicht möglich.
-			</p>
-			<p>
-				Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte
-				zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien
-				wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich
-				rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch
-				Spam-Mails, vor.
-			</p>
-		</InfoBox>
-	</section>
-</PageLayout>
+	<Content>
+		<h1>Archive</h1>
 
-<style>
-	section {
-		display: flex;
-		flex-flow: column;
-		gap: 2em;
-	}
-</style>
+		<Card>
+			<h2 class="text-xl font-semibold text-primary-500">Past Events</h2>
+			<p class="text-gray-300">
+				Explore the history of JSCraftCamp. Since 2016, we've been bringing together JavaScript
+				enthusiasts for two days of learning, sharing, and community building.
+			</p>
+		</Card>
+
+		<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+			{#each events as event (event.year)}
+				<a
+					href="{base}/archive/{event.year}"
+					class="group flex flex-col rounded-2xl border border-gray-700 bg-dark-500 p-6 transition-all hover:border-primary-500 hover:shadow-lg hover:shadow-primary-500/10"
+				>
+					<div class="mb-2 flex items-center justify-between">
+						<span class="text-3xl font-bold text-primary-500">{event.year}</span>
+						<span
+							class="text-sm text-gray-400 transition-colors group-hover:text-primary-500"
+						>
+							View →
+						</span>
+					</div>
+					<p class="text-sm text-gray-300">{event.date}</p>
+					<p class="mb-3 text-sm text-gray-400">{event.location}</p>
+					<div class="mt-auto flex flex-wrap gap-1">
+						{#each event.highlights as highlight}
+							<span class="rounded-full bg-gray-700 px-2 py-0.5 text-xs text-gray-300">
+								{highlight}
+							</span>
+						{/each}
+					</div>
+				</a>
+			{/each}
+		</div>
+	</Content>
+</PageLayout>
