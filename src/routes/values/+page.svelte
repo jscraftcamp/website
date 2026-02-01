@@ -1,11 +1,13 @@
 <script lang="ts">
+	import Card from '$lib/layout/Card.svelte';
 	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 </script>
 
 <PageLayout>
 	<h1>Code of Conduct</h1>
-	<InfoBox title="Why">
+	<Card>
+		<h3>Why</h3>
 		<p>
 			The JSCC community is committed to providing a friendly, safe and welcoming environment for
 			all. Our goal is that everyone feels comfortable and welcome.
@@ -15,8 +17,9 @@
 			the conference to help us create safe and positive experiences for everyone.
 		</p>
 		<p>We do not tolerate discrimination, including sexism, racism, ableism.</p>
-	</InfoBox>
-	<InfoBox title="Do">
+	</Card>
+	<Card>
+		<h3>Do</h3>
 		<p>
 			We believe in people and our guests - so we ask nothing more of everybody than to be
 			respectful and friendly with one another. That means:
@@ -50,8 +53,9 @@
 				doing a session on it.
 			</li>
 		</ul>
-	</InfoBox>
-	<InfoBox title="Don't">
+	</Card>
+	<Card>
+		<h3>Don't</h3>
 		<p>
 			The following is an incomplete list of unacceptable behaviour. Violating this will definitely
 			lead to consequences.
@@ -63,8 +67,9 @@
 			<li>Insult or put down other participants.</li>
 			<li>Joke about any of the above.</li>
 		</ul>
-	</InfoBox>
-	<InfoBox title="Help Needed">
+	</Card>
+	<Card>
+		<h3>Help Needed</h3>
 		<p>
 			Accept feedback gracefully, if someone tells you something was not okay. Take it as a learning
 			opportunity, do not automatically get defensive.
@@ -84,5 +89,5 @@
 			<li>Exclude the person from the event.</li>
 			<li>Contact authorities, if appropriate.</li>
 		</ul>
-	</InfoBox>
+	</Card>
 </PageLayout>
