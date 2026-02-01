@@ -49,6 +49,15 @@
 		padding: 0;
 	}
 
+	a {
+		color: var(--color-primary-500);
+		cursor: pointer;
+	}
+
+	a:hover {
+		color: var(--color-primary-700);
+	}
+
 	h1 {
 		color: var(--color-primary-700);
 		font-weight: var(--font-weight-bold);
