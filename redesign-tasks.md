@@ -5,6 +5,10 @@
 - [x] Tailwind CSS implementieren
 - [x] Rubik Font as static asset
 
+## Hosting
+
+- [ ] Move to StackForge Hosting
+
 ## Layout Components
 
 ### Header
@@ -24,11 +28,11 @@
 
 ### Imprint Page
 
-- [ ] Replace TGM as it does not exist anymore
+- [x] Replace TGM as it does not exist anymore
 
 ### Privacy Page
 
-- [ ] Update Privacy Page to implement GDPR corretly
+- [x] Update Privacy Page to implement GDPR corretly
 
 ### Root Page (/)
 
@@ -39,13 +43,13 @@
   - [ ] Design for "Register now button"
 - [x] 402 Sponsor Required
 - [x] Sponsorbar
-- [ ] Random Photo
+- [x] Random Photo
 - [ ] Location Info
-- [ ] Description Unconference
-- [ ] Registration Card
-- [ ] Friday Timebar
-- [ ] Saturday Timebar
-- [ ] Partners and Friends Section
+- [x] Description Unconference
+- [x] Registration Card
+- [x] Friday Timebar
+- [x] Saturday Timebar
+- [x] Partners and Friends Section
 
 ### Participants Page
 
