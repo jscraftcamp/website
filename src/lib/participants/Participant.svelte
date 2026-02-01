@@ -1,13 +1,14 @@
 <script lang="ts">
-	import Box from '$lib/layout/Box.svelte';
-	import githubLogo from './github.svg';
-	import linkedinLogo from './linkedin.svg';
-	import mastodonLogo from './mastodon.svg';
-	import websiteLogo from './website.svg';
-	import xLogo from './x.svg';
+	import githubLogo from '$lib/icons/github.svg?raw';
+	import linkedinLogo from '$lib/icons/linkedin.svg?raw';
+	import mastodonLogo from '$lib/icons/mastodon.svg?raw';
+	import xLogo from '$lib/icons/x.svg?raw';
+	import globeIcon from '$lib/icons/globe.svg?raw';
+	import pencilSquareIcon from '$lib/icons/pencil-square.svg?raw';
 	import type { Participant } from '$lib/participants/participant-schema';
 	import { displayName } from '$lib/participants/display-name';
 	import { createEventDispatcher } from 'svelte';
+	import { cn } from '$lib/utils/cn';
 
 	interface Props {
 		participant: Participant;
@@ -23,198 +24,135 @@
 	const dispatch = createEventDispatcher<{ selectedTag: string }>();
 </script>
 
-<Box style={isActive ? '--box-shadow: 0 0 25px -10px #080f, 0 0 200px rgba(0, 0, 0, 0.1);' : ''}>
-	<div class="participant">
-		<div class="attendance">
-			{#if participant.iCanTakeNotesDuringSessions}<span class="nt" title="offers to take notes"
-					>📝</span
-				>{/if}
-			{#if participant.when.friday}<span class="fr" title="will attend Friday, 27th June">Fr</span
-				>{/if}
-			{#if participant.when.saturday}<span class="sa" title="will attend Saturday, 28th June"
-					>Sa</span
-				>{/if}
-		</div>
-		<h3>
-			<button type="button" onclick={() => (isShowingDetails = !isShowingDetails)}
-				>{displayName(participant)}</button
+<article
+	class={cn(
+		'relative flex h-full w-full flex-col rounded-2xl bg-dark-500 p-6 pb-10 text-white',
+		isActive && 'shadow-lg ring-2 shadow-primary-500/20 ring-primary-500'
+	)}
+>
+	<!-- Name -->
+	<h3 class="m-0 overflow-hidden text-ellipsis hover:wrap-break-word">
+		<button
+			type="button"
+			onclick={() => (isShowingDetails = !isShowingDetails)}
+			class="font-inherit cursor-pointer border-none bg-transparent p-0 text-left text-primary-700 uppercase"
+		>
+			{displayName(participant)}
+		</button>
+	</h3>
+
+	<!-- Company -->
+	{#if participant.company}
+		<h4 class="m-0 overflow-hidden text-sm font-normal text-ellipsis text-gray-300">
+			{participant.company}
+		</h4>
+	{/if}
+
+	<!-- Social links -->
+	{#if hasSocialLink}
+		<div class="mt-2 flex flex-wrap items-center gap-1">
+			<a
+				href="https://github.com/{participant.githubAccountName}"
+				rel="external noopener noreferrer"
+				target="_blank"
+				class="p-1 text-white/50 transition-opacity hover:text-primary-500"
+				title="Link to {participant.githubAccountName} on GitHub"
 			>
-		</h3>
-		{#if participant.company}<h4>{participant.company}</h4>{/if}
-		{#if hasSocialLink}
-			<div class="socials">
-				<a href="https://github.com/{participant.githubAccountName}" rel="external"
-					><img
-						src={githubLogo}
-						height="32"
-						width="32"
-						alt="Link to {participant.githubAccountName} on GitHub"
-					/></a
+				<span class="block h-5 w-5 *:size-full">{@html githubLogo}</span>
+			</a>
+			{#if participant.X}
+				<a
+					href="https://x.com/{participant.X}"
+					rel="external noopener noreferrer"
+					target="_blank"
+					class="p-1 text-white/50 transition-opacity hover:text-primary-500"
+					title="Link to @{participant.X} on X"
 				>
-				{#if participant.X}
-					<a href="https://x.com/{participant.X}" rel="external"
-						><img src={xLogo} height="32" width="32" alt="Link to @{participant.X} on X" /></a
-					>
-				{/if}
-				{#if participant.mastodon}
-					<a href={participant.mastodon} rel="external"
-						><img
-							src={mastodonLogo}
-							height="32"
-							width="32"
-							alt="Link to {displayName(participant)} on Mastodon"
-						/></a
-					>
-				{/if}
-				{#if participant.linkedin}
-					<a href={participant.linkedin} rel="external"
-						><img
-							src={linkedinLogo}
-							height="32"
-							width="32"
-							alt="Link to {displayName(participant)} on LinkedIn"
-						/></a
-					>
-				{/if}
-				{#if participant.website}
-					<a href={participant.website} rel="external"
-						><img
-							class="website"
-							src={websiteLogo}
-							height="32"
-							width="32"
-							alt="Link to website of {displayName(participant)}"
-						/></a
-					>
-				{/if}
-			</div>
-		{/if}
-		<div class="details">
-			{#if isShowingDetails}
-				<h4>Connection</h4>
-				<p>{participant.whatIsMyConnectionToJavascript}</p>
-				<h4>Contribution</h4>
-				<p>{participant.whatCanIContribute}</p>
-			{:else}
-				<ul class="tags">
-					{#each participant.tags as tag (tag)}
-						<li>
-							<button type="button" onclick={() => dispatch('selectedTag', tag)}>{tag}</button>
-						</li>
-					{/each}
-				</ul>
+					<span class="block h-5 w-5 *:size-full">{@html xLogo}</span>
+				</a>
+			{/if}
+			{#if participant.mastodon}
+				<a
+					href={participant.mastodon}
+					rel="external noopener noreferrer"
+					target="_blank"
+					class="p-1 text-white/50 transition-opacity hover:text-primary-500"
+					title="Link to {displayName(participant)} on Mastodon"
+				>
+					<span class="block h-5 w-5 *:size-full">{@html mastodonLogo}</span>
+				</a>
+			{/if}
+			{#if participant.linkedin}
+				<a
+					href={participant.linkedin}
+					rel="external noopener noreferrer"
+					target="_blank"
+					class="p-1 text-white/50 transition-opacity hover:text-primary-500"
+					title="Link to {displayName(participant)} on LinkedIn"
+				>
+					<span class="block h-5 w-5 *:size-full">{@html linkedinLogo}</span>
+				</a>
+			{/if}
+			{#if participant.website}
+				<a
+					href={participant.website}
+					rel="external noopener noreferrer"
+					target="_blank"
+					class="p-1 text-white/50 transition-opacity hover:text-primary-500"
+					title="Link to website of {displayName(participant)}"
+				>
+					<span class="block h-5 w-5 *:size-full">{@html globeIcon}</span>
+				</a>
 			{/if}
 		</div>
+	{/if}
+
+	<!-- Details / Tags -->
+	<div class="mt-4 flex-1 wrap-break-word whitespace-pre-wrap">
+		{#if isShowingDetails}
+			<h4 class="mt-4 mb-1 text-sm font-semibold text-primary-500 first:mt-0">Connection</h4>
+			<p class="m-0 text-sm text-gray-300">{participant.whatIsMyConnectionToJavascript}</p>
+			<h4 class="mt-4 mb-1 text-sm font-semibold text-primary-500">Contribution</h4>
+			<p class="m-0 text-sm text-gray-300">{participant.whatCanIContribute}</p>
+		{:else}
+			<ul class="m-0 mt-2 flex list-none flex-wrap gap-2 p-0">
+				{#each participant.tags as tag (tag)}
+					<li class="p-0">
+						<button
+							type="button"
+							onclick={() => dispatch('selectedTag', tag)}
+							class="cursor-pointer rounded border border-gray-500 bg-transparent px-2 py-1 text-xs text-gray-300 transition-colors hover:border-primary-500 hover:text-primary-500 active:bg-primary-500 active:text-black"
+						>
+							{tag}
+						</button>
+					</li>
+				{/each}
+			</ul>
+		{/if}
 	</div>
-</Box>
 
-<style>
-	.participant {
-		display: flex;
-		flex-flow: column nowrap;
-		height: 100%;
-		justify-content: flex-end;
-		padding: 2em;
-		position: relative;
-	}
-	.attendance {
-		align-items: stretch;
-		display: flex;
-		flex-flow: row nowrap;
-		height: 2em;
-		justify-content: flex-end;
-		position: absolute;
-		right: 1em;
-		text-align: center;
-		top: 0;
-	}
-	.attendance span {
-		display: flex;
-		height: 100%;
-		width: 1.5em;
-		align-items: flex-end;
-		justify-content: center;
-		color: #fff;
-	}
-	.attendance .nt {
-		background: #219e87;
-	}
-	.attendance .fr {
-		background: #4b81b6;
-	}
-	.attendance .sa {
-		background: #e98b23;
-	}
-	h3,
-	h4 {
-		margin: 0;
-		overflow: hidden;
-		text-overflow: ellipsis;
-	}
-	h3:hover {
-		word-wrap: break-word;
-	}
-	.details {
-		flex: 1;
-		word-wrap: break-word;
-		white-space: pre-wrap;
-		word-break: break-word;
-	}
-	.details h4 {
-		margin-top: 1em;
-	}
-	.details p {
-		margin: 0;
-	}
-	.socials {
-		align-items: center;
-		display: flex;
-		flex-wrap: wrap;
-		margin: 0 -0.5em -0.5em;
-	}
-	.socials img {
-		max-height: 2em;
-		max-width: 2em;
-	}
-	.socials a {
-		padding: 0.5em;
-	}
-	.socials a:hover {
-		background: #0001;
-	}
-	ul {
-		list-style: none;
-		margin: 1em 0 0;
-		padding: 0;
-		display: flex;
-		flex-flow: row wrap;
-		gap: 0.5em;
-	}
-	h3 button {
-		background: none;
-		border: none;
-		cursor: pointer;
-		font: inherit;
-		padding: 0;
-		margin: 0;
-		text-align: inherit;
-		text-transform: uppercase;
-	}
-	li button {
-		background: transparent;
-		border: 2px solid #000;
-		cursor: pointer;
-		font: inherit;
-		padding: 0.25em 0.5em;
-	}
-	li button:active {
-		background: hsl(120, 100%, 20%);
-		color: #fff;
-	}
-
-	.fr,
-	.sa,
-	.nt {
-		cursor: help;
-	}
-</style>
+	<!-- Attendance badges (bottom right) -->
+	<div class="absolute right-4 bottom-3 flex items-center gap-2 text-xs font-semibold">
+		<span
+			class={cn('cursor-help', participant.when.friday ? 'text-primary-500' : 'text-gray-600')}
+			title="Friday, 27th June"
+		>
+			FR
+		</span>
+		<span
+			class={cn('cursor-help', participant.when.saturday ? 'text-primary-500' : 'text-gray-600')}
+			title="Saturday, 28th June"
+		>
+			SA
+		</span>
+		<span
+			class={cn(
+				'h-4 w-4 cursor-help *:size-full',
+				participant.iCanTakeNotesDuringSessions ? 'text-primary-500' : 'text-gray-600'
+			)}
+			title="Can take notes during sessions"
+		>
+			{@html pencilSquareIcon}
+		</span>
+	</div>
+</article>

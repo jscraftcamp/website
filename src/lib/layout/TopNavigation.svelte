@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
-	import { isRegistrationOpen } from '$lib/participants/registration';
+	import { isRegistrationOpen } from '$lib/config/event';
 
 	// Import icons as raw SVG strings
 	import discordIcon from '$lib/icons/discord.svg?raw';
