@@ -21,6 +21,17 @@
 	// Shuffle only once on initialization, not on every state change
 	const shuffledPhotos = shuffleArray(photos);
 	let currentIndex = $state(0);
+	let isLoading = $state(true);
+
+	// Reset loading state when image changes
+	$effect(() => {
+		currentIndex;
+		isLoading = true;
+	});
+
+	function handleImageLoad() {
+		isLoading = false;
+	}
 
 	function goToPrevious() {
 		currentIndex = currentIndex === 0 ? shuffledPhotos.length - 1 : currentIndex - 1;
@@ -63,10 +74,17 @@
 	{#if shuffledPhotos.length > 0}
 		<!-- Photo display -->
 		<div class="pointer-events-none absolute inset-0">
+			<!-- Loading skeleton -->
+			{#if isLoading}
+				<div class="absolute inset-0 animate-pulse bg-stone-700">
+					<div class="absolute inset-0 animate-shimmer bg-linear-to-r from-transparent via-white/10 to-transparent"></div>
+				</div>
+			{/if}
 			<img
 				src={shuffledPhotos[currentIndex]}
 				alt="Event photo {currentIndex + 1} of {shuffledPhotos.length}"
-				class="h-full w-full object-cover"
+				class={cn('h-full w-full object-cover transition-opacity duration-300', isLoading ? 'opacity-0' : 'opacity-100')}
+				onload={handleImageLoad}
 			/>
 			<!-- Gradient overlay for better text readability -->
 			<div
@@ -155,3 +173,18 @@
 		</div>
 	{/if}
 </Card>
+
+<style>
+	@keyframes shimmer {
+		0% {
+			transform: translateX(-100%);
+		}
+		100% {
+			transform: translateX(100%);
+		}
+	}
+
+	:global(.animate-shimmer) {
+		animation: shimmer 1.5s infinite;
+	}
+</style>
