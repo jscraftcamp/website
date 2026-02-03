@@ -25,7 +25,7 @@
 
 	// Reset loading state when image changes
 	$effect(() => {
-		currentIndex;
+		void currentIndex;
 		isLoading = true;
 	});
 
@@ -77,13 +77,18 @@
 			<!-- Loading skeleton -->
 			{#if isLoading}
 				<div class="absolute inset-0 animate-pulse bg-stone-700">
-					<div class="absolute inset-0 animate-shimmer bg-linear-to-r from-transparent via-white/10 to-transparent"></div>
+					<div
+						class="animate-shimmer absolute inset-0 bg-linear-to-r from-transparent via-white/10 to-transparent"
+					></div>
 				</div>
 			{/if}
 			<img
 				src={shuffledPhotos[currentIndex]}
 				alt="Event photo {currentIndex + 1} of {shuffledPhotos.length}"
-				class={cn('h-full w-full object-cover transition-opacity duration-300', isLoading ? 'opacity-0' : 'opacity-100')}
+				class={cn(
+					'h-full w-full object-cover transition-opacity duration-300',
+					isLoading ? 'opacity-0' : 'opacity-100'
+				)}
 				onload={handleImageLoad}
 			/>
 			<!-- Gradient overlay for better text readability -->
