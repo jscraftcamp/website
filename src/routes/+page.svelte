@@ -7,7 +7,7 @@
 	import UnconferenceDescription from '$lib/components/UnconferenceDescriptionCard.svelte';
 	import Timeline from '$lib/components/TimelineCard.svelte';
 	import EventPhotos from '$lib/components/EventPhotosCard.svelte';
-	import LocationPlaceholder from '$lib/components/LocationPlaceholderCard.svelte';
+	import LocationCard from '$lib/components/LocationCard.svelte';
 	import RegistrationCard from '$lib/components/RegistrationCard.svelte';
 	import { fridayAgenda, saturdayAgenda, allTimeSlots } from '$lib/config/agenda';
 	import type { PageData } from './$types';
@@ -32,7 +32,7 @@
 
 			<!-- Row 3: Photo + Location + Unconference -->
 			<EventPhotos photos={data.eventPhotos} />
-			<LocationPlaceholder />
+			<LocationCard />
 			<UnconferenceDescription />
 
 			<!-- Row 4: Registration + Timelines -->
