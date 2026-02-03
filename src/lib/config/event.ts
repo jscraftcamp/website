@@ -5,6 +5,9 @@
  */
 
 export interface EventConfig {
+	/** Whether this is an estimation event */
+	isEstimation: boolean;
+
 	/** Start date of the event (first day) */
 	startDate: Date;
 
@@ -12,10 +15,10 @@ export interface EventConfig {
 	endDate: Date;
 
 	/** When registration opens */
-	registrationOpensAt: Date;
+	registrationOpensAt: Date | undefined;
 
 	/** When registration closes */
-	registrationClosesAt: Date;
+	registrationClosesAt: Date | undefined;
 
 	/** Whether registration is open for Friday */
 	fridayRegistrationOpen: boolean;
@@ -25,10 +28,11 @@ export interface EventConfig {
 }
 
 export const eventConfig: EventConfig = {
-	startDate: new Date('2025-06-27T07:30:00Z'),
-	endDate: new Date('2025-06-28'),
-	registrationOpensAt: new Date('2025-02-20T07:00:00Z'),
-	registrationClosesAt: new Date('2025-02-26T17:00:00Z'),
+	isEstimation: true,
+	startDate: new Date('2026-06-27T07:30:00Z'),
+	endDate: new Date('2026-06-28'),
+	registrationOpensAt: undefined, //new Date('2025-02-20T07:00:00Z'),
+	registrationClosesAt: undefined, //new Date('2025-02-26T17:00:00Z'),
 	fridayRegistrationOpen: false,
 	saturdayRegistrationOpen: false
 };
@@ -55,11 +59,18 @@ export function getShortYear(): string {
 }
 
 export function isRegistrationOpen(): boolean {
+	if (!eventConfig.registrationOpensAt || !eventConfig.registrationClosesAt) {
+		return false;
+	}
 	const now = +new Date();
 	return +eventConfig.registrationOpensAt <= now && now <= +eventConfig.registrationClosesAt;
 }
 
 export function getRegistrationState(): 'not-yet' | 'open' | 'closed' {
+	if (!eventConfig.registrationOpensAt || !eventConfig.registrationClosesAt) {
+		return 'not-yet';
+	}
+
 	const now = +new Date();
 	if (now <= +eventConfig.registrationOpensAt) {
 		return 'not-yet';

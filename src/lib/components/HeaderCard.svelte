@@ -66,14 +66,20 @@
 				>
 					{getYear()}
 				</span>
-				<div class="flex flex-col leading-tight">
-					<span class="text-md font-bold text-black sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl">
-						{eventConfig.startDate.getDate()} - {eventConfig.endDate.getDate()}
-					</span>
-					<span class="text-md font-bold text-black sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl">
-						{eventConfig.startDate.toLocaleString('en-US', { month: 'long' })}
-					</span>
-				</div>
+				{#if !eventConfig.isEstimation}
+					<div class="flex flex-col leading-tight">
+						<span
+							class="text-md font-bold text-black sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl"
+						>
+							{eventConfig.startDate.getDate()} - {eventConfig.endDate.getDate()}
+						</span>
+						<span
+							class="text-md font-bold text-black sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl"
+						>
+							{eventConfig.startDate.toLocaleString('en-US', { month: 'long' })}
+						</span>
+					</div>
+				{/if}
 			</div>
 
 			<!-- Registration button -->
@@ -101,7 +107,7 @@
 				<span
 					class="text-4xl leading-none font-black text-black sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl"
 				>
-					{displayedDays}
+					{eventConfig.isEstimation ? 'TBD' : displayedDays}
 				</span>
 				<span class="text-sm font-bold tracking-wider text-black">DAYS TO GO</span>
 			</div>

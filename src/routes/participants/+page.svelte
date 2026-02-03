@@ -40,13 +40,15 @@
 		($participantsFilter = $participantsFilter === saturdayFilter ? noFilter : saturdayFilter);
 	let participantsFilter = writable<(p: ParticipantT) => boolean>(noFilter);
 
-	const registrationState = writable<'not-yet' | 'open' | 'closed'>(getRegistrationState());
+	const registrationState = writable<'not-yet' | 'open' | 'closed' | 'unknown'>(
+		getRegistrationState()
+	);
 	const countdown = writable<string>(isRegistrationOpen() ? 'NOW' : 'soon');
 
 	const updateCountdown = () => {
 		$registrationState = getRegistrationState();
 
-		if ($registrationState !== 'not-yet') {
+		if ($registrationState !== 'not-yet' || !eventConfig.registrationOpensAt) {
 			return;
 		}
 
@@ -75,7 +77,12 @@
 <PageLayout>
 	<Content>
 		<h1>Participants</h1>
-		{#if $registrationState === 'not-yet'}
+		{#if $registrationState === 'unknown'}
+			<Card>
+				<h2>Registration</h2>
+				<p>Registration dates will be announced soon. Stay tuned!</p>
+			</Card>
+		{:else if $registrationState === 'not-yet' && eventConfig.registrationOpensAt}
 			<Card>
 				<h2>Registration</h2>
 				<p>
