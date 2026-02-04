@@ -1,0 +1,91 @@
+@import 'tailwindcss';
+
+@font-face {
+	font-family: 'Rubik';
+	src: url('/fonts/rubik-variable.ttf') format('truetype-variations');
+	font-weight: 100 900;
+}
+
+@theme {
+	--font-sans: 'Rubik', sans-serif;
+	--font-serif: 'Times New Roman', Times, serif;
+
+	--color-background: #0f0f0f;
+
+	--color-primary-500: #f9db12;
+	--color-primary-700: #fdbb12;
+
+	--color-dark-300: #363636;
+	--color-dark-500: #252525;
+
+	--animate-scroll-left: scroll-left 30s linear infinite;
+	--animate-scroll-right: scroll-right 40s linear infinite;
+}
+
+@keyframes scroll-left {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
+
+@keyframes scroll-right {
+	0% {
+		transform: translateX(-50%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@layer base {
+	html,
+	body {
+		font-family: 'Rubik', sans-serif;
+		margin: 0;
+		height: 100vh;
+		padding: 0;
+	}
+
+	a {
+		color: var(--color-primary-500);
+		cursor: pointer;
+	}
+
+	a:hover {
+		color: var(--color-primary-700);
+	}
+
+	h1 {
+		color: var(--color-primary-700);
+		font-weight: var(--font-weight-bold);
+		font-size: var(--text-4xl);
+	}
+
+	h2 {
+		color: var(--color-primary-700);
+		font-weight: var(--font-weight-bold);
+		font-size: var(--text-2xl);
+	}
+
+	h3 {
+		color: var(--color-primary-700);
+		font-weight: var(--font-weight-bold);
+		text-transform: uppercase;
+	}
+
+	ul {
+		list-style: disc;
+		padding-left: 1.5rem;
+	}
+
+	li {
+		padding-left: 0.5rem;
+	}
+
+	li::marker {
+		color: var(--color-primary-500);
+	}
+}

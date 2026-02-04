@@ -1,25 +1,16 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import InfoBox from '$lib/layout/InfoBox.svelte';
+	import Card from '$lib/layout/Card.svelte';
+	import Content from '$lib/layout/Content.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 	import RegistrationTemplate from '../../../participants/_template.json?raw';
 </script>
 
 <PageLayout>
-	<h1>Registration</h1>
-	<section>
-		<InfoBox title="Registration process">
-			<p>
-				To register for the JSCraftCamp you have to add a JSONC file<sup>1</sup> with your name and
-				some other information to our
-				<a href="https://github.com/jscraftcamp/website">github repository</a>
-				via a pull request<sup>2</sup>. Registration is free of charge. Your json file should follow
-				the naming scheme
-				<code>$name_or_nickname.json</code> and must be placed in the folder
-				<code>participants</code>. The structure of the file is described below. We are using JSONC
-				to parse the files, so it's okay to keep the comments from the
-				<code>_template.json</code>.
-			</p>
+	<Content>
+		<h1>Registration</h1>
+		<Card>
+			<h2>Registration process</h2>
 			<p>
 				Out of these JSON files, the <a href="{base}/participants/">/participants</a> page will be generated.
 			</p>
@@ -36,9 +27,10 @@
 				>
 				to create the JSONC file in the repo. Make sure you are logged in to github.
 			</p>
-		</InfoBox>
+		</Card>
 
-		<InfoBox title="The important stuff">
+		<Card>
+			<h2>The important stuff</h2>
 			<ul>
 				<li>
 					Please put in your <strong>real name</strong>; Location host will check it at the entrance
@@ -70,14 +62,16 @@
 					>.
 				</li>
 			</ul>
-		</InfoBox>
+		</Card>
 
-		<InfoBox title="The JSON format">
+		<Card>
+			<h2>The JSON format</h2>
 			<p>Your registration as JSON file should be in the following format to pass the tests:</p>
 			<pre>{RegistrationTemplate}</pre>
-		</InfoBox>
+		</Card>
 
-		<InfoBox title="Validation for your JSON file">
+		<Card>
+			<h2>Validation for your JSON file</h2>
 			<p>
 				To test if your JSON file is a valid registration you can run <code>pnpm run test</code>
 				(more details about this are in the
@@ -86,32 +80,15 @@
 				> file). Invalid registrations will be rejected. If you need any help with registration, don't
 				hesitate to contact one of the team.
 			</p>
-		</InfoBox>
+		</Card>
 
-		<InfoBox title="Process to unregister">
+		<Card>
+			<h2>Process to unregister</h2>
 			<p>
 				If you registered previously and at some point find out you can't make it to the
 				JSCraftCamp, please let us know. Either unregister by writing another pull request, write an
 				issue or contact us at <a href="mailto:team@jscraftcamp.org">team@jscraftcamp.org</a>.
 			</p>
-		</InfoBox>
-	</section>
+		</Card>
+	</Content>
 </PageLayout>
-
-<style>
-	section {
-		display: flex;
-		flex-flow: column;
-		gap: 2em;
-		max-width: 100%;
-	}
-
-	pre {
-		max-width: 100%;
-		overflow: auto;
-	}
-
-	sup {
-		line-height: 0; /* Remove the change in line height for lines with <sup> in them, makes these lines with <sup>s be higher, which renders ugly. */
-	}
-</style>

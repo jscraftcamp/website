@@ -1,6 +1,8 @@
 <script lang="ts">
 	import FooterNavigation from './FooterNavigation.svelte';
 	import TopNavigation from './TopNavigation.svelte';
+	import background from '../assets/background.svg';
+
 	interface Props {
 		children?: import('svelte').Snippet;
 	}
@@ -8,38 +10,16 @@
 	let { children }: Props = $props();
 </script>
 
-<div class="page">
+<div class="relative flex min-h-screen flex-col">
 	<TopNavigation />
-	<div class="content">
-		<div>
+	<main class="z-10 flex-1 px-4">
+		<div class="mx-auto flex max-w-7xl flex-col sm:gap-8 md:gap-12">
 			{@render children?.()}
 		</div>
-	</div>
+	</main>
 	<FooterNavigation />
+	<div
+		class="pointer-events-none absolute right-0 bottom-0 left-0 w-full bg-contain bg-bottom bg-no-repeat"
+		style="background-image: url({background}); aspect-ratio: 1512/473;"
+	></div>
 </div>
-
-<style>
-	.page {
-		background:
-			linear-gradient(135deg, hsla(120, 100%, 20%, 0.1), #fff 20em),
-			linear-gradient(-45deg, hsla(120, 100%, 15%, 0.1), #fff 20em);
-		display: flex;
-		flex-flow: column;
-		gap: 2em;
-		min-height: 100vh;
-	}
-
-	.content {
-		flex: 1;
-		padding: 0 2rem;
-		z-index: 0;
-	}
-
-	.content > div {
-		align-items: center;
-		display: flex;
-		flex-flow: column;
-		margin: 0 auto;
-		max-width: var(--max-page-width);
-	}
-</style>

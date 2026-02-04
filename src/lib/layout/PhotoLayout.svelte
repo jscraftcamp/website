@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
-	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
+	import Card from './Card.svelte';
 
 	interface Props {
 		photos: string[];
@@ -23,15 +23,19 @@
 </script>
 
 <PageLayout>
-	<InfoBox title="Impressions of JSCraftCamp {year}">
-		<div class="images">
+	<Card>
+		<h2>Impressions of JSCraftCamp {year}</h2>
+		<div class="flex flex-row flex-wrap items-center justify-between gap-[2em]">
 			{#each photos as photo, index (photo)}
 				<button
-					class="image"
-					class:active={activePhoto === photo}
+					class="flex grow cursor-pointer appearance-none items-center justify-center border-0 bg-transparent {activePhoto ===
+					photo
+						? 'fixed inset-0 z-50 h-full max-h-none w-full max-w-none bg-black/80 p-[2em]'
+						: 'h-[10em] w-[10em]'}"
 					onclick={() => setOrUnsetPhoto(photo)}
 				>
 					<img
+						class="block h-full w-full object-contain"
 						src={photo}
 						alt="Impression {index + 1} of {photos.length} from JSCraftCamp {year}"
 					/>
@@ -40,48 +44,5 @@
 		</div>
 
 		{@render credit?.()}
-	</InfoBox>
+	</Card>
 </PageLayout>
-
-<style>
-	.images {
-		display: flex;
-		flex-flow: row wrap;
-		align-items: center;
-		justify-content: space-between;
-		gap: 2em;
-	}
-	.image {
-		flex-grow: 1;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 10em;
-		height: 10em;
-	}
-	button {
-		appearance: none;
-		border: 0;
-		background: none;
-		cursor: pointer;
-	}
-	img {
-		display: block;
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
-	}
-	.active.image {
-		position: fixed;
-		background: #000c;
-		align-items: center;
-		justify-content: center;
-		display: flex;
-		padding: 2em;
-		inset: 0;
-		max-height: unset;
-		max-width: unset;
-		height: 100%;
-		width: 100%;
-	}
-</style>

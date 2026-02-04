@@ -1,17 +1,18 @@
 <script lang="ts">
-	import InfoBox from '$lib/layout/InfoBox.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
 	import Participant from '../../lib/participants/Participant.svelte';
 	import type { Participant as ParticipantT } from '$lib/participants/participant-schema';
 	import { base } from '$app/paths';
 	import type { PageData } from './$types';
 	import {
+		eventConfig,
 		getRegistrationState,
 		isRegistrationOpen,
-		registrationOpensAt,
 		timeLeft
-	} from '$lib/participants/registration';
+	} from '$lib/config/event';
 	import { writable } from 'svelte/store';
+	import Content from '$lib/layout/Content.svelte';
+	import Card from '$lib/layout/Card.svelte';
 
 	interface Props {
 		data: PageData;
@@ -39,18 +40,20 @@
 		($participantsFilter = $participantsFilter === saturdayFilter ? noFilter : saturdayFilter);
 	let participantsFilter = writable<(p: ParticipantT) => boolean>(noFilter);
 
-	const registrationState = writable<'not-yet' | 'open' | 'closed'>(getRegistrationState());
+	const registrationState = writable<'not-yet' | 'open' | 'closed' | 'unknown'>(
+		getRegistrationState()
+	);
 	const countdown = writable<string>(isRegistrationOpen() ? 'NOW' : 'soon');
 
 	const updateCountdown = () => {
 		$registrationState = getRegistrationState();
 
-		if ($registrationState !== 'not-yet') {
+		if ($registrationState !== 'not-yet' || !eventConfig.registrationOpensAt) {
 			return;
 		}
 
 		const now = +new Date();
-		const { days, hours, minutes, seconds } = timeLeft(now, registrationOpensAt);
+		const { days, hours, minutes, seconds } = timeLeft(now, +eventConfig.registrationOpensAt);
 		const timeAsStringArray = [
 			days > 0 ? `${days} days` : '',
 			hours > 0 ? `${hours} hours` : '',
@@ -72,133 +75,102 @@
 </script>
 
 <PageLayout>
-	<h1>Participants</h1>
-	<section>
-		{#if $registrationState === 'not-yet'}
-			<p>
-				Registration will open on April 30nd, 2025. Get your GitHub account ready and check back <strong
-					>{$countdown}</strong
-				>!
-			</p>
+	<Content>
+		<h1>Participants</h1>
+		{#if $registrationState === 'unknown'}
+			<Card>
+				<h2>Registration</h2>
+				<p>Registration dates will be announced soon. Stay tuned!</p>
+			</Card>
+		{:else if $registrationState === 'not-yet' && eventConfig.registrationOpensAt}
+			<Card>
+				<h2>Registration</h2>
+				<p>
+					Registration will open on {eventConfig.registrationOpensAt.toLocaleDateString()}. Get your
+					GitHub account ready and check back <strong>{$countdown}</strong>!
+				</p>
+			</Card>
 		{/if}
 
-		<InfoBox title="What is this page about?">
+		<Card>
+			<h2>What is this page about?</h2>
 			<p>
 				Every year, we let the participants add themselves on this page. We let them decide what
 				technologies they are interested in and on what days they register for.
 			</p>
 			<p>This allows participants to find like-minded people and lets them connect.</p>
-		</InfoBox>
+		</Card>
+	</Content>
+	<div class="flex flex-wrap items-center gap-3">
+		<span class="text-sm text-gray-400">Filter by day:</span>
+		<button
+			type="button"
+			onclick={setFridayOrUnset}
+			class="cursor-pointer rounded-full border px-4 py-2 text-sm font-medium transition-colors {$participantsFilter ===
+			fridayFilter
+				? 'border-primary-500 bg-primary-500 text-black'
+				: 'border-gray-500 bg-transparent text-gray-300 hover:border-primary-500 hover:text-primary-500'}"
+		>
+			Friday <span class="ml-1 opacity-70">({participants.filter(fridayFilter).length}/100)</span>
+		</button>
+		<button
+			type="button"
+			onclick={setSaturdayOrUnset}
+			class="cursor-pointer rounded-full border px-4 py-2 text-sm font-medium transition-colors {$participantsFilter ===
+			saturdayFilter
+				? 'border-primary-500 bg-primary-500 text-black'
+				: 'border-gray-500 bg-transparent text-gray-300 hover:border-primary-500 hover:text-primary-500'}"
+		>
+			Saturday
+			<span class="ml-1 opacity-70">({participants.filter(saturdayFilter).length}/100)</span>
+		</button>
+		<a
+			href="{base}/participants/stats"
+			class="ml-auto cursor-pointer rounded-full border border-gray-600 bg-dark-500 px-4 py-2 text-sm text-gray-300 transition-colors hover:border-gray-400 hover:text-white"
+		>
+			View Stats
+		</a>
+	</div>
 
-		<div class="attendance-filter">
-			<button
-				type="button"
-				onclick={setFridayOrUnset}
-				class:isActive={$participantsFilter === fridayFilter}
-				>Friday ({participants.filter(fridayFilter).length} / 100 participants)</button
-			>
-			<button
-				type="button"
-				onclick={setSaturdayOrUnset}
-				class:isActive={$participantsFilter === saturdayFilter}
-				>Saturday ({participants.filter(saturdayFilter).length} / 100 participants)</button
-			>
+	{#if participants.filter($participantsFilter).length > 0}
+		<div class="relative">
+			{#if activeTag !== null}
+				<div class="sticky top-4">
+					<button
+						type="button"
+						onclick={unsetActiveTag}
+						class="absolute origin-top-left -translate-x-full -translate-y-8 -rotate-90 cursor-pointer border-none bg-transparent text-inherit hover:text-primary-500"
+					>
+						Selected tag: {activeTag}
+					</button>
+				</div>
+			{/if}
+			<ul class="m-0 grid list-none grid-cols-[repeat(auto-fill,minmax(14rem,1fr))] gap-6 p-0">
+				{#each participants.filter($participantsFilter) as participant (participant.githubAccountName)}
+					<li class="pl-0">
+						<Participant
+							{participant}
+							on:selectedTag={onSelectTag}
+							isActive={(activeTag &&
+								participant.tags
+									.map((t) => t.toLocaleLowerCase())
+									.includes(activeTag.toLocaleLowerCase())) ||
+								false}
+						/>
+					</li>
+				{/each}
+			</ul>
 		</div>
+	{:else}
+		<p>There are no participants registered yet.</p>
+	{/if}
 
-		{#if participants.filter($participantsFilter).length > 0}
-			<div class="participants">
-				{#if activeTag !== null}
-					<div class="selectedTagAnchor">
-						<button type="button" class="selectedTag" onclick={unsetActiveTag}
-							>Selected tag: {activeTag}</button
-						>
-					</div>
-				{/if}
-				<ul>
-					{#each participants.filter($participantsFilter) as participant (participant.githubAccountName)}
-						<li>
-							<Participant
-								{participant}
-								on:selectedTag={onSelectTag}
-								isActive={(activeTag &&
-									participant.tags
-										.map((t) => t.toLocaleLowerCase())
-										.includes(activeTag.toLocaleLowerCase())) ||
-									false}
-							/>
-						</li>
-					{/each}
-				</ul>
-			</div>
-			<p>
-				Looking for interesting stats? See <a href="{base}/participants/stats"
-					>/participants/stats</a
-				>
-			</p>
-		{:else}
-			<p>There are no participants registered yet.</p>
-		{/if}
-
-		{#if $registrationState === 'open'}
-			<InfoBox title="Not seeing yourself on the list?">
-				If you can't find yourself on the list of participants, but you want to join, check out our <a
-					href="{base}/registration">how to register</a
-				> page.
-			</InfoBox>
-		{/if}
-	</section>
+	{#if $registrationState === 'open'}
+		<Card>
+			<h2>Not seeing yourself on the list?</h2>
+			If you can't find yourself on the list of participants, but you want to join, check out our<a
+				href="{base}/registration">how to register</a
+			> page.
+		</Card>
+	{/if}
 </PageLayout>
-
-<style>
-	section {
-		display: flex;
-		flex-flow: column;
-		gap: 2em;
-	}
-	ul {
-		display: flex;
-		flex: 1;
-		flex-flow: row wrap;
-		align-items: stretch;
-		justify-content: space-between;
-		gap: 2em;
-		margin: 0;
-		padding: 0;
-	}
-	li {
-		flex-grow: 1;
-		list-style: none;
-		width: calc(var(--max-page-width) / 4 - 1.5em);
-	}
-	li > :global(*) {
-		height: 100%;
-	}
-	.attendance-filter button {
-		background: inherit;
-		border: inherit;
-		cursor: pointer;
-		font: inherit;
-		text-align: inherit;
-	}
-	.attendance-filter button.isActive {
-		text-decoration: underline;
-	}
-
-	.participants {
-		position: relative;
-	}
-	.selectedTagAnchor {
-		position: sticky;
-		top: 1em;
-		bottom: -1em;
-	}
-	.selectedTag {
-		background: none;
-		border: none;
-		cursor: pointer;
-		font: inherit;
-		position: absolute;
-		transform-origin: 0 0;
-		transform: rotate(-90deg) translate(-100%, -2em);
-	}
-</style>

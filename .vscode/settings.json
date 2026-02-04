@@ -11,7 +11,8 @@
 		}
 	],
 	"files.associations": {
-		"**/participants/*.json": "jsonc"
+		"**/participants/*.json": "jsonc",
+		"*.css": "tailwindcss"
 	},
 	"[html]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"

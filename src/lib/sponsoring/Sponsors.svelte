@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Content from '$lib/layout/Content.svelte';
 	import type { Sponsor } from './is-sponsor';
 
 	interface Props {
@@ -9,89 +10,33 @@
 	let { title, sponsors = [] }: Props = $props();
 </script>
 
-<h2>{title}</h2>
-<section>
-	{#each sponsors as sponsor (sponsor.name)}
-		<a href={sponsor.link} rel="external">
-			<div class="box">
-				<div class="image"><img src={sponsor.image} alt={sponsor.name} /></div>
-				<div class="name"><span>{sponsor.name}</span></div>
-				{#if sponsor.sponsoring}<div class="sponsoring">{sponsor.sponsoring}</div>{/if}
-			</div>
-		</a>
-	{/each}
-</section>
-
-<style>
-	h2 {
-		margin: 0;
-		text-align: center;
-	}
-	section {
-		display: flex;
-		flex-flow: row wrap;
-		align-items: stretch;
-		justify-content: center;
-		gap: 2em;
-		z-index: 0;
-	}
-	a {
-		background-color: #fff;
-		box-sizing: border-box;
-		display: flex;
-		flex: 1 0 auto;
-		align-items: center;
-		justify-content: center;
-		max-width: 14em;
-		position: relative;
-		padding: 2em;
-		text-align: center;
-	}
-	a::before {
-		position: absolute;
-		box-shadow: rgba(0, 0, 0, 0.1) 0 0 200px 25px;
-		box-sizing: border-box;
-		content: '';
-		inset: 0;
-		z-index: -1;
-	}
-	.box {
-		display: flex;
-		flex-flow: column;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
-	.image {
-		display: flex;
-		flex: 1 0 auto;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-	}
-	.sponsoring {
-		display: none;
-		position: absolute;
-		inset: 0;
-	}
-	a:hover .sponsoring {
-		background: linear-gradient(82deg, #000c 2em, #0006 calc(100% - 2em), #0000);
-		color: #fff;
-		display: flex;
-		align-items: flex-end;
-		text-align: start;
-		padding: 2em;
-	}
-	img {
-		display: block;
-		min-width: 100%;
-		max-width: min(100%, 10em);
-	}
-	.name {
-		min-width: 8em;
-	}
-	span {
-		align-self: flex-end;
-	}
-</style>
+<Content>
+	<h2 class="text-primary text-center">{title}</h2>
+	<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
+		{#each sponsors as sponsor (sponsor.name)}
+			<a href={sponsor.link} rel="external" target="_blank" class="group">
+				<div
+					class="relative flex aspect-square flex-col items-center justify-between overflow-hidden rounded-2xl bg-dark-500 p-4 transition-opacity hover:opacity-90"
+				>
+					<div class="flex min-h-0 w-full flex-1 items-center justify-center overflow-hidden">
+						<img
+							src={sponsor.image}
+							alt={sponsor.name}
+							class="max-h-full max-w-full object-contain"
+						/>
+					</div>
+					<span class="mt-2 shrink-0 text-center text-xs font-semibold text-white/30 md:text-sm">
+						{sponsor.name}
+					</span>
+					{#if sponsor.sponsoring}
+						<div
+							class="absolute inset-0 flex items-start rounded-2xl bg-linear-to-br from-black/80 via-black/60 to-transparent p-4 text-sm text-white opacity-0 transition-opacity group-hover:opacity-100"
+						>
+							{sponsor.sponsoring}
+						</div>
+					{/if}
+				</div>
+			</a>
+		{/each}
+	</div>
+</Content>
