@@ -23,6 +23,7 @@
 		</div>
 
 		<!-- Location info -->
+		{#if venueConfig.address}
 		<div class="bg-stone-800 p-4 text-white">
 			<p class="font-bold">{venueConfig.address.name}</p>
 			<p class="text-sm text-stone-400">{venueConfig.address.street}</p>
@@ -31,5 +32,6 @@
 			  &nbsp; <a href={venueConfig.address.mapsLink} rel="external noopener noreferrer">Maps Link</a>
       </p>
 		</div>
+		{/if}
 	</div>
 </Card>
