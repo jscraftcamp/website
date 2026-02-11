@@ -14,7 +14,7 @@
 	// please put in the account name of the PR creator, if you sign up somebody else
 	"githubAccountName": "xetoxyc",
 	// company name (optional)
-	"company": "Voltane GbR",
+	"company": "StackForge UG",
 	// either both days or at least one day has to be set to true.
 	// If you cannot make one of the days, please set it to false, to allow someone else take that spot!
 	"when": {
@@ -40,5 +40,5 @@
 	"tShirtSize": "XL",
 	// your LinkedIn profile URL
 	"linkedin": "https://www.linkedin.com/in/tobias-sittenauer-b25b27262/",
-	"website": "https://www.voltane.eu"
+	"website": "https://www.stack-forge.eu/de"
 }
