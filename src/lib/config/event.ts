@@ -28,9 +28,9 @@ export interface EventConfig {
 }
 
 export const eventConfig: EventConfig = {
-	isEstimation: true,
-	startDate: new Date('2026-06-27T07:30:00Z'),
-	endDate: new Date('2026-06-28'),
+	isEstimation: false,
+	startDate: new Date('2026-06-12T07:30:00Z'),
+	endDate: new Date('2026-06-13'),
 	registrationOpensAt: undefined, //new Date('2025-02-20T07:00:00Z'),
 	registrationClosesAt: undefined, //new Date('2025-02-26T17:00:00Z'),
 	fridayRegistrationOpen: false,

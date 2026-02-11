@@ -22,9 +22,7 @@
 						{venueConfig.address.name}<br />
 						{venueConfig.address.street}<br />
 						{venueConfig.address.city}<br />
-						(<a href={venueConfig.address.mapsLink} rel="external noopener noreferrer"
-							>Google Maps</a
-						>)
+						<a href={venueConfig.address.mapsLink} rel="external noopener noreferrer">Maps Link</a>
 					</p>
 				{/if}
 				{#if venueConfig.impressionsLink}

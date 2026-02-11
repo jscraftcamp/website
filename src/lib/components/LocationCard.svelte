@@ -2,6 +2,7 @@
 	import Card from '$lib/layout/Card.svelte';
 	import { cn } from '$lib/utils/cn';
 	import locationBg from '$lib/assets/location-bg.jpeg';
+	import { venueConfig } from '$lib/config/venue';
 
 	interface Props {
 		class?: string;
@@ -22,10 +23,16 @@
 		</div>
 
 		<!-- Location info -->
-		<div class="bg-stone-800 p-4 text-white">
-			<p class="font-bold">Location TBD</p>
-			<p class="text-sm text-stone-400">Address coming soon</p>
-			<p class="text-sm text-stone-400">Somewhere in Munich</p>
-		</div>
+		{#if venueConfig.address}
+			<div class="bg-stone-800 p-4 text-white">
+				<p class="font-bold">{venueConfig.address.name}</p>
+				<p class="text-sm text-stone-400">{venueConfig.address.street}</p>
+				<p class="text-sm text-stone-400">
+					{venueConfig.address.city}
+					&nbsp;
+					<a href={venueConfig.address.mapsLink} rel="external noopener noreferrer">Maps Link</a>
+				</p>
+			</div>
+		{/if}
 	</div>
 </Card>
