@@ -107,7 +107,7 @@ export const sponsors: Sponsor[] = [
 		link: 'https://www.tngtech.com/',
 		name: 'TNG Technology Consulting',
 		sponsoring: '500 €'
-	},
+	}
 	// {
 	// 	image: twilio,
 	// 	link: 'https://twilio.com/',
