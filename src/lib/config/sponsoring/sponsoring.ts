@@ -1,19 +1,4 @@
-import allPrintCut from './logos/all-print-cut-com.svg';
-import alm from './logos/alm-logo-2022.svg';
-import codecentric from './logos/codecentric.png';
-import composeus from './logos/compose-us.svg';
-import deno from './logos/deno-full-light-transparent.svg';
-import finanzvergleich from './logos/finanzvergleich-logo.png';
-import gorlug from './logos/gorlug_logo.svg';
-import hetzner from './logos/hetzner-logo-slogan_red-square.png';
-import inovex from './logos/inovex-logo.png';
-import inspiredconsulting from './logos/inspired-consulting-logo.svg';
-import peerigon from './logos/peerigon.svg';
-import saab from './logos/saab.svg';
-import tiffingerthiel from './logos/tiffinger-thiel.svg';
 import tng from './logos/tng.png';
-import twilio from './logos/twilio.svg';
-import typedigital from './logos/typedigital.svg';
 import type { Sponsor } from './types';
 
 export const sponsors: Sponsor[] = [
