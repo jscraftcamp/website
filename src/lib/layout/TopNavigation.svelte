@@ -28,9 +28,9 @@
 
 	const socialLinks = [
 		{ icon: discordIcon, href: socialConfig.discord, label: 'Discord' },
-		{ icon: githubIcon, href: 'https://github.com/jscraftcamp', label: 'GitHub' },
-		{ icon: xIcon, href: 'https://x.com/jscraftcamp', label: 'X' },
-		{ icon: mastodonIcon, href: 'https://mastodon.social/@jscraftcamp', label: 'Mastodon' }
+		{ icon: githubIcon, href: socialConfig.github, label: 'GitHub' },
+		{ icon: xIcon, href: socialConfig.x, label: 'X' },
+		{ icon: mastodonIcon, href: socialConfig.mastodon, label: 'Mastodon' }
 	];
 
 	function isActive(href: string, currentPath: string): boolean {
