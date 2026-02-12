@@ -42,8 +42,8 @@
 			<p>
 				Ready to level up from attendee to organizer? We're always looking for passionate folks to
 				join the team. No secret handshake required — just hop into our
-				<a href={socialLinks.discord}>Discord</a>, say hi, and join our regular orga
-				meetings. Your future self (and face on this page) will thank you.
+				<a href={socialLinks.discord}>Discord</a>, say hi, and join our regular orga meetings. Your
+				future self (and face on this page) will thank you.
 			</p>
 		</Card>
 	</ContentSection>

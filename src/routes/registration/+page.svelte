@@ -49,8 +49,8 @@
 					bring something for yourself.
 				</li>
 				<li>
-					If you need help <a href={socialLinks.discord} rel="external">reach out</a>! You
-					will learn some git for free.
+					If you need help <a href={socialLinks.discord} rel="external">reach out</a>! You will
+					learn some git for free.
 				</li>
 				<li>
 					Please read the JSON comments, they should explain every field, and if you have questions <a
