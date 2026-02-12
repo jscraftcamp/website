@@ -7,7 +7,7 @@
 	// Import icons as raw SVG strings
 	import discordIcon from '$lib/icons/discord.svg?raw';
 	import githubIcon from '$lib/icons/github.svg?raw';
-	import xIcon from '$lib/icons/x.svg?raw';
+
 	import mastodonIcon from '$lib/icons/mastodon.svg?raw';
 
 	type NavItem = {
@@ -29,7 +29,6 @@
 	const socialLinks = [
 		{ icon: discordIcon, href: socialConfig.discord, label: 'Discord' },
 		{ icon: githubIcon, href: socialConfig.github, label: 'GitHub' },
-		{ icon: xIcon, href: socialConfig.x, label: 'X' },
 		{ icon: mastodonIcon, href: socialConfig.mastodon, label: 'Mastodon' }
 	];
 
