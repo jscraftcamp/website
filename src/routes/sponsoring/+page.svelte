@@ -69,8 +69,8 @@
 				drinks, chairs, and all alike things that are needed for spending a couple of days together
 				thinking and hacking for the modern world.
 			</p>
-			<a href="https://github.com/orgs/jscraftcamp/projects/10" rel="external"
-				>Find all sponsoring items on GitHub: https://github.com/orgs/jscraftcamp/projects/10</a
+			<a href="https://github.com/orgs/jscraftcamp/projects/16" rel="external" target="_blank"
+				>Find all sponsoring items on GitHub</a
 			>
 		</Card>
 	</Content>
