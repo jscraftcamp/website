@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import { socialLinks } from '$lib/config/social';
 	import Card from '$lib/layout/Card.svelte';
 	import Content from '$lib/layout/Content.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
@@ -37,7 +38,7 @@
 				</li>
 				<li>
 					If you don't want to put in allergies or anything else, drop us a message at <a
-						href="https://discord.gg/3mHhaXVEjP"
+						href={socialLinks.discord}
 						rel="external">Discord</a
 					>
 					or <a href="mailto:team@jscraftcamp.org">team@jscraftcamp.org</a>.
@@ -48,7 +49,7 @@
 					bring something for yourself.
 				</li>
 				<li>
-					If you need help <a href="https://discord.gg/3mHhaXVEjP" rel="external">reach out</a>! You
+					If you need help <a href={socialLinks.discord} rel="external">reach out</a>! You
 					will learn some git for free.
 				</li>
 				<li>

@@ -2,6 +2,7 @@
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
 	import { isRegistrationOpen } from '$lib/config/event';
+	import { socialLinks as socialConfig } from '$lib/config/social';
 
 	// Import icons as raw SVG strings
 	import discordIcon from '$lib/icons/discord.svg?raw';
@@ -26,7 +27,7 @@
 	];
 
 	const socialLinks = [
-		{ icon: discordIcon, href: 'https://discord.gg/Y5VHPPsz7G', label: 'Discord' },
+		{ icon: discordIcon, href: socialConfig.discord, label: 'Discord' },
 		{ icon: githubIcon, href: 'https://github.com/jscraftcamp', label: 'GitHub' },
 		{ icon: xIcon, href: 'https://x.com/jscraftcamp', label: 'X' },
 		{ icon: mastodonIcon, href: 'https://mastodon.social/@jscraftcamp', label: 'Mastodon' }
