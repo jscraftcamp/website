@@ -11,7 +11,6 @@
 		// if you do not want to show your family name on the participant list (optional)
 		"hideFamilyNameOnWebsite": false
 	},
-	"githubAccountName": "wolframkriesing",
 	"codebergAccountName": "wolframkriesing",
 	//"codeRepositories": ["https://codeberg.org/wolframkriesing", "https://github.com/wolframkriesing"], would be nice to have, since i dont use github much anymore
 	// company name (optional)
