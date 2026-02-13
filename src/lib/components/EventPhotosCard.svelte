@@ -100,7 +100,7 @@
 		<!-- Navigation arrows -->
 		<button
 			onclick={goToPrevious}
-			class="absolute top-1/2 left-2 z-10 -translate-y-1/2 rounded-full bg-black/50 p-2 text-white/80 transition-colors hover:bg-black/70 hover:text-white"
+			class="absolute top-1/2 left-2 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-black/50 p-2 text-white/80 transition-colors hover:bg-black/70 hover:text-white"
 			aria-label="Previous photo"
 		>
 			<svg
@@ -116,7 +116,7 @@
 
 		<button
 			onclick={goToNext}
-			class="absolute top-1/2 right-2 z-10 -translate-y-1/2 rounded-full bg-black/50 p-2 text-white/80 transition-colors hover:bg-black/70 hover:text-white"
+			class="absolute top-1/2 right-2 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-black/50 p-2 text-white/80 transition-colors hover:bg-black/70 hover:text-white"
 			aria-label="Next photo"
 		>
 			<svg
