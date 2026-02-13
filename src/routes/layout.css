@@ -18,7 +18,7 @@
 	--color-dark-300: #363636;
 	--color-dark-500: #252525;
 
-	--animate-scroll-left: scroll-left 30s linear infinite;
+	--animate-scroll-left: scroll-left 200s linear infinite;
 	--animate-scroll-right: scroll-right 40s linear infinite;
 }
 
