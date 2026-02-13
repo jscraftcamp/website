@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Card from '$lib/layout/Card.svelte';
 	import { cn } from '$lib/utils/cn';
-	import locationBg from '$lib/assets/location-bg.jpeg';
+	import locationBg from '$lib/assets/location-bg.png';
 	import { venueConfig } from '$lib/config/venue';
 
 	interface Props {
