@@ -30,7 +30,9 @@
 				<p class="text-sm text-stone-400">
 					{venueConfig.address.city}
 					&nbsp;
-					<a href={venueConfig.address.mapsLink} rel="external noopener noreferrer">Maps Link</a>
+					<a href={venueConfig.address.mapsLink} rel="external noopener noreferrer" target="_blank"
+						>Maps Link</a
+					>
 				</p>
 			</div>
 		{/if}
