@@ -11,7 +11,9 @@
 
 	// Duplicate items for seamless infinite scroll
 	const duplicatedTranslations = [...thankYouTranslations, ...thankYouTranslations];
-	const duplicatedSponsors = [...sponsors, ...sponsors];
+	const minSponsorsVisible = 8;
+	const repeatCount = Math.max(2, Math.ceil(minSponsorsVisible / sponsors.length));
+	const duplicatedSponsors = Array(repeatCount).fill(sponsors).flat();
 </script>
 
 <Card class={cn('flex flex-col gap-3 overflow-hidden px-0 py-4 sm:px-0 sm:py-4', className)}>
@@ -32,14 +34,12 @@
 			{#each duplicatedSponsors as sponsor (sponsor.name + Math.random())}
 				<a
 					href={sponsor.link}
+					title={sponsor.name}
 					rel="external"
-					class="flex h-10 shrink-0 items-center justify-center px-2 transition-opacity duration-200 hover:opacity-80"
+					class="flex shrink-0 flex-col items-center justify-center gap-1 px-4 transition-opacity duration-200 hover:opacity-80"
 				>
-					<img
-						src={sponsor.image}
-						alt={sponsor.name}
-						class="h-full w-auto max-w-32 object-contain"
-					/>
+					<img src={sponsor.image} alt={sponsor.name} class="h-8 w-auto max-w-32 object-contain" />
+					<span class="text-xs font-medium text-stone-400">{sponsor.name}</span>
 				</a>
 			{/each}
 		</div>
