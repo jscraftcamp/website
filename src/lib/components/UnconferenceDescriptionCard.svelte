@@ -13,10 +13,14 @@
 <Card class={cn('rounded-2xl border border-gray-200 bg-white p-6 text-black shadow-sm', className)}>
 	<div class="flex items-start justify-between gap-4">
 		<div>
-			<h2 class="text-black">Unconference</h2>
+			<a href="https://en.wikipedia.org/wiki/Unconference" rel="external" class="hover:underline">
+				<h2 class="text-black">Unconference</h2>
+			</a>
 			<p class="text-sm text-black/50">/ˌʌn.kon.fər.əns/</p>
 		</div>
-		<img src={wikipediaLogo} alt="Wikipedia" class="h-16 w-16 shrink-0" />
+		<a href="https://en.wikipedia.org" rel="external" class="shrink-0">
+			<img src={wikipediaLogo} alt="Wikipedia" class="h-16 w-16" />
+		</a>
 	</div>
 
 	<p class="mt-4 leading-relaxed">
