@@ -46,36 +46,57 @@
 
 		return normalizedPath === normalizedHref || normalizedPath.startsWith(normalizedHref + '/');
 	}
+
+	let mobileMenuOpen = $state(false);
 </script>
 
 <header class="relative z-50 min-w-full px-8 py-4">
-	<input id="navbar-open" type="checkbox" class="peer hidden" />
-
 	<!-- Mobile Header (< lg) -->
 	<div class="flex items-center justify-between lg:hidden">
-		<a href="{base}/" class="text-2xl font-bold text-primary-500">JSCraftCamp</a>
-		<label
-			for="navbar-open"
-			class="relative z-50 flex size-8 cursor-pointer flex-col items-center justify-center gap-1.5"
+		<a
+			href="{base}/"
+			onclick={() => (mobileMenuOpen = false)}
+			tabindex="0"
+			class="text-2xl font-bold text-primary-500">JSCraftCamp</a
+		>
+		<button
+			type="button"
+			aria-label="Toggle navigation menu"
+			aria-expanded={mobileMenuOpen}
+			onkeypress={(e: KeyboardEvent) => {
+				if (e.key === 'Enter' || e.key === ' ') {
+					e.preventDefault();
+					mobileMenuOpen = !mobileMenuOpen;
+				}
+			}}
+			onclick={() => (mobileMenuOpen = !mobileMenuOpen)}
+			class="relative z-50 flex size-8 cursor-pointer flex-col items-center justify-center gap-1.5 rounded focus:ring-2 focus:ring-primary-500 focus:outline-none"
 		>
 			<span class="hamburger-line h-0.5 w-6 bg-white transition-all duration-300"></span>
 			<span class="hamburger-line h-0.5 w-6 bg-white transition-all duration-300"></span>
 			<span class="hamburger-line h-0.5 w-6 bg-white transition-all duration-300"></span>
-		</label>
+		</button>
 	</div>
 
 	<!-- Mobile Overlay Menu -->
 	<div
-		class="pointer-events-none fixed inset-0 z-40 bg-background/95 opacity-0 backdrop-blur-sm transition-opacity duration-300 peer-checked:pointer-events-auto peer-checked:opacity-100 lg:hidden"
+		class="fixed inset-0 z-40 bg-background/95 opacity-0 backdrop-blur-sm transition-opacity duration-300 {mobileMenuOpen
+			? 'pointer-events-auto opacity-100'
+			: 'pointer-events-none opacity-0'} lg:hidden"
 	>
-		<nav class="flex h-full flex-col items-center justify-center gap-8 p-8">
-			<ul class="flex list-none flex-col items-center gap-6">
+		<nav
+			aria-label="Mobile navigation menu"
+			class="flex h-full flex-col items-center justify-center gap-8 p-8"
+		>
+			<ul class="m-0 flex w-full list-none flex-col items-center gap-6 p-0 text-center">
 				{#each navItems as item (item.href)}
 					{#if !item.showWhen || item.showWhen()}
 						<li>
 							<a
 								href={item.href}
-								class="text-2xl font-medium transition-colors duration-200 hover:text-primary-500 {isActive(
+								onclick={() => (mobileMenuOpen = false)}
+								tabindex="0"
+								class="rounded py-2 text-2xl font-medium transition-colors duration-200 hover:text-primary-500 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none {isActive(
 									item.href,
 									$page.url.pathname
 								)
@@ -99,9 +120,10 @@
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label={social.label}
-							class="flex size-6 items-center justify-center text-white transition-colors duration-200 hover:text-primary-500"
+							tabindex="0"
+							class="flex size-6 items-center justify-center rounded text-white transition-colors duration-200 hover:text-primary-500 focus:ring-2 focus:ring-primary-500 focus:outline-none"
 						>
-							<span class="h-6 w-6 *:size-full">
+							<span class="h-6 w-6 *:size-full" aria-hidden="true">
 								{@html social.icon}
 							</span>
 						</a>
@@ -113,7 +135,12 @@
 
 	<!-- Desktop Navigation (>= lg) -->
 	<nav class="mx-auto hidden max-w-7xl flex-row flex-nowrap items-center gap-8 lg:flex">
-		<a href="{base}/" class="text-2xl font-bold text-primary-500">JSCraftCamp </a>
+		<a
+			href="{base}/"
+			tabindex="0"
+			class="rounded text-2xl font-bold text-primary-500 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
+			>JSCraftCamp
+		</a>
 
 		<ul class="m-0 flex flex-1 list-none flex-row flex-nowrap items-center gap-6 p-0">
 			{#each navItems as item (item.href)}
@@ -121,7 +148,8 @@
 					<li>
 						<a
 							href={item.href}
-							class="relative py-2 font-medium transition-colors duration-200 hover:text-primary-500 {isActive(
+							tabindex="0"
+							class="relative rounded py-2 font-medium transition-colors duration-200 hover:text-primary-500 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none {isActive(
 								item.href,
 								$page.url.pathname
 							)
@@ -149,9 +177,10 @@
 						target="_blank"
 						rel="noopener noreferrer"
 						aria-label={social.label}
-						class="flex size-5 items-center justify-center text-white transition-colors duration-200 hover:text-primary-500"
+						tabindex="0"
+						class="flex size-5 items-center justify-center rounded text-white transition-colors duration-200 hover:text-primary-500 focus:ring-2 focus:ring-primary-500 focus:outline-none"
 					>
-						<span class="h-6 w-6 *:size-full">
+						<span class="h-6 w-6 *:size-full" aria-hidden="true">
 							{@html social.icon}
 						</span>
 					</a>
@@ -163,13 +192,13 @@
 
 <style>
 	/* Hamburger to X transformation */
-	input:checked ~ div label .hamburger-line:nth-child(1) {
+	button[aria-expanded='true'] .hamburger-line:nth-child(1) {
 		transform: translateY(8px) rotate(45deg);
 	}
-	input:checked ~ div label .hamburger-line:nth-child(2) {
+	button[aria-expanded='true'] .hamburger-line:nth-child(2) {
 		opacity: 0;
 	}
-	input:checked ~ div label .hamburger-line:nth-child(3) {
+	button[aria-expanded='true'] .hamburger-line:nth-child(3) {
 		transform: translateY(-8px) rotate(-45deg);
 	}
 </style>
