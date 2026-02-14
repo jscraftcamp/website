@@ -15,11 +15,13 @@
 	<div class="flex h-full min-h-64 flex-col">
 		<!-- Background image -->
 		<div class="relative flex flex-1 items-center justify-center">
-			<img
-				src={locationBg}
-				alt="Munich location"
-				class="absolute inset-0 h-full w-full object-cover"
-			/>
+			<a href="https://www.tngtech.com" rel="external noopener noreferrer">
+				<img
+					src={locationBg}
+					alt="Munich location"
+					class="absolute inset-0 h-full w-full object-cover"
+				/>
+			</a>
 		</div>
 
 		<!-- Location info -->
@@ -30,8 +32,16 @@
 				<p class="text-sm text-stone-400">
 					{venueConfig.address.city}
 					&nbsp;
-					<a href={venueConfig.address.mapsLink} rel="external noopener noreferrer" target="_blank"
-						>Maps Link</a
+					<a
+						href={venueConfig.address.openStreetMapLink}
+						rel="external noopener noreferrer"
+						target="_blank">OpenStreetMap</a
+					>
+					-
+					<a
+						href={venueConfig.address.googleMapsLink}
+						rel="external noopener noreferrer"
+						target="_blank">Google Maps</a
 					>
 				</p>
 			</div>
