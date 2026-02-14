@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Card from '$lib/layout/Card.svelte';
 	import { cn } from '$lib/utils/cn';
-	import locationBg from '$lib/assets/location-bg.jpeg';
+	import locationBg from '$lib/assets/location-bg.png';
 	import { venueConfig } from '$lib/config/venue';
 
 	interface Props {
@@ -30,7 +30,9 @@
 				<p class="text-sm text-stone-400">
 					{venueConfig.address.city}
 					&nbsp;
-					<a href={venueConfig.address.mapsLink} rel="external noopener noreferrer">Maps Link</a>
+					<a href={venueConfig.address.mapsLink} rel="external noopener noreferrer" target="_blank"
+						>Maps Link</a
+					>
 				</p>
 			</div>
 		{/if}
