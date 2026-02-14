@@ -25,7 +25,7 @@
 						<a href={venueConfig.address.openStreetMapLink} rel="external noopener noreferrer"
 							>OpenStreetMap</a
 						>
-						{' - '}
+						-
 						<a href={venueConfig.address.googleMapsLink} rel="external noopener noreferrer"
 							>Google Maps</a
 						>
