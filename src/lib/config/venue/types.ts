@@ -2,7 +2,8 @@ export interface VenueAddress {
 	name: string;
 	street: string;
 	city: string;
-	mapsLink: string;
+	openStreetMapLink: string;
+	googleMapsLink: string;
 }
 
 export interface VenueAccessibility {

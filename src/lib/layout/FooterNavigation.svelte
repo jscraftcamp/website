@@ -9,17 +9,23 @@
 	<nav class="z-10 flex items-center gap-3 font-medium">
 		<a
 			href="{base}/imprint"
-			class="text-white/50 transition-opacity duration-200 hover:text-white/80">Imprint</a
+			tabindex="0"
+			class="cursor-pointer rounded text-white/50 transition-opacity duration-200 hover:text-white/80 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
+			>Imprint</a
 		>
 		<span class="opacity-50">·</span>
 		<a
 			href="{base}/privacy"
-			class="text-white/50 transition-opacity duration-200 hover:text-white/80">Privacy Policy</a
+			tabindex="0"
+			class="cursor-pointer rounded text-white/50 transition-opacity duration-200 hover:text-white/80 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
+			>Privacy Policy</a
 		>
 		<span class="opacity-50">·</span>
 		<a
 			href="{base}/archive"
-			class="text-white/50 transition-opacity duration-200 hover:text-white/80">Archive</a
+			tabindex="0"
+			class="cursor-pointer rounded text-white/50 transition-opacity duration-200 hover:text-white/80 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
+			>Archive</a
 		>
 	</nav>
 	<div class="z-10 mt-12">

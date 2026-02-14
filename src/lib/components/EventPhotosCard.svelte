@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Card from '$lib/layout/Card.svelte';
 	import { cn } from '$lib/utils/cn';
+	import { onMount } from 'svelte';
 
 	interface Props {
 		photos: string[];
@@ -18,8 +19,13 @@
 		return shuffled;
 	}
 
-	// Shuffle only once on initialization, not on every state change
-	const shuffledPhotos = shuffleArray(photos);
+	// Start with original order for SSR, shuffle on client after mount
+	let shuffledPhotos = $state(photos);
+
+	onMount(() => {
+		shuffledPhotos = shuffleArray(photos);
+	});
+
 	let currentIndex = $state(0);
 	let isLoading = $state(true);
 
@@ -100,7 +106,8 @@
 		<!-- Navigation arrows -->
 		<button
 			onclick={goToPrevious}
-			class="absolute top-1/2 left-2 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-black/50 p-2 text-white/80 transition-colors hover:bg-black/70 hover:text-white"
+			tabindex="0"
+			class="absolute top-1/2 left-2 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-black/50 p-2 text-white/80 transition-colors hover:bg-black/70 hover:text-white focus:ring-2 focus:ring-primary-500 focus:outline-none"
 			aria-label="Previous photo"
 		>
 			<svg
@@ -116,7 +123,8 @@
 
 		<button
 			onclick={goToNext}
-			class="absolute top-1/2 right-2 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-black/50 p-2 text-white/80 transition-colors hover:bg-black/70 hover:text-white"
+			tabindex="0"
+			class="absolute top-1/2 right-2 z-10 -translate-y-1/2 cursor-pointer rounded-full bg-black/50 p-2 text-white/80 transition-colors hover:bg-black/70 hover:text-white focus:ring-2 focus:ring-primary-500 focus:outline-none"
 			aria-label="Next photo"
 		>
 			<svg
@@ -141,8 +149,9 @@
 					{@const dotIndex = visibleDots.start + i}
 					<button
 						onclick={() => goToIndex(dotIndex)}
+						tabindex="0"
 						class={cn(
-							'h-2 w-2 rounded-full transition-colors',
+							'h-2 w-2 cursor-pointer rounded-full transition-colors',
 							dotIndex === currentIndex ? 'bg-white' : 'bg-white/30 hover:bg-white/50'
 						)}
 						aria-label="Go to photo {dotIndex + 1}"
