@@ -1,4 +1,5 @@
 <script lang="ts">
+	import codebergLogo from '$lib/icons/codeberg.svg?raw';
 	import githubLogo from '$lib/icons/github.svg?raw';
 	import linkedinLogo from '$lib/icons/linkedin.svg?raw';
 	import mastodonLogo from '$lib/icons/mastodon.svg?raw';
@@ -19,7 +20,12 @@
 
 	let isShowingDetails = $state(false);
 	const hasSocialLink =
-		participant.X || participant.mastodon || participant.website || participant.linkedin;
+		participant.githubAccountName ||
+		participant.codebergAccountName ||
+		participant.X ||
+		participant.mastodon ||
+		participant.website ||
+		participant.linkedin;
 
 	const dispatch = createEventDispatcher<{ selectedTag: string }>();
 </script>
@@ -51,15 +57,28 @@
 	<!-- Social links -->
 	{#if hasSocialLink}
 		<div class="mt-2 flex flex-wrap items-center gap-1">
-			<a
-				href="https://github.com/{participant.githubAccountName}"
-				rel="external noopener noreferrer"
-				target="_blank"
-				class="p-1 text-white/50 transition-opacity hover:text-primary-500"
-				title="Link to {participant.githubAccountName} on GitHub"
-			>
-				<span class="block h-5 w-5 *:size-full">{@html githubLogo}</span>
-			</a>
+			{#if participant.githubAccountName}
+				<a
+					href="https://github.com/{participant.githubAccountName}"
+					rel="external noopener noreferrer"
+					target="_blank"
+					class="p-1 text-white/50 transition-opacity hover:text-primary-500"
+					title="Link to {participant.githubAccountName} on GitHub"
+				>
+					<span class="block h-5 w-5 *:size-full">{@html githubLogo}</span>
+				</a>
+			{/if}
+			{#if participant.codebergAccountName}
+				<a
+					href="https://codeberg.org/{participant.codebergAccountName}"
+					rel="external noopener noreferrer"
+					target="_blank"
+					class="p-1 text-white/50 transition-opacity hover:text-primary-500"
+					title="Link to {participant.codebergAccountName} on Codeberg"
+				>
+					<span class="block h-5 w-5 *:size-full">{@html codebergLogo}</span>
+				</a>
+			{/if}
 			{#if participant.X}
 				<a
 					href="https://x.com/{participant.X}"
