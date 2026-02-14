@@ -93,7 +93,7 @@
 					</a>
 				{:else}
 					<span
-						class="inline-block rounded-full bg-stone-600/80 px-6 py-2.5 text-sm font-semibold text-stone-200"
+						class="inline-block cursor-not-allowed rounded-full bg-stone-600/80 px-6 py-2.5 text-sm font-semibold text-stone-200"
 					>
 						Registration not open yet
 					</span>

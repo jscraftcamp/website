@@ -41,7 +41,9 @@
 		<button
 			type="button"
 			onclick={() => (isShowingDetails = !isShowingDetails)}
-			class="font-inherit cursor-pointer border-none bg-transparent p-0 text-left text-primary-700 uppercase"
+			aria-expanded={isShowingDetails}
+			aria-controls="participant-details-{participant.githubAccountName}"
+			class="font-inherit cursor-pointer border-none bg-transparent p-0 text-left text-primary-700 uppercase focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
 		>
 			{displayName(participant)}
 		</button>
@@ -62,10 +64,12 @@
 					href="https://github.com/{participant.githubAccountName}"
 					rel="external noopener noreferrer"
 					target="_blank"
-					class="p-1 text-white/50 transition-opacity hover:text-primary-500"
+					tabindex="0"
+					class="rounded p-1 text-white/50 transition-opacity hover:text-primary-500 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
 					title="Link to {participant.githubAccountName} on GitHub"
+					aria-label="GitHub profile"
 				>
-					<span class="block h-5 w-5 *:size-full">{@html githubLogo}</span>
+					<span class="block h-5 w-5 *:size-full" aria-hidden="true">{@html githubLogo}</span>
 				</a>
 			{/if}
 			{#if participant.codebergAccountName}
@@ -73,10 +77,12 @@
 					href="https://codeberg.org/{participant.codebergAccountName}"
 					rel="external noopener noreferrer"
 					target="_blank"
-					class="p-1 text-white/50 transition-opacity hover:text-primary-500"
+					tabindex="0"
+					class="rounded p-1 text-white/50 transition-opacity hover:text-primary-500 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
 					title="Link to {participant.codebergAccountName} on Codeberg"
+					aria-label="Codeberg profile"
 				>
-					<span class="block h-5 w-5 *:size-full">{@html codebergLogo}</span>
+					<span class="block h-5 w-5 *:size-full" aria-hidden="true">{@html codebergLogo}</span>
 				</a>
 			{/if}
 			{#if participant.X}
@@ -84,10 +90,12 @@
 					href="https://x.com/{participant.X}"
 					rel="external noopener noreferrer"
 					target="_blank"
-					class="p-1 text-white/50 transition-opacity hover:text-primary-500"
+					tabindex="0"
+					class="rounded p-1 text-white/50 transition-opacity hover:text-primary-500 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
 					title="Link to @{participant.X} on X"
+					aria-label="X profile"
 				>
-					<span class="block h-5 w-5 *:size-full">{@html xLogo}</span>
+					<span class="block h-5 w-5 *:size-full" aria-hidden="true">{@html xLogo}</span>
 				</a>
 			{/if}
 			{#if participant.mastodon}
@@ -95,10 +103,12 @@
 					href={participant.mastodon}
 					rel="external noopener noreferrer"
 					target="_blank"
-					class="p-1 text-white/50 transition-opacity hover:text-primary-500"
+					tabindex="0"
+					class="rounded p-1 text-white/50 transition-opacity hover:text-primary-500 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
 					title="Link to {displayName(participant)} on Mastodon"
+					aria-label="Mastodon profile"
 				>
-					<span class="block h-5 w-5 *:size-full">{@html mastodonLogo}</span>
+					<span class="block h-5 w-5 *:size-full" aria-hidden="true">{@html mastodonLogo}</span>
 				</a>
 			{/if}
 			{#if participant.linkedin}
@@ -106,10 +116,12 @@
 					href={participant.linkedin}
 					rel="external noopener noreferrer"
 					target="_blank"
-					class="p-1 text-white/50 transition-opacity hover:text-primary-500"
+					tabindex="0"
+					class="rounded p-1 text-white/50 transition-opacity hover:text-primary-500 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
 					title="Link to {displayName(participant)} on LinkedIn"
+					aria-label="LinkedIn profile"
 				>
-					<span class="block h-5 w-5 *:size-full">{@html linkedinLogo}</span>
+					<span class="block h-5 w-5 *:size-full" aria-hidden="true">{@html linkedinLogo}</span>
 				</a>
 			{/if}
 			{#if participant.website}
@@ -117,17 +129,22 @@
 					href={participant.website}
 					rel="external noopener noreferrer"
 					target="_blank"
-					class="p-1 text-white/50 transition-opacity hover:text-primary-500"
+					tabindex="0"
+					class="rounded p-1 text-white/50 transition-opacity hover:text-primary-500 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
 					title="Link to website of {displayName(participant)}"
+					aria-label="Personal website"
 				>
-					<span class="block h-5 w-5 *:size-full">{@html globeIcon}</span>
+					<span class="block h-5 w-5 *:size-full" aria-hidden="true">{@html globeIcon}</span>
 				</a>
 			{/if}
 		</div>
 	{/if}
 
 	<!-- Details / Tags -->
-	<div class="mt-4 flex-1 wrap-break-word whitespace-pre-wrap">
+	<div
+		id="participant-details-{participant.githubAccountName}"
+		class="mt-4 flex-1 wrap-break-word whitespace-pre-wrap"
+	>
 		{#if isShowingDetails}
 			<h4 class="mt-4 mb-1 text-sm font-semibold text-primary-500 first:mt-0">Connection</h4>
 			<p class="m-0 text-sm text-gray-300">{participant.whatIsMyConnectionToJavascript}</p>
@@ -139,8 +156,9 @@
 					<li class="p-0">
 						<button
 							type="button"
+							tabindex="0"
 							onclick={() => dispatch('selectedTag', tag)}
-							class="cursor-pointer rounded border border-gray-500 bg-transparent px-2 py-1 text-xs text-gray-300 transition-colors hover:border-primary-500 hover:text-primary-500 active:bg-primary-500 active:text-black"
+							class="cursor-pointer rounded border border-gray-500 bg-transparent px-2 py-1 text-xs text-gray-300 transition-colors hover:border-primary-500 hover:text-primary-500 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none active:bg-primary-500 active:text-black"
 						>
 							{tag}
 						</button>
@@ -170,6 +188,7 @@
 				participant.iCanTakeNotesDuringSessions ? 'text-primary-500' : 'text-gray-600'
 			)}
 			title="Can take notes during sessions"
+			aria-label="Can take notes during sessions"
 		>
 			{@html pencilSquareIcon}
 		</span>
