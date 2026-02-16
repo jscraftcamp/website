@@ -30,7 +30,7 @@
 					</span>
 					{#if sponsor.sponsoring}
 						<div
-							class="absolute inset-0 flex items-start rounded-2xl bg-linear-to-br from-black/80 via-black/60 to-transparent p-4 text-sm text-white opacity-0 transition-opacity group-hover:opacity-100"
+							class="absolute inset-0 flex items-start rounded-2xl bg-linear-to-br from-primary-700/45 via-primary-700/25 to-transparent p-4 text-sm text-white opacity-0 transition-opacity group-hover:opacity-100"
 						>
 							{sponsor.sponsoring}
 						</div>

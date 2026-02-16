@@ -57,7 +57,7 @@
 			href="{base}/"
 			onclick={() => (mobileMenuOpen = false)}
 			tabindex="0"
-			class="text-2xl font-bold text-primary-500">JSCraftCamp</a
+			class="text-2xl font-bold text-primary-700">JSCraftCamp</a
 		>
 		<button
 			type="button"
@@ -70,7 +70,7 @@
 				}
 			}}
 			onclick={() => (mobileMenuOpen = !mobileMenuOpen)}
-			class="relative z-50 flex size-8 cursor-pointer flex-col items-center justify-center gap-1.5 rounded focus:ring-2 focus:ring-primary-500 focus:outline-none"
+			class="relative z-50 flex size-8 cursor-pointer flex-col items-center justify-center gap-1.5 rounded focus:ring-2 focus:ring-primary-700 focus:outline-none"
 		>
 			<span class="hamburger-line h-0.5 w-6 bg-white transition-all duration-300"></span>
 			<span class="hamburger-line h-0.5 w-6 bg-white transition-all duration-300"></span>
@@ -96,11 +96,11 @@
 								href={item.href}
 								onclick={() => (mobileMenuOpen = false)}
 								tabindex="0"
-								class="rounded py-2 text-2xl font-medium transition-colors duration-200 hover:text-primary-500 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none {isActive(
+								class="rounded py-2 text-2xl font-medium transition-colors duration-200 hover:text-primary-700 focus:ring-2 focus:ring-primary-700 focus:ring-offset-2 focus:ring-offset-black focus:outline-none {isActive(
 									item.href,
 									$page.url.pathname
 								)
-									? 'text-primary-500'
+									? 'text-primary-700'
 									: 'text-white'}"
 							>
 								{item.label}
@@ -121,7 +121,7 @@
 							rel="noopener noreferrer"
 							aria-label={social.label}
 							tabindex="0"
-							class="flex size-6 items-center justify-center rounded text-white transition-colors duration-200 hover:text-primary-500 focus:ring-2 focus:ring-primary-500 focus:outline-none"
+							class="flex size-6 items-center justify-center rounded text-white transition-colors duration-200 hover:text-primary-700 focus:ring-2 focus:ring-primary-700 focus:outline-none"
 						>
 							<span class="h-6 w-6 *:size-full" aria-hidden="true">
 								{@html social.icon}
@@ -138,7 +138,7 @@
 		<a
 			href="{base}/"
 			tabindex="0"
-			class="rounded text-2xl font-bold text-primary-500 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
+			class="rounded text-2xl font-bold text-primary-700 focus:ring-2 focus:ring-primary-700 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
 			>JSCraftCamp
 		</a>
 
@@ -149,17 +149,17 @@
 						<a
 							href={item.href}
 							tabindex="0"
-							class="relative rounded py-2 font-medium transition-colors duration-200 hover:text-primary-500 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none {isActive(
+							class="relative rounded py-2 font-medium transition-colors duration-200 hover:text-primary-700 focus:ring-2 focus:ring-primary-700 focus:ring-offset-2 focus:ring-offset-black focus:outline-none {isActive(
 								item.href,
 								$page.url.pathname
 							)
-								? 'text-primary-500'
+								? 'text-primary-700'
 								: 'text-white'}"
 						>
 							{item.label}
 							{#if isActive(item.href, $page.url.pathname)}
 								<span
-									class="absolute bottom-0 left-1/2 size-1 -translate-x-1/2 rounded-full bg-primary-500"
+									class="absolute bottom-0 left-1/2 size-1 -translate-x-1/2 rounded-full bg-primary-700"
 								></span>
 							{/if}
 						</a>
@@ -178,7 +178,7 @@
 						rel="noopener noreferrer"
 						aria-label={social.label}
 						tabindex="0"
-						class="flex size-5 items-center justify-center rounded text-white transition-colors duration-200 hover:text-primary-500 focus:ring-2 focus:ring-primary-500 focus:outline-none"
+						class="flex size-5 items-center justify-center rounded text-white transition-colors duration-200 hover:text-primary-700 focus:ring-2 focus:ring-primary-700 focus:outline-none"
 					>
 						<span class="h-6 w-6 *:size-full" aria-hidden="true">
 							{@html social.icon}

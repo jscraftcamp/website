@@ -1,8 +1,8 @@
 <script lang="ts">
-	import githubIcon from '$lib/icons/github.svg';
-	import mastodonIcon from '$lib/icons/mastodon.svg';
-	import twitterIcon from '$lib/icons/x.svg';
-	import linkedinIcon from '$lib/icons/linkedin.svg';
+	import githubIcon from '$lib/icons/github.svg?raw';
+	import mastodonIcon from '$lib/icons/mastodon.svg?raw';
+	import twitterIcon from '$lib/icons/x.svg?raw';
+	import linkedinIcon from '$lib/icons/linkedin.svg?raw';
 
 	interface Props {
 		name: string;
@@ -50,7 +50,7 @@
 			<a
 				href="mailto:{email}"
 				title={email}
-				class="max-w-full truncate text-sm text-gray-300 hover:text-white"
+				class="max-w-full truncate text-sm text-gray-300 hover:text-primary-700"
 			>
 				{email}
 			</a>
@@ -68,9 +68,9 @@
 						rel="external noopener noreferrer"
 						target="_blank"
 						title="{name} on {social.label}"
-						class="opacity-70 transition-opacity hover:opacity-100"
+						class="text-white transition-colors hover:text-primary-700 [&>svg]:h-5 [&>svg]:w-5"
 					>
-						<img src={social.icon} alt={social.label} class="h-5 w-5 invert" />
+						{@html social.icon}
 					</a>
 				{/each}
 			</div>
