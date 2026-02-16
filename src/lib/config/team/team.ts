@@ -9,6 +9,7 @@ import patrickp from './images/patrickp.png';
 import philip from './images/philip.jpeg';
 import sina from './images/sina.jpeg';
 import wolfram from './images/wolfram.jpg';
+import tobias from './images/tobias.jpg';
 
 export const team: TeamMember[] = [
 	{
@@ -56,6 +57,13 @@ export const team: TeamMember[] = [
 		name: 'Sina Aschenbrenner',
 		linkedin: 'https://www.linkedin.com/in/sina-aschenbrenner-146aa8229/',
 		image: sina
+	},
+	{
+		name: 'Tobias Sittenauer',
+		email: 'tobias.sittenauer@stack-forge.eu',
+		linkedin: 'https://www.linkedin.com/in/tobias-sittenauer-b25b27262/',
+		github: 'https://github.com/xetoxyc',
+		image: tobias
 	},
 	{
 		name: 'Wolfram Kriesing',
