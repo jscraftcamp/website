@@ -46,5 +46,5 @@
 	"linkedin": "https://www.linkedin.com/company/seorank-tech/",
 	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
 	// your website URL or other social media (optional)
-	"website": "https://seorank.tech"
+	"website": "https://seorank.tech?source=jscraftcamp-org",
 }
