@@ -1,30 +1,12 @@
 <script lang="ts">
 	import './layout.css';
 	import type { Snippet } from 'svelte';
-	import { generateColorPair } from '$lib/color-cycle';
-	import { onMount } from 'svelte';
 
 	interface Props {
 		children?: Snippet;
 	}
 
 	let { children }: Props = $props();
-
-	onMount(() => {
-		const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
-		if (mq.matches) return;
-
-		const update = () => {
-			const { primary500, primary700 } = generateColorPair();
-			document.documentElement.style.setProperty('--color-primary-500', primary500);
-			document.documentElement.style.setProperty('--color-primary-700', primary700);
-		};
-
-		update();
-		const id = window.setInterval(update, 1400);
-
-		return () => window.clearInterval(id);
-	});
 </script>
 
 <a

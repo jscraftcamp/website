@@ -56,7 +56,7 @@
 }
 
 :root {
-	animation: animate-hue 10s linear infinite;
+	animation: animate-hue 180s steps(36) infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -72,15 +72,11 @@
 		margin: 0;
 		height: 100vh;
 		padding: 0;
-		transition:
-			--color-primary-500 0.9s ease,
-			--color-primary-700 0.9s ease;
 	}
 
 	a {
 		color: var(--color-primary-500);
 		cursor: pointer;
-		transition: color 0.3s ease;
 	}
 
 	a:visited {
