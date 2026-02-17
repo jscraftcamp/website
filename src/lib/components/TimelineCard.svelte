@@ -40,15 +40,15 @@
 
 <Card class={cn('h-full justify-between px-2 py-4 sm:px-4 sm:py-4', className)}>
 	<div class="flex items-baseline gap-2">
-		<span class="font-bold text-yellow-500">{agenda.dayLabel}</span>
-		<span class="text-yellow-500">{agenda.date}</span>
+		<span class="font-bold text-primary-700">{agenda.dayLabel}</span>
+		<span class="text-primary-700">{agenda.date}</span>
 	</div>
 
 	<!-- Mobile layout: vertical list -->
 	<div class="flex flex-col gap-2 md:hidden">
 		{#each agenda.items as item (item.time)}
 			<div class="flex items-center gap-2">
-				<span class="w-12 shrink-0 text-sm font-semibold text-yellow-500"
+				<span class="w-12 shrink-0 text-sm font-semibold text-primary-700"
 					>{formatTime(item.time)}</span
 				>
 				<span class="text-sm font-medium tracking-wide text-white/90 uppercase">
@@ -61,7 +61,7 @@
 	<!-- Desktop layout: slot-based timeline -->
 	<div class="relative hidden flex-1 md:block">
 		<!-- Timeline line -->
-		<div class="absolute right-0 bottom-1 left-0 h-px bg-yellow-500/30"></div>
+		<div class="absolute right-0 bottom-1 left-0 h-px bg-primary-700/30"></div>
 
 		{#each slots as slot, index (slot)}
 			{@const item = itemsByTime.get(slot)}
@@ -93,13 +93,13 @@
 					</div>
 					<span
 						class={cn(
-							'text-sm font-semibold text-yellow-500',
+							'text-sm font-semibold text-primary-700',
 							isFirst ? 'text-left' : isLast ? 'text-right' : 'text-center'
 						)}>{formatTime(item.time)}</span
 					>
 					<div
 						class={cn(
-							'h-2 w-2 rounded-full bg-yellow-500',
+							'h-2 w-2 rounded-full bg-primary-700',
 							isFirst ? '' : isLast ? 'self-end' : 'self-center'
 						)}
 					></div>

@@ -66,14 +66,14 @@
 									title={sponsor.name}
 									target="_blank"
 									rel="noopener noreferrer"
-									class="flex shrink-0 flex-col items-center justify-center gap-1 transition-opacity duration-200 hover:opacity-80"
+									class="group flex shrink-0 flex-col items-center justify-center gap-1 text-stone-400 hover:text-primary-700"
 								>
 									<img
 										src={sponsor.image}
 										alt={sponsor.name}
-										class="h-8 w-auto max-w-32 object-contain"
+										class="h-8 w-auto max-w-32 object-contain transition-opacity duration-200 group-hover:opacity-80"
 									/>
-									<span class="text-xs font-medium text-stone-400">{sponsor.name}</span>
+									<span class="text-xs font-medium">{sponsor.name}</span>
 								</a>
 							{/each}
 						</div>

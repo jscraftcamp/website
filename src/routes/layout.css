@@ -1,5 +1,17 @@
 @import 'tailwindcss';
 
+@property --color-primary-500 {
+	syntax: '<color>';
+	inherits: true;
+	initial-value: #cb9eff;
+}
+
+@property --color-primary-700 {
+	syntax: '<color>';
+	inherits: true;
+	initial-value: #b06bff;
+}
+
 @font-face {
 	font-family: 'Rubik';
 	src: url('/fonts/rubik-variable.ttf') format('truetype-variations');
@@ -12,8 +24,8 @@
 
 	--color-background: #0f0f0f;
 
-	--color-primary-500: #f9db12;
-	--color-primary-700: #fdbb12;
+	--color-primary-500: #cb9eff;
+	--color-primary-700: #b06bff;
 
 	--color-dark-300: #363636;
 	--color-dark-500: #252525;
@@ -47,11 +59,15 @@
 		margin: 0;
 		height: 100vh;
 		padding: 0;
+		transition:
+			--color-primary-500 0.9s ease,
+			--color-primary-700 0.9s ease;
 	}
 
 	a {
 		color: var(--color-primary-500);
 		cursor: pointer;
+		transition: color 0.3s ease;
 	}
 
 	a:hover {
