@@ -96,7 +96,7 @@
 								href={item.href}
 								onclick={() => (mobileMenuOpen = false)}
 								tabindex="0"
-								class="rounded py-2 text-2xl font-medium transition-colors duration-200 hover:text-primary-700 focus:ring-2 focus:ring-primary-700 focus:ring-offset-2 focus:ring-offset-black focus:outline-none {isActive(
+								class="rounded py-2 text-2xl font-medium hover:text-primary-700 focus:ring-2 focus:ring-primary-700 focus:ring-offset-2 focus:ring-offset-black focus:outline-none {isActive(
 									item.href,
 									$page.url.pathname
 								)
@@ -121,7 +121,7 @@
 							rel="noopener noreferrer"
 							aria-label={social.label}
 							tabindex="0"
-							class="flex size-6 items-center justify-center rounded text-white transition-colors duration-200 hover:text-primary-700 focus:ring-2 focus:ring-primary-700 focus:outline-none"
+							class="flex size-6 items-center justify-center rounded text-white hover:text-primary-700 focus:ring-2 focus:ring-primary-700 focus:outline-none"
 						>
 							<span class="h-6 w-6 *:size-full" aria-hidden="true">
 								{@html social.icon}
@@ -149,7 +149,7 @@
 						<a
 							href={item.href}
 							tabindex="0"
-							class="relative rounded py-2 font-medium transition-colors duration-200 hover:text-primary-700 focus:ring-2 focus:ring-primary-700 focus:ring-offset-2 focus:ring-offset-black focus:outline-none {isActive(
+							class="relative rounded py-2 font-medium hover:text-primary-700 focus:ring-2 focus:ring-primary-700 focus:ring-offset-2 focus:ring-offset-black focus:outline-none {isActive(
 								item.href,
 								$page.url.pathname
 							)
@@ -178,7 +178,7 @@
 						rel="noopener noreferrer"
 						aria-label={social.label}
 						tabindex="0"
-						class="flex size-5 items-center justify-center rounded text-white transition-colors duration-200 hover:text-primary-700 focus:ring-2 focus:ring-primary-700 focus:outline-none"
+						class="flex size-5 items-center justify-center rounded text-white hover:text-primary-700 focus:ring-2 focus:ring-primary-700 focus:outline-none"
 					>
 						<span class="h-6 w-6 *:size-full" aria-hidden="true">
 							{@html social.icon}

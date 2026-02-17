@@ -1,15 +1,9 @@
 @import 'tailwindcss';
 
-@property --color-primary-500 {
-	syntax: '<color>';
+@property --current-hue {
+	syntax: '<angle>';
 	inherits: true;
-	initial-value: #cb9eff;
-}
-
-@property --color-primary-700 {
-	syntax: '<color>';
-	inherits: true;
-	initial-value: #b06bff;
+	initial-value: 0deg;
 }
 
 @font-face {
@@ -24,8 +18,8 @@
 
 	--color-background: #0f0f0f;
 
-	--color-primary-500: #cb9eff;
-	--color-primary-700: #b06bff;
+	--color-primary-500: oklch(0.78 0.15 var(--current-hue));
+	--color-primary-700: oklch(0.66 0.2 var(--current-hue));
 
 	--color-dark-300: #363636;
 	--color-dark-500: #252525;
@@ -52,6 +46,25 @@
 	}
 }
 
+@keyframes animate-hue {
+	from {
+		--current-hue: 0deg;
+	}
+	to {
+		--current-hue: 360deg;
+	}
+}
+
+:root {
+	animation: animate-hue 10s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	:root {
+		animation-duration: 600s;
+	}
+}
+
 @layer base {
 	html,
 	body {
@@ -68,6 +81,11 @@
 		color: var(--color-primary-500);
 		cursor: pointer;
 		transition: color 0.3s ease;
+	}
+
+	a:visited {
+		color: var(--color-primary-500);
+		cursor: pointer;
 	}
 
 	a:hover {
