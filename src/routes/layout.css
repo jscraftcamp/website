@@ -56,7 +56,7 @@
 }
 
 :root {
-	animation: animate-hue 180s steps(36) infinite;
+	animation: animate-hue 180s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
