@@ -97,7 +97,9 @@
 					<span
 						class="inline-block rounded-full bg-stone-600/80 px-6 py-2.5 text-sm font-semibold text-stone-200"
 					>
-						Registration opens in {daysUntilRegistration} day{daysUntilRegistration === 1 ? '' : 's'}
+						Registration opens in {daysUntilRegistration} day{daysUntilRegistration === 1
+							? ''
+							: 's'}
 					</span>
 				{:else}
 					<span
