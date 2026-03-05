@@ -1,3 +1,3 @@
-import CurrentSponsors from './Sponsors2025.svelte';
+import CurrentSponsors from './Sponsors2026.svelte';
 
 export default CurrentSponsors;
