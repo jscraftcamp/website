@@ -6,4 +6,4 @@
 	let { style = '' }: Props = $props();
 </script>
 
-<img src="/logos/2026/logo.svg" alt="JSCraftCamp Logo" style="height: auto; {style}" />
+<img src="/logos/2023/logo.svg" alt="JSCraftCamp Logo" style="height: auto; {style}" />
