@@ -12,5 +12,7 @@
 <Card class={className}>
 	<h3>Registration</h3>
 
-	<img src={RegisterNow} alt="Register now" class="h-full w-auto" />
+	<a href="/registration">
+		<img src={RegisterNow} alt="Register now" class="h-full w-auto" />
+	</a>
 </Card>
