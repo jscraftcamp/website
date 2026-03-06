@@ -1,14 +1,20 @@
 import tng from './logos/tng.png';
+import stackForge from './logos/stack-forge.svg';
 import type { Sponsor } from './types';
 
 export const sponsors: Sponsor[] = [
-	// tobi: kann man stehen lassen für 2026 ;)
-	/*{
+	{
+		image: tng,
+		link: 'https://www.tngtech.com/',
+		name: 'TNG Technology Consulting',
+		sponsoring: 'Venue & Beverages'
+	},
+	{
 		image: stackForge,
 		link: 'https://www.stack-forge.eu',
 		name: 'StackForge',
-		sponsoring: 'Breakfast Fr & Sa'
-	},*/
+		sponsoring: 'Snacks'
+	}
 	// {
 	// 	image: allPrintCut,
 	// 	link: 'https://allprintcut.com/',
@@ -87,12 +93,6 @@ export const sponsors: Sponsor[] = [
 	// 	name: 'Tiffinger & Thiel GmbH',
 	// 	sponsoring: 'Beverages'
 	// },
-	{
-		image: tng,
-		link: 'https://www.tngtech.com/',
-		name: 'TNG Technology Consulting',
-		sponsoring: '500 €'
-	}
 	// {
 	// 	image: twilio,
 	// 	link: 'https://twilio.com/',
