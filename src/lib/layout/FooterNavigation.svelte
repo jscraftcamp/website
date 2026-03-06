@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import Logo from '../logos/CurrentLogo';
+	import Logo from '../logos/Logo.svelte';
 </script>
 
 <footer

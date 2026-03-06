@@ -1,6 +1,14 @@
 import { chromium } from '@playwright/test';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
 
 const year = process.argv[2];
+
+function getLogoDataUri(logo: string): string {
+	const svgPath = resolve(`./static/logos/${logo}/logo.svg`);
+	const svgContent = readFileSync(svgPath, 'utf-8');
+	return `data:image/svg+xml;base64,${Buffer.from(svgContent).toString('base64')}`;
+}
 
 const browser = await chromium.launch({ headless: true, slowMo: 50 });
 try {
@@ -67,6 +75,7 @@ async function takeScreenshot(options: {
 }
 
 function createHtmlWithText({ logo, text }: { logo: string; text: string }): string {
+	const logoSrc = getLogoDataUri(logo);
 	return `<!doctype html>
 	<html lang="en" style="height: 100%; width: 100%">
 		<head>
@@ -97,7 +106,7 @@ function createHtmlWithText({ logo, text }: { logo: string; text: string }): str
 					<img
 						style="object-fit: contain; width: auto; height: 100%; max-width: 100%; max-height: 1em"
 						alt="JSCraftCamp logo"
-						src="http://localhost:5173/logos/${logo}/logo.svg"
+						src="${logoSrc}"
 					/>
 					<div
 						style="
@@ -118,6 +127,7 @@ function createHtmlWithText({ logo, text }: { logo: string; text: string }): str
 	`;
 }
 function createHtmlWithoutText({ logo }: { logo: string }): string {
+	const logoSrc = getLogoDataUri(logo);
 	return `<!doctype html>
 <html lang="en" style="height: 100%; width: 100%">
 <head>
@@ -130,7 +140,7 @@ function createHtmlWithoutText({ logo }: { logo: string }): string {
 		<img
 			style="object-fit: contain; width: 100%; height: 100%; max-height: 100vh; max-width: 100vw"
 			alt="JSCraftCamp logo"
-			src="http://localhost:5173/logos/${logo}/logo.svg"
+			src="${logoSrc}"
 		/>
 	</div>
 </body>

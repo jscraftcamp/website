@@ -75,6 +75,8 @@
 		</Card>
 
 		<Sponsors2025 />
-		<Logo2025 />
+	</Content>
+	<Content class="flex items-center">
+		<Logo2025 style="width: 24rem;" />
 	</Content>
 </PageLayout>

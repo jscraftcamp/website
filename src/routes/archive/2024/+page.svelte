@@ -74,7 +74,7 @@
 	<Content>
 		<Sponsors2024 />
 	</Content>
-	<Content>
-		<Logo2024 />
+	<Content class="flex items-center">
+		<Logo2024 style="width: 24rem;" />
 	</Content>
 </PageLayout>
