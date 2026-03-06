@@ -3,9 +3,10 @@
 	import {
 		eventConfig,
 		getDaysToGo,
+		getDaysUntilRegistration,
+		getRegistrationState,
 		getShortYear,
-		getYear,
-		isRegistrationOpen
+		getYear
 	} from '$lib/config/event';
 	import Card from '$lib/layout/Card.svelte';
 	import { cn } from '$lib/utils/cn';
@@ -17,7 +18,8 @@
 	let { class: className = '' }: Props = $props();
 
 	const daysToGo = getDaysToGo();
-	const registrationOpen = isRegistrationOpen();
+	const registrationState = getRegistrationState();
+	const daysUntilRegistration = getDaysUntilRegistration();
 
 	let displayedDays = $state(0);
 
@@ -84,18 +86,26 @@
 
 			<!-- Registration button -->
 			<div class="mt-4">
-				{#if registrationOpen}
+				{#if registrationState === 'open'}
 					<a
 						href="/registration"
 						class="inline-block rounded-full bg-emerald-700 px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-800"
 					>
 						Register now
 					</a>
+				{:else if registrationState === 'not-yet'}
+					<span
+						class="inline-block rounded-full bg-stone-600/80 px-6 py-2.5 text-sm font-semibold text-stone-200"
+					>
+						Registration opens in {daysUntilRegistration} day{daysUntilRegistration === 1
+							? ''
+							: 's'}
+					</span>
 				{:else}
 					<span
-						class="inline-block cursor-not-allowed rounded-full bg-stone-600/80 px-6 py-2.5 text-sm font-semibold text-stone-200"
+						class="inline-block rounded-full bg-stone-600/80 px-6 py-2.5 text-sm font-semibold text-stone-200"
 					>
-						Registration not open yet
+						Registration closed
 					</span>
 				{/if}
 			</div>

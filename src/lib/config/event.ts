@@ -31,8 +31,8 @@ export const eventConfig: EventConfig = {
 	isEstimation: false,
 	startDate: new Date('2026-06-12T07:30:00Z'),
 	endDate: new Date('2026-06-13'),
-	registrationOpensAt: undefined, //new Date('2025-02-20T07:00:00Z'),
-	registrationClosesAt: undefined, //new Date('2025-02-26T17:00:00Z'),
+	registrationOpensAt: new Date('2026-04-13T07:00:00Z'),
+	registrationClosesAt: new Date('2026-06-11T12:00:00Z'),
 	fridayRegistrationOpen: false,
 	saturdayRegistrationOpen: false
 };
@@ -79,6 +79,16 @@ export function getRegistrationState(): 'not-yet' | 'open' | 'closed' {
 		return 'closed';
 	}
 	return 'open';
+}
+
+export function getDaysUntilRegistration(): number {
+	if (!eventConfig.registrationOpensAt) return 0;
+	const today = new Date();
+	today.setHours(0, 0, 0, 0);
+	const opens = new Date(eventConfig.registrationOpensAt);
+	opens.setHours(0, 0, 0, 0);
+	const diffTime = opens.getTime() - today.getTime();
+	return Math.max(0, Math.ceil(diffTime / (1000 * 60 * 60 * 24)));
 }
 
 export function timeLeft(
