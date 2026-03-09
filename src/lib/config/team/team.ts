@@ -5,7 +5,7 @@ import bernd from './images/bernd.webp';
 import joern from './images/joern.jpg';
 import leo from './images/leo.webp';
 import michael from './images/michael.png';
-import patrickp from './images/patrickp.png';
+import patrickp from './images/patrickp.jpg';
 import philip from './images/philip.jpeg';
 import sina from './images/sina.jpeg';
 import wolfram from './images/wolfram.jpg';
