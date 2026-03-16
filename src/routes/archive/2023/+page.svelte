@@ -75,6 +75,6 @@
 		<Sponsors2023 />
 	</Content>
 	<Content class="flex items-center">
-		<Logo2023 style="width: 24rem;" />
+		<Logo2023 />
 	</Content>
 </PageLayout>

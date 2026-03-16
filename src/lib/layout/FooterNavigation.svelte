@@ -29,6 +29,6 @@
 		>
 	</nav>
 	<div class="z-10 mt-12">
-		<Logo style="max-width: 8rem;" />
+		<Logo />
 	</div>
 </footer>
