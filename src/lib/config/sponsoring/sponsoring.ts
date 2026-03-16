@@ -1,5 +1,6 @@
 import tng from './logos/tng.png';
 import stackForge from './logos/stack-forge.svg';
+import seorank from './logos/seorank.svg';
 import type { Sponsor } from './types';
 
 export const sponsors: Sponsor[] = [
@@ -14,6 +15,12 @@ export const sponsors: Sponsor[] = [
 		link: 'https://www.stack-forge.eu',
 		name: 'StackForge',
 		sponsoring: 'Snacks'
+	},
+	{
+		image: seorank,
+		link: 'https://seorank.tech',
+		name: 'SEORank.tech',
+		sponsoring: 'various'
 	}
 	// {
 	// 	image: allPrintCut,
