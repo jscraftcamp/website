@@ -77,6 +77,6 @@
 		<Sponsors2025 />
 	</Content>
 	<Content class="flex items-center">
-		<Logo2025 style="width: 24rem;" />
+		<Logo2025 />
 	</Content>
 </PageLayout>
