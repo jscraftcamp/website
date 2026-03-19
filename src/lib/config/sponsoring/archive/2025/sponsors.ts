@@ -11,7 +11,7 @@ import inspiredconsulting from './logos/inspired-consulting-logo.svg';
 import peerigon from './logos/peerigon.svg';
 import saab from './logos/saab.svg';
 import tiffingerthiel from './logos/tiffinger-thiel.svg';
-import tng from './logos/tng.png';
+import tng from './logos/tng.svg';
 import twilio from './logos/twilio.svg';
 import typedigital from './logos/typedigital.svg';
 import type { Sponsor } from '../../types';
