@@ -1,4 +1,4 @@
-import tng from './logos/tng.png';
+import tng from './logos/tng.svg';
 import stackForge from './logos/stack-forge.svg';
 import seorank from './logos/seorank.svg';
 import type { Sponsor } from './types';
