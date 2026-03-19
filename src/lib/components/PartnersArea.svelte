@@ -4,7 +4,9 @@
 
 <section class="flex flex-col gap-4">
 	<h2 class="text-primary text-center">Partners & Friends</h2>
-	<div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-6">
+	<div
+		class="flex flex-wrap justify-center gap-4 [&>a]:w-[calc(50%-0.5rem)] [&>a]:sm:w-[calc(33.333%-0.67rem)] [&>a]:md:w-[calc(16.666%-0.83rem)]"
+	>
 		{#each partners as partner (partner.name)}
 			<a href={partner.link} rel="external" target="_blank">
 				<div

@@ -1,11 +1,12 @@
 import type { Partner } from './types';
-
 import frontmuc from './logos/munich-frontend-developers.webp';
 import socrates from './logos/socrates.png';
 import seneca from './logos/seneca.png';
-import deno from './logos/deno-full-light-transparent.svg';
-import almEngineering from './logos/alm-logo-2022.svg';
-import composeUs from './logos/compose-us.svg';
+
+/**
+ * Partners are partner conferences and non-profit organizations only.
+ * Not companies, products, or commercial sponsors.
+ */
 
 export const partners: Partner[] = [
 	{
@@ -22,20 +23,5 @@ export const partners: Partner[] = [
 		image: seneca,
 		link: 'https://seneca.camp/',
 		name: 'Seneca'
-	},
-	{
-		image: deno,
-		link: 'https://deno.com/',
-		name: 'Deno'
-	},
-	{
-		image: almEngineering,
-		link: 'https://alm.sh/',
-		name: 'alm engineering'
-	},
-	{
-		image: composeUs,
-		link: 'https://compose.us/',
-		name: 'compose us'
 	}
 ];
