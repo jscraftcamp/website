@@ -59,21 +59,29 @@
 			>
 				{#if isSmallCount}
 					{#each [0, 1] as i (i)}
-						<div class="flex w-[100cqw] shrink-0 items-center gap-8 px-8">
+						<div class="flex w-[100cqw] shrink-0 items-start gap-3 px-4 sm:gap-6 sm:px-8">
 							{#each baseSponsors as sponsor, j (sponsor.name + j)}
 								<a
 									href={sponsor.link}
 									title={sponsor.name}
 									target="_blank"
 									rel="noopener noreferrer"
-									class="group flex shrink-0 flex-col items-center justify-center gap-1 text-stone-400 hover:text-primary-700"
+									class="group flex min-w-0 flex-1 basis-0 flex-col items-center justify-center gap-1 text-center text-stone-400 hover:text-primary-700"
 								>
-									<img
-										src={sponsor.image}
-										alt={sponsor.name}
-										class="h-8 w-auto max-w-32 object-contain transition-opacity duration-200 group-hover:opacity-80"
-									/>
-									<span class="text-xs font-medium">{sponsor.name}</span>
+									<div
+										class="flex h-8 w-full max-w-[7.5rem] items-center justify-center sm:max-w-32"
+									>
+										<img
+											src={sponsor.image}
+											alt={sponsor.name}
+											class="h-full w-full object-contain transition-opacity duration-200 group-hover:opacity-80"
+										/>
+									</div>
+									<span
+										class="w-full text-[11px] leading-tight font-medium text-balance sm:text-xs"
+									>
+										{sponsor.name}
+									</span>
 								</a>
 							{/each}
 						</div>
