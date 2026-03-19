@@ -1,6 +1,7 @@
 import tng from './logos/tng.svg';
 import stackForge from './logos/stack-forge.svg';
 import seorank from './logos/seorank.svg';
+import inovex from './logos/inovex-logo.png';
 import type { Sponsor } from './types';
 
 export const sponsors: Sponsor[] = [
@@ -21,6 +22,12 @@ export const sponsors: Sponsor[] = [
 		link: 'https://seorank.tech',
 		name: 'SEORank.tech',
 		sponsoring: 'various'
+	},
+	{
+		image: inovex,
+		link: 'https://www.inovex.de',
+		name: 'inovex',
+		sponsoring: 'Lunch'
 	}
 	// {
 	// 	image: allPrintCut,
