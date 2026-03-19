@@ -122,9 +122,13 @@
 				<span class="text-sm font-bold tracking-wider text-black">DAYS TO GO</span>
 			</div>
 
-			<span class="mt-4 text-xl font-black text-black sm:text-2xl lg:text-2xl xl:text-2xl">
+			<a
+				href="https://mastodon.social/tags/jscc26"
+				target="_blank"
+				class="mt-4 text-xl font-black text-black sm:text-2xl lg:text-2xl xl:text-2xl"
+			>
 				#jscc{getShortYear()}
-			</span>
+			</a>
 		</div>
 	</div>
 </Card>
