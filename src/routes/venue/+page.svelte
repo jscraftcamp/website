@@ -39,6 +39,22 @@
 				{/if}
 			</Card>
 
+			<Card>
+				<h3>Parking</h3>
+				<p>
+					There are only limited parking slots available at the venue. Please consider arriving by
+					public transport.
+				</p>
+			</Card>
+
+			<Card>
+				<h3>Public Transport</h3>
+				<p>
+					You can take the <strong>S8</strong> and walk approximately 1.3 km from the station to the
+					venue, or take the bus line directly.
+				</p>
+			</Card>
+
 			{#if venueConfig.accessibility}
 				<Card>
 					<h3>Accessibility</h3>

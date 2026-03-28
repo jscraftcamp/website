@@ -17,6 +17,6 @@ export const venueConfig: VenueConfig = {
 	description: "This year's location will be at the TNG office in Munich (Unterföhring).",
 
 	accessibility: {
-		description: "We'll update this when we have more information available."
+		description: 'The venue area is wheelchair accessible.'
 	}
 };
