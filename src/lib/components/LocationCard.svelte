@@ -51,16 +51,16 @@
 					<p class="flex items-center gap-2">
 						<span
 							class="inline-flex cursor-help items-center text-stone-300 *:size-4"
-							title="Wheelchair accessible."
-						>{@html accessibilityIcon}</span>
+							title="Wheelchair accessible.">{@html accessibilityIcon}</span
+						>
 						<span
 							class="inline-flex cursor-help items-center text-stone-300 *:size-4"
-							title="Limited parking available. Please use public transport."
-						>{@html carIcon}</span>
+							title="Limited parking available. Please use public transport.">{@html carIcon}</span
+						>
 						<span
 							class="inline-flex cursor-help items-center text-stone-300 *:size-4"
-							title="Reachable by public transport."
-						>{@html trainIcon}</span>
+							title="Reachable by public transport.">{@html trainIcon}</span
+						>
 					</p>
 					<a href="/venue" class="text-stone-400 hover:text-white">more</a>
 				</div>
