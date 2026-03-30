@@ -1,0 +1,22 @@
+{
+  "realName": {
+    "givenName": "Priya",
+    "familyName": "Patel"
+  },
+  "githubAccountName": "priya-codes",
+  "codebergAccountName": "priyap",
+  "company": "Thoughtworks",
+  "when": {
+    "friday": false,
+    "saturday": true
+  },
+  "iCanTakeNotesDuringSessions": true,
+  "tags": ["Accessibility", "React", "Testing", "CSS"],
+  "vegetarian": true,
+  "allergies": ["Gluten"],
+  "whatIsMyConnectionToJavascript": "Frontend architect focusing on inclusive design with JS frameworks.",
+  "whatCanIContribute": "Hands-on a11y audit workshop for web apps.",
+  "tShirtSize": "XL",
+  "linkedin": "https://www.linkedin.com/in/priya-patel-a11y/",
+  "website": "https://priyapatel.dev"
+}
