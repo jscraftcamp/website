@@ -1,0 +1,21 @@
+{
+  "realName": {
+    "givenName": "Marie-Claire",
+    "familyName": "Larsson"
+  },
+  "githubAccountName": "mclarsson",
+  "company": "Spotify",
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  "iCanTakeNotesDuringSessions": true,
+  "tags": ["Svelte", "SvelteKit", "GraphQL", "Playwright", "Turborepo", "Monorepos"],
+  "vegan": true,
+  "vegetarian": true,
+  "whatIsMyConnectionToJavascript": "Full-stack JS since 2014, currently deep into Svelte and build tooling.",
+  "whatCanIContribute": "Monorepo workshop and advice on migrating from React to Svelte.",
+  "tShirtSize": "3XL",
+  "X": "mc_larsson",
+  "linkedin": "https://www.linkedin.com/in/marie-claire-larsson/"
+}
