@@ -1,0 +1,18 @@
+{
+  "realName": {
+    "givenName": "Sam",
+    "familyName": "Chen"
+  },
+  "githubAccountName": "samchen-dev",
+  "company": "Vercel",
+  "when": {
+    "friday": false,
+    "saturday": false
+  },
+  "iCanTakeNotesDuringSessions": true,
+  "tags": ["Next.js", "Vercel", "Edge Functions"],
+  "whatIsMyConnectionToJavascript": "I work on server-side rendering and edge compute with JS daily.",
+  "whatCanIContribute": "Deep dive into edge functions and streaming SSR patterns.",
+  "tShirtSize": "L",
+  "X": "samchendev"
+}
