@@ -1,0 +1,20 @@
+{
+  "realName": {
+    "givenName": "Ali",
+    "familyName": "Jafari",
+    "placeFamilyNameFirst": false,
+    "hideFamilyNameOnWebsite": false
+  },
+  "githubAccountName": "alijafari42",
+  "codebergAccountName": "ali.jafari",
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  "iCanTakeNotesDuringSessions": false,
+  "tags": ["Rust", "WASM", "WebGPU"],
+  "whatIsMyConnectionToJavascript": "JS is my compile target — I write Rust that runs in the browser.",
+  "whatCanIContribute": "Live-coding a WASM module from scratch and plugging it into a JS app.",
+  "mastodon": "https://hachyderm.io/@alijafari",
+  "website": "https://alijafari.io"
+}

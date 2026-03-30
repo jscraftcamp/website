@@ -1,0 +1,20 @@
+{
+  "realName": {
+    "givenName": "Kim",
+    "familyName": "Tanaka",
+    "placeFamilyNameFirst": true
+  },
+  "githubAccountName": "kim-tanaka",
+  "company": "Rakuten",
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  "iCanTakeNotesDuringSessions": true,
+  "tags": ["TypeScript", "Deno", "WebComponents"],
+  "vegan": true,
+  "whatIsMyConnectionToJavascript": "I build browser tooling and contribute to TC39 proposals.",
+  "whatCanIContribute": "A session on modern runtime internals and spec reading.",
+  "tShirtSize": "S",
+  "mastodon": "https://fosstodon.org/@kimtanaka"
+}
