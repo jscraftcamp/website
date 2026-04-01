@@ -3,6 +3,9 @@
 	import { cn } from '$lib/utils/cn';
 	import locationBg from '$lib/assets/location-bg.png';
 	import { venueConfig } from '$lib/config/venue';
+	import trainIcon from '$lib/icons/train.svg?raw';
+	import accessibilityIcon from '$lib/icons/accessibility.svg?raw';
+	import carIcon from '$lib/icons/car.svg?raw';
 
 	interface Props {
 		class?: string;
@@ -44,6 +47,23 @@
 						target="_blank">Google Maps</a
 					>
 				</p>
+				<div class="flex items-center justify-between text-sm">
+					<p class="flex items-center gap-2">
+						<span
+							class="inline-flex cursor-help items-center text-stone-300 *:size-4"
+							title="Wheelchair accessible.">{@html accessibilityIcon}</span
+						>
+						<span
+							class="inline-flex cursor-help items-center text-stone-300 *:size-4"
+							title="Limited parking available. Please use public transport.">{@html carIcon}</span
+						>
+						<span
+							class="inline-flex cursor-help items-center text-stone-300 *:size-4"
+							title="Reachable by public transport.">{@html trainIcon}</span
+						>
+					</p>
+					<a href="/venue" class="text-stone-400 hover:text-white">more</a>
+				</div>
 			</div>
 		{/if}
 	</div>
