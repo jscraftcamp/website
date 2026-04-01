@@ -5,16 +5,18 @@ export const venueConfig: VenueConfig = {
 
 	address: {
 		name: 'TNG Technology Consulting GmbH',
-		street: 'Beta-Straße 13',
+		street: 'Beta-Straße 13a',
 		city: '85774 Unterföhring',
 		openStreetMapLink:
-			'https://www.openstreetmap.org/search?query=Beta-Stra%C3%9Fe+13+85774+Unterf%C3%B6hring&zoom=6#map=19/48.185987/11.654745',
+			'https://www.openstreetmap.org/search?query=Beta-Stra%C3%9Fe+13a+85774+Unterf%C3%B6hring&zoom=6#map=19/48.185987/11.654745',
 		googleMapsLink: 'https://maps.app.goo.gl/D2HPPonw6EWpWZ5r7'
 	},
 
 	impressionsLink: 'https://www.tngtech.com/ueber-uns/standorte/unterfoehring-deutschland/',
 
 	description: "This year's location will be at the TNG office in Munich (Unterföhring).",
+
+	entryInfo: 'Please enter the building from the side entry at the left-hand side of the building.',
 
 	accessibility: {
 		description: 'The venue area is wheelchair accessible.'

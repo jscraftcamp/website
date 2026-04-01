@@ -23,6 +23,9 @@ export interface VenueConfig {
 	/** Optional custom description */
 	description?: string;
 
+	/** Optional entry instructions */
+	entryInfo?: string;
+
 	/** Accessibility information */
 	accessibility?: VenueAccessibility;
 }

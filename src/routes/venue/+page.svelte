@@ -39,6 +39,13 @@
 				{/if}
 			</Card>
 
+			{#if venueConfig.entryInfo}
+				<Card>
+					<h3>Entry</h3>
+					<p>{venueConfig.entryInfo}</p>
+				</Card>
+			{/if}
+
 			<Card>
 				<h3>Parking</h3>
 				<p>
