@@ -3,6 +3,7 @@ import stackForge from './logos/stack-forge.svg';
 import seorank from './logos/seorank.svg';
 import inovex from './logos/inovex-logo.png';
 import scalable from './logos/scalable.svg';
+import pastely from './logos/pastely.svg';
 import type { Sponsor } from './types';
 
 export const sponsors: Sponsor[] = [
@@ -35,6 +36,12 @@ export const sponsors: Sponsor[] = [
 		link: 'https://scalable.capital',
 		name: 'Scalable Capital',
 		sponsoring: 'Lunch'
+	},
+	{
+		image: pastely,
+		link: 'https://www.pastely.eu',
+		name: 'Pastely',
+		sponsoring: 'Stickers'
 	}
 	// {
 	// 	image: allPrintCut,
