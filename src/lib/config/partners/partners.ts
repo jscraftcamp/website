@@ -27,7 +27,7 @@ export const partners: Partner[] = [
 	},
 	{
 		image: germanTechJobs,
-		link: 'https://germantechjobs.de/en/jobs/JavaScript/all,
+		link: 'https://germantechjobs.de/en/jobs/JavaScript/all',
 		name: 'GermanTechJobs'
 	}
 ];
