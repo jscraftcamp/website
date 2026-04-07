@@ -1,5 +1,6 @@
 import type { Partner } from './types';
 import frontmuc from './logos/munich-frontend-developers.webp';
+import germanTechJobs from './logos/german-tech-jobs.png';
 import socrates from './logos/socrates.png';
 import seneca from './logos/seneca.png';
 
@@ -23,5 +24,10 @@ export const partners: Partner[] = [
 		image: seneca,
 		link: 'https://seneca.camp/',
 		name: 'Seneca'
+	},
+	{
+		image: germanTechJobs,
+		link: 'https://germantechjobs.de/',
+		name: 'GermanTechJobs'
 	}
 ];
