@@ -3,6 +3,7 @@ import stackForge from './logos/stack-forge.svg';
 import seorank from './logos/seorank.svg';
 import inovex from './logos/inovex-logo.png';
 import scalable from './logos/scalable.svg';
+import saab from './logos/saab-white.svg';
 import type { Sponsor } from './types';
 
 export const sponsors: Sponsor[] = [
@@ -35,6 +36,12 @@ export const sponsors: Sponsor[] = [
 		link: 'https://scalable.capital',
 		name: 'Scalable Capital',
 		sponsoring: 'Lunch'
+	},
+	{
+		image: saab,
+		link: 'https://www.saab.com',
+		name: 'Saab',
+		sponsoring: 'Breakfast'
 	}
 	// {
 	// 	image: allPrintCut,
