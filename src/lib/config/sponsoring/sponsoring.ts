@@ -59,7 +59,7 @@ export const sponsors: Sponsor[] = [
 		sponsoring: 'various'
 	},
 	{
-    	image: pastely,
+		image: pastely,
 		link: 'https://www.pastely.eu',
 		name: 'Pastely',
 		sponsoring: 'Stickers'
