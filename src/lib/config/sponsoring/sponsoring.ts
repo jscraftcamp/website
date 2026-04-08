@@ -39,12 +39,12 @@ export const sponsors: Sponsor[] = [
 		name: 'Scalable Capital',
 		sponsoring: 'Lunch'
 	},
-  {
+	{
 		image: composeUs,
 		link: 'https://compose.us',
 		name: 'compose.us',
 		sponsoring: 'Event Insurance'
-  },
+	},
 	{
 		image: inspiredconsulting,
 		link: 'https://inspired.consulting',
