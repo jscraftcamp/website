@@ -40,30 +40,30 @@ export const sponsors: Sponsor[] = [
 		name: 'Scalable Capital',
 		sponsoring: 'Lunch'
 	},
-  {
-    image: saab,
+	{
+    	image: saab,
 		link: 'https://www.saab.com',
 		name: 'Saab',
 		sponsoring: 'Breakfast'
-  },
-  {
-    image: composeUs,
+	},
+	{
+    	image: composeUs,
 		link: 'https://compose.us',
 		name: 'compose.us',
 		sponsoring: 'Event Insurance'
-  },
-  {
-    image: inspiredconsulting,
+	},
+	{
+    	image: inspiredconsulting,
 		link: 'https://inspired.consulting',
 		name: 'Inspired Consulting',
 		sponsoring: 'various'
-  },
-  {
-    image: pastely,
+	},
+	{
+    	image: pastely,
 		link: 'https://www.pastely.eu',
 		name: 'Pastely',
 		sponsoring: 'Stickers'
-  }
+	}
 	// {
 	// 	image: allPrintCut,
 	// 	link: 'https://allprintcut.com/',
