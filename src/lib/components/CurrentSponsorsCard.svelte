@@ -38,8 +38,8 @@
 	const scrollDuration = $derived(isSmallCount ? '20s' : '40s');
 </script>
 
-<Card class={cn('flex flex-col gap-3 overflow-hidden px-0 py-4 sm:px-0 sm:py-4', className)}>
-	<div class="scroll-container w-full overflow-hidden py-2">
+<Card class={cn('flex flex-col gap-3 overflow-hidden px-0 pb-2 pt-2 sm:px-0 sm:pb-2 sm:pt-2', className)}>
+	<div class="scroll-container w-full overflow-hidden py-1">
 		<div class="flex w-max animate-scroll-left items-center gap-8">
 			{#each duplicatedTranslations as text, i (`${text}-${i}`)}
 				<span
@@ -69,7 +69,7 @@
 									class="group flex min-w-0 flex-1 basis-0 flex-col items-center justify-center gap-1 text-center text-stone-400 hover:text-primary-700"
 								>
 									<div
-										class="flex h-8 w-full max-w-[7.5rem] items-center justify-center sm:max-w-32"
+										class="flex h-16 w-full max-w-[10rem] items-center justify-center sm:max-w-48"
 									>
 										<img
 											src={sponsor.image}
@@ -93,12 +93,12 @@
 							title={sponsor.name}
 							target="_blank"
 							rel="noopener noreferrer"
-							class="flex shrink-0 flex-col items-center justify-center gap-1 px-8 transition-opacity duration-200 hover:opacity-80"
+							class="flex shrink-0 flex-col items-center justify-center gap-4 px-8 transition-opacity duration-200 hover:opacity-80"
 						>
 							<img
 								src={sponsor.image}
 								alt={sponsor.name}
-								class="h-8 w-auto max-w-32 object-contain"
+								class="h-16 w-auto max-w-48 object-contain"
 							/>
 							<span class="text-xs font-medium text-stone-400">{sponsor.name}</span>
 						</a>
