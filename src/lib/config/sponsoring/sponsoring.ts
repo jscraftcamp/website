@@ -3,6 +3,7 @@ import stackForge from './logos/stack-forge.svg';
 import seorank from './logos/seorank.svg';
 import inovex from './logos/inovex-logo.png';
 import scalable from './logos/scalable.svg';
+import inspiredconsulting from './logos/inspired-consulting.svg';
 import pastely from './logos/pastely.svg';
 import type { Sponsor } from './types';
 
@@ -36,6 +37,12 @@ export const sponsors: Sponsor[] = [
 		link: 'https://scalable.capital',
 		name: 'Scalable Capital',
 		sponsoring: 'Lunch'
+	},
+	{
+		image: inspiredconsulting,
+		link: 'https://inspired.consulting',
+		name: 'Inspired Consulting',
+		sponsoring: 'various'
 	},
 	{
 		image: pastely,
