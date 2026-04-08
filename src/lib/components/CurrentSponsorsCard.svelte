@@ -38,7 +38,12 @@
 	const scrollDuration = $derived(isSmallCount ? '20s' : '40s');
 </script>
 
-<Card class={cn('flex flex-col gap-3 overflow-hidden px-0 pb-2 pt-2 sm:px-0 sm:pb-2 sm:pt-2', className)}>
+<Card
+	class={cn(
+		'flex flex-col gap-3 overflow-hidden px-0 pt-2 pb-2 sm:px-0 sm:pt-2 sm:pb-2',
+		className
+	)}
+>
 	<div class="scroll-container w-full overflow-hidden py-1">
 		<div class="flex w-max animate-scroll-left items-center gap-8">
 			{#each duplicatedTranslations as text, i (`${text}-${i}`)}
