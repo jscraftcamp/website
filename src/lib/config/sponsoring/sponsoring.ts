@@ -19,7 +19,7 @@ export const sponsors: Sponsor[] = [
 		image: stackForge,
 		link: 'https://www.stack-forge.eu',
 		name: 'StackForge',
-		sponsoring: 'Snacks'
+		sponsoring: 'T-Shirts'
 	},
 	{
 		image: seorank,
