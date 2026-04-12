@@ -42,7 +42,7 @@
 		<g clip-path="url(#paint0_angular_5533_730_clip_path)">
 			<g transform="matrix(0 0.181 -0.163 0 167 185)">
 				<foreignObject x="-1006.13" y="-1006.13" width="2012.27" height="2012.27">
-					<div xmlns="http://www.w3.org/1999/xhtml" class="middle-border"></div>
+					<div class="middle-border"></div>
 				</foreignObject>
 			</g>
 		</g>
