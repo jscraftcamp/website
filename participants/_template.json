@@ -13,6 +13,8 @@
 	},
 	// please put in the account name of the PR creator, if you sign up somebody else
 	"githubAccountName": "jscraftcamp",
+	// your Codeberg account name (optional)
+	"codebergAccountName": "",
 	// company name (optional)
 	"company": "ACME",
 	// either both days or at least one day has to be set to true.

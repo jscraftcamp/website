@@ -36,7 +36,20 @@ export const ParticipantSchema = z
 			placeFamilyNameFirst: optionalBoolean(),
 			hideFamilyNameOnWebsite: optionalBoolean()
 		}),
-		githubAccountName: z.string().regex(/^(?!-)(?!.*--)[A-Za-z0-9-]{1,39}(?<!-)$/),
+		githubAccountName: z.preprocess(
+			emptyToNull,
+			z
+				.string()
+				.regex(/^(?!-)(?!.*--)[A-Za-z0-9-]{1,39}$/)
+				.nullish()
+		),
+		codebergAccountName: z.preprocess(
+			emptyToNull,
+			z
+				.string()
+				.regex(/^[a-zA-Z0-9_.-]{1,40}$/)
+				.nullish()
+		),
 		company: z.preprocess(emptyToNull, z.string().min(2).max(200).nullish()),
 		when: z
 			.object({
@@ -58,11 +71,12 @@ export const ParticipantSchema = z
 			(v) => {
 				const maybeV = emptyToNull(v);
 
-				if (maybeV === null) {
+				if (!maybeV) {
 					return null;
 				}
 
 				const size = String(maybeV).toUpperCase();
+
 				switch (size) {
 					case 'XXL':
 						return '2XL';
