@@ -1,0 +1,17 @@
+{
+	"realName": {
+		"givenName": "Patrick",
+		"familyName": "Müller"
+	},
+	"githubAccountName": "patrickwire",
+	"company": "ALM Engineering",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["Recht", "AI", "vibecoding"],
+	"whatIsMyConnectionToJavascript": "Using it forever.",
+	"whatCanIContribute": "Fill the fridge.",
+	"tShirtSize": "2XL"
+}
