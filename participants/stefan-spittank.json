@@ -38,7 +38,7 @@
 	// tell us a few words how JavaScript affects you (required)
 	"whatIsMyConnectionToJavascript": "I work daily in a frontend project based on NextJS / TypeScript",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "I got a passion for User Experience and its role in the age of AI. I can share my thoughts on how we can use AI to build the right products and how to keep the focus on the user when AI accelerates our development process.",
+	"whatCanIContribute": "I’m passionate about UX in the age of AI. I can share how to use AI to build the right things (not just the wrong things faster) and how to integrate AI meaningfully into the UX process.",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
 	"tShirtSize": "L", 
