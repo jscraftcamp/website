@@ -1,5 +1,6 @@
 import { isSponsor } from '$lib/sponsoring/is-sponsor';
 import type { Participant, TShirtSize } from './participant-schema';
+import { normalizeCompanyKey } from './normalize-company';
 
 type Allergies = { [k: string]: number };
 export type Company = { name: string; amount: number; isSponsor: boolean };
@@ -64,12 +65,7 @@ export const createStatsFromParticipants = (
 		}
 		if (participant.company) {
 			const name = participant.company;
-			const companyAsKey = name
-				.toLocaleLowerCase()
-				.replace(/\s+(?:ag|gbr|gmbh|gmdbh)/, '')
-				.replace(/[^a-z]/g, '-')
-				.replace(/-+/g, '-')
-				.replace(/^alm-engineering$/g, 'alm');
+			const companyAsKey = normalizeCompanyKey(name);
 			companies[companyAsKey] = companies[companyAsKey] ?? {
 				name,
 				amount: 0,
