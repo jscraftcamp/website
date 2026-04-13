@@ -141,15 +141,14 @@
 	{/if}
 
 	<!-- Details / Tags -->
-	<div
-		id="participant-details-{participant.githubAccountName}"
-		class="mt-4 wrap-break-word"
-	>
+	<div id="participant-details-{participant.githubAccountName}" class="mt-4 wrap-break-word">
 		{#if isShowingDetails}
 			<h4 class="mt-4 mb-1 text-sm font-semibold text-primary-500 first:mt-0">Connection</h4>
-			<p class="m-0 whitespace-pre-wrap text-sm text-gray-300">{participant.whatIsMyConnectionToJavascript}</p>
+			<p class="m-0 text-sm whitespace-pre-wrap text-gray-300">
+				{participant.whatIsMyConnectionToJavascript}
+			</p>
 			<h4 class="mt-4 mb-1 text-sm font-semibold text-primary-500">Contribution</h4>
-			<p class="m-0 whitespace-pre-wrap text-sm text-gray-300">{participant.whatCanIContribute}</p>
+			<p class="m-0 text-sm whitespace-pre-wrap text-gray-300">{participant.whatCanIContribute}</p>
 		{:else}
 			<ul class="m-0 mt-2 flex list-none flex-wrap gap-2 p-0">
 				{#each participant.tags as tag (tag)}
