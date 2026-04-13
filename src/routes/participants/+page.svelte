@@ -126,9 +126,7 @@
 						: 'border-gray-500 bg-transparent text-gray-300 hover:border-primary-500 hover:text-primary-500'}"
 				>
 					Saturday
-					<span class="ml-1 opacity-70"
-						>({participants.filter(saturdayFilter).length}/100)</span
-					>
+					<span class="ml-1 opacity-70">({participants.filter(saturdayFilter).length}/100)</span>
 				</button>
 			</div>
 			<a
@@ -140,37 +138,37 @@
 		</div>
 
 		{#if participants.filter($participantsFilter).length > 0}
-		<div class="relative">
-			{#if activeTag !== null}
-				<div class="sticky top-4">
-					<button
-						type="button"
-						onclick={unsetActiveTag}
-						class="absolute origin-top-left -translate-x-full -translate-y-8 -rotate-90 cursor-pointer border-none bg-transparent text-inherit hover:text-primary-500"
-					>
-						Selected tag: {activeTag}
-					</button>
-				</div>
-			{/if}
-			<ul class="m-0 grid list-none grid-cols-[repeat(auto-fill,minmax(14rem,1fr))] gap-6 p-0">
-				{#each participants.filter($participantsFilter) as participant (participant.githubAccountName ?? displayName(participant))}
-					<li class="pl-0">
-						<Participant
-							{participant}
-							on:selectedTag={onSelectTag}
-							isActive={(activeTag &&
-								participant.tags
-									.map((t) => t.toLocaleLowerCase())
-									.includes(activeTag.toLocaleLowerCase())) ||
-								false}
-						/>
-					</li>
-				{/each}
-			</ul>
-		</div>
-	{:else}
-		<p>There are no participants registered yet.</p>
-	{/if}
+			<div class="relative">
+				{#if activeTag !== null}
+					<div class="sticky top-4">
+						<button
+							type="button"
+							onclick={unsetActiveTag}
+							class="absolute origin-top-left -translate-x-full -translate-y-8 -rotate-90 cursor-pointer border-none bg-transparent text-inherit hover:text-primary-500"
+						>
+							Selected tag: {activeTag}
+						</button>
+					</div>
+				{/if}
+				<ul class="m-0 grid list-none grid-cols-[repeat(auto-fill,minmax(14rem,1fr))] gap-6 p-0">
+					{#each participants.filter($participantsFilter) as participant (participant.githubAccountName ?? displayName(participant))}
+						<li class="pl-0">
+							<Participant
+								{participant}
+								on:selectedTag={onSelectTag}
+								isActive={(activeTag &&
+									participant.tags
+										.map((t) => t.toLocaleLowerCase())
+										.includes(activeTag.toLocaleLowerCase())) ||
+									false}
+							/>
+						</li>
+					{/each}
+				</ul>
+			</div>
+		{:else}
+			<p>There are no participants registered yet.</p>
+		{/if}
 	</div>
 
 	{#if $registrationState === 'open'}
