@@ -7,5 +7,6 @@ export function normalizeCompanyKey(name: string): string {
 		.toLowerCase()
 		.replace(/[^a-z0-9]/g, '-')
 		.replace(/-+/g, '-')
-		.replace(/^-|-$/g, '');
+		.replace(/^-|-$/g, '')
+		.replace(/^alm-engineering$/, 'alm');
 }
