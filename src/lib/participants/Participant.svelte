@@ -41,6 +41,10 @@
 		<button
 			type="button"
 			onclick={() => (isShowingDetails = !isShowingDetails)}
+			ontouchend={(e) => {
+				e.preventDefault();
+				isShowingDetails = !isShowingDetails;
+			}}
 			aria-expanded={isShowingDetails}
 			aria-controls="participant-details-{participant.githubAccountName}"
 			class="font-inherit cursor-pointer border-none bg-transparent p-0 text-left text-primary-700 uppercase focus:outline-none"
