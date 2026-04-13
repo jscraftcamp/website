@@ -68,7 +68,7 @@
 		<Card>
 			<h2>The JSON format</h2>
 			<p>Your registration as JSON file should be in the following format to pass the tests:</p>
-			<pre>{RegistrationTemplate}</pre>
+			<pre class="template">{RegistrationTemplate}</pre>
 		</Card>
 
 		<Card>
@@ -93,3 +93,10 @@
 		</Card>
 	</Content>
 </PageLayout>
+
+<style>
+	.template {
+		overflow-x: auto;
+		max-width: 100%;
+	}
+</style>
