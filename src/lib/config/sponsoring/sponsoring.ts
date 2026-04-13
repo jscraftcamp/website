@@ -7,6 +7,7 @@ import composeUs from './logos/compose-us-white.svg';
 import inspiredconsulting from './logos/inspired-consulting.svg';
 import pastely from './logos/pastely.svg';
 import type { Sponsor } from './types';
+import { normalizeCompanyKey } from '$lib/participants/normalize-company';
 
 export const sponsors: Sponsor[] = [
 	{
@@ -150,10 +151,8 @@ export const sponsors: Sponsor[] = [
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export const isSponsor = (key: string) => {
-	return sponsors.some(
-		(sponsor) =>
-			sponsor.name.replace(/\s/g, '-').toLowerCase() === key.replace(/\s/g, '-').toLowerCase()
-	);
+	const normalizedKey = normalizeCompanyKey(key);
+	return sponsors.some((sponsor) => normalizeCompanyKey(sponsor.name) === normalizedKey);
 };
 
 // "Thank You" in multiple languages for the scrolling banner
