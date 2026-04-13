@@ -55,6 +55,14 @@ describe('normalizeCompanyKey', () => {
 			expect(normalizeCompanyKey('Bernhardt Beteiligungsgesellschaft mbH')).toBe('bernhardt');
 		});
 
+		it('strips Handelsgesellschaft mbH', () => {
+			expect(normalizeCompanyKey('Müller Handelsgesellschaft mbH')).toBe('m-ller');
+		});
+
+		it('strips any *gesellschaft mbH compound', () => {
+			expect(normalizeCompanyKey('Acme Verwaltungsgesellschaft mbH')).toBe('acme');
+		});
+
 		it('strips plain mbH', () => {
 			expect(normalizeCompanyKey('Sozialwerk mbH')).toBe('sozialwerk');
 		});
