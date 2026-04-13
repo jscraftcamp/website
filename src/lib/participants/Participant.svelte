@@ -8,6 +8,7 @@
 	import pencilSquareIcon from '$lib/icons/pencil-square.svg?raw';
 	import type { Participant } from '$lib/participants/participant-schema';
 	import { displayName } from '$lib/participants/display-name';
+	import { isSponsor } from '$lib/sponsoring/is-sponsor';
 	import { createEventDispatcher } from 'svelte';
 	import { cn } from '$lib/utils/cn';
 
@@ -27,6 +28,7 @@
 		participant.website ||
 		participant.linkedin;
 
+	const participantIsSponsor = participant.company ? isSponsor(participant.company) : false;
 	const dispatch = createEventDispatcher<{ selectedTag: string }>();
 </script>
 
@@ -45,7 +47,7 @@
 			aria-controls="participant-details-{participant.githubAccountName}"
 			class="font-inherit cursor-pointer border-none bg-transparent p-0 text-left text-primary-700 uppercase focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
 		>
-			{displayName(participant)}
+			{#if participantIsSponsor}<span title="Sponsor">👑</span>{/if}{displayName(participant)}
 		</button>
 	</h3>
 
