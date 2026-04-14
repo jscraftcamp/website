@@ -115,7 +115,9 @@
 						: 'border-gray-500 bg-transparent text-gray-300 hover:border-primary-500 hover:text-primary-500'}"
 				>
 					Friday
-					<span class="ml-1 opacity-70">({participants.filter(fridayFilter).length}/100)</span>
+					<span class="ml-1 opacity-70"
+						>({participants.filter(fridayFilter).length}/{eventConfig.maxParticipantsPerDay})</span
+					>
 				</button>
 				<button
 					type="button"
@@ -126,7 +128,10 @@
 						: 'border-gray-500 bg-transparent text-gray-300 hover:border-primary-500 hover:text-primary-500'}"
 				>
 					Saturday
-					<span class="ml-1 opacity-70">({participants.filter(saturdayFilter).length}/100)</span>
+					<span class="ml-1 opacity-70"
+						>({participants.filter(saturdayFilter)
+							.length}/{eventConfig.maxParticipantsPerDay})</span
+					>
 				</button>
 			</div>
 			<a
