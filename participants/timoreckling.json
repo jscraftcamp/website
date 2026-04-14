@@ -34,7 +34,7 @@
 	// tell us a few words how JavaScript affects you (required)
 	"whatIsMyConnectionToJavascript": "use it everyday in FE and BE code",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "Experience with React, transitioning from eslint to biome and from depcheck to knip with AI help, embedding React App in a Typo3 webpage. Helping hands on site, since I know the location. Interest to learn a lot.",
+	"whatCanIContribute": "Experience with React, transitioning from eslint to biome and from depcheck to knip with AI help. Helping hands on site (our office). Interest to learn a lot.",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
 	"tShirtSize": "M",
