@@ -6,18 +6,19 @@
     "hideFamilyNameOnWebsite": false
   },
   "githubAccountName": "jscraftcamp",
+  "codebergAccountName": "",
   "company": "Alm Engineering",
   "when": {
     "friday": true,
-    "saturday": false
+    "saturday": true
   },
   "iCanTakeNotesDuringSessions": true,
-  "tags": ["Node.js", "TypeScript", "GraphQL", "LLM", "Storybook", "React", "Bundler"],
+  "tags": ["TypeScript", "Node.js", "React", "DDD", "AI-Assisted Development", "Storybook", "GraphQL"],
   "vegan": false,
   "vegetarian": false,
   "allergies": [],
   "whatIsMyConnectionToJavascript": "I work with JavaScript over +15 years",
-  "whatCanIContribute": "Project insides, experiences with other domains, +20 years of experiences in the software industry",
+  "whatCanIContribute": "Domain modeling workflows, AI-assisted development practices, 20+ years of cross-domain software experience",
   "tShirtSize": "S",
   "mastodon": "",
   "linkedin": "",
