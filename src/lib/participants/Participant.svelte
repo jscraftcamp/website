@@ -32,7 +32,7 @@
 
 <article
 	class={cn(
-		'relative flex h-full w-full flex-col rounded-2xl bg-dark-500 p-6 pb-10 text-white',
+		'relative flex h-full w-full flex-col rounded-2xl bg-dark-500 p-6 pb-10 text-white focus-within:ring-2 focus-within:ring-primary-500 focus-within:ring-offset-2 focus-within:ring-offset-black',
 		isActive && 'shadow-lg ring-2 shadow-primary-500/20 ring-primary-500'
 	)}
 >
@@ -41,9 +41,13 @@
 		<button
 			type="button"
 			onclick={() => (isShowingDetails = !isShowingDetails)}
+			ontouchend={(e) => {
+				e.preventDefault();
+				isShowingDetails = !isShowingDetails;
+			}}
 			aria-expanded={isShowingDetails}
 			aria-controls="participant-details-{participant.githubAccountName}"
-			class="font-inherit cursor-pointer border-none bg-transparent p-0 text-left text-primary-700 uppercase focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
+			class="font-inherit cursor-pointer border-none bg-transparent p-0 text-left text-primary-700 uppercase focus:outline-none"
 		>
 			{displayName(participant)}
 		</button>
@@ -141,15 +145,14 @@
 	{/if}
 
 	<!-- Details / Tags -->
-	<div
-		id="participant-details-{participant.githubAccountName}"
-		class="mt-4 flex-1 wrap-break-word whitespace-pre-wrap"
-	>
+	<div id="participant-details-{participant.githubAccountName}" class="mt-4 wrap-break-word">
 		{#if isShowingDetails}
 			<h4 class="mt-4 mb-1 text-sm font-semibold text-primary-500 first:mt-0">Connection</h4>
-			<p class="m-0 text-sm text-gray-300">{participant.whatIsMyConnectionToJavascript}</p>
+			<p class="m-0 text-sm whitespace-pre-wrap text-gray-300">
+				{participant.whatIsMyConnectionToJavascript}
+			</p>
 			<h4 class="mt-4 mb-1 text-sm font-semibold text-primary-500">Contribution</h4>
-			<p class="m-0 text-sm text-gray-300">{participant.whatCanIContribute}</p>
+			<p class="m-0 text-sm whitespace-pre-wrap text-gray-300">{participant.whatCanIContribute}</p>
 		{:else}
 			<ul class="m-0 mt-2 flex list-none flex-wrap gap-2 p-0">
 				{#each participant.tags as tag (tag)}
@@ -172,13 +175,13 @@
 	<div class="absolute right-4 bottom-3 flex items-center gap-2 text-xs font-semibold">
 		<span
 			class={cn('cursor-help', participant.when.friday ? 'text-primary-500' : 'text-gray-600')}
-			title="Friday, 27th June"
+			title="Friday, 12th June"
 		>
 			FR
 		</span>
 		<span
 			class={cn('cursor-help', participant.when.saturday ? 'text-primary-500' : 'text-gray-600')}
-			title="Saturday, 28th June"
+			title="Saturday, 13th June"
 		>
 			SA
 		</span>
