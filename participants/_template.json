@@ -13,14 +13,16 @@
 	},
 	// please put in the account name of the PR creator, if you sign up somebody else
 	"githubAccountName": "jscraftcamp",
+	// your Codeberg account name (optional)
+	"codebergAccountName": "",
 	// company name (optional)
 	"company": "ACME",
 	// either both days or at least one day has to be set to true.
 	// If you cannot make one of the days, please set it to false, to allow someone else take that spot!
 	"when": {
-		// June 27th, 2025
+		// June 12th, 2026
 		"friday": true,
-		// June 28th, 2025
+		// June 13th, 2026
 		"saturday": true
 	},
 	// if you are willing to take session notes and publish them to github (required)

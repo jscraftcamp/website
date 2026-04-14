@@ -1,5 +1,6 @@
 import { isSponsor } from '$lib/sponsoring/is-sponsor';
 import type { Participant, TShirtSize } from './participant-schema';
+import { normalizeCompanyKey } from './normalize-company';
 
 type Allergies = { [k: string]: number };
 export type Company = { name: string; amount: number; isSponsor: boolean };
@@ -27,6 +28,9 @@ export type Statistics = {
 		notetakersFriday: number;
 		notetakersSaturday: number;
 	};
+	vegan: number;
+	vegetarian: number;
+	noFoodPreference: number;
 };
 
 const isOrgaMember = (p: Name, orgaMembers: Name[]) => {
@@ -61,12 +65,7 @@ export const createStatsFromParticipants = (
 		}
 		if (participant.company) {
 			const name = participant.company;
-			const companyAsKey = name
-				.toLocaleLowerCase()
-				.replace(/\s+(?:ag|gbr|gmbh|gmdbh)/, '')
-				.replace(/[^a-z]/g, '-')
-				.replace(/-+/g, '-')
-				.replace(/^alm-engineering$/g, 'alm');
+			const companyAsKey = normalizeCompanyKey(name);
 			companies[companyAsKey] = companies[companyAsKey] ?? {
 				name,
 				amount: 0,
@@ -113,6 +112,18 @@ export const createStatsFromParticipants = (
 		return 1;
 	});
 	const sortedCompanies = sortedCompanyEntries.map(([, company]) => company);
+	const { vegan, vegetarian, noFoodPreference } = participants.reduce(
+		(acc, { vegan, vegetarian }) => {
+			if (vegan) {
+				return { ...acc, vegan: acc.vegan + 1 };
+			}
+			if (vegetarian) {
+				return { ...acc, vegetarian: acc.vegetarian + 1 };
+			}
+			return { ...acc, noFoodPreference: acc.noFoodPreference + 1 };
+		},
+		{ vegan: 0, vegetarian: 0, noFoodPreference: 0 }
+	);
 
 	return {
 		allergies,
@@ -121,6 +132,9 @@ export const createStatsFromParticipants = (
 		orgaShirts,
 		participantCount: participants.length,
 		participantsShirts,
-		participants: stats
+		participants: stats,
+		vegan,
+		vegetarian,
+		noFoodPreference
 	};
 };

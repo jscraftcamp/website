@@ -1,4 +1,6 @@
 // vim: ft=jsonc
+// Please provide your info in your own .json file.
+// See https://jscraftcamp.org/registration for more information
 {
 	// your real name (required by location host)
 	"realName": {
@@ -11,14 +13,16 @@
 	},
 	// please put in the account name of the PR creator, if you sign up somebody else
 	"githubAccountName": "LBBO",
+	// your Codeberg account name (optional)
+	// "codebergAccountName": "",
 	// company name (optional)
 	"company": "inovex GmbH",
 	// either both days or at least one day has to be set to true.
 	// If you cannot make one of the days, please set it to false, to allow someone else take that spot!
 	"when": {
-		// June 27th, 2025
+		// June 12th, 2026
 		"friday": true,
-		// June 28th, 2025
+		// June 13th, 2026
 		"saturday": true
 	},
 	// if you are willing to take session notes and publish them to github (required)
@@ -29,17 +33,23 @@
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
 	"vegetarian": true,
+	// what you cannot eat or drink (optional); If you don't want to put it in here, message the organizers.
+	// IMPORTANT: we cannot guarantee that food for every diet will be available,
+	//            if you have gluten free diet, please make backup plans.
+	"allergies": [],
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "TypeScript is my primary language and I'm a huge fan of how powerful the type system is.",
+	"whatIsMyConnectionToJavascript": "It's at the core of all my projects, both professional and private",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "Good vibes, TS expertise, and some experimentation sessions, e.g. for Zod v4 or the Golang TS Compiler",
+	"whatCanIContribute": "Good mood, a talk about Passkey security",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
 	"tShirtSize": "XL",
 	// your Mastodon URL (optional)
 	"mastodon": "https://mastodontech.de/@LBBO",
+	// your LinkedIn profile URL
+	"linkedin": "https://www.linkedin.com/in/michael-david-kuckuk/",
+	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
+	// "X": "yourhandle",
 	// your website URL or other social media (optional)
-	"website": "https://bsky.app/profile/lbbo.de",
-  // your LinkedIn profile URL
-	"linkedin": "https://www.linkedin.com/in/michael-david-kuckuk-6a698425b/"
+	// "website": "https://www.your-domain.com"
 }

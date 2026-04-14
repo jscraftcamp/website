@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { timeLeft } from './registration';
+import { timeLeft } from '$lib/config/event';
 
 describe('timeLeft', () => {
 	const nowInMs = +new Date('2023-01-01 00:00:00Z');

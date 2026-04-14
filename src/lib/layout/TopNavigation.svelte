@@ -1,128 +1,204 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import { isRegistrationOpen } from '$lib/participants/registration';
-	import Logo from './Logo';
+	import { page } from '$app/stores';
+	import { isRegistrationOpen } from '$lib/config/event';
+	import { socialLinks as socialConfig } from '$lib/config/social';
+
+	// Import icons as raw SVG strings
+	import discordIcon from '$lib/icons/discord.svg?raw';
+	import githubIcon from '$lib/icons/github.svg?raw';
+
+	import mastodonIcon from '$lib/icons/mastodon.svg?raw';
+
+	type NavItem = {
+		label: string;
+		href: string;
+		showWhen?: () => boolean;
+	};
+
+	const navItems: NavItem[] = [
+		{ label: 'Home', href: `${base}/` },
+		{ label: 'Registration', href: `${base}/registration`, showWhen: isRegistrationOpen },
+		{ label: 'Participants', href: `${base}/participants` },
+		{ label: 'Sponsoring', href: `${base}/sponsoring` },
+		{ label: 'Venue', href: `${base}/venue` },
+		{ label: 'Values', href: `${base}/values` },
+		{ label: 'Team', href: `${base}/team` }
+	];
+
+	const socialLinks = [
+		{ icon: discordIcon, href: socialConfig.discord, label: 'Discord' },
+		{ icon: githubIcon, href: socialConfig.github, label: 'GitHub' },
+		{ icon: mastodonIcon, href: socialConfig.mastodon, label: 'Mastodon' }
+	];
+
+	function isActive(href: string, currentPath: string): boolean {
+		const normalize = (p: string) => (p === '/' ? p : p.replace(/\/$/, ''));
+		const normalizedHref = normalize(href);
+		const normalizedPath = normalize(currentPath);
+
+		const isHomeLink = href === '/' || href === `${base}/` || href === base;
+		const isHomePage = currentPath === '/' || currentPath === `${base}/` || currentPath === base;
+
+		if (isHomeLink) {
+			return isHomePage;
+		}
+
+		return normalizedPath === normalizedHref || normalizedPath.startsWith(normalizedHref + '/');
+	}
+
+	let mobileMenuOpen = $state(false);
 </script>
 
-<header>
-	<input id="navbar-open" type="checkbox" />
-	<label for="navbar-open"
-		><Logo style="max-height: 1em;" /> <span>JSCraftCamp</span>
-		<div class="menu-icon">+</div></label
+<header class="relative z-50 min-w-full px-8 py-4">
+	<!-- Mobile Header (< lg) -->
+	<div class="flex items-center justify-between lg:hidden">
+		<a
+			href="{base}/"
+			onclick={() => (mobileMenuOpen = false)}
+			tabindex="0"
+			class="text-2xl font-bold text-primary-700">JSCraftCamp</a
+		>
+		<button
+			type="button"
+			aria-label="Toggle navigation menu"
+			aria-expanded={mobileMenuOpen}
+			onkeypress={(e: KeyboardEvent) => {
+				if (e.key === 'Enter' || e.key === ' ') {
+					e.preventDefault();
+					mobileMenuOpen = !mobileMenuOpen;
+				}
+			}}
+			onclick={() => (mobileMenuOpen = !mobileMenuOpen)}
+			class="relative z-50 flex size-8 cursor-pointer flex-col items-center justify-center gap-1.5 rounded focus:ring-2 focus:ring-primary-700 focus:outline-none"
+		>
+			<span class="hamburger-line h-0.5 w-6 bg-white transition-all duration-300"></span>
+			<span class="hamburger-line h-0.5 w-6 bg-white transition-all duration-300"></span>
+			<span class="hamburger-line h-0.5 w-6 bg-white transition-all duration-300"></span>
+		</button>
+	</div>
+
+	<!-- Mobile Overlay Menu -->
+	<div
+		class="fixed inset-0 z-40 bg-background/95 opacity-0 backdrop-blur-sm transition-opacity duration-300 {mobileMenuOpen
+			? 'pointer-events-auto opacity-100'
+			: 'pointer-events-none opacity-0'} lg:hidden"
 	>
-	<nav>
-		<ul>
-			<li class="home">
-				<a href="{base}/"><Logo style="max-height: 1em;" /> JSCraftCamp</a>
-			</li>
-			<li class="mobile-home"><a href="{base}/">Home</a></li>
-			{#if isRegistrationOpen()}<li><a href="{base}/registration/">Registration</a></li>{/if}
-			<li><a href="{base}/participants/">Participants</a></li>
-			<li><a href="{base}/sponsoring/">Sponsoring</a></li>
-			<li><a href="{base}/venue">Venue</a></li>
-			<li><a href="{base}/values/">Values</a></li>
+		<nav
+			aria-label="Mobile navigation menu"
+			class="flex h-full flex-col items-center justify-center gap-8 p-8"
+		>
+			<ul class="m-0 flex w-full list-none flex-col items-center gap-6 p-0 text-center">
+				{#each navItems as item (item.href)}
+					{#if !item.showWhen || item.showWhen()}
+						<li>
+							<a
+								href={item.href}
+								onclick={() => (mobileMenuOpen = false)}
+								tabindex="0"
+								class="rounded py-2 text-2xl font-medium transition-colors duration-200 hover:text-primary-700 focus:ring-2 focus:ring-primary-700 focus:ring-offset-2 focus:ring-offset-black focus:outline-none {isActive(
+									item.href,
+									$page.url.pathname
+								)
+									? 'text-primary-700'
+									: 'text-white'}"
+							>
+								{item.label}
+							</a>
+						</li>
+					{/if}
+				{/each}
+			</ul>
+
+			<!-- Socials in Mobile Menu -->
+			<div class="flex flex-col items-center gap-4">
+				<span class="text-sm font-medium text-white/50">Socials</span>
+				<div class="flex items-center gap-4">
+					{#each socialLinks as social (social.label)}
+						<a
+							href={social.href}
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label={social.label}
+							tabindex="0"
+							class="flex size-6 items-center justify-center rounded text-white transition-colors duration-200 hover:text-primary-700 focus:ring-2 focus:ring-primary-700 focus:outline-none"
+						>
+							<span class="h-6 w-6 *:size-full" aria-hidden="true">
+								{@html social.icon}
+							</span>
+						</a>
+					{/each}
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<!-- Desktop Navigation (>= lg) -->
+	<nav class="mx-auto hidden max-w-7xl flex-row flex-nowrap items-center gap-8 lg:flex">
+		<a
+			href="{base}/"
+			tabindex="0"
+			class="rounded text-2xl font-bold text-primary-700 focus:ring-2 focus:ring-primary-700 focus:ring-offset-2 focus:ring-offset-black focus:outline-none"
+			>JSCraftCamp
+		</a>
+
+		<ul class="m-0 flex flex-1 list-none flex-row flex-nowrap items-center gap-6 p-0">
+			{#each navItems as item (item.href)}
+				{#if !item.showWhen || item.showWhen()}
+					<li>
+						<a
+							href={item.href}
+							tabindex="0"
+							class="relative rounded py-2 font-medium transition-colors duration-200 hover:text-primary-700 focus:ring-2 focus:ring-primary-700 focus:ring-offset-2 focus:ring-offset-black focus:outline-none {isActive(
+								item.href,
+								$page.url.pathname
+							)
+								? 'text-primary-700'
+								: 'text-white'}"
+						>
+							{item.label}
+							{#if isActive(item.href, $page.url.pathname)}
+								<span
+									class="absolute bottom-0 left-1/2 size-1 -translate-x-1/2 rounded-full bg-primary-700"
+								></span>
+							{/if}
+						</a>
+					</li>
+				{/if}
+			{/each}
 		</ul>
+
+		<div class="flex flex-row flex-nowrap items-center gap-4">
+			<span class="font-medium text-white/50">Socials</span>
+			<div class="flex flex-row flex-nowrap items-center gap-3">
+				{#each socialLinks as social (social.label)}
+					<a
+						href={social.href}
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label={social.label}
+						tabindex="0"
+						class="flex size-5 items-center justify-center rounded text-white transition-colors duration-200 hover:text-primary-700 focus:ring-2 focus:ring-primary-700 focus:outline-none"
+					>
+						<span class="h-6 w-6 *:size-full" aria-hidden="true">
+							{@html social.icon}
+						</span>
+					</a>
+				{/each}
+			</div>
+		</div>
 	</nav>
 </header>
 
 <style>
-	header :global(a) {
-		text-decoration: none;
+	/* Hamburger to X transformation */
+	button[aria-expanded='true'] .hamburger-line:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
 	}
-	header :global(a:hover) {
-		text-decoration: underline;
+	button[aria-expanded='true'] .hamburger-line:nth-child(2) {
+		opacity: 0;
 	}
-
-	header {
-		padding: 2rem 2rem 0 2rem;
-		min-width: 100%;
-		max-width: var(--max-page-width);
-	}
-	nav {
-		display: flex;
-		flex-flow: row wrap;
-		align-items: center;
-		gap: 2em;
-		margin: 0 auto;
-		max-width: var(--max-page-width);
-	}
-	nav > ul {
-		display: contents;
-	}
-	input {
-		display: none;
-	}
-	li {
-		list-style: none;
-	}
-	li.home,
-	label {
-		flex: 1;
-		font-size: 26px;
-		font-weight: 600;
-		font-family: 'Poppins';
-	}
-	li.home a,
-	label {
-		display: flex;
-		flex-flow: row nowrap;
-		align-items: center;
-		gap: 0.3em;
-	}
-	li.mobile-home {
-		display: none;
-	}
-	label {
-		display: none;
-		cursor: pointer;
-	}
-	label span {
-		flex: 1;
-	}
-
-	.menu-icon {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 1em;
-		width: 1em;
-		transition: rotate 500ms;
-	}
-
-	@media screen and (max-width: 44em) {
-		label {
-			display: flex;
-		}
-		input[type='checkbox'] + label + nav {
-			display: none;
-		}
-		input[type='checkbox']:checked + label + nav {
-			display: flex;
-		}
-		input[type='checkbox']:checked + label .menu-icon {
-			rotate: calc(3 * 45deg);
-		}
-		nav {
-			align-items: stretch;
-			flex-flow: column;
-			font-size: 1em;
-			gap: 0;
-			margin: 1em 0;
-		}
-		nav li {
-			background: #fff;
-			flex: 1;
-		}
-		nav li a {
-			display: block;
-			padding: 1em;
-			text-align: center;
-		}
-		li.home {
-			display: none;
-		}
-		li.mobile-home {
-			display: block;
-		}
+	button[aria-expanded='true'] .hamburger-line:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
 	}
 </style>
