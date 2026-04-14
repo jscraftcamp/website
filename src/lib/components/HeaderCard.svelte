@@ -13,21 +13,24 @@
 
 	interface Props {
 		class?: string;
+		spotsLeft?: number;
 	}
 
-	let { class: className = '' }: Props = $props();
+	let { class: className = '', spotsLeft }: Props = $props();
 
 	const daysToGo = getDaysToGo();
 	const registrationState = getRegistrationState();
 	const daysUntilRegistration = getDaysUntilRegistration();
 
 	let displayedDays = $state(0);
+	const maxSpots = eventConfig.maxParticipantsPerDay;
+	const pluralRules = new Intl.PluralRules('en');
+	let displayedSpots = $state(spotsLeft !== undefined ? maxSpots : 0);
 
 	onMount(() => {
-		const duration = 1500; // Total animation duration in ms
+		const duration = 1500;
 		const startTime = performance.now();
 
-		// Easing function for smooth deceleration
 		const easeOutQuart = (t: number) => 1 - Math.pow(1 - t, 4);
 
 		const animate = (currentTime: number) => {
@@ -36,11 +39,17 @@
 			const easedProgress = easeOutQuart(progress);
 
 			displayedDays = Math.round(easedProgress * daysToGo);
+			if (spotsLeft !== undefined) {
+				displayedSpots = Math.round(maxSpots - easedProgress * (maxSpots - spotsLeft));
+			}
 
 			if (progress < 1) {
 				requestAnimationFrame(animate);
 			} else {
 				displayedDays = daysToGo;
+				if (spotsLeft !== undefined) {
+					displayedSpots = spotsLeft;
+				}
 			}
 		};
 
@@ -119,8 +128,25 @@
 				>
 					{eventConfig.isEstimation ? 'TBD' : displayedDays}
 				</span>
-				<span class="text-sm font-bold tracking-wider text-black">DAYS TO GO</span>
+				<span class="text-sm font-bold tracking-wider text-black"
+					>{pluralRules.select(displayedDays) === 'one' ? 'DAY' : 'DAYS'} TO GO</span
+				>
 			</div>
+			{#if spotsLeft !== undefined}
+				<a
+					href="/registration"
+					class="flex flex-col items-end no-underline transition-opacity hover:opacity-80"
+				>
+					<span
+						class="text-4xl leading-none font-black text-black sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl"
+					>
+						{displayedSpots}
+					</span>
+					<span class="text-sm font-bold tracking-wider text-black"
+						>{pluralRules.select(displayedSpots) === 'one' ? 'SPOT' : 'SPOTS'} LEFT</span
+					>
+				</a>
+			{/if}
 
 			<a
 				href="https://mastodon.social/tags/jscc26"

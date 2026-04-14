@@ -6,8 +6,10 @@
 	import xLogo from '$lib/icons/x.svg?raw';
 	import globeIcon from '$lib/icons/globe.svg?raw';
 	import pencilSquareIcon from '$lib/icons/pencil-square.svg?raw';
+	import crownIcon from '$lib/icons/crown.svg?raw';
 	import type { Participant } from '$lib/participants/participant-schema';
 	import { displayName } from '$lib/participants/display-name';
+	import { isSponsor } from '$lib/sponsoring/is-sponsor';
 	import { createEventDispatcher } from 'svelte';
 	import { cn } from '$lib/utils/cn';
 
@@ -27,6 +29,7 @@
 		participant.website ||
 		participant.linkedin;
 
+	const participantIsSponsor = participant.company ? isSponsor(participant.company) : false;
 	const dispatch = createEventDispatcher<{ selectedTag: string }>();
 </script>
 
@@ -55,7 +58,14 @@
 
 	<!-- Company -->
 	{#if participant.company}
-		<h4 class="m-0 overflow-hidden text-sm font-normal text-ellipsis text-gray-300">
+		<h4
+			class="m-0 flex items-center gap-1 overflow-hidden text-sm font-normal text-ellipsis text-gray-300"
+		>
+			{#if participantIsSponsor}<span
+					class="-mt-0.5 inline-block h-3.5 w-3.5 shrink-0 text-primary-500 *:size-full"
+					title="Sponsor"
+					aria-label="Sponsor">{@html crownIcon}</span
+				>{/if}
 			{participant.company}
 		</h4>
 	{/if}
