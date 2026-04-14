@@ -169,9 +169,11 @@
 	{#if $registrationState === 'open'}
 		<Card>
 			<h2>Not seeing yourself on the list?</h2>
-			If you can't find yourself on the list of participants, but you want to join, check out our<a
-				href="{base}/registration">how to register</a
-			> page.
+			<span>
+				If you can't find yourself on the list of participants, but you want to join, check out our <a
+					href="{base}/registration">how to register</a
+				> page.
+			</span>
 		</Card>
 	{/if}
 </PageLayout>
