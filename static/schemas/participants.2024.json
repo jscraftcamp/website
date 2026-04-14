@@ -29,12 +29,12 @@
 					"additionalProperties": false
 				},
 				"iCanTakeNotesDuringSessions": { "type": "boolean" },
-				"tags": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+				"tags": { "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
 				"vegan": { "type": ["boolean", "null"] },
 				"vegetarian": { "type": ["boolean", "null"] },
 				"allergies": {
 					"anyOf": [
-						{ "type": "array", "items": { "type": "string" }, "minItems": 1 },
+						{ "type": "array", "items": { "type": "string", "minLength": 1 }, "minItems": 1 },
 						{ "type": "null" }
 					]
 				},

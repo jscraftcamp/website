@@ -10,7 +10,8 @@ const optionalBoolean = (defaultValue = false) =>
 		.nullish()
 		.transform((v) => v ?? defaultValue);
 
-const nonEmptyStringArray = (errorMessage?: string) => z.string().array().nonempty(errorMessage);
+const nonEmptyStringArray = (errorMessage?: string) =>
+	z.string().nonempty().array().nonempty(errorMessage);
 
 /**
  * preprocessing function which replaces empty strings ('') or empty arrays ([]) with null
@@ -35,7 +36,20 @@ export const ParticipantSchema = z
 			placeFamilyNameFirst: optionalBoolean(),
 			hideFamilyNameOnWebsite: optionalBoolean()
 		}),
-		githubAccountName: z.string().regex(/^(?!-)(?!.*--)[A-Za-z0-9-]{1,39}(?<!-)$/),
+		githubAccountName: z.preprocess(
+			emptyToNull,
+			z
+				.string()
+				.regex(/^(?!-)(?!.*--)[A-Za-z0-9-]{1,39}$/)
+				.nullish()
+		),
+		codebergAccountName: z.preprocess(
+			emptyToNull,
+			z
+				.string()
+				.regex(/^[a-zA-Z0-9_.-]{1,40}$/)
+				.nullish()
+		),
 		company: z.preprocess(emptyToNull, z.string().min(2).max(200).nullish()),
 		when: z
 			.object({
@@ -55,7 +69,14 @@ export const ParticipantSchema = z
 		whatCanIContribute: z.string().min(3).max(200),
 		tShirtSize: z.preprocess(
 			(v) => {
-				const size = String(v).toUpperCase();
+				const maybeV = emptyToNull(v);
+
+				if (!maybeV) {
+					return null;
+				}
+
+				const size = String(maybeV).toUpperCase();
+
 				switch (size) {
 					case 'XXL':
 						return '2XL';

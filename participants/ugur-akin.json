@@ -1,0 +1,23 @@
+// vim: ft=jsonc
+// Please provide your info in your own .json file.
+// See https://jscraftcamp.org/registration for more information
+{
+	"realName": {
+		"givenName": "Ugur",
+		"familyName": "Akin"
+	},
+	"githubAccountName": "ugurak001",
+	"company": "compose.us",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["AI", "Agile", "Project Management", "Product Management", "Claude Code"],
+	"allergies": ["Pork"],
+	"whatIsMyConnectionToJavascript": "Surrounded by JS developers all day, every day",
+	"whatCanIContribute": "Sessions on AI/LLM in software development, Agile Coaching, building with Claude Code",
+	"tShirtSize": "L",
+	"linkedin": "https://www.linkedin.com/in/ugur-akin/",
+	"website": "https://compose.us"
+}

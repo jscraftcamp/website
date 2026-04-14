@@ -17,10 +17,11 @@ Use `corepack enable` to make sure you have the same package manager enabled as 
 
 After installing the dependencies (via `pnpm install`), run
 
-- `pnpm run dev` for starting gatsby in dev mode
+- `pnpm run dev` for starting a dev server to see the site locally
 - `pnpm run format` formatting all sources via prettier
 - `pnpm run test` verify valid participants data
 - `pnpm run build` verify that static build works
+- `pnpm run logos <year>` to create logos for a year (needs a `logo.svg` file in the specified year under `/static/logos/`)
 
 ## Project Structure
 

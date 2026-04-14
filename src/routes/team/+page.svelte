@@ -1,49 +1,50 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import InfoBox from '$lib/layout/InfoBox.svelte';
+	import { team } from '$lib/config/team';
+	import { socialLinks } from '$lib/config/social';
+	import TeamMember from '$lib/components/TeamMember.svelte';
+	import Card from '$lib/layout/Card.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
-	import joern from './joern.jpg';
-	import marco from './marco.jpg';
-	import robert from './robert.png';
-	import bernd from './bernd.webp';
-	import fii from './fii.jpg';
-	import wolfram from './wolfram.jpg';
-	import TeamMember from './TeamMember.svelte';
-	import TeamMemberSection from './TeamMemberSection.svelte';
+	import ContentSection from '$lib/layout/Content.svelte';
 </script>
 
 <PageLayout>
-	<h1>The Team</h1>
-	<InfoBox title="Who are we?">
-		<p>
-			We are simple developers organizing this event in our spare time. If you have any questions or
-			problems before or during the conference, don't hesitate to contact one of us!
-		</p>
-		<p>
-			Throughout the years, there were lots of people involved in organizing the past events. You
-			can <a href="{base}/team/alumni">find out more about our alumnis on the /team/alumni page</a>.
-		</p>
-	</InfoBox>
+	<ContentSection>
+		<h1>The Team</h1>
+		<Card>
+			<h3>Who are we?</h3>
+			<p>
+				We are simple developers organizing this event in our spare time. If you have any questions
+				or problems before or during the conference, don't hesitate to contact one of us!
+			</p>
+			<p>
+				Throughout the years, there were lots of people involved in organizing the past events. You
+				can find out more about our alumnis <a href="{base}/team/alumni">here</a>.
+			</p>
 
-	<p>
-		You can always reach us by e-mail: <a href="mailto:team@jscraftcamp.org">team@jscraftcamp.org</a
-		>
-	</p>
+			<p>
+				You can always reach us by e-mail: <a href="mailto:team@jscraftcamp.org"
+					>team@jscraftcamp.org</a
+				>
+			</p>
+		</Card>
+	</ContentSection>
 
-	<TeamMemberSection>
-		<TeamMember image={bernd} name="Bernd Kaiser" />
-		<TeamMember name="Gustaf Graf" />
-		<TeamMember image={joern} name="Jörn Bernhardt" email="joern.bernhardt@compose.us" />
-		<TeamMember image={marco} name="Marco Emrich" email="marco.emrich@codecentric.de" />
-		<TeamMember name="Philip Saa" />
-		<TeamMember image={robert} name="Robert Hostlowsky" />
-		<TeamMember image={wolfram} name="Wolfram Kriesing" email="w@kriesing.de" />
-		<TeamMember image={fii} name="Stefanie (Fii) Hasler" email="stefanie.hasler@gmail.com" />
-	</TeamMemberSection>
+	<section class="grid grid-cols-1 justify-items-center gap-8 sm:grid-cols-2 lg:grid-cols-4">
+		{#each team as member (member.name)}
+			<TeamMember {...member} />
+		{/each}
+	</section>
 
-	<p>
-		Want to see yourself on the list and help out? <a href="https://discord.gg/3mHhaXVEjP"
-			>Join our Discord and the regular orga meetings</a
-		>!
-	</p>
+	<ContentSection>
+		<Card>
+			<h3>Join the Crew</h3>
+			<p>
+				Ready to level up from attendee to organizer? We're always looking for passionate folks to
+				join the team. No secret handshake required — just hop into our
+				<a href={socialLinks.discord}>Discord</a>, say hi, and join our regular orga meetings. Your
+				future self (and face on this page) will thank you.
+			</p>
+		</Card>
+	</ContentSection>
 </PageLayout>
