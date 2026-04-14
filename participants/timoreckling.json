@@ -22,7 +22,7 @@
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": true,
 	// your current interests (JS and in general) (required)
-	"tags": ["TypeScript", "node", "bun", "React", "Google Tag Manager", "DurableFunctions", "Lambda", "supply chain security"],
+	"tags": ["TypeScript", "node", "bun", "React", "vite", "Google Tag Manager", "DurableFunctions", "Lambda", "supply chain security"],
 	// if you only eat vegan food (optional)
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
