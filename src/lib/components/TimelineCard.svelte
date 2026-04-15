@@ -1,15 +1,17 @@
 <script lang="ts">
 	import type { AgendaDay } from '$lib/config/agenda';
+	import { eventConfig } from '$lib/config/event';
 	import Card from '$lib/layout/Card.svelte';
 	import { cn } from '$lib/utils/cn';
 
 	interface Props {
 		agenda: AgendaDay;
 		slots: number[];
+		registered?: number;
 		class?: string;
 	}
 
-	let { agenda, slots, class: className = '' }: Props = $props();
+	let { agenda, slots, registered, class: className = '' }: Props = $props();
 
 	// Create a map of time -> item for quick lookup
 	const itemsByTime = new Map(agenda.items.map((item) => [item.time, item]));
@@ -40,8 +42,15 @@
 
 <Card class={cn('h-full justify-between px-2 py-4 sm:px-4 sm:py-4', className)}>
 	<div class="flex items-baseline gap-2">
-		<span class="font-bold text-primary-700">{agenda.dayLabel}</span>
-		<span class="text-primary-700">{agenda.date}</span>
+		<span class="inline-block w-24 font-bold text-primary-700">{agenda.dayLabel}</span>
+		<span class="inline-block w-24 text-primary-700">{agenda.date}</span>
+		{#if registered !== undefined}
+			<a
+				href="/registration"
+				class="text-sm text-gray-400 no-underline transition-colors hover:text-gray-300"
+				>({registered}/{eventConfig.maxParticipantsPerDay} registered)</a
+			>
+		{/if}
 	</div>
 
 	<!-- Mobile layout: vertical list -->

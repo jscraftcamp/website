@@ -10,6 +10,7 @@
 	import LocationCard from '$lib/components/LocationCard.svelte';
 	import RegistrationCard from '$lib/components/RegistrationCard.svelte';
 	import { fridayAgenda, saturdayAgenda, allTimeSlots } from '$lib/config/agenda';
+	import { eventConfig } from '$lib/config/event';
 	import type { PageData } from './$types';
 	import Content from '$lib/layout/Content.svelte';
 
@@ -18,13 +19,17 @@
 	}
 
 	let { data }: Props = $props();
+
+	const spotsLeft =
+		eventConfig.maxParticipantsPerDay -
+		Math.min(data.fridayParticipants, data.saturdayParticipants);
 </script>
 
 <PageLayout>
 	<Content>
 		<div class="grid grid-cols-1 gap-4 pb-8 lg:grid-cols-3">
 			<!-- Row 1: Header + SponsorRequired -->
-			<Header class="lg:col-span-2" />
+			<Header class="lg:col-span-2" {spotsLeft} />
 			<SponsorRequired />
 
 			<!-- Row 2: SponsorCard (full width) -->
@@ -38,8 +43,12 @@
 			<!-- Row 4: Registration + Timelines -->
 			<RegistrationCard />
 			<div class="flex h-full flex-col justify-between gap-4 lg:col-span-2">
-				<Timeline agenda={fridayAgenda} slots={allTimeSlots} />
-				<Timeline agenda={saturdayAgenda} slots={allTimeSlots} />
+				<Timeline agenda={fridayAgenda} slots={allTimeSlots} registered={data.fridayParticipants} />
+				<Timeline
+					agenda={saturdayAgenda}
+					slots={allTimeSlots}
+					registered={data.saturdayParticipants}
+				/>
 			</div>
 		</div>
 	</Content>
