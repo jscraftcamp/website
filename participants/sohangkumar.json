@@ -40,7 +40,7 @@
 	// tell us a few words how JavaScript affects you (required)
 	"whatIsMyConnectionToJavascript": "I am using JS since 2020 and Loving it for ease of doing things with nice community support",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "I can share my experiance of being JS developer with modern AI knowledge and how we can improve this on further levels",
+	"whatCanIContribute": "I can share my experience of being JS developer with modern AI knowledge and how we can improve this on further levels",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
 	"tShirtSize": "M",
@@ -51,5 +51,5 @@
 	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
 	"X": "",
 	// your website URL or other social media (optional)
-	"website": "https://sohangkumar-patel.onrender.com"
+	"website": "https://sohangkumar.onrender.com"
 }
