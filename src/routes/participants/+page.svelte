@@ -22,6 +22,10 @@
 	let { data }: Props = $props();
 
 	const participants: ParticipantT[] = data.participants;
+	const orgaSet = new Set(data.orgaUsernames);
+	const isOrga = (p: ParticipantT) =>
+		(p.githubAccountName != null && orgaSet.has(p.githubAccountName)) ||
+		(p.codebergAccountName != null && orgaSet.has(p.codebergAccountName));
 	let activeTag: string | null = $state(null);
 
 	const onSelectTag = (e: CustomEvent<string>) => {
@@ -161,6 +165,7 @@
 							<Participant
 								{participant}
 								on:selectedTag={onSelectTag}
+								isOrga={isOrga(participant)}
 								isActive={(activeTag &&
 									participant.tags
 										.map((t) => t.toLocaleLowerCase())

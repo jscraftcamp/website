@@ -13,7 +13,6 @@ type Shirts = {
 		[key in TShirtSize]?: number;
 	};
 };
-type Name = { givenName: string; familyName: string };
 export type Statistics = {
 	allergies: Allergies;
 	companies: Company[];
@@ -33,9 +32,9 @@ export type Statistics = {
 	noFoodPreference: number;
 };
 
-const isOrgaMember = (p: Name, orgaMembers: Name[]) => {
-	return orgaMembers.some(
-		(m) => `${m.givenName} ${m.familyName}` === `${p.givenName} ${p.familyName}`
+const isOrgaMember = (p: Participant, orgaUsernames: string[]) => {
+	return orgaUsernames.some(
+		(username) => username === p.githubAccountName || username === p.codebergAccountName
 	);
 };
 
@@ -44,7 +43,7 @@ const isNonFoodAllergy = (allergyKey: string) =>
 
 export const createStatsFromParticipants = (
 	participants: Participant[],
-	orgaMembers: Name[]
+	orgaMembers: string[]
 ): Statistics => {
 	const allergies: Allergies = {};
 	const orgaShirts: Shirts = { count: 0, fitted: 0, regular: 0, sizes: {} };
@@ -60,7 +59,7 @@ export const createStatsFromParticipants = (
 
 	for (const participant of participants) {
 		let shirts = participantsShirts;
-		if (isOrgaMember(participant.realName, orgaMembers)) {
+		if (isOrgaMember(participant, orgaMembers)) {
 			shirts = orgaShirts;
 		}
 		if (participant.company) {

@@ -2,8 +2,12 @@ import { type Participant, PARTICIPANTS_DIRECTORY } from '$lib/participants/part
 import type { PageServerLoad } from './$types';
 import { loadParticipantJsonFilePaths, loadParticipants } from '$lib/participants/participants';
 import { displayName } from '$lib/participants/display-name';
+import { orgaUsernames } from '$lib/config/team/team';
 
-export const load: PageServerLoad = async (): Promise<{ participants: Participant[] }> => {
+export const load: PageServerLoad = async (): Promise<{
+	participants: Participant[];
+	orgaUsernames: string[];
+}> => {
 	try {
 		const participantsFilePaths = await loadParticipantJsonFilePaths(PARTICIPANTS_DIRECTORY);
 
@@ -21,7 +25,7 @@ export const load: PageServerLoad = async (): Promise<{ participants: Participan
 			return 0;
 		});
 
-		return { participants };
+		return { participants, orgaUsernames };
 	} catch (err) {
 		console.error('Loading of participants failed:', err);
 		throw err;

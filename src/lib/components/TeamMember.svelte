@@ -1,5 +1,6 @@
 <script lang="ts">
 	import githubIcon from '$lib/icons/github.svg?raw';
+	import codebergIcon from '$lib/icons/codeberg.svg?raw';
 	import mastodonIcon from '$lib/icons/mastodon.svg?raw';
 	import twitterIcon from '$lib/icons/x.svg?raw';
 	import linkedinIcon from '$lib/icons/linkedin.svg?raw';
@@ -9,6 +10,7 @@
 		email?: string;
 		image?: string;
 		github?: string;
+		codeberg?: string;
 		mastodon?: string;
 		twitter?: string;
 		linkedin?: string;
@@ -19,6 +21,7 @@
 		email = undefined,
 		image = undefined,
 		github = undefined,
+		codeberg = undefined,
 		mastodon = undefined,
 		twitter = undefined,
 		linkedin = undefined
@@ -27,6 +30,7 @@
 	const socials = $derived(
 		[
 			{ url: github, icon: githubIcon, label: 'GitHub' },
+			{ url: codeberg, icon: codebergIcon, label: 'Codeberg' },
 			{ url: mastodon, icon: mastodonIcon, label: 'Mastodon' },
 			{ url: twitter, icon: twitterIcon, label: 'Twitter' },
 			{ url: linkedin, icon: linkedinIcon, label: 'LinkedIn' }
