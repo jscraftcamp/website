@@ -45,7 +45,7 @@
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
 	"tShirtSize": "M",
 	// your LinkedIn profile URL
-	"linkedin": "www.linkedin.com/in/pete-werner-7650991b3",
+	"linkedin": "https://www.linkedin.com/in/pete-werner-7650991b3",
 	// your website URL or other social media (optional)
 	"website": "https://www.your-domain.com"
 }
