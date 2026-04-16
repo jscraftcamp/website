@@ -58,7 +58,7 @@ export const sponsors: Sponsor[] = [
 		link: 'https://www.pastely.eu',
 		name: 'Pastely',
 		sponsoring: 'Stickers'
-	}
+	},
 	// {
 	// 	image: allPrintCut,
 	// 	link: 'https://allprintcut.com/',
