@@ -2,6 +2,7 @@
 	import { sponsors, thankYouTranslations } from '$lib/config/sponsoring';
 	import Card from '$lib/layout/Card.svelte';
 	import { cn } from '$lib/utils/cn';
+	import { onMount } from 'svelte';
 
 	interface Props {
 		class?: string;
@@ -9,7 +10,16 @@
 
 	let { class: className = '' }: Props = $props();
 
-	const baseSponsors = sponsors;
+	// Shuffle sponsor order on every page load so no sponsor is always first/last.
+	// Must happen after mount to avoid SSR/hydration mismatch (server and client
+	// would produce different random orders, desyncing logos from names).
+	let baseSponsors = $state([...sponsors]);
+	let ready = $state(false);
+
+	onMount(() => {
+		baseSponsors = [...sponsors].sort(() => Math.random() - 0.5);
+		ready = true;
+	});
 
 	// Duplicate items for seamless infinite scroll
 	const duplicatedTranslations = [...thankYouTranslations, ...thankYouTranslations];
@@ -35,7 +45,147 @@
 	);
 
 	// Calculate duration: faster for small groups
-	const scrollDuration = $derived(isSmallCount ? '20s' : '40s');
+	const scrollDuration = $derived(isSmallCount ? '12s' : '25s');
+
+	/**
+	 * Svelte action that adds drag-to-scroll to an infinite-scrolling element.
+	 * Works alongside CSS animations — freezes during drag, then resumes from the new position.
+	 */
+	function dragScroll(node: HTMLElement) {
+		let isDragging = false;
+		let hasMoved = false;
+		let startX = 0;
+		let dragStartTranslateX = 0;
+		let resumeTimer: ReturnType<typeof setTimeout> | null = null;
+
+		function getCurrentTranslateX(): number {
+			const matrix = new DOMMatrix(getComputedStyle(node).transform);
+			return matrix.m41;
+		}
+
+		function cancelPendingResume() {
+			if (resumeTimer !== null) {
+				clearTimeout(resumeTimer);
+				resumeTimer = null;
+			}
+		}
+
+		/** Restore the CSS animation, seeking to the position the element is currently frozen at. */
+		function resumeAnimation() {
+			resumeTimer = null;
+
+			const currentX = getCurrentTranslateX();
+			const halfWidth = node.offsetWidth / 2;
+			const isLeft = node.classList.contains('animate-scroll-left');
+
+			let progress: number;
+			if (isLeft) {
+				progress = -currentX / halfWidth;
+			} else {
+				progress = 1 + currentX / halfWidth;
+			}
+			progress = ((progress % 1) + 1) % 1;
+
+			const duration = parseFloat(node.dataset.duration || '25');
+
+			node.style.removeProperty('animation');
+			node.style.removeProperty('transform');
+			void node.offsetHeight; // force reflow so the browser picks up the restored animation
+			node.style.animationDelay = `${-(progress * duration)}s`;
+
+			// On desktop the CSS hover-pause rule would immediately freeze the
+			// animation again because the cursor is still over the element.
+			// Override it inline until the pointer leaves.
+			node.style.animationPlayState = 'running';
+			function clearPlayStateOverride() {
+				node.style.removeProperty('animation-play-state');
+				node.removeEventListener('pointerleave', clearPlayStateOverride);
+			}
+			node.addEventListener('pointerleave', clearPlayStateOverride);
+		}
+
+		function onPointerDown(e: PointerEvent) {
+			if (e.button !== 0) return;
+			cancelPendingResume();
+			isDragging = true;
+			hasMoved = false;
+			startX = e.clientX;
+			dragStartTranslateX = getCurrentTranslateX();
+			node.setPointerCapture(e.pointerId);
+		}
+
+		function onPointerMove(e: PointerEvent) {
+			if (!isDragging) return;
+			const delta = e.clientX - startX;
+
+			// Only start dragging after a small threshold to avoid interfering with clicks
+			if (!hasMoved && Math.abs(delta) < 4) return;
+
+			if (!hasMoved) {
+				hasMoved = true;
+				// Take over from CSS animation
+				node.style.animation = 'none';
+				node.style.transform = `translateX(${dragStartTranslateX}px)`;
+				document.body.style.userSelect = 'none';
+				node.style.cursor = 'grabbing';
+			}
+
+			const halfWidth = node.offsetWidth / 2;
+			let newX = dragStartTranslateX + delta;
+
+			// Wrap into [-halfWidth, 0) for seamless infinite feel
+			if (halfWidth > 0) {
+				newX = ((newX % halfWidth) - halfWidth) % halfWidth;
+			}
+
+			node.style.transform = `translateX(${newX}px)`;
+		}
+
+		function onPointerUp() {
+			if (!isDragging) return;
+			isDragging = false;
+			document.body.style.removeProperty('user-select');
+			node.style.removeProperty('cursor');
+
+			if (!hasMoved) return;
+
+			// Stay frozen at the current position; resume auto-scroll after 1 s
+			resumeTimer = setTimeout(resumeAnimation, 1000);
+		}
+
+		// Prevent link navigation when the user was dragging (not clicking)
+		function onClick(e: MouseEvent) {
+			if (hasMoved) {
+				e.preventDefault();
+				e.stopPropagation();
+				hasMoved = false;
+			}
+		}
+
+		// Prevent native browser drag on links/images so pointer events keep firing
+		function onDragStart(e: DragEvent) {
+			e.preventDefault();
+		}
+
+		node.addEventListener('pointerdown', onPointerDown);
+		node.addEventListener('pointermove', onPointerMove);
+		node.addEventListener('pointerup', onPointerUp);
+		node.addEventListener('pointercancel', onPointerUp);
+		node.addEventListener('click', onClick, true);
+		node.addEventListener('dragstart', onDragStart);
+
+		return {
+			destroy() {
+				cancelPendingResume();
+				node.removeEventListener('pointerdown', onPointerDown);
+				node.removeEventListener('pointermove', onPointerMove);
+				node.removeEventListener('pointerup', onPointerUp);
+				node.removeEventListener('pointercancel', onPointerUp);
+				node.removeEventListener('click', onClick, true);
+				node.removeEventListener('dragstart', onDragStart);
+			}
+		};
+	}
 </script>
 
 <Card
@@ -45,7 +195,11 @@
 	)}
 >
 	<div class="scroll-container w-full overflow-hidden py-1">
-		<div class="flex w-max animate-scroll-left items-center gap-8">
+		<div
+			class="flex w-max animate-scroll-left cursor-grab touch-pan-y select-none items-center gap-8"
+			data-duration="120"
+			use:dragScroll
+		>
 			{#each duplicatedTranslations as text, i (`${text}-${i}`)}
 				<span
 					class="text-xs font-medium tracking-wide whitespace-nowrap uppercase {i % 2 === 1
@@ -57,10 +211,17 @@
 	</div>
 
 	{#if baseSponsors.length > 0}
-		<div class="scroll-container w-full overflow-hidden py-3" style="container-type: inline-size">
+		<div
+			class="scroll-container w-full overflow-hidden py-3 transition-opacity duration-500 {ready
+				? 'opacity-100'
+				: 'opacity-0'}"
+			style="container-type: inline-size"
+		>
 			<div
-				class="flex w-max animate-scroll-right items-center"
+				class="flex w-max animate-scroll-right cursor-grab touch-pan-y select-none items-center"
 				style="animation-duration: {scrollDuration}; animation-timing-function: linear;"
+				data-duration={scrollDuration.replace('s', '')}
+				use:dragScroll
 			>
 				{#if isSmallCount}
 					{#each [0, 1] as i (i)}
