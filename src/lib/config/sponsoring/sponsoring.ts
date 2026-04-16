@@ -1,3 +1,4 @@
+import alm from './logos/alm-engineering.svg';
 import tng from './logos/tng.svg';
 import stackForge from './logos/stack-forge.svg';
 import seorank from './logos/seorank.svg';
@@ -64,12 +65,12 @@ export const sponsors: Sponsor[] = [
 	// 	name: 'All Print Cut',
 	// 	sponsoring: 'Stickers'
 	// },
-	// {
-	// 	image: alm,
-	// 	link: 'https://alm.sh',
-	// 	name: 'Alm Engineering',
-	// 	sponsoring: '500 €'
-	// },
+	{
+		image: alm,
+		link: 'https://alm.sh',
+		name: 'alm engineering',
+		sponsoring: '500 €'
+	},
 	// {
 	// 	image: codecentric,
 	// 	link: 'https://www.codecentric.de',
