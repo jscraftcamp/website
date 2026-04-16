@@ -70,7 +70,7 @@ export const sponsors: Sponsor[] = [
 		link: 'https://alm.sh',
 		name: 'alm engineering',
 		sponsoring: '500 €'
-	},
+	}
 	// {
 	// 	image: codecentric,
 	// 	link: 'https://www.codecentric.de',
