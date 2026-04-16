@@ -4,14 +4,14 @@
 		"familyName": "Müller"
 	},
 	"githubAccountName": "patrickwire",
-	"company": "ALM Engineering",
+	"company": "alm engineering",
 	"when": {
 		"friday": true,
 		"saturday": true
 	},
-	"iCanTakeNotesDuringSessions": true,
-	"tags": ["Recht", "AI", "vibecoding"],
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["React", "AI", "vibecoding"],
 	"whatIsMyConnectionToJavascript": "Using it forever.",
 	"whatCanIContribute": "A Session or two",
-	"tShirtSize": "2XL"
+	"tShirtSize": "3XL"
 }
