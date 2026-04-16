@@ -196,7 +196,7 @@
 >
 	<div class="scroll-container w-full overflow-hidden py-1">
 		<div
-			class="flex w-max animate-scroll-left cursor-grab touch-pan-y select-none items-center gap-8"
+			class="flex w-max animate-scroll-left cursor-grab touch-pan-y items-center gap-8 select-none"
 			data-duration="120"
 			use:dragScroll
 		>
@@ -218,7 +218,7 @@
 			style="container-type: inline-size"
 		>
 			<div
-				class="flex w-max animate-scroll-right cursor-grab touch-pan-y select-none items-center"
+				class="flex w-max animate-scroll-right cursor-grab touch-pan-y items-center select-none"
 				style="animation-duration: {scrollDuration}; animation-timing-function: linear;"
 				data-duration={scrollDuration.replace('s', '')}
 				use:dragScroll
