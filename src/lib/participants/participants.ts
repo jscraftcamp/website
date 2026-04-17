@@ -7,18 +7,6 @@ import {
 import { parse } from 'jsonc-parser';
 import { join } from 'node:path';
 
-export const orgaMembers = [
-	{ givenName: 'Ariadne', familyName: 'Engelbrecht' },
-	{ givenName: 'Bernd', familyName: 'Kaiser' },
-	{ givenName: 'Jörn', familyName: 'Bernhardt' },
-	{ givenName: 'Leo', familyName: 'Kettmeir' },
-	{ givenName: 'Michael', familyName: 'Zoidl' },
-	{ givenName: 'Patrick', familyName: 'Piedad' },
-	{ givenName: 'Philip', familyName: 'Saa' },
-	{ givenName: 'Sina', familyName: 'Aschenbrenner' },
-	{ givenName: 'Wolfram', familyName: 'Kriesing' }
-];
-
 export async function loadParticipantJsonFilePaths(directory: string): Promise<string[]> {
 	const participantsDirectory = await readdir(directory, {
 		withFileTypes: true,

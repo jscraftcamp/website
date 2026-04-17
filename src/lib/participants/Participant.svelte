@@ -16,9 +16,10 @@
 	interface Props {
 		participant: Participant;
 		isActive?: boolean;
+		isOrga?: boolean;
 	}
 
-	let { participant, isActive = false }: Props = $props();
+	let { participant, isActive = false, isOrga = false }: Props = $props();
 
 	let isShowingDetails = $state(false);
 	const hasSocialLink =
@@ -180,6 +181,10 @@
 			</ul>
 		{/if}
 	</div>
+
+	{#if isOrga}
+		<span class="absolute bottom-3 left-4 text-xs font-semibold text-gray-500">ORGA</span>
+	{/if}
 
 	<!-- Attendance badges (bottom right) -->
 	<div class="absolute right-4 bottom-3 flex items-center gap-2 text-xs font-semibold">
