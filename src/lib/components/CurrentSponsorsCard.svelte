@@ -195,11 +195,7 @@
 	)}
 >
 	<div class="scroll-container w-full overflow-hidden py-1">
-		<div
-			class="flex w-max animate-scroll-left cursor-grab touch-pan-y items-center gap-8 select-none"
-			data-duration="120"
-			use:dragScroll
-		>
+		<div class="flex w-max animate-scroll-left items-center gap-8">
 			{#each duplicatedTranslations as text, i (`${text}-${i}`)}
 				<span
 					class="text-xs font-medium tracking-wide whitespace-nowrap uppercase {i % 2 === 1
