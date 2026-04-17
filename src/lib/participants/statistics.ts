@@ -1,6 +1,7 @@
 import { isSponsor } from '$lib/sponsoring/is-sponsor';
 import type { Participant, TShirtSize } from './participant-schema';
 import { normalizeCompanyKey } from './normalize-company';
+import type { OrgaUsername } from '$lib/config/team/team';
 
 type Allergies = { [k: string]: number };
 export type Company = { name: string; amount: number; isSponsor: boolean };
@@ -32,9 +33,11 @@ export type Statistics = {
 	noFoodPreference: number;
 };
 
-const isOrgaMember = (p: Participant, orgaUsernames: string[]) => {
+const isOrgaMember = (p: Participant, orgaUsernames: OrgaUsername[]) => {
 	return orgaUsernames.some(
-		(username) => username === p.githubAccountName || username === p.codebergAccountName
+		({ platform, username }) =>
+			(platform === 'github' && username === p.githubAccountName) ||
+			(platform === 'codeberg' && username === p.codebergAccountName)
 	);
 };
 
@@ -43,7 +46,7 @@ const isNonFoodAllergy = (allergyKey: string) =>
 
 export const createStatsFromParticipants = (
 	participants: Participant[],
-	orgaMembers: string[]
+	orgaMembers: OrgaUsername[]
 ): Statistics => {
 	const allergies: Allergies = {};
 	const orgaShirts: Shirts = { count: 0, fitted: 0, regular: 0, sizes: {} };

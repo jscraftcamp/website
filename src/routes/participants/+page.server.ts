@@ -2,11 +2,11 @@ import { type Participant, PARTICIPANTS_DIRECTORY } from '$lib/participants/part
 import type { PageServerLoad } from './$types';
 import { loadParticipantJsonFilePaths, loadParticipants } from '$lib/participants/participants';
 import { displayName } from '$lib/participants/display-name';
-import { orgaUsernames } from '$lib/config/team/team';
+import { orgaUsernames, type OrgaUsername } from '$lib/config/team/team';
 
 export const load: PageServerLoad = async (): Promise<{
 	participants: Participant[];
-	orgaUsernames: string[];
+	orgaUsernames: OrgaUsername[];
 }> => {
 	try {
 		const participantsFilePaths = await loadParticipantJsonFilePaths(PARTICIPANTS_DIRECTORY);

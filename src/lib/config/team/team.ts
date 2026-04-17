@@ -80,8 +80,13 @@ export const team: TeamMember[] = [
 	}
 ];
 
+export type OrgaUsername = { platform: 'github' | 'codeberg'; username: string };
+
 const extractUsername = (url: string) => url.split('/').pop()!;
 
-export const orgaUsernames: string[] = team.flatMap((m) =>
-	[m.github, m.codeberg].filter((u): u is string => u != null).map(extractUsername)
-);
+export const orgaUsernames: OrgaUsername[] = team.flatMap((m) => {
+	const entries: OrgaUsername[] = [];
+	if (m.github) entries.push({ platform: 'github', username: extractUsername(m.github) });
+	if (m.codeberg) entries.push({ platform: 'codeberg', username: extractUsername(m.codeberg) });
+	return entries;
+});

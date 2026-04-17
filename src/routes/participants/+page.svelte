@@ -22,10 +22,15 @@
 	let { data }: Props = $props();
 
 	const participants: ParticipantT[] = data.participants;
-	const orgaSet = new Set(data.orgaUsernames);
+	const githubOrgaSet = new Set(
+		data.orgaUsernames.filter((o) => o.platform === 'github').map((o) => o.username)
+	);
+	const codebergOrgaSet = new Set(
+		data.orgaUsernames.filter((o) => o.platform === 'codeberg').map((o) => o.username)
+	);
 	const isOrga = (p: ParticipantT) =>
-		(p.githubAccountName != null && orgaSet.has(p.githubAccountName)) ||
-		(p.codebergAccountName != null && orgaSet.has(p.codebergAccountName));
+		(p.githubAccountName != null && githubOrgaSet.has(p.githubAccountName)) ||
+		(p.codebergAccountName != null && codebergOrgaSet.has(p.codebergAccountName));
 	let activeTag: string | null = $state(null);
 
 	const onSelectTag = (e: CustomEvent<string>) => {
