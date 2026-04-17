@@ -91,11 +91,13 @@
 			progress = ((progress % 1) + 1) % 1;
 
 			const duration = parseFloat(node.dataset.duration || '25');
+			const delay = -(progress * duration);
+			const animName = isLeft ? 'scroll-left' : 'scroll-right';
 
-			node.style.removeProperty('animation');
+			// Set the full animation (with delay) in one step so the browser never
+			// paints a frame at the wrong position.
 			node.style.removeProperty('transform');
-			void node.offsetHeight; // force reflow so the browser picks up the restored animation
-			node.style.animationDelay = `${-(progress * duration)}s`;
+			node.style.animation = `${animName} ${duration}s linear ${delay}s infinite`;
 
 			// On desktop the CSS hover-pause rule would immediately freeze the
 			// animation again because the cursor is still over the element.
