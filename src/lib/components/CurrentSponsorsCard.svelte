@@ -58,6 +58,7 @@
 	function dragScroll(node: HTMLElement) {
 		let isDragging = false;
 		let hasMoved = false;
+		let frozen = false; // true while the CSS animation is paused and we control the transform
 		let startX = 0;
 		let dragStartTranslateX = 0;
 		let resumeTimer: ReturnType<typeof setTimeout> | null = null;
@@ -119,18 +120,9 @@
 
 			// Set the full animation (with delay) in one step so the browser never
 			// paints a frame at the wrong position.
+			frozen = false;
 			node.style.removeProperty('transform');
 			node.style.animation = `${animName} ${duration}s linear ${delay}s infinite`;
-
-			// On desktop the CSS hover-pause rule would immediately freeze the
-			// animation again because the cursor is still over the element.
-			// Override it inline until the pointer leaves.
-			node.style.animationPlayState = 'running';
-			function clearPlayStateOverride() {
-				node.style.removeProperty('animation-play-state');
-				node.removeEventListener('pointerleave', clearPlayStateOverride);
-			}
-			node.addEventListener('pointerleave', clearPlayStateOverride);
 		}
 
 		/** Animate a decelerating throw, then hand back to the CSS animation. */
@@ -165,7 +157,6 @@
 			dragStartTranslateX = getCurrentTranslateX();
 			prevMoveX = lastMoveX = e.clientX;
 			prevMoveTime = lastMoveTime = performance.now();
-			node.setPointerCapture(e.pointerId);
 		}
 
 		function onPointerMove(e: PointerEvent) {
@@ -177,7 +168,11 @@
 
 			if (!hasMoved) {
 				hasMoved = true;
+				// Capture pointer only once a real drag starts, so simple clicks
+				// still reach child <a> elements normally.
+				node.setPointerCapture(e.pointerId);
 				// Take over from CSS animation
+				frozen = true;
 				node.style.animation = 'none';
 				node.style.transform = `translateX(${dragStartTranslateX}px)`;
 				document.body.style.userSelect = 'none';
@@ -200,7 +195,14 @@
 			document.body.style.removeProperty('user-select');
 			node.style.removeProperty('cursor');
 
-			if (!hasMoved) return;
+			if (!hasMoved) {
+				// A click (no drag) may have interrupted momentum/resume via
+				// onPointerDown. If the animation is still frozen, resume it.
+				if (frozen) {
+					resumeAnimation();
+				}
+				return;
+			}
 
 			// Calculate release velocity (px/ms → px/frame at ~60fps ≈ ×16.67)
 			const dt = lastMoveTime - prevMoveTime;
@@ -349,12 +351,6 @@
 	.animate-scroll-left,
 	.animate-scroll-right {
 		will-change: transform;
-	}
-
-	/* Pause animation on hover for accessibility */
-	.scroll-container:hover :global(.animate-scroll-left),
-	.scroll-container:hover :global(.animate-scroll-right) {
-		animation-play-state: paused;
 	}
 
 	/* Support for users with motion sensitivity */
