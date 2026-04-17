@@ -171,6 +171,8 @@
 				// Capture pointer only once a real drag starts, so simple clicks
 				// still reach child <a> elements normally.
 				node.setPointerCapture(e.pointerId);
+				dragStartTranslateX = getCurrentTranslateX();
+				startX = e.clientX;
 				// Take over from CSS animation
 				frozen = true;
 				node.style.animation = 'none';
