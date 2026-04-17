@@ -44,8 +44,7 @@
 		repeatCount > 0 ? Array(repeatCount).fill(baseSponsors).flat() : []
 	);
 
-	// Calculate duration: faster for small groups
-	const scrollDuration = $derived(isSmallCount ? '12s' : '25s');
+	const scrollDuration = $derived(`${Math.max(10, baseSponsors.length * 2.5)}s`);
 
 	/**
 	 * Svelte action that adds drag-to-scroll to an infinite-scrolling element.
