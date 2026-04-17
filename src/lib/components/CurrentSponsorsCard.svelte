@@ -221,7 +221,7 @@
 		>
 			<div
 				class="flex w-max animate-scroll-right cursor-grab touch-pan-y items-center select-none"
-				style="animation-duration: {scrollDuration}; animation-timing-function: linear;"
+				style="--scroll-right-animation-duration: {scrollDuration}"
 				data-duration={scrollDuration.replace('s', '')}
 				use:dragScroll
 			>
