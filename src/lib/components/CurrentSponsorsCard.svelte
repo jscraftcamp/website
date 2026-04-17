@@ -61,16 +61,39 @@
 		let startX = 0;
 		let dragStartTranslateX = 0;
 		let resumeTimer: ReturnType<typeof setTimeout> | null = null;
+		let momentumRaf: number | null = null;
+
+		// Velocity tracking – store the last two move events for a reliable reading
+		let prevMoveX = 0;
+		let prevMoveTime = 0;
+		let lastMoveX = 0;
+		let lastMoveTime = 0;
+
+		const FRICTION = 0.95;
+		const MIN_VELOCITY = 0.5; // px/frame – stop momentum below this
 
 		function getCurrentTranslateX(): number {
 			const matrix = new DOMMatrix(getComputedStyle(node).transform);
 			return matrix.m41;
 		}
 
+		function wrapPosition(x: number): number {
+			const halfWidth = node.offsetWidth / 2;
+			if (halfWidth <= 0) return x;
+			return ((x % halfWidth) - halfWidth) % halfWidth;
+		}
+
 		function cancelPendingResume() {
 			if (resumeTimer !== null) {
 				clearTimeout(resumeTimer);
 				resumeTimer = null;
+			}
+		}
+
+		function cancelMomentum() {
+			if (momentumRaf !== null) {
+				cancelAnimationFrame(momentumRaf);
+				momentumRaf = null;
 			}
 		}
 
@@ -110,13 +133,38 @@
 			node.addEventListener('pointerleave', clearPlayStateOverride);
 		}
 
+		/** Animate a decelerating throw, then hand back to the CSS animation. */
+		function startMomentum(velocity: number) {
+			let currentX = getCurrentTranslateX();
+
+			function tick() {
+				velocity *= FRICTION;
+
+				if (Math.abs(velocity) < MIN_VELOCITY) {
+					momentumRaf = null;
+					// Momentum spent – wait 1 s then resume auto-scroll
+					resumeTimer = setTimeout(resumeAnimation, 1000);
+					return;
+				}
+
+				currentX = wrapPosition(currentX + velocity);
+				node.style.transform = `translateX(${currentX}px)`;
+				momentumRaf = requestAnimationFrame(tick);
+			}
+
+			momentumRaf = requestAnimationFrame(tick);
+		}
+
 		function onPointerDown(e: PointerEvent) {
 			if (e.button !== 0) return;
 			cancelPendingResume();
+			cancelMomentum();
 			isDragging = true;
 			hasMoved = false;
 			startX = e.clientX;
 			dragStartTranslateX = getCurrentTranslateX();
+			prevMoveX = lastMoveX = e.clientX;
+			prevMoveTime = lastMoveTime = performance.now();
 			node.setPointerCapture(e.pointerId);
 		}
 
@@ -136,14 +184,13 @@
 				node.style.cursor = 'grabbing';
 			}
 
-			const halfWidth = node.offsetWidth / 2;
-			let newX = dragStartTranslateX + delta;
+			// Track velocity from the last two events
+			prevMoveX = lastMoveX;
+			prevMoveTime = lastMoveTime;
+			lastMoveX = e.clientX;
+			lastMoveTime = performance.now();
 
-			// Wrap into [-halfWidth, 0) for seamless infinite feel
-			if (halfWidth > 0) {
-				newX = ((newX % halfWidth) - halfWidth) % halfWidth;
-			}
-
+			const newX = wrapPosition(dragStartTranslateX + delta);
 			node.style.transform = `translateX(${newX}px)`;
 		}
 
@@ -155,8 +202,17 @@
 
 			if (!hasMoved) return;
 
-			// Stay frozen at the current position; resume auto-scroll after 1 s
-			resumeTimer = setTimeout(resumeAnimation, 1000);
+			// Calculate release velocity (px/ms → px/frame at ~60fps ≈ ×16.67)
+			const dt = lastMoveTime - prevMoveTime;
+			const dx = lastMoveX - prevMoveX;
+			const velocity = dt > 0 ? (dx / dt) * 16.67 : 0;
+
+			if (Math.abs(velocity) > MIN_VELOCITY) {
+				startMomentum(velocity);
+			} else {
+				// No meaningful velocity – just wait then resume
+				resumeTimer = setTimeout(resumeAnimation, 1000);
+			}
 		}
 
 		// Prevent link navigation when the user was dragging (not clicking)
@@ -182,6 +238,7 @@
 
 		return {
 			destroy() {
+				cancelMomentum();
 				cancelPendingResume();
 				node.removeEventListener('pointerdown', onPointerDown);
 				node.removeEventListener('pointermove', onPointerMove);
