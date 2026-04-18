@@ -7,8 +7,7 @@
 	},
 	"githubAccountName": "jscraftcamp",
 	"codebergAccountName": "",
-	// company name (optional)
-	"company": "ACME",
+	"company": "codecentric",
 	"when": {
 		"friday": true,
 		"saturday": true
