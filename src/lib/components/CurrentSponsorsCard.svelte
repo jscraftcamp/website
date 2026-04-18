@@ -2,6 +2,7 @@
 	import { sponsors, thankYouTranslations } from '$lib/config/sponsoring';
 	import Card from '$lib/layout/Card.svelte';
 	import { cn } from '$lib/utils/cn';
+	import { onMount } from 'svelte';
 
 	interface Props {
 		class?: string;
@@ -9,7 +10,21 @@
 
 	let { class: className = '' }: Props = $props();
 
-	const baseSponsors = sponsors;
+	// Shuffle sponsor order on every page load so no sponsor is always first/last.
+	// Must happen after mount to avoid SSR/hydration mismatch (server and client
+	// would produce different random orders, desyncing logos from names).
+	let baseSponsors = $state([...sponsors]);
+	let ready = $state(false);
+
+	onMount(() => {
+		const shuffled = [...sponsors];
+		for (let i = shuffled.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+		}
+		baseSponsors = shuffled;
+		ready = true;
+	});
 
 	// Duplicate items for seamless infinite scroll
 	const duplicatedTranslations = [...thankYouTranslations, ...thankYouTranslations];
@@ -34,8 +49,210 @@
 		repeatCount > 0 ? Array(repeatCount).fill(baseSponsors).flat() : []
 	);
 
-	// Calculate duration: faster for small groups
-	const scrollDuration = $derived(isSmallCount ? '20s' : '40s');
+	const scrollDuration = $derived(`${Math.max(10, baseSponsors.length * 2.5)}s`);
+
+	/**
+	 * Svelte action that adds drag-to-scroll to an infinite-scrolling element.
+	 * Works alongside CSS animations — freezes during drag, then resumes from the new position.
+	 */
+	function dragScroll(node: HTMLElement) {
+		let isDragging = false;
+		let hasMoved = false;
+		let frozen = false; // true while the CSS animation is paused and we control the transform
+		let startX = 0;
+		let dragStartTranslateX = 0;
+		let resumeTimer: ReturnType<typeof setTimeout> | null = null;
+		let momentumRaf: number | null = null;
+
+		// Velocity tracking – store the last two move events for a reliable reading
+		let prevMoveX = 0;
+		let prevMoveTime = 0;
+		let lastMoveX = 0;
+		let lastMoveTime = 0;
+
+		const FRICTION = 0.95;
+		const MIN_VELOCITY = 0.5; // px/frame – stop momentum below this
+
+		function getCurrentTranslateX(): number {
+			const matrix = new DOMMatrix(getComputedStyle(node).transform);
+			return matrix.m41;
+		}
+
+		function wrapPosition(x: number): number {
+			const halfWidth = node.offsetWidth / 2;
+			if (halfWidth <= 0) return x;
+			return ((x % halfWidth) - halfWidth) % halfWidth;
+		}
+
+		function cancelPendingResume() {
+			if (resumeTimer !== null) {
+				clearTimeout(resumeTimer);
+				resumeTimer = null;
+			}
+		}
+
+		function cancelMomentum() {
+			if (momentumRaf !== null) {
+				cancelAnimationFrame(momentumRaf);
+				momentumRaf = null;
+			}
+		}
+
+		/** Restore the CSS animation, seeking to the position the element is currently frozen at. */
+		function resumeAnimation() {
+			resumeTimer = null;
+
+			const currentX = getCurrentTranslateX();
+			const halfWidth = node.offsetWidth / 2;
+			const isLeft = node.classList.contains('animate-scroll-left');
+
+			let progress: number;
+			if (isLeft) {
+				progress = -currentX / halfWidth;
+			} else {
+				progress = 1 + currentX / halfWidth;
+			}
+			progress = ((progress % 1) + 1) % 1;
+
+			const duration = parseFloat(node.dataset.duration || '25');
+			const delay = -(progress * duration);
+			const animName = isLeft ? 'scroll-left' : 'scroll-right';
+
+			// Set the full animation (with delay) in one step so the browser never
+			// paints a frame at the wrong position.
+			frozen = false;
+			node.style.removeProperty('transform');
+			node.style.animation = `${animName} ${duration}s linear ${delay}s infinite`;
+		}
+
+		/** Animate a decelerating throw, then hand back to the CSS animation. */
+		function startMomentum(velocity: number) {
+			let currentX = getCurrentTranslateX();
+
+			function tick() {
+				velocity *= FRICTION;
+
+				if (Math.abs(velocity) < MIN_VELOCITY) {
+					momentumRaf = null;
+					// Momentum spent – wait 1 s then resume auto-scroll
+					resumeTimer = setTimeout(resumeAnimation, 1000);
+					return;
+				}
+
+				currentX = wrapPosition(currentX + velocity);
+				node.style.transform = `translateX(${currentX}px)`;
+				momentumRaf = requestAnimationFrame(tick);
+			}
+
+			momentumRaf = requestAnimationFrame(tick);
+		}
+
+		function onPointerDown(e: PointerEvent) {
+			if (e.button !== 0) return;
+			cancelPendingResume();
+			cancelMomentum();
+			isDragging = true;
+			hasMoved = false;
+			startX = e.clientX;
+			dragStartTranslateX = getCurrentTranslateX();
+			prevMoveX = lastMoveX = e.clientX;
+			prevMoveTime = lastMoveTime = performance.now();
+		}
+
+		function onPointerMove(e: PointerEvent) {
+			if (!isDragging) return;
+			const delta = e.clientX - startX;
+
+			// Only start dragging after a small threshold to avoid interfering with clicks
+			if (!hasMoved && Math.abs(delta) < 4) return;
+
+			if (!hasMoved) {
+				hasMoved = true;
+				// Capture pointer only once a real drag starts, so simple clicks
+				// still reach child <a> elements normally.
+				node.setPointerCapture(e.pointerId);
+				dragStartTranslateX = getCurrentTranslateX();
+				startX = e.clientX;
+				// Take over from CSS animation
+				frozen = true;
+				node.style.animation = 'none';
+				node.style.transform = `translateX(${dragStartTranslateX}px)`;
+				document.body.style.userSelect = 'none';
+				node.style.cursor = 'grabbing';
+			}
+
+			// Track velocity from the last two events
+			prevMoveX = lastMoveX;
+			prevMoveTime = lastMoveTime;
+			lastMoveX = e.clientX;
+			lastMoveTime = performance.now();
+
+			const newX = wrapPosition(dragStartTranslateX + delta);
+			node.style.transform = `translateX(${newX}px)`;
+		}
+
+		function onPointerUp() {
+			if (!isDragging) return;
+			isDragging = false;
+			document.body.style.removeProperty('user-select');
+			node.style.removeProperty('cursor');
+
+			if (!hasMoved) {
+				// A click (no drag) may have interrupted momentum/resume via
+				// onPointerDown. If the animation is still frozen, resume it.
+				if (frozen) {
+					resumeAnimation();
+				}
+				return;
+			}
+
+			// Calculate release velocity (px/ms → px/frame at ~60fps ≈ ×16.67)
+			const dt = lastMoveTime - prevMoveTime;
+			const dx = lastMoveX - prevMoveX;
+			const velocity = dt > 0 ? (dx / dt) * 16.67 : 0;
+
+			if (Math.abs(velocity) > MIN_VELOCITY) {
+				startMomentum(velocity);
+			} else {
+				// No meaningful velocity – just wait then resume
+				resumeTimer = setTimeout(resumeAnimation, 1000);
+			}
+		}
+
+		// Prevent link navigation when the user was dragging (not clicking)
+		function onClick(e: MouseEvent) {
+			if (hasMoved) {
+				e.preventDefault();
+				e.stopPropagation();
+				hasMoved = false;
+			}
+		}
+
+		// Prevent native browser drag on links/images so pointer events keep firing
+		function onDragStart(e: DragEvent) {
+			e.preventDefault();
+		}
+
+		node.addEventListener('pointerdown', onPointerDown);
+		node.addEventListener('pointermove', onPointerMove);
+		node.addEventListener('pointerup', onPointerUp);
+		node.addEventListener('pointercancel', onPointerUp);
+		node.addEventListener('click', onClick, true);
+		node.addEventListener('dragstart', onDragStart);
+
+		return {
+			destroy() {
+				cancelMomentum();
+				cancelPendingResume();
+				node.removeEventListener('pointerdown', onPointerDown);
+				node.removeEventListener('pointermove', onPointerMove);
+				node.removeEventListener('pointerup', onPointerUp);
+				node.removeEventListener('pointercancel', onPointerUp);
+				node.removeEventListener('click', onClick, true);
+				node.removeEventListener('dragstart', onDragStart);
+			}
+		};
+	}
 </script>
 
 <Card
@@ -57,10 +274,17 @@
 	</div>
 
 	{#if baseSponsors.length > 0}
-		<div class="scroll-container w-full overflow-hidden py-3" style="container-type: inline-size">
+		<div
+			class="scroll-container w-full overflow-hidden py-3 transition-opacity duration-500 {ready
+				? 'opacity-100'
+				: 'opacity-0'}"
+			style="container-type: inline-size"
+		>
 			<div
-				class="flex w-max animate-scroll-right items-center"
-				style="animation-duration: {scrollDuration}; animation-timing-function: linear;"
+				class="flex w-max animate-scroll-right cursor-grab touch-pan-y items-center select-none"
+				style="--scroll-right-animation-duration: {scrollDuration}"
+				data-duration={scrollDuration.replace('s', '')}
+				use:dragScroll
 			>
 				{#if isSmallCount}
 					{#each [0, 1] as i (i)}
@@ -129,12 +353,6 @@
 	.animate-scroll-left,
 	.animate-scroll-right {
 		will-change: transform;
-	}
-
-	/* Pause animation on hover for accessibility */
-	.scroll-container:hover :global(.animate-scroll-left),
-	.scroll-container:hover :global(.animate-scroll-right) {
-		animation-play-state: paused;
 	}
 
 	/* Support for users with motion sensitivity */
