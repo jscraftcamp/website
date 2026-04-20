@@ -22,6 +22,15 @@
 	let { data }: Props = $props();
 
 	const participants: ParticipantT[] = data.participants;
+	const githubOrgaSet = new Set(
+		data.orgaUsernames.filter((o) => o.platform === 'github').map((o) => o.username)
+	);
+	const codebergOrgaSet = new Set(
+		data.orgaUsernames.filter((o) => o.platform === 'codeberg').map((o) => o.username)
+	);
+	const isOrga = (p: ParticipantT) =>
+		(p.githubAccountName != null && githubOrgaSet.has(p.githubAccountName)) ||
+		(p.codebergAccountName != null && codebergOrgaSet.has(p.codebergAccountName));
 	let activeTag: string | null = $state(null);
 
 	const onSelectTag = (e: CustomEvent<string>) => {
@@ -102,69 +111,80 @@
 			<p>This allows participants to find like-minded people and lets them connect.</p>
 		</Card>
 	</Content>
-	<div class="flex flex-wrap items-center gap-3">
-		<span class="text-sm text-gray-400">Filter by day:</span>
-		<button
-			type="button"
-			onclick={setFridayOrUnset}
-			class="cursor-pointer rounded-full border px-4 py-2 text-sm font-medium transition-colors {$participantsFilter ===
-			fridayFilter
-				? 'border-primary-500 bg-primary-500 text-black'
-				: 'border-gray-500 bg-transparent text-gray-300 hover:border-primary-500 hover:text-primary-500'}"
-		>
-			Friday <span class="ml-1 opacity-70">({participants.filter(fridayFilter).length}/100)</span>
-		</button>
-		<button
-			type="button"
-			onclick={setSaturdayOrUnset}
-			class="cursor-pointer rounded-full border px-4 py-2 text-sm font-medium transition-colors {$participantsFilter ===
-			saturdayFilter
-				? 'border-primary-500 bg-primary-500 text-black'
-				: 'border-gray-500 bg-transparent text-gray-300 hover:border-primary-500 hover:text-primary-500'}"
-		>
-			Saturday
-			<span class="ml-1 opacity-70">({participants.filter(saturdayFilter).length}/100)</span>
-		</button>
-		<a
-			href="{base}/participants/stats"
-			class="ml-auto cursor-pointer rounded-full border border-gray-600 bg-dark-500 px-4 py-2 text-sm text-gray-300 transition-colors hover:border-gray-400 hover:text-white"
-		>
-			View Stats
-		</a>
-	</div>
-
-	{#if participants.filter($participantsFilter).length > 0}
-		<div class="relative">
-			{#if activeTag !== null}
-				<div class="sticky top-4">
-					<button
-						type="button"
-						onclick={unsetActiveTag}
-						class="absolute origin-top-left -translate-x-full -translate-y-8 -rotate-90 cursor-pointer border-none bg-transparent text-inherit hover:text-primary-500"
+	<div class="flex flex-col gap-4">
+		<div class="flex flex-col gap-3 sm:flex-row sm:items-center">
+			<div class="flex flex-wrap items-center gap-3">
+				<span class="text-sm text-gray-400">Filter by day:</span>
+				<button
+					type="button"
+					onclick={setFridayOrUnset}
+					class="cursor-pointer rounded-full border px-4 py-2 text-sm font-medium transition-colors {$participantsFilter ===
+					fridayFilter
+						? 'border-primary-500 bg-primary-500 text-black'
+						: 'border-gray-500 bg-transparent text-gray-300 hover:border-primary-500 hover:text-primary-500'}"
+				>
+					Friday
+					<span class="ml-1 opacity-70"
+						>({participants.filter(fridayFilter).length}/{eventConfig.maxParticipantsPerDay})</span
 					>
-						Selected tag: {activeTag}
-					</button>
-				</div>
-			{/if}
-			<ul class="m-0 grid list-none grid-cols-[repeat(auto-fill,minmax(14rem,1fr))] gap-6 p-0">
-				{#each participants.filter($participantsFilter) as participant (participant.githubAccountName ?? displayName(participant))}
-					<li class="pl-0">
-						<Participant
-							{participant}
-							on:selectedTag={onSelectTag}
-							isActive={(activeTag &&
-								participant.tags
-									.map((t) => t.toLocaleLowerCase())
-									.includes(activeTag.toLocaleLowerCase())) ||
-								false}
-						/>
-					</li>
-				{/each}
-			</ul>
+				</button>
+				<button
+					type="button"
+					onclick={setSaturdayOrUnset}
+					class="cursor-pointer rounded-full border px-4 py-2 text-sm font-medium transition-colors {$participantsFilter ===
+					saturdayFilter
+						? 'border-primary-500 bg-primary-500 text-black'
+						: 'border-gray-500 bg-transparent text-gray-300 hover:border-primary-500 hover:text-primary-500'}"
+				>
+					Saturday
+					<span class="ml-1 opacity-70"
+						>({participants.filter(saturdayFilter)
+							.length}/{eventConfig.maxParticipantsPerDay})</span
+					>
+				</button>
+			</div>
+			<a
+				href="{base}/participants/stats"
+				class="w-fit cursor-pointer self-end rounded-full border border-gray-600 bg-dark-500 px-4 py-2 text-sm text-gray-300 transition-colors hover:border-gray-400 hover:text-white sm:ml-auto"
+			>
+				View Stats
+			</a>
 		</div>
-	{:else}
-		<p>There are no participants registered yet.</p>
-	{/if}
+
+		{#if participants.filter($participantsFilter).length > 0}
+			<div class="relative">
+				{#if activeTag !== null}
+					<div class="sticky top-4">
+						<button
+							type="button"
+							onclick={unsetActiveTag}
+							class="absolute origin-top-left -translate-x-full -translate-y-8 -rotate-90 cursor-pointer border-none bg-transparent text-inherit hover:text-primary-500"
+						>
+							Selected tag: {activeTag}
+						</button>
+					</div>
+				{/if}
+				<ul class="m-0 grid list-none grid-cols-[repeat(auto-fill,minmax(14rem,1fr))] gap-6 p-0">
+					{#each participants.filter($participantsFilter) as participant (participant.githubAccountName ?? displayName(participant))}
+						<li class="pl-0">
+							<Participant
+								{participant}
+								on:selectedTag={onSelectTag}
+								isOrga={isOrga(participant)}
+								isActive={(activeTag &&
+									participant.tags
+										.map((t) => t.toLocaleLowerCase())
+										.includes(activeTag.toLocaleLowerCase())) ||
+									false}
+							/>
+						</li>
+					{/each}
+				</ul>
+			</div>
+		{:else}
+			<p>There are no participants registered yet.</p>
+		{/if}
+	</div>
 
 	{#if $registrationState === 'open'}
 		<Card>

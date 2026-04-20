@@ -4,15 +4,15 @@
 {
 	// your real name (required by location host)
 	"realName": {
-		"givenName": "Manuel",
-		"familyName": "Stingl",
+		"givenName": "Dominic",
+		"familyName": "Ingram",
 		// if you prefer to have your family name shown first (optional)
 		"placeFamilyNameFirst": false,
 		// if you do not want to show your family name on the participant list (optional)
 		"hideFamilyNameOnWebsite": false
 	},
 	// please put in the account name of the PR creator, if you sign up somebody else
-	"githubAccountName": "mstingl",
+	"githubAccountName": "dingram94",
 	// company name (optional)
 	"company": "StackForge",
 	// either both days or at least one day has to be set to true.
@@ -26,19 +26,19 @@
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": false,
 	// your current interests (JS and in general) (required)
-	"tags": ["TypeScript", "React", "GraphQL", "Next.js", "REST", "PostgreSQL", "Kubernetes"],
+	"tags": ["TypeScript", "NestJS", "React", "GraphQL", "Next.js", "React Native", "UI/UX", "Design Systems"],
 	// if you only eat vegan food (optional)
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
 	"vegetarian": false,
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "Started in the days of jQuery, now building frontends with Next.js (even though I'm more a backend guy using Python)",
+	"whatIsMyConnectionToJavascript": "Im developing with JavaScript for over 10 years now, starting with jQuery and now mainly with React. I'm also interested in UI/UX and Design Systems.",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "I'm building souvereign system architectures and it-systems beyond what software engineers usually do, making connections actually happen rather then relying on a vendor with magic sauce.",
+	"whatCanIContribute": "I can share my experience with TypeScript, NestJS, React, GraphQL, Next.js and React Native",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
-	"tShirtSize": "M",
+	"tShirtSize": "L",
 	// your LinkedIn profile URL
-	"linkedin": "https://www.linkedin.com/in/manuel-stingl-b143473a3/",
+	"linkedin": "https://www.linkedin.com/in/dbingram/",
 	"website": "https://www.stack-forge.eu/de"
 }

@@ -1,0 +1,37 @@
+{
+    "realName": {
+        "givenName": "Valerii",
+        "familyName": "Melnyk",
+        "placeFamilyNameFirst": false,
+        "hideFamilyNameOnWebsite": false
+    },
+    "githubAccountName": "dontbeev1l",
+    "codebergAccountName": "",
+    "company": "",
+    "when": {
+        "friday": true,
+        "saturday": true
+    },
+    "iCanTakeNotesDuringSessions": true,
+    "tags": [
+        "JavaScript",
+        "TypeScript",
+        "Angular",
+        "Enterprise",
+        "AI",
+        "Microfrontends",
+        "Architecture",
+        "DesignSystems",
+        "DX"
+    ],
+    "vegan": false,
+    "vegetarian": false,
+    "allergies": [],
+    "whatIsMyConnectionToJavascript": "Frontend developer",
+    "whatCanIContribute": "Module Federation, Api Model Generation, Design Systems",
+    "tShirtSize": "XL",
+    "mastodon": "",
+    "linkedin": "https://www.linkedin.com/in/dontbeev1l/",
+    "X": "",
+    "website": ""
+}

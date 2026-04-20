@@ -4,41 +4,50 @@
 {
 	// your real name (required by location host)
 	"realName": {
-		"givenName": "Manuel",
-		"familyName": "Stingl",
+		"givenName": "Achim",
+		"familyName": "Rohn",
 		// if you prefer to have your family name shown first (optional)
 		"placeFamilyNameFirst": false,
 		// if you do not want to show your family name on the participant list (optional)
 		"hideFamilyNameOnWebsite": false
 	},
 	// please put in the account name of the PR creator, if you sign up somebody else
-	"githubAccountName": "mstingl",
+	"githubAccountName": "gorlug",
+	// your Codeberg account name (optional)
+	"codebergAccountName": "",
 	// company name (optional)
-	"company": "StackForge",
+	"company": "Gorlug Software",
 	// either both days or at least one day has to be set to true.
 	// If you cannot make one of the days, please set it to false, to allow someone else take that spot!
 	"when": {
-		// June 27th, 2025
+		// June 12th, 2026
 		"friday": true,
-		// June 28th, 2025
+		// June 13th, 2026
 		"saturday": true
 	},
 	// if you are willing to take session notes and publish them to github (required)
-	"iCanTakeNotesDuringSessions": false,
+	"iCanTakeNotesDuringSessions": true,
 	// your current interests (JS and in general) (required)
-	"tags": ["TypeScript", "React", "GraphQL", "Next.js", "REST", "PostgreSQL", "Kubernetes"],
+	"tags": ["TypeScript", "HTMX", "Go", "Offline-First", "NoFrontendDependencies", "Agentic Coding"],
 	// if you only eat vegan food (optional)
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
 	"vegetarian": false,
+	// what you cannot eat or drink (optional); If you don't want to put it in here, message the organizers.
+	// IMPORTANT: we cannot guarantee that food for every diet will be available,
+	//            if you have gluten free diet, please make backup plans.
+	"allergies": [],
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "Started in the days of jQuery, now building frontends with Next.js (even though I'm more a backend guy using Python)",
+	"whatIsMyConnectionToJavascript": "I've been using javascript for over 25 years, about 17 of these years professionally. These days I mainly work in TypeScript though.",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "I'm building souvereign system architectures and it-systems beyond what software engineers usually do, making connections actually happen rather then relying on a vendor with magic sauce.",
+	"whatCanIContribute": "Topics for sessions I'm thinking about: Handling large React Upgrades/Storybook, how to better protect yourself from npm vulnerabilities",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
-	"tShirtSize": "M",
+	"tShirtSize": "XL",
 	// your LinkedIn profile URL
-	"linkedin": "https://www.linkedin.com/in/manuel-stingl-b143473a3/",
-	"website": "https://www.stack-forge.eu/de"
+	"linkedin": "https://linkedin.com/in/achim-rohn-6a60b6176",
+	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
+	"X": "gorlug",
+	// your website URL or other social media (optional)
+	"website": "https://codingorc.de"
 }

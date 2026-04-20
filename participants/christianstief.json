@@ -4,41 +4,42 @@
 {
 	// your real name (required by location host)
 	"realName": {
-		"givenName": "Manuel",
-		"familyName": "Stingl",
+		"givenName": "Christian",
+		"familyName": "Stief",
 		// if you prefer to have your family name shown first (optional)
 		"placeFamilyNameFirst": false,
 		// if you do not want to show your family name on the participant list (optional)
 		"hideFamilyNameOnWebsite": false
 	},
 	// please put in the account name of the PR creator, if you sign up somebody else
-	"githubAccountName": "mstingl",
+	"githubAccountName": "chrstief",
+	// your Codeberg account name (optional)
+	"codebergAccountName": "",
 	// company name (optional)
-	"company": "StackForge",
+	"company": "IAV",
 	// either both days or at least one day has to be set to true.
 	// If you cannot make one of the days, please set it to false, to allow someone else take that spot!
 	"when": {
-		// June 27th, 2025
+		// June 12th, 2026
 		"friday": true,
-		// June 28th, 2025
+		// June 13th, 2026
 		"saturday": true
 	},
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": false,
 	// your current interests (JS and in general) (required)
-	"tags": ["TypeScript", "React", "GraphQL", "Next.js", "REST", "PostgreSQL", "Kubernetes"],
+	"tags": ["React", "Typescript", "Nextjs"],
 	// if you only eat vegan food (optional)
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
 	"vegetarian": false,
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "Started in the days of jQuery, now building frontends with Next.js (even though I'm more a backend guy using Python)",
+	"whatIsMyConnectionToJavascript": "Typescript became my main programming language and I love using it.",
 	// what can you contribute to the bar camp (required)
-	"whatCanIContribute": "I'm building souvereign system architectures and it-systems beyond what software engineers usually do, making connections actually happen rather then relying on a vendor with magic sauce.",
+	"whatCanIContribute": "Discussions and my experience building web apps for enterprise users.",
 	// if you want a T-Shirt we need your size and variant preference (optional)
 	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
 	"tShirtSize": "M",
 	// your LinkedIn profile URL
-	"linkedin": "https://www.linkedin.com/in/manuel-stingl-b143473a3/",
-	"website": "https://www.stack-forge.eu/de"
+	"linkedin": "https://www.linkedin.com/in/christian-stief-bb3069149/"
 }
