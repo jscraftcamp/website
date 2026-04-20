@@ -1,0 +1,177 @@
+<script lang="ts">
+	import { onMount } from 'svelte';
+	import {
+		eventConfig,
+		getDaysToGo,
+		getDaysUntilRegistration,
+		getRegistrationState,
+		getShortYear,
+		getYear
+	} from '$lib/config/event';
+	import Card from '$lib/layout/Card.svelte';
+	import { cn } from '$lib/utils/cn';
+
+	interface Props {
+		class?: string;
+		spotsLeft?: number;
+	}
+
+	let { class: className = '', spotsLeft }: Props = $props();
+
+	const daysToGo = getDaysToGo();
+	const registrationState = getRegistrationState();
+	const daysUntilRegistration = getDaysUntilRegistration();
+
+	let displayedDays = $state(0);
+	const maxSpots = eventConfig.maxParticipantsPerDay;
+	const pluralRules = new Intl.PluralRules('en');
+	let displayedSpots = $state(spotsLeft !== undefined ? maxSpots : 0);
+
+	onMount(() => {
+		const duration = 1500;
+		const startTime = performance.now();
+
+		const easeOutQuart = (t: number) => 1 - Math.pow(1 - t, 4);
+
+		const animate = (currentTime: number) => {
+			const elapsed = currentTime - startTime;
+			const progress = Math.min(elapsed / duration, 1);
+			const easedProgress = easeOutQuart(progress);
+
+			displayedDays = Math.round(easedProgress * daysToGo);
+			if (spotsLeft !== undefined) {
+				displayedSpots = Math.round(maxSpots - easedProgress * (maxSpots - spotsLeft));
+			}
+
+			if (progress < 1) {
+				requestAnimationFrame(animate);
+			} else {
+				displayedDays = daysToGo;
+				if (spotsLeft !== undefined) {
+					displayedSpots = spotsLeft;
+				}
+			}
+		};
+
+		requestAnimationFrame(animate);
+	});
+</script>
+
+<Card class={cn('header-content relative overflow-hidden px-6 py-8 sm:px-10 sm:py-12', className)}>
+	<!-- Geometric pattern overlay -->
+	<div class="bavarian-diamonds pattern-overlay absolute inset-0 opacity-20"></div>
+
+	<!-- Content wrapper -->
+	<div class="relative flex flex-row justify-between">
+		<!-- Left side content -->
+		<div class="flex flex-col gap-2 md:gap-4">
+			<span class="text-sm font-bold tracking-wide text-black sm:text-base">
+				The JavaScript Unconference
+			</span>
+			<h1 class="text-3xl font-bold text-black sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl">
+				JSCraftCamp
+			</h1>
+			<div class="flex items-center gap-3">
+				<span
+					class="text-3xl font-bold tracking-tight text-black sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl"
+				>
+					{getYear()}
+				</span>
+				{#if !eventConfig.isEstimation}
+					<div class="flex flex-col leading-tight">
+						<span
+							class="text-md font-bold text-black sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl"
+						>
+							{eventConfig.startDate.getDate()} - {eventConfig.endDate.getDate()}
+						</span>
+						<span
+							class="text-md font-bold text-black sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl"
+						>
+							{eventConfig.startDate.toLocaleString('en-US', { month: 'long' })}
+						</span>
+					</div>
+				{/if}
+			</div>
+
+			<!-- Registration button -->
+			<div class="mt-4">
+				{#if registrationState === 'open'}
+					<a
+						href="/registration"
+						class="inline-block rounded-full bg-emerald-700 px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-800"
+					>
+						Register now
+					</a>
+				{:else if registrationState === 'not-yet'}
+					<span
+						class="inline-block rounded-full bg-stone-600/80 px-6 py-2.5 text-sm font-semibold text-stone-200"
+					>
+						Registration opens in {daysUntilRegistration} day{daysUntilRegistration === 1
+							? ''
+							: 's'}
+					</span>
+				{:else}
+					<span
+						class="inline-block rounded-full bg-stone-600/80 px-6 py-2.5 text-sm font-semibold text-stone-200"
+					>
+						Registration closed
+					</span>
+				{/if}
+			</div>
+		</div>
+
+		<!-- Right side content -->
+		<div class="flex flex-col justify-between text-right">
+			<div class="flex flex-col items-end">
+				<span
+					class="text-4xl leading-none font-black text-black sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl"
+				>
+					{eventConfig.isEstimation ? 'TBD' : displayedDays}
+				</span>
+				<span class="text-sm font-bold tracking-wider text-black"
+					>{pluralRules.select(displayedDays) === 'one' ? 'DAY' : 'DAYS'} TO GO</span
+				>
+			</div>
+			{#if spotsLeft !== undefined}
+				<a
+					href="/registration"
+					class="flex flex-col items-end no-underline transition-opacity hover:opacity-80"
+				>
+					<span
+						class="text-4xl leading-none font-black text-black sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl"
+					>
+						{displayedSpots}
+					</span>
+					<span class="text-sm font-bold tracking-wider text-black"
+						>{pluralRules.select(displayedSpots) === 'one' ? 'SPOT' : 'SPOTS'} LEFT</span
+					>
+				</a>
+			{/if}
+
+			<a
+				href="https://mastodon.social/tags/jscc26"
+				target="_blank"
+				class="mt-4 text-xl font-black text-black sm:text-2xl lg:text-2xl xl:text-2xl"
+			>
+				#jscc{getShortYear()}
+			</a>
+		</div>
+	</div>
+</Card>
+
+<style>
+	:global(.header-content) {
+		background: linear-gradient(
+			135deg,
+			var(--color-primary-500) 0%,
+			var(--color-primary-700) 50%,
+			var(--color-primary-500) 100%
+		);
+	}
+
+	.bavarian-diamonds {
+		background-color: #f5b942;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpolygon fill='%23d4891a' points='15,0 30,15 15,30 0,15'/%3E%3C/svg%3E");
+		background-size: 30px 40px;
+	}
+</style>

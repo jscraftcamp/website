@@ -1,35 +1,27 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { alumni } from '$lib/config/team';
+	import TeamMember from '$lib/components/TeamMember.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
-	import TeamMember from '../TeamMember.svelte';
-	import TeamMemberSection from '../TeamMemberSection.svelte';
-	import agnes from './agnes.png';
-	import david from './david.jpg';
-	import michael from './michael.png';
-	import patrick from './patrick.jpg';
-	import sebastian from './sebastian.jpg';
-	import simon from './simon.png';
+	import Card from '$lib/layout/Card.svelte';
+	import Content from '$lib/layout/Content.svelte';
 </script>
 
 <PageLayout>
-	<h1>The Alumni of JSCraftCamp Organizers</h1>
-	<p>
-		Throughout the years, there were lots of helping hands and people who organized previous events.
-		Thank you all for the support!
-	</p>
+	<Content>
+		<h1>The Alumni of JSCraftCamp Organizers</h1>
 
-	<TeamMemberSection>
-		<TeamMember image={agnes} name="Agnes Köhler" email="koehler.agnes@gmail.com" />
-		<TeamMember image={david} name="David Losert" email="david@david-losert.com" />
-		<TeamMember image={michael} name="Michael Zoidl" email="michael@alm.sh" />
-		<TeamMember image={patrick} name="Patrick Müller" email="mp@floatec.de" />
-		<TeamMember
-			image={sebastian}
-			name="Sebastian Frerichs"
-			email="sebastian.frerichs@codecentric.de"
-		/>
-		<TeamMember image={simon} name="Simon Hofmann" email="simon@s1h.org" />
-	</TeamMemberSection>
+		<Card>
+			<h3>Thank you all for the support!</h3>
+			<p>
+				Throughout the years, there were lots of helping hands and people who organized previous
+				events.
+			</p>
+		</Card>
+	</Content>
 
-	<p>Looking for the current team members? <a href="{base}/team">Check the /team page</a>!</p>
+	<section class="grid grid-cols-1 justify-items-center gap-8 sm:grid-cols-2 lg:grid-cols-4">
+		{#each alumni as member (member.name)}
+			<TeamMember {...member} />
+		{/each}
+	</section>
 </PageLayout>

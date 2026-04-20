@@ -1,8 +1,10 @@
 import { isSponsor } from '$lib/sponsoring/is-sponsor';
 import type { Participant, TShirtSize } from './participant-schema';
+import { normalizeCompanyKey } from './normalize-company';
+import type { OrgaUsername } from '$lib/config/team/team';
 
 type Allergies = { [k: string]: number };
-type Company = { name: string; amount: number; isSponsor: boolean };
+export type Company = { name: string; amount: number; isSponsor: boolean };
 type Companies = { [k: string]: Company };
 type Shirts = {
 	count: number;
@@ -12,7 +14,6 @@ type Shirts = {
 		[key in TShirtSize]?: number;
 	};
 };
-type Name = { givenName: string; familyName: string };
 export type Statistics = {
 	allergies: Allergies;
 	companies: Company[];
@@ -27,11 +28,16 @@ export type Statistics = {
 		notetakersFriday: number;
 		notetakersSaturday: number;
 	};
+	vegan: number;
+	vegetarian: number;
+	noFoodPreference: number;
 };
 
-const isOrgaMember = (p: Name, orgaMembers: Name[]) => {
-	return orgaMembers.some(
-		(m) => `${m.givenName} ${m.familyName}` === `${p.givenName} ${p.familyName}`
+const isOrgaMember = (p: Participant, orgaUsernames: OrgaUsername[]) => {
+	return orgaUsernames.some(
+		({ platform, username }) =>
+			(platform === 'github' && username === p.githubAccountName) ||
+			(platform === 'codeberg' && username === p.codebergAccountName)
 	);
 };
 
@@ -40,7 +46,7 @@ const isNonFoodAllergy = (allergyKey: string) =>
 
 export const createStatsFromParticipants = (
 	participants: Participant[],
-	orgaMembers: Name[]
+	orgaMembers: OrgaUsername[]
 ): Statistics => {
 	const allergies: Allergies = {};
 	const orgaShirts: Shirts = { count: 0, fitted: 0, regular: 0, sizes: {} };
@@ -56,15 +62,12 @@ export const createStatsFromParticipants = (
 
 	for (const participant of participants) {
 		let shirts = participantsShirts;
-		if (isOrgaMember(participant.realName, orgaMembers)) {
+		if (isOrgaMember(participant, orgaMembers)) {
 			shirts = orgaShirts;
 		}
 		if (participant.company) {
 			const name = participant.company;
-			const companyAsKey = name
-				.toLocaleLowerCase()
-				.replace(/\s+(?:ag|gbr|gmbh|gmdbh)/, '')
-				.replace(/[^a-z]/g, '-');
+			const companyAsKey = normalizeCompanyKey(name);
 			companies[companyAsKey] = companies[companyAsKey] ?? {
 				name,
 				amount: 0,
@@ -111,6 +114,18 @@ export const createStatsFromParticipants = (
 		return 1;
 	});
 	const sortedCompanies = sortedCompanyEntries.map(([, company]) => company);
+	const { vegan, vegetarian, noFoodPreference } = participants.reduce(
+		(acc, { vegan, vegetarian }) => {
+			if (vegan) {
+				return { ...acc, vegan: acc.vegan + 1 };
+			}
+			if (vegetarian) {
+				return { ...acc, vegetarian: acc.vegetarian + 1 };
+			}
+			return { ...acc, noFoodPreference: acc.noFoodPreference + 1 };
+		},
+		{ vegan: 0, vegetarian: 0, noFoodPreference: 0 }
+	);
 
 	return {
 		allergies,
@@ -119,6 +134,9 @@ export const createStatsFromParticipants = (
 		orgaShirts,
 		participantCount: participants.length,
 		participantsShirts,
-		participants: stats
+		participants: stats,
+		vegan,
+		vegetarian,
+		noFoodPreference
 	};
 };

@@ -1,0 +1,167 @@
+<script lang="ts">
+	import { sponsors, thankYouTranslations } from '$lib/config/sponsoring';
+	import Card from '$lib/layout/Card.svelte';
+	import { cn } from '$lib/utils/cn';
+	import { dragScroll } from '$lib/utils/drag-scroll';
+	import { shuffle } from '$lib/utils/shuffle';
+	import { onMount } from 'svelte';
+
+	interface Props {
+		class?: string;
+	}
+
+	let { class: className = '' }: Props = $props();
+
+	// Shuffle sponsor order on every page load so no sponsor is always first/last.
+	// Must happen after mount to avoid SSR/hydration mismatch.
+	let baseSponsors = $state([...sponsors]);
+	let ready = $state(false);
+
+	onMount(() => {
+		baseSponsors = shuffle(sponsors);
+		ready = true;
+	});
+
+	// Duplicate items for seamless infinite scroll
+	const duplicatedTranslations = [...thankYouTranslations, ...thankYouTranslations];
+
+	const isSmallCount = $derived(baseSponsors.length > 0 && baseSponsors.length <= 4);
+
+	const minSponsorsVisible = 8;
+
+	const repeatCount = $derived.by(() => {
+		if (baseSponsors.length === 0) {
+			return 0;
+		}
+		if (isSmallCount) {
+			return 2;
+		}
+
+		const min = Math.max(2, Math.ceil(minSponsorsVisible / baseSponsors.length));
+		return min % 2 === 0 ? min : min + 1;
+	});
+
+	const duplicatedSponsors = $derived(
+		repeatCount > 0 ? Array(repeatCount).fill(baseSponsors).flat() : []
+	);
+
+	const scrollDuration = $derived(`${Math.max(10, baseSponsors.length * 2.5)}s`);
+</script>
+
+<Card
+	class={cn(
+		'flex flex-col gap-3 overflow-hidden px-0 pt-2 pb-2 sm:px-0 sm:pt-2 sm:pb-2',
+		className
+	)}
+>
+	<div class="scroll-container w-full overflow-hidden py-1">
+		<div class="flex w-max animate-scroll-left items-center gap-8">
+			{#each duplicatedTranslations as text, i (`${text}-${i}`)}
+				<span
+					class="text-xs font-medium tracking-wide whitespace-nowrap uppercase {i % 2 === 1
+						? 'text-white/80'
+						: 'text-white/40'}">{text}</span
+				>
+			{/each}
+		</div>
+	</div>
+
+	{#if baseSponsors.length > 0}
+		<div
+			class="scroll-container w-full overflow-hidden py-3 transition-opacity duration-500 {ready
+				? 'opacity-100'
+				: 'opacity-0'}"
+			style="container-type: inline-size"
+		>
+			<div
+				class="flex w-max animate-scroll-right cursor-grab touch-pan-y items-center select-none"
+				style="--scroll-right-animation-duration: {scrollDuration}"
+				data-duration={scrollDuration.replace('s', '')}
+				use:dragScroll
+			>
+				{#if isSmallCount}
+					{#each [0, 1] as i (i)}
+						<div class="flex w-[100cqw] shrink-0 items-start gap-3 px-4 sm:gap-6 sm:px-8">
+							{#each baseSponsors as sponsor, j (sponsor.name + j)}
+								<a
+									href={sponsor.link}
+									title={sponsor.name}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="group flex min-w-0 flex-1 basis-0 flex-col items-center justify-center gap-1 text-center text-stone-400 hover:text-primary-700"
+								>
+									<div
+										class="flex h-16 w-full max-w-[10rem] items-center justify-center sm:max-w-48"
+									>
+										<img
+											src={sponsor.image}
+											alt={sponsor.name}
+											class="h-full w-full object-contain transition-opacity duration-200 group-hover:opacity-80"
+										/>
+									</div>
+									<span
+										class="w-full text-[11px] leading-tight font-medium text-balance sm:text-xs"
+									>
+										{sponsor.name}
+									</span>
+								</a>
+							{/each}
+						</div>
+					{/each}
+				{:else}
+					{#each duplicatedSponsors as sponsor, i (sponsor.name + i)}
+						<a
+							href={sponsor.link}
+							title={sponsor.name}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="flex shrink-0 flex-col items-center justify-center gap-4 px-8 transition-opacity duration-200 hover:opacity-80"
+						>
+							<img
+								src={sponsor.image}
+								alt={sponsor.name}
+								class="h-16 w-auto max-w-48 object-contain"
+							/>
+							<span class="text-xs font-medium text-stone-400">{sponsor.name}</span>
+						</a>
+					{/each}
+				{/if}
+			</div>
+		</div>
+	{/if}
+</Card>
+
+<style>
+	.scroll-container {
+		mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+		-webkit-mask-image: linear-gradient(
+			to right,
+			transparent 0%,
+			black 5%,
+			black 95%,
+			transparent 100%
+		);
+	}
+
+	.animate-scroll-left,
+	.animate-scroll-right {
+		will-change: transform;
+	}
+
+	/* Support for users with motion sensitivity */
+	@media (prefers-reduced-motion: reduce) {
+		:global(.animate-scroll-left),
+		:global(.animate-scroll-right) {
+			animation: none !important;
+			transform: none !important;
+			width: 100% !important;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.scroll-container {
+			overflow-x: auto;
+			mask-image: none;
+			-webkit-mask-image: none;
+		}
+	}
+</style>

@@ -27,7 +27,7 @@ describe('Participants', async () => {
 				return dirent.name;
 			});
 
-			expect(underscoreFiles).toContain('_template.json');
+			expect(underscoreFiles).toEqual(['_template.json']);
 		});
 	});
 

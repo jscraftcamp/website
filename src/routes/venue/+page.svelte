@@ -1,76 +1,73 @@
 <script lang="ts">
-	import InfoBox from '$lib/layout/InfoBox.svelte';
+	import Card from '$lib/layout/Card.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
-	import location from './location.jpg';
+	import VenueSearchCard from '$lib/components/VenueSearchCard.svelte';
+	import { venueConfig } from '$lib/config/venue';
+	import Content from '$lib/layout/Content.svelte';
 </script>
 
 <PageLayout>
-	<h1>Location Information</h1>
+	<Content>
+		<h1>Location Information</h1>
 
-	<section>
-		<InfoBox>
-			<p>This year's location will be in the upper two floors of the Kraftwerk.</p>
-			<p>
-				MaibornWolff GmbH<br />
-				Drygalski-Allee 25<br />
-				81477 München <br />
-				(<a href="https://maps.app.goo.gl/hUhbheFci2sSJ7SZ6">Google Maps</a>)
-			</p>
-			<p>
-				<img
-					src={location}
-					alt={'a comfortable-looking, modern seating area with windows in the background, showing a view over the city'}
-				/>
-			</p>
-			<p>
-				See some more impressions
-				<a
-					href="https://www.maibornwolff.de/location/muenchen-kraftwerk/"
-					rel="external noopener noreferrer"
-				>
-					here
-				</a>.
-			</p>
-		</InfoBox>
+		{#if venueConfig.noVenueAvailable}
+			<VenueSearchCard />
+		{:else}
+			<Card>
+				{#if venueConfig.description}
+					<p>{venueConfig.description}</p>
+				{/if}
+				{#if venueConfig.address}
+					<p>
+						{venueConfig.address.name}<br />
+						{venueConfig.address.street}<br />
+						{venueConfig.address.city}<br />
+						<a href={venueConfig.address.openStreetMapLink} rel="external noopener noreferrer"
+							>OpenStreetMap</a
+						>
+						-
+						<a href={venueConfig.address.googleMapsLink} rel="external noopener noreferrer"
+							>Google Maps</a
+						>
+					</p>
+				{/if}
+				{#if venueConfig.impressionsLink}
+					<p>
+						See some impressions of the venue
+						<a href={venueConfig.impressionsLink} rel="external noopener noreferrer">here</a>.
+					</p>
+				{/if}
+			</Card>
 
-		<InfoBox title="Accessibility">
-			<p>
-				There are two elevators you can use: One connecting the ground level with the event area and
-				a second one connecting the two event floors (this one will be reserved for people with
-				walking disabilities). The front door does not open automatically.
-			</p>
-			<p>
-				The carpet (where there is carpet) is short enough to drive on using a wheelchair. There is
-				a wheelchair-accessible toilet on the fourth floor of the building; if you plan to come and
-				use it, please contact us in advance so we can make sure it's open.
-			</p>
-			<p>The elevator has buttons with raised print numbers, no Braille.</p>
-			<p>Unfortunately, none of the Orga team speak sign language with any fluency.</p>
-			<p>
-				If you want to bring someone to help you translate or navigate the space, they do not have
-				to register.
-			</p>
-		</InfoBox>
-		<InfoBox title="Getting fresh air">
-			There is at least one balcony you can get to for a breath of fresh air (or smoke) if you need
-			one.
-		</InfoBox>
-	</section>
+			{#if venueConfig.entryInfo}
+				<Card>
+					<h3>Entry</h3>
+					<p>{venueConfig.entryInfo}</p>
+				</Card>
+			{/if}
+
+			<Card>
+				<h3>Parking</h3>
+				<p>
+					There are only limited parking slots available at the venue. Please consider arriving by
+					public transport.
+				</p>
+			</Card>
+
+			<Card>
+				<h3>Public Transport</h3>
+				<p>
+					You can take the <strong>S8</strong> and walk approximately 1.3 km from the station to the
+					venue, or take the bus line directly.
+				</p>
+			</Card>
+
+			{#if venueConfig.accessibility}
+				<Card>
+					<h3>Accessibility</h3>
+					<p>{venueConfig.accessibility.description}</p>
+				</Card>
+			{/if}
+		{/if}
+	</Content>
 </PageLayout>
-
-<style>
-	h1 {
-		text-align: center;
-	}
-
-	section {
-		display: flex;
-		flex-flow: column;
-		align-items: center;
-		gap: 2em;
-	}
-
-	img {
-		max-width: 100%;
-	}
-</style>
