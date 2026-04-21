@@ -1,0 +1,27 @@
+{
+	"realName": {
+		"givenName": "Fabian",
+		"familyName": "Emilius",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "fabian-emilius",
+	"codebergAccountName": "",
+	"company": "",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["Claude Code", "Context Engineering", "AI", "NestJS", "MCP", "OpenClaw"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "JavaScript is the backbone of how I build and ship ideas. From full-stack applications in NestJS and Next.js to AI tools and automations, it’s the language I rely on daily to turn ideas into reality.",
+	"whatCanIContribute": "Real-world insights into using AI coding agents in real production environments.",
+	"tShirtSize": "M",
+	"mastodon": "",
+	"linkedin": "https://www.linkedin.com/in/fabian-emilius/",
+	"X": "",
+	"website": "https://fabianemilius.com/"
+}
