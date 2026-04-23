@@ -1,6 +1,3 @@
-// vim: ft=jsonc
-// Please provide your info in your own .json file.
-// See https://jscraftcamp.org/registration for more information
 {
 	// your real name (required by location host)
 	"realName": {
@@ -46,7 +43,6 @@
 	"tShirtSize": "S",
 	// your LinkedIn profile URL
 	"linkedin": "https://www.linkedin.com/in/bruno-miguel-alves-costa/",
-	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
 	// your website URL or other social media (optional)
 	"website": "https://www.bruno-costa.dev"
 }
