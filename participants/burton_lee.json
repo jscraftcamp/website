@@ -26,7 +26,7 @@
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": false,
 	// your current interests (JS and in general) (required)
-	"tags": ["Lit", "Web Components", "Design Systems", "A11Y", "JS-Frameworks", "Gaussian Splats", "GraphQL", "3D Graphics"],
+	"tags": ["Lit", "Web Components", "Design Systems", "A11Y", "Gaussian Splats", "NextJS", "React", "Vue", "Angular", "TypeScript", "GraphQL", "3D Graphics", "Web3"],
 	// if you only eat vegan food (optional)
 	"vegan": false,
 	// if you only eat vegan or vegetarian food (optional)
