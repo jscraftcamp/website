@@ -41,5 +41,5 @@
 	// your LinkedIn profile URL
 	"linkedin": "https://www.linkedin.com/in/leealanburton/",
 	// your X (Twitter) handle - must match regex ^[a-zA-Z_]{1}[a-zA-Z0-9_]{0,14}$ (optional)
-	"X": "@SmokinMedia"
+	"X": "SmokinMedia"
 }
