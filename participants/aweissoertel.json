@@ -1,0 +1,44 @@
+// vim: ft=jsonc
+// Please provide your info in your own .json file.
+// See https://jscraftcamp.org/registration for more information
+{
+	// your real name (required by location host)
+	"realName": {
+		"givenName": "Alex",
+		"familyName": "Weissörtel",
+		// if you prefer to have your family name shown first (optional)
+		"placeFamilyNameFirst": false,
+		// if you do not want to show your family name on the participant list (optional)
+		"hideFamilyNameOnWebsite": false
+	},
+	// please put in the account name of the PR creator, if you sign up somebody else
+	"githubAccountName": "aweissoertel",
+	// company name (optional)
+	"company": "Raya Diagnostics GmbH",
+	// either both days or at least one day has to be set to true.
+	// If you cannot make one of the days, please set it to false, to allow someone else take that spot!
+	"when": {
+		// June 12th, 2026
+		"friday": true,
+		// June 13th, 2026
+		"saturday": true
+	},
+	// if you are willing to take session notes and publish them to github (required)
+	"iCanTakeNotesDuringSessions": true,
+	// your current interests (JS and in general) (required)
+	"tags": ["react", "typescript", "react-query", "claude code", "react-admin", "openapi"],
+	// if you only eat vegan food (optional)
+	"vegan": false,
+	// if you only eat vegan or vegetarian food (optional)
+	"vegetarian": true,
+	// what you cannot eat or drink (optional); If you don't want to put it in here, message the organizers.
+	// IMPORTANT: we cannot guarantee that food for every diet will be available,
+	//            if you have gluten free diet, please make backup plans.
+	"allergies": [],
+	// tell us a few words how JavaScript affects you (required)
+	"whatIsMyConnectionToJavascript": "Fullstack dev with a love for front ends",
+	// what can you contribute to the bar camp (required)
+	"whatCanIContribute": "Niche insights into react-admin, WebHID, showing dicom images in the browser and how you create instruments for a flight simulator with React.",
+	// your LinkedIn profile URL
+	"linkedin": "https://www.linkedin.com/in/alex-weiss%C3%B6rtel/"
+}
