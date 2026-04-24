@@ -39,6 +39,9 @@
 	"whatIsMyConnectionToJavascript": "Fullstack dev with a love for front ends",
 	// what can you contribute to the bar camp (required)
 	"whatCanIContribute": "Niche insights into react-admin, WebHID, showing dicom images in the browser and how you create instruments for a flight simulator with React.",
+	// if you want a T-Shirt we need your size and variant preference (optional)
+	// the following sizes are available: S, M, L, XL, 2XL, 3XL (only regular cut)
+	"tShirtSize": "L",
 	// your LinkedIn profile URL
 	"linkedin": "https://www.linkedin.com/in/alex-weiss%C3%B6rtel/"
 }
