@@ -38,7 +38,7 @@
 	//            if you have gluten free diet, please make backup plans.
 	// "allergies": ["Gluten", "Peanuts"],
 	// tell us a few words how JavaScript affects you (required)
-	"whatIsMyConnectionToJavascript": "I am a sucker for the web platform",
+	"whatIsMyConnectionToJavascript": "Web developer by heart, contributor to Node.js",
 	// what can you contribute to the bar camp (required)
 	"whatCanIContribute": "I can give a short talk on using web based maps (MapLibre GL JS) and one on using SQLite in the browser with their WASM build",
 	// if you want a T-Shirt we need your size and variant preference (optional)
