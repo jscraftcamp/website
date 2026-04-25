@@ -1,0 +1,28 @@
+// vim: ft=jsonc
+{
+	"realName": {
+		"givenName": "Frank",
+		"familyName": "Elsinga",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "CommanderStorm",
+	"company": "Independent / MapLibre",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["Vue.js", "TypeScript", "MapLibre", "Maps", "Performance", "WebGL"],
+	// if you only eat vegan food (optional)
+	"vegan": false,
+	// if you only eat vegan or vegetarian food (optional)
+	"vegetarian": false,
+	"allergies": [],
+	// tell us a few words how JavaScript affects you (required)
+	"whatIsMyConnectionToJavascript": "JavaScript powers the frontend work I do in OSS, primarily the MapLibre ecosystem. I like to spend time chasing ms in our rendering pipelines and backends that feed them.",
+	// what can you contribute to the bar camp (required)
+	"whatCanIContribute": "A short talk or discussion on what it takes to make modern maps (and similar systems) fast - profiling, hot paths, ...",
+	"tShirtSize": "XL",
+	"linkedin": "https://www.linkedin.com/in/frank-elsinga"
+}
