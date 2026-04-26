@@ -1,5 +1,5 @@
 const LEGAL_SUFFIXES =
-	/\s+(?:ag|co\s*kg|e\.?\s*k|e\.?\s*v|eg|gbr|gmbh|gmdbh|inc|kg|ltd|llc|ohg|se|ug(?:\s*\(haftungsbeschr[aä]nkt\))?)\s*$/i;
+	/\s+(?:ag|(?:gem\.?\s*)?gmbh\s*&\s*co\.?\s*kg|co\s*kg|e\.?\s*k\.?|e\.?\s*v\.?|eg|gbr|(?:g|gem\.?\s*)?gmbh|gmdbh|inc|kg|ltd|llc|\S*gesellschaft\s*mbh|mbh|ohg|se|ug(?:\s*\(haftungsbeschr(?:ae|[aä])nkt\))?)\s*$/i;
 
 export function normalizeCompanyKey(name: string): string {
 	return name
