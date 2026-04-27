@@ -31,7 +31,7 @@
 		<h3 class="text-xl font-bold sm:text-2xl">Become a Sponsor</h3>
 
 		<p class="text-sm leading-relaxed text-white/60 sm:text-base">
-			For almost 10 years, JSCraftCamp has brought developers together — free and run by volunteers.
+			JSCraftCamp is free and run by volunteers.
 			Help us make {getYear()} happen and connect with passionate tech enthusiasts.
 		</p>
 

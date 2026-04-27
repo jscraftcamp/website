@@ -40,7 +40,7 @@
 	}
 </script>
 
-<Card class={cn('h-full justify-between px-2 py-4 sm:px-4 sm:py-4', className)}>
+<Card class={cn('h-full justify-between px-2 py-6 sm:px-6 sm:py-8', className)}>
 	<div class="flex items-baseline gap-2">
 		<span class="inline-block w-24 font-bold text-primary-700">{agenda.dayLabel}</span>
 		<span class="inline-block w-24 text-primary-700">{agenda.date}</span>
