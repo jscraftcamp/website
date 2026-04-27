@@ -50,8 +50,18 @@
 			<EventPhotos class="lg:col-span-2" photos={data.eventPhotos} />
 
 			<!-- Row 6: Timelines (full width, taller) -->
-			<Timeline class="min-h-48 lg:col-span-3" agenda={fridayAgenda} slots={allTimeSlots} registered={data.fridayParticipants} />
-			<Timeline class="min-h-48 lg:col-span-3" agenda={saturdayAgenda} slots={allTimeSlots} registered={data.saturdayParticipants} />
+			<Timeline
+				class="min-h-48 lg:col-span-3"
+				agenda={fridayAgenda}
+				slots={allTimeSlots}
+				registered={data.fridayParticipants}
+			/>
+			<Timeline
+				class="min-h-48 lg:col-span-3"
+				agenda={saturdayAgenda}
+				slots={allTimeSlots}
+				registered={data.saturdayParticipants}
+			/>
 		</div>
 	</Content>
 	<Content>

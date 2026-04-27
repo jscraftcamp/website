@@ -22,16 +22,20 @@
 				stroke="currentColor"
 				stroke-width="2"
 			>
-				<path stroke-linecap="round" stroke-linejoin="round" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+				/>
 			</svg>
 		</div>
 
 		<h3 class="text-xl font-bold sm:text-2xl">What is JSCraftCamp?</h3>
 
 		<p class="text-sm leading-relaxed text-white/60 sm:text-base">
-			A free, community-driven JavaScript unconference in Munich. For almost 10 years,
-			developers of all backgrounds have come together for two days of open sessions, workshops,
-			and discussions. No fixed agenda. Participants shape the program on the day.
+			A free, community-driven JavaScript unconference in Munich. For almost 10 years, developers of
+			all backgrounds have come together for two days of open sessions, workshops, and discussions.
+			No fixed agenda. Participants shape the program on the day.
 		</p>
 	</div>
 </Card>
