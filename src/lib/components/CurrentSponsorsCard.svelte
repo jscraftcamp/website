@@ -2,6 +2,9 @@
 	import { sponsors, thankYouTranslations } from '$lib/config/sponsoring';
 	import Card from '$lib/layout/Card.svelte';
 	import { cn } from '$lib/utils/cn';
+	import { dragScroll } from '$lib/utils/drag-scroll';
+	import { shuffle } from '$lib/utils/shuffle';
+	import { onMount } from 'svelte';
 
 	interface Props {
 		class?: string;
@@ -9,7 +12,15 @@
 
 	let { class: className = '' }: Props = $props();
 
-	const baseSponsors = sponsors;
+	// Shuffle sponsor order on every page load so no sponsor is always first/last.
+	// Must happen after mount to avoid SSR/hydration mismatch.
+	let baseSponsors = $state([...sponsors]);
+	let ready = $state(false);
+
+	onMount(() => {
+		baseSponsors = shuffle(sponsors);
+		ready = true;
+	});
 
 	// Duplicate items for seamless infinite scroll
 	const duplicatedTranslations = [...thankYouTranslations, ...thankYouTranslations];
@@ -34,8 +45,7 @@
 		repeatCount > 0 ? Array(repeatCount).fill(baseSponsors).flat() : []
 	);
 
-	// Calculate duration: faster for small groups
-	const scrollDuration = $derived(isSmallCount ? '20s' : '40s');
+	const scrollDuration = $derived(`${Math.max(10, baseSponsors.length * 2.5)}s`);
 </script>
 
 <Card
@@ -57,10 +67,17 @@
 	</div>
 
 	{#if baseSponsors.length > 0}
-		<div class="scroll-container w-full overflow-hidden py-3" style="container-type: inline-size">
+		<div
+			class="scroll-container w-full overflow-hidden py-3 transition-opacity duration-500 {ready
+				? 'opacity-100'
+				: 'opacity-0'}"
+			style="container-type: inline-size"
+		>
 			<div
-				class="flex w-max animate-scroll-right items-center"
-				style="animation-duration: {scrollDuration}; animation-timing-function: linear;"
+				class="flex w-max animate-scroll-right cursor-grab touch-pan-y items-center select-none"
+				style="--scroll-right-animation-duration: {scrollDuration}"
+				data-duration={scrollDuration.replace('s', '')}
+				use:dragScroll
 			>
 				{#if isSmallCount}
 					{#each [0, 1] as i (i)}
@@ -129,12 +146,6 @@
 	.animate-scroll-left,
 	.animate-scroll-right {
 		will-change: transform;
-	}
-
-	/* Pause animation on hover for accessibility */
-	.scroll-container:hover :global(.animate-scroll-left),
-	.scroll-container:hover :global(.animate-scroll-right) {
-		animation-play-state: paused;
 	}
 
 	/* Support for users with motion sensitivity */

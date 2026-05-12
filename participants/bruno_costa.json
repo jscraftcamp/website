@@ -1,0 +1,27 @@
+{
+	"realName": {
+		"givenName": "Bruno",
+		"familyName": "Costa",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "bcostaaa01",
+	"codebergAccountName": "",
+	"company": "Synaps",
+	"when": {
+		// June 12th, 2026
+		"friday": true,
+		// June 13th, 2026
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["TypeScript", "React", "Vue", "Supabase", "Pinia"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "I built and worked a lot with JS and TS for almost 6 years now. I love Vue, React and anything frontend- and web design-related. Sometimes I open a PR or two in open source projects or write articles.",
+	"whatCanIContribute": "Maybe a talk",
+	"tShirtSize": "S",
+	"linkedin": "https://www.linkedin.com/in/bruno-miguel-alves-costa/",
+	"website": "https://bruno-costa.dev/"
+}

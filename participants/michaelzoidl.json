@@ -1,0 +1,23 @@
+{
+	"realName": {
+		"givenName": "Michael",
+		"familyName": "Zoidl",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "michaelzoidl",
+	"company": "alm engineering",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["Node.js", "TypeScript", "GenAI", "Qdrant", "pgvector", "Qwen3", "European AI", "AI Agents", "Developer Tools"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "Building products with JS/TS for years — from frontends to backends to AI-powered tooling.",
+	"whatCanIContribute": "Sessions around AI agents, developer tooling, or just good conversations.",
+	"tShirtSize": "2XL",
+	"linkedin": "https://www.linkedin.com/in/michael-j-zoidl/"
+}

@@ -1,0 +1,25 @@
+{
+	"realName": {
+		"givenName": "Marco",
+		"familyName": "Emrich",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "jscraftcamp",
+	"codebergAccountName": "",
+	"company": "codecentric",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["EXACT-Coding", "TDD", "BDD", "TCR", "Agentic Coding", "Architecture", "DDD"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "Frontend Dev, JSCraftcamp facilitator ;)",
+	"whatCanIContribute": "EXACT-Coding, TCR, ...",
+	"tShirtSize": "XXL",
+	"linkedin": "https://www.linkedin.com/in/marco-emrich/",
+	"website": "https://codecentric.de"
+}

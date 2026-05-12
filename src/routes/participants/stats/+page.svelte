@@ -7,6 +7,7 @@
 	import type { PageData } from './$types';
 	import { base } from '$app/paths';
 	import { cn } from '$lib/utils/cn';
+	import crownIcon from '$lib/icons/crown.svg?raw';
 
 	interface Props {
 		data: PageData;
@@ -271,7 +272,11 @@
 							{#each companies.toSorted(actualSorter) as { name, amount, isSponsor } (name)}
 								<tr class="border-b border-gray-700/50 last:border-b-0">
 									<td class="w-8 px-1 py-2 text-center">
-										{#if isSponsor}<span title="Sponsor">👑</span>{/if}
+										{#if isSponsor}<span
+												class="mt-1 inline-block h-4 w-4 text-primary-500 *:size-full"
+												title="Sponsor"
+												aria-label="Sponsor">{@html crownIcon}</span
+											>{/if}
 									</td>
 									<td class="px-3 py-2 text-gray-300">{name}</td>
 									<td class="px-3 py-2 text-white">{amount}</td>

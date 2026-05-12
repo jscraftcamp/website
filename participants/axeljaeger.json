@@ -1,0 +1,31 @@
+{
+	"realName": {
+		"givenName": "Axel",
+		"familyName": "Jäger",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "axeljaeger",
+	"codebergAccountName": "",
+	"company": "arculus GmbH",
+	// either both days or at least one day has to be set to true.
+	// If you cannot make one of the days, please set it to false, to allow someone else take that spot!
+	"when": {
+		// June 27th, 2025
+		"friday": true,
+		// June 28th, 2025
+		"saturday": true
+	},
+	// if you are willing to take session notes and publish them to github (required)
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["WebGL", "Angular", "CI", "3D Graphics", "3D Printing"],
+	"vegan": false,
+	"vegetarian": true,
+	"allergies": [],
+	// tell us a few words how JavaScript affects you (required)
+	"whatIsMyConnectionToJavascript": "I create user interfaces since I am a teenager and I am happy that with JavaScript and Web Tech, I finally have the tools to bring my ideas to life.",
+	"whatCanIContribute": "Talk about WebGL, 3D Graphics and 3D Printing",
+	"tShirtSize": "M",
+	"linkedin": "https://www.linkedin.com/in/jaegeraxel/",
+	"X": "axeljaeger"
+}

@@ -1,0 +1,21 @@
+// vim: ft=jsonc
+// Please provide your info in your own .json file.
+// See https://jscraftcamp.org/registration for more information
+{
+	"realName": {
+		"givenName": "Anna",
+		"familyName": "Dick"
+	},
+	"githubAccountName": "AnnaD91",
+	"company": "Raya Diagnostics GmbH",
+	"when": {
+		"friday": true,
+		"saturday": false
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["React", "react-admin", "Typescript", "FrontendArchitecture", "FrontendTesting", "ClaudeCode"],
+	"vegan": true,
+	"whatIsMyConnectionToJavascript": "I work as a software developer",
+	"whatCanIContribute": "After a career change via a neue fische GmbH bootcamp 2 years ago, I landed my first IT job. Happy to share experiences and tips for career changers entering tech.",
+	"linkedin": "https://www.linkedin.com/in/anna-dick/"
+}

@@ -1,13 +1,15 @@
+import alm from './logos/alm-engineering.svg';
 import tng from './logos/tng.svg';
 import stackForge from './logos/stack-forge.svg';
-import seorank from './logos/seorank.svg';
 import inovex from './logos/inovex-logo.png';
 import scalable from './logos/scalable.svg';
 import saab from './logos/saab-white.svg';
 import composeUs from './logos/compose-us-white.svg';
 import inspiredconsulting from './logos/inspired-consulting.svg';
+import peerigon from './logos/peerigon_white.svg';
 import pastely from './logos/pastely.svg';
 import type { Sponsor } from './types';
+import { normalizeCompanyKey } from '$lib/participants/normalize-company';
 
 export const sponsors: Sponsor[] = [
 	{
@@ -20,13 +22,7 @@ export const sponsors: Sponsor[] = [
 		image: stackForge,
 		link: 'https://www.stack-forge.eu',
 		name: 'StackForge',
-		sponsoring: 'Snacks'
-	},
-	{
-		image: seorank,
-		link: 'https://seorank.tech',
-		name: 'SEORank.tech',
-		sponsoring: 'various'
+		sponsoring: 'T-Shirts'
 	},
 	{
 		image: inovex,
@@ -63,19 +59,25 @@ export const sponsors: Sponsor[] = [
 		link: 'https://www.pastely.eu',
 		name: 'Pastely',
 		sponsoring: 'Stickers'
-	}
+	},
 	// {
 	// 	image: allPrintCut,
 	// 	link: 'https://allprintcut.com/',
 	// 	name: 'All Print Cut',
 	// 	sponsoring: 'Stickers'
 	// },
-	// {
-	// 	image: alm,
-	// 	link: 'https://alm.sh',
-	// 	name: 'Alm Engineering',
-	// 	sponsoring: '500 €'
-	// },
+	{
+		image: alm,
+		link: 'https://alm.sh',
+		name: 'alm engineering',
+		sponsoring: '500 €'
+	},
+	{
+		image: peerigon,
+		link: 'https://peerigon.com',
+		name: 'peerigon',
+		sponsoring: 'Coffee / Barista'
+	}
 	// {
 	// 	image: codecentric,
 	// 	link: 'https://www.codecentric.de',
@@ -124,12 +126,7 @@ export const sponsors: Sponsor[] = [
 	// 	name: 'Inspired Consulting',
 	// 	sponsoring: '300 €'
 	// },
-	// {
-	// 	image: peerigon,
-	// 	link: 'https://peerigon.com',
-	// 	name: 'peerigon',
-	// 	sponsoring: 'Coffee / Barista'
-	// },
+
 	// {
 	// 	image: saab,
 	// 	link: 'https://www.saab.com',
@@ -157,10 +154,8 @@ export const sponsors: Sponsor[] = [
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export const isSponsor = (key: string) => {
-	return sponsors.some(
-		(sponsor) =>
-			sponsor.name.replace(/\s/g, '-').toLowerCase() === key.replace(/\s/g, '-').toLowerCase()
-	);
+	const normalizedKey = normalizeCompanyKey(key);
+	return sponsors.some((sponsor) => normalizeCompanyKey(sponsor.name) === normalizedKey);
 };
 
 // "Thank You" in multiple languages for the scrolling banner

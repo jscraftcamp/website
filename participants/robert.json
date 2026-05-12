@@ -1,0 +1,38 @@
+{
+	"realName": {
+		"givenName": "Robert",
+		"familyName": "Hostlowsky",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": true
+	},
+	"githubAccountName": "lowsky",
+	"codebergAccountName": "lowsky",
+	"company": "instana",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": [
+		"lofi",
+		"localfirst",
+		"a11y",
+		"design systems",
+    "a11y",
+		"OTEL",
+		"performance",
+		"micro frontends",
+		"typescript",
+		"GraphQL"
+	],
+	"vegan": true,
+	"vegetarian": false,
+  "allergies": [],
+	"whatIsMyConnectionToJavascript": "Got in love with JS years ago. JS IS my production env every day. The creativity and innovations of its community is inspiring me every day.",
+	"whatCanIContribute": "Why is localfirst a next thing. Let's talk about design systems and migratin. Let's talk about scaling huge web sites architecture, or web performance. AMA related to GraphQL",
+	"tShirtSize": "M",
+	"mastodon": "https://mastodontech.de/@lowsky",
+	"linkedin": null,
+  "X": null,
+	"website": "https://www.coolboard.eu"
+}

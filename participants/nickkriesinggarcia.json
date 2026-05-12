@@ -1,0 +1,23 @@
+{
+	"realName": {
+		"givenName": "Nick",
+		"familyName": "Kriesing Garcia",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "Pichi11",
+	"company": "HTW Berlin",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["Green Coding", "Green IT", "Sustainability"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": ["Seafood"],
+	"whatIsMyConnectionToJavascript": "I use it for most of my projects",
+	"whatCanIContribute": "I have built some knowloedge on IT and Sustainability and am ready to talk about it and learn from others",
+	"tShirtSize": "L",
+	"linkedin": "https://www.linkedin.com/in/nickkriesinggarcia/"
+}

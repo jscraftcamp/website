@@ -1,0 +1,27 @@
+{
+	"realName": {
+		"givenName": "Kai",
+		"familyName": "Kilian",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "kaikilian",
+	"codebergAccountName": "",
+	"company": "RTL Technology GmbH",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["React", "TypeScript", "HbbTV", "Claude Code"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "Working with JS for nearly 15 years now and still love it and wanting to learn more and improve my knowledge!",
+	"whatCanIContribute": "If any help is needed I can try to. Other than that I can bring some niche knowledge about making JS apps for TVs",
+	"tShirtSize": "XL",
+	"mastodon": "",
+	"linkedin": "https://www.linkedin.com/in/kai-kilian/",
+	"X": "",
+	"website": ""
+}

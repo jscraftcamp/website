@@ -1,0 +1,27 @@
+{
+  "realName": {
+    "givenName": "Jonathan",
+    "familyName": "Häberle",
+    "placeFamilyNameFirst": false,
+    "hideFamilyNameOnWebsite": false
+  },
+  "githubAccountName": "jscraftcamp",
+  "codebergAccountName": "",
+  "company": "alm engineering",
+  "when": {
+    "friday": true,
+    "saturday": true
+  },
+  "iCanTakeNotesDuringSessions": true,
+  "tags": ["TypeScript", "Node.js", "React", "DDD", "AI-Assisted Development", "Storybook", "GraphQL"],
+  "vegan": false,
+  "vegetarian": false,
+  "allergies": [],
+  "whatIsMyConnectionToJavascript": "I work with JavaScript over +15 years",
+  "whatCanIContribute": "Domain modeling workflows, AI-assisted development practices, 20+ years of cross-domain software experience",
+  "tShirtSize": "S",
+  "mastodon": "",
+  "linkedin": "",
+  "X": "dreampulse",
+  "website": "https://alm.sh"
+}

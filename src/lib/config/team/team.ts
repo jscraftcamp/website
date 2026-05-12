@@ -16,11 +16,13 @@ export const team: TeamMember[] = [
 		name: 'Ariadne Engelbrecht',
 		email: 'Ariadne.Engelbrecht@curiosdevcookie.dev',
 		linkedin: 'https://www.linkedin.com/in/ariadne-engelbrecht/',
+		github: 'https://github.com/curiosdevcookie',
 		image: ariadne
 	},
 	{
 		name: 'Bernd Kaiser',
 		linkedin: 'https://www.linkedin.com/in/bernd-kaiser/',
+		github: 'https://github.com/meldron',
 		image: bernd
 	},
 	{
@@ -34,17 +36,20 @@ export const team: TeamMember[] = [
 		name: 'Leo Kettmeir',
 		email: 'leo@deno.com',
 		linkedin: 'https://www.linkedin.com/in/leo-kettmeir/',
+		github: 'https://github.com/crowlkats',
 		image: leo
 	},
 	{
 		name: 'Michael Zoidl',
 		email: 'michael@alm.sh',
+		github: 'https://github.com/michaelzoidl',
 		image: michael
 	},
 	{
 		name: 'Patrick Piedad',
 		email: 'patrickpiedad@gmail.com',
 		linkedin: 'https://www.linkedin.com/in/patrick-piedad/',
+		github: 'https://github.com/patrickpiedad',
 		image: patrickp
 	},
 	{
@@ -70,6 +75,18 @@ export const team: TeamMember[] = [
 		email: 'w@kriesing.de',
 		linkedin: 'https://www.linkedin.com/in/wolframkriesing/',
 		github: 'https://github.com/wolframkriesing',
+		codeberg: 'https://codeberg.org/wolframkriesing',
 		image: wolfram
 	}
 ];
+
+export type OrgaUsername = { platform: 'github' | 'codeberg'; username: string };
+
+const extractUsername = (url: string) => url.split('/').pop()!;
+
+export const orgaUsernames: OrgaUsername[] = team.flatMap((m) => {
+	const entries: OrgaUsername[] = [];
+	if (m.github) entries.push({ platform: 'github', username: extractUsername(m.github) });
+	if (m.codeberg) entries.push({ platform: 'codeberg', username: extractUsername(m.codeberg) });
+	return entries;
+});

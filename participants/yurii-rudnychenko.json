@@ -1,0 +1,31 @@
+{
+	"realName": {
+		"givenName": "Yurii",
+		"familyName": "Rudnychenko",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "yuriirud1",
+	"codebergAccountName": "",
+	"company": "Valuetek",
+	// either both days or at least one day has to be set to true.
+	// If you cannot make one of the days, please set it to false, to allow someone else take that spot!
+	"when": {
+		// June 27th, 2025
+		"friday": true,
+		// June 28th, 2025
+		"saturday": true
+	},
+	// if you are willing to take session notes and publish them to github (required)
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["Angular", "CI", "Playwright", "TypeScript", "NestJS", "Node.js"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": [],
+	// tell us a few words how JavaScript affects you (required)
+	"whatIsMyConnectionToJavascript": "I'm a full-stack developer with a passion for building web applications. I've been using JavaScript and TypeScript for over 10 years and I'm always looking for new ways to improve my skills.",
+	"whatCanIContribute": "Angular Architecture, CI/CD, Playwright, TypeScript, NestJS, Node.js",
+	"tShirtSize": "XL",
+	"linkedin": "https://www.linkedin.com/in/yurii-r-aaab01101/",
+	"X": ""
+}

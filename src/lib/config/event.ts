@@ -25,6 +25,9 @@ export interface EventConfig {
 
 	/** Whether registration is open for Saturday */
 	saturdayRegistrationOpen: boolean;
+
+	/** Maximum number of participants per day */
+	maxParticipantsPerDay: number;
 }
 
 export const eventConfig: EventConfig = {
@@ -34,7 +37,8 @@ export const eventConfig: EventConfig = {
 	registrationOpensAt: new Date('2026-04-13T07:00:00Z'),
 	registrationClosesAt: new Date('2026-06-11T12:00:00Z'),
 	fridayRegistrationOpen: false,
-	saturdayRegistrationOpen: false
+	saturdayRegistrationOpen: false,
+	maxParticipantsPerDay: 100
 };
 
 export function getDaysToGo(): number {

@@ -9,7 +9,10 @@
 	import EventPhotos from '$lib/components/EventPhotosCard.svelte';
 	import LocationCard from '$lib/components/LocationCard.svelte';
 	import RegistrationCard from '$lib/components/RegistrationCard.svelte';
+	import SkillLevelsCard from '$lib/components/SkillLevelsCard.svelte';
+	import WhatIsJSCraftCamp from '$lib/components/WhatIsJSCraftCampCard.svelte';
 	import { fridayAgenda, saturdayAgenda, allTimeSlots } from '$lib/config/agenda';
+	import { eventConfig } from '$lib/config/event';
 	import type { PageData } from './$types';
 	import Content from '$lib/layout/Content.svelte';
 
@@ -18,29 +21,47 @@
 	}
 
 	let { data }: Props = $props();
+
+	const spotsLeft =
+		eventConfig.maxParticipantsPerDay -
+		Math.min(data.fridayParticipants, data.saturdayParticipants);
 </script>
 
 <PageLayout>
 	<Content>
 		<div class="grid grid-cols-1 gap-4 pb-8 lg:grid-cols-3">
-			<!-- Row 1: Header + SponsorRequired -->
-			<Header class="lg:col-span-2" />
-			<SponsorRequired />
+			<!-- Row 1: Header + What is JSCraftCamp -->
+			<Header class="lg:col-span-2" {spotsLeft} />
+			<WhatIsJSCraftCamp />
 
-			<!-- Row 2: SponsorCard (full width) -->
+			<!-- Row 2: Skill Levels (full width) -->
+			<SkillLevelsCard class="lg:col-span-3" />
+
+			<!-- Row 3: Sponsors (full width) -->
 			<SponsorCard class="lg:col-span-3" />
 
-			<!-- Row 3: Photo + Location + Unconference -->
-			<EventPhotos photos={data.eventPhotos} />
+			<!-- Row 4: Become a Sponsor + Location + Unconference -->
+			<SponsorRequired />
 			<LocationCard />
 			<UnconferenceDescription />
 
-			<!-- Row 4: Registration + Timelines -->
+			<!-- Row 5: Registration + Photos (2 cols) -->
 			<RegistrationCard />
-			<div class="flex h-full flex-col justify-between gap-4 lg:col-span-2">
-				<Timeline agenda={fridayAgenda} slots={allTimeSlots} />
-				<Timeline agenda={saturdayAgenda} slots={allTimeSlots} />
-			</div>
+			<EventPhotos class="lg:col-span-2" photos={data.eventPhotos} />
+
+			<!-- Row 6: Timelines (full width, taller) -->
+			<Timeline
+				class="min-h-48 lg:col-span-3"
+				agenda={fridayAgenda}
+				slots={allTimeSlots}
+				registered={data.fridayParticipants}
+			/>
+			<Timeline
+				class="min-h-48 lg:col-span-3"
+				agenda={saturdayAgenda}
+				slots={allTimeSlots}
+				registered={data.saturdayParticipants}
+			/>
 		</div>
 	</Content>
 	<Content>

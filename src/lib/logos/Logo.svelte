@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Logo from './Logo2026.svelte';
+
 	interface Props {
 		style?: string;
 	}
@@ -6,4 +8,4 @@
 	let { style = '' }: Props = $props();
 </script>
 
-<img src="/logos/2026/logo.svg" alt="JSCraftCamp Logo" style="height: 8em; {style}" />
+<Logo {style} />
