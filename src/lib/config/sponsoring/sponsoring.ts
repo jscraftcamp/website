@@ -8,6 +8,7 @@ import composeUs from './logos/compose-us-white.svg';
 import inspiredconsulting from './logos/inspired-consulting.svg';
 import peerigon from './logos/peerigon_white.svg';
 import pastely from './logos/pastely.svg';
+import tiffingerthiel from './logos/tiffinger-thiel.svg';
 import type { Sponsor } from './types';
 import { normalizeCompanyKey } from '$lib/participants/normalize-company';
 
@@ -77,6 +78,13 @@ export const sponsors: Sponsor[] = [
 		link: 'https://peerigon.com',
 		name: 'peerigon',
 		sponsoring: 'Coffee / Barista'
+	},
+	{
+		image: tiffingerthiel,
+		link: 'https://tiffinger-thiel.de/',
+		name: 'Tiffinger & Thiel GmbH',
+		sponsoring: 'Pizza',
+		scrollingMaxWidth: 'max-w-68'
 	}
 	// {
 	// 	image: codecentric,
@@ -133,12 +141,7 @@ export const sponsors: Sponsor[] = [
 	// 	name: 'Saab',
 	// 	sponsoring: 'Breakfast & Energy Drinks'
 	// },
-	// {
-	// 	image: tiffingerthiel,
-	// 	link: 'https://tiffinger-thiel.de/',
-	// 	name: 'Tiffinger & Thiel GmbH',
-	// 	sponsoring: 'Beverages'
-	// },
+
 	// {
 	// 	image: twilio,
 	// 	link: 'https://twilio.com/',

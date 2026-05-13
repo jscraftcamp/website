@@ -120,7 +120,7 @@
 							<img
 								src={sponsor.image}
 								alt={sponsor.name}
-								class="h-16 w-auto max-w-48 object-contain"
+								class="h-16 w-auto {sponsor.scrollingMaxWidth ?? 'max-w-48'} object-contain"
 							/>
 							<span class="text-xs font-medium text-stone-400">{sponsor.name}</span>
 						</a>
