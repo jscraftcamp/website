@@ -48,4 +48,36 @@ describe('Participants', async () => {
 			});
 		});
 	}
+
+	describe('githubAccountName', async () => {
+		const participantsByFile = await Promise.all(
+			participantJsonPaths.map(async (file) => ({
+				file,
+				githubAccountName: (await parseParticipantJson(file)).githubAccountName
+			}))
+		);
+
+		it('must not be "jscraftcamp" (the placeholder from _template.json)', () => {
+			const offenders = participantsByFile.filter((p) => p.githubAccountName === 'jscraftcamp');
+
+			expect(offenders).toEqual([]);
+		});
+
+		it('must be unique across all participants', () => {
+			const firstSeenBy = new Map<string, string>();
+			const duplicates: { githubAccountName: string; files: string[] }[] = [];
+
+			for (const { file, githubAccountName } of participantsByFile) {
+				if (!githubAccountName) continue;
+				const previousFile = firstSeenBy.get(githubAccountName);
+				if (previousFile) {
+					duplicates.push({ githubAccountName, files: [previousFile, file] });
+				} else {
+					firstSeenBy.set(githubAccountName, file);
+				}
+			}
+
+			expect(duplicates).toEqual([]);
+		});
+	});
 });
