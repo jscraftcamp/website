@@ -32,6 +32,10 @@
 				<p>
 					<CtaLink href={githubNewParticipantUrl} external>Register on GitHub</CtaLink>
 				</p>
+				<p>
+					Already registered? To update your details, open another pull request with changes to your
+					JSON file. To cancel, see <strong>Cancel your registration</strong> below.
+				</p>
 			{:else if registrationState === 'not-yet' && eventConfig.registrationOpensAt}
 				<h2>Registration opens soon</h2>
 				<p>
@@ -53,8 +57,8 @@
 					<a href="{base}/participants/">participants page</a>.
 				</p>
 				<p>
-					Need to change your registration? Contact us at
-					<a href="mailto:team@jscraftcamp.org">team@jscraftcamp.org</a>.
+					Already registered and need to change or cancel? See
+					<strong>Cancel your registration</strong> below.
 				</p>
 			{/if}
 		</Card>
