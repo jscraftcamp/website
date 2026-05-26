@@ -8,7 +8,8 @@
 	import RegistrationTemplate from '../../../participants/_template.json?raw';
 
 	const registrationState = getRegistrationState();
-	const githubNewParticipantUrl = 'https://github.com/jscraftcamp/website/new/main/participants';
+	const githubNewParticipantFilename = 'your_name.json';
+	const githubNewParticipantUrl = `https://github.com/jscraftcamp/website/new/main/participants?filename=${encodeURIComponent(githubNewParticipantFilename)}&value=${encodeURIComponent(RegistrationTemplate)}`;
 	const templateUrl =
 		'https://github.com/jscraftcamp/website/blob/main/participants/_template.json';
 </script>
@@ -21,7 +22,8 @@
 			{#if registrationState === 'open'}
 				<h2>Registration is open</h2>
 				<p>
-					Welcome! To register for JSCraftCamp, open a pull request on GitHub that adds your
+					Welcome and thank you for your interest in joining our event as a participant! To register
+					for JSCraftCamp, open a pull request on GitHub that adds your
 					<code>participants/yourname.json</code> file. After your PR is merged, you will appear on
 					the
 					<a href="{base}/participants/">participants page</a>.
@@ -64,6 +66,19 @@
 		</Card>
 
 		<Card>
+			<h2>Why are you making us do this?</h2>
+			<p>
+				JSCraftCamp is free and open to developers of any skill level. Registration via pull request
+				is intentional: we want people who register to put in a little effort up front, so we keep
+				no-show rates low — a common challenge at free events.
+			</p>
+			<p>
+				In practice, you “pay” with your time instead of money. Opening a PR shows us your
+				commitment and helps us plan food, space, and the participant list with more confidence.
+			</p>
+		</Card>
+
+		<Card>
 			<h2>Before you register</h2>
 			<ul>
 				<li>
@@ -94,8 +109,8 @@
 				</li>
 				<li>
 					<strong>JSON fields:</strong> Read the comments in the
-					<a href={templateUrl} rel="external">registration template</a>. They explain every field.
-					Questions?
+					<a href={templateUrl} rel="external">registration template</a>. They should explain every
+					field. If something is unclear, please tell us! Questions?
 					<a href="mailto:team@jscraftcamp.org">Contact the team</a>.
 				</li>
 				<li>
@@ -140,14 +155,16 @@
 			<h2>How to register</h2>
 			<ol class="steps">
 				<li>
-					Read <strong>Before you register</strong> and <strong>Photography and red dots</strong> on
-					this page.
+					Read <strong>Why are you making us do this?</strong>,
+					<strong>Before you register</strong>, and <strong>Photography and red dots</strong> on this
+					page.
 				</li>
 				<li>Log in to <a href="https://github.com" rel="external">GitHub</a>.</li>
 				<li>
 					<a href={githubNewParticipantUrl} rel="external">Create a new file</a> in the
-					<code>participants/</code> folder. Name it <code>yourgithubusername.json</code> (use your GitHub
-					username).
+					<code>participants/</code> folder (opens with the registration template pre-filled).
+					Rename
+					<code>your_name.json</code> to <code>yourgithubusername.json</code> using your GitHub username.
 				</li>
 				<li>
 					Copy the <a href={templateUrl} rel="external">registration template</a>, fill in the
