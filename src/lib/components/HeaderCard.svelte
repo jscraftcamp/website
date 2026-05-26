@@ -8,6 +8,7 @@
 		getShortYear,
 		getYear
 	} from '$lib/config/event';
+	import CtaLink from '$lib/components/CtaLink.svelte';
 	import Card from '$lib/layout/Card.svelte';
 	import { cn } from '$lib/utils/cn';
 
@@ -96,26 +97,15 @@
 			<!-- Registration button -->
 			<div class="mt-4">
 				{#if registrationState === 'open'}
-					<a
-						href="/registration"
-						class="inline-block rounded-full bg-emerald-700 px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-emerald-800"
-					>
-						Register now
-					</a>
+					<CtaLink href="/registration">Register now</CtaLink>
 				{:else if registrationState === 'not-yet'}
-					<span
-						class="inline-block rounded-full bg-stone-600/80 px-6 py-2.5 text-sm font-semibold text-stone-200"
-					>
+					<CtaLink variant="muted">
 						Registration opens in {daysUntilRegistration} day{daysUntilRegistration === 1
 							? ''
 							: 's'}
-					</span>
+					</CtaLink>
 				{:else}
-					<span
-						class="inline-block rounded-full bg-stone-600/80 px-6 py-2.5 text-sm font-semibold text-stone-200"
-					>
-						Registration closed
-					</span>
+					<CtaLink variant="muted">Registration closed</CtaLink>
 				{/if}
 			</div>
 		</div>

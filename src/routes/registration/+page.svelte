@@ -2,6 +2,7 @@
 	import { base } from '$app/paths';
 	import { socialLinks } from '$lib/config/social';
 	import { eventConfig, getRegistrationState } from '$lib/config/event';
+	import CtaLink from '$lib/components/CtaLink.svelte';
 	import Card from '$lib/layout/Card.svelte';
 	import Content from '$lib/layout/Content.svelte';
 	import PageLayout from '$lib/layout/PageLayout.svelte';
@@ -29,14 +30,7 @@
 					<a href="{base}/participants/">participants page</a>.
 				</p>
 				<p>
-					<a
-						href={githubNewParticipantUrl}
-						rel="external"
-						target="_blank"
-						class="register-cta inline-block rounded-full bg-emerald-700 px-6 py-2.5 text-sm font-semibold no-underline transition-colors hover:bg-emerald-800"
-					>
-						Register on GitHub
-					</a>
+					<CtaLink href={githubNewParticipantUrl} external>Register on GitHub</CtaLink>
 				</p>
 			{:else if registrationState === 'not-yet' && eventConfig.registrationOpensAt}
 				<h2>Registration opens soon</h2>
@@ -164,7 +158,8 @@
 					<a href={githubNewParticipantUrl} rel="external">Create a new file</a> in the
 					<code>participants/</code> folder (opens with the registration template pre-filled).
 					Rename
-					<code>your_name.json</code> to <code>yourgithubusername.json</code> using your GitHub username.
+					<code>your_name.json</code> to <code>yourgithubusername.json</code> (with your actual GitHub
+					username) or <code>firstname_lastname.json</code>
 				</li>
 				<li>
 					Copy the <a href={templateUrl} rel="external">registration template</a>, fill in the
@@ -241,11 +236,4 @@
 		margin: 0 0.15rem;
 	}
 
-	.register-cta {
-		color: white;
-	}
-
-	.register-cta:hover {
-		color: white;
-	}
 </style>
