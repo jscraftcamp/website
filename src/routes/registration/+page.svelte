@@ -175,8 +175,8 @@
 				<a href="https://github.com/jscraftcamp/website/tree/main/README.md" rel="external"
 					><code>README.md</code></a
 				>
-				for details). Invalid registrations are rejected by our automated checks. If you need help,
-				contact the team at <a href="mailto:team@jscraftcamp.org">team@jscraftcamp.org</a>.
+				for details). Invalid registrations are rejected by our automated checks. If you need help, contact
+				the team at <a href="mailto:team@jscraftcamp.org">team@jscraftcamp.org</a>.
 			</p>
 		</Card>
 
