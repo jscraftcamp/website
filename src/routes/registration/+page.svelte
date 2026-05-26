@@ -162,8 +162,8 @@
 					<a href={githubNewParticipantUrl} rel="external">Create a new file</a> in the
 					<code>participants/</code> folder (opens with the registration template pre-filled).
 					Rename
-					<code>your_name.json</code> to <code>yourgithubusername.json</code> (with your actual GitHub
-					username) or <code>firstname_lastname.json</code>
+					<code>your_name.json</code> to <code>yourgithubusername.json</code> (with your actual
+					GitHub username) or <code>firstname_lastname.json</code>
 				</li>
 				<li>
 					Copy the <a href={templateUrl} rel="external">registration template</a>, fill in the
@@ -239,5 +239,4 @@
 		vertical-align: middle;
 		margin: 0 0.15rem;
 	}
-
 </style>
