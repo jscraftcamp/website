@@ -1,0 +1,25 @@
+{
+	"realName": {
+		"givenName": "Lucas",
+		"familyName": "Treffenstädt",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "mithodin",
+	"company": "TNG Technology Consulting GmbH",
+	"when": {
+		"friday": true,
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": true,
+	"tags": ["TypeScript", "React", "Node.js", "TDD", "Svelte", "Angular", "Qwik", "Agentic Coding"],
+	"vegan": false,
+	"vegetarian": false,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "I use JavaScript and TypeScript for my daily work as a software developer.",
+	"whatCanIContribute": "I am an expert in TypeScript and love to stretch the type system to its limits.",
+	"tShirtSize": "2XL",
+	"mastodon": "https://toot.treffenstaedt.de/@lucas",
+	"linkedin": "https://linkedin.com/in/ltreffenstaedt",
+	"website": "https://lucas.treffenstaedt.de"
+}
