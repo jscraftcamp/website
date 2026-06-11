@@ -23,7 +23,7 @@
 		// June 12th, 2026
 		"friday": true,
 		// June 13th, 2026
-		"saturday": true
+		"saturday": false //Change in plan for personal work
 	},
 	// if you are willing to take session notes and publish them to github (required)
 	"iCanTakeNotesDuringSessions": false,
