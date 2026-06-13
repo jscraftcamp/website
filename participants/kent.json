@@ -1,0 +1,27 @@
+// vim: ft=jsonc
+// Please provide your info in your own .json file.
+// See https://jscraftcamp.org/registration for more information
+{
+	"realName": {
+		"givenName": "Kent",
+		"familyName": "Kwee",
+		"placeFamilyNameFirst": false,
+		"hideFamilyNameOnWebsite": false
+	},
+	"githubAccountName": "kentkwee",
+	"company": "TNG Technology Consulting GmbH",
+	"when": {
+		// June 12th, 2026
+		"friday": false,
+		// June 13th, 2026
+		"saturday": true
+	},
+	"iCanTakeNotesDuringSessions": false,
+	"tags": ["TypeScript", "Node.js", "Svelte", "Angular", "AWS"],
+	"vegan": false,
+	"allergies": [],
+	"whatIsMyConnectionToJavascript": "I use TypeScript daily",
+	"whatCanIContribute": "I'm interested in exploring the inner workings of JavaScript/TypeScript tooling and how things work under the hood. I'd enjoy diving into dev tooling and discussing approaches that favor minimal dependencies.",
+	"tShirtSize": "M",
+	"linkedin": "https://www.linkedin.com/in/kent-kwee-7bbb82312/",
+}
